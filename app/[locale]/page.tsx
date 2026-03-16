@@ -49,7 +49,7 @@ function AmbientBlob({ className = "", delay = 0 }: { className?: string; delay?
   );
 }
 
-function FeatureIllustration({ type }: { type: "marketplace" | "directory" | "verification" | "payments" | "language" | "community" }) {
+function FeatureIllustration({ type }: { type: "marketplace" | "verification" | "payments" | "language" | "community" }) {
   const illustrations: Record<typeof type, React.ReactNode> = {
     marketplace: (
       <div className="relative w-full h-full flex items-center justify-center p-8">
@@ -76,25 +76,6 @@ function FeatureIllustration({ type }: { type: "marketplace" | "directory" | "ve
             <div className="h-2 w-20 bg-muted-foreground/10 rounded-full" />
             <div className="h-6 w-14 rounded-md bg-primary/10 dark:bg-primary/15" />
           </div>
-        </div>
-      </div>
-    ),
-    directory: (
-      <div className="relative w-full h-full flex items-center justify-center p-8">
-        <div className="absolute bottom-8 right-8 w-24 h-24 rounded-full bg-primary/[0.05] dark:bg-primary/[0.1]" />
-        <div className="relative space-y-2.5 w-[85%] max-w-[280px]">
-          {[0, 1, 2].map((j) => (
-            <div key={j} className={`bg-background dark:bg-muted/30 rounded-xl shadow-sm border border-border/60 p-4 flex items-center gap-3 ${j === 1 ? "ml-4 border-primary/20 ring-1 ring-primary/10" : ""}`}>
-              <div className={`h-9 w-9 rounded-full flex items-center justify-center shrink-0 ${j === 1 ? "bg-primary/15" : "bg-muted/60 dark:bg-muted/40"}`}>
-                <Building2 className={`h-4 w-4 ${j === 1 ? "text-primary" : "text-muted-foreground/40"}`} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className={`h-2.5 rounded-full ${j === 1 ? "w-28 bg-foreground/15" : "w-20 bg-foreground/8"}`} />
-                <div className={`h-2 rounded-full mt-1.5 ${j === 1 ? "w-36 bg-muted-foreground/15" : "w-24 bg-muted-foreground/8"}`} />
-              </div>
-              <BadgeCheck className={`h-4 w-4 shrink-0 ${j === 1 ? "text-primary/40" : "text-muted-foreground/15"}`} />
-            </div>
-          ))}
         </div>
       </div>
     ),
@@ -222,7 +203,6 @@ export default function LandingPage() {
 
   const features = [
     { icon: Store, titleKey: "features.marketplace", descKey: "features.marketplaceDesc", illustration: "marketplace" as const },
-    { icon: Building2, titleKey: "features.directory", descKey: "features.directoryDesc", illustration: "directory" as const },
     { icon: BadgeCheck, titleKey: "features.verification", descKey: "features.verificationDesc", illustration: "verification" as const },
     { icon: Shield, titleKey: "features.securePayments", descKey: "features.securePaymentsDesc", illustration: "payments" as const },
     { icon: Languages, titleKey: "features.multiLanguage", descKey: "features.multiLanguageDesc", illustration: "language" as const },
@@ -247,15 +227,7 @@ export default function LandingPage() {
       />
       <WebsiteJsonLd />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
       <style>{`
-        .font-display { font-family: 'Newsreader', Georgia, serif; }
-        .font-body { font-family: 'Figtree', system-ui, sans-serif; }
         @media (prefers-reduced-motion: reduce) {
           *, *::before, *::after {
             animation-duration: 0.01ms !important;
@@ -267,7 +239,7 @@ export default function LandingPage() {
       {/* Scroll progress bar */}
       <motion.div className="fixed top-0 left-0 right-0 h-0.5 bg-primary z-[60] origin-left" style={{ width: progressWidth }} />
 
-      <div ref={scrollRef} className="font-body flex min-h-screen flex-col bg-background text-foreground">
+      <div ref={scrollRef} className="flex min-h-screen flex-col bg-background text-foreground">
         <PublicHeader />
 
         {/* Hero */}
@@ -277,20 +249,11 @@ export default function LandingPage() {
           <AmbientBlob className="w-[250px] h-[250px] bg-primary/[0.05] dark:bg-primary/[0.08] top-1/3 right-1/4 blur-2xl" delay={0.8} />
 
           <div className="text-center max-w-4xl relative z-10">
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
-              className="text-sm font-medium tracking-widest uppercase text-primary mb-6"
-            >
-              {t("hero.badge")}
-            </motion.p>
-
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display text-[clamp(2.25rem,5vw,4.25rem)] font-normal leading-[1.1] tracking-tight mb-6"
+              className="text-[clamp(2.25rem,5vw,4.25rem)] font-semibold leading-[1.1] tracking-tight mb-6"
             >
               {t("hero.title")}{" "}
               <span className="italic text-primary">{t("hero.titleHighlight")}</span>
@@ -348,7 +311,7 @@ export default function LandingPage() {
             <FadeUp>
               <div className="text-center mb-14">
                 <p className="text-xs font-medium tracking-widest uppercase text-primary mb-3">{t("nav.features")}</p>
-                <h2 className="font-display text-[clamp(1.5rem,3vw,2.5rem)] font-normal leading-tight">
+                <h2 className="text-[clamp(1.5rem,3vw,2.5rem)] font-semibold leading-tight">
                   {t("features.title")}
                 </h2>
               </div>
@@ -367,7 +330,7 @@ export default function LandingPage() {
                           </div>
                           <span className="text-xs font-medium tracking-wider uppercase text-muted-foreground">0{i + 1}</span>
                         </div>
-                        <h3 className="font-display text-xl lg:text-2xl font-normal mb-3">{t(feature.titleKey)}</h3>
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3">{t(feature.titleKey)}</h3>
                         <p className="text-sm text-muted-foreground leading-relaxed max-w-md">{t(feature.descKey)}</p>
                       </div>
                       <div className={isEven ? "lg:order-2" : ""}>
@@ -388,7 +351,7 @@ export default function LandingPage() {
             <FadeUp>
               <div className="text-center mb-14">
                 <p className="text-xs font-medium tracking-widest uppercase text-primary mb-3">{t("nav.howItWorks")}</p>
-                <h2 className="font-display text-[clamp(1.5rem,3vw,2.5rem)] font-normal leading-tight">
+                <h2 className="text-[clamp(1.5rem,3vw,2.5rem)] font-semibold leading-tight">
                   {t("howItWorks.title")}
                 </h2>
               </div>
@@ -416,7 +379,7 @@ export default function LandingPage() {
                               {step.num}
                             </div>
                           </div>
-                          <h3 className="font-display text-xl lg:text-2xl font-normal mb-3">{t(step.titleKey)}</h3>
+                          <h3 className="text-xl lg:text-2xl font-semibold mb-3">{t(step.titleKey)}</h3>
                           <p className="text-muted-foreground leading-relaxed">{t(step.descKey)}</p>
                         </div>
                         {isLeft && <div className="hidden md:block" />}
@@ -434,7 +397,7 @@ export default function LandingPage() {
           <AmbientBlob className="w-[600px] h-[600px] bg-primary/[0.06] dark:bg-primary/[0.1] -top-40 left-1/2 -translate-x-1/2 blur-3xl" delay={0} />
           <div className="mx-auto max-w-3xl px-6 text-center relative z-10">
             <FadeUp>
-              <h2 className="font-display text-[clamp(1.75rem,3.5vw,2.75rem)] font-normal leading-tight tracking-tight mb-5">
+              <h2 className="text-[clamp(1.75rem,3.5vw,2.75rem)] font-semibold leading-tight tracking-tight mb-5">
                 {t("cta.title")}
               </h2>
               <p className="text-base text-muted-foreground max-w-md mx-auto leading-relaxed mb-8">

@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { cn } from "@/lib/utils";
+import { Separator } from "@/components/ui/separator";
 import type { Locale } from "@/i18n/config";
 
 type BreakdownItem = {
@@ -228,7 +228,34 @@ function BreakdownList({
   );
 }
 
-export function CreditProfileView({ reportMode = false }: { reportMode?: boolean }) {
+function Metric({
+  label,
+  value,
+  detail,
+}: {
+  label: string;
+  value: string;
+  detail?: string;
+}) {
+  return (
+    <div>
+      <div className="text-sm text-muted-foreground">{label}</div>
+      <div className="mt-1.5 text-xl font-semibold tabular-nums tracking-tight">{value}</div>
+      {detail && <div className="mt-1 text-xs text-muted-foreground">{detail}</div>}
+    </div>
+  );
+}
+
+function ReportRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex justify-between gap-4 py-1 text-sm">
+      <span className="text-muted-foreground">{label}</span>
+      <span className="text-right font-medium tabular-nums">{value}</span>
+    </div>
+  );
+}
+
+export function CreditProfileReport() {
   const t = useTranslations("creditProfile");
   const locale = useLocale() as Locale;
   const creditProfile = useQuery(api.creditProfiles.getMyProfile) as
@@ -248,17 +275,14 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
   if (access.state !== "ready" || !profile || !business || !reportMeta) {
     return (
       <div className="mx-auto max-w-3xl space-y-6">
-        {reportMode && (
-          <div className="print:hidden">
-            <Link href="/business/credit-profile">
-              <Button variant="ghost" className="px-0">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                {t("actions.backToProfile")}
-              </Button>
-            </Link>
-          </div>
-        )}
-
+        <div className="print:hidden">
+          <Link href="/business/credit-profile">
+            <Button variant="ghost" className="px-0">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              {t("actions.backToProfile")}
+            </Button>
+          </Link>
+        </div>
         <Card>
           <CardHeader>
             <CardTitle>{t(`access.${access.state}.title`)}</CardTitle>
@@ -271,11 +295,265 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
                 {t("actions.openBusinessProfile")}
               </Button>
             </Link>
-            {!reportMode && (
-              <Link href="/business/register">
-                <Button variant="outline">{t("actions.businessSetup")}</Button>
-              </Link>
-            )}
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  const summary = profile.profileSummary;
+  const txn = profile.transactionHistory;
+  const ful = profile.fulfillment;
+  const bd = profile.buyerDiversity;
+  const cur = profile.currency;
+  const hasMultiCurrency = txn.totalTransactionVolumeByCurrency.length > 1;
+
+  return (
+    <div className="mx-auto max-w-3xl space-y-0 bg-background print:max-w-none">
+      {/* Print / Back actions — hidden in print */}
+      <div className="flex items-center justify-between pb-8 print:hidden">
+        <Link href="/business/credit-profile">
+          <Button variant="outline">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            {t("actions.back")}
+          </Button>
+        </Link>
+        <Button onClick={() => window.print()}>
+          <Printer className="mr-2 h-4 w-4" />
+          {t("actions.printOrSavePdf")}
+        </Button>
+      </div>
+
+      {/* ── Report Header ── */}
+      <header className="border-b-2 border-foreground pb-5">
+        <h1 className="text-2xl font-bold tracking-tight">{t("titleReport")}</h1>
+        <p className="mt-1 text-lg font-medium">{business.name}</p>
+        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>{t("report.category")}: {business.category}</span>
+          <span>{t("report.country")}: {business.country}</span>
+          <span>{t("report.verifiedSince")}: {formatDate(business.createdAt, locale, t("common.notAvailableYet"))}</span>
+        </div>
+        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
+          <span>{t("report.generatedOn", { date: formatDate(reportMeta.generatedAt, locale, t("common.notAvailableYet")) })}</span>
+          <span>{t("report.latestActivity", { date: formatDate(txn.recentPaidActivityAt, locale, t("common.notAvailableYet")) })}</span>
+        </div>
+        <p className="mt-3 text-xs text-muted-foreground italic">{t("summary.description")}</p>
+      </header>
+
+      {/* ── 1. Profile Summary ── */}
+      <section className="border-b py-6 print:break-inside-avoid">
+        <h2 className="text-base font-bold">{t("report.sectionProfileSummary")}</h2>
+        <div className="mt-3 space-y-0.5">
+          <ReportRow label={t("cards.paidTransactionVolume.title")} value={currency(summary.totalTransactionVolume, locale, cur)} />
+          {hasMultiCurrency && (
+            <div className="pb-1 pl-0 text-right text-xs text-muted-foreground">
+              {formatCurrencyBreakdown(summary.totalTransactionVolumeByCurrency, locale)}
+            </div>
+          )}
+          <ReportRow label={t("cards.paidOrders.title")} value={integer(summary.paidOrdersCount, locale)} />
+          <ReportRow label={t("cards.uniqueBuyers.title")} value={integer(summary.uniqueBuyers, locale)} />
+          <ReportRow label={t("cards.repeatBuyers.title")} value={integer(bd.repeatBuyers, locale)} />
+          <ReportRow label={t("cards.buyerCountries.title")} value={integer(summary.countriesRepresented, locale)} />
+        </div>
+      </section>
+
+      {/* ── 2. Transaction History ── */}
+      <section className="border-b py-6 print:break-inside-avoid">
+        <h2 className="text-base font-bold">{t("report.sectionTransactionHistory")}</h2>
+        <p className="mt-1 text-xs text-muted-foreground">{t("sections.transactionHistory.description")}</p>
+        <div className="mt-3 space-y-0.5">
+          <ReportRow label={t("cards.totalSellerOrders.title")} value={integer(txn.totalOrders, locale)} />
+          <ReportRow label={t("cards.successfulPaymentRate.title")} value={percent(txn.successfulPaymentRate, locale)} />
+          <ReportRow label={t("cards.averageOrderValue.title")} value={currency(txn.averageOrderValue, locale, cur)} />
+          {txn.averageOrderValueByCurrency.length > 1 && (
+            <div className="pb-1 text-right text-xs text-muted-foreground">
+              {formatCurrencyBreakdown(txn.averageOrderValueByCurrency, locale)}
+            </div>
+          )}
+          <ReportRow label={t("cards.recentPaidActivity.title")} value={formatDate(txn.recentPaidActivityAt, locale, t("common.notAvailableYet"))} />
+        </div>
+
+        {txn.trend.length > 0 && (
+          <div className="mt-5">
+            <h3 className="text-sm font-semibold">{t("report.rollingPerformanceWindows")}</h3>
+            <table className="mt-2 w-full text-sm">
+              <thead>
+                <tr className="border-b text-muted-foreground">
+                  <th className="py-1.5 pr-4 text-left font-medium" />
+                  {txn.trend.map((w) => (
+                    <th key={w.days} className="py-1.5 pl-4 text-right font-medium">
+                      {t("trend.window", { days: integer(w.days, locale) })}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-dashed">
+                  <td className="py-1.5 pr-4 text-muted-foreground">{t("trend.orders")}</td>
+                  {txn.trend.map((w) => (
+                    <td key={w.days} className="py-1.5 pl-4 text-right tabular-nums">{integer(w.orderCount, locale)}</td>
+                  ))}
+                </tr>
+                <tr className="border-b border-dashed">
+                  <td className="py-1.5 pr-4 text-muted-foreground">{t("trend.paidOrders")}</td>
+                  {txn.trend.map((w) => (
+                    <td key={w.days} className="py-1.5 pl-4 text-right tabular-nums">{integer(w.paidOrderCount, locale)}</td>
+                  ))}
+                </tr>
+                <tr>
+                  <td className="py-1.5 pr-4 text-muted-foreground">{t("trend.paidVolume")}</td>
+                  {txn.trend.map((w) => (
+                    <td key={w.days} className="py-1.5 pl-4 text-right tabular-nums">{currency(w.paidVolume, locale, cur)}</td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      {/* ── 3. Fulfillment Performance ── */}
+      <section className="border-b py-6 print:break-inside-avoid">
+        <h2 className="text-base font-bold">{t("report.sectionFulfillment")}</h2>
+        <p className="mt-1 text-xs text-muted-foreground">{t("sections.fulfillment.description")}</p>
+        <div className="mt-3 space-y-0.5">
+          <ReportRow label={t("fulfillment.completionRate")} value={percent(ful.completionRate, locale)} />
+          <ReportRow label={t("fulfillment.cancellationRate")} value={percent(ful.cancellationRate, locale)} />
+          <ReportRow label={t("fulfillment.payoutSuccessRate")} value={percent(ful.payoutSuccessRate, locale)} />
+          <ReportRow label={t("fulfillment.ordersCurrentlyProcessing")} value={integer(ful.processingOrders, locale)} />
+          <ReportRow
+            label={t("fulfillment.averageFulfillmentCycle")}
+            value={t("fulfillment.averageFulfillmentCycleValue", {
+              days: new Intl.NumberFormat(locale, {
+                maximumFractionDigits: 1,
+                minimumFractionDigits: 1,
+              }).format(ful.averageFulfillmentCycleDays),
+            })}
+          />
+        </div>
+
+        <div className="mt-5">
+          <h3 className="text-sm font-semibold">{t("report.payoutOutcomes")}</h3>
+          <div className="mt-2 space-y-0.5">
+            <ReportRow label={t("fulfillment.payoutStatuses.queued")} value={integer(ful.payoutStatusCounts.queued, locale)} />
+            <ReportRow label={t("fulfillment.payoutStatuses.pending")} value={integer(ful.payoutStatusCounts.pending, locale)} />
+            <ReportRow label={t("fulfillment.payoutStatuses.success")} value={integer(ful.payoutStatusCounts.success, locale)} />
+            <ReportRow label={t("fulfillment.payoutStatuses.failed")} value={integer(ful.payoutStatusCounts.failed, locale)} />
+            <ReportRow label={t("fulfillment.payoutStatuses.reverted")} value={integer(ful.payoutStatusCounts.reverted, locale)} />
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. Buyer Diversity ── */}
+      <section className="border-b py-6 print:break-inside-avoid">
+        <h2 className="text-base font-bold">{t("report.sectionBuyerDiversity")}</h2>
+        <p className="mt-1 text-xs text-muted-foreground">
+          {bd.buyersWithBusinessMetadata === bd.uniqueBuyers
+            ? t("buyerDiversity.coverage.complete")
+            : t("buyerDiversity.coverage.partial")}
+        </p>
+        <div className="mt-3 space-y-0.5">
+          <ReportRow label={t("cards.uniqueBuyersDetailed.title")} value={integer(bd.uniqueBuyers, locale)} />
+          <ReportRow label={t("cards.repeatBuyers.title")} value={integer(bd.repeatBuyers, locale)} />
+          <ReportRow label={t("cards.metadataCoverage.title")} value={percent(bd.buyerBusinessCoverageRate, locale)} />
+          <ReportRow label={t("cards.topBuyerConcentration.title")} value={percent(bd.topBuyerConcentrationRate, locale)} />
+        </div>
+
+        {bd.countries.length > 0 && (
+          <div className="mt-5">
+            <h3 className="text-sm font-semibold">{t("report.buyerCountriesSection")}</h3>
+            <div className="mt-2 space-y-0.5">
+              {bd.countries.slice(0, 10).map((c) => (
+                <ReportRow
+                  key={c.label}
+                  label={c.label}
+                  value={t("report.buyerShare", { count: integer(c.count, locale), share: c.share.toFixed(0) })}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {bd.categories.length > 0 && (
+          <div className="mt-5">
+            <h3 className="text-sm font-semibold">{t("report.buyerCategoriesSection")}</h3>
+            <div className="mt-2 space-y-0.5">
+              {bd.categories.slice(0, 10).map((c) => (
+                <ReportRow
+                  key={c.label}
+                  label={c.label}
+                  value={t("report.buyerShare", { count: integer(c.count, locale), share: c.share.toFixed(0) })}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {bd.topBuyers.length > 0 && (
+          <div className="mt-5">
+            <h3 className="text-sm font-semibold">{t("report.topBuyersSection")}</h3>
+            <div className="mt-2 space-y-0.5">
+              {bd.topBuyers.map((buyer) => (
+                <ReportRow
+                  key={buyer.buyerId}
+                  label={`${buyer.name} — ${t("report.orders", { count: integer(buyer.orderCount, locale) })}`}
+                  value={currency(buyer.revenue, locale, cur)}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
+
+      {/* ── 5. Methodology ── */}
+      <section className="py-6 print:break-inside-avoid">
+        <h2 className="text-base font-bold">{t("report.sectionMethodology")}</h2>
+        <p className="mt-1 text-xs text-muted-foreground">{t("methodology.description")}</p>
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+          <li>{t("methodology.points.transactionVolume")}</li>
+          <li>{t("methodology.points.fulfillment")}</li>
+          <li>{t("methodology.points.buyerDiversity")}</li>
+        </ul>
+      </section>
+    </div>
+  );
+}
+
+export function CreditProfileView() {
+  const t = useTranslations("creditProfile");
+  const locale = useLocale() as Locale;
+  const creditProfile = useQuery(api.creditProfiles.getMyProfile) as
+    | CreditProfileResponse
+    | undefined;
+
+  if (creditProfile === undefined) {
+    return (
+      <div className="flex items-center justify-center py-16">
+        <div className="text-muted-foreground">{t("loading")}</div>
+      </div>
+    );
+  }
+
+  const { access, business, reportMeta, profile } = creditProfile;
+
+  if (access.state !== "ready" || !profile || !business || !reportMeta) {
+    return (
+      <div className="mx-auto max-w-3xl space-y-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>{t(`access.${access.state}.title`)}</CardTitle>
+            <CardDescription>{t(`access.${access.state}.message`)}</CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-wrap gap-3">
+            <Link href="/business/profile">
+              <Button>
+                <Building2 className="mr-2 h-4 w-4" />
+                {t("actions.openBusinessProfile")}
+              </Button>
+            </Link>
+            <Link href="/business/register">
+              <Button variant="outline">{t("actions.businessSetup")}</Button>
+            </Link>
           </CardContent>
         </Card>
       </div>
@@ -296,129 +574,87 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
       : t("buyerDiversity.coverage.partial");
 
   return (
-    <div className={cn("space-y-6", reportMode && "mx-auto max-w-5xl bg-background print:max-w-none")}>
-      <div className="flex flex-col gap-4 print:hidden md:flex-row md:items-center md:justify-between">
+    <div className="space-y-6">
+      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <div className="flex items-center gap-2">
             <Badge variant="outline">{t("badges.verifiedSeller")}</Badge>
             <Badge variant="secondary">{t("badges.platformActivity")}</Badge>
           </div>
           <h1 className="mt-2 text-3xl font-bold tracking-tight">
-            {reportMode ? t("titleReport") : t("title")}
+            {t("title")}
           </h1>
           <p className="text-muted-foreground">
             {t("subtitle")}
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          {reportMode ? (
-            <>
-              <Link href="/business/credit-profile">
-                <Button variant="outline">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  {t("actions.back")}
-                </Button>
-              </Link>
-              <Button onClick={() => window.print()}>
-                <Printer className="mr-2 h-4 w-4" />
-                {t("actions.printOrSavePdf")}
-              </Button>
-            </>
-          ) : (
-            <Link href="/business/credit-profile/report">
-              <Button>
-                <Download className="mr-2 h-4 w-4" />
-                {t("actions.downloadableReport")}
-              </Button>
-            </Link>
-          )}
+        <Link href="/business/credit-profile/report">
+          <Button>
+            <Download className="mr-2 h-4 w-4" />
+            {t("actions.downloadableReport")}
+          </Button>
+        </Link>
+      </div>
+
+      <div className="rounded-lg border bg-muted/40 px-5 py-4">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-3">
+            <FileText className="h-4 w-4 shrink-0 text-primary" />
+            <div>
+              <div className="text-sm font-medium">{business.name}</div>
+              <p className="text-xs text-muted-foreground">{t("summary.description")}</p>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-muted-foreground">
+            <span>{t("summary.generated")}: <span className="font-medium text-foreground">{formatDate(reportMeta.generatedAt, locale, t("common.notAvailableYet"))}</span></span>
+            <span>{t("summary.latestProfileActivity")}: <span className="font-medium text-foreground">{formatDate(transactionHistory.recentPaidActivityAt, locale, t("common.notAvailableYet"))}</span></span>
+          </div>
         </div>
       </div>
 
-      <Card className="border-primary/20 bg-gradient-to-br from-primary/5 via-background to-background">
-        <CardContent className="space-y-4 pt-6">
-          <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
-            <div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <FileText className="h-4 w-4" />
-                {business.name}
-              </div>
-              <h2 className="mt-1 text-2xl font-semibold">
-                {t("summary.headline", {
-                  paidOrdersCount: integer(summary.paidOrdersCount, locale),
-                  uniqueBuyers: integer(summary.uniqueBuyers, locale),
-                })}
-              </h2>
-              <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
-                {t("summary.description")}
-              </p>
-            </div>
-
-            <div className="grid gap-2 text-sm text-muted-foreground">
-              <div>
-                {t("summary.generated")}:{" "}
-                {formatDate(reportMeta.generatedAt, locale, t("common.notAvailableYet"))}
-              </div>
-              <div>
-                {t("summary.reportPeriodStart")}:{" "}
-                {formatDate(reportMeta.reportStart, locale, t("common.notAvailableYet"))}
-              </div>
-              <div>
-                {t("summary.latestProfileActivity")}:{" "}
-                {formatDate(
-                  transactionHistory.recentPaidActivityAt,
-                  locale,
-                  t("common.notAvailableYet")
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <StatCard
-              title={t("cards.paidTransactionVolume.title")}
-              value={currency(summary.totalTransactionVolume, locale, displayCurrency)}
-              description={
-                hasMultiCurrencyVolume
-                  ? `${t("cards.paidTransactionVolume.description")} • ${formatCurrencyBreakdown(
-                      summary.totalTransactionVolumeByCurrency,
-                      locale
-                    )}`
-                  : t("cards.paidTransactionVolume.description")
-              }
-              icon={TrendingUp}
-            />
-            <StatCard
-              title={t("cards.paidOrders.title")}
-              value={integer(summary.paidOrdersCount, locale)}
-              description={t("cards.paidOrders.description", {
-                totalOrders: integer(transactionHistory.totalOrders, locale),
-              })}
-              icon={ShieldCheck}
-            />
-            <StatCard
-              title={t("cards.uniqueBuyers.title")}
-              value={integer(summary.uniqueBuyers, locale)}
-              description={t("cards.uniqueBuyers.description", {
-                repeatBuyers: integer(buyerDiversity.repeatBuyers, locale),
-              })}
-              icon={Users}
-            />
-            <StatCard
-              title={t("cards.buyerCountries.title")}
-              value={integer(summary.countriesRepresented, locale)}
-              description={t("cards.buyerCountries.description", {
-                buyersWithBusinessMetadata: integer(
-                  buyerDiversity.buyersWithBusinessMetadata,
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <StatCard
+          title={t("cards.paidTransactionVolume.title")}
+          value={currency(summary.totalTransactionVolume, locale, displayCurrency)}
+          description={
+            hasMultiCurrencyVolume
+              ? `${t("cards.paidTransactionVolume.description")} • ${formatCurrencyBreakdown(
+                  summary.totalTransactionVolumeByCurrency,
                   locale
-                ),
-              })}
-              icon={Globe2}
-            />
-          </div>
-        </CardContent>
-      </Card>
+                )}`
+              : t("cards.paidTransactionVolume.description")
+          }
+          icon={TrendingUp}
+        />
+        <StatCard
+          title={t("cards.paidOrders.title")}
+          value={integer(summary.paidOrdersCount, locale)}
+          description={t("cards.paidOrders.description", {
+            totalOrders: integer(transactionHistory.totalOrders, locale),
+          })}
+          icon={ShieldCheck}
+        />
+        <StatCard
+          title={t("cards.uniqueBuyers.title")}
+          value={integer(summary.uniqueBuyers, locale)}
+          description={t("cards.uniqueBuyers.description", {
+            repeatBuyers: integer(buyerDiversity.repeatBuyers, locale),
+          })}
+          icon={Users}
+        />
+        <StatCard
+          title={t("cards.buyerCountries.title")}
+          value={integer(summary.countriesRepresented, locale)}
+          description={t("cards.buyerCountries.description", {
+            buyersWithBusinessMetadata: integer(
+              buyerDiversity.buyersWithBusinessMetadata,
+              locale
+            ),
+          })}
+          icon={Globe2}
+        />
+      </div>
 
       {!hasOrders && (
         <Card>
@@ -438,23 +674,21 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
             <CardDescription>{t("sections.transactionHistory.description")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-              <StatCard
-                title={t("cards.totalSellerOrders.title")}
+            <div className="grid gap-x-8 gap-y-5 sm:grid-cols-2 xl:grid-cols-4">
+              <Metric
+                label={t("cards.totalSellerOrders.title")}
                 value={integer(transactionHistory.totalOrders, locale)}
-                description={t("cards.totalSellerOrders.description")}
-                icon={FileText}
+                detail={t("cards.totalSellerOrders.description")}
               />
-              <StatCard
-                title={t("cards.successfulPaymentRate.title")}
+              <Metric
+                label={t("cards.successfulPaymentRate.title")}
                 value={percent(transactionHistory.successfulPaymentRate, locale)}
-                description={t("cards.successfulPaymentRate.description")}
-                icon={ShieldCheck}
+                detail={t("cards.successfulPaymentRate.description")}
               />
-              <StatCard
-                title={t("cards.averageOrderValue.title")}
+              <Metric
+                label={t("cards.averageOrderValue.title")}
                 value={currency(transactionHistory.averageOrderValue, locale, displayCurrency)}
-                description={
+                detail={
                   transactionHistory.averageOrderValueByCurrency.length > 1
                     ? `${t("cards.averageOrderValue.description")} • ${formatCurrencyBreakdown(
                         transactionHistory.averageOrderValueByCurrency,
@@ -462,54 +696,67 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
                       )}`
                     : t("cards.averageOrderValue.description")
                 }
-                icon={TrendingUp}
               />
-              <StatCard
-                title={t("cards.recentPaidActivity.title")}
+              <Metric
+                label={t("cards.recentPaidActivity.title")}
                 value={formatDate(
                   transactionHistory.recentPaidActivityAt,
                   locale,
                   t("common.notAvailableYet")
                 )}
-                description={t("cards.recentPaidActivity.description")}
-                icon={RefreshCw}
+                detail={t("cards.recentPaidActivity.description")}
               />
             </div>
 
-            <div className="grid gap-4 md:grid-cols-3">
-              {transactionHistory.trend.map((window) => (
-                <Card key={window.days} className="border-dashed">
-                  <CardHeader>
-                    <CardTitle className="text-base">
-                      {t("trend.window", {
-                        days: integer(window.days, locale),
-                      })}
-                    </CardTitle>
-                    <CardDescription>{t("trend.rollingPerformanceWindow")}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-2 text-sm">
-                    <div className="flex items-center justify-between">
-                      <span className="text-muted-foreground">{t("trend.orders")}</span>
-                      <span className="font-medium">{integer(window.orderCount, locale)}</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-muted-foreground">{t("trend.paidOrders")}</span>
-                      <span className="font-medium">{integer(window.paidOrderCount, locale)}</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-muted-foreground">{t("trend.paidVolume")}</span>
-                      <span className="font-medium">
-                        {currency(window.paidVolume, locale, displayCurrency)}
-                      </span>
-                    </div>
-                    {window.paidVolumeByCurrency.length > 1 && (
-                      <div className="text-xs text-muted-foreground">
-                        {formatCurrencyBreakdown(window.paidVolumeByCurrency, locale)}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
+            <Separator />
+
+            <div>
+              <div className="mb-4 text-sm font-medium">{t("trend.rollingPerformanceWindow")}</div>
+              <div className="overflow-x-auto -mx-1 px-1">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b text-muted-foreground">
+                      <th className="pb-2.5 pr-6 text-left font-medium" />
+                      {transactionHistory.trend.map((window) => (
+                        <th key={window.days} className="pb-2.5 pl-4 text-right font-medium">
+                          {t("trend.window", { days: integer(window.days, locale) })}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-dashed">
+                      <td className="py-2.5 pr-6 text-muted-foreground">{t("trend.orders")}</td>
+                      {transactionHistory.trend.map((window) => (
+                        <td key={window.days} className="py-2.5 pl-4 text-right font-medium tabular-nums">
+                          {integer(window.orderCount, locale)}
+                        </td>
+                      ))}
+                    </tr>
+                    <tr className="border-b border-dashed">
+                      <td className="py-2.5 pr-6 text-muted-foreground">{t("trend.paidOrders")}</td>
+                      {transactionHistory.trend.map((window) => (
+                        <td key={window.days} className="py-2.5 pl-4 text-right font-medium tabular-nums">
+                          {integer(window.paidOrderCount, locale)}
+                        </td>
+                      ))}
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 pr-6 text-muted-foreground">{t("trend.paidVolume")}</td>
+                      {transactionHistory.trend.map((window) => (
+                        <td key={window.days} className="py-2.5 pl-4 text-right font-medium tabular-nums">
+                          {currency(window.paidVolume, locale, displayCurrency)}
+                          {window.paidVolumeByCurrency.length > 1 && (
+                            <div className="mt-0.5 text-xs font-normal text-muted-foreground">
+                              {formatCurrencyBreakdown(window.paidVolumeByCurrency, locale)}
+                            </div>
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -521,71 +768,73 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
               {t("sections.fulfillment.description")}
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-5">
-            <div className="space-y-2">
+          <CardContent className="space-y-4">
+            <div className="space-y-1.5">
               <div className="flex items-center justify-between text-sm">
                 <span>{t("fulfillment.completionRate")}</span>
-                <span className="font-medium">{percent(fulfillment.completionRate, locale)}</span>
+                <span className="font-medium tabular-nums">{percent(fulfillment.completionRate, locale)}</span>
               </div>
-              <Progress value={fulfillment.completionRate} />
+              <Progress value={fulfillment.completionRate} className="h-2" />
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               <div className="flex items-center justify-between text-sm">
                 <span>{t("fulfillment.cancellationRate")}</span>
-                <span className="font-medium">{percent(fulfillment.cancellationRate, locale)}</span>
+                <span className="font-medium tabular-nums">{percent(fulfillment.cancellationRate, locale)}</span>
               </div>
-              <Progress value={fulfillment.cancellationRate} />
+              <Progress value={fulfillment.cancellationRate} className="h-2" />
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               <div className="flex items-center justify-between text-sm">
                 <span>{t("fulfillment.payoutSuccessRate")}</span>
-                <span className="font-medium">{percent(fulfillment.payoutSuccessRate, locale)}</span>
+                <span className="font-medium tabular-nums">{percent(fulfillment.payoutSuccessRate, locale)}</span>
               </div>
-              <Progress value={fulfillment.payoutSuccessRate} />
+              <Progress value={fulfillment.payoutSuccessRate} className="h-2" />
             </div>
 
-            <div className="grid gap-3 text-sm md:grid-cols-2 xl:grid-cols-1">
-              <div className="rounded-lg border p-3">
-                <div className="text-muted-foreground">{t("fulfillment.ordersCurrentlyProcessing")}</div>
-                <div className="mt-1 text-xl font-semibold">{integer(fulfillment.processingOrders, locale)}</div>
-              </div>
-              <div className="rounded-lg border p-3">
-                <div className="text-muted-foreground">{t("fulfillment.averageFulfillmentCycle")}</div>
-                <div className="mt-1 text-xl font-semibold">
-                  {t("fulfillment.averageFulfillmentCycleValue", {
-                    days: new Intl.NumberFormat(locale, {
-                      maximumFractionDigits: 1,
-                      minimumFractionDigits: 1,
-                    }).format(fulfillment.averageFulfillmentCycleDays),
-                  })}
-                </div>
-              </div>
+            <Separator />
+
+            <div className="grid gap-x-8 gap-y-3 sm:grid-cols-2 xl:grid-cols-1">
+              <Metric
+                label={t("fulfillment.ordersCurrentlyProcessing")}
+                value={integer(fulfillment.processingOrders, locale)}
+              />
+              <Metric
+                label={t("fulfillment.averageFulfillmentCycle")}
+                value={t("fulfillment.averageFulfillmentCycleValue", {
+                  days: new Intl.NumberFormat(locale, {
+                    maximumFractionDigits: 1,
+                    minimumFractionDigits: 1,
+                  }).format(fulfillment.averageFulfillmentCycleDays),
+                })}
+              />
             </div>
 
-            <div className="rounded-lg border p-4 text-sm">
+            <Separator />
+
+            <div className="text-sm">
               <div className="font-medium">{t("fulfillment.payoutOutcomeCounts")}</div>
-              <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              <div className="mt-3 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">{t("fulfillment.payoutStatuses.queued")}</span>
-                  <span>{integer(fulfillment.payoutStatusCounts.queued, locale)}</span>
+                  <span className="tabular-nums">{integer(fulfillment.payoutStatusCounts.queued, locale)}</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">{t("fulfillment.payoutStatuses.pending")}</span>
-                  <span>{integer(fulfillment.payoutStatusCounts.pending, locale)}</span>
+                  <span className="tabular-nums">{integer(fulfillment.payoutStatusCounts.pending, locale)}</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">{t("fulfillment.payoutStatuses.success")}</span>
-                  <span>{integer(fulfillment.payoutStatusCounts.success, locale)}</span>
+                  <span className="tabular-nums">{integer(fulfillment.payoutStatusCounts.success, locale)}</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">{t("fulfillment.payoutStatuses.failed")}</span>
-                  <span>{integer(fulfillment.payoutStatusCounts.failed, locale)}</span>
+                  <span className="tabular-nums">{integer(fulfillment.payoutStatusCounts.failed, locale)}</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">{t("fulfillment.payoutStatuses.reverted")}</span>
-                  <span>{integer(fulfillment.payoutStatusCounts.reverted, locale)}</span>
+                  <span className="tabular-nums">{integer(fulfillment.payoutStatusCounts.reverted, locale)}</span>
                 </div>
               </div>
             </div>
@@ -599,34 +848,31 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
           <CardDescription>{coverageNote}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <StatCard
-              title={t("cards.uniqueBuyersDetailed.title")}
+          <div className="grid gap-x-8 gap-y-5 sm:grid-cols-2 xl:grid-cols-4">
+            <Metric
+              label={t("cards.uniqueBuyersDetailed.title")}
               value={integer(buyerDiversity.uniqueBuyers, locale)}
-              description={t("cards.uniqueBuyersDetailed.description")}
-              icon={Users}
+              detail={t("cards.uniqueBuyersDetailed.description")}
             />
-            <StatCard
-              title={t("cards.repeatBuyers.title")}
+            <Metric
+              label={t("cards.repeatBuyers.title")}
               value={integer(buyerDiversity.repeatBuyers, locale)}
-              description={t("cards.repeatBuyers.description")}
-              icon={RefreshCw}
+              detail={t("cards.repeatBuyers.description")}
             />
-            <StatCard
-              title={t("cards.metadataCoverage.title")}
+            <Metric
+              label={t("cards.metadataCoverage.title")}
               value={percent(buyerDiversity.buyerBusinessCoverageRate, locale)}
-              description={t("cards.metadataCoverage.description", {
+              detail={t("cards.metadataCoverage.description", {
                 buyersWithBusinessMetadata: integer(
                   buyerDiversity.buyersWithBusinessMetadata,
                   locale
                 ),
               })}
-              icon={Building2}
             />
-            <StatCard
-              title={t("cards.topBuyerConcentration.title")}
+            <Metric
+              label={t("cards.topBuyerConcentration.title")}
               value={percent(buyerDiversity.topBuyerConcentrationRate, locale)}
-              description={
+              detail={
                 buyerDiversity.topBuyerConcentrationByCurrency.length > 1
                   ? `${t("cards.topBuyerConcentration.description")} • ${formatRateBreakdown(
                       buyerDiversity.topBuyerConcentrationByCurrency,
@@ -634,7 +880,6 @@ export function CreditProfileView({ reportMode = false }: { reportMode?: boolean
                     )}`
                   : t("cards.topBuyerConcentration.description")
               }
-              icon={TrendingUp}
             />
           </div>
 

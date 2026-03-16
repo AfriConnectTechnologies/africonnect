@@ -32,7 +32,6 @@
     "navigation": {
       "dashboard": "ዳሽቦርድ",
       "marketplace": "ዕዳጋ (Marketplace)",
-      "directory": "መውጽኢ ትካላት",
       "products": "ፍርያተይ",
       "inventory": "ክምዘን ንብረት",
       "messages": "መልእኽትታት",
@@ -232,21 +231,6 @@
       "sellerAgreementLabel": "ነዚ ኣንቢበን ተሰማሚዐን ኣለኹ",
       "sellerAgreementLink": "ውዕል ሸቃጣይ",
       "sellerAgreementRequired": "ንግድኻ ንምምዝጋብ ምስ ውዕል ሸቃጣይ ክትሰማማዕ ኣለካ።"
-    },
-    "directory": {
-      "title": "መውጽኢ ትካላት",
-      "description": "ኣብ ኣፍሪቃ ዝርከቡ ዝተረጋገጹ ትካላት ርከብ",
-      "searchPlaceholder": "ትካላት ድለ...",
-      "allCategories": "ኩሎም ዓውድታት",
-      "allCountries": "ኩለን ሃገራት",
-      "verified": "ዝተረጋገጸ",
-      "pending": "ኣብ ትፅቢት",
-      "products": "ፍርያት",
-      "viewProfile": "ፕሮፋይል ርአ",
-      "noBusinesses": "ዝተረኽበ ትካል የለን",
-      "noBusinessesDescription": "ምስቲ ዝድለ ዘሎ ዝሰማማዕ ትካል የለን።",
-      "contactInfo": "ሓበሬታ ርክብ",
-      "businessDetails": "ዝርዝር ንግዲ"
     },
     "cart": {
       "title": "መአከቢ ፍርያት (Cart)",
@@ -492,8 +476,6 @@
         "description": "ብምትእምማን ንንግዲ ዘድልየካ ኩሉ",
         "marketplace": "ዕዳጋ",
         "marketplaceDesc": "ኣብ ዕዳጋ B2B ፍርያት ዳህስስን ዘርዝርን። ዘድልየካ ርከብ ወይ ሓደስቲ ዓደግቲ ብጻሕ።",
-        "directory": "መውጽኢ ትካላት",
-        "directoryDesc": "ኣብ መላእ ኣፍሪቃ ዝርከቡ ትካላት ርከብ። ኣብ ዓውድኻ መሻርኽቲ፣ ቀረብትን ዓደግትን ርከብ።",
         "verification": "ምርግጋፅ ንግዲ",
         "verificationDesc": "ምርግጋፅ ንዝዛዘሙ ትካላት ዝወሃብ ምልክት፣ ኣብ ኩሉ ንግዲ እምነት ንምህናጽ።",
         "securePayments": "ውሑስ ክፍሊት",
@@ -1200,6 +1182,27 @@
           "fulfillment": "ብቕዓት ምምላእ ኣብ ኩነታት ትእዛዝን ውፅኢት ክፍሊትን ዝተመርኮሰ እዩ።",
           "buyerDiversity": "ብዙሕነት ዓደግቲ ኣብቶም ዝተተሓሓዙ ሰነዳት ንግዲ ዝተመርኮሰ እዩ።"
         }
+      },
+      "report": {
+        "generatedOn": "ዝተፈጥረሉ {date}",
+        "latestActivity": "ናይ መወዳእታ ንጥፈት: {date}",
+        "reportPeriod": "ግዜ ሪፖርት: {start} — {end}",
+        "category": "ምድብ",
+        "country": "ሃገር",
+        "verifiedSince": "ካብ ዝተረጋገጸሉ",
+        "sectionProfileSummary": "1. ጽማቕ ፕሮፋይል",
+        "sectionTransactionHistory": "2. ታሪኽ ግብይት",
+        "sectionFulfillment": "3. ኣፈፃፅማ ምምላእ",
+        "sectionBuyerDiversity": "4. ብዙሕነት ዓደግቲ",
+        "sectionMethodology": "5. መብርሂ ሜላ",
+        "rollingPerformanceWindows": "ተንቀሳቓሲ መስኮታት ኣፈፃፅም",
+        "payoutOutcomes": "ውፅኢታት ክፍሊት",
+        "topBuyersSection": "ቀንዲ ዓደግቲ",
+        "buyerCountriesSection": "ሃገራት ዓደግቲ",
+        "buyerCategoriesSection": "ምድባት ዓደግቲ",
+        "noData": "ሓበሬታ የለን",
+        "orders": "{count} ትእዛዛት",
+        "buyerShare": "{count} ዓደግቲ ({share}%)"
       }
     },
     "inventory": {

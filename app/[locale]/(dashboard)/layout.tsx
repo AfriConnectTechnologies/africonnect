@@ -17,11 +17,9 @@ function AuthenticatedDashboard({ children }: { children: React.ReactNode }) {
 
   return (
     <ChatProvider>
-      <div className="flex h-screen overflow-hidden">
-        <div className="print:hidden">
-          <Sidebar />
-        </div>
-        <div className="flex flex-1 flex-col overflow-hidden">
+      <div className="flex h-screen overflow-hidden print:h-auto print:overflow-visible">
+        <Sidebar />
+        <div className="flex flex-1 flex-col overflow-hidden min-w-0 print:overflow-visible">
           <div className="print:hidden">
             <EmailVerificationBanner />
             <DashboardHeader />

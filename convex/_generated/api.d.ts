@@ -15,7 +15,6 @@ import type * as chat from "../chat.js";
 import type * as compliance from "../compliance.js";
 import type * as creditProfiles from "../creditProfiles.js";
 import type * as crons from "../crons.js";
-import type * as directory from "../directory.js";
 import type * as helpers from "../helpers.js";
 import type * as inventory from "../inventory.js";
 import type * as lib_logger from "../lib/logger.js";
@@ -46,7 +45,6 @@ declare const fullApi: ApiFromModules<{
   compliance: typeof compliance;
   creditProfiles: typeof creditProfiles;
   crons: typeof crons;
-  directory: typeof directory;
   helpers: typeof helpers;
   inventory: typeof inventory;
   "lib/logger": typeof lib_logger;

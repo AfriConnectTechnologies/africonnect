@@ -1,5 +1,5 @@
-import { CreditProfileView } from "@/components/business/credit-profile/CreditProfileView";
+import { CreditProfileReport } from "@/components/business/credit-profile/CreditProfileView";
 
 export default function CreditProfileReportPage() {
-  return <CreditProfileView reportMode />;
+  return <CreditProfileReport />;
 }

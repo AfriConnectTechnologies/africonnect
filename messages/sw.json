@@ -32,7 +32,6 @@
   "navigation": {
     "dashboard": "Dashibodi",
     "marketplace": "Soko",
-    "directory": "Saraka",
     "products": "Bidhaa Zangu",
     "inventory": "Hesabu ya Hisa",
     "messages": "Ujumbe",
@@ -232,21 +231,6 @@
     "sellerAgreementLabel": "Nimesoma na ninakubali",
     "sellerAgreementLink": "Mkataba wa Muuzaji",
     "sellerAgreementRequired": "Ni lazima ukubali Mkataba wa Muuzaji ili kusajili biashara yako."
-  },
-  "directory": {
-    "title": "Saraka ya Biashara",
-    "description": "Gundua biashara zilizothibitishwa Afrika",
-    "searchPlaceholder": "Tafuta biashara...",
-    "allCategories": "Kategoria Zote",
-    "allCountries": "Nchi Zote",
-    "verified": "Imethibitishwa",
-    "pending": "Inasubiri",
-    "products": "Bidhaa",
-    "viewProfile": "Tazama Wasifu",
-    "noBusinesses": "Hakuna biashara zilizopatikana",
-    "noBusinessesDescription": "Hakuna biashara zinazolingana na vigezo vyako vya utafutaji.",
-    "contactInfo": "Taarifa za Mawasiliano",
-    "businessDetails": "Maelezo ya Biashara"
   },
   "cart": {
     "title": "Kikapu cha Ununuzi",
@@ -492,8 +476,6 @@
       "description": "Kila kitu unachohitaji kufanya biashara kwa ujasiri",
       "marketplace": "Soko",
       "marketplaceDesc": "Vinjari na orodhesha bidhaa katika soko letu la B2B. Pata unachohitaji au fikia wateja wapya.",
-      "directory": "Saraka ya Biashara",
-      "directoryDesc": "Gundua biashara kote Afrika. Pata washirika, wasambazaji, na wanunuzi katika sekta yako.",
       "verification": "Uthibitishaji wa Biashara",
       "verificationDesc": "Beji zilizothibitishwa kwa biashara zinazokamilisha mchakato wetu wa uthibitishaji, kujenga uaminifu katika kila muamala.",
       "securePayments": "Malipo Salama",
@@ -1200,6 +1182,27 @@
         "fulfillment": "Utimilifu hutumia hali ya agizo na matokeo ya malipo kama viashiria vya utendaji wa uendeshaji.",
         "buyerDiversity": "Utofauti wa wanunuzi unategemea kumbukumbu za biashara za wanunuzi zilizounganishwa, kwa hiyo metadata isiyokamilika inapunguza ufunikaji."
       }
+    },
+    "report": {
+      "generatedOn": "Imetengenezwa tarehe {date}",
+      "latestActivity": "Shughuli ya hivi karibuni: {date}",
+      "reportPeriod": "Kipindi cha ripoti: {start} — {end}",
+      "category": "Kategoria",
+      "country": "Nchi",
+      "verifiedSince": "Imethibitishwa tangu",
+      "sectionProfileSummary": "1. Muhtasari wa Wasifu",
+      "sectionTransactionHistory": "2. Historia ya Miamala",
+      "sectionFulfillment": "3. Utendaji wa Utekelezaji",
+      "sectionBuyerDiversity": "4. Mseto wa Wanunuzi",
+      "sectionMethodology": "5. Maelezo ya Mbinu",
+      "rollingPerformanceWindows": "Madirisha ya Utendaji Yanayoendelea",
+      "payoutOutcomes": "Matokeo ya Malipo",
+      "topBuyersSection": "Wanunuzi Wakuu",
+      "buyerCountriesSection": "Nchi za Wanunuzi",
+      "buyerCategoriesSection": "Kategoria za Wanunuzi",
+      "noData": "Hakuna data inayopatikana",
+      "orders": "Maagizo {count}",
+      "buyerShare": "Wanunuzi {count} ({share}%)"
     }
   },
   "inventory": {

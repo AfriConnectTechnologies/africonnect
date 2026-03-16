@@ -134,18 +134,7 @@ export default function PricingPage() {
 
   return (
     <>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-      <style>{`
-        .font-display { font-family: 'Newsreader', Georgia, serif; }
-        .font-body { font-family: 'Figtree', system-ui, sans-serif; }
-      `}</style>
-
-      <div className="font-body flex min-h-screen flex-col bg-background text-foreground">
+      <div className="flex min-h-screen flex-col bg-background text-foreground">
         <PublicHeader />
 
         <main className="flex-1 pt-24">
@@ -153,7 +142,7 @@ export default function PricingPage() {
             {/* Page Header */}
             <div className="text-center mb-12">
               <p className="text-xs font-medium tracking-widest uppercase text-primary mb-3">Pricing</p>
-              <h1 className="font-display text-[clamp(1.75rem,3.5vw,2.75rem)] font-normal leading-tight tracking-tight mb-3">
+              <h1 className="text-[clamp(1.75rem,3.5vw,2.75rem)] font-semibold leading-tight tracking-tight mb-3">
                 {tPricing("title")}
               </h1>
               <p className="text-sm text-muted-foreground max-w-lg mx-auto leading-relaxed mb-8">
@@ -196,7 +185,7 @@ export default function PricingPage() {
 
             {/* Feature Comparison */}
             <div className="mt-16">
-              <h2 className="font-display text-[clamp(1.25rem,2.5vw,2rem)] font-normal text-center mb-8">
+              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-semibold text-center mb-8">
                 Compare All Features
               </h2>
               <FeatureComparison />
@@ -204,7 +193,7 @@ export default function PricingPage() {
 
             {/* FAQ Section */}
             <div className="mt-16 max-w-3xl mx-auto">
-              <h2 className="font-display text-[clamp(1.25rem,2.5vw,2rem)] font-normal text-center mb-8">
+              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-semibold text-center mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
@@ -243,7 +232,7 @@ export default function PricingPage() {
 
             {/* CTA */}
             <div className="mt-16 text-center bg-primary/[0.03] dark:bg-primary/[0.05] rounded-2xl border border-border/40 p-10">
-              <h2 className="font-display text-xl font-normal mb-3">Need a Custom Solution?</h2>
+              <h2 className="text-xl font-semibold mb-3">Need a Custom Solution?</h2>
               <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto leading-relaxed">
                 Our Enterprise plan offers custom features, dedicated support, and
                 tailored integrations for large organizations.

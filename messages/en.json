@@ -32,7 +32,6 @@
   "navigation": {
     "dashboard": "Dashboard",
     "marketplace": "Marketplace",
-    "directory": "Directory",
     "products": "My Products",
     "inventory": "Inventory",
     "messages": "Messages",
@@ -232,21 +231,6 @@
     "sellerAgreementLabel": "I have read and agree to the",
     "sellerAgreementLink": "Seller Agreement",
     "sellerAgreementRequired": "You must accept the Seller Agreement to register your business."
-  },
-  "directory": {
-    "title": "Business Directory",
-    "description": "Discover verified businesses across Africa",
-    "searchPlaceholder": "Search businesses...",
-    "allCategories": "All Categories",
-    "allCountries": "All Countries",
-    "verified": "Verified",
-    "pending": "Pending",
-    "products": "Products",
-    "viewProfile": "View Profile",
-    "noBusinesses": "No businesses found",
-    "noBusinessesDescription": "No businesses match your search criteria.",
-    "contactInfo": "Contact Information",
-    "businessDetails": "Business Details"
   },
   "cart": {
     "title": "Shopping Cart",
@@ -492,8 +476,6 @@
       "description": "Everything you need to trade with confidence",
       "marketplace": "Marketplace",
       "marketplaceDesc": "Browse and list products in our B2B marketplace. Find what you need or reach new customers.",
-      "directory": "Business Directory",
-      "directoryDesc": "Discover businesses across Africa. Find partners, suppliers, and buyers in your industry.",
       "verification": "Business Verification",
       "verificationDesc": "Verified badges for businesses that complete our verification process, building trust in every transaction.",
       "securePayments": "Secure Payments",
@@ -1200,6 +1182,27 @@
         "fulfillment": "Fulfillment uses order status and payout outcomes as operational performance signals.",
         "buyerDiversity": "Buyer diversity is based on linked buyer business records, so incomplete buyer metadata lowers coverage."
       }
+    },
+    "report": {
+      "generatedOn": "Generated on {date}",
+      "latestActivity": "Latest activity: {date}",
+      "reportPeriod": "Report period: {start} — {end}",
+      "category": "Category",
+      "country": "Country",
+      "verifiedSince": "Verified since",
+      "sectionProfileSummary": "1. Profile Summary",
+      "sectionTransactionHistory": "2. Transaction History",
+      "sectionFulfillment": "3. Fulfillment Performance",
+      "sectionBuyerDiversity": "4. Buyer Diversity",
+      "sectionMethodology": "5. Methodology Note",
+      "rollingPerformanceWindows": "Rolling Performance Windows",
+      "payoutOutcomes": "Payout Outcomes",
+      "topBuyersSection": "Top Buyers",
+      "buyerCountriesSection": "Buyer Countries",
+      "buyerCategoriesSection": "Buyer Categories",
+      "noData": "No data available",
+      "orders": "{count} orders",
+      "buyerShare": "{count} buyers ({share}%)"
     }
   },
   "inventory": {

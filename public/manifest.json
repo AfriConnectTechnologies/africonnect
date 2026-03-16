@@ -39,13 +39,6 @@
       "icons": [{ "src": "/logo2.webp?v=20260314a", "sizes": "96x96", "type": "image/webp" }]
     },
     {
-      "name": "Business Directory",
-      "short_name": "Directory",
-      "description": "Find verified African businesses",
-      "url": "/directory",
-      "icons": [{ "src": "/logo2.webp?v=20260314a", "sizes": "96x96", "type": "image/webp" }]
-    },
-    {
       "name": "Dashboard",
       "short_name": "Dashboard",
       "description": "Access your business dashboard",

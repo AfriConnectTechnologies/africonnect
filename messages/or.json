@@ -32,7 +32,6 @@
     "navigation": {
       "dashboard": "Dajaja",
       "marketplace": "Gabaa",
-      "directory": "Galmee",
       "products": "Oomishoota koo",
       "inventory": "Kuusa",
       "messages": "Ergaawwan",
@@ -232,21 +231,6 @@
       "sellerAgreementLabel": "Dubbiseera, waliigaltees nan amana",
       "sellerAgreementLink": "Waliigaltee Gurgurtaa",
       "sellerAgreementRequired": "Nagaadii kee galmeessuuf waliigaltee gurgurtaa amanuu qabdu."
-    },
-    "directory": {
-      "title": "Galmee Nagaadii",
-      "description": "Nagaadiwwan Afrikaa keessatti mirkanaa'an bari",
-      "searchPlaceholder": "Nagaadiwwan barbaadi...",
-      "allCategories": "Ramaddii Hunda",
-      "allCountries": "Biyyoota Hunda",
-      "verified": "Mirkanaa'eera",
-      "pending": "Eegamaa jira",
-      "products": "Oomishoota",
-      "viewProfile": "Eenyummeessa Ilaali",
-      "noBusinesses": "Nagaadiin hin argamne",
-      "noBusinessesDescription": "Nagaadiin ulaagaa barbaacha keetiin wal simu hin jiru.",
-      "contactInfo": "Oodeeffannoo Quunnamtii",
-      "businessDetails": "Bal'ina Nagaadii"
     },
     "cart": {
       "title": "Gaari Bittaa",
@@ -492,8 +476,6 @@
         "description": "Amanannaan daldaluuf waan si barbaachisu hunda",
         "marketplace": "Gabaa",
         "marketplaceDesc": "Gabaa B2B keenya keessatti oomishoota barbaadi ykn tarreessi.",
-        "directory": "Galmee Nagaadii",
-        "directoryDesc": "Afrikaa keessatti nagaadiwwan bari. Hiriyoota daldalaa fi dhiyeessitoota argadhu.",
         "verification": "Mirkaneessa Nagaadii",
         "verificationDesc": "Nagaadiwwan adeemsa mirkaneessaa keenya xumuranitti mallattoo mirkaneessaa ni kennina.",
         "securePayments": "Kaffaltii Amansiisaa",
@@ -1200,6 +1182,27 @@
           "fulfillment": "Haala ajajaa fi kaffaltii fudhatame irratti hundaa'a.",
           "buyerDiversity": "Oodeeffannoo nagaadii bittootaa irratti hundaa'a."
         }
+      },
+      "report": {
+        "generatedOn": "Guyyaa {date} irratti kan qophaa'e",
+        "latestActivity": "Sochii yeroo dhihoo: {date}",
+        "reportPeriod": "Yeroo gabaasaa: {start} — {end}",
+        "category": "Ramaddii",
+        "country": "Biyya",
+        "verifiedSince": "Eega yeroo mirkanaa'e irraa",
+        "sectionProfileSummary": "1. Cuunfaa Piroofaayilii",
+        "sectionTransactionHistory": "2. Seenaa Daldalaa",
+        "sectionFulfillment": "3. Raawwii Guutinsa Ajajaa",
+        "sectionBuyerDiversity": "4. Garaagarummaa Bittootaa",
+        "sectionMethodology": "5. Yaadannoo Mala Hojii",
+        "rollingPerformanceWindows": "Fuul-dureewwan Raawwii Socho'aa",
+        "payoutOutcomes": "Bu'aawwan Kaffaltii",
+        "topBuyersSection": "Bittoota Ol'aanaa",
+        "buyerCountriesSection": "Biyyoota Bittootaa",
+        "buyerCategoriesSection": "Ramaddii Bittootaa",
+        "noData": "Deetaan hin argamne",
+        "orders": "{count} ajajoota",
+        "buyerShare": "{count} bittoota ({share}%)"
       }
     },
     "inventory": {

@@ -32,7 +32,6 @@
   "navigation": {
     "dashboard": "ዳሽቦርድ",
     "marketplace": "የገበያ ቦታ",
-    "directory": "ማውጫ",
     "products": "ምርቶቼ",
     "inventory": "እቃ አስተዳደር",
     "messages": "መልዕክቶች",
@@ -232,21 +231,6 @@
     "sellerAgreementLabel": "አንብቤ እና ተስማምቻለሁ በ",
     "sellerAgreementLink": "የሻጭ ስምምነት",
     "sellerAgreementRequired": "ንግድዎን ለመመዝገብ የሻጭ ስምምነቱን መቀበል አለብዎት።"
-  },
-  "directory": {
-    "title": "የንግድ ማውጫ",
-    "description": "በአፍሪካ ውስጥ የተረጋገጡ ንግዶችን ያግኙ",
-    "searchPlaceholder": "ንግዶችን ይፈልጉ...",
-    "allCategories": "ሁሉም ምድቦች",
-    "allCountries": "ሁሉም አገራት",
-    "verified": "የተረጋገጠ",
-    "pending": "በመጠባበቅ ላይ",
-    "products": "ምርቶች",
-    "viewProfile": "ፕሮፋይል ይመልከቱ",
-    "noBusinesses": "ምንም ንግዶች አልተገኙም",
-    "noBusinessesDescription": "ከፍለጋ መስፈርትዎ ጋር የሚዛመድ ምንም ንግድ የለም።",
-    "contactInfo": "የመገናኛ መረጃ",
-    "businessDetails": "የንግድ ዝርዝሮች"
   },
   "cart": {
     "title": "የግዢ ጋሪ",
@@ -492,8 +476,6 @@
       "description": "በልበ ሙሉነት ለመነገድ የሚያስፈልግዎ ሁሉ",
       "marketplace": "የገበያ ቦታ",
       "marketplaceDesc": "በእኛ B2B የገበያ ቦታ ምርቶችን ያስሱ እና ይዘርዝሩ። የሚፈልጉትን ያግኙ ወይም አዲስ ደንበኞችን ያግኙ።",
-      "directory": "የንግድ ማውጫ",
-      "directoryDesc": "በመላው አፍሪካ ንግዶችን ያግኙ። በኢንዱስትሪዎ ውስጥ አጋሮችን፣ አቅራቢዎችን እና ገዢዎችን ያግኙ።",
       "verification": "የንግድ ማረጋገጫ",
       "verificationDesc": "የማረጋገጫ ሂደታችንን ላጠናቀቁ ንግዶች የተረጋገጠ ባጅ፣ በእያንዳንዱ ግብይት እምነት ይገነባል።",
       "securePayments": "ደህንነቱ የተጠበቀ ክፍያዎች",
@@ -1200,6 +1182,27 @@
         "fulfillment": "አፈጻጸም የትዕዛዝ ሁኔታን እና የክፍያ ውጤቶችን እንደ የስራ ምልክቶች ይጠቀማል።",
         "buyerDiversity": "የገዢ ልዩነት በተገናኙ የገዢ ንግድ መዝገቦች ላይ የተመሠረተ ስለሆነ ያልተሟላ መረጃ ሽፋንን ይቀንሳል።"
       }
+    },
+    "report": {
+      "generatedOn": "የተዘጋጀበት ቀን {date}",
+      "latestActivity": "የቅርብ ጊዜ እንቅስቃሴ: {date}",
+      "reportPeriod": "የሪፖርት ጊዜ: {start} — {end}",
+      "category": "ምድብ",
+      "country": "ሀገር",
+      "verifiedSince": "ከተረጋገጠበት ጊዜ",
+      "sectionProfileSummary": "1. የመገለጫ ማጠቃለያ",
+      "sectionTransactionHistory": "2. የግብይት ታሪክ",
+      "sectionFulfillment": "3. የማሟያ አፈጻጸም",
+      "sectionBuyerDiversity": "4. የገዢዎች ብዝሃነት",
+      "sectionMethodology": "5. የዘዴ ማስታወሻ",
+      "rollingPerformanceWindows": "ተንቀሳቃሽ የአፈጻጸም መስኮቶች",
+      "payoutOutcomes": "የክፍያ ውጤቶች",
+      "topBuyersSection": "ዋና ገዢዎች",
+      "buyerCountriesSection": "የገዢዎች ሀገራት",
+      "buyerCategoriesSection": "የገዢዎች ምድቦች",
+      "noData": "ምንም ውሂብ የለም",
+      "orders": "{count} ትዕዛዞች",
+      "buyerShare": "{count} ገዢዎች ({share}%)"
     }
   },
   "inventory": {

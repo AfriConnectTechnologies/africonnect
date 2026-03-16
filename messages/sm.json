@@ -32,7 +32,6 @@
     "navigation": {
       "dashboard": "Dashboard-ka",
       "marketplace": "Suuqa",
-      "directory": "Buugga Ganacsiyada",
       "products": "Alaabtayda",
       "inventory": "Kaydka",
       "messages": "Farriimaha",
@@ -232,21 +231,6 @@
       "sellerAgreementLabel": "Waan akhriyay oo waan aqbalay",
       "sellerAgreementLink": "Heshiiska Iibiyaha",
       "sellerAgreementRequired": "Waa inaad aqbashaa Heshiiska Iibiyaha si aad u diiwaangeliso ganacsigaaga."
-    },
-    "directory": {
-      "title": "Buugga Ganacsiyada",
-      "description": "Baro ganacsiyada la xaqiijiyay ee ku yaal Afrika oo dhan",
-      "searchPlaceholder": "Raadi ganacsiyo...",
-      "allCategories": "Dhammaan Qaybaha",
-      "allCountries": "Dhammaan Waddamada",
-      "verified": "La xaqiijiyay",
-      "pending": "Sugaya",
-      "products": "Alaabta",
-      "viewProfile": "Eeg Profile-ka",
-      "noBusinesses": "Wax ganacsi ah lama helin",
-      "noBusinessesDescription": "Ma jiraan ganacsiyo u dhiganta shuruudaha raadintaada.",
-      "contactInfo": "Macluumaadka Xiriirka",
-      "businessDetails": "Faahfaahinta Ganacsiga"
     },
     "cart": {
       "title": "Gaariga Dukaanka",
@@ -1200,6 +1184,27 @@
           "fulfillment": "Fulinta waxay isticmaashaa xaaladda dalabka iyo natiijooyinka bixinta lacagta sidii calaamadaha waxqabadka hawlgalka.",
           "buyerDiversity": "Kala duwanaanshaha iibsadayaasha wuxuu ku salaysan yahay diiwaannada ganacsiga iibsadaha ee ku xiran."
         }
+      },
+      "report": {
+        "generatedOn": "La sameeyay {date}",
+        "latestActivity": "Hawlgalkii ugu dambeeyay: {date}",
+        "reportPeriod": "Muddada warbixinta: {start} — {end}",
+        "category": "Qaybta",
+        "country": "Dalka",
+        "verifiedSince": "La xaqiijiyay tan iyo",
+        "sectionProfileSummary": "1. Soo Koobidda Profile-ka",
+        "sectionTransactionHistory": "2. Taariikhda Macaamilka",
+        "sectionFulfillment": "3. Waxqabadka Fulinta",
+        "sectionBuyerDiversity": "4. Kala Duwanaanshaha Iibsadayaasha",
+        "sectionMethodology": "5. Qoraalka Habraaca",
+        "rollingPerformanceWindows": "Daaqadaha Waxqabadka Isdaba-joogga ah",
+        "payoutOutcomes": "Natiijooyinka Bixinta",
+        "topBuyersSection": "Iibsadayaasha Ugu Sarreeya",
+        "buyerCountriesSection": "Dalalka Iibsadayaasha",
+        "buyerCategoriesSection": "Qaybaha Iibsadayaasha",
+        "noData": "Xog lama heli karo",
+        "orders": "{count} dalab",
+        "buyerShare": "{count} iibsade ({share}%)"
       }
     },
     "inventory": {

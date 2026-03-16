@@ -26,14 +26,14 @@ const translations = {
     intro: "Great news! Your business has been successfully verified on AfriConnect.",
     businessLabel: "Business:",
     whatThisMeans: "What this means for you:",
-    benefit1: "Your business is now visible in the AfriConnect directory",
+    benefit1: "Your business is now visible on AfriConnect",
     benefit2: "You can list products on the marketplace",
     benefit3: "Buyers can discover and purchase from your business",
     benefit4: "You'll receive notifications when orders come in",
     getStarted: "Ready to get started?",
     addProducts: "Add your first products to the marketplace and start receiving orders from businesses across Africa.",
     startSelling: "Start Selling",
-    viewDirectory: "View Directory",
+    viewMarketplace: "View Marketplace",
     questions: "If you have any questions, our support team is here to help.",
     congrats: "Congratulations again!",
     team: "The AfriConnect Team",
@@ -45,14 +45,14 @@ const translations = {
     intro: "ጥሩ ዜና! ንግድዎ በAfriConnect በተሳካ ሁኔታ ተረጋግጧል።",
     businessLabel: "ንግድ፡",
     whatThisMeans: "ይህ ለእርስዎ ምን ማለት ነው፡",
-    benefit1: "ንግድዎ አሁን በAfriConnect ማውጫ ውስጥ ይታያል",
+    benefit1: "ንግድዎ አሁን በAfriConnect ላይ ይታያል",
     benefit2: "በገበያ ቦታ ላይ ምርቶችን መዘርዘር ይችላሉ",
     benefit3: "ገዢዎች ንግድዎን ማግኘት እና መግዛት ይችላሉ",
     benefit4: "ትዕዛዞች ሲመጡ ማሳወቂያዎችን ይቀበላሉ",
     getStarted: "ለመጀመር ዝግጁ ነዎት?",
     addProducts: "የመጀመሪያ ምርቶችዎን ወደ ገበያ ቦታ ይጨምሩ እና ከአፍሪካ ንግዶች ትዕዛዞችን መቀበል ይጀምሩ።",
     startSelling: "መሸጥ ጀምር",
-    viewDirectory: "ማውጫ ይመልከቱ",
+    viewMarketplace: "ገበያ ቦታ ይመልከቱ",
     questions: "ማንኛውም ጥያቄ ካለዎት፣ የድጋፍ ቡድናችን ለመርዳት ዝግጁ ነው።",
     congrats: "እንደገና እንኳን ደስ አለዎት!",
     team: "የAfriConnect ቡድን",
@@ -64,14 +64,14 @@ const translations = {
     intro: "Habari njema! Biashara yako imethibitishwa kwa mafanikio kwenye AfriConnect.",
     businessLabel: "Biashara:",
     whatThisMeans: "Hii inamaanisha nini kwako:",
-    benefit1: "Biashara yako sasa inaonekana katika saraka ya AfriConnect",
+    benefit1: "Biashara yako sasa inaonekana kwenye AfriConnect",
     benefit2: "Unaweza kuorodhesha bidhaa kwenye soko",
     benefit3: "Wanunuzi wanaweza kugundua na kununua kutoka kwa biashara yako",
     benefit4: "Utapokea arifa maagizo yatakapokuja",
     getStarted: "Uko tayari kuanza?",
     addProducts: "Ongeza bidhaa zako za kwanza kwenye soko na uanze kupokea maagizo kutoka kwa biashara kote Afrika.",
     startSelling: "Anza Kuuza",
-    viewDirectory: "Angalia Saraka",
+    viewMarketplace: "Angalia Soko",
     questions: "Ikiwa una maswali yoyote, timu yetu ya msaada ipo hapa kusaidia.",
     congrats: "Hongera tena!",
     team: "Timu ya AfriConnect",
@@ -135,8 +135,8 @@ export function BusinessVerifiedEmail({
               <Link href={`${baseUrl}/products`} style={buttonPrimary}>
                 {t.startSelling}
               </Link>
-              <Link href={`${baseUrl}/directory`} style={buttonSecondary}>
-                {t.viewDirectory}
+              <Link href={`${baseUrl}/marketplace`} style={buttonSecondary}>
+                {t.viewMarketplace}
               </Link>
             </Section>
 

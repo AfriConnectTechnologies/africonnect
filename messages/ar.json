@@ -32,7 +32,6 @@
     "navigation": {
       "dashboard": "لوحة القيادة",
       "marketplace": "السوق",
-      "directory": "الدليل",
       "products": "منتجاتي",
       "inventory": "المخزون",
       "messages": "الرسائل",
@@ -232,21 +231,6 @@
       "sellerAgreementLabel": "لقد قرأت وأوافق على",
       "sellerAgreementLink": "اتفاقية البائع",
       "sellerAgreementRequired": "يجب عليك قبول اتفاقية البائع لتسجيل عملك التجاري."
-    },
-    "directory": {
-      "title": "دليل الأعمال",
-      "description": "اكتشف الشركات الموثقة عبر أفريقيا",
-      "searchPlaceholder": "البحث عن شركات...",
-      "allCategories": "جميع الفئات",
-      "allCountries": "جميع الدول",
-      "verified": "موثق",
-      "pending": "قيد الانتظار",
-      "products": "المنتجات",
-      "viewProfile": "عرض الملف الشخصي",
-      "noBusinesses": "لم يتم العثور على شركات",
-      "noBusinessesDescription": "لا توجد شركات تطابق معايير بحثك.",
-      "contactInfo": "معلومات الاتصال",
-      "businessDetails": "تفاصيل العمل التجاري"
     },
     "cart": {
       "title": "سلة التسوق",
@@ -492,8 +476,6 @@
         "description": "كل ما تحتاجه للتداول بثقة",
         "marketplace": "السوق",
         "marketplaceDesc": "تصفح وأدرج المنتجات في سوق B2B الخاص بنا. اعثر على ما تحتاجه أو صل لعملاء جدد.",
-        "directory": "دليل الأعمال",
-        "directoryDesc": "اكتشف الشركات عبر أفريقيا. ابحث عن شركاء، موردين، ومشترين في صناعتك.",
         "verification": "توثيق الأعمال",
         "verificationDesc": "شارات موثقة للشركات التي تكمل عملية التوثيق لدينا، لبناء الثقة في كل معاملة.",
         "securePayments": "مدفوعات آمنة",
@@ -1200,6 +1182,27 @@
           "fulfillment": "يستخدم التنفيذ حالة الطلب ونتائج المدفوعات كإشارات للأداء التشغيلي.",
           "buyerDiversity": "يعتمد تنوع المشترين على سجلات أعمال المشترين المرتبطة، لذا فإن نقص البيانات الوصفية للمشتري يقلل من التغطية."
         }
+      },
+      "report": {
+        "generatedOn": "تم الإنشاء في {date}",
+        "latestActivity": "آخر نشاط: {date}",
+        "reportPeriod": "فترة التقرير: {start} — {end}",
+        "category": "الفئة",
+        "country": "البلد",
+        "verifiedSince": "تم التحقق منذ",
+        "sectionProfileSummary": "1. ملخص الملف الشخصي",
+        "sectionTransactionHistory": "2. سجل المعاملات",
+        "sectionFulfillment": "3. أداء التنفيذ",
+        "sectionBuyerDiversity": "4. تنوع المشترين",
+        "sectionMethodology": "5. ملاحظة منهجية",
+        "rollingPerformanceWindows": "نوافذ الأداء المتجددة",
+        "payoutOutcomes": "نتائج المدفوعات",
+        "topBuyersSection": "أبرز المشترين",
+        "buyerCountriesSection": "بلدان المشترين",
+        "buyerCategoriesSection": "فئات المشترين",
+        "noData": "لا توجد بيانات متاحة",
+        "orders": "{count} طلبات",
+        "buyerShare": "{count} مشترين ({share}%)"
       }
     },
     "inventory": {

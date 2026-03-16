@@ -32,7 +32,6 @@
     "navigation": {
       "dashboard": "Tableau de bord",
       "marketplace": "Marché",
-      "directory": "Annuaire",
       "products": "Mes produits",
       "inventory": "Inventaire",
       "messages": "Messages",
@@ -232,21 +231,6 @@
       "sellerAgreementLabel": "J'ai lu et j'accepte l'accord du",
       "sellerAgreementLink": "Vendeur",
       "sellerAgreementRequired": "Vous devez accepter l'Accord du Vendeur pour enregistrer votre entreprise."
-    },
-    "directory": {
-      "title": "Annuaire des entreprises",
-      "description": "Découvrez des entreprises vérifiées à travers l'Afrique",
-      "searchPlaceholder": "Rechercher des entreprises...",
-      "allCategories": "Toutes les catégories",
-      "allCountries": "Tous les pays",
-      "verified": "Vérifiée",
-      "pending": "En attente",
-      "products": "Produits",
-      "viewProfile": "Voir le profil",
-      "noBusinesses": "Aucune entreprise trouvée",
-      "noBusinessesDescription": "Aucune entreprise ne correspond à vos critères de recherche.",
-      "contactInfo": "Informations de contact",
-      "businessDetails": "Détails de l'entreprise"
     },
     "cart": {
       "title": "Panier",
@@ -492,8 +476,6 @@
         "description": "Tout ce dont vous avez besoin pour échanger en toute confiance",
         "marketplace": "Marché",
         "marketplaceDesc": "Parcourez et listez des produits sur notre marché B2B. Trouvez ce dont vous avez besoin ou atteignez de nouveaux clients.",
-        "directory": "Annuaire des entreprises",
-        "directoryDesc": "Découvrez des entreprises à travers l'Afrique. Trouvez des partenaires, fournisseurs et acheteurs dans votre secteur.",
         "verification": "Vérification des entreprises",
         "verificationDesc": "Badges de vérification pour les entreprises qui terminent notre processus de vérification, renforçant la confiance dans chaque transaction.",
         "securePayments": "Paiements sécurisés",
@@ -1200,6 +1182,27 @@
           "fulfillment": "L'exécution utilise le statut de la commande et les résultats des reversements comme signaux de performance opérationnelle.",
           "buyerDiversity": "La diversité des acheteurs est basée sur les dossiers d'entreprise liés ; une métadonnée incomplète réduit donc la couverture."
         }
+      },
+      "report": {
+        "generatedOn": "Généré le {date}",
+        "latestActivity": "Dernière activité : {date}",
+        "reportPeriod": "Période du rapport : {start} — {end}",
+        "category": "Catégorie",
+        "country": "Pays",
+        "verifiedSince": "Vérifié depuis",
+        "sectionProfileSummary": "1. Résumé du profil",
+        "sectionTransactionHistory": "2. Historique des transactions",
+        "sectionFulfillment": "3. Performance de traitement",
+        "sectionBuyerDiversity": "4. Diversité des acheteurs",
+        "sectionMethodology": "5. Note méthodologique",
+        "rollingPerformanceWindows": "Fenêtres de performance glissantes",
+        "payoutOutcomes": "Résultats des paiements",
+        "topBuyersSection": "Principaux acheteurs",
+        "buyerCountriesSection": "Pays des acheteurs",
+        "buyerCategoriesSection": "Catégories des acheteurs",
+        "noData": "Aucune donnée disponible",
+        "orders": "{count} commandes",
+        "buyerShare": "{count} acheteurs ({share}%)"
       }
     },
     "inventory": {

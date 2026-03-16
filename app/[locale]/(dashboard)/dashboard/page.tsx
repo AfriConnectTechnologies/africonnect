@@ -4,15 +4,21 @@ import { useState, useEffect } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { useTranslations } from "next-intl";
 import { api } from "@/convex/_generated/api";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { ShoppingCart, DollarSign, Clock, CheckCircle2, Search, ChevronDown, ChevronUp } from "lucide-react";
+import { ShoppingCart, DollarSign, Clock, CheckCircle2, Search, TrendingUp } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { WelcomeHeader } from "@/components/dashboard/WelcomeHeader";
 import { CategoryChips } from "@/components/dashboard/CategoryChips";
 import { ProductGrid } from "@/components/dashboard/ProductGrid";
+
+const STAT_CONFIG = [
+  { key: "totalOrders", icon: ShoppingCart, color: "text-blue-600 dark:text-blue-400", bg: "bg-blue-50 dark:bg-blue-950/40" },
+  { key: "totalRevenue", icon: DollarSign, color: "text-emerald-600 dark:text-emerald-400", bg: "bg-emerald-50 dark:bg-emerald-950/40" },
+  { key: "pendingOrders", icon: Clock, color: "text-amber-600 dark:text-amber-400", bg: "bg-amber-50 dark:bg-amber-950/40" },
+  { key: "completedOrders", icon: CheckCircle2, color: "text-violet-600 dark:text-violet-400", bg: "bg-violet-50 dark:bg-violet-950/40" },
+] as const;
 
 export default function DashboardPage() {
   const t = useTranslations("dashboard");
@@ -21,13 +27,10 @@ export default function DashboardPage() {
   const ensureUser = useMutation(api.users.ensureUser);
   const stats = useQuery(api.stats.getDashboardStats);
   
-  // Product browsing state
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
-  const [statsExpanded, setStatsExpanded] = useState(false);
 
-  // Debounce search input
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchQuery);
@@ -35,27 +38,72 @@ export default function DashboardPage() {
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  // Fetch products with filters
   const products = useQuery(api.products.marketplace, {
     search: debouncedSearch || undefined,
     category: selectedCategory === "all" ? undefined : selectedCategory,
   });
 
-  // Ensure user exists when component mounts
   useEffect(() => {
-    ensureUser().catch(() => {
-      // Silently fail if user creation fails (user might already exist)
-    });
+    ensureUser().catch(() => {});
   }, [ensureUser]);
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
   };
 
+  const formatStatValue = (key: string, stats: { totalOrders: number; totalRevenue: number; pendingOrders: number; completedOrders: number }) => {
+    if (key === "totalRevenue") return `$${stats.totalRevenue.toLocaleString()}`;
+    return stats[key as keyof typeof stats].toLocaleString();
+  };
+
+  const getStatLabel = (key: string) => {
+    if (key === "completedOrders") return tOrders("completed");
+    return t(key);
+  };
+
   return (
-    <div className="space-y-6">
-      {/* Welcome Header */}
+    <div className="space-y-8">
       <WelcomeHeader />
+
+      {/* Stats Strip */}
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
+        {stats === undefined
+          ? [1, 2, 3, 4].map((i) => (
+              <div key={i} className="flex items-center gap-3 rounded-xl border bg-card p-4 animate-pulse">
+                <div className="h-10 w-10 rounded-lg bg-muted shrink-0" />
+                <div className="space-y-2 flex-1 min-w-0">
+                  <div className="h-3 w-16 rounded bg-muted" />
+                  <div className="h-6 w-12 rounded bg-muted" />
+                </div>
+              </div>
+            ))
+          : STAT_CONFIG.map(({ key, icon: Icon, color, bg }) => (
+              <div
+                key={key}
+                className="group flex items-center gap-3 rounded-xl border bg-card p-4 transition-colors hover:border-primary/30"
+              >
+                <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${bg}`}>
+                  <Icon className={`h-5 w-5 ${color}`} />
+                </div>
+                <div className="min-w-0">
+                  <p className="truncate text-xs font-medium text-muted-foreground">
+                    {getStatLabel(key)}
+                  </p>
+                  <p className="truncate text-xl font-bold tabular-nums tracking-tight">
+                    {formatStatValue(key, stats)}
+                  </p>
+                </div>
+              </div>
+            ))}
+        <Link
+          href="/orders"
+          className="col-span-2 flex items-center justify-center gap-2 rounded-xl border border-dashed bg-card/50 p-3 text-sm font-medium text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground lg:col-span-4"
+        >
+          <TrendingUp className="h-4 w-4" />
+          {tOrders("title")}
+          <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
+      </div>
 
       {/* Search Bar */}
       <div className="relative">
@@ -68,7 +116,6 @@ export default function DashboardPage() {
         />
       </div>
 
-      {/* Category Chips */}
       <CategoryChips
         selectedCategory={selectedCategory}
         onCategoryChange={handleCategoryChange}
@@ -95,92 +142,6 @@ export default function DashboardPage() {
 
         <ProductGrid products={products} isLoading={products === undefined} />
       </div>
-
-      {/* Collapsible Stats Section */}
-      <Card>
-        <CardHeader 
-          className="cursor-pointer hover:bg-accent/50 transition-colors"
-          onClick={() => setStatsExpanded(!statsExpanded)}
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <CardTitle className="flex items-center gap-2">
-                {t("quickStats")}
-              </CardTitle>
-              <CardDescription>{t("overview")}</CardDescription>
-            </div>
-            {statsExpanded ? (
-              <ChevronUp className="h-5 w-5 text-muted-foreground" />
-            ) : (
-              <ChevronDown className="h-5 w-5 text-muted-foreground" />
-            )}
-          </div>
-        </CardHeader>
-        {statsExpanded && (
-          <CardContent className="pt-0">
-            {stats === undefined ? (
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="h-24 bg-muted rounded-lg animate-pulse" />
-                ))}
-              </div>
-            ) : (
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">{t("totalOrders")}</CardTitle>
-                    <ShoppingCart className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">{stats.totalOrders}</div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">{t("totalRevenue")}</CardTitle>
-                    <DollarSign className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">
-                      ${stats.totalRevenue.toLocaleString()}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">{t("pendingOrders")}</CardTitle>
-                    <Clock className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">{stats.pendingOrders}</div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">{tOrders("completed")}</CardTitle>
-                    <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">{stats.completedOrders}</div>
-                  </CardContent>
-                </Card>
-              </div>
-            )}
-
-            <div className="mt-4">
-              <Link href="/orders">
-                <Button>
-                  {tOrders("title")}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-          </CardContent>
-        )}
-      </Card>
     </div>
   );
 }

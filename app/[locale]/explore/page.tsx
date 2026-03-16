@@ -44,18 +44,7 @@ export default function ExplorePage() {
 
   return (
     <>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-      <style>{`
-        .font-display { font-family: 'Newsreader', Georgia, serif; }
-        .font-body { font-family: 'Figtree', system-ui, sans-serif; }
-      `}</style>
-
-      <div className="font-body flex min-h-screen flex-col bg-background text-foreground">
+      <div className="flex min-h-screen flex-col bg-background text-foreground">
         <PublicHeader />
 
         <main className="flex-1 pt-24">
@@ -63,7 +52,7 @@ export default function ExplorePage() {
             {/* Page Header */}
             <div className="mb-10">
               <p className="text-xs font-medium tracking-widest uppercase text-primary mb-3">Explore</p>
-              <h1 className="font-display text-[clamp(1.75rem,3.5vw,2.75rem)] font-normal leading-tight tracking-tight mb-3">
+              <h1 className="text-[clamp(1.75rem,3.5vw,2.75rem)] font-semibold leading-tight tracking-tight mb-3">
                 Marketplace
               </h1>
               <p className="text-sm text-muted-foreground max-w-lg leading-relaxed">
@@ -115,7 +104,7 @@ export default function ExplorePage() {
             ) : products.length === 0 ? (
               <div className="py-24 text-center">
                 <Package className="mx-auto mb-4 h-12 w-12 text-muted-foreground/40" />
-                <h2 className="font-display text-xl font-normal mb-2">No products found</h2>
+                <h2 className="text-xl font-semibold mb-2">No products found</h2>
                 <p className="text-sm text-muted-foreground max-w-md mx-auto">
                   {searchQuery || categoryFilter
                     ? "No products match your search. Try adjusting your filters."
