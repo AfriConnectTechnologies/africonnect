@@ -3,7 +3,7 @@
 import type { ComponentType } from "react";
 import { useQuery } from "convex/react";
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowLeft, Building2, Download, FileText, Globe2, Printer, RefreshCw, ShieldCheck, TrendingUp, Users } from "lucide-react";
+import { ArrowLeft, Building2, Download, FileText, Globe2, Printer, ShieldCheck, TrendingUp, Users } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";

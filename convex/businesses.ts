@@ -1,7 +1,9 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { requireAdmin, requireUser, getOrCreateUser } from "./helpers";
+import { requireAdmin, requireUser, getOrCreateUser, hasSellerAccess } from "./helpers";
 import { createLogger, flushLogs } from "./lib/logger";
+
+const nullableOptionalString = v.optional(v.union(v.string(), v.null()));
 
 // Create a new business (verification starts as pending)
 export const createBusiness = mutation({
@@ -37,33 +39,20 @@ export const createBusiness = mutation({
       const user = await getOrCreateUser(ctx);
       log.setContext({ userId: user.clerkId });
 
-      const activeSellerAgreement = await ctx.db
-        .query("agreementVersions")
-        .withIndex("by_type_active", (q) =>
-          q.eq("type", "seller").eq("isActive", true)
-        )
-        .first();
-
-      if (!activeSellerAgreement) {
-        log.warn("Business creation blocked - no active seller agreement");
-        await flushLogs();
-        throw new Error("Seller agreement is unavailable. Please try again.");
+      if (!args.businessLicenceImageUrl) {
+        throw new Error("Business licence document upload is required.");
       }
 
-      const sellerAgreementAcceptance = await ctx.db
-        .query("agreementAcceptances")
-        .withIndex("by_user_type_version", (q) =>
-          q
-            .eq("userId", user._id)
-            .eq("agreementType", "seller")
-            .eq("agreementVersionId", activeSellerAgreement._id)
-        )
-        .first();
+      if (!args.memoOfAssociationImageUrl) {
+        throw new Error("Memo of association document upload is required.");
+      }
 
-      if (!sellerAgreementAcceptance) {
-        log.warn("Business creation blocked - seller agreement not accepted");
-        await flushLogs();
-        throw new Error("You must accept the Seller Agreement before registering.");
+      if (!args.tinCertificateImageUrl) {
+        throw new Error("TIN certificate document upload is required.");
+      }
+
+      if (args.hasImportExportPermit && !args.importExportPermitImageUrl) {
+        throw new Error("Import/export permit document upload is required.");
       }
 
       // Check if user already has a business
@@ -149,14 +138,14 @@ export const updateBusiness = mutation({
     website: v.optional(v.string()),
     category: v.optional(v.string()),
     logoUrl: v.optional(v.string()),
-    businessLicenceImageUrl: v.optional(v.string()),
-    businessLicenceNumber: v.optional(v.string()),
-    memoOfAssociationImageUrl: v.optional(v.string()),
-    tinCertificateImageUrl: v.optional(v.string()),
-    tinCertificateNumber: v.optional(v.string()),
+    businessLicenceImageUrl: nullableOptionalString,
+    businessLicenceNumber: nullableOptionalString,
+    memoOfAssociationImageUrl: nullableOptionalString,
+    tinCertificateImageUrl: nullableOptionalString,
+    tinCertificateNumber: nullableOptionalString,
     hasImportExportPermit: v.optional(v.boolean()),
-    importExportPermitImageUrl: v.optional(v.string()),
-    importExportPermitNumber: v.optional(v.string()),
+    importExportPermitImageUrl: nullableOptionalString,
+    importExportPermitNumber: nullableOptionalString,
     payoutBankCode: v.optional(v.string()),
     payoutBankName: v.optional(v.string()),
     payoutAccountNumber: v.optional(v.string()),
@@ -180,6 +169,19 @@ export const updateBusiness = mutation({
         throw new Error("You don't have a registered business");
       }
 
+      const isPayoutUpdateRequested =
+        args.payoutBankCode !== undefined ||
+        args.payoutBankName !== undefined ||
+        args.payoutAccountNumber !== undefined ||
+        args.payoutAccountName !== undefined ||
+        args.payoutEnabled !== undefined;
+
+      if (isPayoutUpdateRequested && !hasSellerAccess(user)) {
+        log.warn("Business update failed - seller access required for payout update");
+        await flushLogs();
+        throw new Error("Unauthorized: Seller access required");
+      }
+
       log.setContext({ businessId: user.businessId });
 
       const business = await ctx.db.get(user.businessId);
@@ -201,9 +203,81 @@ export const updateBusiness = mutation({
         throw new Error("Unauthorized: You can only update your own business");
       }
 
-      const updates: Partial<typeof args & { updatedAt: number; payoutUpdatedAt: number }> = {
+      const updates: Partial<
+        typeof args & {
+          updatedAt: number;
+          payoutUpdatedAt: number;
+          verificationStatus: "pending" | "verified" | "rejected";
+        }
+      > = {
         updatedAt: Date.now(),
       };
+      const verificationFieldNames = [
+        "name",
+        "description",
+        "country",
+        "city",
+        "address",
+        "phone",
+        "website",
+        "category",
+        "businessLicenceImageUrl",
+        "businessLicenceNumber",
+        "memoOfAssociationImageUrl",
+        "tinCertificateImageUrl",
+        "tinCertificateNumber",
+        "hasImportExportPermit",
+        "importExportPermitImageUrl",
+        "importExportPermitNumber",
+      ] as const;
+      const finalBusinessLicenceImageUrl =
+        args.businessLicenceImageUrl !== undefined
+          ? args.businessLicenceImageUrl
+          : business.businessLicenceImageUrl;
+      const finalMemoOfAssociationImageUrl =
+        args.memoOfAssociationImageUrl !== undefined
+          ? args.memoOfAssociationImageUrl
+          : business.memoOfAssociationImageUrl;
+      const finalTinCertificateImageUrl =
+        args.tinCertificateImageUrl !== undefined
+          ? args.tinCertificateImageUrl
+          : business.tinCertificateImageUrl;
+      const finalHasImportExportPermit =
+        args.hasImportExportPermit !== undefined
+          ? args.hasImportExportPermit
+          : business.hasImportExportPermit;
+      const finalImportExportPermitImageUrl =
+        args.importExportPermitImageUrl !== undefined
+          ? args.importExportPermitImageUrl
+          : business.importExportPermitImageUrl;
+      const verificationDocumentFieldsChanged =
+        (args.businessLicenceImageUrl !== undefined &&
+          args.businessLicenceImageUrl !== business.businessLicenceImageUrl) ||
+        (args.memoOfAssociationImageUrl !== undefined &&
+          args.memoOfAssociationImageUrl !== business.memoOfAssociationImageUrl) ||
+        (args.tinCertificateImageUrl !== undefined &&
+          args.tinCertificateImageUrl !== business.tinCertificateImageUrl) ||
+        (args.hasImportExportPermit !== undefined &&
+          args.hasImportExportPermit !== business.hasImportExportPermit) ||
+        ((finalHasImportExportPermit ?? false) &&
+          args.importExportPermitImageUrl !== undefined &&
+          args.importExportPermitImageUrl !== business.importExportPermitImageUrl);
+
+      if (!finalBusinessLicenceImageUrl) {
+        throw new Error("Business licence document upload is required.");
+      }
+
+      if (!finalMemoOfAssociationImageUrl) {
+        throw new Error("Memo of association document upload is required.");
+      }
+
+      if (!finalTinCertificateImageUrl) {
+        throw new Error("TIN certificate document upload is required.");
+      }
+
+      if (finalHasImportExportPermit && !finalImportExportPermitImageUrl) {
+        throw new Error("Import/export permit document upload is required.");
+      }
 
       if (args.name !== undefined) updates.name = args.name;
       if (args.description !== undefined) updates.description = args.description;
@@ -222,19 +296,27 @@ export const updateBusiness = mutation({
       if (args.hasImportExportPermit !== undefined) updates.hasImportExportPermit = args.hasImportExportPermit;
       if (args.importExportPermitImageUrl !== undefined) updates.importExportPermitImageUrl = args.importExportPermitImageUrl;
       if (args.importExportPermitNumber !== undefined) updates.importExportPermitNumber = args.importExportPermitNumber;
-      if (args.payoutBankCode !== undefined) updates.payoutBankCode = args.payoutBankCode;
-      if (args.payoutBankName !== undefined) updates.payoutBankName = args.payoutBankName;
-      if (args.payoutAccountNumber !== undefined) updates.payoutAccountNumber = args.payoutAccountNumber;
-      if (args.payoutAccountName !== undefined) updates.payoutAccountName = args.payoutAccountName;
-      if (args.payoutEnabled !== undefined) updates.payoutEnabled = args.payoutEnabled;
-      if (
-        args.payoutBankCode !== undefined ||
-        args.payoutBankName !== undefined ||
-        args.payoutAccountNumber !== undefined ||
-        args.payoutAccountName !== undefined ||
-        args.payoutEnabled !== undefined
-      ) {
+      if (isPayoutUpdateRequested) {
+        if (args.payoutBankCode !== undefined) updates.payoutBankCode = args.payoutBankCode;
+        if (args.payoutBankName !== undefined) updates.payoutBankName = args.payoutBankName;
+        if (args.payoutAccountNumber !== undefined) updates.payoutAccountNumber = args.payoutAccountNumber;
+        if (args.payoutAccountName !== undefined) updates.payoutAccountName = args.payoutAccountName;
+        if (args.payoutEnabled !== undefined) updates.payoutEnabled = args.payoutEnabled;
         updates.payoutUpdatedAt = Date.now();
+      }
+
+      const shouldResubmitForReview =
+        (business.verificationStatus === "rejected" &&
+          verificationFieldNames.some(
+            (fieldName) =>
+              args[fieldName] !== undefined &&
+              args[fieldName] !== business[fieldName]
+          )) ||
+        (business.verificationStatus === "verified" &&
+          verificationDocumentFieldsChanged);
+
+      if (shouldResubmitForReview) {
+        updates.verificationStatus = "pending";
       }
 
       await ctx.db.patch(user.businessId, updates);
@@ -269,6 +351,10 @@ export const updatePayoutSettings = mutation({
     try {
       const user = await requireUser(ctx);
       log.setContext({ userId: user.clerkId });
+
+      if (!hasSellerAccess(user)) {
+        throw new Error("Unauthorized: Seller access required");
+      }
 
       if (!user.businessId) {
         throw new Error("You don't have a registered business");
@@ -342,13 +428,30 @@ export const getBusiness = query({
 export const getMyBusiness = query({
   args: {},
   handler: async (ctx) => {
-    const user = await requireUser(ctx);
+    const identity = await ctx.auth.getUserIdentity();
+    if (identity === null) {
+      return null;
+    }
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
+      .first();
+
+    if (!user) {
+      return null;
+    }
 
     if (!user.businessId) {
       return null;
     }
 
-    return await ctx.db.get(user.businessId);
+    const business = await ctx.db.get(user.businessId);
+    if (!business) {
+      return null;
+    }
+
+    return business;
   },
 });
 
@@ -495,17 +598,6 @@ export const verifyBusiness = mutation({
         updatedAt: Date.now(),
       });
 
-      const nextOwnerRole =
-        args.status === "verified"
-          ? "seller"
-          : owner.role === "admin"
-            ? "admin"
-            : "buyer";
-
-      await ctx.db.patch(owner._id, {
-        role: nextOwnerRole,
-      });
-
       const updatedBusiness = await ctx.db.get(args.businessId);
 
       log.info("Business verification completed", {
@@ -513,7 +605,7 @@ export const verifyBusiness = mutation({
         businessName: business.name,
         previousStatus,
         newStatus: args.status,
-        ownerRoleAfterReview: nextOwnerRole,
+        ownerRoleAfterReview: owner.role,
         ownerId: business.ownerId,
         ownerEmailPresent: !!owner?.email, // Don't log PII, just indicate presence
         adminId: admin._id,

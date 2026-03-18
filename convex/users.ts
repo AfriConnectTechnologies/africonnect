@@ -1,6 +1,11 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { requireAdmin } from "./helpers";
+import { api } from "./_generated/api";
+import {
+  getEffectiveSellerApplicationStatus,
+  requireAdmin,
+  requireVerifiedBusiness,
+} from "./helpers";
 import { createLogger, flushLogs } from "./lib/logger";
 
 export const getCurrentUser = query({
@@ -170,6 +175,149 @@ export const getUserRole = query({
   },
 });
 
+export const submitSellerApplication = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (identity === null) {
+      throw new Error("Not authenticated");
+    }
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
+      .first();
+
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    const hasAcceptedSellerAgreement = await ctx.runQuery(
+      api.agreements.hasAcceptedAgreement,
+      { userId: user._id, type: "seller" }
+    );
+
+    if (!hasAcceptedSellerAgreement) {
+      throw new Error("You must accept the seller agreement before applying.");
+    }
+
+    await requireVerifiedBusiness(ctx.db, user);
+
+    if (user.role === "seller" || user.role === "admin") {
+      throw new Error("Seller access is already active for this account.");
+    }
+
+    if (user.sellerApplicationStatus === "pending") {
+      throw new Error("Your seller application is already pending review.");
+    }
+
+    const now = Date.now();
+    await ctx.db.patch(user._id, {
+      sellerApplicationStatus: "pending",
+      sellerApplicationSubmittedAt: now,
+      sellerApplicationReviewedAt: undefined,
+      sellerApplicationReviewedBy: undefined,
+    });
+
+    return await ctx.db.get(user._id);
+  },
+});
+
+export const listSellerApplications = query({
+  args: {
+    status: v.optional(
+      v.union(v.literal("pending"), v.literal("approved"), v.literal("rejected"))
+    ),
+    search: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx);
+
+    let users;
+    if (args.status) {
+      users = await ctx.db
+        .query("users")
+        .withIndex("by_seller_application_status", (q) =>
+          q.eq("sellerApplicationStatus", args.status!)
+        )
+        .collect();
+    } else {
+      users = (await ctx.db.query("users").collect()).filter(
+        (user) => user.sellerApplicationStatus !== undefined
+      );
+    }
+
+    if (args.search) {
+      const searchLower = args.search.toLowerCase();
+      users = users.filter(
+        (user) =>
+          user.name?.toLowerCase().includes(searchLower) ||
+          user.email.toLowerCase().includes(searchLower)
+      );
+    }
+
+    const usersWithBusiness = await Promise.all(
+      users.map(async (user) => {
+        const business = user.businessId ? await ctx.db.get(user.businessId) : null;
+        return {
+          ...user,
+          business,
+          effectiveSellerApplicationStatus: getEffectiveSellerApplicationStatus(user),
+        };
+      })
+    );
+
+    return usersWithBusiness.sort((a, b) => {
+      const aDate = a.sellerApplicationSubmittedAt ?? 0;
+      const bDate = b.sellerApplicationSubmittedAt ?? 0;
+      return bDate - aDate;
+    });
+  },
+});
+
+export const reviewSellerApplication = mutation({
+  args: {
+    userId: v.id("users"),
+    status: v.union(v.literal("approved"), v.literal("rejected")),
+  },
+  handler: async (ctx, args) => {
+    const admin = await requireAdmin(ctx);
+    const user = await ctx.db.get(args.userId);
+
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    if (user.sellerApplicationStatus !== "pending") {
+      throw new Error("Application not pending");
+    }
+
+    if (!user.businessId) {
+      throw new Error("User does not have a business linked.");
+    }
+
+    const business = await ctx.db.get(user.businessId);
+    if (!business || business.verificationStatus !== "verified") {
+      throw new Error("Only users with verified businesses can be reviewed for seller access.");
+    }
+
+    const now = Date.now();
+    await ctx.db.patch(user._id, {
+      sellerApplicationStatus: args.status,
+      sellerApplicationReviewedAt: now,
+      sellerApplicationReviewedBy: admin._id,
+      role:
+        user.role === "admin"
+          ? "admin"
+          : args.status === "approved"
+            ? "seller"
+            : "buyer",
+    });
+
+    return await ctx.db.get(user._id);
+  },
+});
+
 // List all users (admin only)
 export const listUsers = query({
   args: {
@@ -271,6 +419,21 @@ export const setUserRole = mutation({
 
       await ctx.db.patch(args.userId, {
         role: args.role,
+        ...(args.role === "seller"
+          ? {
+              sellerApplicationStatus: "approved" as const,
+              sellerApplicationSubmittedAt: user.sellerApplicationSubmittedAt ?? Date.now(),
+              sellerApplicationReviewedAt: Date.now(),
+              sellerApplicationReviewedBy: admin._id,
+            }
+          : args.role === "buyer"
+            ? {
+                sellerApplicationStatus: undefined,
+                sellerApplicationSubmittedAt: undefined,
+                sellerApplicationReviewedAt: undefined,
+                sellerApplicationReviewedBy: undefined,
+              }
+          : {}),
       });
 
       log.info("User role changed successfully", {

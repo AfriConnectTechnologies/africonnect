@@ -1,6 +1,6 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { getOrCreateUser } from "./helpers";
+import { getOrCreateUser, requireVerifiedBusinessForBuying } from "./helpers";
 import { Id } from "./_generated/dataModel";
 import { createLogger, flushLogs } from "./lib/logger";
 
@@ -42,6 +42,8 @@ export const create = mutation({
       // For order payments, snapshot the cart items
       let cartSnapshot: string | undefined;
       if (args.paymentType === "order") {
+        await requireVerifiedBusinessForBuying(ctx.db, user);
+
         const cartItems = await ctx.db
           .query("cartItems")
           .withIndex("by_user", (q) => q.eq("userId", user._id))
@@ -381,6 +383,10 @@ export const updateStatus = mutation({
             await flushLogs();
             return await ctx.db.get(payment._id);
           }
+          
+          // Business verification is enforced before checkout starts in payments.create.
+          // Do not block order creation after a captured payment if the buyer's status
+          // changes while the processor callback is still in flight.
 
           // Group items by seller
           const itemsBySeller = new Map<string, typeof cartData>();

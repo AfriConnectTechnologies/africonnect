@@ -1,6 +1,6 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { requireSeller } from "./helpers";
+import { hasSellerAccess, requireSeller } from "./helpers";
 import type { MutationCtx } from "./_generated/server";
 import { createLogger, flushLogs } from "./lib/logger";
 
@@ -25,7 +25,7 @@ async function requireSellerForMutation(ctx: MutationCtx) {
     .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
     .first();
 
-  if (!user || (user.role !== "seller" && user.role !== "admin")) {
+  if (!user || !hasSellerAccess(user)) {
     throw new Error("Unauthorized: Seller access required");
   }
 

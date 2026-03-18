@@ -1,6 +1,8 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
+const nullableOptionalString = v.optional(v.union(v.string(), v.null()));
+
 export default defineSchema({
   users: defineTable({
     clerkId: v.string(),
@@ -9,6 +11,12 @@ export default defineSchema({
     imageUrl: v.optional(v.string()),
     role: v.optional(v.union(v.literal("buyer"), v.literal("seller"), v.literal("admin"))),
     businessId: v.optional(v.id("businesses")),
+    sellerApplicationStatus: v.optional(
+      v.union(v.literal("pending"), v.literal("approved"), v.literal("rejected"))
+    ),
+    sellerApplicationSubmittedAt: v.optional(v.number()),
+    sellerApplicationReviewedAt: v.optional(v.number()),
+    sellerApplicationReviewedBy: v.optional(v.id("users")),
     welcomeEmailSent: v.optional(v.boolean()),
     emailVerified: v.optional(v.boolean()),
     emailVerifiedAt: v.optional(v.number()),
@@ -20,7 +28,8 @@ export default defineSchema({
   })
     .index("by_clerk_id", ["clerkId"])
     .index("by_email", ["email"])
-    .index("by_role", ["role"]),
+    .index("by_role", ["role"])
+    .index("by_seller_application_status", ["sellerApplicationStatus"]),
 
   businesses: defineTable({
     ownerId: v.id("users"),
@@ -35,14 +44,14 @@ export default defineSchema({
     category: v.string(),
     verificationStatus: v.union(v.literal("pending"), v.literal("verified"), v.literal("rejected")),
     // Registration documents
-    businessLicenceImageUrl: v.optional(v.string()),
-    businessLicenceNumber: v.optional(v.string()),
-    memoOfAssociationImageUrl: v.optional(v.string()),
-    tinCertificateImageUrl: v.optional(v.string()),
-    tinCertificateNumber: v.optional(v.string()),
+    businessLicenceImageUrl: nullableOptionalString,
+    businessLicenceNumber: nullableOptionalString,
+    memoOfAssociationImageUrl: nullableOptionalString,
+    tinCertificateImageUrl: nullableOptionalString,
+    tinCertificateNumber: nullableOptionalString,
     hasImportExportPermit: v.optional(v.boolean()),
-    importExportPermitImageUrl: v.optional(v.string()),
-    importExportPermitNumber: v.optional(v.string()),
+    importExportPermitImageUrl: nullableOptionalString,
+    importExportPermitNumber: nullableOptionalString,
     payoutBankCode: v.optional(v.string()),
     payoutBankName: v.optional(v.string()),
     payoutAccountNumber: v.optional(v.string()),

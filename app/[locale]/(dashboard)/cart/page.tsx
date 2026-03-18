@@ -27,6 +27,8 @@ export default function CartPage() {
   const convex = useConvex();
 
   const ensureUser = useMutation(api.users.ensureUser);
+  const currentUser = useQuery(api.users.getCurrentUser);
+  const myBusiness = useQuery(api.businesses.getMyBusiness);
   const cart = useQuery(api.cart.get);
   const updateCartItem = useMutation(api.cart.update);
   const removeCartItem = useMutation(api.cart.remove);
@@ -34,6 +36,11 @@ export default function CartPage() {
   const buyerAgreementState = useQuery(api.agreements.hasAcceptedCurrentAgreement, {
     type: "buyer",
   });
+  const myBusinessLoaded = myBusiness !== undefined;
+  const buyerVerificationBlocked =
+    !!currentUser &&
+    myBusinessLoaded &&
+    (!currentUser.businessId || myBusiness?.verificationStatus !== "verified");
 
   useEffect(() => {
     ensureUser().catch(() => {
@@ -114,6 +121,17 @@ export default function CartPage() {
   };
 
   const handleCheckout = async () => {
+    if (buyerVerificationBlocked) {
+      const targetRoute = currentUser?.businessId ? "/business/profile" : "/business/verify";
+      toast.error(
+        currentUser?.businessId
+          ? "Your business must be verified before checkout."
+          : "Verify your business before checkout."
+      );
+      router.push(targetRoute);
+      return;
+    }
+
     if (buyerAgreementState === undefined) {
       toast.error(tCommon("loading"));
       return;
@@ -398,6 +416,7 @@ export default function CartPage() {
                     isCheckingOut ||
                     cart.length === 0 ||
                     !COMMERCE_ENABLED ||
+                    buyerVerificationBlocked ||
                     buyerAgreementState === undefined ||
                     buyerAgreementState?.status === "missing_active_version"
                   }
@@ -419,6 +438,13 @@ export default function CartPage() {
                     </>
                   )}
                 </Button>
+                {buyerVerificationBlocked && (
+                  <p className="text-sm text-muted-foreground">
+                    {currentUser?.businessId
+                      ? "Your business verification is not approved yet. Open your business profile to continue."
+                      : "Complete business verification before you can continue to checkout."}
+                  </p>
+                )}
                 <Link href="/marketplace">
                   <Button variant="outline" className="w-full">
                     {t("browseMarketplace")}

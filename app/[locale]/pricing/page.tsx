@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { Link } from "@/i18n/navigation";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
@@ -17,7 +15,6 @@ import { toast } from "sonner";
 
 export default function PricingPage() {
   const router = useRouter();
-  const t = useTranslations("landing");
   const tPricing = useTranslations("pricing");
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
   const [displayCurrency, setDisplayCurrency] = useState<"USD" | "ETB">("USD");

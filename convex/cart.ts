@@ -1,13 +1,13 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { getOrCreateUser } from "./helpers";
+import { getOrCreateUser, requireVerifiedBusinessForBuying } from "./helpers";
 import { createLogger, flushLogs } from "./lib/logger";
 
 export const get = query({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
     if (identity === null) {
-      throw new Error("Not authenticated");
+      return [];
     }
 
     const user = await ctx.db
@@ -65,6 +65,7 @@ export const add = mutation({
 
       const user = await getOrCreateUser(ctx);
       log.setContext({ userId: user.clerkId });
+      await requireVerifiedBusinessForBuying(ctx.db, user);
 
       const product = await ctx.db.get(args.productId);
       if (!product) {

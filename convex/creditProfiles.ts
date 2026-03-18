@@ -1,6 +1,6 @@
 import type { Doc, Id } from "./_generated/dataModel";
 import { query } from "./_generated/server";
-import { requireUser } from "./helpers";
+import { hasSellerAccess, requireUser } from "./helpers";
 
 const SETTLED_PAYMENT_STATUSES = new Set(["success"]);
 
@@ -192,7 +192,7 @@ export const getMyProfile = query({
       } as const;
     }
 
-    if (user.role !== "seller" && user.role !== "admin") {
+    if (!hasSellerAccess(user)) {
       return {
         access: {
           state: "not_seller",

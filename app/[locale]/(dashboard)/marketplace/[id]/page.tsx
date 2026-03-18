@@ -35,12 +35,14 @@ import { USD_TO_ETB_RATE } from "@/lib/pricing";
 export default function ProductDetailPage() {
   const params = useParams();
   const router = useRouter();
-  const t = useTranslations("chat");
+  const tChat = useTranslations("chat");
+  const tMarketplace = useTranslations("marketplace");
   const productId = params.id as Id<"products">;
   const [quantity, setQuantity] = useState(1);
   const [isContactingLoading, setIsContactingLoading] = useState(false);
 
   const currentUser = useQuery(api.users.getCurrentUser);
+  const myBusiness = useQuery(api.businesses.getMyBusiness);
   const productData = useQuery(api.products.getProductWithImages, { id: productId });
   const relatedProducts = useQuery(api.products.getRelatedProducts, { 
     productId, 
@@ -75,9 +77,27 @@ export default function ProductDetailPage() {
   // Check if current user is the owner of this product
   // sellerId is stored as clerkId, not the Convex _id
   const isOwnProduct = currentUser && productData && productData.sellerId === currentUser.clerkId;
+  const isMyBusinessLoading = myBusiness === undefined;
+  const requiresBuyerVerification =
+    !!currentUser &&
+    !isMyBusinessLoading &&
+    !isOwnProduct &&
+    (!currentUser.businessId || myBusiness?.verificationStatus !== "verified");
 
   const handleAddToCart = async () => {
     if (!productData) return;
+    if (isMyBusinessLoading) return;
+
+    if (requiresBuyerVerification) {
+      const targetRoute = currentUser?.businessId ? "/business/profile" : "/business/verify";
+      toast.error(
+        currentUser?.businessId
+          ? tMarketplace("verify.businessBeforeAdd")
+          : tMarketplace("verify.completeBusinessBeforeAdd")
+      );
+      router.push(targetRoute);
+      return;
+    }
 
     const minQty = productData.minOrderQuantity || 1;
     if (quantity < minQty) {
@@ -323,7 +343,13 @@ export default function ProductDetailPage() {
                   className="w-full"
                   size="lg"
                   onClick={handleAddToCart}
-                  disabled={productData.quantity === 0 || quantity > productData.quantity || !isOrderable || !COMMERCE_ENABLED}
+                  disabled={
+                    isMyBusinessLoading ||
+                    productData.quantity === 0 ||
+                    quantity > productData.quantity ||
+                    !isOrderable ||
+                    !COMMERCE_ENABLED
+                  }
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />
                   {COMMERCE_ENABLED ? (isOrderable ? "Add to Cart" : "Not Orderable") : "Coming Soon"}
@@ -342,6 +368,13 @@ export default function ProductDetailPage() {
                 {COMMERCE_ENABLED && productData.quantity === 0 && (
                   <p className="text-sm text-destructive text-center">
                     This product is currently out of stock
+                  </p>
+                )}
+                {COMMERCE_ENABLED && requiresBuyerVerification && (
+                  <p className="text-sm text-muted-foreground text-center">
+                    {currentUser?.businessId
+                      ? tMarketplace("verify.businessBeforeAdd")
+                      : tMarketplace("verify.completeBusinessBeforeAdd")}
                   </p>
                 )}
               </CardContent>
@@ -398,7 +431,7 @@ export default function ProductDetailPage() {
                     disabled={isContactingLoading || !channelInfo}
                   >
                     <MessageCircle className="mr-2 h-4 w-4" />
-                    {t("contactSeller")}
+                    {tChat("contactSeller")}
                   </Button>
                 )}
               </CardContent>

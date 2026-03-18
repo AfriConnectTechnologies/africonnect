@@ -37,7 +37,7 @@ import { COMMERCE_ENABLED, isComplianceEnabledForEmail } from "@/lib/features";
 import { useChatContext } from "@/components/chat/ChatProvider";
 import { BrandIcon } from "@/components/brand-icon";
 
-type NavItemKey = "dashboard" | "marketplace" | "products" | "inventory" | "messages" | "cart" | "orders" | "settings" | "billing" | "myBusiness" | "creditProfile" | "registerBusiness" | "manageUsers" | "manageBusinesses" | "manageProducts" | "manageRefunds" | "compliance" | "aiAssistant";
+type NavItemKey = "dashboard" | "marketplace" | "products" | "inventory" | "messages" | "cart" | "orders" | "settings" | "billing" | "myBusiness" | "creditProfile" | "verifyBusinessLabel" | "applyToSell" | "manageUsers" | "manageBusinesses" | "manageSellerApplications" | "manageProducts" | "manageRefunds" | "compliance" | "aiAssistant";
 
 type NavItem = {
   href: string;
@@ -67,6 +67,9 @@ const sellerCatalogItems: NavItem[] = [
 
 const businessItems: NavItem[] = [
   { href: "/business/profile", labelKey: "myBusiness", icon: Building2 },
+];
+
+const sellerBusinessItems: NavItem[] = [
   { href: "/business/credit-profile", labelKey: "creditProfile", icon: TrendingUp },
 ];
 
@@ -93,8 +96,14 @@ const aiAssistantNavItem: NavItem = {
 };
 
 const buyerNavItems: NavItem[] = [
-  { href: "/business/register", labelKey: "registerBusiness", icon: Building2 },
+  { href: "/business/verify", labelKey: "verifyBusinessLabel", icon: Building2 },
 ];
+
+const sellerApplicationNavItem: NavItem = {
+  href: "/business/register",
+  labelKey: "applyToSell",
+  icon: Shield,
+};
 
 const settingsItems: NavItem[] = [
   { href: "/settings", labelKey: "settings", icon: Settings },
@@ -103,6 +112,7 @@ const settingsItems: NavItem[] = [
 const adminNavItems: NavItem[] = [
   { href: "/admin/users", labelKey: "manageUsers", icon: Users },
   { href: "/admin/businesses", labelKey: "manageBusinesses", icon: Warehouse },
+  { href: "/admin/seller-applications", labelKey: "manageSellerApplications", icon: Shield },
   { href: "/admin/products", labelKey: "manageProducts", icon: ClipboardList },
   { href: "/admin/refunds", labelKey: "manageRefunds", icon: RefreshCw },
 ];
@@ -188,20 +198,30 @@ function SidebarContent({
     const hasBusiness = currentUser?.businessId !== undefined && currentUser?.businessId !== null;
     const isEmailVerified = currentUser?.emailVerified ?? false;
     const isBusinessVerified = myBusiness?.verificationStatus === "verified";
+    const isSeller = role === "seller" || role === "admin";
     const canAccessCompliance = hasBusiness && isEmailVerified && isBusinessVerified;
 
     const sections: NavSection[] = [];
 
     sections.push({ key: "browse", items: [...browseItems] });
 
-    const catalog = [...catalogItems];
-    if (hasBusiness) {
+    const catalog = isSeller ? [...catalogItems] : [];
+    if (isSeller) {
       catalog.push(...sellerCatalogItems);
     }
-    sections.push({ key: "catalog", items: catalog });
+    if (catalog.length > 0) {
+      sections.push({ key: "catalog", items: catalog });
+    }
 
     if (hasBusiness) {
-      sections.push({ key: "business", items: [...businessItems] });
+      const businessSectionItems = [...businessItems];
+      if (isBusinessVerified && !isSeller) {
+        businessSectionItems.push(sellerApplicationNavItem);
+      }
+      if (isSeller) {
+        businessSectionItems.push(...sellerBusinessItems);
+      }
+      sections.push({ key: "business", items: businessSectionItems });
     } else if (role === "buyer" || role !== "admin") {
       sections.push({ key: "business", items: [...buyerNavItems] });
     }

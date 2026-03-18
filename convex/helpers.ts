@@ -2,6 +2,7 @@ import { MutationCtx, QueryCtx } from "./_generated/server";
 import { Doc, Id } from "./_generated/dataModel";
 
 export type UserRole = "buyer" | "seller" | "admin";
+export type SellerApplicationStatus = "pending" | "approved" | "rejected";
 
 /**
  * Plan limits interface for feature gating
@@ -105,7 +106,7 @@ export async function requireAdmin(ctx: QueryCtx): Promise<Doc<"users">> {
  */
 export async function requireSeller(ctx: QueryCtx): Promise<Doc<"users">> {
   const user = await requireUser(ctx);
-  if (user.role !== "seller" && user.role !== "admin") {
+  if (!hasSellerAccess(user)) {
     throw new Error("Unauthorized: Seller access required");
   }
   return user;
@@ -120,6 +121,92 @@ export async function requireRole(ctx: QueryCtx, allowedRoles: UserRole[]): Prom
     throw new Error(`Unauthorized: Required role: ${allowedRoles.join(" or ")}`);
   }
   return user;
+}
+
+export function getEffectiveSellerApplicationStatus(
+  user: Pick<Doc<"users">, "role" | "sellerApplicationStatus">
+): SellerApplicationStatus | "not_applied" {
+  if (user.role === "seller" || user.role === "admin") {
+    return "approved";
+  }
+
+  return user.sellerApplicationStatus ?? "not_applied";
+}
+
+export function hasSellerAccess(
+  user: Pick<Doc<"users">, "role">
+): boolean {
+  // Seller-only operations are role-gated; application status is informational.
+  return user.role === "admin" || user.role === "seller";
+}
+
+export async function requireVerifiedBusiness(
+  db: QueryCtx["db"] | MutationCtx["db"],
+  user: Doc<"users">
+): Promise<Doc<"businesses">> {
+  if (!user.businessId) {
+    throw new Error(
+      "Business verification is required. Complete your business verification in Settings."
+    );
+  }
+
+  const business = await db.get(user.businessId);
+  if (!business) {
+    throw new Error(
+      "Your business record could not be found. Complete your business verification in Settings."
+    );
+  }
+
+  if (business.verificationStatus !== "verified") {
+    if (business.verificationStatus === "pending") {
+      throw new Error(
+        "Your business is not verified yet because verification is still pending review. You can continue after approval."
+      );
+    }
+
+    if (business.verificationStatus === "rejected") {
+      throw new Error(
+        "Your business is not verified because verification was rejected. Update your business documents in Settings."
+      );
+    }
+
+    throw new Error(
+      `Your business is not verified. Current verification status: ${business.verificationStatus}.`
+    );
+  }
+
+  return business;
+}
+
+export async function requireVerifiedBusinessForBuying(
+  db: QueryCtx["db"] | MutationCtx["db"],
+  user: Doc<"users">
+): Promise<Doc<"businesses">> {
+  try {
+    return await requireVerifiedBusiness(db, user);
+  } catch (error) {
+    if (error instanceof Error) {
+      if (error.message.includes("pending review")) {
+        throw new Error(
+          "Your business verification is still pending review. You can place orders after approval."
+        );
+      }
+
+      if (error.message.includes("was rejected")) {
+        throw new Error(
+          "Your business verification was rejected. Update your business documents in Settings before buying."
+        );
+      }
+
+      if (error.message.includes("Business verification is required")) {
+        throw new Error(
+          "Business verification is required before you can buy products. Complete your business verification in Settings."
+        );
+      }
+    }
+
+    throw error;
+  }
 }
 
 /**

@@ -32,6 +32,11 @@ export function EmailVerificationBanner() {
     setResendState("sending");
     try {
       const result = await resendToken();
+
+      if (result.notAuthenticated) {
+        setResendState("idle");
+        return;
+      }
       
       if (result.alreadyVerified) {
         setDismissed(true);

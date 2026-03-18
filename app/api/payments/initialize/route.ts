@@ -102,6 +102,37 @@ export async function POST(request: NextRequest) {
     }
 
     if (paymentType === "order") {
+      const buyer = await convex.query(api.users.getCurrentUser);
+      const buyerBusiness = await convex.query(api.businesses.getMyBusiness);
+
+      if (!buyer?.businessId || !buyerBusiness) {
+        return NextResponse.json(
+          {
+            error:
+              "Business verification is required before you can buy products. Complete your business verification in Settings.",
+          },
+          { status: 403, headers: SECURITY_HEADERS }
+        );
+      }
+      if (buyerBusiness.verificationStatus === "pending") {
+        return NextResponse.json(
+          {
+            error:
+              "Your business verification is still pending review. You can place orders after approval.",
+          },
+          { status: 403, headers: SECURITY_HEADERS }
+        );
+      }
+      if (buyerBusiness.verificationStatus === "rejected") {
+        return NextResponse.json(
+          {
+            error:
+              "Your business verification was rejected. Update your business documents in Settings before buying.",
+          },
+          { status: 403, headers: SECURITY_HEADERS }
+        );
+      }
+
       const buyerAgreementState = await convex.query(
         api.agreements.hasAcceptedCurrentAgreement,
         { type: "buyer" }

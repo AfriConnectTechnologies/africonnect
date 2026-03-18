@@ -98,9 +98,10 @@ export default function ProductsPage() {
   const editKesRef = useRef<HTMLInputElement>(null);
 
   const currentUser = useQuery(api.users.getCurrentUser);
+  const isSeller = currentUser?.role === "seller" || currentUser?.role === "admin";
   const products = useQuery(
     api.products.list,
-    currentUser
+    currentUser && isSeller
       ? {
           sellerId: currentUser.clerkId,
           status: statusFilter !== "all" ? statusFilter : undefined,
@@ -113,7 +114,7 @@ export default function ProductsPage() {
   const currentSubscription = useQuery(api.subscriptions.getCurrentSubscription);
   const allProducts = useQuery(
     api.products.list,
-    currentUser
+    currentUser && isSeller
       ? {
           sellerId: currentUser.clerkId,
         }
@@ -123,6 +124,12 @@ export default function ProductsPage() {
   const hasPaidSubscription = currentSubscription?.status === "active";
   const isAdmin = currentUser?.role === "admin";
   const canCreateProduct = isAdmin || !hasExistingProducts || hasPaidSubscription;
+
+  useEffect(() => {
+    if (currentUser !== undefined && !isSeller) {
+      router.push("/business/profile");
+    }
+  }, [currentUser, isSeller, router]);
 
   // Get images for the product being created or edited
   const productImages = useQuery(
@@ -414,6 +421,10 @@ export default function ProductsPage() {
       setEditRateAsOf(null);
     }
   }, [editingProduct]);
+
+  if (currentUser !== undefined && !isSeller) {
+    return null;
+  }
 
   const handleImagesChange = () => {
     setImagesKey(prev => prev + 1);

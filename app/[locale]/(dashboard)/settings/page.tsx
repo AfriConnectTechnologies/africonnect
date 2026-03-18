@@ -112,7 +112,11 @@ export default function SettingsPage() {
   }
 
   const isSeller = currentUser?.role === "seller" || currentUser?.role === "admin";
-  const hasBusiness = myBusiness !== undefined && myBusiness !== null;
+  const isLoadingMyBusiness = myBusiness === undefined;
+  const hasBusiness = !isLoadingMyBusiness && myBusiness !== null;
+  const isBusinessVerified =
+    !isLoadingMyBusiness && myBusiness?.verificationStatus === "verified";
+  const showVerificationCta = !isLoadingMyBusiness && !isBusinessVerified;
 
   return (
     <div className="space-y-6 max-w-2xl">
@@ -145,18 +149,33 @@ export default function SettingsPage() {
 
       {/* Business Section */}
       <MenuSection title="Business">
-        {hasBusiness ? (
+        {hasBusiness && (
           <MenuItem
             icon={Building2}
             label="My Business"
             description="View and manage your business profile"
             onClick={() => router.push("/business/profile")}
           />
-        ) : (
+        )}
+        {showVerificationCta && (
           <MenuItem
             icon={Building2}
-            label="Register Business"
-            description="Create a business profile to start selling"
+            label={t("verifyBusinessLabel")}
+            description={
+              hasBusiness
+                ? t("verifyBusinessDescriptionIncomplete")
+                : t("verifyBusinessDescription")
+            }
+            onClick={() =>
+              router.push(hasBusiness ? "/business/profile" : "/business/verify")
+            }
+          />
+        )}
+        {hasBusiness && isBusinessVerified && !isSeller && (
+          <MenuItem
+            icon={Shield}
+            label={t("applyToSellLabel")}
+            description={t("applyToSellDescription")}
             onClick={() => router.push("/business/register")}
           />
         )}

@@ -17,7 +17,13 @@ export const createEmailVerificationToken = mutation({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
     if (identity === null) {
-      throw new Error("Not authenticated");
+      return {
+        alreadyVerified: false,
+        token: null,
+        email: null,
+        name: null,
+        notAuthenticated: true,
+      };
     }
 
     const user = await ctx.db
@@ -142,7 +148,14 @@ export const resendVerificationToken = mutation({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
     if (identity === null) {
-      throw new Error("Not authenticated");
+      return {
+        alreadyVerified: false,
+        token: null,
+        rateLimited: false,
+        email: null,
+        name: null,
+        notAuthenticated: true,
+      };
     }
 
     const user = await ctx.db

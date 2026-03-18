@@ -28,6 +28,10 @@ export function useWelcomeEmail(locale: string = "en") {
           try {
             // Create a verification token
             const tokenResult = await createVerificationToken();
+
+            if (tokenResult?.notAuthenticated) {
+              return;
+            }
             
             if (tokenResult.alreadyVerified) {
               // User is already verified, just mark welcome email as sent if needed

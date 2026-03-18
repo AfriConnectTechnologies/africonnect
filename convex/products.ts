@@ -1,6 +1,12 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { getOrCreateUser, checkProductLimit, PlanLimitError, requireAdmin } from "./helpers";
+import {
+  getOrCreateUser,
+  checkProductLimit,
+  PlanLimitError,
+  requireAdmin,
+  hasSellerAccess,
+} from "./helpers";
 import { createLogger, flushLogs } from "./lib/logger";
 
 export const list = query({
@@ -93,6 +99,10 @@ export const create = mutation({
 
       const user = await getOrCreateUser(ctx);
       log.setContext({ userId: user.clerkId });
+
+      if (!hasSellerAccess(user)) {
+        throw new Error("Unauthorized: Seller access required");
+      }
 
       // Admin users bypass all product limit and subscription checks
       const isAdmin = user.role === "admin";
@@ -281,8 +291,14 @@ export const update = mutation({
         .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
         .first();
 
+      if (!user || !hasSellerAccess(user)) {
+        log.warn("Product update failed - seller access required");
+        await flushLogs();
+        throw new Error("Unauthorized: Seller access required");
+      }
+
       // sellerId is stored as clerkId, not the Convex _id
-      if (!user || product.sellerId !== user.clerkId) {
+      if (product.sellerId !== user.clerkId) {
         log.warn("Product update failed - unauthorized", {
           productId: args.id,
           productOwnerId: product.sellerId,
@@ -386,8 +402,14 @@ export const remove = mutation({
         .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
         .first();
 
+      if (!user || !hasSellerAccess(user)) {
+        log.warn("Product removal failed - seller access required");
+        await flushLogs();
+        throw new Error("Unauthorized: Seller access required");
+      }
+
       // sellerId is stored as clerkId, not the Convex _id
-      if (!user || product.sellerId !== user.clerkId) {
+      if (product.sellerId !== user.clerkId) {
         log.warn("Product removal failed - unauthorized", {
           productId: args.id,
           productOwnerId: product.sellerId,

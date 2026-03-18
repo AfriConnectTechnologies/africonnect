@@ -185,7 +185,7 @@ export default function AdminBusinessesPage() {
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Manage Businesses</h1>
         <p className="text-muted-foreground">
-          Review and verify business registrations
+          Review business verification submissions and uploaded documents
         </p>
       </div>
 
@@ -309,11 +309,11 @@ export default function AdminBusinessesPage() {
 
                     return (
                       <TableRow key={business._id}>
-                        <TableCell>
-                          <div className="flex flex-col">
+                        <TableCell className="max-w-md align-top">
+                          <div className="flex flex-col gap-1">
                             <span className="font-medium">{business.name}</span>
                             {business.description && (
-                              <span className="text-sm text-muted-foreground line-clamp-1">
+                              <span className="text-sm text-muted-foreground whitespace-normal break-words">
                                 {business.description}
                               </span>
                             )}
@@ -476,7 +476,7 @@ export default function AdminBusinessesPage() {
               </span>
             </DialogTitle>
             <DialogDescription className="mt-1 text-base text-muted-foreground">
-              Business details and registration documents for review
+              Business details and verification documents for review
             </DialogDescription>
           </DialogHeader>
           {viewDialogBusiness && (
@@ -756,13 +756,13 @@ export default function AdminBusinessesPage() {
           <DialogHeader>
             <DialogTitle>
               {actionDialog?.action === "verify"
-                ? "Verify Business"
-                : "Reject Business"}
+                ? "Approve Verification"
+                : "Reject Verification"}
             </DialogTitle>
             <DialogDescription>
               {actionDialog?.action === "verify"
-                ? `Are you sure you want to verify "${actionDialog?.businessName}"? This will allow them to sell products on the marketplace.`
-                : `Are you sure you want to reject "${actionDialog?.businessName}"? They will need to update their information to reapply.`}
+                ? `Are you sure you want to approve "${actionDialog?.businessName}"? This will verify the business and unlock buying access for the owner.`
+                : `Are you sure you want to reject "${actionDialog?.businessName}"? They will need to update their information and documents to resubmit.`}
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
@@ -786,12 +786,12 @@ export default function AdminBusinessesPage() {
               ) : actionDialog?.action === "verify" ? (
                 <>
                   <CheckCircle2 className="mr-2 h-4 w-4" />
-                  Verify Business
+                  Approve Verification
                 </>
               ) : (
                 <>
                   <XCircle className="mr-2 h-4 w-4" />
-                  Reject Business
+                  Reject Verification
                 </>
               )}
             </Button>

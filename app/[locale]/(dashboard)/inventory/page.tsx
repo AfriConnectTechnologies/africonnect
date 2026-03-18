@@ -1,10 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { useTranslations } from "next-intl";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
+import { useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -49,6 +50,7 @@ export default function InventoryPage() {
   const t = useTranslations("inventory");
   const tCommon = useTranslations("common");
   const tToast = useTranslations("toast");
+  const router = useRouter();
 
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<StockStatus | "all">("all");
@@ -61,19 +63,37 @@ export default function InventoryPage() {
   const [lowStockThreshold, setLowStockThreshold] = useState("");
   const [reorderQuantity, setReorderQuantity] = useState("");
 
-  const inventory = useQuery(api.inventory.list, {
-    status: statusFilter === "all" ? undefined : statusFilter,
-  });
-  const activityTransactions = useQuery(api.inventory.getTransactions, { limit: 50 });
+  const currentUser = useQuery(api.users.getCurrentUser);
+  const isSeller = currentUser?.role === "seller" || currentUser?.role === "admin";
+  const inventory = useQuery(
+    api.inventory.list,
+    currentUser && isSeller
+      ? {
+          status: statusFilter === "all" ? undefined : statusFilter,
+        }
+      : "skip"
+  );
+  const activityTransactions = useQuery(
+    api.inventory.getTransactions,
+    currentUser && isSeller ? { limit: 50 } : "skip"
+  );
   const productTransactions = useQuery(
     api.inventory.getTransactions,
-    historyProductId ? { productId: historyProductId, limit: 20 } : "skip"
+    currentUser && isSeller && historyProductId
+      ? { productId: historyProductId, limit: 20 }
+      : "skip"
   );
 
   const adjustStock = useMutation(api.inventory.adjustStock);
   const updateThresholds = useMutation(api.inventory.updateThresholds);
   const isInventoryLoading = inventory === undefined;
   const isActivityLoading = activityTransactions === undefined;
+
+  useEffect(() => {
+    if (currentUser !== undefined && !isSeller) {
+      router.push("/business/profile");
+    }
+  }, [currentUser, isSeller, router]);
 
   const filteredInventory = useMemo(() => {
     if (!inventory) return [];
@@ -172,6 +192,10 @@ export default function InventoryPage() {
       toast.error(message);
     }
   };
+
+  if (currentUser !== undefined && !isSeller) {
+    return null;
+  }
 
   return (
     <div className="space-y-6">
