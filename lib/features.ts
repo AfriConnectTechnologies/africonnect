@@ -42,6 +42,7 @@ export const COMPLIANCE_AI_ENABLED =
 const COMPLIANCE_EMAIL_ALLOWLIST = new Set([
   "hiruymulugeta441@gmail.com",
   "minasesotlg@gmail.com",
+  "sw.minasefikadu@gmail.com"
 ]);
 
 function normalizeEmail(email?: string | null): string {
