@@ -253,15 +253,22 @@ export const updateBusiness = mutation({
       const verificationDocumentFieldsChanged =
         (args.businessLicenceImageUrl !== undefined &&
           args.businessLicenceImageUrl !== business.businessLicenceImageUrl) ||
+        (args.businessLicenceNumber !== undefined &&
+          args.businessLicenceNumber !== business.businessLicenceNumber) ||
         (args.memoOfAssociationImageUrl !== undefined &&
           args.memoOfAssociationImageUrl !== business.memoOfAssociationImageUrl) ||
         (args.tinCertificateImageUrl !== undefined &&
           args.tinCertificateImageUrl !== business.tinCertificateImageUrl) ||
+        (args.tinCertificateNumber !== undefined &&
+          args.tinCertificateNumber !== business.tinCertificateNumber) ||
         (args.hasImportExportPermit !== undefined &&
           args.hasImportExportPermit !== business.hasImportExportPermit) ||
         ((finalHasImportExportPermit ?? false) &&
           args.importExportPermitImageUrl !== undefined &&
-          args.importExportPermitImageUrl !== business.importExportPermitImageUrl);
+          args.importExportPermitImageUrl !== business.importExportPermitImageUrl) ||
+        ((finalHasImportExportPermit ?? false) &&
+          args.importExportPermitNumber !== undefined &&
+          args.importExportPermitNumber !== business.importExportPermitNumber);
 
       if (!finalBusinessLicenceImageUrl) {
         throw new Error("Business licence document upload is required.");

@@ -87,8 +87,8 @@ export default function CompliancePage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button onClick={() => router.push("/business/register")}>
-              {t("applyToSellLabel")}
+            <Button onClick={() => router.push("/business/verify")}>
+              {t("verifyBusinessLabel")}
             </Button>
           </CardContent>
         </Card>

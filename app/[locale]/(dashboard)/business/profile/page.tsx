@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
@@ -245,6 +245,7 @@ export default function BusinessProfilePage() {
   const effectiveAccountNumber = payoutAccountNumber || business?.payoutAccountNumber || "";
   const selectedBankName = effectiveBankName || 
     (effectiveBankCode ? banks.find((b) => String(b.code) === String(effectiveBankCode))?.name : undefined);
+  const previousIsEditingRef = useRef(isEditing);
 
   const resetFieldsFromBusiness = useCallback(() => {
     if (!business) {
@@ -283,9 +284,11 @@ export default function BusinessProfilePage() {
 
   // Reset editable fields from saved business data when needed
   useEffect(() => {
-    if (business && isEditing) {
+    if (business && isEditing && !previousIsEditingRef.current) {
       resetFieldsFromBusiness();
     }
+
+    previousIsEditingRef.current = isEditing;
   }, [business, isEditing, resetFieldsFromBusiness]);
 
   useEffect(() => {
