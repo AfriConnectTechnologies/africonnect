@@ -37,7 +37,7 @@ import { COMMERCE_ENABLED, isComplianceEnabledForEmail } from "@/lib/features";
 import { useChatContext } from "@/components/chat/ChatProvider";
 import { BrandIcon } from "@/components/brand-icon";
 
-type NavItemKey = "dashboard" | "marketplace" | "products" | "inventory" | "messages" | "cart" | "orders" | "settings" | "billing" | "myBusiness" | "creditProfile" | "verifyBusinessLabel" | "applyToSell" | "manageUsers" | "manageBusinesses" | "manageSellerApplications" | "manageProducts" | "manageRefunds" | "compliance" | "aiAssistant";
+type NavItemKey = "dashboard" | "marketplace" | "products" | "inventory" | "messages" | "cart" | "orders" | "settings" | "billing" | "myBusiness" | "creditProfile" | "registerBusiness" | "applyToSell" | "manageUsers" | "manageBusinesses" | "manageSellerApplications" | "manageProducts" | "manageRefunds" | "compliance" | "aiAssistant";
 
 type NavItem = {
   href: string;
@@ -96,7 +96,7 @@ const aiAssistantNavItem: NavItem = {
 };
 
 const buyerNavItems: NavItem[] = [
-  { href: "/business/verify", labelKey: "verifyBusinessLabel", icon: Building2 },
+  { href: "/business/verify", labelKey: "registerBusiness", icon: Building2 },
 ];
 
 const sellerApplicationNavItem: NavItem = {

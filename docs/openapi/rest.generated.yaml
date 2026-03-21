@@ -1,0 +1,474 @@
+openapi: 3.0.3
+info:
+  title: Next.js REST (fragment)
+  version: 0.0.0
+  description: Auto-generated from `app/api/**/route.{ts,tsx}`. Merge with Convex spec; do not use this file alone.
+paths:
+  /api/admin/impersonate:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/admin/impersonate
+      description: |-
+        Handler: `app/api/admin/impersonate/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/admin/refunds:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/admin/refunds
+      description: |-
+        Handler: `app/api/admin/refunds/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/chat/channel/delete:
+    delete:
+      tags:
+        - Next.js REST
+      summary: DELETE /api/chat/channel/delete
+      description: |-
+        Handler: `app/api/chat/channel/delete/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/chat/channel:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/chat/channel
+      description: |-
+        Handler: `app/api/chat/channel/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/chat/token:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/chat/token
+      description: |-
+        Handler: `app/api/chat/token/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/compliance/ask-general:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/compliance/ask-general
+      description: |-
+        Handler: `app/api/compliance/ask-general/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/compliance/ask:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/compliance/ask
+      description: |-
+        Handler: `app/api/compliance/ask/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/compliance/search:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/compliance/search
+      description: |-
+        Handler: `app/api/compliance/search/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/currency/convert:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/currency/convert
+      description: |-
+        Handler: `app/api/currency/convert/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/documents/view:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/documents/view
+      description: |-
+        Handler: `app/api/documents/view/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/email/send:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/email/send
+      description: |-
+        Handler: `app/api/email/send/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/email/verify:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/email/verify
+      description: |-
+        Handler: `app/api/email/verify/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/email/verify
+      description: |-
+        Handler: `app/api/email/verify/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/icon:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/icon
+      description: |-
+        Handler: `app/api/icon/route.tsx`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/images/delete:
+    delete:
+      tags:
+        - Next.js REST
+      summary: DELETE /api/images/delete
+      description: |-
+        Handler: `app/api/images/delete/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/images/upload-url:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/images/upload-url
+      description: |-
+        Handler: `app/api/images/upload-url/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payments/initialize:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/payments/initialize
+      description: |-
+        Handler: `app/api/payments/initialize/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payments/verify:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/payments/verify
+      description: |-
+        Handler: `app/api/payments/verify/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/payments/verify
+      description: |-
+        Handler: `app/api/payments/verify/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payments/webhook:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/payments/webhook
+      description: |-
+        Handler: `app/api/payments/webhook/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/payments/webhook
+      description: |-
+        Handler: `app/api/payments/webhook/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payouts/approval:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/payouts/approval
+      description: |-
+        Handler: `app/api/payouts/approval/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payouts/banks:
+    get:
+      tags:
+        - Next.js REST
+      summary: GET /api/payouts/banks
+      description: |-
+        Handler: `app/api/payouts/banks/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payouts/transfer:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/payouts/transfer
+      description: |-
+        Handler: `app/api/payouts/transfer/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/payouts/webhook:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/payouts/webhook
+      description: |-
+        Handler: `app/api/payouts/webhook/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+  /api/subscriptions/checkout:
+    post:
+      tags:
+        - Next.js REST
+      summary: POST /api/subscriptions/checkout
+      description: |-
+        Handler: `app/api/subscriptions/checkout/route.ts`.
+
+        Call this URL **on the Next.js server** (see `servers` entry for the app), not on the Convex deployment.
+      responses:
+        "200":
+          description: Success — response shape is defined by the route implementation.
+        "400":
+          description: Bad request (route-specific validation).
+        "401":
+          description: Unauthorized (when Clerk/session applies).
+        "500":
+          description: Server error.
+tags:
+  - name: Next.js REST
+    description: Routes served by Next.js `app/api`.

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Africonnect API — OpenAPI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.11.0/swagger-ui.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      #swagger-ui .topbar {
+        display: none;
+      }
+      #err {
+        font-family: system-ui, sans-serif;
+        padding: 1.5rem;
+        max-width: 40rem;
+      }
+      #err code {
+        font-size: 0.85em;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <p class="err-static">Enable JavaScript to view this documentation.</p>
+    </noscript>
+    <p id="err" hidden></p>
+    <div id="swagger-ui"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.11.0/swagger-ui-bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.11.0/swagger-ui-standalone-preset.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function () {
+        var err = document.getElementById("err");
+        function fail(msg) {
+          err.hidden = false;
+          err.textContent = msg;
+        }
+        if (typeof SwaggerUIBundle === "undefined") {
+          fail(
+            "Swagger UI failed to load from the CDN. Check network / ad-blockers, or open openapi.merged.yaml in https://editor.swagger.io/"
+          );
+          return;
+        }
+        try {
+          window.ui = SwaggerUIBundle({
+            url: new URL("openapi.merged.yaml", window.location.href).href,
+            dom_id: "#swagger-ui",
+            deepLinking: true,
+            presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
+            layout: "StandaloneLayout",
+          });
+        } catch (e) {
+          fail("Could not start Swagger UI: " + (e && e.message ? e.message : String(e)));
+        }
+      })();
+    </script>
+  </body>
+</html>
