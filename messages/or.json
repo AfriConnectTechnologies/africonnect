@@ -1,5 +1,5 @@
 {
-    "common": {
+  "common": {
       "loading": "Fe'amaa jira...",
       "save": "Oolchi",
       "cancel": "Haquu",
@@ -701,7 +701,226 @@
         }
       }
     },
-    "legal": {
+    "adminBanks": {
+    "title": "Baankota Bulchi",
+    "description": "Baankota michuu uumi, fayyadamtoota baankii ramadi, akkasumas dandeettii rifaralaa hordofi.",
+    "stats": {
+      "partnerBanks": "Baankota Michuu",
+      "bankUsers": "Fayyadamtoota Baankii",
+      "trackedReferrals": "Rifaralota Hordofaman"
+    },
+    "createBank": {
+      "title": "Baankii Uumi",
+      "description": "Piroofaayila baankii rifaralaa fi BI argachuu danda'u qopheessi.",
+      "namePlaceholder": "Maqaa baankii",
+      "descriptionPlaceholder": "Ibsa (filannoo)",
+      "action": "Baankii Uumi",
+      "creating": "Uumaa jira...",
+      "success": "Baankiin milkaa'inaan uumameera",
+      "error": "Baankii uumuu hin milkoofne"
+    },
+    "assignUser": {
+      "title": "Fayyadamaa Baankii Ramadi",
+      "description": "Fayyadamaa jiru gara herrega baankiitti guddisi, sana booda baankii waliin walitti qabi.",
+      "searchPlaceholder": "Maqaa yookaan imeeliidhaan fayyadamtoota barbaadi",
+      "selectUser": "Fayyadamaa fili",
+      "selectBank": "Baankii fili",
+      "action": "Fayyadamaa Ramadi",
+      "assigning": "Ramadaa jira...",
+      "success": "Fayyadamaan baankiif ramadameera",
+      "error": "Fayyadamaa ramaduu hin milkoofne"
+    },
+    "directory": {
+      "title": "Galmee Baankotaa",
+      "description": "Baankotni kam akka socho'an fi SME meeqa akka portfolio tokko tokko keessatti jiran ilaali.",
+      "empty": "Baankiin hanga ammaatti hin uumamne.",
+      "columns": {
+        "bank": "Baankii",
+        "status": "Haala",
+        "referralPrefix": "Dura-bu'aa Rifaralaa",
+        "users": "Fayyadamtoota",
+        "referrals": "Rifaralota",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "Hin jiru"
+    },
+    "stages": {
+      "generated": "Rifarame",
+      "signed_up": "Galmaa'e",
+      "business_created": "Daldalli uumame",
+      "verified": "Mirkanaa'e",
+      "active": "Socho'aa"
+    },
+    "overview": {
+      "fallbackTitle": "Daashboordii baankii",
+      "description": "Jijjiirama rifaralaa, onboarding SME, fi raawwii portfolio hordofi.",
+      "referralBase": "Bu'uura rifaralaa: {code}",
+      "stats": {
+        "totalReferrals": "Rifaralota Waliigalaa",
+        "portfolioSmes": "SME Portfolio",
+        "portfolioSmesMeta": "{verified} mirkanaa'an, {active} socho'aa jiru",
+        "portfolioRevenue": "Galii Portfolio",
+        "portfolioRevenueMeta": "Ajajoota {orders} SME rifaraman irraa",
+        "successfulPayouts": "Kaffaltii Milkaa'aa",
+        "successfulPayoutsMeta": "Oomishaalee {products} SME keessaniin tarreeffaman"
+      },
+      "funnel": {
+        "title": "Faanelii Rifaralaa",
+        "description": "Imala guutuu uuminsa rifaralaa irraa kaasee hanga hirmaannaa SME socho'aatti."
+      },
+      "momentum": {
+        "title": "Sochii Ji'aa",
+        "description": "Sochii rifaralaa, onboarding fi galii portfolio keessanii keessatti dhihoo kanaa.",
+        "referred": "{count} rifarame",
+        "onboarded": "{count} onboard godhame",
+        "verified": "{count} mirkanaa'e"
+      },
+      "recentPortfolio": {
+        "title": "SME Portfolio Dhihoo",
+        "description": "Dhaabbilee haaraa onboard godhaman yookaan dhihoo kana walqabatan baankii keessan irraa.",
+        "cta": "Portfolio ilaali",
+        "empty": "SME rifaraman keessaa hanga ammaatti daldala hin uumne.",
+        "products": "{count} oomishaalee",
+        "orders": "{count} ajajoota",
+        "revenue": "{amount} galii"
+      },
+      "recentReferrals": {
+        "title": "Rifaralota Dhihoo",
+        "description": "Galmeewwan rifaralaa haaraa fi bakka lead tokko tokko amma jiru.",
+        "cta": "Rifaralota bulchi",
+        "empty": "Galmeen rifaralaa hin jiru. Jalqabaaf linkii rifaralaa baankii uumi."
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "SME Portfolio",
+      "description": "SME baankiin keessan rifare hundaa fi hanga maal deemsa isaanii ilaali.",
+      "filtersDescription": "Raawwii ilaaluuf sadarkaa onboarding, teessuma lafaa fi kutaa irratti calali.",
+      "searchPlaceholder": "Daldala, abbaa qabeenyaa yookaan imeelii barbaadi",
+      "filterByStage": "Sadarkaadhaan calali",
+      "allStages": "Sadarkaalee hunda",
+      "country": "Biyya",
+      "allCountries": "Biyyoota hunda",
+      "category": "Ramaddii",
+      "allCategories": "Ramaddii hunda",
+      "empty": "SMEn calaltuu ammaa waliin wal hin simne.",
+      "unknownOwner": "Abbaan qabeenyaa hin beekamu",
+      "noEmail": "Imeeliin hin jiru",
+      "view": "Ilaali",
+      "columns": {
+        "business": "Daldala",
+        "owner": "Abbaa qabeenyaa",
+        "stage": "Sadarkaa",
+        "products": "Oomishaalee",
+        "orders": "Ajajoota",
+        "revenue": "Galii",
+        "drillDown": "Bal'inaan ilaali"
+      }
+    },
+    "detail": {
+      "description": "Ibsa bal'aa SME onboarding, abbummaa fi hojii daldalaa of keessaa qabu.",
+      "stats": {
+        "revenue": "Galii",
+        "orders": "Ajajoota",
+        "products": "Oomishaalee",
+        "netPayouts": "Kaffaltii Xumuraa"
+      },
+      "snapshot": {
+        "title": "Suuraa Daldalaa",
+        "description": "Ibsa bu'uuraa dhaabbataa fi iddoo onboarding ammaa.",
+        "country": "Biyya",
+        "category": "Ramaddii",
+        "verificationStatus": "Haala mirkaneessaa",
+        "joinedPlatform": "Yeroo platformitti makame",
+        "businessDescription": "Ibsa",
+        "noDescription": "Ibsi hin kennamne"
+      },
+      "owner": {
+        "title": "Qunnamtii Abbaa Qabeenyaa",
+        "description": "Abbaa qabeenyaa guddaan herrega SME kanaaf itti gaafatamaa ta'e.",
+        "unknownOwner": "Abbaan qabeenyaa hin beekamu",
+        "noEmail": "Imeeliin hin argamne",
+        "referralTracking": "Hordoffii rifaralaa",
+        "code": "Koodii",
+        "currentReferralRecord": "Galmee rifaralaa ammaa"
+      },
+      "monthly": {
+        "title": "Raawwii Ji'aa",
+        "description": "Akkaataa galii fi ajajaa dhihoo kanaa herrega portfolio SME kanaaf.",
+        "orders": "ajajoota {count}"
+      }
+    },
+    "referrals": {
+      "title": "Rifaralota",
+      "description": "SMEf linkoota galmee hordofamuu danda'an uumi, sadarkaa jijjiiramaa tokko tokko hordofi.",
+      "unnamedReferral": "Rifaralaa maqaa hin qabne",
+      "unnamedLead": "Lead maqaa hin qabne",
+      "noExtraMetadata": "Metadata dabalataa hin jiru",
+      "create": {
+        "title": "Linkii Rifaralaa Uumi",
+        "description": "SME, dhaabbata yookaan leadf koodii galmee addaa uumi.",
+        "organizationPlaceholder": "Maqaa dhaabbataa",
+        "emailPlaceholder": "Imeelii affeerraa (filannoo)",
+        "notesPlaceholder": "Yaadannoo (filannoo)",
+        "action": "Rifaralaa uumi",
+        "creating": "Uumaa jira...",
+        "success": "Rifaralaan {code} uumameera",
+        "error": "Rifaralaa uumuu hin milkoofne"
+      },
+      "playbook": {
+        "title": "Qajeelfama Rifaralaa",
+        "description": "Koodiin uumamu hundi imala onboarding madaalamuu danda'u portfolio baankii keessaniif uuma.",
+        "howItWorks": "Akkaataa hojjetu",
+        "step1": "1. Lead SME tokkoof galmee rifaralaa uumi.",
+        "step2": "2. Linkii galmee uumame sana dhaabbata sana waliin qoodi.",
+        "step3": "3. Isaan erga galmaa'anii fi onboard ta'anii booda fuulli kun ofumaan haaromsa.",
+        "defaultSignupBase": "Bu'uura galmee durtii",
+        "baseUrlFallback": "Linkiin bu'uuraa galmee keessanii browser keessatti asitti mul'ata."
+      },
+      "register": {
+        "title": "Galmee Rifaralaa",
+        "description": "Koodii hunda, kaayyoo affeerraa isaa fi SME socho'aa ta'ee jijjiirameera moo hin jijjiiramne jedhu hordofi.",
+        "empty": "Rifaralaan hanga ammaatti hin uumamne.",
+        "copySuccess": "Linkiin rifaralaa koppii ta'eera",
+        "copyError": "Linkii rifaralaa koppii gochuun hin danda'amne",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "Koodii Rifaralaa",
+          "status": "Haala",
+          "linkedSme": "SME Walqabate",
+          "created": "Kan uumame",
+          "copyLink": "Linkii koppii godhi"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Xiinxala",
+      "description": "Portfolio keessan biyya, ramaddii, sadarkaa onboarding fi bu'aa ji'aatiin qoqqoodi.",
+      "byCategory": {
+        "title": "Ramaddiidhaan",
+        "description": "Kutaan kamtu bu'uura SME rifaraman keessanii keessatti caalaa mul'ata?"
+      },
+      "byCountry": {
+        "title": "Biyyaadhaan",
+        "description": "Babal'ina teessuma lafaa dhaabbilee baankiin rifare."
+      },
+      "byStage": {
+        "title": "Sadarkaadhaan",
+        "description": "Portfolio keessaa hammamtu funnel keessa tarkaanfate?"
+      },
+      "monthly": {
+        "title": "Haala Ji'aa",
+        "description": "Uuminsa portfolio, sochii isaa fi gatii daldalaa yeroo keessatti ilaali.",
+        "newSmes": "SME haaraa {count}",
+        "active": "socho'aa {count}"
+      }
+    }
+  },
+  "legal": {
       "backToHome": "Gara Jalqabaatti Deebi'i",
       "tableOfContents": "Baafata",
       "viewPrivacyPolicy": "Imaammata Dhuunfaa Ilaali",
@@ -1399,4 +1618,4 @@
       "invalidReorder": "Baay'inni irra-deebii ajajaa 0 ykn isaa ol ta'uu qaba.",
       "thresholdsSaved": "Sajatoon kuusa dabaluu ooleera."
     }
-  }
+}

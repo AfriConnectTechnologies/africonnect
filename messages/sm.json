@@ -1,5 +1,5 @@
 {
-    "common": {
+  "common": {
       "loading": "Waa la raryayaa...",
       "save": "Keydi",
       "cancel": "Iska daa",
@@ -703,6 +703,224 @@
         }
       }
     },
+    "adminBanks": {
+    "title": "Maamul Bangiyada",
+    "description": "Samee bangiyo shuraako ah, u qoondee isticmaalayaasha bangiga, oo la soco awoodda tixraacyada.",
+    "stats": {
+      "partnerBanks": "Bangiyada Shuraakada",
+      "bankUsers": "Isticmaalayaasha Bangiga",
+      "trackedReferrals": "Tixraacyada La Raacay"
+    },
+    "createBank": {
+      "title": "Samee Bangi",
+      "description": "Diyaari profile bangi oo maamuli kara tixraacyada iyo gelitaanka BI.",
+      "namePlaceholder": "Magaca bangiga",
+      "descriptionPlaceholder": "Description (optional)",
+      "action": "Samee Bangi",
+      "creating": "La sameynayaa...",
+      "success": "Bangiga si guul leh ayaa loo sameeyay",
+      "error": "Samaynta bangiga way fashilantay"
+    },
+    "assignUser": {
+      "title": "U Qoondee Isticmaale Bangi",
+      "description": "Kor u qaad isticmaale jira una beddel akoon bangi, kadibna ku xidh bangi.",
+      "searchPlaceholder": "Ku raadi isticmaalayaasha magac ama iimayl",
+      "selectUser": "Dooro isticmaale",
+      "selectBank": "Dooro bangi",
+      "action": "U Qoondee Isticmaalaha",
+      "assigning": "La qoondeynayaa...",
+      "success": "Isticmaalaha bangiga ayaa loo qoondeeyay",
+      "error": "Qoondeynta isticmaalaha way fashilantay"
+    },
+    "directory": {
+      "title": "Liiska Bangiyada",
+      "description": "Eeg bangiyada firfircoon iyo inta SME ee ku jirta portfolio kasta.",
+      "empty": "Weli bangi lama samayn.",
+      "columns": {
+        "bank": "Bangi",
+        "status": "Xaalad",
+        "referralPrefix": "Horgalaha Tixraaca",
+        "users": "Isticmaalayaal",
+        "referrals": "Tixraacyo",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "Lama heli karo"
+    },
+    "stages": {
+      "generated": "La tixraacay",
+      "signed_up": "Wuu isdiiwaangeliyey",
+      "business_created": "Ganacsi waa la sameeyay",
+      "verified": "La xaqiijiyey",
+      "active": "Firfircoon"
+    },
+    "overview": {
+      "fallbackTitle": "Dashboard-ka bangiga",
+      "description": "La soco beddelka tixraacyada, onboarding-ka SME, iyo waxqabadka portfolio-ga.",
+      "referralBase": "Saldhigga tixraaca: {code}",
+      "stats": {
+        "totalReferrals": "Wadarta Tixraacyada",
+        "portfolioSmes": "SME-yada Portfolio-ga",
+        "portfolioSmesMeta": "{verified} waa la xaqiijiyey, {active} waa firfircoon yihiin",
+        "portfolioRevenue": "Dakhliga Portfolio-ga",
+        "portfolioRevenueMeta": "{orders} dalab oo ka yimid SME-yada la tixraacay",
+        "successfulPayouts": "Bixinta Guuleysatay",
+        "successfulPayoutsMeta": "{products} badeecooyin ay soo geliyeen SME-yadaadu"
+      },
+      "funnel": {
+        "title": "Funnel-ka Tixraaca",
+        "description": "Safar dhamaystiran laga bilaabo samaynta tixraaca ilaa ka qaybgal firfircoon oo SME ah."
+      },
+      "momentum": {
+        "title": "Dhaqdhaqaaqa Bilaha",
+        "description": "Dhaqdhaqaaqii ugu dambeeyay ee tixraacyada, onboarding-ka, iyo dakhliga ee portfolio-gaaga.",
+        "referred": "{count} la tixraacay",
+        "onboarded": "{count} la onboard gareeyay",
+        "verified": "{count} la xaqiijiyey"
+      },
+      "recentPortfolio": {
+        "title": "SME-yada Portfolio-ga ee Ugu Dambeeyay",
+        "description": "Hay'adaha dhawaan la onboard gareeyay ama dhawaan lagu xidhay bangigaaga.",
+        "cta": "Eeg portfolio-ga",
+        "empty": "Weli ma jiro SME la tixraacay oo sameeyay ganacsi.",
+        "products": "{count} badeecooyin",
+        "orders": "{count} dalabaad",
+        "revenue": "dakhli {amount}"
+      },
+      "recentReferrals": {
+        "title": "Tixraacyadii Ugu Dambeeyay",
+        "description": "Diiwaannadii ugu dambeeyay ee tixraacyada iyo halka uu hadda marayo lead kasta.",
+        "cta": "Maamul tixraacyada",
+        "empty": "Weli ma jiraan diiwaanno tixraac ah. Ku billow sameynta link tixraac bangi."
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "SME-yada Portfolio-ga",
+      "description": "Dib u eeg SME kasta oo bangigaagu soo tixraacay iyo halka uu marayo.",
+      "filtersDescription": "Ku shaandhee heerka onboarding-ka, juqraafi, iyo qaybta si aad waxqabadka u eegto.",
+      "searchPlaceholder": "Raadi ganacsi, milkiile, ama iimayl",
+      "filterByStage": "Ku shaandhee heer",
+      "allStages": "Heerarka oo dhan",
+      "country": "Dal",
+      "allCountries": "Dhammaan dalalka",
+      "category": "Qayb",
+      "allCategories": "Qaybaha oo dhan",
+      "empty": "Ma jiro SME ku habboon shaandhooyinka hadda jira.",
+      "unknownOwner": "Milkiile aan la aqoon",
+      "noEmail": "Iimayl ma jiro",
+      "view": "Eeg",
+      "columns": {
+        "business": "Ganacsi",
+        "owner": "Milkiile",
+        "stage": "Heer",
+        "products": "Badeecooyin",
+        "orders": "Dalabaad",
+        "revenue": "Dakhli",
+        "drillDown": "Faahfaahin"
+      }
+    },
+    "detail": {
+      "description": "Aragti faahfaahsan oo SME ah oo daboolaysa onboarding, lahaansho, iyo dhaqdhaqaaq ganacsi.",
+      "stats": {
+        "revenue": "Dakhli",
+        "orders": "Dalabaad",
+        "products": "Badeecooyin",
+        "netPayouts": "Bixinta Saafiga ah"
+      },
+      "snapshot": {
+        "title": "Muuqaalka Ganacsiga",
+        "description": "Faahfaahinta aasaasiga ah ee hay'adda iyo booska hadda ee onboarding-ka.",
+        "country": "Dal",
+        "category": "Qayb",
+        "verificationStatus": "Xaaladda xaqiijinta",
+        "joinedPlatform": "Ku biiray madasha",
+        "businessDescription": "Sharaxaad",
+        "noDescription": "Sharaxaad lama bixin"
+      },
+      "owner": {
+        "title": "Xiriirka Milkiilaha",
+        "description": "Milkiilaha koowaad ee madasha ee masuulka ka ah akoonka SME-ga.",
+        "unknownOwner": "Milkiile aan la aqoon",
+        "noEmail": "Iimayl lama heli karo",
+        "referralTracking": "La socodka tixraaca",
+        "code": "Koodh",
+        "currentReferralRecord": "Diiwaanka tixraaca ee hadda"
+      },
+      "monthly": {
+        "title": "Waxqabadka Bilaha",
+        "description": "Isbeddelka dakhliga iyo dalabaadka ee dhowaan ee akoonkan SME-ga.",
+        "orders": "{count} dalabaad"
+      }
+    },
+    "referrals": {
+      "title": "Tixraacyo",
+      "description": "U samee xiriiriyeyaal isdiiwaangelin oo la raaci karo SME-yada oo la soco heer kasta oo beddel ah.",
+      "unnamedReferral": "Tixraac aan magac lahayn",
+      "unnamedLead": "Lead aan magac lahayn",
+      "noExtraMetadata": "Ma jiro metadata dheeraad ah",
+      "create": {
+        "title": "Samee Link Tixraac",
+        "description": "U samee koodh isdiiwaangelin gaar ah SME, hay'ad, ama lead.",
+        "organizationPlaceholder": "Magaca hay'adda",
+        "emailPlaceholder": "Iimaylka martiqaadka (ikhtiyaari)",
+        "notesPlaceholder": "Qoraallo (ikhtiyaari)",
+        "action": "Samee tixraac",
+        "creating": "La sameynayaa...",
+        "success": "Tixraaca {code} waa la sameeyay",
+        "error": "Samaynta tixraaca way fashilantay"
+      },
+      "playbook": {
+        "title": "Hagaha Tixraacyada",
+        "description": "Koodh kasta oo la sameeyo wuxuu abuuraa safar onboarding la qiyaasi karo oo portfolio-ga bangigaaga ah.",
+        "howItWorks": "Sida ay u shaqeyso",
+        "step1": "1. Samee diiwaan tixraac oo loogu talagalay lead SME ah.",
+        "step2": "2. La wadaag linkiga isdiiwaangelinta ee la sameeyay hay'addaas.",
+        "step3": "3. Marka ay isdiiwaangeliyaan oo la onboard gareeyo, boggan si toos ah ayuu isu cusboonaysiinayaa.",
+        "defaultSignupBase": "Saldhigga isdiiwaangelinta ee caadiga ah",
+        "baseUrlFallback": "Linkigaaga saldhigga isdiiwaangelinta wuxuu halkan uga muuqan doonaa browser-ka."
+      },
+      "register": {
+        "title": "Diiwaanka Tixraacyada",
+        "description": "La soco koodh kasta, cidda lagu casuumay, iyo inuu isu beddelay SME firfircoon iyo in kale.",
+        "empty": "Weli tixraac lama samayn.",
+        "copySuccess": "Linkiga tixraaca waa la koobiyeeyay",
+        "copyError": "Linkiga tixraaca lama koobiyeeyn karo",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "Koodhka Tixraaca",
+          "status": "Xaalad",
+          "linkedSme": "SME-ga Xiran",
+          "created": "La sameeyay",
+          "copyLink": "Koobiyee linkiga"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Falanqayn",
+      "description": "U kala qaybi portfolio-gaaga dal, qayb, heer onboarding, iyo wax-soo-saarka bil kasta.",
+      "byCategory": {
+        "title": "Qayb ahaan",
+        "description": "Waa kuwee waaxyaha ugu badan ee ku jira SME-yada laguu soo tixraacay?"
+      },
+      "byCountry": {
+        "title": "Dal ahaan",
+        "description": "Faafitaanka juqraafiyeed ee hay'adaha bangigu soo tixraacay."
+      },
+      "byStage": {
+        "title": "Heer ahaan",
+        "description": "Intee le'eg ayaa portfolio-gu uga gudbay funnel-ka."
+      },
+      "monthly": {
+        "title": "Isbeddelka Bilaha",
+        "description": "La soco samaysanka portfolio-ga, firfircoonidiisa, iyo qiimaha ganacsi muddo ahaan.",
+        "newSmes": "{count} SME cusub",
+        "active": "{count} firfircoon"
+      }
+    },
     "legal": {
       "backToHome": "Ku laabo Hoyga",
       "tableOfContents": "Liiska Dulucda",
@@ -1402,3 +1620,4 @@
       "thresholdsSaved": "Habaynta dib u soo iibinta waa la keydiyay."
     }
   }
+}

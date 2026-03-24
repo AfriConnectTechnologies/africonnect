@@ -9,6 +9,7 @@
  */
 
 import type * as agreements from "../agreements.js";
+import type * as banks from "../banks.js";
 import type * as businesses from "../businesses.js";
 import type * as cart from "../cart.js";
 import type * as chat from "../chat.js";
@@ -39,6 +40,7 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   agreements: typeof agreements;
+  banks: typeof banks;
   businesses: typeof businesses;
   cart: typeof cart;
   chat: typeof chat;

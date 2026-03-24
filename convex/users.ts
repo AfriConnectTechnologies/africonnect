@@ -321,7 +321,14 @@ export const reviewSellerApplication = mutation({
 // List all users (admin only)
 export const listUsers = query({
   args: {
-    role: v.optional(v.union(v.literal("buyer"), v.literal("seller"), v.literal("admin"))),
+    role: v.optional(
+      v.union(
+        v.literal("buyer"),
+        v.literal("seller"),
+        v.literal("admin"),
+        v.literal("bank")
+      )
+    ),
     search: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
@@ -351,10 +358,14 @@ export const listUsers = query({
     const usersWithBusiness = await Promise.all(
       users.map(async (user) => {
         let business = null;
+        let bank = null;
         if (user.businessId) {
           business = await ctx.db.get(user.businessId);
         }
-        return { ...user, business };
+        if (user.bankId) {
+          bank = await ctx.db.get(user.bankId);
+        }
+        return { ...user, business, bank };
       })
     );
 
@@ -365,7 +376,12 @@ export const listUsers = query({
 // Get users by role (admin only)
 export const getUsersByRole = query({
   args: {
-    role: v.union(v.literal("buyer"), v.literal("seller"), v.literal("admin")),
+    role: v.union(
+      v.literal("buyer"),
+      v.literal("seller"),
+      v.literal("admin"),
+      v.literal("bank")
+    ),
   },
   handler: async (ctx, args) => {
     await requireAdmin(ctx);
@@ -381,7 +397,12 @@ export const getUsersByRole = query({
 export const setUserRole = mutation({
   args: {
     userId: v.id("users"),
-    role: v.union(v.literal("buyer"), v.literal("seller"), v.literal("admin")),
+    role: v.union(
+      v.literal("buyer"),
+      v.literal("seller"),
+      v.literal("admin"),
+      v.literal("bank")
+    ),
   },
   handler: async (ctx, args) => {
     // Require admin FIRST before any logging to prevent unauthenticated log entries
@@ -417,8 +438,17 @@ export const setUserRole = mutation({
 
       const previousRole = user.role;
 
+      if (args.role === "bank" && !user.bankId) {
+        log.warn("User role change failed - bank membership missing", {
+          targetUserId: args.userId,
+        });
+        await flushLogs();
+        throw new Error("Assign the user to a bank from Manage Banks before granting bank access.");
+      }
+
       await ctx.db.patch(args.userId, {
         role: args.role,
+        ...(args.role !== "bank" ? { bankId: undefined } : {}),
         ...(args.role === "seller"
           ? {
               sellerApplicationStatus: "approved" as const,
@@ -433,7 +463,14 @@ export const setUserRole = mutation({
                 sellerApplicationReviewedAt: undefined,
                 sellerApplicationReviewedBy: undefined,
               }
-          : {}),
+          : args.role === "bank"
+            ? {
+                sellerApplicationStatus: undefined,
+                sellerApplicationSubmittedAt: undefined,
+                sellerApplicationReviewedAt: undefined,
+                sellerApplicationReviewedBy: undefined,
+              }
+            : {}),
       });
 
       log.info("User role changed successfully", {

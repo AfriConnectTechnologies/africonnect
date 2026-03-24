@@ -12,6 +12,8 @@ import { ArrowRight } from "lucide-react";
 import { WelcomeHeader } from "@/components/dashboard/WelcomeHeader";
 import { CategoryChips } from "@/components/dashboard/CategoryChips";
 import { ProductGrid } from "@/components/dashboard/ProductGrid";
+import { useCurrentUser } from "@/lib/hooks/useRole";
+import { useRouter } from "@/i18n/navigation";
 
 const STAT_CONFIG = [
   { key: "totalOrders", icon: ShoppingCart, color: "text-blue-600 dark:text-blue-400", bg: "bg-blue-50 dark:bg-blue-950/40" },
@@ -23,9 +25,15 @@ const STAT_CONFIG = [
 export default function DashboardPage() {
   const t = useTranslations("dashboard");
   const tOrders = useTranslations("orders");
+  const router = useRouter();
+  const currentUser = useCurrentUser();
+  const shouldLoadBuyerDashboard = currentUser !== undefined && currentUser?.role !== "bank";
   
   const ensureUser = useMutation(api.users.ensureUser);
-  const stats = useQuery(api.stats.getDashboardStats);
+  const stats = useQuery(
+    api.stats.getDashboardStats,
+    shouldLoadBuyerDashboard ? {} : "skip"
+  );
   
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -38,14 +46,29 @@ export default function DashboardPage() {
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  const products = useQuery(api.products.marketplace, {
-    search: debouncedSearch || undefined,
-    category: selectedCategory === "all" ? undefined : selectedCategory,
-  });
+  const products = useQuery(
+    api.products.marketplace,
+    shouldLoadBuyerDashboard
+      ? {
+          search: debouncedSearch || undefined,
+          category: selectedCategory === "all" ? undefined : selectedCategory,
+        }
+      : "skip"
+  );
 
   useEffect(() => {
+    if (!shouldLoadBuyerDashboard) {
+      return;
+    }
+
     ensureUser().catch(() => {});
-  }, [ensureUser]);
+  }, [ensureUser, shouldLoadBuyerDashboard]);
+
+  useEffect(() => {
+    if (currentUser?.role === "bank") {
+      router.replace("/bank");
+    }
+  }, [currentUser?.role, router]);
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
@@ -60,6 +83,10 @@ export default function DashboardPage() {
     if (key === "completedOrders") return tOrders("completed");
     return t(key);
   };
+
+  if (currentUser?.role === "bank") {
+    return null;
+  }
 
   return (
     <div className="space-y-8">

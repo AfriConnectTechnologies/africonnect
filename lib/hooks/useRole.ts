@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { api } from "@/convex/_generated/api";
 
-export type UserRole = "buyer" | "seller" | "admin";
+export type UserRole = "buyer" | "seller" | "admin" | "bank";
 
 /**
  * Hook to get the current user's role.
@@ -45,6 +45,14 @@ export function useIsSeller(): boolean {
 export function useIsBuyer(): boolean {
   const role = useCurrentRole();
   return role === "buyer";
+}
+
+/**
+ * Hook to check if current user is a bank user.
+ */
+export function useIsBank(): boolean {
+  const role = useCurrentRole();
+  return role === "bank";
 }
 
 /**
@@ -97,6 +105,13 @@ export function useRequireAdmin(redirectTo: string = "/dashboard") {
  */
 export function useRequireSeller(redirectTo: string = "/dashboard") {
   return useRequireRole(["seller", "admin"], redirectTo);
+}
+
+/**
+ * Hook to require bank role.
+ */
+export function useRequireBank(redirectTo: string = "/dashboard") {
+  return useRequireRole("bank", redirectTo);
 }
 
 /**

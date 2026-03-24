@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,6 +20,11 @@ import {
 import { DocumentUpload } from "@/components/business";
 import { Building2, FileText, Loader2, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
+import {
+  clearStoredBankReferralCode,
+  extractBankReferralCode,
+  getStoredBankReferralCode,
+} from "@/lib/bank-referrals";
 
 const AFRICAN_COUNTRIES = [
   "Algeria",
@@ -100,6 +106,7 @@ const BUSINESS_CATEGORIES = [
 
 export default function BuyerBusinessVerificationPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const t = useTranslations("business");
   const tValidation = useTranslations("validation");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -152,6 +159,9 @@ export default function BuyerBusinessVerificationPage() {
     const hasPermit = hasImportExportPermit === "yes";
 
     try {
+      const referralCode =
+        extractBankReferralCode(searchParams) || getStoredBankReferralCode() || undefined;
+
       await createBusiness({
         name: formData.get("name") as string,
         description: (formData.get("description") as string) || undefined,
@@ -169,8 +179,10 @@ export default function BuyerBusinessVerificationPage() {
         hasImportExportPermit: hasPermit,
         importExportPermitImageUrl: hasPermit ? (importExportPermitImageUrl ?? undefined) : undefined,
         importExportPermitNumber: hasPermit ? (importExportPermitNumber || undefined) : undefined,
+        bankReferralCode: referralCode,
       });
 
+      clearStoredBankReferralCode();
       toast.success(t("buyerVerificationSubmitted"));
       router.push("/business/profile");
     } catch (error) {

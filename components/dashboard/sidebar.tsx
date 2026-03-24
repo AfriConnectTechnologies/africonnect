@@ -37,12 +37,14 @@ import { COMMERCE_ENABLED, isComplianceEnabledForEmail } from "@/lib/features";
 import { useChatContext } from "@/components/chat/ChatProvider";
 import { BrandIcon } from "@/components/brand-icon";
 
-type NavItemKey = "dashboard" | "marketplace" | "products" | "inventory" | "messages" | "cart" | "orders" | "settings" | "billing" | "myBusiness" | "creditProfile" | "registerBusiness" | "applyToSell" | "manageUsers" | "manageBusinesses" | "manageSellerApplications" | "manageProducts" | "manageRefunds" | "compliance" | "aiAssistant";
+type NavItemKey = "dashboard" | "marketplace" | "products" | "inventory" | "messages" | "cart" | "orders" | "settings" | "billing" | "myBusiness" | "creditProfile" | "registerBusiness" | "applyToSell" | "manageUsers" | "manageBusinesses" | "manageSellerApplications" | "manageProducts" | "manageRefunds" | "manageBanks" | "bankPortfolio" | "bankReferrals" | "bankAnalytics" | "compliance" | "aiAssistant";
 
 type NavItem = {
   href: string;
-  labelKey: NavItemKey;
+  labelKey?: NavItemKey;
+  label?: string;
   icon: React.ComponentType<{ className?: string }>;
+  matchMode?: "exact" | "prefix";
   showBadge?: boolean;
   isCommerce?: boolean;
 };
@@ -115,6 +117,14 @@ const adminNavItems: NavItem[] = [
   { href: "/admin/seller-applications", labelKey: "manageSellerApplications", icon: Shield },
   { href: "/admin/products", labelKey: "manageProducts", icon: ClipboardList },
   { href: "/admin/refunds", labelKey: "manageRefunds", icon: RefreshCw },
+  { href: "/admin/banks", labelKey: "manageBanks", icon: Building2 },
+];
+
+const bankNavItems: NavItem[] = [
+  { href: "/bank", labelKey: "dashboard", icon: LayoutDashboard, matchMode: "exact" },
+  { href: "/bank/portfolio", labelKey: "bankPortfolio", icon: Building2 },
+  { href: "/bank/referrals", labelKey: "bankReferrals", icon: ClipboardList },
+  { href: "/bank/analytics", labelKey: "bankAnalytics", icon: TrendingUp },
 ];
 
 export function MobileSidebarTrigger() {
@@ -203,6 +213,12 @@ function SidebarContent({
 
     const sections: NavSection[] = [];
 
+    if (role === "bank") {
+      sections.push({ key: "bank", items: [...bankNavItems] });
+      sections.push({ key: "settings", items: [...settingsItems] });
+      return sections;
+    }
+
     sections.push({ key: "browse", items: [...browseItems] });
 
     const catalog = isSeller ? [...catalogItems] : [];
@@ -264,7 +280,7 @@ function SidebarContent({
         <Button
           variant="ghost"
           size="icon"
-          className="absolute -right-3 top-[3.25rem] z-20 h-6 w-6 rounded-full border bg-background shadow-md hover:bg-accent hidden group-hover:flex items-center justify-center"
+          className="absolute -right-3 top-13 z-20 hidden h-6 w-6 items-center justify-center rounded-full border bg-background shadow-md hover:bg-accent group-hover:flex"
           onClick={toggleCollapse}
         >
           {isCollapsed ? (
@@ -295,8 +311,11 @@ function SidebarContent({
             <div className="space-y-0.5">
               {section.items.map((item) => {
                 const Icon = item.icon;
-                const label = t(item.labelKey);
-                const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
+                const label = item.label ?? (item.labelKey ? t(item.labelKey) : item.href);
+                const isActive =
+                  item.matchMode === "exact"
+                    ? pathname === item.href
+                    : pathname === item.href || pathname.startsWith(item.href + "/");
                 const showCartBadge = item.showBadge && cartItemCount > 0 && COMMERCE_ENABLED;
                 const showMessageBadge = item.labelKey === "messages" && unreadCount > 0;
                 const showComingSoon = item.isCommerce && !COMMERCE_ENABLED;

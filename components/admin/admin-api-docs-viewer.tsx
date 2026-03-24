@@ -2,10 +2,27 @@
 
 import { useEffect, useRef, useState } from "react";
 
+type SwaggerUiConfig = {
+  url: string;
+  domNode: Element;
+  deepLinking?: boolean;
+  displayRequestDuration?: boolean;
+  defaultModelsExpandDepth?: number;
+  docExpansion?: "list" | "full" | "none";
+  presets?: unknown[];
+  layout?: string;
+};
+
+type SwaggerUiBundle = ((config: SwaggerUiConfig) => void) & {
+  presets: {
+    apis: unknown;
+  };
+};
+
 declare global {
   interface Window {
-    SwaggerUIBundle?: any;
-    SwaggerUIStandalonePreset?: any;
+    SwaggerUIBundle?: SwaggerUiBundle;
+    SwaggerUIStandalonePreset?: unknown;
   }
 }
 

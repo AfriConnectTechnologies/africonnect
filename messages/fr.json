@@ -1,5 +1,5 @@
 {
-    "common": {
+  "common": {
       "loading": "Chargement...",
       "save": "Enregistrer",
       "cancel": "Annuler",
@@ -274,15 +274,15 @@
       "sellerApplicationFailed": "Échec de l'envoi de la demande d'accès vendeur.",
       "sellerApplicationRequiresVerifiedBusiness": "Votre entreprise doit être vérifiée avant de pouvoir demander à vendre.",
       "verificationStatus": {
-        "pending": "Pending Verification",
-        "verified": "Verified",
-        "rejected": "Rejected"
+        "pending": "Vérification en attente",
+        "verified": "Vérifiée",
+        "rejected": "Rejetée"
       },
       "sellerStatus": {
-        "not_applied": "Not Applied",
-        "pending": "Pending Review",
-        "approved": "Approved",
-        "rejected": "Rejected"
+        "not_applied": "Non demandée",
+        "pending": "En attente de révision",
+        "approved": "Approuvée",
+        "rejected": "Rejetée"
       },
       "profile": {
         "sellerDescription": "Manage your business profile, verification, and seller operations",
@@ -699,6 +699,224 @@
           "title": "Cookies de marketing",
           "description": "Utilisés pour diffuser des publicités pertinentes et suivre les campagnes."
         }
+      }
+    },
+    "adminBanks": {
+    "title": "Gérer les banques",
+    "description": "Créez des banques partenaires, assignez des utilisateurs bancaires et suivez la capacité d'orientation.",
+    "stats": {
+      "partnerBanks": "Banques partenaires",
+      "bankUsers": "Utilisateurs bancaires",
+      "trackedReferrals": "Références suivies"
+    },
+    "createBank": {
+      "title": "Créer une banque",
+      "description": "Configurez le profil d'une banque pouvant gérer les références et l'accès BI.",
+      "namePlaceholder": "Nom de la banque",
+      "descriptionPlaceholder": "Description (facultative)",
+      "action": "Créer la banque",
+      "creating": "Création...",
+      "success": "Banque créée avec succès",
+      "error": "Échec de la création de la banque"
+    },
+    "assignUser": {
+      "title": "Assigner un utilisateur bancaire",
+      "description": "Transformez un utilisateur existant en compte bancaire et rattachez-le à une banque.",
+      "searchPlaceholder": "Rechercher des utilisateurs par nom ou e-mail",
+      "selectUser": "Sélectionner un utilisateur",
+      "selectBank": "Sélectionner une banque",
+      "action": "Assigner l'utilisateur",
+      "assigning": "Attribution...",
+      "success": "Utilisateur assigné à la banque",
+      "error": "Échec de l'attribution de l'utilisateur"
+    },
+    "directory": {
+      "title": "Répertoire des banques",
+      "description": "Consultez les banques actives et le nombre de PME dans chaque portefeuille.",
+      "empty": "Aucune banque n'a encore été créée.",
+      "columns": {
+        "bank": "Banque",
+        "status": "Statut",
+        "referralPrefix": "Préfixe de référence",
+        "users": "Utilisateurs",
+        "referrals": "Références",
+        "portfolio": "Portefeuille"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "N/D"
+    },
+    "stages": {
+      "generated": "Référée",
+      "signed_up": "Inscrite",
+      "business_created": "Entreprise créée",
+      "verified": "Vérifiée",
+      "active": "En activité"
+    },
+    "overview": {
+      "fallbackTitle": "Tableau de bord banque",
+      "description": "Suivez la conversion des références, l'onboarding des PME et la performance du portefeuille.",
+      "referralBase": "Base de référence : {code}",
+      "stats": {
+        "totalReferrals": "Références totales",
+        "portfolioSmes": "PME du portefeuille",
+        "portfolioSmesMeta": "{verified} vérifiées, {active} actives",
+        "portfolioRevenue": "Revenu du portefeuille",
+        "portfolioRevenueMeta": "{orders} commandes sur les PME référées",
+        "successfulPayouts": "Reversements réussis",
+        "successfulPayoutsMeta": "{products} produits listés par vos PME"
+      },
+      "funnel": {
+        "title": "Entonnoir de référence",
+        "description": "Parcours complet depuis la création d'une référence jusqu'à l'activité réelle de la PME."
+      },
+      "momentum": {
+        "title": "Dynamique mensuelle",
+        "description": "Évolution récente des références, de l'onboarding et des revenus sur votre portefeuille.",
+        "referred": "{count} référées",
+        "onboarded": "{count} onboardées",
+        "verified": "{count} vérifiées"
+      },
+      "recentPortfolio": {
+        "title": "PME récentes du portefeuille",
+        "description": "Organisations récemment intégrées ou reliées via votre banque.",
+        "cta": "Voir le portefeuille",
+        "empty": "Aucune PME référée n'a encore créé son entreprise.",
+        "products": "{count} produits",
+        "orders": "{count} commandes",
+        "revenue": "{amount} de revenu"
+      },
+      "recentReferrals": {
+        "title": "Références récentes",
+        "description": "Derniers enregistrements de référence et position actuelle de chaque prospect.",
+        "cta": "Gérer les références",
+        "empty": "Aucun enregistrement de référence pour le moment. Commencez par créer un lien de référence bancaire."
+      }
+    },
+    "portfolio": {
+      "heading": "Portefeuille",
+      "title": "PME du portefeuille",
+      "description": "Consultez toutes les PME référées par votre banque et leur niveau d'avancement.",
+      "filtersDescription": "Filtrez par étape d'onboarding, zone géographique et segment pour analyser la performance.",
+      "searchPlaceholder": "Rechercher une entreprise, un propriétaire ou un e-mail",
+      "filterByStage": "Filtrer par étape",
+      "allStages": "Toutes les étapes",
+      "country": "Pays",
+      "allCountries": "Tous les pays",
+      "category": "Catégorie",
+      "allCategories": "Toutes les catégories",
+      "empty": "Aucune PME ne correspond aux filtres actuels.",
+      "unknownOwner": "Propriétaire inconnu",
+      "noEmail": "Aucun e-mail",
+      "view": "Voir",
+      "columns": {
+        "business": "Entreprise",
+        "owner": "Propriétaire",
+        "stage": "Étape",
+        "products": "Produits",
+        "orders": "Commandes",
+        "revenue": "Revenu",
+        "drillDown": "Détail"
+      }
+    },
+    "detail": {
+      "description": "Vue détaillée de la PME couvrant l'onboarding, la propriété et l'activité commerciale.",
+      "stats": {
+        "revenue": "Revenu",
+        "orders": "Commandes",
+        "products": "Produits",
+        "netPayouts": "Reversements nets"
+      },
+      "snapshot": {
+        "title": "Aperçu de l'entreprise",
+        "description": "Informations essentielles sur l'organisation et position actuelle dans l'onboarding.",
+        "country": "Pays",
+        "category": "Catégorie",
+        "verificationStatus": "Statut de vérification",
+        "joinedPlatform": "Rejoint la plateforme",
+        "businessDescription": "Description",
+        "noDescription": "Aucune description fournie"
+      },
+      "owner": {
+        "title": "Contact du propriétaire",
+        "description": "Propriétaire principal du compte PME sur la plateforme.",
+        "unknownOwner": "Propriétaire inconnu",
+        "noEmail": "Aucun e-mail disponible",
+        "referralTracking": "Suivi de la référence",
+        "code": "Code",
+        "currentReferralRecord": "Enregistrement actuel de référence"
+      },
+      "monthly": {
+        "title": "Performance mensuelle",
+        "description": "Tendance récente des revenus et des commandes pour ce compte PME.",
+        "orders": "{count} commandes"
+      }
+    },
+    "referrals": {
+      "title": "Références",
+      "description": "Générez des liens d'inscription traçables pour les PME et suivez chaque étape de conversion.",
+      "unnamedReferral": "Référence sans nom",
+      "unnamedLead": "Prospect sans nom",
+      "noExtraMetadata": "Aucune métadonnée supplémentaire",
+      "create": {
+        "title": "Créer un lien de référence",
+        "description": "Générez un code d'inscription unique pour une PME, une organisation ou un prospect.",
+        "organizationPlaceholder": "Nom de l'organisation",
+        "emailPlaceholder": "E-mail d'invitation (facultatif)",
+        "notesPlaceholder": "Notes (facultatif)",
+        "action": "Créer la référence",
+        "creating": "Création...",
+        "success": "Référence {code} créée",
+        "error": "Échec de la création de la référence"
+      },
+      "playbook": {
+        "title": "Guide des références",
+        "description": "Chaque code généré crée un parcours d'onboarding mesurable pour le portefeuille de votre banque.",
+        "howItWorks": "Comment ça fonctionne",
+        "step1": "1. Créez un enregistrement de référence pour un prospect PME.",
+        "step2": "2. Partagez le lien d'inscription généré avec cette organisation.",
+        "step3": "3. Une fois l'inscription et l'onboarding terminés, cette page se met à jour automatiquement.",
+        "defaultSignupBase": "Base d'inscription par défaut",
+        "baseUrlFallback": "Votre lien de base d'inscription apparaîtra ici dans le navigateur."
+      },
+      "register": {
+        "title": "Registre des références",
+        "description": "Suivez chaque code, sa cible et s'il a été converti en PME active.",
+        "empty": "Aucune référence n'a encore été créée.",
+        "copySuccess": "Lien de référence copié",
+        "copyError": "Impossible de copier le lien de référence",
+        "columns": {
+          "lead": "Prospect",
+          "referralCode": "Code de référence",
+          "status": "Statut",
+          "linkedSme": "PME liée",
+          "created": "Créé le",
+          "copyLink": "Copier le lien"
+        }
+      }
+    },
+    "analytics": {
+        "title": "Analytique",
+        "description": "Segmentez votre portefeuille par pays, catégorie, étape d'onboarding et résultats mensuels.",
+      "byCategory": {
+          "title": "Par catégorie",
+          "description": "Quels secteurs dominent votre base de PME référées ?"
+      },
+      "byCountry": {
+          "title": "Par pays",
+          "description": "Répartition géographique des organisations référées par la banque."
+      },
+      "byStage": {
+          "title": "Par étape",
+          "description": "Mesure d'avancement du portefeuille dans l'entonnoir."
+      },
+      "monthly": {
+          "title": "Tendance mensuelle",
+          "description": "Suivez la création du portefeuille, son activation et sa valeur commerciale dans le temps.",
+          "newSmes": "{count} nouvelles PME",
+          "active": "{count} actives"
       }
     },
     "legal": {
@@ -1400,3 +1618,4 @@
       "thresholdsSaved": "Paramètres de réapprovisionnement enregistrés."
     }
   }
+}

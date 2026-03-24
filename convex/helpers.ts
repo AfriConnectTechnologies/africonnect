@@ -1,7 +1,7 @@
 import { MutationCtx, QueryCtx } from "./_generated/server";
 import { Doc, Id } from "./_generated/dataModel";
 
-export type UserRole = "buyer" | "seller" | "admin";
+export type UserRole = "buyer" | "seller" | "admin" | "bank";
 export type SellerApplicationStatus = "pending" | "approved" | "rejected";
 
 /**
@@ -97,6 +97,20 @@ export async function requireAdmin(ctx: QueryCtx): Promise<Doc<"users">> {
   const user = await requireUser(ctx);
   if (user.role !== "admin") {
     throw new Error("Unauthorized: Admin access required");
+  }
+  return user;
+}
+
+/**
+ * Requires the current user to have bank role and membership.
+ */
+export async function requireBank(ctx: QueryCtx): Promise<Doc<"users">> {
+  const user = await requireUser(ctx);
+  if (user.role !== "bank") {
+    throw new Error("Unauthorized: Bank access required");
+  }
+  if (!user.bankId) {
+    throw new Error("Unauthorized: Bank account is not assigned to a bank");
   }
   return user;
 }

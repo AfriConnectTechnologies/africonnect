@@ -1398,5 +1398,224 @@
     "invalidThreshold": "ዝቅተኛ ክምችት ገደብ 0 ወይም ከዚያ በላይ መሆን አለበት።",
     "invalidReorder": "የዳግም መሙላት መጠን 0 ወይም ከዚያ በላይ መሆን አለበት።",
     "thresholdsSaved": "የመሙላት ቅንብሮች ተቀምጠዋል።"
+  },
+  "adminBanks": {
+    "title": "ባንኮችን ያስተዳድሩ",
+    "description": "አጋር ባንኮችን ይፍጠሩ፣ የባንክ ተጠቃሚዎችን ይመድቡ እና የሪፈራል አቅምን ይከታተሉ።",
+    "stats": {
+      "partnerBanks": "አጋር ባንኮች",
+      "bankUsers": "የባንክ ተጠቃሚዎች",
+      "trackedReferrals": "የተከታተሉ ሪፈራሎች"
+    },
+    "createBank": {
+      "title": "ባንክ ይፍጠሩ",
+      "description": "ሪፈራሎችን እና BI መዳረሻን የሚያስተዳድር የባንክ ፕሮፋይል ያዘጋጁ።",
+      "namePlaceholder": "የባንኩ ስም",
+      "descriptionPlaceholder": "መግለጫ (አማራጭ)",
+      "action": "ባንክ ፍጠር",
+      "creating": "በመፍጠር ላይ...",
+      "success": "ባንኩ በተሳካ ሁኔታ ተፈጥሯል",
+      "error": "ባንኩን መፍጠር አልተሳካም"
+    },
+    "assignUser": {
+      "title": "የባንክ ተጠቃሚ መድብ",
+      "description": "ያለውን ተጠቃሚ ወደ ባንክ መለያ ያሳድጉ እና ከባንክ ጋር ያገናኙት።",
+      "searchPlaceholder": "ተጠቃሚዎችን በስም ወይም በኢሜይል ይፈልጉ",
+      "selectUser": "ተጠቃሚ ይምረጡ",
+      "selectBank": "ባንክ ይምረጡ",
+      "action": "ተጠቃሚ መድብ",
+      "assigning": "በመመደብ ላይ...",
+      "success": "ተጠቃሚው ወደ ባንኩ ተመድቧል",
+      "error": "ተጠቃሚውን መመደብ አልተሳካም"
+    },
+    "directory": {
+      "title": "የባንክ ዝርዝር",
+      "description": "የትኞቹ ባንኮች ንቁ እንደሆኑ እና በእያንዳንዱ ፖርትፎሊዮ ውስጥ ስንት SME እንዳሉ ይመልከቱ።",
+      "empty": "እስካሁን ምንም ባንክ አልተፈጠረም።",
+      "columns": {
+        "bank": "ባንክ",
+        "status": "ሁኔታ",
+        "referralPrefix": "የሪፈራል ቅድመ ኮድ",
+        "users": "ተጠቃሚዎች",
+        "referrals": "ሪፈራሎች",
+        "portfolio": "ፖርትፎሊዮ"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "የለም"
+    },
+    "stages": {
+      "generated": "ተላልፏል",
+      "signed_up": "ተመዝግቧል",
+      "business_created": "ቢዝነስ ተፈጥሯል",
+      "verified": "ተረጋግጧል",
+      "active": "ንቁ"
+    },
+    "overview": {
+      "fallbackTitle": "የባንክ ዳሽቦርድ",
+      "description": "የሪፈራል ለውጥን፣ የSME ኦንቦርዲንግን እና የፖርትፎሊዮ አፈፃፀምን ይከታተሉ።",
+      "referralBase": "የሪፈራል መሠረት፦ {code}",
+      "stats": {
+        "totalReferrals": "ጠቅላላ ሪፈራሎች",
+        "portfolioSmes": "የፖርትፎሊዮ SMEዎች",
+        "portfolioSmesMeta": "{verified} ተረጋግጠዋል፣ {active} ንቁ ናቸው",
+        "portfolioRevenue": "የፖርትፎሊዮ ገቢ",
+        "portfolioRevenueMeta": "በተላለፉ SMEዎች ላይ {orders} ትዕዛዞች",
+        "successfulPayouts": "የተሳኩ ክፍያ ልቀቶች",
+        "successfulPayoutsMeta": "በእርስዎ SMEዎች የተዘረዘሩ {products} ምርቶች"
+      },
+      "funnel": {
+        "title": "የሪፈራል ፈነል",
+        "description": "ከሪፈራል ፍጠራ እስከ ንቁ የSME ተሳትፎ ድረስ ያለው ሙሉ ጉዞ።"
+      },
+      "momentum": {
+        "title": "ወርሃዊ እድገት",
+        "description": "በፖርትፎሊዮዎ ላይ የቅርብ ጊዜ ሪፈራል፣ ኦንቦርዲንግ እና ገቢ እንቅስቃሴ።",
+        "referred": "{count} ተላልፈዋል",
+        "onboarded": "{count} ኦንቦርድ ተደርገዋል",
+        "verified": "{count} ተረጋግጠዋል"
+      },
+      "recentPortfolio": {
+        "title": "የቅርብ ጊዜ ፖርትፎሊዮ SMEዎች",
+        "description": "ከባንክዎ የተገናኙ ወይም አዲስ የተካተቱ ድርጅቶች።",
+        "cta": "ፖርትፎሊዮን ይመልከቱ",
+        "empty": "የተላለፉ SMEዎች እስካሁን ቢዝነስ አልፈጠሩም።",
+        "products": "{count} ምርቶች",
+        "orders": "{count} ትዕዛዞች",
+        "revenue": "{amount} ገቢ"
+      },
+      "recentReferrals": {
+        "title": "የቅርብ ጊዜ ሪፈራሎች",
+        "description": "የቅርብ ጊዜ የሪፈራል መዝገቦች እና እያንዳንዱ እጩ ያለበት ደረጃ።",
+        "cta": "ሪፈራሎችን ያስተዳድሩ",
+        "empty": "እስካሁን ምንም የሪፈራል መዝገብ የለም። በመጀመሪያ የባንክ ሪፈራል ሊንክ ይፍጠሩ።"
+      }
+    },
+    "portfolio": {
+      "heading": "ፖርትፎሊዮ",
+      "title": "የፖርትፎሊዮ SMEዎች",
+      "description": "በባንክዎ የተላለፉ ሁሉንም SMEዎች እና የደረሱበትን ደረጃ ይመልከቱ።",
+      "filtersDescription": "አፈፃፀምን ለመገምገም በኦንቦርዲንግ ደረጃ፣ ቦታ እና ዘርፍ ያጣሩ።",
+      "searchPlaceholder": "ቢዝነስ፣ ባለቤት ወይም ኢሜይል ይፈልጉ",
+      "filterByStage": "በደረጃ አጣራ",
+      "allStages": "ሁሉም ደረጃዎች",
+      "country": "አገር",
+      "allCountries": "ሁሉም አገሮች",
+      "category": "ምድብ",
+      "allCategories": "ሁሉም ምድቦች",
+      "empty": "ከአሁኑ ማጣሪያዎች ጋር የሚዛመድ SME የለም።",
+      "unknownOwner": "ያልታወቀ ባለቤት",
+      "noEmail": "ኢሜይል የለም",
+      "view": "ይመልከቱ",
+      "columns": {
+        "business": "ቢዝነስ",
+        "owner": "ባለቤት",
+        "stage": "ደረጃ",
+        "products": "ምርቶች",
+        "orders": "ትዕዛዞች",
+        "revenue": "ገቢ",
+        "drillDown": "ዝርዝር ይግቡ"
+      }
+    },
+    "detail": {
+      "description": "ኦንቦርዲንግ፣ ባለቤትነት እና የንግድ እንቅስቃሴን የሚያካትት ዝርዝር የSME እይታ።",
+      "stats": {
+        "revenue": "ገቢ",
+        "orders": "ትዕዛዞች",
+        "products": "ምርቶች",
+        "netPayouts": "የተጣራ ክፍያ ልቀቶች"
+      },
+      "snapshot": {
+        "title": "የቢዝነስ አጭር እይታ",
+        "description": "ዋና ዋና የድርጅት ዝርዝሮች እና የአሁኑ የኦንቦርዲንግ ደረጃ።",
+        "country": "አገር",
+        "category": "ምድብ",
+        "verificationStatus": "የማረጋገጫ ሁኔታ",
+        "joinedPlatform": "መድረኩን የተቀላቀለበት ጊዜ",
+        "businessDescription": "መግለጫ",
+        "noDescription": "ምንም መግለጫ አልተሰጠም"
+      },
+      "owner": {
+        "title": "የባለቤት መገኛ",
+        "description": "ለSME መለያው ተጠያቂ የሆነው ዋና ባለቤት።",
+        "unknownOwner": "ያልታወቀ ባለቤት",
+        "noEmail": "የሚገኝ ኢሜይል የለም",
+        "referralTracking": "የሪፈራል ክትትል",
+        "code": "ኮድ",
+        "currentReferralRecord": "የአሁኑ የሪፈራል መዝገብ"
+      },
+      "monthly": {
+        "title": "ወርሃዊ አፈፃፀም",
+        "description": "ለዚህ SME ፖርትፎሊዮ መለያ የቅርብ ጊዜ የገቢ እና የትዕዛዝ አቅጣጫ።",
+        "orders": "{count} ትዕዛዞች"
+      }
+    },
+    "referrals": {
+      "title": "ሪፈራሎች",
+      "description": "ለSMEዎች ሊከታተሉ የሚችሉ የምዝገባ ሊንኮችን ይፍጠሩ እና የእያንዳንዱን የለውጥ ደረጃ ይከታተሉ።",
+      "unnamedReferral": "ስም የሌለው ሪፈራል",
+      "unnamedLead": "ስም የሌለው እጩ",
+      "noExtraMetadata": "ተጨማሪ መረጃ የለም",
+      "create": {
+        "title": "የሪፈራል ሊንክ ፍጠር",
+        "description": "ለSME፣ ድርጅት ወይም እጩ ልዩ የምዝገባ ኮድ ይፍጠሩ።",
+        "organizationPlaceholder": "የድርጅቱ ስም",
+        "emailPlaceholder": "የግብዣ ኢሜይል (አማራጭ)",
+        "notesPlaceholder": "ማስታወሻ (አማራጭ)",
+        "action": "ሪፈራል ፍጠር",
+        "creating": "በመፍጠር ላይ...",
+        "success": "ሪፈራል {code} ተፈጥሯል",
+        "error": "ሪፈራል መፍጠር አልተሳካም"
+      },
+      "playbook": {
+        "title": "የሪፈራል መመሪያ",
+        "description": "እያንዳንዱ የተፈጠረ ኮድ ለባንክዎ ፖርትፎሊዮ የሚለካ የኦንቦርዲንግ ጉዞ ይፈጥራል።",
+        "howItWorks": "እንዴት እንደሚሰራ",
+        "step1": "1. ለSME እጩ የሪፈራል መዝገብ ይፍጠሩ።",
+        "step2": "2. የተፈጠረውን የምዝገባ ሊንክ ከዚያ ድርጅት ጋር ያጋሩ።",
+        "step3": "3. ከተመዘገቡ እና ከተካተቱ በኋላ ይህ ገጽ በራሱ ይዘምናል።",
+        "defaultSignupBase": "ነባሪ የምዝገባ መሠረት",
+        "baseUrlFallback": "የምዝገባ መሠረት ሊንክዎ እዚህ በአሳሽ ውስጥ ይታያል።"
+      },
+      "register": {
+        "title": "የሪፈራል መዝገብ",
+        "description": "እያንዳንዱን ኮድ፣ የተጋበዘውን እጩ እና ወደ ንቁ SME ተቀይሯል ወይስ አልተቀየረም ይከታተሉ።",
+        "empty": "እስካሁን ምንም ሪፈራል አልተፈጠረም።",
+        "copySuccess": "የሪፈራል ሊንክ ተቀድቷል",
+        "copyError": "የሪፈራል ሊንኩን መቅዳት አልተቻለም",
+        "columns": {
+          "lead": "እጩ",
+          "referralCode": "የሪፈራል ኮድ",
+          "status": "ሁኔታ",
+          "linkedSme": "የተገናኘ SME",
+          "created": "የተፈጠረበት",
+          "copyLink": "ሊንክ ቅዳ"
+        }
+      }
+    },
+    "analytics": {
+      "title": "ትንታኔ",
+      "description": "ፖርትፎሊዮዎን በአገር፣ በምድብ፣ በኦንቦርዲንግ ደረጃ እና በወርሃዊ ውጤት ይከፋፍሉ።",
+      "byCategory": {
+        "title": "በምድብ",
+        "description": "በተላለፉ SMEዎችዎ መሠረት ላይ የሚበልጡት ዘርፎች ማናቸው ናቸው።"
+      },
+      "byCountry": {
+        "title": "በአገር",
+        "description": "በባንኩ የተላለፉ ድርጅቶች የቦታ ስርጭት።"
+      },
+      "byStage": {
+        "title": "በደረጃ",
+        "description": "ፖርትፎሊዮው በፈነሉ ውስጥ ምን ያህል እንደተራመደ ያሳያል።"
+      },
+      "monthly": {
+        "title": "ወርሃዊ አቅጣጫ",
+        "description": "የፖርትፎሊዮ ፍጠራን፣ እንቅስቃሴን እና የንግድ እሴትን በጊዜ ሂደት ይመልከቱ።",
+        "newSmes": "{count} አዲስ SMEዎች",
+        "active": "{count} ንቁ"
+      }
+    }
   }
 }

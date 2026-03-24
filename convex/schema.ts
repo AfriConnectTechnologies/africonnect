@@ -9,8 +9,17 @@ export default defineSchema({
     email: v.string(),
     name: v.optional(v.string()),
     imageUrl: v.optional(v.string()),
-    role: v.optional(v.union(v.literal("buyer"), v.literal("seller"), v.literal("admin"))),
+    role: v.optional(
+      v.union(
+        v.literal("buyer"),
+        v.literal("seller"),
+        v.literal("admin"),
+        v.literal("bank")
+      )
+    ),
     businessId: v.optional(v.id("businesses")),
+    bankId: v.optional(v.id("banks")),
+    bankReferralId: v.optional(v.id("bankReferrals")),
     sellerApplicationStatus: v.optional(
       v.union(v.literal("pending"), v.literal("approved"), v.literal("rejected"))
     ),
@@ -58,6 +67,9 @@ export default defineSchema({
     payoutAccountName: v.optional(v.string()),
     payoutEnabled: v.optional(v.boolean()),
     payoutUpdatedAt: v.optional(v.number()),
+    referredByBankId: v.optional(v.id("banks")),
+    bankReferralId: v.optional(v.id("bankReferrals")),
+    referralSource: v.optional(v.string()),
     createdAt: v.number(),
     updatedAt: v.number(),
   })
@@ -65,10 +77,53 @@ export default defineSchema({
     .index("by_status", ["verificationStatus"])
     .index("by_country", ["country"])
     .index("by_category", ["category"])
+    .index("by_referred_bank", ["referredByBankId"])
+    .index("by_bank_referral", ["bankReferralId"])
     .index("by_businessLicenceImageUrl", ["businessLicenceImageUrl"])
     .index("by_memoOfAssociationImageUrl", ["memoOfAssociationImageUrl"])
     .index("by_tinCertificateImageUrl", ["tinCertificateImageUrl"])
     .index("by_importExportPermitImageUrl", ["importExportPermitImageUrl"]),
+
+  banks: defineTable({
+    name: v.string(),
+    slug: v.string(),
+    description: v.optional(v.string()),
+    status: v.union(v.literal("active"), v.literal("inactive")),
+    referralCodePrefix: v.string(),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_slug", ["slug"])
+    .index("by_status", ["status"])
+    .index("by_referral_prefix", ["referralCodePrefix"]),
+
+  bankReferrals: defineTable({
+    bankId: v.id("banks"),
+    referralCode: v.string(),
+    invitedByUserId: v.id("users"),
+    invitedEmail: v.optional(v.string()),
+    companyName: v.optional(v.string()),
+    notes: v.optional(v.string()),
+    status: v.union(
+      v.literal("generated"),
+      v.literal("signed_up"),
+      v.literal("business_created"),
+      v.literal("verified"),
+      v.literal("active")
+    ),
+    acceptedUserId: v.optional(v.id("users")),
+    businessId: v.optional(v.id("businesses")),
+    acceptedAt: v.optional(v.number()),
+    convertedAt: v.optional(v.number()),
+    verifiedAt: v.optional(v.number()),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_bank", ["bankId"])
+    .index("by_bank_status", ["bankId", "status"])
+    .index("by_referral_code", ["referralCode"])
+    .index("by_business", ["businessId"])
+    .index("by_accepted_user", ["acceptedUserId"]),
 
   orders: defineTable({
     userId: v.string(), // buyerId for marketplace orders

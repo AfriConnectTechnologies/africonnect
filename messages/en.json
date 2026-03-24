@@ -1398,5 +1398,224 @@
     "invalidThreshold": "Low stock threshold must be 0 or greater.",
     "invalidReorder": "Reorder quantity must be 0 or greater.",
     "thresholdsSaved": "Replenishment settings saved."
+  },
+  "adminBanks": {
+    "title": "Manage Banks",
+    "description": "Create partner banks, assign bank users, and monitor referral capacity.",
+    "stats": {
+      "partnerBanks": "Partner Banks",
+      "bankUsers": "Bank Users",
+      "trackedReferrals": "Tracked Referrals"
+    },
+    "createBank": {
+      "title": "Create Bank",
+      "description": "Set up a bank profile that can own referrals and BI access.",
+      "namePlaceholder": "Bank name",
+      "descriptionPlaceholder": "Description (optional)",
+      "action": "Create Bank",
+      "creating": "Creating...",
+      "success": "Bank created successfully",
+      "error": "Failed to create bank"
+    },
+    "assignUser": {
+      "title": "Assign Bank User",
+      "description": "Promote an existing user into a bank account and attach them to a bank.",
+      "searchPlaceholder": "Search users by name or email",
+      "selectUser": "Select user",
+      "selectBank": "Select bank",
+      "action": "Assign User",
+      "assigning": "Assigning...",
+      "success": "User assigned to bank",
+      "error": "Failed to assign user"
+    },
+    "directory": {
+      "title": "Bank Directory",
+      "description": "Review which banks are active and how many SMEs are in each portfolio.",
+      "empty": "No banks created yet.",
+      "columns": {
+        "bank": "Bank",
+        "status": "Status",
+        "referralPrefix": "Referral Prefix",
+        "users": "Users",
+        "referrals": "Referrals",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "N/A"
+    },
+    "stages": {
+      "generated": "Referred",
+      "signed_up": "Signed up",
+      "business_created": "Business created",
+      "verified": "Verified",
+      "active": "Active"
+    },
+    "overview": {
+      "fallbackTitle": "Bank dashboard",
+      "description": "Track referral conversion, SME onboarding, and portfolio performance.",
+      "referralBase": "Referral base: {code}",
+      "stats": {
+        "totalReferrals": "Total Referrals",
+        "portfolioSmes": "Portfolio SMEs",
+        "portfolioSmesMeta": "{verified} verified, {active} active",
+        "portfolioRevenue": "Portfolio Revenue",
+        "portfolioRevenueMeta": "{orders} orders across referred SMEs",
+        "successfulPayouts": "Successful Payouts",
+        "successfulPayoutsMeta": "{products} products listed by your SMEs"
+      },
+      "funnel": {
+        "title": "Referral Funnel",
+        "description": "End-to-end journey from referral creation to active SME engagement."
+      },
+      "momentum": {
+        "title": "Monthly Momentum",
+        "description": "Recent referral, onboarding, and revenue movement across your portfolio.",
+        "referred": "{count} referred",
+        "onboarded": "{count} onboarded",
+        "verified": "{count} verified"
+      },
+      "recentPortfolio": {
+        "title": "Recent Portfolio SMEs",
+        "description": "Newly onboarded or recently linked organizations from your bank.",
+        "cta": "View portfolio",
+        "empty": "No referred SMEs have created businesses yet.",
+        "products": "{count} products",
+        "orders": "{count} orders",
+        "revenue": "{amount} revenue"
+      },
+      "recentReferrals": {
+        "title": "Recent Referrals",
+        "description": "Latest referral records and where each lead currently sits.",
+        "cta": "Manage referrals",
+        "empty": "No referral records yet. Start by creating a bank referral link."
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "Portfolio SMEs",
+      "description": "Review every SME referred by your bank and how far they have progressed.",
+      "filtersDescription": "Filter by onboarding stage, geography, and segment to review performance.",
+      "searchPlaceholder": "Search business, owner, or email",
+      "filterByStage": "Filter by stage",
+      "allStages": "All stages",
+      "country": "Country",
+      "allCountries": "All countries",
+      "category": "Category",
+      "allCategories": "All categories",
+      "empty": "No SMEs match the current filters.",
+      "unknownOwner": "Unknown owner",
+      "noEmail": "No email",
+      "view": "View",
+      "columns": {
+        "business": "Business",
+        "owner": "Owner",
+        "stage": "Stage",
+        "products": "Products",
+        "orders": "Orders",
+        "revenue": "Revenue",
+        "drillDown": "Drill down"
+      }
+    },
+    "detail": {
+      "description": "SME drill-down covering onboarding, ownership, and commercial activity.",
+      "stats": {
+        "revenue": "Revenue",
+        "orders": "Orders",
+        "products": "Products",
+        "netPayouts": "Net Payouts"
+      },
+      "snapshot": {
+        "title": "Business Snapshot",
+        "description": "Core organization details and current onboarding position.",
+        "country": "Country",
+        "category": "Category",
+        "verificationStatus": "Verification status",
+        "joinedPlatform": "Joined platform",
+        "businessDescription": "Description",
+        "noDescription": "No description provided"
+      },
+      "owner": {
+        "title": "Owner Contact",
+        "description": "Primary platform owner responsible for the SME account.",
+        "unknownOwner": "Unknown owner",
+        "noEmail": "No email available",
+        "referralTracking": "Referral tracking",
+        "code": "Code",
+        "currentReferralRecord": "Current referral record"
+      },
+      "monthly": {
+        "title": "Monthly Performance",
+        "description": "Recent revenue and order trend for this SME portfolio account.",
+        "orders": "{count} orders"
+      }
+    },
+    "referrals": {
+      "title": "Referrals",
+      "description": "Generate trackable signup links for SMEs and monitor each conversion stage.",
+      "unnamedReferral": "Unnamed referral",
+      "unnamedLead": "Unnamed lead",
+      "noExtraMetadata": "No extra metadata",
+      "create": {
+        "title": "Create Referral Link",
+        "description": "Generate a unique signup code for an SME, organization, or warm lead.",
+        "organizationPlaceholder": "Organization name",
+        "emailPlaceholder": "Invite email (optional)",
+        "notesPlaceholder": "Notes (optional)",
+        "action": "Create referral",
+        "creating": "Creating...",
+        "success": "Referral {code} created",
+        "error": "Failed to create referral"
+      },
+      "playbook": {
+        "title": "Referral Playbook",
+        "description": "Each generated code creates a measurable onboarding journey for your bank portfolio.",
+        "howItWorks": "How it works",
+        "step1": "1. Create a referral record for an SME lead.",
+        "step2": "2. Share the generated signup link with that organization.",
+        "step3": "3. Once they sign up and onboard, this page updates automatically.",
+        "defaultSignupBase": "Default signup base",
+        "baseUrlFallback": "Your signup base link will appear here in the browser."
+      },
+      "register": {
+        "title": "Referral Register",
+        "description": "Track every code, its invite target, and whether it has converted into an active SME.",
+        "empty": "No referrals created yet.",
+        "copySuccess": "Referral link copied",
+        "copyError": "Could not copy referral link",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "Referral Code",
+          "status": "Status",
+          "linkedSme": "Linked SME",
+          "created": "Created",
+          "copyLink": "Copy link"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Segment your portfolio by country, category, onboarding stage, and monthly output.",
+      "byCategory": {
+        "title": "By Category",
+        "description": "Which sectors dominate your referred SME base."
+      },
+      "byCountry": {
+        "title": "By Country",
+        "description": "Geographic spread of the bank's referred organizations."
+      },
+      "byStage": {
+        "title": "By Stage",
+        "description": "How much of the portfolio has progressed through the funnel."
+      },
+      "monthly": {
+        "title": "Monthly Trend",
+        "description": "Watch portfolio creation, activation, and commercial value over time.",
+        "newSmes": "{count} new SMEs",
+        "active": "{count} active"
+      }
+    }
   }
 }

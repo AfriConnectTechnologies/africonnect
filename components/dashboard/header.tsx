@@ -10,12 +10,14 @@ import { Badge } from "@/components/ui/badge";
 import { useChatContext } from "@/components/chat";
 import { BrandIcon } from "@/components/brand-icon";
 import { useTranslations } from "next-intl";
+import { useCurrentUser } from "@/lib/hooks/useRole";
 
 function MessageNotification() {
   const { unreadCount, isConnected } = useChatContext();
   const tNavigation = useTranslations("navigation");
+  const currentUser = useCurrentUser();
 
-  if (!isConnected) return null;
+  if (!isConnected || currentUser?.role === "bank") return null;
 
   return (
     <Link href="/messages">

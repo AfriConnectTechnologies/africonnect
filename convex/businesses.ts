@@ -5,6 +5,25 @@ import { createLogger, flushLogs } from "./lib/logger";
 
 const nullableOptionalString = v.optional(v.union(v.string(), v.null()));
 
+function getBankReferralSyncUpdate(
+  status: "pending" | "verified" | "rejected",
+  updatedAt: number
+) {
+  if (status === "verified") {
+    return {
+      status: "verified" as const,
+      verifiedAt: updatedAt,
+      updatedAt,
+    };
+  }
+
+  return {
+    status: "business_created" as const,
+    verifiedAt: undefined,
+    updatedAt,
+  };
+}
+
 // Create a new business (verification starts as pending)
 export const createBusiness = mutation({
   args: {
@@ -24,6 +43,7 @@ export const createBusiness = mutation({
     hasImportExportPermit: v.optional(v.boolean()),
     importExportPermitImageUrl: v.optional(v.string()),
     importExportPermitNumber: v.optional(v.string()),
+    bankReferralCode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const log = createLogger("businesses.createBusiness");
@@ -38,6 +58,23 @@ export const createBusiness = mutation({
 
       const user = await getOrCreateUser(ctx);
       log.setContext({ userId: user.clerkId });
+
+      let referral = null;
+      const hasStoredReferral = !!user.bankReferralId;
+      if (user.bankReferralId) {
+        referral = await ctx.db.get(user.bankReferralId);
+      } else if (args.bankReferralCode) {
+        referral = await ctx.db
+          .query("bankReferrals")
+          .withIndex("by_referral_code", (q) => q.eq("referralCode", args.bankReferralCode!))
+          .first();
+        if (!referral) {
+          throw new Error("Invalid or expired bank referral code.");
+        }
+        if (referral.acceptedUserId || referral.businessId) {
+          throw new Error("This bank referral code has already been claimed.");
+        }
+      }
 
       if (!args.businessLicenceImageUrl) {
         throw new Error("Business licence document upload is required.");
@@ -84,6 +121,9 @@ export const createBusiness = mutation({
         importExportPermitImageUrl: args.importExportPermitImageUrl,
         importExportPermitNumber: args.importExportPermitNumber,
         verificationStatus: "pending",
+        referredByBankId: referral?.bankId,
+        bankReferralId: referral?._id,
+        referralSource: referral ? "bank_referral" : undefined,
         createdAt: now,
         updatedAt: now,
       });
@@ -94,6 +134,23 @@ export const createBusiness = mutation({
       await ctx.db.patch(user._id, {
         businessId: businessId,
       });
+
+      if (referral) {
+        await ctx.db.patch(referral._id, {
+          status: "business_created",
+          acceptedUserId: referral.acceptedUserId ?? user._id,
+          acceptedAt: referral.acceptedAt ?? now,
+          businessId: referral.businessId ?? businessId,
+          convertedAt: now,
+          updatedAt: now,
+        });
+
+        if (!hasStoredReferral && user.bankReferralId !== referral._id) {
+          await ctx.db.patch(user._id, {
+            bankReferralId: referral._id,
+          });
+        }
+      }
 
       log.info("Business created successfully", {
         businessId,
@@ -203,6 +260,7 @@ export const updateBusiness = mutation({
         throw new Error("Unauthorized: You can only update your own business");
       }
 
+      const updatedAt = Date.now();
       const updates: Partial<
         typeof args & {
           updatedAt: number;
@@ -210,7 +268,7 @@ export const updateBusiness = mutation({
           verificationStatus: "pending" | "verified" | "rejected";
         }
       > = {
-        updatedAt: Date.now(),
+        updatedAt,
       };
       const verificationFieldNames = [
         "name",
@@ -327,6 +385,13 @@ export const updateBusiness = mutation({
       }
 
       await ctx.db.patch(user.businessId, updates);
+
+      if (business.bankReferralId && updates.verificationStatus) {
+        await ctx.db.patch(
+          business.bankReferralId,
+          getBankReferralSyncUpdate(updates.verificationStatus, updatedAt)
+        );
+      }
 
       log.info("Business updated successfully", {
         businessId: user.businessId,
@@ -600,10 +665,19 @@ export const verifyBusiness = mutation({
         throw new Error("Business owner not found");
       }
 
+      const updatedAt = Date.now();
+
       await ctx.db.patch(args.businessId, {
         verificationStatus: args.status,
-        updatedAt: Date.now(),
+        updatedAt,
       });
+
+      if (business.bankReferralId) {
+        await ctx.db.patch(
+          business.bankReferralId,
+          getBankReferralSyncUpdate(args.status, updatedAt)
+        );
+      }
 
       const updatedBusiness = await ctx.db.get(args.businessId);
 

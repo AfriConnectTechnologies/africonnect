@@ -35,18 +35,20 @@ import { toast } from "sonner";
 import { Search, Loader2, Users, Shield, Building2, LogIn } from "lucide-react";
 import { useClerk } from "@clerk/nextjs";
 
-type UserRole = "buyer" | "seller" | "admin";
+type UserRole = "buyer" | "seller" | "admin" | "bank";
 
 const roleColors: Record<UserRole, "default" | "secondary" | "outline"> = {
   buyer: "secondary",
   seller: "default",
   admin: "outline",
+  bank: "outline",
 };
 
 const roleIcons: Record<UserRole, React.ReactNode> = {
   buyer: null,
   seller: <Building2 className="h-3 w-3" />,
   admin: <Shield className="h-3 w-3" />,
+  bank: <Building2 className="h-3 w-3" />,
 };
 
 export default function AdminUsersPage() {
@@ -54,6 +56,7 @@ export default function AdminUsersPage() {
   const { signOut } = useClerk();
   const [searchQuery, setSearchQuery] = useState("");
   const [roleFilter, setRoleFilter] = useState<UserRole | "all">("all");
+  const [selectedBankByUser, setSelectedBankByUser] = useState<Record<string, string>>({});
   const [updatingUserId, setUpdatingUserId] = useState<Id<"users"> | null>(null);
   const [impersonatingUserId, setImpersonatingUserId] = useState<Id<"users"> | null>(null);
   const [isSeedingAgreements, setIsSeedingAgreements] = useState(false);
@@ -67,8 +70,10 @@ export default function AdminUsersPage() {
         }
       : "skip"
   );
+  const banks = useQuery(api.banks.listBanks, isAuthorized ? {} : "skip");
 
   const setUserRole = useMutation(api.users.setUserRole);
+  const assignUserToBank = useMutation(api.banks.assignUserToBank);
   const seedDefaultAgreementVersions = useMutation(
     api.agreements.seedDefaultAgreementVersions
   );
@@ -81,14 +86,49 @@ export default function AdminUsersPage() {
     isAuthorized ? { type: "seller" } : "skip"
   );
 
-  const handleRoleChange = async (userId: Id<"users">, newRole: UserRole) => {
+  const handleRoleChange = async (
+    userId: Id<"users">,
+    newRole: UserRole,
+    currentBankId?: string
+  ) => {
     setUpdatingUserId(userId);
     try {
-      await setUserRole({ userId, role: newRole });
+      if (newRole === "bank") {
+        const bankId = selectedBankByUser[userId] || currentBankId;
+        if (!bankId) {
+          throw new Error("Select a bank before granting bank access.");
+        }
+        await assignUserToBank({ userId, bankId: bankId as Id<"banks"> });
+      } else {
+        await setUserRole({ userId, role: newRole });
+      }
       toast.success("User role updated successfully");
     } catch (error) {
       const errorMessage =
         error instanceof Error ? error.message : "Failed to update user role";
+      toast.error(errorMessage);
+    } finally {
+      setUpdatingUserId(null);
+    }
+  };
+
+  const handleBankAssignment = async (
+    userId: Id<"users">,
+    currentBankId?: string
+  ) => {
+    const bankId = selectedBankByUser[userId] || currentBankId;
+    if (!bankId) {
+      toast.error("Select a bank first.");
+      return;
+    }
+
+    setUpdatingUserId(userId);
+    try {
+      await assignUserToBank({ userId, bankId: bankId as Id<"banks"> });
+      toast.success("User assigned to bank successfully");
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : "Failed to assign user to bank";
       toast.error(errorMessage);
     } finally {
       setUpdatingUserId(null);
@@ -214,7 +254,7 @@ export default function AdminUsersPage() {
       </Card>
 
       {/* Stats Cards */}
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Users</CardTitle>
@@ -248,6 +288,17 @@ export default function AdminUsersPage() {
             </div>
           </CardContent>
         </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Bank Users</CardTitle>
+            <Building2 className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">
+              {users?.filter((u) => u.role === "bank").length ?? 0}
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Users Table */}
@@ -255,7 +306,7 @@ export default function AdminUsersPage() {
         <CardHeader>
           <CardTitle>All Users</CardTitle>
           <CardDescription>
-            Search and filter users to manage their roles
+            Search and filter users to manage their roles and bank assignment
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -281,6 +332,7 @@ export default function AdminUsersPage() {
                 <SelectItem value="buyer">Buyers</SelectItem>
                 <SelectItem value="seller">Sellers</SelectItem>
                 <SelectItem value="admin">Admins</SelectItem>
+                <SelectItem value="bank">Bank Users</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -303,7 +355,9 @@ export default function AdminUsersPage() {
                     <TableHead>User</TableHead>
                     <TableHead>Email</TableHead>
                     <TableHead>Role</TableHead>
-                    <TableHead>Business</TableHead>
+                    <TableHead>Business / Bank</TableHead>
+                    <TableHead>Role Access</TableHead>
+                    <TableHead>Bank Assignment</TableHead>
                     <TableHead className="text-right">Actions</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -341,20 +395,28 @@ export default function AdminUsersPage() {
                         </Badge>
                       </TableCell>
                       <TableCell>
-                        {user.business ? (
-                          <span className="text-sm">{user.business.name}</span>
-                        ) : (
-                          <span className="text-sm text-muted-foreground">
-                            -
-                          </span>
-                        )}
+                        <div className="flex flex-col text-sm">
+                          {user.business ? (
+                            <span>{user.business.name}</span>
+                          ) : null}
+                          {user.bank ? (
+                            <span className="text-muted-foreground">{user.bank.name}</span>
+                          ) : null}
+                          {!user.business && !user.bank ? (
+                            <span className="text-muted-foreground">-</span>
+                          ) : null}
+                        </div>
                       </TableCell>
                       <TableCell className="text-right">
                         <div className="flex items-center justify-end gap-2">
                           <Select
                             value={user.role || "buyer"}
                             onValueChange={(v) =>
-                              handleRoleChange(user._id, v as UserRole)
+                              handleRoleChange(
+                                user._id,
+                                v as UserRole,
+                                user.bank?._id
+                              )
                             }
                             disabled={updatingUserId === user._id}
                           >
@@ -369,8 +431,53 @@ export default function AdminUsersPage() {
                               <SelectItem value="buyer">Buyer</SelectItem>
                               <SelectItem value="seller">Seller</SelectItem>
                               <SelectItem value="admin">Admin</SelectItem>
+                              <SelectItem value="bank">Bank</SelectItem>
                             </SelectContent>
                           </Select>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex items-center gap-2">
+                          <Select
+                            value={selectedBankByUser[user._id] || user.bank?._id || "none"}
+                            onValueChange={(value) =>
+                              setSelectedBankByUser((current) => ({
+                                ...current,
+                                [user._id]: value === "none" ? "" : value,
+                              }))
+                            }
+                            disabled={updatingUserId === user._id || !banks?.length}
+                          >
+                            <SelectTrigger className="w-[180px]">
+                              <SelectValue placeholder="Select bank" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="none">No bank</SelectItem>
+                              {(banks ?? []).map((bank) => (
+                                <SelectItem key={bank._id} value={bank._id}>
+                                  {bank.name}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() =>
+                              handleBankAssignment(user._id, user.bank?._id)
+                            }
+                            disabled={
+                              updatingUserId === user._id ||
+                              (!selectedBankByUser[user._id] && !user.bank?._id)
+                            }
+                          >
+                            <Building2 className="mr-2 h-4 w-4" />
+                            Assign
+                          </Button>
+                        </div>
+                      </TableCell>
+                      <TableCell className="text-right">
+                        <div className="flex items-center justify-end gap-2">
                           <Button
                             variant="outline"
                             size="sm"

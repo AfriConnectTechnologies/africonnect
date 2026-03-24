@@ -1,5 +1,224 @@
 {
+  "adminBanks": {
+    "title": "ባንካት ኣመሓድር",
+    "description": "መሻርኽቲ ባንካት ፍጠር፣ ተጠቀምቲ ባንኪ መድብ፣ ከምኡ'ውን ናይ ሪፈራል ዓቕሚ ከታተል።",
+    "stats": {
+      "partnerBanks": "መሻርኽቲ ባንካት",
+      "bankUsers": "ተጠቀምቲ ባንኪ",
+      "trackedReferrals": "ዝተኸታተሉ ሪፈራላት"
+    },
+    "createBank": {
+      "title": "ባንኪ ፍጠር",
+      "description": "ሪፈራላትን BI ኣክሰስን ክቆጻጸር ዝኽእል ፕሮፋይል ባንኪ ኣዳልው።",
+      "namePlaceholder": "ስም ባንኪ",
+      "descriptionPlaceholder": "መግለፂ (ብምርጫ)",
+      "action": "ባንኪ ፍጠር",
+      "creating": "ይፍጠር ኣሎ...",
+      "success": "ባንኪ ብዓወት ተፈጢሩ",
+      "error": "ባንኪ ምፍጣር ኣይተሳኸዐን"
+    },
+    "assignUser": {
+      "title": "ተጠቃሚ ባንኪ መድብ",
+      "description": "ዘሎ ተጠቃሚ ናብ ሕሳብ ባንኪ ኣዕብዮ ምስ ባንኪ ኣተሓሕዞ።",
+      "searchPlaceholder": "ተጠቀምቲ ብስም ወይ ብኢሜይል ድለ",
+      "selectUser": "ተጠቃሚ ምረጽ",
+      "selectBank": "ባንኪ ምረጽ",
+      "action": "ተጠቃሚ መድብ",
+      "assigning": "ይምደብ ኣሎ...",
+      "success": "ተጠቃሚ ናብ ባንኪ ተመዲቡ",
+      "error": "ተጠቃሚ ምምዳብ ኣይተሳኸዐን"
+    },
+    "directory": {
+      "title": "ዝርዝር ባንካት",
+      "description": "ኣየኖት ባንካት ንጡፋት ከምዝኾኑን ኣብ ነፍሲ ወከፍ portfolio ክንደይ SME ከምዘለዉን ርአ።",
+      "empty": "ክሳብ ሕጂ ዝተፈጥረ ባንኪ የለን።",
+      "columns": {
+        "bank": "ባንኪ",
+        "status": "ኩነታት",
+        "referralPrefix": "ቀዳማይ ሪፈራል",
+        "users": "ተጠቀምቲ",
+        "referrals": "ሪፈራላት",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
     "common": {
+      "notAvailable": "የለን"
+    },
+    "stages": {
+      "generated": "ተላኢኹ",
+      "signed_up": "ተመዝጊቡ",
+      "business_created": "ንግዲ ተፈጢሩ",
+      "verified": "ተረጋጊጹ",
+      "active": "ንጡፍ"
+    },
+    "overview": {
+      "fallbackTitle": "ዳሽቦርድ ባንኪ",
+      "description": "ለውጢ ሪፈራል፣ onboarding ናይ SME እና ኣፈፃፅማ portfolio ተኸታተል።",
+      "referralBase": "መሰረት ሪፈራል: {code}",
+      "stats": {
+        "totalReferrals": "ጠቕላላ ሪፈራላት",
+        "portfolioSmes": "SME ናይ Portfolio",
+        "portfolioSmesMeta": "{verified} ተረጋጊጾም፣ {active} ንጡፋት",
+        "portfolioRevenue": "እቶት Portfolio",
+        "portfolioRevenueMeta": "ካብ SME ዝተላእኩ {orders} ትእዛዛት",
+        "successfulPayouts": "ዝተሳኸዑ ክፍሊታት",
+        "successfulPayoutsMeta": "ብSMEታትኩም {products} ፍርያት ተዘርዚሮም"
+      },
+      "funnel": {
+        "title": "ፈነል ሪፈራል",
+        "description": "ካብ ፍጠራ ሪፈራል ክሳብ ንጡፍ ተሳትፎ SME ዘሎ ምሉእ ጉዕዞ።"
+      },
+      "momentum": {
+        "title": "ወርሓዊ ምንቅስቓስ",
+        "description": "ኣብ portfolio ናይ ቀረባ ሪፈራል፣ onboarding እና እቶት ምንቅስቓስ።",
+        "referred": "{count} ተላኢኾም",
+        "onboarded": "{count} onboard ተገይሮም",
+        "verified": "{count} ተረጋጊጾም"
+      },
+      "recentPortfolio": {
+        "title": "ናይ ቀረባ SME ናይ Portfolio",
+        "description": "ካብ ባንክኹም ዝመፁ ሓደሽቲ ወይ ቀረባ ጊዜ ዝተኣሳሰሩ ድርጅታት።",
+        "cta": "Portfolio ርአ",
+        "empty": "ዝተላእኩ SME ክሳብ ሕጂ ንግዲ ኣይፈጠሩን።",
+        "products": "{count} ፍርያት",
+        "orders": "{count} ትእዛዛት",
+        "revenue": "{amount} እቶት"
+      },
+      "recentReferrals": {
+        "title": "ናይ ቀረባ ሪፈራላት",
+        "description": "ናይ መወዳእታ ሪፈራል መዝገባትን ሕድሕድ lead ሕጂ ኣበይ ከምዘሎን።",
+        "cta": "ሪፈራላት ኣመሓድር",
+        "empty": "ክሳብ ሕጂ ሪፈራል መዝገብ የለን። ብምፍጣር ሊንክ ሪፈራል ባንኪ ጀምር።"
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "SME ናይ Portfolio",
+      "description": "ባንክኹም ዝላኸ ኩሉ SME እና ክሳብ ኣበይ ከምዝበፅሐ ርአ።",
+      "filtersDescription": "ኣፈፃፅማ ንምርኣይ ብደረጃ onboarding፣ ቦታን ክፍሊን ሰርሕ።",
+      "searchPlaceholder": "ንግዲ፣ ዋናታት ወይ ኢሜይል ድለ",
+      "filterByStage": "ብደረጃ ፈልትር",
+      "allStages": "ኩሎም ደረጃታት",
+      "country": "ሃገር",
+      "allCountries": "ኩለን ሃገራት",
+      "category": "ምድብ",
+      "allCategories": "ኩለን ምድባት",
+      "empty": "ምስ ሕጂ ዘለዉ filters ዝሰማማዕ SME የለን።",
+      "unknownOwner": "ዘይፍለጥ ዋና",
+      "noEmail": "ኢሜይል የለን",
+      "view": "ርአ",
+      "columns": {
+        "business": "ንግዲ",
+        "owner": "ዋና",
+        "stage": "ደረጃ",
+        "products": "ፍርያት",
+        "orders": "ትእዛዛት",
+        "revenue": "እቶት",
+        "drillDown": "ብዝርዝር ርአ"
+      }
+    },
+    "detail": {
+      "description": "onboarding፣ ብዓልነት እና ንግዳዊ ንጥፈት ዝሽፍን ዝርዝር ርእይቶ SME።",
+      "stats": {
+        "revenue": "እቶት",
+        "orders": "ትእዛዛት",
+        "products": "ፍርያት",
+        "netPayouts": "ዝተፃረዩ ክፍሊታት"
+      },
+      "snapshot": {
+        "title": "ሓፂር ርእይቶ ንግዲ",
+        "description": "መሰረታዊ ዝርዝራት ድርጅትን ሕጂ ዘለዎ ቦታ onboardingን።",
+        "country": "ሃገር",
+        "category": "ምድብ",
+        "verificationStatus": "ኩነታት ምርግጋፅ",
+        "joinedPlatform": "መድረኽ ዝተፀንበረሉ",
+        "businessDescription": "መግለፂ",
+        "noDescription": "መግለፂ ኣይተዋህበን"
+      },
+      "owner": {
+        "title": "ኣድራሻ ዋና",
+        "description": "ንሕሳብ SME ሓላፊ ዝኾነ ቀንዲ ዋና መድረኽ።",
+        "unknownOwner": "ዘይፍለጥ ዋና",
+        "noEmail": "ዝርከብ ኢሜይል የለን",
+        "referralTracking": "ምክትታል ሪፈራል",
+        "code": "ኮድ",
+        "currentReferralRecord": "ሕጂ ዘሎ መዝገብ ሪፈራል"
+      },
+      "monthly": {
+        "title": "ወርሓዊ ኣፈፃፅማ",
+        "description": "ናይዚ SME ሕሳብ portfolio ናይ ቀረባ እቶትን ትእዛዝን ኣንፈት።",
+        "orders": "{count} ትእዛዛት"
+      }
+    },
+    "referrals": {
+      "title": "ሪፈራላት",
+      "description": "ንSMEታት ክትከታተሎም ዝከኣል ሊንክታት ምዝገባ ፍጠር፣ ሕድሕድ ደረጃ ለውጢ ከታተል።",
+      "unnamedReferral": "ዘይብሉ ስም ሪፈራል",
+      "unnamedLead": "ዘይብሉ ስም lead",
+      "noExtraMetadata": "ተወሳኺ metadata የለን",
+      "create": {
+        "title": "ሊንክ ሪፈራል ፍጠር",
+        "description": "ንSME፣ ድርጅት ወይ lead ፍሉይ ኮድ ምዝገባ ፍጠር።",
+        "organizationPlaceholder": "ስም ድርጅት",
+        "emailPlaceholder": "ኢሜይል መግበሪ ግብዣ (ብምርጫ)",
+        "notesPlaceholder": "ማስታወሻታት (ብምርጫ)",
+        "action": "ሪፈራል ፍጠር",
+        "creating": "ይፍጠር ኣሎ...",
+        "success": "ሪፈራል {code} ተፈጢሩ",
+        "error": "ሪፈራል ምፍጣር ኣይተሳኸዐን"
+      },
+      "playbook": {
+        "title": "መምርሒ ሪፈራል",
+        "description": "ነፍሲ ወከፍ ዝተፈጥረ ኮድ ንportfolio ባንክኹም ዝለካ ጉዕዞ onboarding ይፈጥር።",
+        "howItWorks": "ከመይ ይሰርሕ",
+        "step1": "1. ንlead SME መዝገብ ሪፈራል ፍጠር።",
+        "step2": "2. ዝተፈጥረ ሊንክ ምዝገባ ምስታ ድርጅት ኣካፍል።",
+        "step3": "3. ምስ ተመዝገቡን onboard ምስ ተገብረሎምን እዚ ገጽ ብራሱ ይሕደስ።",
+        "defaultSignupBase": "መሰረታዊ ሊንክ ምዝገባ",
+        "baseUrlFallback": "መሰረታዊ ሊንክ ምዝገባኹም ኣብ ብራውዘር ኣብዚ ክርአ እዩ።"
+      },
+      "register": {
+        "title": "መዝገብ ሪፈራል",
+        "description": "ነፍሲ ወከፍ ኮድ፣ ናይ ግብዣ ዕላማኡ እና ናብ ንጡፍ SME ተቐይሩ እንተኾይኑ ተኸታተል።",
+        "empty": "ክሳብ ሕጂ ዝተፈጥረ ሪፈራል የለን።",
+        "copySuccess": "ሊንክ ሪፈራል ተቐዲሑ",
+        "copyError": "ሊንክ ሪፈራል ክቕዳሕ ኣይከኣለን",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "ኮድ ሪፈራል",
+          "status": "ኩነታት",
+          "linkedSme": "ዝተኣሳሰረ SME",
+          "created": "ዝተፈጥረሉ",
+          "copyLink": "ሊንክ ቅዳሕ"
+        }
+      }
+    },
+    "analytics": {
+      "title": "ትንታነ",
+      "description": "Portfolioኹም ብሃገር፣ ምድብ፣ ደረጃ onboarding እና ወርሓዊ ውፅኢት ክፈል።",
+      "byCategory": {
+        "title": "ብምድብ",
+        "description": "ኣየኖት ዘርፍታት ኣብ SME ዝተላእኩ መሰረትኩም ይበልጡ?"
+      },
+      "byCountry": {
+        "title": "ብሃገር",
+        "description": "ናይ ባንኪ ዝተላእኩ ድርጅታት ኣብ ምድሪ ዝርግሐ።"
+      },
+      "byStage": {
+        "title": "ብደረጃ",
+        "description": "Portfolio ክንደይ ከምዝሓለፈ ኣብ funnel ይርኢ።"
+      },
+      "monthly": {
+        "title": "ወርሓዊ ኣንፈት",
+        "description": "ፍጠራ portfolio፣ ንጥፈትን ንግዳዊ ዋጋን ግዜ እናሓለፈ ተመልከት።",
+        "newSmes": "{count} ሓደሽቲ SME",
+        "active": "{count} ንጡፋት"
+      }
+    }
+  },
+  "common": {
       "loading": "ይፅዕን ኣሎ...",
       "save": "ኣቀምጥ",
       "cancel": "ሰርዝ",

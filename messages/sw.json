@@ -1398,5 +1398,224 @@
     "invalidThreshold": "Kizingiti cha hisa chini lazima kiwe 0 au zaidi.",
     "invalidReorder": "Kiasi cha kujaza tena lazima kiwe 0 au zaidi.",
     "thresholdsSaved": "Mipangilio ya kujaza imehifadhiwa."
+  },
+  "adminBanks": {
+    "title": "Simamia Benki",
+    "description": "Unda benki washirika, gawa watumiaji wa benki, na fuatilia uwezo wa marejeleo.",
+    "stats": {
+      "partnerBanks": "Benki Washirika",
+      "bankUsers": "Watumiaji wa Benki",
+      "trackedReferrals": "Marejeleo Yanayofuatiliwa"
+    },
+    "createBank": {
+      "title": "Unda Benki",
+      "description": "Sanidi wasifu wa benki unaoweza kumiliki marejeleo na ufikiaji wa BI.",
+      "namePlaceholder": "Jina la benki",
+      "descriptionPlaceholder": "Maelezo (si lazima)",
+      "action": "Unda Benki",
+      "creating": "Inaundwa...",
+      "success": "Benki imeundwa kwa mafanikio",
+      "error": "Imeshindikana kuunda benki"
+    },
+    "assignUser": {
+      "title": "Gawa Mtumiaji wa Benki",
+      "description": "Pandisha mtumiaji aliyepo kuwa akaunti ya benki na umuunganishe na benki.",
+      "searchPlaceholder": "Tafuta watumiaji kwa jina au barua pepe",
+      "selectUser": "Chagua mtumiaji",
+      "selectBank": "Chagua benki",
+      "action": "Gawa Mtumiaji",
+      "assigning": "Inagawa...",
+      "success": "Mtumiaji amegawiwa kwa benki",
+      "error": "Imeshindikana kumgawia mtumiaji"
+    },
+    "directory": {
+      "title": "Orodha ya Benki",
+      "description": "Kagua ni benki zipi ziko hai na ni SME ngapi ziko kwenye kila jalada.",
+      "empty": "Hakuna benki iliyoundwa bado.",
+      "columns": {
+        "bank": "Benki",
+        "status": "Hali",
+        "referralPrefix": "Kiambishi cha Marejeleo",
+        "users": "Watumiaji",
+        "referrals": "Marejeleo",
+        "portfolio": "Jalada"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "Haipatikani"
+    },
+    "stages": {
+      "generated": "Imerejelewa",
+      "signed_up": "Amesajiliwa",
+      "business_created": "Biashara imeundwa",
+      "verified": "Imethibitishwa",
+      "active": "Hai"
+    },
+    "overview": {
+      "fallbackTitle": "Dashibodi ya benki",
+      "description": "Fuatilia ubadilishaji wa marejeleo, uingizaji wa SME, na utendaji wa jalada.",
+      "referralBase": "Msingi wa rejeleo: {code}",
+      "stats": {
+        "totalReferrals": "Jumla ya Marejeleo",
+        "portfolioSmes": "SME za Jalada",
+        "portfolioSmesMeta": "{verified} zimethibitishwa, {active} ziko hai",
+        "portfolioRevenue": "Mapato ya Jalada",
+        "portfolioRevenueMeta": "{orders} oda kutoka kwa SME zilizorejelewa",
+        "successfulPayouts": "Malipo Yaliyofanikiwa",
+        "successfulPayoutsMeta": "{products} bidhaa zimeorodheshwa na SME zako"
+      },
+      "funnel": {
+        "title": "Faneli ya Marejeleo",
+        "description": "Safari ya mwisho hadi mwisho kutoka kuunda rejeleo hadi ushiriki hai wa SME."
+      },
+      "momentum": {
+        "title": "Mwelekeo wa Kila Mwezi",
+        "description": "Mienendo ya hivi karibuni ya marejeleo, uingizaji, na mapato katika jalada lako.",
+        "referred": "{count} zimerejelewa",
+        "onboarded": "{count} zimeingizwa",
+        "verified": "{count} zimethibitishwa"
+      },
+      "recentPortfolio": {
+        "title": "SME za Karibuni za Jalada",
+        "description": "Mashirika yaliyoingizwa hivi karibuni au yaliyounganishwa karibuni kutoka benki yako.",
+        "cta": "Tazama jalada",
+        "empty": "Hakuna SME zilizorejelewa ambazo zimeunda biashara bado.",
+        "products": "bidhaa {count}",
+        "orders": "oda {count}",
+        "revenue": "mapato {amount}"
+      },
+      "recentReferrals": {
+        "title": "Marejeleo ya Karibuni",
+        "description": "Rekodi za karibuni za marejeleo na hatua ya kila mteja mtarajiwa kwa sasa.",
+        "cta": "Simamia marejeleo",
+        "empty": "Bado hakuna rekodi za marejeleo. Anza kwa kuunda kiungo cha rejeleo cha benki."
+      }
+    },
+    "portfolio": {
+      "heading": "Jalada",
+      "title": "SME za Jalada",
+      "description": "Kagua kila SME iliyorejelewa na benki yako na hatua iliyofikia.",
+      "filtersDescription": "Chuja kwa hatua ya uingizaji, jiografia, na kundi ili kukagua utendaji.",
+      "searchPlaceholder": "Tafuta biashara, mmiliki, au barua pepe",
+      "filterByStage": "Chuja kwa hatua",
+      "allStages": "Hatua zote",
+      "country": "Nchi",
+      "allCountries": "Nchi zote",
+      "category": "Kategoria",
+      "allCategories": "Kategoria zote",
+      "empty": "Hakuna SME inayolingana na vichujio vya sasa.",
+      "unknownOwner": "Mmiliki hajulikani",
+      "noEmail": "Hakuna barua pepe",
+      "view": "Tazama",
+      "columns": {
+        "business": "Biashara",
+        "owner": "Mmiliki",
+        "stage": "Hatua",
+        "products": "Bidhaa",
+        "orders": "Oda",
+        "revenue": "Mapato",
+        "drillDown": "Chimba ndani"
+      }
+    },
+    "detail": {
+      "description": "Muonekano wa kina wa SME unaojumuisha uingizaji, umiliki, na shughuli za kibiashara.",
+      "stats": {
+        "revenue": "Mapato",
+        "orders": "Oda",
+        "products": "Bidhaa",
+        "netPayouts": "Malipo Halisi"
+      },
+      "snapshot": {
+        "title": "Muhtasari wa Biashara",
+        "description": "Maelezo ya msingi ya shirika na nafasi ya sasa ya uingizaji.",
+        "country": "Nchi",
+        "category": "Kategoria",
+        "verificationStatus": "Hali ya uthibitisho",
+        "joinedPlatform": "Alijiunga na jukwaa",
+        "businessDescription": "Maelezo",
+        "noDescription": "Hakuna maelezo yaliyotolewa"
+      },
+      "owner": {
+        "title": "Mawasiliano ya Mmiliki",
+        "description": "Mmiliki mkuu wa jukwaa anayewajibika kwa akaunti ya SME.",
+        "unknownOwner": "Mmiliki hajulikani",
+        "noEmail": "Hakuna barua pepe inayopatikana",
+        "referralTracking": "Ufuatiliaji wa marejeleo",
+        "code": "Msimbo",
+        "currentReferralRecord": "Rekodi ya sasa ya rejeleo"
+      },
+      "monthly": {
+        "title": "Utendaji wa Kila Mwezi",
+        "description": "Mwelekeo wa hivi karibuni wa mapato na oda kwa akaunti hii ya SME kwenye jalada.",
+        "orders": "oda {count}"
+      }
+    },
+    "referrals": {
+      "title": "Marejeleo",
+      "description": "Tengeneza viungo vya usajili vinavyofuatilika kwa SME na ufuatilie kila hatua ya ubadilishaji.",
+      "unnamedReferral": "Rejeleo lisilo na jina",
+      "unnamedLead": "Mteja mtarajiwa asiye na jina",
+      "noExtraMetadata": "Hakuna metadata ya ziada",
+      "create": {
+        "title": "Unda Kiungo cha Rejeleo",
+        "description": "Tengeneza msimbo wa kipekee wa usajili kwa SME, shirika, au mteja mtarajiwa.",
+        "organizationPlaceholder": "Jina la shirika",
+        "emailPlaceholder": "Barua pepe ya mwaliko (si lazima)",
+        "notesPlaceholder": "Maelezo (si lazima)",
+        "action": "Unda rejeleo",
+        "creating": "Inaundwa...",
+        "success": "Rejeleo {code} limeundwa",
+        "error": "Imeshindikana kuunda rejeleo"
+      },
+      "playbook": {
+        "title": "Mwongozo wa Marejeleo",
+        "description": "Kila msimbo unaotengenezwa huunda safari inayopimika ya uingizaji kwa jalada la benki yako.",
+        "howItWorks": "Jinsi inavyofanya kazi",
+        "step1": "1. Unda rekodi ya rejeleo kwa mteja mtarajiwa wa SME.",
+        "step2": "2. Shiriki kiungo cha usajili kilichotengenezwa na shirika hilo.",
+        "step3": "3. Wakishasajili na kuingizwa, ukurasa huu utasasishwa kiotomatiki.",
+        "defaultSignupBase": "Msingi chaguomsingi wa usajili",
+        "baseUrlFallback": "Kiungo chako cha msingi cha usajili kitaonekana hapa kwenye kivinjari."
+      },
+      "register": {
+        "title": "Daftari la Marejeleo",
+        "description": "Fuatilia kila msimbo, lengo lake la mwaliko, na kama limebadilika kuwa SME hai.",
+        "empty": "Hakuna marejeleo yaliyoundwa bado.",
+        "copySuccess": "Kiungo cha rejeleo kimenakiliwa",
+        "copyError": "Haikuwezekana kunakili kiungo cha rejeleo",
+        "columns": {
+          "lead": "Mteja mtarajiwa",
+          "referralCode": "Msimbo wa Rejeleo",
+          "status": "Hali",
+          "linkedSme": "SME Iliyounganishwa",
+          "created": "Imeundwa",
+          "copyLink": "Nakili kiungo"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Uchanganuzi",
+      "description": "Gawanya jalada lako kwa nchi, kategoria, hatua ya uingizaji, na matokeo ya kila mwezi.",
+      "byCategory": {
+        "title": "Kwa Kategoria",
+        "description": "Ni sekta zipi zinatawala msingi wa SME zako zilizorejelewa."
+      },
+      "byCountry": {
+        "title": "Kwa Nchi",
+        "description": "Usambazaji wa kijiografia wa mashirika yaliyorejelewa na benki."
+      },
+      "byStage": {
+        "title": "Kwa Hatua",
+        "description": "Sehemu gani ya jalada imepiga hatua kupitia faneli."
+      },
+      "monthly": {
+        "title": "Mwelekeo wa Kila Mwezi",
+        "description": "Tazama uundaji wa jalada, uanzishaji, na thamani ya kibiashara kwa muda.",
+        "newSmes": "SME mpya {count}",
+        "active": "hai {count}"
+      }
+    }
   }
 }

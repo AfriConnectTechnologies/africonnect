@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { Authenticated, Unauthenticated } from "convex/react";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
 import { useTranslations, useLocale } from "next-intl";
@@ -8,15 +9,47 @@ import { Sidebar } from "@/components/dashboard/sidebar";
 import { EmailVerificationBanner } from "@/components/dashboard/email-verification-banner";
 import { useWelcomeEmail } from "@/lib/hooks/useWelcomeEmail";
 import { ChatProvider } from "@/components/chat";
+import { useCurrentRole, useCurrentUser } from "@/lib/hooks/useRole";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { BankReferralTracker } from "@/components/dashboard/bank-referral-tracker";
 
 function AuthenticatedDashboard({ children }: { children: React.ReactNode }) {
   const locale = useLocale();
+  const currentUser = useCurrentUser();
+  const currentRole = useCurrentRole();
+  const pathname = usePathname();
+  const router = useRouter();
+  const isBankUser = (currentRole as string | null | undefined) === "bank";
+  const shouldMountChatProvider =
+    currentUser !== undefined && currentUser?.role !== "bank";
   
   // Initialize user and send welcome email for new users
   useWelcomeEmail(locale);
 
-  return (
-    <ChatProvider>
+  useEffect(() => {
+    if (!currentUser) {
+      return;
+    }
+
+    const isBankRoute = pathname === "/bank" || pathname.startsWith("/bank/");
+    const isSettingsRoute = pathname === "/settings" || pathname.startsWith("/settings/");
+
+    if (isBankUser) {
+      if (!isBankRoute && !isSettingsRoute) {
+        router.replace("/bank");
+      }
+      return;
+    }
+
+    if (isBankRoute) {
+      router.replace("/dashboard");
+      return;
+    }
+  }, [currentUser, isBankUser, pathname, router]);
+
+  const content = (
+    <>
+      <BankReferralTracker />
       <div className="flex h-screen overflow-hidden print:h-auto print:overflow-visible">
         <Sidebar />
         <div className="flex flex-1 flex-col overflow-hidden min-w-0 print:overflow-visible">
@@ -29,8 +62,10 @@ function AuthenticatedDashboard({ children }: { children: React.ReactNode }) {
           </main>
         </div>
       </div>
-    </ChatProvider>
+    </>
   );
+
+  return shouldMountChatProvider ? <ChatProvider>{content}</ChatProvider> : content;
 }
 
 export default function DashboardLayout({
