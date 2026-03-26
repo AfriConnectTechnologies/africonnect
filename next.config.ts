@@ -17,6 +17,9 @@ const r2AccountId = process.env.R2_ACCOUNT_ID;
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
+  logging: {
+    browserToTerminal: process.env.NODE_ENV === "development" ? "error" : false,
+  },
   turbopack: {
     root: __dirname,
   },
