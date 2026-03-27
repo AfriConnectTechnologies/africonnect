@@ -54,6 +54,33 @@ type NavSection = {
   items: NavItem[];
 };
 
+const navItemFallbackLabels: Record<NavItemKey, string> = {
+  dashboard: "Dashboard",
+  marketplace: "Marketplace",
+  products: "My Products",
+  inventory: "Inventory",
+  messages: "Messages",
+  cart: "Cart",
+  orders: "Orders",
+  settings: "Settings",
+  billing: "Billing",
+  myBusiness: "My Business",
+  creditProfile: "Credit Profile",
+  registerBusiness: "Verify Business",
+  applyToSell: "Apply to Sell",
+  manageUsers: "Manage Users",
+  manageBusinesses: "Manage Businesses",
+  manageSellerApplications: "Seller Applications",
+  manageProducts: "Manage Products",
+  manageRefunds: "Manage Refunds",
+  manageBanks: "Manage Banks",
+  bankPortfolio: "Bank Portfolio",
+  bankReferrals: "Bank Referrals",
+  bankAnalytics: "Bank Analytics",
+  compliance: "AfCFTA Compliance",
+  aiAssistant: "AI Assistant",
+};
+
 const browseItems: NavItem[] = [
   { href: "/dashboard", labelKey: "dashboard", icon: LayoutDashboard },
   { href: "/marketplace", labelKey: "marketplace", icon: Store },
@@ -311,7 +338,13 @@ function SidebarContent({
             <div className="space-y-0.5">
               {section.items.map((item) => {
                 const Icon = item.icon;
-                const label = item.label ?? (item.labelKey ? t(item.labelKey) : item.href);
+                const label =
+                  item.label ??
+                  (item.labelKey
+                    ? t.has(item.labelKey)
+                      ? t(item.labelKey)
+                      : navItemFallbackLabels[item.labelKey]
+                    : item.href);
                 const isActive =
                   item.matchMode === "exact"
                     ? pathname === item.href
