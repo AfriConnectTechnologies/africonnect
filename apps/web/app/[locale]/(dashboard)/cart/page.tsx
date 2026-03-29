@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useQuery, useMutation, useConvex } from "convex/react";
 import { useTranslations } from "next-intl";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,7 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart, Trash2, Plus, Minus, Package, CreditCard, Loader2 } from "lucide-react";
 import { Link, useRouter } from "@/i18n/navigation";
 import { toast } from "sonner";
-import { Id } from "@/convex/_generated/dataModel";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { COMMERCE_ENABLED } from "@/lib/features";
 import { ComingSoonBanner } from "@/components/ui/coming-soon";
 import { AgreementDialog } from "@/components/agreements/AgreementDialog";

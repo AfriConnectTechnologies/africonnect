@@ -20,6 +20,7 @@
     "@react-navigation/native": "^7.1.8",
     "clsx": "^2.1.1",
     "convex": "^1.31.5",
+    "@africonnect/convex": "workspace:*",
     "expo": "~54.0.31",
     "expo-auth-session": "^7.0.10",
     "expo-constants": "~18.0.13",

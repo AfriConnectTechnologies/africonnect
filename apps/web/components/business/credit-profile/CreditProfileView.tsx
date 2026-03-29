@@ -5,7 +5,7 @@ import { useQuery } from "convex/react";
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowLeft, Building2, Download, FileText, Globe2, Printer, ShieldCheck, TrendingUp, Users } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";

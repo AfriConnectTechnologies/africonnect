@@ -5,7 +5,7 @@ import { useQuery } from "convex/react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import { useUser } from "@clerk/nextjs";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { Badge } from "@/components/ui/badge";
 import { Bot, Loader2, Shield } from "lucide-react";
 import { AfcftaAiAssistant, GeneralAiAssistant } from "@/components/compliance";

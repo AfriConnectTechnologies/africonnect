@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useQuery, useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import {
@@ -29,7 +29,7 @@ import {
   ArrowDownRight,
 } from "lucide-react";
 import { toast } from "sonner";
-import { Id } from "@/convex/_generated/dataModel";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { COMPLIANCE_ENABLED } from "@/lib/features";
 
 export default function SubscriptionPage() {

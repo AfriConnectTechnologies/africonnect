@@ -19,8 +19,8 @@ import { useAuth } from '@clerk/clerk-expo';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import * as ImagePicker from 'expo-image-picker';
 
-import { api } from '@/convex/_generated/api';
-import { Id } from '@/convex/_generated/dataModel';
+import { api } from '@africonnect/convex/_generated/api';
+import type { Id } from '@africonnect/convex/_generated/dataModel';
 import { formatPrice } from '@/lib/utils';
 
 const CATEGORIES = [

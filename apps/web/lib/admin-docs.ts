@@ -1,6 +1,6 @@
 import { auth } from "@clerk/nextjs/server";
 import { ConvexHttpClient } from "convex/browser";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 
 export async function hasAdminDocsAccess(): Promise<boolean> {
   const { userId, getToken } = await auth();

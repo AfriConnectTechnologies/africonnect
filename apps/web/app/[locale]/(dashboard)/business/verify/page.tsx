@@ -5,7 +5,7 @@ import { useMutation, useQuery } from "convex/react";
 import { useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery, useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { useParams, useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
-import { Id } from "@/convex/_generated/dataModel";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { ImageGallery } from "@/components/products";
 import Image from "next/image";
 import { COMMERCE_ENABLED } from "@/lib/features";

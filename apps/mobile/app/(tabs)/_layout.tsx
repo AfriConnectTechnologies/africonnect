@@ -5,7 +5,7 @@ import { useQuery } from 'convex/react';
 import { useAuth } from '@clerk/clerk-expo';
 
 import { useTheme } from '@/lib/theme';
-import { api } from '@/convex/_generated/api';
+import { api } from '@africonnect/convex/_generated/api';
 
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];

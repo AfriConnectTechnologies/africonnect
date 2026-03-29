@@ -16,7 +16,7 @@ import { useQuery } from 'convex/react';
 import { useAuth } from '@clerk/clerk-expo';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-import { api } from '@/convex/_generated/api';
+import { api } from '@africonnect/convex/_generated/api';
 import { formatPrice } from '@/lib/utils';
 import { useTheme } from '@/lib/theme';
 

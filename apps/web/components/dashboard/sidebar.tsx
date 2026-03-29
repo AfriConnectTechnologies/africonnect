@@ -32,7 +32,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { COMMERCE_ENABLED, isComplianceEnabledForEmail } from "@/lib/features";
 import { useChatContext } from "@/components/chat/ChatProvider";
 import { BrandIcon } from "@/components/brand-icon";

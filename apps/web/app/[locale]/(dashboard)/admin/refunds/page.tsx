@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import {
   Card,
   CardContent,
@@ -32,7 +32,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RefreshCw, Loader2, AlertTriangle, DollarSign } from "lucide-react";
 import { toast } from "sonner";
-import { Id } from "@/convex/_generated/dataModel";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 
 interface Payment {
   _id: Id<"payments">;

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyPayment } from "@/lib/chapa";
 import { ConvexHttpClient } from "convex/browser";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import crypto from "crypto";
 import {
   checkRateLimit,

@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { useRequireBank } from "@/lib/hooks/useRole";
 import { formatMonthBucket } from "@/lib/month-format";
 import { useLocale, useTranslations } from "next-intl";

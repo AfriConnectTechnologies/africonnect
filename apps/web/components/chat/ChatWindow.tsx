@@ -19,7 +19,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { toast } from "sonner";
 import { useTranslations } from "next-intl";
 import {

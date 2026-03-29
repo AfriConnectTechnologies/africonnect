@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useMutation, useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { useRequireAdmin } from "@/lib/hooks/useRole";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";

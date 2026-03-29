@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { useQuery, useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
-import { Id } from "@/convex/_generated/dataModel";
+import { api } from "@africonnect/convex/_generated/api";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { useRequireAdmin } from "@/lib/hooks/useRole";
 import { Input } from "@/components/ui/input";
 import {

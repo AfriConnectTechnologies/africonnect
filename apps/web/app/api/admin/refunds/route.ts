@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { processRefund, ChapaError } from "@/lib/chapa";
 import { ConvexHttpClient } from "convex/browser";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { z } from "zod";
-import { Id } from "@/convex/_generated/dataModel";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { createApiLogger, PaymentLogEvents, flushLogs } from "@/lib/axiom";
 
 // Security headers

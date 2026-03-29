@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import path from "path";
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
@@ -21,7 +22,7 @@ const nextConfig: NextConfig = {
     browserToTerminal: process.env.NODE_ENV === "development" ? "error" : false,
   },
   turbopack: {
-    root: __dirname,
+    root: path.resolve(__dirname, "../.."),
   },
   images: {
     localPatterns: [

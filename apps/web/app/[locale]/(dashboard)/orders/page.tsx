@@ -3,8 +3,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { useTranslations } from "next-intl";
-import { api } from "@/convex/_generated/api";
-import { Id } from "@/convex/_generated/dataModel";
+import { api } from "@africonnect/convex/_generated/api";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {

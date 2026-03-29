@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { Building2, MapPin, ChevronRight } from "lucide-react";
 
 export function BusinessCard() {

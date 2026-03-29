@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { ConvexHttpClient } from "convex/browser";
-import { api } from "@/convex/_generated/api";
-import { Id } from "@/convex/_generated/dataModel";
+import { api } from "@africonnect/convex/_generated/api";
+import type { Id } from "@africonnect/convex/_generated/dataModel";
 import { COMMERCE_ENABLED } from "@/lib/features";
 
 const SECURITY_HEADERS = {

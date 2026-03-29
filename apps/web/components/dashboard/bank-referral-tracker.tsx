@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { useCurrentUser } from "@/lib/hooks/useRole";
 import {
   clearStoredBankReferralCode,

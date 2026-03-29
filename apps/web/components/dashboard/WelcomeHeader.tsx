@@ -5,7 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import { useTranslations } from "next-intl";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 
 export function WelcomeHeader() {
   const t = useTranslations("dashboard");

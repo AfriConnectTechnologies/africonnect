@@ -4,7 +4,7 @@ import { useQuery } from "convex/react";
 import { useUser } from "@clerk/nextjs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { CheckCircle2 } from "lucide-react";
 
 export function ProfileHeader() {

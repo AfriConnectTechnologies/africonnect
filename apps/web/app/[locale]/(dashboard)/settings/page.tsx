@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { useUser, useClerk } from "@clerk/nextjs";
 import { useRouter } from "@/i18n/navigation";
 import { toast } from "sonner";

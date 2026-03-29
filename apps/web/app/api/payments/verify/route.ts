@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { verifyPayment, ChapaError } from "@/lib/chapa";
 import { ConvexHttpClient } from "convex/browser";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { COMMERCE_ENABLED } from "@/lib/features";
 import {
   checkRateLimit,

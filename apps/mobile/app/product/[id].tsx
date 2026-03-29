@@ -14,8 +14,8 @@ import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
 import { useQuery } from 'convex/react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-import { api } from '@/convex/_generated/api';
-import { Id } from '@/convex/_generated/dataModel';
+import { api } from '@africonnect/convex/_generated/api';
+import type { Id } from '@africonnect/convex/_generated/dataModel';
 import { formatPrice, formatDate } from '@/lib/utils';
 
 const { width } = Dimensions.get('window');

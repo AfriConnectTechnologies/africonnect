@@ -3,7 +3,7 @@
 import { useQuery } from "convex/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 
 export type UserRole = "buyer" | "seller" | "admin" | "bank";
 

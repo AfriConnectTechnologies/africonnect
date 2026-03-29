@@ -7,15 +7,13 @@ on:
     branches: [main, master]
 
 env:
-  # Add your environment variables here
-  # These are placeholder values - replace with actual values or use GitHub Secrets
   NEXT_PUBLIC_CONVEX_URL: ${{ secrets.NEXT_PUBLIC_CONVEX_URL }}
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}
   CLERK_SECRET_KEY: ${{ secrets.CLERK_SECRET_KEY }}
 
 jobs:
-  lint:
-    name: Lint
+  web-lint:
+    name: Web Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,13 +25,14 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
-      - name: Run ESLint
+      - name: Run web lint
+        working-directory: apps/web
         run: bun run lint
 
-  type-check:
-    name: Type Check
+  web-type-check:
+    name: Web Type Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -45,13 +44,14 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
       - name: Run TypeScript compiler
+        working-directory: apps/web
         run: bunx tsc --noEmit
 
-  unit-tests:
-    name: Unit Tests
+  web-unit-tests:
+    name: Web Unit Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -63,9 +63,10 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
       - name: Run Vitest
+        working-directory: apps/web
         run: bun run test:run
 
       - name: Upload coverage reports
@@ -73,11 +74,11 @@ jobs:
         if: always()
         with:
           name: coverage-report
-          path: coverage/
+          path: apps/web/coverage/
           retention-days: 7
 
-  e2e-tests:
-    name: E2E Tests
+  web-e2e-tests:
+    name: Web E2E Tests
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -90,15 +91,17 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
       - name: Install Playwright browsers
         run: bunx playwright install --with-deps chromium
 
-      - name: Build application
+      - name: Build web app
+        working-directory: apps/web
         run: bun run build
 
       - name: Run Playwright tests
+        working-directory: apps/web
         run: bun run test:e2e --project=chromium
 
       - name: Upload Playwright report
@@ -106,7 +109,7 @@ jobs:
         if: always()
         with:
           name: playwright-report
-          path: playwright-report/
+          path: apps/web/playwright-report/
           retention-days: 7
 
       - name: Upload test results
@@ -114,13 +117,13 @@ jobs:
         if: always()
         with:
           name: test-results
-          path: test-results/
+          path: apps/web/test-results/
           retention-days: 7
 
-  build:
-    name: Build
+  web-build:
+    name: Web Build
     runs-on: ubuntu-latest
-    needs: [lint, type-check, unit-tests]
+    needs: [web-lint, web-type-check, web-unit-tests]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -131,15 +134,15 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
       - name: Build Next.js application
+        working-directory: apps/web
         run: bun run build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: nextjs-build
-          path: .next/
+          path: apps/web/.next/
           retention-days: 7
-

@@ -2,7 +2,7 @@
 
 import { useQuery } from "convex/react";
 import { useTranslations, useLocale } from "next-intl";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { Link } from "@/i18n/navigation";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";

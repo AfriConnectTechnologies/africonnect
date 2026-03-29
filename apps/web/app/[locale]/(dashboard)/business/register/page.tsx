@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useConvex, useMutation, useQuery } from "convex/react";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { api } from "@/convex/_generated/api";
+import { api } from "@africonnect/convex/_generated/api";
 import { AgreementDialog } from "@/components/agreements/AgreementDialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
