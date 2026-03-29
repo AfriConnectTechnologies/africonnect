@@ -25,17 +25,3 @@ bun run dev:mobile
 ```
 
 Run Convex in one terminal and either web or mobile in another.
-
-## Environment
-
-- Web expects `NEXT_PUBLIC_CONVEX_URL`
-- Mobile expects `EXPO_PUBLIC_CONVEX_URL`
-- Convex deploys use `CONVEX_DEPLOY_KEY`
-
-Both apps should point at the same Convex deployment.
-
-## CI and Deploy
-
-- `.github/workflows/ci.yml` runs the web lint, type-check, unit, e2e, and build jobs from the monorepo root.
-- `.github/workflows/deploy-convex.yml` deploys `packages/convex` using `CONVEX_DEPLOY_KEY`.
-- Mobile EAS builds remain managed from `apps/mobile`.
