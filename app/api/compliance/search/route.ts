@@ -4,8 +4,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { COMPLIANCE_ENABLED, isComplianceEnabledForEmail } from "@/lib/features";
 
-// Supported countries/regions
-type Country = "ethiopia" | "kenya";
+type TariffCountry = "ethiopia" | "kenya";
 
 // Normalized type for HS code entry (unified format for both countries)
 interface NormalizedHSCodeEntry {
@@ -22,6 +21,8 @@ interface NormalizedHSCodeEntry {
   };
   base_rate?: string;
   unit?: string;
+  matched?: boolean;
+  source_documents?: string[];
 }
 
 // Ethiopia data structure
@@ -30,6 +31,10 @@ interface EthiopiaHSCodeEntry {
   english_name: string;
   amharic_name: string;
   category: string;
+  unit?: string;
+  base_rate?: string;
+  matched?: boolean;
+  source_documents?: string[];
   rates: {
     "2026": string;
     "2027": string;
@@ -56,7 +61,7 @@ interface EACHSCodeEntry {
 }
 
 // Cache for loaded data (separate cache per country)
-const dataCache: Record<Country, NormalizedHSCodeEntry[] | null> = {
+const dataCache: Record<TariffCountry, NormalizedHSCodeEntry[] | null> = {
   ethiopia: null,
   kenya: null,
 };
@@ -74,6 +79,10 @@ function normalizeEthiopiaData(data: EthiopiaHSCodeEntry[]): NormalizedHSCodeEnt
     amharic_name: item.amharic_name,
     category: item.category,
     rates: item.rates,
+    unit: item.unit,
+    base_rate: item.base_rate,
+    matched: item.matched ?? true,
+    source_documents: item.source_documents,
   }));
 }
 
@@ -93,16 +102,31 @@ function normalizeEACData(data: EACHSCodeEntry[]): NormalizedHSCodeEntry[] {
     },
     base_rate: stripPercentage(item.base_rate),
     unit: item.unit,
+    matched: true,
   }));
 }
 
-async function loadHSCodeData(country: Country): Promise<NormalizedHSCodeEntry[]> {
+function getTariffSource(country: TariffCountry, entry?: NormalizedHSCodeEntry | null): string {
+  if (country === "kenya") {
+    return "eac_category_a_2026_2030.json";
+  }
+
+  if (entry?.source_documents?.length) {
+    return entry.source_documents.join(" + ");
+  }
+
+  return entry?.matched === false
+    ? "Legacy Ethiopia tariff dataset"
+    : "Vol 1 - English -.docx + Vol 2 - English -.docx";
+}
+
+async function loadHSCodeData(country: TariffCountry): Promise<NormalizedHSCodeEntry[]> {
   if (dataCache[country]) {
     return dataCache[country]!;
   }
 
   const fileName = country === "ethiopia" 
-    ? "category_a_detailed_2026_2030.json" 
+    ? "ethiopia_vol_1_2_category_a_2026_2030.json" 
     : "eac_category_a_2026_2030.json";
   
   const filePath = path.join(process.cwd(), fileName);
@@ -133,7 +157,7 @@ export async function GET(request: NextRequest) {
     const query = searchParams.get("q")?.toLowerCase().trim() || "";
     const hsCode = searchParams.get("hs_code")?.trim() || "";
     const limit = parseInt(searchParams.get("limit") || "10", 10);
-    const country = (searchParams.get("country") || "ethiopia") as Country;
+    const country = (searchParams.get("country") || "ethiopia") as TariffCountry;
 
     // Validate country parameter
     if (country !== "ethiopia" && country !== "kenya") {
@@ -155,17 +179,22 @@ export async function GET(request: NextRequest) {
       });
       
       if (entry) {
+        const scheduleMatched = entry.matched ?? true;
         return NextResponse.json({
           success: true,
           data: entry,
-          isCompliant: true, // If found in this file, it's Category A compliant
+          isCompliant: scheduleMatched, // Legacy compatibility for existing consumers
+          tariffScheduleStatus: scheduleMatched ? "matched" : "not_matched",
+          tariffSource: getTariffSource(country, entry),
           country,
         });
       } else {
         return NextResponse.json({
           success: true,
           data: null,
-          isCompliant: false, // Not found in Category A
+          isCompliant: false, // Legacy compatibility for existing consumers
+          tariffScheduleStatus: "not_matched",
+          tariffSource: getTariffSource(country),
           country,
         });
       }
@@ -193,16 +222,23 @@ export async function GET(request: NextRequest) {
         return matchesName || matchesCode;
       })
       .slice(0, limit)
-      .map((item) => ({
-        hsCode: item.hs_code,
-        englishName: item.english_name,
-        amharicName: item.amharic_name,
-        category: item.category,
-        rates: item.rates,
-        currentRate: item.rates["2026"], // Current year
-        baseRate: item.base_rate,
-        unit: item.unit,
-      }));
+      .map((item) => {
+        const scheduleMatched = item.matched ?? true;
+
+        return {
+          hsCode: item.hs_code,
+          englishName: item.english_name,
+          amharicName: item.amharic_name,
+          category: item.category,
+          rates: item.rates,
+          currentRate: item.rates["2026"], // Current year
+          baseRate: item.base_rate,
+          unit: item.unit,
+          tariffCategory: item.category,
+          tariffScheduleStatus: scheduleMatched ? "matched" : "not_matched",
+          tariffSource: getTariffSource(country, item),
+        };
+      });
 
     return NextResponse.json({
       success: true,

@@ -29,6 +29,11 @@ interface ComplianceCardProps {
   currentRate?: string;
   rates?: Rates | string;
   country?: string; // "ethiopia" or "kenya"
+  tariffCategory?: string;
+  tariffScheduleStatus?: "matched" | "not_matched";
+  tariffSource?: string;
+  tariffBaseRate?: string;
+  tariffUnit?: string;
   onRemove?: () => void;
   showRemove?: boolean;
   compact?: boolean;
@@ -47,6 +52,11 @@ export function ComplianceCard({
   currentRate,
   rates,
   country,
+  tariffCategory,
+  tariffScheduleStatus,
+  tariffSource,
+  tariffBaseRate,
+  tariffUnit,
   onRemove,
   showRemove = true,
   compact = false,
@@ -66,15 +76,25 @@ export function ComplianceCard({
   const displayName = locale === "am" && productNameAmharic 
     ? productNameAmharic 
     : productName;
+  const scheduleStatus = tariffScheduleStatus || (isCompliant ? "matched" : "not_matched");
+  const scheduleMatched = scheduleStatus === "matched";
 
   const years = ["2026", "2027", "2028", "2029", "2030"] as const;
+  type RateYear = (typeof years)[number];
+  const firstRateYear = Number(years[0]);
+  const lastRateYear = Number(years[years.length - 1]);
+  const currentYearKey: RateYear = years.includes(String(currentYear) as RateYear)
+    ? (String(currentYear) as RateYear)
+    : currentYear < firstRateYear
+      ? years[0]
+      : years[years.length - 1];
 
   if (compact) {
     return (
       <div className="flex items-center justify-between gap-4 rounded-lg border p-3 bg-card">
         <div className="flex items-center gap-3 min-w-0">
-          {isCompliant ? (
-            <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 shrink-0" />
+          {scheduleMatched ? (
+            <CheckCircle2 className="h-5 w-5 text-blue-600 dark:text-blue-400 shrink-0" />
           ) : (
             <XCircle className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0" />
           )}
@@ -84,13 +104,29 @@ export function ComplianceCard({
               <span>{countryFlag}</span>
               <span>HS: {hsCode}</span>
             </div>
+            {scheduleMatched && (tariffBaseRate || tariffCategory) && (
+              <div className="text-xs text-muted-foreground mt-1">
+                {tariffBaseRate ? `${t("baseRate")}: ${tariffBaseRate}%` : ""}
+                {tariffBaseRate && tariffCategory ? " | " : ""}
+                {tariffCategory ? `${t("tariffCategory")}: ${tariffCategory}` : ""}
+              </div>
+            )}
           </div>
         </div>
         <div className="flex items-center gap-2 shrink-0">
-          {isCompliant && currentRate && (
-            <Badge variant="secondary" className="text-xs">
-              {currentRate}%
-            </Badge>
+          {scheduleMatched && (
+            <div className="flex flex-col items-end gap-1">
+              {currentRate && currentRate !== "N/A" && (
+                <Badge variant="secondary" className="text-xs">
+                  {t("currentRate")}: {currentRate}%
+                </Badge>
+              )}
+              {tariffBaseRate && (
+                <span className="text-xs text-muted-foreground">
+                  {t("baseRate")}: {tariffBaseRate}%
+                </span>
+              )}
+            </div>
           )}
           {showRemove && onRemove && (
             <Button
@@ -110,16 +146,16 @@ export function ComplianceCard({
   return (
     <Card className={cn(
       "overflow-hidden",
-      isCompliant 
-        ? "border-green-200 dark:border-green-900" 
+      scheduleMatched
+        ? "border-blue-200 dark:border-blue-900" 
         : "border-amber-200 dark:border-amber-900"
     )}>
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-2">
           <div className="space-y-1">
             <CardTitle className="text-base flex items-center gap-2">
-              {isCompliant ? (
-                <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />
+              {scheduleMatched ? (
+                <CheckCircle2 className="h-5 w-5 text-blue-600 dark:text-blue-400" />
               ) : (
                 <XCircle className="h-5 w-5 text-amber-600 dark:text-amber-400" />
               )}
@@ -131,23 +167,23 @@ export function ComplianceCard({
             </CardDescription>
           </div>
           <Badge 
-            variant={isCompliant ? "default" : "secondary"}
+            variant={scheduleMatched ? "default" : "secondary"}
             className={cn(
-              isCompliant 
-                ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200" 
+              scheduleMatched
+                ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200" 
                 : "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200"
             )}
           >
-            {isCompliant ? t("categoryA") : t("notCategoryA")}
+            {scheduleMatched ? t("tariffScheduleMatched") : t("tariffScheduleNotMatched")}
           </Badge>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        {isCompliant && parsedRates ? (
+        {scheduleMatched && parsedRates ? (
           <>
             <div className="flex items-center gap-2 text-sm">
-              <TrendingDown className="h-4 w-4 text-green-600 dark:text-green-400" />
-              <span className="text-muted-foreground">{t("tariffReduction")}</span>
+              <TrendingDown className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+              <span className="text-muted-foreground">{t("tariffScheduleCoverage")}</span>
             </div>
             
             {/* Rate Timeline */}
@@ -188,15 +224,30 @@ export function ComplianceCard({
             </div>
 
             {/* Current Year Highlight */}
-            <div className="rounded-md bg-green-50 dark:bg-green-950/30 p-3">
+            <div className="rounded-md bg-blue-50 dark:bg-blue-950/30 p-3">
               <div className="text-sm">
-                <span className="text-muted-foreground">{t("currentYearRate")} ({currentYear}):</span>
-                <span className="ml-2 font-semibold text-green-700 dark:text-green-300">
-                  {currentRate || parsedRates["2026"]}%
+                <span className="text-muted-foreground">{t("currentYearRate")} ({currentYearKey}):</span>
+                <span className="ml-2 font-semibold text-blue-700 dark:text-blue-300">
+                  {currentRate || parsedRates[currentYearKey]}%
                 </span>
               </div>
+              {tariffBaseRate && (
+                <div className="text-xs text-muted-foreground mt-1">
+                  {t("baseRate")}: {tariffBaseRate}%{tariffUnit ? ` (${tariffUnit})` : ""}
+                </div>
+              )}
+              {tariffCategory && (
+                <div className="text-xs text-muted-foreground mt-1">
+                  {t("tariffCategory")}: {tariffCategory}
+                </div>
+              )}
+              {tariffSource && (
+                <div className="text-xs text-muted-foreground mt-1">
+                  {t("ruleSource")}: {tariffSource}
+                </div>
+              )}
               {parsedRates["2030"] === "0" && (
-                <div className="text-xs text-green-600 dark:text-green-400 mt-1">
+                <div className="text-xs text-blue-600 dark:text-blue-400 mt-1">
                   {t("zeroTariffBy2030")}
                 </div>
               )}
@@ -205,10 +256,10 @@ export function ComplianceCard({
         ) : (
           <div className="rounded-md bg-amber-50 dark:bg-amber-950/30 p-3">
             <p className="text-sm text-amber-800 dark:text-amber-200">
-              {t("noAfcftaBenefits")}
+              {t("tariffScheduleNotMatched")}
             </p>
             <p className="text-xs text-amber-600 dark:text-amber-400 mt-1">
-              {t("noAfcftaBenefitsDescription")}
+              {t("noTariffMatchDescription")}
             </p>
           </div>
         )}

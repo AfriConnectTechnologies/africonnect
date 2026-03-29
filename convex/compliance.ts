@@ -13,6 +13,13 @@ export const addBusinessProduct = mutation({
     currentRate: v.optional(v.string()),
     rates: v.optional(v.string()), // JSON string of rates
     country: v.optional(v.string()), // "ethiopia" or "kenya" (EAC)
+    tariffCategory: v.optional(v.string()),
+    tariffScheduleStatus: v.optional(
+      v.union(v.literal("matched"), v.literal("not_matched"))
+    ),
+    tariffSource: v.optional(v.string()),
+    tariffBaseRate: v.optional(v.string()),
+    tariffUnit: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const log = createLogger("compliance.addBusinessProduct");
@@ -60,6 +67,11 @@ export const addBusinessProduct = mutation({
         currentRate: args.currentRate,
         rates: args.rates,
         country: args.country || "ethiopia",
+        tariffCategory: args.tariffCategory,
+        tariffScheduleStatus: args.tariffScheduleStatus,
+        tariffSource: args.tariffSource,
+        tariffBaseRate: args.tariffBaseRate,
+        tariffUnit: args.tariffUnit,
         createdAt: Date.now(),
       });
 
@@ -153,8 +165,8 @@ export const getComplianceSummary = query({
     if (!user.businessId) {
       return {
         totalProducts: 0,
-        compliantProducts: 0,
-        nonCompliantProducts: 0,
+        matchedScheduleProducts: 0,
+        unmatchedScheduleProducts: 0,
         hasCompletedCheck: false,
       };
     }
@@ -164,13 +176,17 @@ export const getComplianceSummary = query({
       .withIndex("by_business", (q) => q.eq("businessId", user.businessId!))
       .collect();
 
-    const compliantProducts = products.filter((p) => p.isCompliant);
-    const nonCompliantProducts = products.filter((p) => !p.isCompliant);
+    const matchedScheduleProducts = products.filter(
+      (p) => (p.tariffScheduleStatus || (p.isCompliant ? "matched" : "not_matched")) === "matched"
+    );
+    const unmatchedScheduleProducts = products.filter(
+      (p) => (p.tariffScheduleStatus || (p.isCompliant ? "matched" : "not_matched")) !== "matched"
+    );
 
     return {
       totalProducts: products.length,
-      compliantProducts: compliantProducts.length,
-      nonCompliantProducts: nonCompliantProducts.length,
+      matchedScheduleProducts: matchedScheduleProducts.length,
+      unmatchedScheduleProducts: unmatchedScheduleProducts.length,
       hasCompletedCheck: products.length > 0,
     };
   },

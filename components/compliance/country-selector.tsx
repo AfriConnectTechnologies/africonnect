@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
 export type TariffCountry = "ethiopia" | "kenya";
 
 interface CountrySelectorProps {

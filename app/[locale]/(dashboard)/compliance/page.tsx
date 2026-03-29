@@ -114,7 +114,7 @@ export default function CompliancePage() {
         </div>
         <Badge variant="outline" className="w-fit flex items-center gap-1">
           <Shield className="h-3 w-3" />
-          AfCFTA {t("categoryA")}
+          AfCFTA {t("categoryABadge")}
         </Badge>
       </div>
 

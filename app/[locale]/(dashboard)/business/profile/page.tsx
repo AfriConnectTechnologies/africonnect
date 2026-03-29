@@ -1118,17 +1118,17 @@ export default function BusinessProfilePage() {
                     <div className="text-xl font-bold">{complianceSummary.totalProducts}</div>
                     <div className="text-xs text-muted-foreground">{tCompliance("totalProducts")}</div>
                   </div>
-                  <div className="text-center p-3 rounded-lg bg-green-50 dark:bg-green-950/30">
-                    <div className="text-xl font-bold text-green-600 dark:text-green-400">
-                      {complianceSummary.compliantProducts}
+                  <div className="text-center p-3 rounded-lg bg-blue-50 dark:bg-blue-950/30">
+                    <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                      {complianceSummary.matchedScheduleProducts}
                     </div>
-                    <div className="text-xs text-green-700 dark:text-green-300">{tCompliance("eligible")}</div>
+                    <div className="text-xs text-blue-700 dark:text-blue-300">{tCompliance("tariffScheduleMatched")}</div>
                   </div>
                   <div className="text-center p-3 rounded-lg bg-amber-50 dark:bg-amber-950/30">
                     <div className="text-xl font-bold text-amber-600 dark:text-amber-400">
-                      {complianceSummary.nonCompliantProducts}
+                      {complianceSummary.unmatchedScheduleProducts}
                     </div>
-                    <div className="text-xs text-amber-700 dark:text-amber-300">{tCompliance("notEligible")}</div>
+                    <div className="text-xs text-amber-700 dark:text-amber-300">{tCompliance("tariffScheduleNotMatched")}</div>
                   </div>
                 </div>
                 <Button

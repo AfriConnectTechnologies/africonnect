@@ -443,6 +443,13 @@ export default defineSchema({
     currentRate: v.optional(v.string()), // Current year's rate
     rates: v.optional(v.string()), // JSON string of all rates { "2026": "2", "2027": "1.5", ... }
     country: v.optional(v.string()), // "ethiopia" or "kenya" (EAC)
+    tariffCategory: v.optional(v.string()),
+    tariffScheduleStatus: v.optional(
+      v.union(v.literal("matched"), v.literal("not_matched"))
+    ),
+    tariffSource: v.optional(v.string()),
+    tariffBaseRate: v.optional(v.string()),
+    tariffUnit: v.optional(v.string()),
     createdAt: v.number(),
   })
     .index("by_business", ["businessId"])

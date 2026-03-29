@@ -23,6 +23,9 @@ export interface HSCodeResult {
   currentRate: string;
   baseRate?: string;
   unit?: string;
+  tariffCategory?: string;
+  tariffScheduleStatus?: "matched" | "not_matched";
+  tariffSource?: string;
 }
 
 interface HSCodeSearchProps {
@@ -161,9 +164,24 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
           currentRate: data.data.rates["2026"],
           baseRate: data.data.base_rate,
           unit: data.data.unit,
+          tariffCategory: data.data.category,
+          tariffScheduleStatus: data.tariffScheduleStatus || "matched",
+          tariffSource: data.tariffSource,
         };
         setManualLookupResult(result);
+        setManualNotFound(result.tariffScheduleStatus !== "matched");
       } else {
+        setManualLookupResult({
+          hsCode: manualHsCode,
+          englishName: "Custom Product",
+          amharicName: "",
+          category: "N/A",
+          rates: { "2026": "N/A", "2027": "N/A", "2028": "N/A", "2029": "N/A", "2030": "N/A" },
+          currentRate: "N/A",
+          tariffCategory: "N/A",
+          tariffScheduleStatus: "not_matched",
+          tariffSource: data.tariffSource,
+        });
         setManualNotFound(true);
       }
     } catch (error) {
@@ -179,18 +197,6 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
       onSelect(manualLookupResult);
       setManualHsCode("");
       setManualLookupResult(null);
-    } else if (manualNotFound && manualHsCode) {
-      // Add as non-compliant product
-      onSelect({
-        hsCode: manualHsCode,
-        englishName: "Custom Product",
-        amharicName: "",
-        category: "N/A",
-        rates: { "2026": "N/A", "2027": "N/A", "2028": "N/A", "2029": "N/A", "2030": "N/A" },
-        currentRate: "N/A",
-      });
-      setManualHsCode("");
-      setManualNotFound(false);
     }
   };
 
@@ -201,6 +207,8 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
     }
     return result.englishName;
   };
+
+  const manualLookupMatched = manualLookupResult?.tariffScheduleStatus === "matched";
 
   return (
     <div className="space-y-4">
@@ -317,7 +325,7 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
           </div>
 
           {/* Lookup Result */}
-          {manualLookupResult && (
+          {manualLookupResult && manualLookupMatched && (
             <div className="rounded-md border bg-green-50 dark:bg-green-950/30 p-3">
               <div className="flex items-start justify-between gap-2">
                 <div>
@@ -325,11 +333,21 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
                     {getDisplayName(manualLookupResult)}
                   </div>
                   <div className="text-xs text-muted-foreground mt-1">
-                    HS: {manualLookupResult.hsCode} | {t("categoryA")}
+                    HS: {manualLookupResult.hsCode} | {t("tariffScheduleMatched")}
                   </div>
                   <div className="text-xs text-green-600 dark:text-green-400 mt-1">
                     {t("currentRate")}: {manualLookupResult.currentRate}%
                   </div>
+                  {manualLookupResult.baseRate && (
+                    <div className="text-xs text-muted-foreground mt-1">
+                      {t("baseRate")}: {manualLookupResult.baseRate}%
+                    </div>
+                  )}
+                  {manualLookupResult.tariffSource && (
+                    <div className="text-xs text-muted-foreground mt-1">
+                      {t("ruleSource")}: {manualLookupResult.tariffSource}
+                    </div>
+                  )}
                 </div>
                 <Button
                   type="button"
@@ -349,12 +367,30 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
             <div className="rounded-md border bg-amber-50 dark:bg-amber-950/30 p-3">
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <div className="font-medium text-sm text-amber-800 dark:text-amber-200">
-                    {t("notFoundInCategoryA")}
-                  </div>
-                  <div className="text-xs text-amber-600 dark:text-amber-400 mt-1">
-                    {t("notFoundDescription")}
-                  </div>
+                  {manualLookupResult ? (
+                    <>
+                      <div className="font-medium text-sm text-amber-800 dark:text-amber-200">
+                        {getDisplayName(manualLookupResult)}
+                      </div>
+                      <div className="text-xs text-amber-600 dark:text-amber-400 mt-1">
+                        HS: {manualLookupResult.hsCode} | {t("tariffScheduleNotMatched")}
+                      </div>
+                      {manualLookupResult.tariffSource && (
+                        <div className="text-xs text-muted-foreground mt-1">
+                          {t("ruleSource")}: {manualLookupResult.tariffSource}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <div className="font-medium text-sm text-amber-800 dark:text-amber-200">
+                        {t("notFoundInTariffSchedule")}
+                      </div>
+                      <div className="text-xs text-amber-600 dark:text-amber-400 mt-1">
+                        {t("notFoundDescription")}
+                      </div>
+                    </>
+                  )}
                 </div>
                 <Button
                   type="button"

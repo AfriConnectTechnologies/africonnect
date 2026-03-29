@@ -52,10 +52,15 @@ export function BusinessProducts({
         hsCode: result.hsCode,
         productName: result.englishName,
         productNameAmharic: result.amharicName || undefined,
-        isCompliant: result.category === "A",
+        isCompliant: result.tariffScheduleStatus === "matched",
         currentRate: result.currentRate,
         rates: JSON.stringify(result.rates),
         country: selectedCountry,
+        tariffCategory: result.tariffCategory,
+        tariffScheduleStatus: result.tariffScheduleStatus,
+        tariffSource: result.tariffSource,
+        tariffBaseRate: result.baseRate,
+        tariffUnit: result.unit,
       });
       toast.success(t("productAdded"));
       setShowSearch(false);
@@ -102,29 +107,31 @@ export function BusinessProducts({
                 <div className="text-2xl font-bold">{summary.totalProducts}</div>
                 <div className="text-sm text-muted-foreground">{t("totalProducts")}</div>
               </div>
-              <div className="text-center p-4 rounded-lg bg-green-50 dark:bg-green-950/30">
-                <div className="text-2xl font-bold text-green-600 dark:text-green-400">
-                  {summary.compliantProducts}
+              <div className="text-center p-4 rounded-lg bg-blue-50 dark:bg-blue-950/30">
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  {summary.matchedScheduleProducts}
                 </div>
-                <div className="text-sm text-green-700 dark:text-green-300">
-                  {t("eligible")}
+                <div className="text-sm text-blue-700 dark:text-blue-300">
+                  {t("tariffScheduleMatched")}
                 </div>
               </div>
               <div className="text-center p-4 rounded-lg bg-amber-50 dark:bg-amber-950/30">
                 <div className="text-2xl font-bold text-amber-600 dark:text-amber-400">
-                  {summary.nonCompliantProducts}
+                  {summary.unmatchedScheduleProducts}
                 </div>
                 <div className="text-sm text-amber-700 dark:text-amber-300">
-                  {t("notEligible")}
+                  {t("tariffScheduleNotMatched")}
                 </div>
               </div>
             </div>
 
-            {summary.compliantProducts > 0 && (
-              <div className="mt-4 p-3 rounded-lg bg-green-50 dark:bg-green-950/30 flex items-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 shrink-0 mt-0.5" />
-                <div className="text-sm text-green-700 dark:text-green-300">
-                  {t("eligibleMessage", { count: summary.compliantProducts })}
+            {summary.matchedScheduleProducts > 0 && (
+              <div className="mt-4 p-3 rounded-lg bg-amber-50 dark:bg-amber-950/30 flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                <div className="text-sm text-amber-700 dark:text-amber-300">
+                  {t("scheduleMatchMessage", {
+                    count: summary.matchedScheduleProducts,
+                  })}
                 </div>
               </div>
             )}
@@ -208,6 +215,11 @@ export function BusinessProducts({
                   currentRate={product.currentRate}
                   rates={product.rates}
                   country={product.country}
+                  tariffCategory={product.tariffCategory}
+                  tariffScheduleStatus={product.tariffScheduleStatus}
+                  tariffSource={product.tariffSource}
+                  tariffBaseRate={product.tariffBaseRate}
+                  tariffUnit={product.tariffUnit}
                   onRemove={() => handleRemoveProduct(product._id)}
                   compact
                 />

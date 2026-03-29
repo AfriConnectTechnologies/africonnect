@@ -4,8 +4,28 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import mammoth from "mammoth";
+import * as mammothImport from "mammoth";
 import pdfParse from "pdf-parse";
+
+type Message =
+  | {
+      type: "warning";
+      message: string;
+    }
+  | {
+      type: "error";
+      message: string;
+      error: unknown;
+    };
+
+type MammothApi = {
+  extractRawText: (input: { buffer: Buffer }) => Promise<{
+    value: string;
+    messages: Message[];
+  }>;
+};
+
+const mammoth = mammothImport as unknown as MammothApi;
 
 type SupportedExtension = ".pdf" | ".txt" | ".md" | ".docx";
 
