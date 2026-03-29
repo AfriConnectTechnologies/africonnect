@@ -1,0 +1,1668 @@
+{
+  "adminBanks": {
+    "title": "ባንካት ኣመሓድር",
+    "description": "መሻርኽቲ ባንካት ፍጠር፣ ተጠቀምቲ ባንኪ መድብ፣ ከምኡ'ውን ናይ ሪፈራል ዓቕሚ ከታተል።",
+    "stats": {
+      "partnerBanks": "መሻርኽቲ ባንካት",
+      "bankUsers": "ተጠቀምቲ ባንኪ",
+      "trackedReferrals": "ዝተኸታተሉ ሪፈራላት"
+    },
+    "createBank": {
+      "title": "ባንኪ ፍጠር",
+      "description": "ሪፈራላትን BI ኣክሰስን ክቆጻጸር ዝኽእል ፕሮፋይል ባንኪ ኣዳልው።",
+      "namePlaceholder": "ስም ባንኪ",
+      "descriptionPlaceholder": "መግለፂ (ብምርጫ)",
+      "action": "ባንኪ ፍጠር",
+      "creating": "ይፍጠር ኣሎ...",
+      "success": "ባንኪ ብዓወት ተፈጢሩ",
+      "error": "ባንኪ ምፍጣር ኣይተሳኸዐን"
+    },
+    "assignUser": {
+      "title": "ተጠቃሚ ባንኪ መድብ",
+      "description": "ዘሎ ተጠቃሚ ናብ ሕሳብ ባንኪ ኣዕብዮ ምስ ባንኪ ኣተሓሕዞ።",
+      "searchPlaceholder": "ተጠቀምቲ ብስም ወይ ብኢሜይል ድለ",
+      "selectUser": "ተጠቃሚ ምረጽ",
+      "selectBank": "ባንኪ ምረጽ",
+      "action": "ተጠቃሚ መድብ",
+      "assigning": "ይምደብ ኣሎ...",
+      "success": "ተጠቃሚ ናብ ባንኪ ተመዲቡ",
+      "error": "ተጠቃሚ ምምዳብ ኣይተሳኸዐን"
+    },
+    "directory": {
+      "title": "ዝርዝር ባንካት",
+      "description": "ኣየኖት ባንካት ንጡፋት ከምዝኾኑን ኣብ ነፍሲ ወከፍ portfolio ክንደይ SME ከምዘለዉን ርአ።",
+      "empty": "ክሳብ ሕጂ ዝተፈጥረ ባንኪ የለን።",
+      "columns": {
+        "bank": "ባንኪ",
+        "status": "ኩነታት",
+        "referralPrefix": "ቀዳማይ ሪፈራል",
+        "users": "ተጠቀምቲ",
+        "referrals": "ሪፈራላት",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "የለን"
+    },
+    "stages": {
+      "generated": "ተላኢኹ",
+      "signed_up": "ተመዝጊቡ",
+      "business_created": "ንግዲ ተፈጢሩ",
+      "verified": "ተረጋጊጹ",
+      "active": "ንጡፍ"
+    },
+    "overview": {
+      "fallbackTitle": "ዳሽቦርድ ባንኪ",
+      "description": "ለውጢ ሪፈራል፣ onboarding ናይ SME እና ኣፈፃፅማ portfolio ተኸታተል።",
+      "referralBase": "መሰረት ሪፈራል: {code}",
+      "stats": {
+        "totalReferrals": "ጠቕላላ ሪፈራላት",
+        "portfolioSmes": "SME ናይ Portfolio",
+        "portfolioSmesMeta": "{verified} ተረጋጊጾም፣ {active} ንጡፋት",
+        "portfolioRevenue": "እቶት Portfolio",
+        "portfolioRevenueMeta": "ካብ SME ዝተላእኩ {orders} ትእዛዛት",
+        "successfulPayouts": "ዝተሳኸዑ ክፍሊታት",
+        "successfulPayoutsMeta": "ብSMEታትኩም {products} ፍርያት ተዘርዚሮም"
+      },
+      "funnel": {
+        "title": "ፈነል ሪፈራል",
+        "description": "ካብ ፍጠራ ሪፈራል ክሳብ ንጡፍ ተሳትፎ SME ዘሎ ምሉእ ጉዕዞ።"
+      },
+      "momentum": {
+        "title": "ወርሓዊ ምንቅስቓስ",
+        "description": "ኣብ portfolio ናይ ቀረባ ሪፈራል፣ onboarding እና እቶት ምንቅስቓስ።",
+        "referred": "{count} ተላኢኾም",
+        "onboarded": "{count} onboard ተገይሮም",
+        "verified": "{count} ተረጋጊጾም"
+      },
+      "recentPortfolio": {
+        "title": "ናይ ቀረባ SME ናይ Portfolio",
+        "description": "ካብ ባንክኹም ዝመፁ ሓደሽቲ ወይ ቀረባ ጊዜ ዝተኣሳሰሩ ድርጅታት።",
+        "cta": "Portfolio ርአ",
+        "empty": "ዝተላእኩ SME ክሳብ ሕጂ ንግዲ ኣይፈጠሩን።",
+        "products": "{count} ፍርያት",
+        "orders": "{count} ትእዛዛት",
+        "revenue": "{amount} እቶት"
+      },
+      "recentReferrals": {
+        "title": "ናይ ቀረባ ሪፈራላት",
+        "description": "ናይ መወዳእታ ሪፈራል መዝገባትን ሕድሕድ lead ሕጂ ኣበይ ከምዘሎን።",
+        "cta": "ሪፈራላት ኣመሓድር",
+        "empty": "ክሳብ ሕጂ ሪፈራል መዝገብ የለን። ብምፍጣር ሊንክ ሪፈራል ባንኪ ጀምር።"
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "SME ናይ Portfolio",
+      "description": "ባንክኹም ዝላኸ ኩሉ SME እና ክሳብ ኣበይ ከምዝበፅሐ ርአ።",
+      "filtersDescription": "ኣፈፃፅማ ንምርኣይ ብደረጃ onboarding፣ ቦታን ክፍሊን ሰርሕ።",
+      "searchPlaceholder": "ንግዲ፣ ዋናታት ወይ ኢሜይል ድለ",
+      "filterByStage": "ብደረጃ ፈልትር",
+      "allStages": "ኩሎም ደረጃታት",
+      "country": "ሃገር",
+      "allCountries": "ኩለን ሃገራት",
+      "category": "ምድብ",
+      "allCategories": "ኩለን ምድባት",
+      "empty": "ምስ ሕጂ ዘለዉ filters ዝሰማማዕ SME የለን።",
+      "unknownOwner": "ዘይፍለጥ ዋና",
+      "noEmail": "ኢሜይል የለን",
+      "view": "ርአ",
+      "columns": {
+        "business": "ንግዲ",
+        "owner": "ዋና",
+        "stage": "ደረጃ",
+        "products": "ፍርያት",
+        "orders": "ትእዛዛት",
+        "revenue": "እቶት",
+        "drillDown": "ብዝርዝር ርአ"
+      }
+    },
+    "detail": {
+      "description": "onboarding፣ ብዓልነት እና ንግዳዊ ንጥፈት ዝሽፍን ዝርዝር ርእይቶ SME።",
+      "stats": {
+        "revenue": "እቶት",
+        "orders": "ትእዛዛት",
+        "products": "ፍርያት",
+        "netPayouts": "ዝተፃረዩ ክፍሊታት"
+      },
+      "snapshot": {
+        "title": "ሓፂር ርእይቶ ንግዲ",
+        "description": "መሰረታዊ ዝርዝራት ድርጅትን ሕጂ ዘለዎ ቦታ onboardingን።",
+        "country": "ሃገር",
+        "category": "ምድብ",
+        "verificationStatus": "ኩነታት ምርግጋፅ",
+        "joinedPlatform": "መድረኽ ዝተፀንበረሉ",
+        "businessDescription": "መግለፂ",
+        "noDescription": "መግለፂ ኣይተዋህበን"
+      },
+      "owner": {
+        "title": "ኣድራሻ ዋና",
+        "description": "ንሕሳብ SME ሓላፊ ዝኾነ ቀንዲ ዋና መድረኽ።",
+        "unknownOwner": "ዘይፍለጥ ዋና",
+        "noEmail": "ዝርከብ ኢሜይል የለን",
+        "referralTracking": "ምክትታል ሪፈራል",
+        "code": "ኮድ",
+        "currentReferralRecord": "ሕጂ ዘሎ መዝገብ ሪፈራል"
+      },
+      "monthly": {
+        "title": "ወርሓዊ ኣፈፃፅማ",
+        "description": "ናይዚ SME ሕሳብ portfolio ናይ ቀረባ እቶትን ትእዛዝን ኣንፈት።",
+        "orders": "{count} ትእዛዛት"
+      }
+    },
+    "referrals": {
+      "title": "ሪፈራላት",
+      "description": "ንSMEታት ክትከታተሎም ዝከኣል ሊንክታት ምዝገባ ፍጠር፣ ሕድሕድ ደረጃ ለውጢ ከታተል።",
+      "unnamedReferral": "ዘይብሉ ስም ሪፈራል",
+      "unnamedLead": "ዘይብሉ ስም lead",
+      "noExtraMetadata": "ተወሳኺ metadata የለን",
+      "create": {
+        "title": "ሊንክ ሪፈራል ፍጠር",
+        "description": "ንSME፣ ድርጅት ወይ lead ፍሉይ ኮድ ምዝገባ ፍጠር።",
+        "organizationPlaceholder": "ስም ድርጅት",
+        "emailPlaceholder": "ኢሜይል መግበሪ ግብዣ (ብምርጫ)",
+        "notesPlaceholder": "ማስታወሻታት (ብምርጫ)",
+        "action": "ሪፈራል ፍጠር",
+        "creating": "ይፍጠር ኣሎ...",
+        "success": "ሪፈራል {code} ተፈጢሩ",
+        "error": "ሪፈራል ምፍጣር ኣይተሳኸዐን"
+      },
+      "playbook": {
+        "title": "መምርሒ ሪፈራል",
+        "description": "ነፍሲ ወከፍ ዝተፈጥረ ኮድ ንportfolio ባንክኹም ዝለካ ጉዕዞ onboarding ይፈጥር።",
+        "howItWorks": "ከመይ ይሰርሕ",
+        "step1": "1. ንlead SME መዝገብ ሪፈራል ፍጠር።",
+        "step2": "2. ዝተፈጥረ ሊንክ ምዝገባ ምስታ ድርጅት ኣካፍል።",
+        "step3": "3. ምስ ተመዝገቡን onboard ምስ ተገብረሎምን እዚ ገጽ ብራሱ ይሕደስ።",
+        "defaultSignupBase": "መሰረታዊ ሊንክ ምዝገባ",
+        "baseUrlFallback": "መሰረታዊ ሊንክ ምዝገባኹም ኣብ ብራውዘር ኣብዚ ክርአ እዩ።"
+      },
+      "register": {
+        "title": "መዝገብ ሪፈራል",
+        "description": "ነፍሲ ወከፍ ኮድ፣ ናይ ግብዣ ዕላማኡ እና ናብ ንጡፍ SME ተቐይሩ እንተኾይኑ ተኸታተል።",
+        "empty": "ክሳብ ሕጂ ዝተፈጥረ ሪፈራል የለን።",
+        "copySuccess": "ሊንክ ሪፈራል ተቐዲሑ",
+        "copyError": "ሊንክ ሪፈራል ክቕዳሕ ኣይከኣለን",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "ኮድ ሪፈራል",
+          "status": "ኩነታት",
+          "linkedSme": "ዝተኣሳሰረ SME",
+          "created": "ዝተፈጥረሉ",
+          "copyLink": "ሊንክ ቅዳሕ"
+        }
+      }
+    },
+    "analytics": {
+      "title": "ትንታነ",
+      "description": "Portfolioኹም ብሃገር፣ ምድብ፣ ደረጃ onboarding እና ወርሓዊ ውፅኢት ክፈል።",
+      "byCategory": {
+        "title": "ብምድብ",
+        "description": "ኣየኖት ዘርፍታት ኣብ SME ዝተላእኩ መሰረትኩም ይበልጡ?"
+      },
+      "byCountry": {
+        "title": "ብሃገር",
+        "description": "ናይ ባንኪ ዝተላእኩ ድርጅታት ኣብ ምድሪ ዝርግሐ።"
+      },
+      "byStage": {
+        "title": "ብደረጃ",
+        "description": "Portfolio ክንደይ ከምዝሓለፈ ኣብ funnel ይርኢ።"
+      },
+      "monthly": {
+        "title": "ወርሓዊ ኣንፈት",
+        "description": "ፍጠራ portfolio፣ ንጥፈትን ንግዳዊ ዋጋን ግዜ እናሓለፈ ተመልከት።",
+        "newSmes": "{count} ሓደሽቲ SME",
+        "active": "{count} ንጡፋት"
+      }
+    }
+  },
+  "common": {
+      "loading": "ይፅዕን ኣሎ...",
+      "save": "ኣቀምጥ",
+      "cancel": "ሰርዝ",
+      "delete": "ኣጥፍእ",
+      "edit": "ኣስተኻኽል",
+      "search": "ድለ",
+      "clearFilters": "መጻረዪታት ኣጽሪ",
+      "close": "ዕጸው",
+      "back": "ንድሕሪት",
+      "next": "ቀፃሊ",
+      "submit": "ኣእቱ",
+      "confirm": "ኣረጋግፅ",
+      "yes": "እወ",
+      "no": "ኣይፋል",
+      "all": "ኩሉ",
+      "none": "የለን",
+      "actions": "ተግባራት",
+      "status": "ኩነታት",
+      "created": "ዝተፈጥረ",
+      "updated": "ዝተመሓየሸ",
+      "details": "ዝርዝራት",
+      "viewDetails": "ዝርዝራት ርአ",
+      "account": "ኣካውንት",
+      "soon": "ብቅርባ",
+      "admin": "ኣድሚን",
+      "filters": "መጻረዪታት",
+      "noDescription": "መግለፂ የለን",
+      "settingUp": "ኣካውንትካ ይዳሎ ኣሎ..."
+    },
+    "navigation": {
+      "dashboard": "ዳሽቦርድ",
+      "marketplace": "ዕዳጋ (Marketplace)",
+      "products": "ፍርያተይ",
+      "inventory": "ክምዘን ንብረት",
+      "messages": "መልእኽትታት",
+      "cart": "መአከቢ ፍርያት",
+      "orders": "ትእዛዛት",
+      "settings": "ቅጥዒታት",
+      "billing": "ክፍሊት",
+      "myBusiness": "ንግደይ",
+      "creditProfile": "ናይ ልቓሕ ፕሮፋይል",
+      "registerBusiness": "ንግድኻ ኣረጋግጽ",
+      "verifyBusinessLabel": "ንግድኻ ኣረጋግፅ",
+      "applyToSell": "ንምሻጥ ኣመልክት",
+      "manageUsers": "ተጠቀምቲ ኣመሓድር",
+      "manageBusinesses": "ትካላት ኣመሓድር",
+      "manageSellerApplications": "ናይ ሻጭ ማመልከቻታት",
+      "manageProducts": "ፍርያት ኣመሓድር",
+      "manageRefunds": "ምላሽ ክፍሊት ኣመሓድር",
+      "manageBanks": "ባንካት ኣመሓድር",
+      "bankPortfolio": "ፖርትፎሊዮ ባንኪ",
+      "bankReferrals": "ሪፈራላት ባንኪ",
+      "bankAnalytics": "ትንታነ ባንኪ",
+      "compliance": "ተገዛእነት AfCFTA",
+      "aiAssistant": "ረዳት AI",
+      "toggleMenu": "ሜኑ ቀይር",
+      "toggleSidebar": "ጎናዊ ባር ቀይር"
+    },
+    "chat": {
+      "messages": "መልእኽትታት",
+      "messagesDescription": "ምስ ዓደግትን ሸጥትን ዝግበሩ ዝርርባት ርአን ኣመሓድርን",
+      "conversations": "ዝርርባት",
+      "conversation": "ዝርርብ",
+      "contactSeller": "ምስ ሸቃጣይ ተራኸብ",
+      "messageBusiness": "ንትካል መልእኽቲ ስደድ",
+      "noMessages": "ክሳብ ሕጂ መልእኽቲ የለን",
+      "typeMessage": "መልእኽቲ ጸሓፍ...",
+      "startConversation": "ካብ ገፅ ፍርያት ንሸቃጣይ ብምርካብ ዝርርብ ጀምር",
+      "selectConversation": "ዝርርብ መረጽ",
+      "selectConversationDescription": "መልእኽትታት ን ምርኣይ ካብቲ ዝርዝር ዝርርብ መረጽ",
+      "loadingConversations": "ዝርርባት ይፅዕን ኣሎ...",
+      "sendMessage": "መልእኽቲ ስደድ",
+      "attachFile": "ፋይል ኣተሓሕዝ",
+      "typing": "ይጽሕፍ ኣሎ..."
+    },
+    "marketplace": {
+      "title": "ዕዳጋ",
+      "description": "ኣብቲ መድረኽ ካብ ዘለዉ ትካላት ፍርያት ዳህስስ",
+      "browseProducts": "ፍርያት ዳህስስ",
+      "showingProducts": "{count} {count, plural, one {ፍርያት} other {ፍርያት}} ይርኣዩ ኣለዉ",
+      "loadingProducts": "ፍርያት ይፅዕን ኣሎ...",
+      "noProducts": "ዝተረኽበ ፍርያት የለን",
+      "noProductsYet": "ክሳብ ሕጂ ኣብ ዕዳጋ ዝርከቡ ፍርያት የለዉን።",
+      "tryAdjustingFilters": "መጻረዪታትካ ወይ ናይ ምድላይ ቃላትካ ከተስተኻኽል ፈትን።",
+      "searchPlaceholder": "ፍርያት ድለ...",
+      "allCategories": "ኩሎም ዓውድታት",
+      "allCountries": "ኩለን ሃገራት",
+      "sortBy": "ብዚ ስራዕ",
+      "sortNewest": "ሓድሽ",
+      "sortPriceAsc": "ዋጋ: ካብ ትሑት ናብ ላዕለዋይ",
+      "sortPriceDesc": "ዋጋ: ካብ ላዕለዋይ ናብ ትሑት",
+      "outOfStock": "ካብ ክምዘን ወጺኡ",
+      "inStock": "{count} ኣብ ክምዘን ኣሎ",
+      "inStockCap": "1000+ ኣብ ክምዘን ኣሎ",
+      "price": "ዋጋ",
+      "category": "ዓውዲ",
+      "country": "ሃገር",
+      "clearAllFilters": "ኩሎም መጻረዪታት ኣጽሪ",
+      "verify": {
+        "businessBeforeAdd": "ፍርያት ናብ ጋሪኻ ቅድሚ ምውሳኽካ ንግድኻ ኣረጋግፅ።",
+        "completeBusinessBeforeAdd": "ፍርያት ናብ ጋሪኻ ቅድሚ ምውሳኽካ ምርግጋፅ ንግድኻ ኣጠናቅቕ።"
+      }
+    },
+    "products": {
+      "title": "ፍርያተይ",
+      "description": "ዝርዝር ፍርያትካ ኣመሓድር",
+      "addProduct": "ፍርያት ወስኽ",
+      "allProducts": "ኩሎም ፍርያት",
+      "searchDescription": "ዘድልየካ ንምርካብ ፍርያትካ ድለዮምን ኣጻርዮምን",
+      "searchPlaceholder": "ፍርያት ድለ...",
+      "filterByStatus": "ብኩነታት ኣጻሪ",
+      "allStatuses": "ኩሎም ኩነታት",
+      "noProducts": "ክሳብ ሕጂ ፍርያት የለን። ንምጅማር ቀዳማይ ፍርያትካ ወስኽ።",
+      "noMatchingProducts": "ምስቲ ዝድለ ዘሎ ዝሰማማዕ ፍርያት የለን።",
+      "productName": "ስም ፍርያት",
+      "enterProductName": "ስም ፍርያት ኣእቱ",
+      "descriptionLabel": "መግለፂ",
+      "describeProduct": "ፍርያትካ ግለጽ",
+      "price": "ዋጋ",
+      "stockQuantity": "ብዝሒ ክምዘን",
+      "quantity": "ብዝሒ",
+      "sku": "SKU",
+      "skuPlaceholder": "ንኣብነት AC-COF-001",
+      "lowStockThreshold": "ትሑት መጠን ክምዘን",
+      "reorderQuantity": "ዳግም ዝእዘዝ ብዝሒ",
+      "category": "ዓውዲ",
+      "categoryPlaceholder": "ንኣብነት ኤሌክትሮኒክስ",
+      "originCountry": "ዝመጸሉ ሃገር",
+      "countryPlaceholder": "ንኣብነት ኢትዮጵያ",
+      "minOrderQty": "ትሑት መጠን ትእዛዝ",
+      "status": "ኩነታት",
+      "active": "ንጡፍ",
+      "inactive": "ዘይንጡፍ",
+      "image": "ስእሊ",
+      "images": "ስእልታት",
+      "addImages": "ስእልታት ወስኽ",
+      "addNewProduct": "ሓድሽ ፍርያት ወስኽ",
+      "enterDetailsStep": "ንምጅማር ዝርዝር ፍርያት ኣእቱ።",
+      "addImagesStep": "ፍርያትካ ንክፍለጥ ስእልታት ወስኽ።",
+      "productDetails": "ዝርዝር ፍርያት",
+      "nextAddImages": "ቀፃሊ: ስእልታት ወስኽ",
+      "creating": "ይፍጠር ኣሎ...",
+      "skipForNow": "ንሕጂ ሕለፎ",
+      "completeListing": "ዝርዝር ፍርያት ወድእ",
+      "editProduct": "ፍርያት ኣስተኻኽል",
+      "updateDetails": "ዝርዝር ፍርያት ኣሐድስን ስእልታት ኣመሓድርን።",
+      "saveChanges": "ለውጥታት ኣቀምጥ",
+      "deleteProduct": "ፍርያት ኣጥፍእ",
+      "deleteConfirmation": "ርግፀኛ ዲኻ ነዚ ፍርያት ክተጥፍኦ ትደሊ? እዚ ኩሎም ምስኡ ዝተኣሳሰሩ ስእልታት እውን ከጥፍእ እዩ። እዚ ስጉምቲ ክምለስ ኣይክእልን።",
+      "firstProductPricingPromptTitle": "ቀዳማይ ፍርያትካ ኣብ ኣየር ውዒሉ ኣሎ",
+      "firstProductPricingPromptDescription": "ጽቡቕ ጅማሮ! ዝያዳ ናይ መሸጣ ባህርያት ንምርካብ ናብ ገፅ ዋጋታት ብምኻድ መደባት ዳህስስ።",
+      "firstProductPricingPromptStay": "ምናልባት ጸኒሐ",
+      "firstProductPricingPromptGo": "ናብ ገፅ ዋጋታት ኪድ",
+      "subscriptionRequiredPromptTitle": "ምዝገባ (Subscription) የድሊ",
+      "subscriptionRequiredPromptDescription": "ካልእ ፍርያት ንምውሳኽ ንጡፍ ናይ ክፍሊት መደብ ክህልወካ የድሊ። ንምቕጻል መደብ መረጽ።",
+      "subscriptionRequiredPromptStay": "ሕጂ ኣይፋልን",
+      "subscriptionRequiredPromptGo": "ዋጋታት ርአ",
+      "currencyHint": "USD ኣገዳሲ እዩ ከም ቀንዲ ዋጋ ድማ ይርአ። ዋጋታት ETB ን KSH ን ብናይ ቀጥታ ሸርፊ ክምልኡ ይኽእሉ እዮም፣ ኣብ ዝኾነ ግዜ ድማ ከተስተኻኽሎም ትኽእል ኢኻ።",
+      "ratesUpdated": "ሸርፊ ተሓዲሱ: {date}።",
+      "usdRequired": "ዋጋ USD ኣገዳሲ እዩ፣ ካብ 0 ክበልፅ ድማ ኣለዎ።",
+      "etbRequired": "ዋጋ ETB ኣገዳሲ እዩ፣ ካብ 0 ክበልፅ ድማ ኣለዎ።",
+      "kshInvalid": "ዋጋ KSH 0 ወይ ካብኡ ንላዕሊ ክኸውን ኣለዎ።"
+    },
+    "orders": {
+      "title": "ትእዛዛት",
+      "description": "ዕደጋታትካን መሸጣታትካን ኣመሓድር",
+      "purchases": "ዕደጋታት",
+      "sales": "መሸጣታት",
+      "myPurchases": "ዕደጋታተይ",
+      "mySales": "መሸጣታተይ",
+      "purchasesDescription": "ካብ ካልኦት ትካላት ዝገበርካዮም ትእዛዛት",
+      "salesDescription": "ካልኦት ትካላት ንፍርያትካ ዝገበሩዎም ትእዛዛት",
+      "searchPlaceholder": "ትእዛዛት ድለ...",
+      "filterByStatus": "ብኩነታት ኣጻሪ",
+      "allStatuses": "ኩሎም ኩነታት",
+      "pending": "ኣብ መስርሕ",
+      "processing": "ይስራሕ ኣሎ",
+      "completed": "ተዛዚሙ",
+      "cancelled": "ተሰሪዙ",
+      "order": "ትእዛዝ",
+      "seller": "ሸቃጣይ",
+      "buyer": "ዓዳጊ",
+      "amount": "መጠን",
+      "totalAmount": "ጠቕላላ መጠን",
+      "noPurchasesYet": "ክሳብ ሕጂ ዝተገዝአ የለን። ኣብ ዕዳጋ ምግዛእ ጀምር!",
+      "noSalesYet": "ክሳብ ሕጂ መሸጣ የለን። ንምሻጥ ፍርያት ዘርዝር!",
+      "noMatchingOrders": "ምስቲ ዝድለ ዘሎ ዝሰማማዕ ትእዛዝ የለን።",
+      "orderPlacedOn": "ትእዛዝ ዝተዋሃበሉ ዕለት: {date}",
+      "orderItems": "ናይ ትእዛዝ ንብረታት",
+      "unknownProduct": "ዘይተፈልጠ ፍርያት",
+      "loadingOrder": "ትእዛዝ ይፅዕን ኣሎ...",
+      "loadingOrderDetails": "ዝርዝር ትእዛዝ ክሳብ ዝመጽእ በጃኻ ተጸበ።",
+      "cancelOrder": "ትእዛዝ ሰርዝ",
+      "cancelOrderConfirmation": "ርግፀኛ ዲኻ ነዚ ትእዛዝ ክትሰርዞ ትደሊ? እዚ ስጉምቲ ክምለስ ኣይክእልን።",
+      "keepOrder": "ትእዛዝ ይጽናሕ",
+      "markAsProcessing": "ከም ዝስራሕ ዘሎ ምልክት ግበረሉ",
+      "markAsCompleted": "ከም ዝተዛዘመ ምልክት ግበረሉ",
+      "trackAndManage": "ዕደጋታትካን መሸጣታትካን ተኸታተልን ኣመሓድርን"
+    },
+    "business": {
+      "registerTitle": "ንግድኻ መዝግብ",
+      "registerDescription": "ኣብ ዕዳጋ ንምሻጥ ናይ ንግዲ ፕሮፋይል ፍጠር",
+      "businessInformation": "ሓበሬታ ንግዲ",
+      "businessInfoDescription": "ብዛዕባ ንግድኻ ዝርዝር ሓበሬታ ሃብ። ምዝገባኻ ቅድሚ ምፅዳቑ ብጉጅለና ክርአ እዩ።",
+      "businessName": "ስም ንግዲ",
+      "enterBusinessName": "ስም ንግድኻ ኣእቱ",
+      "description": "መግለፂ",
+      "businessDescription": "ናይ ንግድኻ ሓፂር መግለፂ",
+      "descriptionHelp": "ትካልካ እንታይ ከምዝሰርሕን እንታይ ፍርያት/ኣገልግሎት ከምዘቕርብን ግለጽ።",
+      "country": "ሃገር",
+      "selectCountry": "ሃገር መረጽ",
+      "city": "ከተማ",
+      "enterCity": "ከተማ ኣእቱ",
+      "address": "ኣድራሻ",
+      "businessAddress": "ኣድራሻ ንግዲ",
+      "category": "ዓውዲ ንግዲ",
+      "selectCategory": "ዓውዲ መረጽ",
+      "phone": "ቁፅሪ ቴሌፎን",
+      "phonePlaceholder": "+251 xxx xxx xxxx",
+      "website": "ዌብሳይት",
+      "websitePlaceholder": "https://example.com",
+      "registering": "ይምዝገብ ኣሎ...",
+      "registrationDocuments": "ናይ ምዝገባ ሰነዳት",
+      "businessLicence": "ፍቓድ ንግዲ",
+      "businessLicenceNumber": "ቁፅሪ ፍቓድ ንግዲ",
+      "businessLicenceNumberPlaceholder": "ቁፅሪ ፍቓድ ኣእቱ",
+      "memoOfAssociation": "መመስረቲ ጽሑፍ",
+      "tinCertificate": "ሰርቲፊኬት TIN",
+      "tinCertificateNumber": "ቁፅሪ TIN",
+      "tinCertificateNumberPlaceholder": "ቁፅሪ TIN ኣእቱ",
+      "hasImportExportPermit": "ናይ ወፃኢ ሃገር ኣእቱ/ልኣኽ (import/export) ፍቓድ ኣለካ ድዩ?",
+      "hasImportExportPermitPlaceholder": "መረጽ...",
+      "hasImportExportPermitYes": "እወ",
+      "hasImportExportPermitNo": "ኣይፋል",
+      "importExportPermit": "ፍቓድ ኣእቱ/ልኣኽ (import/export)",
+      "importExportPermitNumber": "ቁፅሪ ፍቓድ ኣእቱ/ልኣኽ",
+      "importExportPermitNumberPlaceholder": "ቁፅሪ ፍቓድ ኣእቱ (እንተሃልዩ)",
+      "upload": "ስቀል (Upload)",
+      "uploaded": "ተሰቒሉ",
+      "sellerAgreementLabel": "ነዚ ኣንቢበን ተሰማሚዐን ኣለኹ",
+      "sellerAgreementLink": "ውዕል ሸቃጣይ",
+      "sellerAgreementRequired": "ንሸቃጣይ ንምዃን ክትሓትት ቅድሚ ውዕል ሸቃጣይ ክትቅበል ኣለካ።",
+      "buyerVerificationTitle": "ንግድኻ ኣረጋግጽ",
+      "buyerVerificationDescription": "ኣካውንትኻ ካብ ገበያ ንኽግዛእ ዝርዝርን ሰነዳትን ንግድኻ ኣቕርብ።",
+      "buyerVerificationCardTitle": "ምርግጋጽ ንግዲ ገዛኢ",
+      "buyerVerificationCardDescription": "ኣብ AfriConnect ዘለዉ ገዛእቲ እውን ዝተረጋገጹ ንግድታት ክኾኑ ኣለዎም። ሰነዳትካ ሓንሳብ ኣቕርብ እሞ ጉጅለና ክመርምሮም እዩ።",
+      "buyerVerificationDocumentsTitle": "ሰነዳት ምርግጋጽ",
+      "buyerVerificationDocumentsDescription": "ግዝያት ቅድሚ ምኽፋት ንግድኻ ንምርግጋጽ ዝደልዩ ሰነዳት ስቐል።",
+      "buyerVerificationSubmitting": "ብምልኣኽ ላይ...",
+      "submitBuyerVerification": "ንምርግጋጽ ኣቕርብ",
+      "buyerVerificationSubmitted": "ምርግጋጽ ንግዲ ብዓወት ተላኢኹ። ብቕርቡ ክንምርምሮ ኢና።",
+      "buyerVerificationFailed": "ምርግጋጽ ንግዲ ምልኣኽ ኣይተሳኽዐን።",
+      "sellerApplicationTitle": "ንምሻጥ ኣመልክት",
+      "sellerApplicationDescription": "ንግድኻ ምስ ተረጋገፀ፣ ሰነዳት ንግዲ ዳግም ከይተሰቐሉ ፍቓድ ምሻጥ ክትሓትት ትኽእል ኢኻ።",
+      "sellerApplicationCardTitle": "ናይ ሻጭ ማመልከቻ",
+      "sellerApplicationCardDescription": "ፍቓድ ምሻጥ ካብ ምርግጋጽ ንግዲ ተፈልዩ ይግምገም። ንምሻጥ ምስ ተዳለኻ ውዕል ሻጭ ተቐቢልካ ማመልከቻኻ ኣቕርብ።",
+      "businessVerificationStatusTitle": "ምርግጋጽ ንግዲ",
+      "sellerApplicationBusinessVerified": "ንግድኻ ተረጋጊጹ ኣሎ፣ ንማመልከቻ ምሻጥ ግምገማ ድማ ዝተዳለወ እዩ።",
+      "sellerApplicationBusinessPending": "ንምሻጥ ቅድሚ ምምልካትካ ንግድኻ ክረጋገጽ ኣለዎ።",
+      "sellerApplicationStatusTitle": "ኩነታት ፍቓድ ምሻጥ",
+      "sellerApplicationApproved": "ፍቓድ ምሻጥ ነዚ ኣካውንት ንቁ እዩ።",
+      "sellerApplicationPending": "ማመልከቻ ምሻጥካ ኣብ ግምገማ ኣሎ።",
+      "sellerApplicationRejected": "ማመልከቻ ምሻጥካ ተነፂጉ እዩ። ቅድመ ሁኔታታት ርአ እሞ ምስ ተዳለኻ ዳግም ኣመልክት።",
+      "sellerApplicationNotApplied": "ክሳብ ሕጂ ንምሻጥ ኣየመልከትካን።",
+      "sellerApplicationReady": "ንምምልካት ድልው እዩ",
+      "sellerApplicationRequirementsTitle": "ቀፃሊ እንታይ እዩ",
+      "sellerApplicationRequirementBusiness": "ንግድኻ ኣቐዲሙ ተረጋጊጹ ክኸውን ኣለዎ።",
+      "sellerApplicationRequirementAgreement": "እዋናዊ ውዕል ሻጭ ክትርእዮን ክትቕበሎን ኢኻ።",
+      "sellerApplicationRequirementReview": "ፍቓድ ሻጭ ቅድሚ ምሃቡ ማመልከቻኻ ብኣስተዳዳሪ ክግምገም እዩ።",
+      "sellerApplicationSubmitting": "ይለኣኽ ኣሎ...",
+      "sellerApplicationApply": "ንምሻጥ ኣመልክት",
+      "sellerApplicationReapply": "ዳግም ንምሻጥ ኣመልክት",
+      "sellerApplicationManageProducts": "ፍርያት ኣመሓድር",
+      "sellerApplicationOpenBusiness": "ፕሮፋይል ንግዲ ክፈት",
+      "sellerApplicationSubmitted": "ማመልከቻ ምሻጥ ብዓወት ተላኢኹ።",
+      "sellerApplicationFailed": "ማመልከቻ ምሻጥ ምልኣኽ ኣይተሳኽዐን።",
+      "sellerApplicationRequiresVerifiedBusiness": "ንምሻጥ ቅድሚ ምምልካትካ ንግድኻ ክረጋገጽ ኣለዎ።",
+      "verificationStatus": {
+        "pending": "ምርግጋጽ ተጸቢዩ ኣሎ",
+        "verified": "ተረጋጊጹ",
+        "rejected": "ተነፂጉ"
+      },
+      "sellerStatus": {
+        "not_applied": "ኣይተመልከተን",
+        "pending": "ኣብ ግምገማ ኣሎ",
+        "approved": "ፀዲቑ",
+        "rejected": "ተነፂጉ"
+      },
+      "profile": {
+        "sellerDescription": "ፕሮፋይል ንግድኻ፣ ምርግጋጽን ስራሕቲ ሻጭን ኣመሓድር",
+        "buyerDescription": "ፕሮፋይል ንግድኻ፣ ምርግጋጽን ማመልከቻ ሻጭን ኣመሓድር",
+        "editProfile": "ፕሮፋይል ኣርትዕ",
+        "businessProfileTitle": "ፕሮፋይል ንግዲ",
+        "editDescription": "ኣብ ታሕቲ ዘሎ ሓበሬታ ንግድኻ ኣሐድስ",
+        "viewDescription": "ዝርዝር ንግድኻን ሓበሬታ ርክብን",
+        "verificationPendingMessage": "ንግድኻ ብጋንታና ይግምገም ኣሎ። ድሕሪ ምጽዳቑ ናይ ምዕዳግ ፍቓድ ይኽፈት።",
+        "verificationVerifiedMessage": "ንግድኻ ተረጋጊጹ እዩ። ሕጂ ፍርያት ናብ መአከቢ ፍርያትካ ክትውስኽን ትእዛዝ ክትገብርን ትኽእል።",
+        "verificationRejectedMessage": "ምርግጋጽ ንግድኻ ተነፂጉ እዩ። ዳግም ንምቕራብ ኣብ ታሕቲ ዘሎ ሓበሬታን ሰነዳትን ንግድኻ ኣሐድስ።",
+        "sellerRequiresVerifiedMessage": "ንምሻጥ ቅድሚ ምምልካትካ መጀመርታ ንግድኻ ኣረጋግጽ።",
+        "sellerApprovedMessage": "ፍቓድ ምሻጥ ነዚ ኣካውንት ንቁ እዩ። ፍርያት፣ ክምችትን ክፍሊትን ከተመሓድር ትኽእል።",
+        "sellerPendingMessage": "ማመልከቻ ምሻጥካ ግምገማ ኣስተዳዳሪ ተጸቢዩ ኣሎ።",
+        "sellerRejectedMessage": "ማመልከቻ ምሻጥካ ተነፂጉ እዩ። ውዕል ሻጭ ርአ እሞ ዳግም ኣመልክት።",
+        "sellerReadyMessage": "ንግድኻ ተረጋጊጹ እዩ። ሕጂ ሰነዳት ንግዲ ዳግም ከይተሰቐሉ ንምሻጥ ክትምልከት ትኽእል።",
+        "verificationDocumentsRejectedDescription": "እዞም መስኮታት ምሕዳስን ምዕቃብን ንግድኻ ንግምገማ ዳግም ይልእኮ።",
+        "verificationDocumentsDescription": "ንግድኻ ብቕልጡፍ ክግምገም እንተደሊኻ ሰነዳት ምዝገባኻ ወቕታዊ ሓሉ።",
+        "saving": "ይዕቀብ ኣሎ...",
+        "saveChanges": "ለውጥታት ዕቀብ",
+        "location": "ቦታ",
+        "resubmitBadge": "ዳግም ንምቕራብ ሰነዳት ኣሐድስ እሞ ዕቀብ",
+        "documentUploaded": "ሰነድ ተሰቒሉ",
+        "documentMissing": "ሰነድ የለን",
+        "licenceNumber": "ቁጽሪ ፍቓድ: {number}",
+        "tinNumber": "ቁጽሪ TIN: {number}",
+        "permitUploaded": "ፍቓድ ተሰቒሉ",
+        "permitMissing": "ፍቓድ ገና ኣይተሰቐለን",
+        "notProvided": "ኣይቀረበን",
+        "permitNumber": "ቁጽሪ ፍቓድ: {number}",
+        "profileUpdated": "ፕሮፋይል ንግዲ ብዓወት ተሓዲሱ",
+        "profileUpdateFailed": "ምሕዳስ ንግዲ ኣይሰለጠን",
+        "payoutSettingsTitle": "ቅጥዒታት ክፍሊት",
+        "payoutSettingsDescription": "ክፍሊታት ገበያ ንምቕባል ዝርዝር ባንክኻ ኣእቱ።",
+        "bank": "ባንክ",
+        "selectBank": "ባንክ ምረጽ",
+        "loadingBanks": "ባንካት ይጽዓና ኣለዉ...",
+        "unableToLoadBanks": "ባንካት ሕጂ ምጽዓን ኣይከኣለን።",
+        "accountName": "ስም ኣካውንት",
+        "accountNumber": "ቁጽሪ ኣካውንት",
+        "payoutEnabled": "ክፍሊታት ነቂሎም ኣለዉ",
+        "payoutNotEnabled": "ክፍሊታት ገና ኣይነቁሉን",
+        "savePayoutSettings": "ቅጥዒታት ክፍሊት ዕቀብ",
+        "payoutSettingsUpdated": "ቅጥዒታት ክፍሊት ተሓዲሶም",
+        "payoutSettingsUpdateFailed": "ቅጥዒታት ክፍሊት ምሕዳስ ኣይሰለጠን",
+        "creditProfileTitle": "ዲጂታላዊ ፕሮፋይል ልቓሕ",
+        "creditProfileDescription": "ታሪኽ ግብይትኻ፣ ኣፈጻጽማ ፍጻሜን ብዙሕነት ዓደግትን ኣብ ሓደ ጸብጻብ ሻጭ ርአ።",
+        "creditProfileAvailability": "ንግድኻ ምስ ተረጋገፀ ይርከብ። ንምክፋል ዝሕተም ጸብጻብ ድማ ክትወጽእ ትኽእል።",
+        "openCreditProfile": "ፕሮፋይል ልቓሕ ክፈት"
+      }
+    },
+    "cart": {
+      "title": "መአከቢ ፍርያት (Cart)",
+      "description": "ክፍሊት ቅድሚ ምፍፃምካ ንብረትካ ርአ",
+      "emptyCart": "መአከቢ ፍርያትካ ጥራዩ እዩ",
+      "emptyCartDescription": "ፍርያት ንምርካብ ዕዳጋ ዳህስስ",
+      "browseMarketplace": "ዕዳጋ ዳህስስ",
+      "subtotal": "ንኡስ ጠቕላላ",
+      "total": "ጠቕላላ",
+      "checkout": "ክፍሊት ፈጽም",
+      "removeItem": "ንብረት ኣውፅእ",
+      "updateQuantity": "ብዝሒ ኣሐድስ",
+      "buyerAgreementRequired": "ክፍሊት ቅድሚ ምፍፃምካ ምስ ውዕል ዓዳጊ ክትሰማማዕ ኣለካ።"
+    },
+    "dashboard": {
+      "title": "ዳሽቦርድ",
+      "welcome": "እንቋዕ ብደሓን መጻእካ! ናይ ትእዛዛትካ ሓፈሻዊ ትሕዝቶ እነሆ።",
+      "welcomeBack": "እንቋዕ ብደሓን መጻእካ፣",
+      "overview": "ሓፈሻዊ ምርኢት",
+      "recentOrders": "ናይ ቀረባ ትእዛዛት",
+      "recentProducts": "ናይ ቀረባ ፍርያት",
+      "quickStats": "ቅልጡፍ ስታቲስቲክስ",
+      "totalRevenue": "ጠቕላላ ኣታዊ",
+      "totalOrders": "ጠቕላላ ትእዛዛት",
+      "totalProducts": "ጠቕላላ ፍርያት",
+      "pendingOrders": "ኣብ ትፅቢት ዘለዉ ትእዛዛት",
+      "discoverProducts": "ፍርያት ርከብ",
+      "browseDescription": "ኣብ መላእ ኣፍሪቃ ካብ ዘለዉ ትካላት ፍርያት ዳህስስ"
+    },
+    "settings": {
+      "title": "ቅጥዒታት",
+      "description": "ናይ ኣካውንትካ ቅጥዒታትን ምርጫታትን ኣመሓድር",
+      "profile": "ፕሮፋይል",
+      "profileDescription": "ሓበሬታ ፕሮፋይልካ ኣሐድስ",
+      "displayName": "ዝርአ ስም",
+      "enterName": "ስምካ ኣእቱ",
+      "displayNameHelp": "እዚ ዝርአ ስምካ እዩ። ካብ ስም ኣካውንትካ ክፉለ ይኽእል እዩ።",
+      "noNameSet": "ስም ኣይተመልአን",
+      "accountInfo": "ሓበሬታ ኣካውንት",
+      "accountInfoDescription": "ዝርዝር ኣካውንትካ",
+      "email": "ኢሜይል",
+      "emailHelp": "ኢሜይል ብ Clerk ዝመሓደር እዩ። ንምቕያር ናይ ኣካውንትካ ቅጥዒታት ኣሐድስ።",
+      "userId": "መለለዪ ተጠቃሚ (User ID)",
+      "verifyBusinessLabel": "ንግድኻ ኣረጋግፅ",
+      "verifyBusinessDescription": "ምግዛእ ንምኽፋት ዝርዝር ንግድኻ ኣቕርብ",
+      "verifyBusinessDescriptionIncomplete": "ምግዛእ ንምኽፋት ምርግጋፅ ንግድኻ ኣጠናቅቕ",
+      "applyToSellLabel": "ንምሻጥ ኣመልክት",
+      "applyToSellDescription": "ስምምዕ ሻጭ ተቐቢልካ ናይ ምሻጥ ማመልከቻኻ ኣቕርብ"
+    },
+    "billing": {
+      "title": "ክፍሊት",
+      "description": "ታሪኽ ክፍሊትካ ርአን ክፍሊት ኣመሓድርን",
+      "paymentMethod": "ዓይነት ክፍሊት",
+      "paymentMethodDescription": "ብ Chapa ዝተሓለወ ክፍሊት",
+      "chapaGateway": "መተሓላለፊ ክፍሊት Chapa",
+      "chapaDescription": "ብሞባይል ገንዘብ፣ ባንኪ፣ ወይ ካርድ ብውሕስነት ክፈል",
+      "learnMore": "ዝያዳ ተረዳእ",
+      "paymentHistory": "ታሪኽ ክፍሊት",
+      "paymentHistoryDescription": "ናይ ቀረባ ክፍሊትካ ርአ",
+      "noPaymentHistory": "ክሳብ ሕጂ ታሪኽ ክፍሊት የለን",
+      "date": "ዕለት",
+      "reference": "መወከሲ (Reference)",
+      "type": "ዓይነት",
+      "amount": "መጠን",
+      "failed": "ፈሺሉ"
+    },
+    "pricing": {
+      "title": "ቀሊልን ግሉፅን ዋጋ",
+      "description": "ምስ ድሌት ንግድኻ ዝሰማማዕ መደብ መረጽ። ኩሎም መደባት ናብ ዕዳጋ B2B ን መሳርሒታት ተገዛእነት AfCFTA ን ምብፃሕ የጠቓልሉ።",
+      "subtitle": "ምስ ድሌት ንግድኻ ዝሰማማዕ መደብ መረጽ። ኩሎም መደባት ናብ ዕዳጋ B2B ን መሳርሒታት ተገዛእነት AfCFTA ን ምብፃሕ የጠቓልሉ።",
+      "backToHome": "ናብ መበገሲ ገፅ ተመለስ",
+      "loadingPlans": "መደባት ይፅዕን ኣሎ...",
+      "monthly": "ወርሓዊ",
+      "annual": "ዓመታዊ",
+      "savePercent": "{percent}% ቆጥብ",
+      "perMonth": "/ወርሒ",
+      "perYear": "/ዓመት",
+      "billedAnnually": "{amount}/ወርሒ ብዓመት ዝኽፈል",
+      "mostPopular": "ዝያዳ ተፈታዊ",
+      "currentPlan": "ናይ ሕጂ መደብ",
+      "getStarted": "ጀምር",
+      "contactSales": "ክፍሊ መሸጣ ኣዘራርብ",
+      "custom": "ፍሉይ (Custom)",
+      "compareFeatures": "ኩሎም ባህርያት ኣረኣእይ",
+      "faq": {
+        "title": "ብተደጋጋሚ ዝሕተቱ ሕቶታት",
+        "changePlan": {
+          "question": "ጸኒሐ መደብ ክቕይር እኽእል ድየ?",
+          "answer": "እወ፣ ኣብ ዝኾነ ግዜ መደብካ ከተዕብይ ወይ ክተጉድል ትኽእል ኢኻ። ምስ ተዕብይ ብኡ ንብኡ ሓደስቲ ባህርያት ክትረክብ ኢኻ። ምስ ተጉድል ግን እቲ ለውጢ ኣብ ቀፃሊ ናይ ክፍሊት እዋን ተግባራዊ ይኸውን።"
+        },
+        "paymentMethods": {
+          "question": "እንታይ ዓይነት ናይ ክፍሊት መገድታት ትቕበሉ?",
+          "answer": "ብ Chapa ኣቢልና ክፍሊት ንቕበል፣ እዚ ድማ ሞባይል ገንዘብ፣ ምስጋር ባንኪ፣ን ክፍሊት ካርድን ይድግፍ። ኩሎም ክፍሊት ብውሕስነት ይስራሕ።"
+        },
+        "freeTrial": {
+          "question": "ናይ ነፃ መፈተኒ እዋን ኣሎ ድዩ?",
+          "answer": "ሓደስቲ ትካላት ነቲ መድረኽ ንምድህሳስ ብመደብ Starter ክጅምሩ ይኽእሉ እዮም። ንትካላት ዝኸውን መፈተኒ ንምርካብ ተወከሱና።"
+        },
+        "limits": {
+          "question": "ወሰን መደበይ ምስ በጻሕኩ እንታይ ይኸውን?",
+          "answer": "ናብ ወሰን መደብካ ክትበጽሕ ከለኻ መጠንቀቕታ ክበፅሓካ እዩ። ወሰን ምስ በጻሕካ ነቲ ባህርይ ምጥቃም ንምቕጻል መደብካ ከተዕብይ ትኽእል ኢኻ።"
+        }
+      },
+      "cta": {
+        "title": "ፍሉይ ፍታሕ የድልየካ ድዩ?",
+        "description": "ናይ Enterprise መደብና ንዓበይቲ ትካላት ዝኸውን ፍሉይ ባህርያት፣ ዝተወፈየ ደገፍን ዝተተሓሓዙ ኣሰራርሓታትን የቕርብ።"
+      },
+      "plans": {
+        "starter": {
+          "name": "መጀመሪ (Starter)",
+          "target": "ናእሽቱ ትካላት",
+          "description": "ሕጂ ንዝጅምሩ ናእሽቱ ትካላት ፍጹም ዝኾነ"
+        },
+        "growth": {
+          "name": "ዕብየት (Growth)",
+          "target": "ዓበይቲ ዝመጹ ትካላት",
+          "description": "ንግዶም ንምስፋሕ ዝተዳለዉ ትካላት"
+        },
+        "pro": {
+          "name": "ፕሮ (Pro)",
+          "target": "ማእከላይ ዕዳጋ",
+          "description": "ንዝተመስረቱ ትካላት ኩሉ ባህርያት ዘለዎ መደብ"
+        },
+        "enterprise": {
+          "name": "ኢንተርፕራይዝ (Enterprise)",
+          "target": "ዓበይቲ ትካላት",
+          "description": "ንዓበይቲ ትካላት ዝኸውን ፍሉይ ፍታሕ"
+        }
+      },
+      "features": {
+        "products": "ፍርያት",
+        "monthlyOrders": "ወርሓዊ ትእዛዛት",
+        "originCalculations": "ናይ መበገሲ ሕሳባት",
+        "hsCodeLookups": "ምድላይ ኮድ HS",
+        "teamMembers": "ኣባላት ጉጅለ",
+        "prioritySupport": "ቀዳምነት ዝወሃቦ ደገፍ",
+        "analytics": "ትንተና (Analytics)",
+        "apiAccess": "መእተዊ API",
+        "unlimited": "ዘይተገደበ"
+      }
+    },
+    "subscription": {
+      "title": "ምዝገባ (Subscription)",
+      "description": "ምዝገባኻን ክፍሊትካን ኣመሓድር",
+      "businessRequired": "ምዝገባ ንግዲ የድሊ",
+      "businessRequiredDescription": "መደብ ቅድሚ ምምዝጋብካ ንግዲ ክትመዝግብ የድሊ።",
+      "registerBusiness": "ንግድኻ መዝግብ",
+      "noActiveSubscription": "ንጡፍ ምዝገባ የለን",
+      "noSubscriptionDescription": "ሕጂ ኣብቲ ውሱን ባህርያት ዘለዎ ናይ ነፃ ደረጃ ኢኻ ዘለኻ። ዝያዳ ፍርያት፣ ትእዛዛትን መሳርሒታት ተገዛእነትን ንምርካብ መደብካ ኣዕቢ።",
+      "viewPlans": "መደባት ርአ",
+      "currentPlan": "ናይ ሕጂ መደብ",
+      "billedMonthly": "ብወርሒ ዝኽፈል",
+      "billedAnnually": "ብዓመት ዝኽፈል",
+      "currentPeriod": "ናይ ሕጂ እዋን",
+      "cancelsSoon": "ብቅርባ ክስረዝ እዩ",
+      "active": "ንጡፍ",
+      "trial": "መፈተኒ",
+      "pastDue": "ግዚኡ ዝሓለፎ",
+      "cancelled": "ተሰሪዙ",
+      "cancellationNotice": "ምዝገባኻ ኣብ {date} ከብቅዕ እዩ",
+      "trialNotice": "መፈተኒ እዋንካ ኣብ {date} ከብቅዕ እዩ",
+      "changePlan": "መደብ ቀይር",
+      "reactivate": "ምዝገባ ዳግም ኣንጥፍ",
+      "reactivating": "ዳግም ይነጥፍ ኣሎ...",
+      "cancel": "ምዝገባ ሰርዝ",
+      "cancelling": "ይስረዝ ኣሎ...",
+      "usageThisMonth": "ናይዚ ወርሒ ኣጠቓቕማ",
+      "usageDescription": "ኣጠቓቕማኻ ምስ ወሰን መደብካ ኣረኣእይ",
+      "planFeatures": "ባህርያት መደብ",
+      "planFeaturesDescription": "ኣብ መደብ {plan} ዝተኻተቱ ባህርያት",
+      "paymentSuccessful": "ክፍሊት ተዓዊቱ!",
+      "subscriptionActivated": "ምዝገባኻ ነጥፉ ኣሎ።",
+      "subscriptionCancelled": "ምዝገባ ተሰሪዙ",
+      "subscriptionCancelledDescription": "ምዝገባኻ ክሳብ መወዳእታ ናይ ክፍሊት እዋን ንጡፍ ኮይኑ ክፀንሕ እዩ።",
+      "subscriptionReactivated": "ምዝገባ ዳግም ነጥፉ",
+      "subscriptionReactivatedDescription": "ምዝገባኻ ኣብ መወዳእታ ናይ ክፍሊት እዋን ክቕፅል እዩ።",
+      "failedToCancel": "ምዝገባ ምስራዝ ኣይተኻእለን",
+      "failedToReactivate": "ምዝገባ ዳግም ምብራኽ ኣይተኻእለን"
+    },
+    "validation": {
+      "required": "እዚ ዓውዲ ኣገዳሲ እዩ",
+      "invalidEmail": "ዘይተፈለጠ ኢሜይል",
+      "minLength": "ወይ ሕዱስ {min} ፊደላት ክኸውን ኣለዎ",
+      "maxLength": "ካብ {max} ፊደላት ክበልፅ የብሉን",
+      "selectCountry": "በጃኻ ሃገር መረጽ",
+      "selectCategory": "በጃኻ ዓውዲ ንግዲ መረጽ"
+    },
+    "toast": {
+      "productCreated": "ፍርያት ተፈጢሩ! ሕጂ ዝርዝር ንምውዳእ ስእልታት ወስኽ።",
+      "productUpdated": "ፍርያት ብትኽክል ተሓዲሱ",
+      "productDeleted": "ፍርያት ብትኽክል ተሰሪዙ",
+      "productListingComplete": "ምዝርዝር ፍርያት ተዛዚሙ!",
+      "addImageSuggestion": "ፍርያትካ ንክፍለጥ እንተወሓደ ሓደ ስእሊ ክትውስኽ ሕሰብ።",
+      "businessRegistered": "ንግዲ ብትኽክል ተመዝጊቡ! ምርግጋፅ ይጽበ ኣሎ።",
+      "orderStatusUpdated": "ኩነታት ትእዛዝ ተሓዲሱ",
+      "orderDeleted": "ትእዛዝ ብትኽክል ተሰሪዙ",
+      "error": "ጌጋ ተፈጢሩ",
+      "failedToCreate": "ፍርያት ምፍጣር ኣይተኻእለን",
+      "failedToUpdate": "ፍርያት ምሕዳስ ኣይተኻእለን",
+      "failedToDelete": "ፍርያት ምስራዝ ኣይተኻእለን",
+      "failedToDeleteOrder": "ትእዛዝ ምስራዝ ኣይተኻእለን",
+      "failedToUpdateOrder": "ትእዛዝ ምሕዳስ ኣይተኻእለን",
+      "failedToRegisterBusiness": "ንግዲ ምምዝጋብ ኣይተኻእለን"
+    },
+    "landing": {
+      "hero": {
+        "badge": "ዕዳጋ B2B ንኣፍሪቃ",
+        "title": "ዲጂታል መሳርሒታት ንሃንጽ ኣለና",
+        "titleHighlight": "ንንግዲ መላእ ኣፍሪቃ",
+        "description": "ኣብ መላእ ክፍለ ዓለም ዘለዉ ትካላት ዘራኽብ ዕዳጋ B2B። ፍርያት ርከብ፣ ዘቕርቡ ትካላት ርከብ፣ ከምኡ እውን ንግድካ ምስ ዝተረጋገጹ ትካላት ኣፍሪቃ ኣዕብዮ።",
+        "getStarted": "ጀምር",
+        "browseMarketplace": "ዕዳጋ ዳህስስ",
+        "exploreProducts": "ፍርያት መርምር"
+      },
+      "benefits": {
+        "item1": "ምጽንባር ብነፃ",
+        "item2": "ዝተረጋገጹ ትካላት",
+        "item3": "ውሑስ ክፍሊት",
+        "item4": "ብብዙሕ ቋንቋታት ዝተደገፈ"
+      },
+      "categories": {
+        "title": "ዓውድታት ዳህስስ",
+        "description": "ካብ ትካላት ኣፍሪቃ ዝተፈላለዩ ፍርያት ርከብ",
+        "viewAll": "ኩሎም ዓውድታት ርአ",
+        "rawMaterials": "ጥረ ነገራት",
+        "agriculture": "ሕርሻ",
+        "miningMinerals": "ማዕድን",
+        "electronics": "ኤሌክትሮኒክስ",
+        "textilesFashion": "ጭርቅን ፋሽንን",
+        "foodBeverages": "ምግብን መስተን",
+        "construction": "ህንጸት",
+        "industrialEquipment": "ናይ ኢንዱስትሪ መሳርሒታት"
+      },
+      "howItWorks": {
+        "title": "ከመይ ይዓዪ",
+        "description": "ብኣርባዕተ ቀለልቲ ስጉምትታት ጀምር",
+        "step1Title": "ኣካውንት ፍጠር",
+        "step1Desc": "ብነፃ ተመዝገብ እሞ ኣብ ውሑድ ደቓይቕ ፕሮፋይልካ ኣዳሉ።",
+        "step2Title": "ንግዲ መዝግብ",
+        "step2Desc": "እምነት ንምህናጽን ንምርግጋፅን ዝርዝር ንግድኻ ወስኽ።",
+        "step3Title": "ዘርዝር ወይ ዳህስስ",
+        "step3Desc": "ንምሻጥ ፍርያትካ ዘርዝር ወይ ንምግዛዕ ዕዳጋ ዳህስስ።",
+        "step4Title": "ተራኸብን ነግድን",
+        "step4Desc": "ምስ ትካላት ተራኸብ እሞ ብውሕስነት ንግዲ ጀምር።"
+      },
+      "features": {
+        "title": "እንታይ ነቕርብ",
+        "description": "ብምትእምማን ንንግዲ ዘድልየካ ኩሉ",
+        "marketplace": "ዕዳጋ",
+        "marketplaceDesc": "ኣብ ዕዳጋ B2B ፍርያት ዳህስስን ዘርዝርን። ዘድልየካ ርከብ ወይ ሓደስቲ ዓደግቲ ብጻሕ።",
+        "verification": "ምርግጋፅ ንግዲ",
+        "verificationDesc": "ምርግጋፅ ንዝዛዘሙ ትካላት ዝወሃብ ምልክት፣ ኣብ ኩሉ ንግዲ እምነት ንምህናጽ።",
+        "securePayments": "ውሑስ ክፍሊት",
+        "securePaymentsDesc": "ንንግዲካ ዝኸውን እሙንን ውሑስን ናይ ክፍሊት ኣሰራርሓ።",
+        "multiLanguage": "ብዙሕ ቋንቋታት",
+        "multiLanguageDesc": "ነቲ መድረኽ ብእንግሊዝኛ፣ ኣምሓርኛ፣ ወይ ስዋሂሊ ተጠቐመሉ።",
+        "community": "ዓቢ ሕብረተሰብ",
+        "communityDesc": "ክትራኸቡን ክትነግዱን ዝደልዩ ዓበይቲ ትካላት ኣፍሪቃ ተጸንበር።"
+      },
+      "cta": {
+        "title": "ንምጅማር ተዳሊኻ ዲኻ?",
+        "description": "ነዚ እናዓበየ ዝመጽእ ዘሎ ሕብረተሰብ ትካላት ኣፍሪቃ ተጸንበር። ሎሚ ናይ ነፃ ኣካውንትካ ፍጠር።",
+        "createAccount": "ናይ ነፃ ኣካውንት ፍጠር",
+        "goToDashboard": "ናብ ዳሽቦርድ ኪድ",
+        "explore": "ፍርያት መርምር"
+      },
+      "trust": {
+        "securePayments": "ውሑስ ክፍሊት",
+        "securePaymentsDesc": "ውሑስ መስርሕ ክፍሊት",
+        "verifiedBusinesses": "ዝተረጋገጹ ትካላት",
+        "verifiedBusinessesDesc": "ብምርግጋፅ ዝመጽእ እምነት",
+        "multiLanguage": "ብዙሕ ቋንቋታት",
+        "multiLanguageDesc": "EN, AM, SW ይድገፉ እዮም"
+      },
+      "footer": {
+        "tagline": "ኣብ መላእ ኣፍሪቃ ዘለዉ ትካላት ዘራኽብ ዕዳጋ B2B።",
+        "marketplace": "ዕዳጋ",
+        "browseProducts": "ፍርያት ዳህስስ",
+        "businessDirectory": "መውጽኢ ትካላት",
+        "categories": "ዓውድታት",
+        "forBusinesses": "ንትካላት",
+        "registerBusiness": "ንግዲ መዝግብ",
+        "listProducts": "ፍርያት ዘርዝር",
+        "dashboard": "ዳሽቦርድ",
+        "legal": "ሕጋዊ",
+        "allRightsReserved": "ኩሉ መሰል ዝተሓለወ እዩ።",
+        "privacyPolicy": "ፖሊሲ ምስጢራውነት",
+        "termsOfService": "ውዕል ኣገልግሎት",
+        "madeForAfrica": "ንኣፍሪቃ ዝተሰርሐ"
+      },
+      "nav": {
+        "marketplace": "ዕዳጋ",
+        "pricing": "ዋጋታት",
+        "categories": "ዓውድታት",
+        "howItWorks": "ከመይ ይዓዪ",
+        "features": "ባህርያት",
+        "signIn": "እቶ",
+        "getStarted": "ጀምር",
+        "dashboard": "ዳሽቦርድ"
+      }
+    },
+    "verificationBanner": {
+      "message": "ኩሎም ባህርያት ንምጥቃም በጃኻ ኢሜይልካ ኣረጋግፅ።",
+      "resend": "ዳግም ስደድ",
+      "verify": "ኣረጋግፅ",
+      "sent": "ኢሜይል ተላኢኹ!",
+      "dismiss": "ኣርሕቖ"
+    },
+    "verifyEmail": {
+      "verifying": {
+        "title": "ኢሜይልካ ይረጋገፅ ኣሎ",
+        "description": "ኢሜይልካ ክሳብ ዝረጋገፅ በጃኻ ተጸበ..."
+      },
+      "success": {
+        "title": "ኢሜይል ተረጋጊጹ!",
+        "description": "ኢሜይልካ ብትኽክል ተረጋጊጹ ኣሎ። ሕጂ ኩሎም ባህርያት ክትጥቀም ትኽእል ኢኻ።",
+        "goToDashboard": "ናብ ዳሽቦርድ ኪድ",
+        "signIn": "እቶ"
+      },
+      "error": {
+        "title": "ምርግጋፅ ኣይተኻእለን",
+        "description": "ኢሜይልካ ክነረጋግፅ ኣይከኣልናን። እቲ ሊንክ ግዚኡ ሓሊፉ ወይ ድሮ ተጠቒምካሉ ክኸውን ይኽእል።",
+        "requestNewLink": "ሓድሽ ሊንክ ሕተት"
+      },
+      "pending": {
+        "title": "ኢሜይልካ ኣረጋግፅ",
+        "description": "በጃኻ ናይ ምርግጋፅ ሊንክ ንምርካብ ኢሜይልካ ርአ።",
+        "descriptionWithEmail": "ናብ {email} ናይ ምርግጋፅ ሊንክ ሰዲድና ኣለና። በጃኻ ኢሜይልካ ርአ።"
+      },
+      "resend": {
+        "button": "ናይ ምርግጋፅ ኢሜይል ዳግም ስደድ",
+        "sending": "ይለኣኽ ኣሎ...",
+        "sent": "ናይ ምርግጋፅ ኢሜይል ተላኢኹ! በጃኻ ኢሜይልካ ርአ።",
+        "cooldown": "ኣብ {seconds} ሰከንድ ዳግም ስደድ"
+      },
+      "skipForNow": "ንሕጂ ሕለፎ",
+      "signInToResend": "ኢሜይል ዳግም ንምልኣኽ እቶ"
+    },
+    "cookieConsent": {
+      "title": "ኩኪታት (Cookies) ንጥቀም ኢና",
+      "description": "ተመክሮ ምድህሳስካ ንምምሕያሽን ትራፊክ ንምትንታንን ኩኪታት ንጥቀም ኢና። \"ኩሉ ተቐበል\" ብምባልካ ንጥቀምሉ ንሰማማዕ። ብዛዕባ እዚ ኣብዚ ኣንብብ",
+      "privacyPolicy": "ፖሊሲ ምስጢራውነት",
+      "acceptAll": "ኩሉ ተቐበል",
+      "rejectNonEssential": "ዘየድልዩ ኣይትቐበል",
+      "customize": "ኣመዓራሪ",
+      "close": "ዕጸው",
+      "settings": {
+        "title": "ምርጫታት ኩኪ",
+        "description": "ምርጫታት ኩኪኻ ኣመሓድር። መሰረታዊ ኩኪታት እቲ ዌብሳይት ብትኽክል ንክዓዪ ኣገደስቲ ስለዝኾኑ ኩሉ ግዜ ንጡፋት እዮም።",
+        "save": "ምርጫታት ኣቀምጥ",
+        "essential": {
+          "title": "መሰረታዊ ኩኪታት",
+          "description": "ንመሰረታዊ ስራሕ ዌብሳይት ዘድልዩ። ክጠፍኡ ኣይኽእሉን።"
+        },
+        "functional": {
+          "title": "ተግባራዊ ኩኪታት",
+          "description": "ንዝሐሸ ተመክሮ ምርጫታትካን ቅጥዒታትካን ዝዝክሩ።"
+        },
+        "analytics": {
+          "title": "ናይ ትንተና ኩኪታት",
+          "description": "ተጠቀምቲ ምስ ዌብሳይትና ከመይ ከም ዝራኸቡ ንክንርዳእ ይሕግዙና።"
+        },
+        "marketing": {
+          "title": "ናይ ማርኬቲንግ ኩኪታት",
+          "description": "ዝሰማማዕ ምልክታታት ንምቕራብን ወፍሪታት ንምክትታልን ዝጥቀሙ።"
+        }
+      }
+    },
+    "legal": {
+      "backToHome": "ናብ መበገሲ ገፅ ተመለስ",
+      "tableOfContents": "ትሕዝቶ",
+      "viewPrivacyPolicy": "ፖሊሲ ምስጢራውነት ርአ",
+      "viewTermsOfService": "ውዕል ኣገልግሎት ርአ",
+      "terms": {
+        "title": "ውዕል ኣገልግሎት",
+        "lastUpdated": "ናይ መወዳእታ ምሕዳስ",
+        "lastUpdatedDate": "ጥሪ 2026",
+        "introduction": "ናብ AfriConnect እንቋዕ ብደሓን መጻእካ። እዚ ውዕል ኣገልግሎት (\"ውዕል\") ነቲ ዌብሳይትና፣ ሞባይል ኣፕሊኬሽናትናን ኣገልግሎትናን (ብሓባር \"መድረኽ\") ምጥቃምካ ይገዝእ። ነዚ መድረኽ ብምጥቃምካ በዚ ውዕልን ብፖሊሲ ምስጢራውነትናን ክትግዛእ ተሰማሚዕካ ኣለኻ። በጃኻ ኣገልግሎትና ቅድሚ ምጥቃምካ ብጥንቃቄ ኣንብቦም።",
+        "acceptance": {
+          "title": "ምቕባል ውዕል",
+          "content": "ኣካውንት ብምፍጣርካ ወይ ነዚ መድረኽ ብምጥቃምካ ነዚ ውዕል ኣገልግሎት ኣንቢብካ፣ ተረዲእካን ክትግዛእ ተሰማሚዕካን ኣለኻ። በዚ ውዕል እንተዘይተሰማሚዕካ ነዚ መድረኽ ክትጥቀም ኣይትኽእልን።\n\nእዚ ውዕል ኣብ መንጎኻን AfriConnect Inc. ን ዝግበር ሕጋዊ ውዕል እዩ። ነዚ ውዕል በብእዋኑ ከነሕድሶ ንኽእል ኢና፣ ምጥቃምካ ምቕጻልካ ድማ ነቲ ሓድሽ ውዕል ከም ዝተቐበልካዮ ይቑጸር።\n\nነዚ መድረኽ ንንግዲ ወይ ንሕጋዊ ትካል ወኪልካ ትጥቀም እንተሃሊኻ፣ ነቲ ትካል በዚ ውዕል ናይ ምእሳር ስልጣን ከም ዘለካ ተረጋግፅ።"
+        },
+        "eligibility": {
+          "title": "ናይ ብቕዓት ረቛሒታት",
+          "content": "AfriConnect ንምጥቃም:\n\n• ዕድሜኻ 18 ዓመት ወይ ካብኡ ንላዕሊ ክኸውን ኣለዎ\n• ዝተመዝገበ ናይ ንግዲ ትካል ወይ ወኪል ክትኸውን ኣለዎ\n• ሕጋዊ ውዕል ናይ ምእሳር ዓቕሚ ክህልወካ ኣለዎ\n• ብሕጊ ነዚ መድረኽ ንከይትጥቀም ዝተኣገደ ክትኸውን የብልካን\n• ትኽክለኛ ናይ ምዝገባ ሓበሬታ ክተቕርብ ኣለካ\n\nኣካውንት ብምምዝጋብካ ነዞም ረቛሒታት ከምተማልእ ተረጋግፅ። ነዞም ረቛሒታት ከምዘይተማልእ እንተኣሚንና ኣገልግሎት ናይ ምኽላእ ወይ ኣካውንት ናይ ምስራዝ መሰልና ዝተሓለወ እዩ።"
+        },
+        "accounts": {
+          "title": "ምዝገባ ኣካውንትን ድሕንነትን",
+          "content": "ኣብ AfriConnect ኣካውንት ክትፈጥር ከለኻ:\n\n• ትኽክለኛን ምሉእን ሓበሬታ ክተቕርብ ተሰማሚዕካ ኣለኻ\n• ሓበሬታ ኣካውንትካ ወርትግ ከተሕድስ ኣለካ\n• መእተዊ ሓበሬታኻ (password) ብምስጢር ክትሕዝ ኣለካ\n• ኣካውንትካ ንኻልኦት ክትህብ ወይ ዘይተፈቐደሉ ሰብ ክጥቀም ክትፈቅድ የብልካን\n• ኣካውንትካ ብዘይፍቓድካ ከምዝተጠቐሙሉ እንተፈሊጥካ ብኡ ንብኡ ክትሕብረና ኣለካ\n\nብዛዕባ ኣብ ኣካውንትካ ዝግበሩ ኩሎም ንጥፈታት ሓላፍነት ትወስድ።"
+        },
+        "marketplace": {
+          "title": "ሕግታት ዕዳጋ",
+          "content": "AfriConnect ኣብ መላእ ኣፍሪቃ ዘለዉ ዓደግትን ሸጥትን ዘራኽብ ዕዳጋ B2B እዩ። ተጠቀምቲ:\n\n• ኩሉ ንግዲ ብቅንዕና ክገብሩ\n• ትኽክለኛ መግለፂ ፍርያት፣ ዋጋን ኩነታትን ከቕርቡ\n• ዝተኣዘዙ ትእዛዛትን ግዜ ምርካብን ከኽብሩ\n• ምስ ካልኦት ተጠቀምቲ ሞያዊ ርክብ ክህልዎም\n• ኩሎም ሕግታት ንግዲ ከኽብሩ ተሰማሚዖም ኣለዉ።"
+        },
+        "payments": {
+          "title": "ክፍሊትን ንግድን",
+          "content": "ኩሎም ፋይናንሳዊ ንጥፈታት ብ Chapa ወይ ካልኦት ፍቓድ ዘለዎም ትካላት ይፍጸሙ።\n\n• ክፍሊት ብዝተፈቐዱ መንገድታት ጥራይ ክኸውን ኣለዎ\n• ናይ ኣገልግሎት ክፍሊትን ግብርን ብግልፂ ክርኣዩ እዮም\n• ሸርፊ ባሊኻት ብዘሎ ናይ ዕዳጋ ሸርፊ ይኸውን\n• ምላሽ ክፍሊት (Refunds) ብመሰረት ፖሊሲናን ውዕል ሸቃጣይን ይኸውን።"
+        },
+        "prohibited": {
+          "title": "ዝተኸልከሉ ንጥፈታት",
+          "content": "ተጠቀምቲ እዞም ዝስዕቡ ንጥፈታት ክገብሩ ብጥንቃቄ ዝተኸልከሉ እዮም:\n\n• ብዘይሕጊ ዝመጹ ወይ ዝተሰረቁ ነገራት ምሻጥ\n• ምጥፍፋእ ወይ ሕጋዊ ዘይኮነ ንግዲ ምግባር\n• ንናይቲ መድረኽ ክፍሊታት ወይ ድሕንነት ንምዝላፍ ምፍታን\n• ንኻልኦት ተጠቀምቲ ምስጓእ፣ ምፍርራሕ ወይ ኣድልዎ ምግባር\n• ሓሶት ወይ ዘይትኽክለኛ ሓበሬታ ምልጣፍ\n• ነቲ መድረኽ ንምጥቃዕ (hack) ምፍታን\n• መሰል ዋንነት ካልኦት ምግሃስ\n• መሳርሒ ውግእ፣ ሓሽሽን ዝተኸልከሉ ነገራትን ምሻጥ።"
+        },
+        "ip": {
+          "title": "መሰል ዋንነት (Intellectual Property)",
+          "content": "ኩሉ ትሕዝቶ፣ ፅሑፋት፣ ስእልታት፣ ሎጎታት፣ ሶፍትዌርን ካልኦት ኣብዚ መድረኽ ዘለዉ ነገራት ንብረት AfriConnect Inc. ወይ ፈቓድ ዝሃብዎ ትካላት እዮም።\n\nተጠቀምቲ ናይቲ ዘቕረብዎ ትሕዝቶ ዋንነት ይሕዙ፣ ን AfriConnect ግን ነቲ ትሕዝቶ ኣብቲ መድረኽ ንምጥቃም፣ ንምርኣይን ንምዝርጋሕን ዓለምለኻዊ መሰል ይህቡ።"
+        },
+        "liability": {
+          "title": "ውሱንነት ተሓታትነት",
+          "content": "ብሕጊ ክሳብ ዝተፈቐደ መጠን:\n\nAfriConnect ነዚ መድረኽ \"ከምዘለዎ\" (AS IS) የቕርብ። እዚ መድረኽ ኩሉ ግዜ ብዘይ ምቁራፅ ክዓዪ እዩ ወይ ድማ ኩሉ ግዜ ካብ ጌጋ ነፃ እዩ ኢልና ውሕስነት ኣይንህብን።\n\nAfriConnect ብሰንኪ ምጥቃም እዚ መድረኽ ንዝመጽእ ዝኾነ ዓይነት ክሳራ ተሓታቲ ኣይኸውንን።"
+        },
+        "disputes": {
+          "title": "ምፍታሕ ግጭታት",
+          "content": "ተጠቀምቲ ግጭታቶም ብቀጥታ ኣብቲ መድረኽ ብዘሎ ማእከል ንክፈትሑ ነተባብዕ።\n\n• እዚ ውዕል ብሕጊ ሪፓብሊክ ኬንያ ይግዛእ\n• ዝኾነ ሕጋዊ ክርክር ኣብ ናይሮቢ፣ ኬንያ ዘለዉ ኣብያተ ፍርዲ ይርአ\n• ብሕጊ ክሳብ ዝተፈቐደ መጠን Class action lawsuit ክሕደግ ተሰማሚዕካ ኣለኻ።"
+        },
+        "changes": {
+          "title": "ምልዋጥ ውዕል",
+          "content": "AfriConnect ነዚ ውዕል ኣብ ዝኾነ ግዜ ናይ ምልዋጥ መሰሉ ዝተሓለወ እዩ። ዓበይቲ ለውጥታት ምስ ዝህልዉ ኣብቲ መድረኽ ክንጥቅስ ወይ ብኢሜይል ክንሕብረካ ኢና።"
+        },
+        "contact": {
+          "title": "ተወከሱና",
+          "content": "ብዛዕባ እዚ ውዕል ሕቶ እንተሃሊካ በጃኻ ንሕጋዊ ጉጅለና ተወከስ።"
+        }
+      },
+      "privacy": {
+        "title": "ፖሊሲ ምስጢራውነት",
+        "lastUpdated": "ናይ መወዳእታ ምሕዳስ",
+        "lastUpdatedDate": "ጥሪ 2026",
+        "introduction": "ኣብ AfriConnect ምስጢራውነትካ ንምሕላው ቁርቡጻት ኢና። እዚ ፖሊሲ ነቲ መድረኽ ክትጥቀም ከለኻ ከመይ ጌርና ሓበሬታኻ ከም እንእክብ፣ ከም እንጥቀምን ከም እንሕሉን ይገልጽ። ሓበሬታኻ ብመሰረት ዓለምለኻዊ ሕግታት ምክልኻል ዳታ (GDPR)ን ሕግታት ሃገራት ኣፍሪቃን ነተግብር።",
+        "compliance": {
+          "title": "ተገዛእነት ምክልኻል ዳታ",
+          "content": "AfriConnect ምስ ዓለምለኻዊ ሕግታት GDPR፣ ናይ ኬንያ Data Protection Act 2019፣ ናይ ናይጀሪያ NDPR፣ ናይ ደቡብ ኣፍሪቃ POPIA ን ካልኦት ሕግታት ሕብረት ኣፍሪቃን ይሰማማዕ።"
+        },
+        "collection": {
+          "title": "እንእክቦ ሓበሬታ",
+          "content": "ብቀጥታ ካባኻ እንእክቦ ሓበሬታ:\n\n• ሓበሬታ ኣካውንት: ስም፣ ኢሜይል፣ ቴሌፎን፣ ስም ንግዲ\n• ሓበሬታ ንግዲ: ሰነዳት ምዝገባ፣ TIN፣ ኣድራሻ\n• ዳታ ንግዲ: ታሪኽ ዕደጋ፣ ክፍሊት፣ ኣድራሻ ፈነወ\n• ርክባት: መልእኽትታት ምስ ካልኦት ተጠቀምቲ\n\nብተወሳኺ ብዛዕባ እቲ እትጥቀመሉ መሳርሒ (IP address, browser type)ን ኣጠቓቕማኻን ሓበሬታ ንእክብ ኢና።"
+        },
+        "usage": {
+          "title": "ሓበሬታኻ ከመይ ንጥቀመሉ",
+          "content": "ሓበሬታኻ ንእዞም ዝስዕቡ ንጥቀመሉ:\n\n• ኣገልግሎት ንምሃብን ንምምሕያሽን\n• ኣካውንትካ ንምምሕዳርን ንምርግጋፅን\n• ኣገደስቲ መልእኽትታትን ደገፍን ንምልኣኽ\n• ካብ ምጥፍፋእን ካልኦት ሓደጋታት ድሕንነትን ንምክልኻል\n• ንሕጋዊ ግዴታታት ንምምላእ"
+        },
+        "sharing": {
+          "title": "ሓበሬታ ምክፋል",
+          "content": "ሓበሬታኻ ንኻልኦት ኣይንሸጥን። ግናኸ ምስ እዞም ዝስዕቡ ክንካፈል ንኽእል:\n\n• ምስ ካልኦት ተጠቀምቲ: ንግዲ ንምምላእ ዘድልዩ ሓበሬታታት\n• ምስ ኣገልገልቲ ትካላት: ክፍሊት ዝሰርሑ (payment processors) ወይ ዳታ ዝዕቅቡ (hosting)\n• ብሕጊ ምስ ዝሕተቱ ኣካላት"
+        },
+        "security": {
+          "title": "ድሕንነት ዳታ",
+          "content": "ሓበሬታኻ ንምሕላው ፅኑዕ ድሕንነት ንጥቀም: ኩሉ ዳታ ብ Encryption ዝተሓለወ እዩ፣ ናይ ሰራሕተኛታት ስልጠናን ስሩዕ ፍተሻ ድሕንነትን ንገብር።"
+        },
+        "rights": {
+          "title": "መሰልካን ምርጫኻን",
+          "content": "ከም ተጠቃሚ መጠን እዞም መሰላት ኣለዉኻ:\n\n• ሓበሬታኻ ንምርኣይ ወይ ቅዳሕ ንምርካብ\n• ዝተጋገየ ሓበሬታ ንምእራም\n• ሓበሬታኻ ንክጠፍኣልካ ንምሕታት\n• ሓበሬታኻ ንከይስራሕ ንምቃወም\n\nነዞም መሰላት ንምጥቃም ንሓላፊ ምክልኻል ዳታና (DPO) ተወከስ።"
+        },
+        "cookies": {
+          "title": "ኩኪታትን ምክትታልን",
+          "content": "ተመክሮኻ ንምምሕያሽ ኩኪታት ንጥቀም። እዚኦም መሰረታዊ፣ ንጥፈት ዝርእዩ ወይ ንማርኬቲንግ ዝጠቕሙ ክኾኑ ይኽእሉ። ኣብ ብራውዘርካ ክትቆጻጸሮም ትኽእል ኢኻ።"
+        },
+        "retention": {
+          "title": "ዳታ ንኽንደይ ግዜ ንዕቅብ",
+          "content": "ሓበሬታኻ ኣገልግሎት ንምሃብን ሕጋዊ ግዴታታት ንምምላእን ክሳብ ዘድሊ ንዕቅብ። ንኣብነት ናይ ንግዲ ዳታ ን7 ዓመታት ይዕቀብ።"
+        },
+        "international": {
+          "title": "ዓለምለኻዊ ምስጋር ዳታ",
+          "content": "AfriConnect ኣብ ብዙሓት ሃገራት ኣፍሪቃ ስለዝዓዪ ዳታ ካብ ሃገር ናብ ሃገር ክሰጋገር ይኽእል እዩ። እዚ ምስጋር ብውሑስ መንገዲ ከም ዝኸውን ነረጋግፅ።"
+        },
+        "children": {
+          "title": "ምስጢራውነት ህጻናት",
+          "content": "እዚ መድረኽ ንንግዲ ዝተዳለወ እዩ። ካብ ትሕቲ 18 ዓመት ዝኾኑ ሓበሬታ ብፍላጥ ኣይንእክብን።"
+        },
+        "changes": {
+          "title": "ምልዋጥ ፖሊሲ",
+          "content": "ነዚ ፖሊሲ በብእዋኑ ከነሕድሶ ንኽእል ኢና። ዓበይቲ ለውጥታት ምስ ዝህልዉ ክንሕብረካ ኢና።"
+        },
+        "dpo": {
+          "title": "ሓላፊ ምክልኻል ዳታ",
+          "content": "ምስ ዳታ ዝተተሓሓዙ ሕቶታት ንምምላስ ሓላፊ (DPO) መዲብና ኣለና።"
+        }
+      }
+    },
+    "agreements": {
+      "dialog": {
+        "reviewAndAccept": "በጃኻ ንምቕጻል ነዚ ውዕል ርአን ተቐበልን።",
+        "accept": "ተቐቢለ ቀፅል",
+        "accepting": "ይቕበል ኣሎ...",
+        "decline": "ኣይቕበልን"
+      },
+      "seller": {
+        "title": "ውዕል ሸቃጣይ",
+        "pageDescription": "ፍርያት ክትዘርዝርን ክትሸይጥን ከለኻ ዝምልከቱ ሕግታት።",
+        "lastUpdated": "ናይ መወዳእታ ምሕዳስ",
+        "lastUpdatedDate": "ለካቲት 2026",
+        "introduction": "እዚ ውዕል ከም ሸቃጣይ መጠን ዘለካ ኣጠቓቕማ ይገዝእ። ነዚ ብምቕባልካ ዝርዝር ፍርያት ናይ ምሻጥ ስልጣን ከምዘለካን ሕግታት ዕዳጋ ከምተኽብርን ተረጋግፅ።",
+        "acceptanceLabel": "ነዚ ውዕል ሸቃጣይ ኣንቢበን ተሰማሚዐን ኣለኹ።",
+        "sections": {
+          "eligibility": {
+            "title": "ብቕዓት",
+            "content": "ዝተመዝገበ ንግዲ ክትኸውን ኣለካ። ትኽክለኛ ሓበሬታ ክተቕርብን ስሩዕ ሰነዳት ክህልወካን ኣለዎ።"
+          },
+          "productListings": {
+            "title": "ዝርዝር ፍርያት",
+            "content": "ትኽክለኛ ስም ፍርያት፣ መግለፂ፣ ዋጋን ስእልን ክተቕርብ ኣለካ። ዘጋገዩ ዝርዝራት ክጠፍኡ ይኽእሉ እዮም።"
+          },
+          "fulfillment": {
+            "title": "ምምላእ ትእዛዝ",
+            "content": "ክፍሊት ምስ ተረጋገጸ ንብረት ብእዋኑ ናብ ዓዳጊ ናይ ምስዳድ ሓላፍነት ኣለካ።"
+          },
+          "qualityStandards": {
+            "title": "ደረጃ ፅሬት",
+            "content": "ፍርያት ምስቲ ዝተገልጸ መግለፂ ክሰማማዕን ናይ ፅሬት ረቛሒታት ከማልእን ኣለዎ።"
+          },
+          "feesCommissions": {
+            "title": "ክፍሊታትን ኮሚሽንን",
+            "content": "ኣብ መሸጣን ምስጋር ገንዘብን ናይ መድረኽ ክፍሊታት ክህልዉ ይኽእሉ እዮም።"
+          },
+          "returnsRefunds": {
+            "title": "ምምላስ ንብረትን ክፍሊትን",
+            "content": "ሕጋዊ ንዝኾነ ናይ ምምላስ ሕቶታት ምስቲ መድረኽ ብምትሕብባር ክትሰርሕ ኣለካ።"
+          },
+          "prohibitedItems": {
+            "title": "ዝተኸልከሉ ነገራት",
+            "content": "ሕጋዊ ዘይኮኑ፣ ናይ ሓሶት ወይ ዝተኸልከሉ ነገራት ክትሸይጥ ኣይትኽእልን።"
+          },
+          "intellectualProperty": {
+            "title": "መሰል ዋንነት",
+            "content": "ንትጥቀመሉ ትሕዝቶ መሰል ከምዘለካ ተረጋግፅ። ን AfriConnect ነቶም ፍርያት ንከፋልጥ መሰል ትህብ።"
+          },
+          "accountSuspension": {
+            "title": "ኣካውንት ምእጋድ",
+          "content": "ንፖሊሲታት ምስ እትጥሕስ AfriConnect ኣካውንትካ ክዓጽዎ ወይ ክዓግቶ ይኽእል እዩ።"
+          },
+          "liabilityIndemnification": {
+            "title": "ተሓታትነት",
+            "content": "ብዛዕባ ፍርያትካን ተግባራትካን ሓላፍነት ትወስድ። ን AfriConnect ካብ ዝኾነ ብሰንካ ዝመጽእ ሕጋዊ ሕቶ ክትከላኸለሉ ተሰማሚዕካ ኣለኻ።"
+          }
+        }
+      },
+      "buyer": {
+        "title": "ውዕል ዓዳጊ",
+        "pageDescription": "ብ AfriConnect ኣቢልካ ክትዕድግ ከለኻ ዝምልከቱ ሕግታት።",
+        "lastUpdated": "ናይ መወዳእታ ምሕዳስ",
+        "lastUpdatedDate": "ለካቲት 2026",
+        "introduction": "እዚ ውዕል ከም ዓዳጊ መጠን ዘለካ ኣጠቓቕማ ይገዝእ። ነዚ ብምቕባልካ ትእዛዝ ንምሃብ ስልጣን ከምዘለካን ክፍሊት ክትከፍልን ተሰማሚዕካ ኣለኻ።",
+        "acceptanceLabel": "ነዚ ውዕል ዓዳጊ ኣንቢበን ተሰማሚዐን ኣለኹ።",
+        "sections": {
+          "purchaseCommitments": {
+            "title": "ግዴታ ዕደጋ",
+            "content": "ኣብዚ መድረኽ ዝወሃቡ ትእዛዛት ንብረት ንምግዛእ ዝግበሩ ሕጋዊ ግዴታታት እዮም።"
+          },
+          "paymentTerms": {
+            "title": "ሕግታት ክፍሊት",
+            "content": "ብዝተፈቐዱ መንገድታት ክፍሊት ክትፍጽም ኣለካ። ዘይተሳዕረ ክፍሊት ትእዛዝ ንክስረዝ ክገብር ይኽእል።"
+          },
+          "deliveryInspection": {
+            "title": "ምርካብን ምፍታሽን",
+            "content": "ዝመጸካ ንብረት ብቕልጡፍ ክትፍትሽን ፀገም እንተሃሊዩ ብመርተዖ ክተፍልጥን ኣለካ።"
+          },
+          "disputes": {
+            "title": "ክርክራት",
+            "content": "ዝኾነ ፀገም ምስ ዝፍጠር ብመድረኽ ኣቢልካ ክትከራኸር ትኽእል ኢኻ።"
+          },
+          "returns": {
+            "title": "ምምላስ ንብረት",
+            "content": "ምምላስ ንብረት ከም ዓይነት ፍርያትን ውዕል ሸቃጣይን ይኸውን። ኩሉ ንብረት ክምለስ ኣይኽእልን ይኸውን።"
+          },
+          "communication": {
+            "title": "ርክብ",
+            "content": "ምስ ሸቃጦይ ብሞያዊ መንገዲ ክትራኸብን ንሕቶታቶም መልሲ ክትህብን ተሰማሚዕካ ኣለኻ።"
+          },
+          "accountResponsibilities": {
+            "title": "ሓላፍነት ኣካውንት",
+            "content": "ንድሕንነት ኣካውንትካን ንትህቦ ትኽክለኛ ሓበሬታን ሓላፍነት ትወስድ።"
+          }
+        }
+      }
+    },
+    "compliance": {
+      "title": "ተገዛእነት AfCFTA",
+      "description": "ፍርያትካ ካብ ረብሓታት ነፃ ንግዲ ኣፍሪቃ (AfCFTA) ተረባሒ ክኸውን ይኽእል ድዩ ኣረጋግፅ",
+      "searchByName": "ብሽም ድለ",
+      "enterHsCode": "ኮድ HS ኣእቱ",
+      "searchPlaceholder": "ብሽም ፍርያት ወይ ብኮድ HS ድለ...",
+      "hsCodePlaceholder": "ናይ 8 ኣሃዝ ኮድ HS ኣእቱ (ንኣብነት 09011100)",
+      "lookup": "ድለ",
+      "add": "ወስኽ",
+      "addAnyway": "ምንም ይኹን ወስኽ",
+      "rate": "ምጣነ",
+      "currentRate": "ናይ ሕጂ ምጣነ",
+      "categoryA": "ዓይነት A",
+      "notCategoryA": "ዓይነት A ኣይኮነን",
+      "notFoundInCategoryA": "ኮድ HS ኣብ ዓይነት A ኣይተረኽበን",
+      "notFoundDescription": "እዚ ፍርያት ኣብ AfCFTA ዓይነት A ስለዘየለ ካብ ምጉዳል ቀረጽ ተረባሒ ኣይኸውንን ይኸውን።",
+      "tariffReduction": "መደብ ምጉዳል ቀረጽ",
+      "rateSchedule": "መደብ ምጣነ (2026-2030)",
+      "currentYearRate": "ናይዚ ዓመት ምጣነ",
+      "zeroTariffBy2030": "እዚ ፍርያት ክሳብ 2030 0% ቀረጽ ክህልዎ እዩ",
+      "noAfcftaBenefits": "ረብሓ AfCFTA የለን",
+      "noAfcftaBenefitsDescription": "እዚ ፍርያት ኣብ AfCFTA ዓይነት A ስለዘየለ ስሩዕ ቀረጽ ይኽፈሎ።",
+      "removeProduct": "ፍርያት ኣውፅእ",
+      "complianceSummary": "ጽማሬ ተገዛእነት",
+      "complianceSummaryDescription": "ናይ ፍርያትካ ብቕዓት AfCFTA ሓፈሻዊ ምርኢት",
+      "totalProducts": "ጠቕላላ ፍርያት",
+      "eligible": "ብቑዕ",
+      "notEligible": "ብቑዕ ዘይኮነ",
+      "eligibleMessage": "ካብ ፍርያትካ {count} ካብ ምጉዳል ቀረጽ AfCFTA ተረባሕቲ እዮም",
+      "scheduleMatchMessage": "{count, plural, one {ናይ # ፍርያት HS ኮድ ምስ ዝተመረጸ ታሪፍ ሰሌዳ ይሰማማዕ - ናይ ደንቢ መበገሲ ግምገማ ገና ብምፅባይ ኣሎ} other {ናይ # ፍርያት HS ኮዳት ምስ ዝተመረጸ ታሪፍ ሰሌዳ ይሰማማዑ - ናይ ደንቢ መበገሲ ግምገማ ገና ብምፅባይ ኣሎ}}",
+      "yourProducts": "ፍርያትካ",
+      "yourProductsDescription": "ንተገዛእነት AfCFTA ተባሂሎም ብኮድ HS ዝተመዝገቡ ፍርያት",
+      "addProduct": "ፍርያት ወስኽ",
+      "addNewProduct": "ሓድሽ ፍርያት ወስኽ",
+      "cancel": "ሰርዝ",
+      "addingProduct": "ፍርያት ይውሰኽ ኣሎ...",
+      "productAdded": "ፍርያት ብትኽክል ተወሲኹ",
+      "productRemoved": "ፍርያት ብትኽክል ተኣልዩ",
+      "failedToAddProduct": "ፍርያት ምውሳኽ ኣይተኻእለን",
+      "failedToRemoveProduct": "ፍርያት ምእላይ ኣይተኻእለን",
+      "noProductsYet": "ክሳብ ሕጂ ዝተወሰኸ ፍርያት የለን",
+      "noProductsDescription": "ተገዛእነት AfCFTA ንምፍታሽ ፍርያትካ ምስ ኮድ HS ወስኽ",
+      "addFirstProduct": "ቀዳማይ ፍርያትካ ወስኽ",
+      "andMoreProducts": "+{count} ተወሳኺ ፍርያት",
+      "businessRequired": "ምዝገባ ንግዲ የድሊ",
+      "businessRequiredDescription": "ተገዛእነት ፍርያት ቅድሚ ምፍታሽካ ንግድኻ ክትመዝግብ ኣለካ።",
+      "registerBusiness": "ንግዲ መዝግብ",
+      "whatIsAfcfta": "AfCFTA እንታይ እዩ?",
+      "afcftaDescription": "ነፃ ንግዲ ክፍለ ዓለም ኣፍሪቃ (AfCFTA) ኣብ መንጎ ሃገራት ኣፍሪቃ ዝተገብረ ናይ ነፃ ንግዲ ውዕል እዩ። ኣብ ዓይነት A ዝመደቡ ፍርያት ካብ 2026 ክሳብ 2030 ቀስ ብቀስ ቀረጾም እናጎደለ ከይዱ 0% ይበፅሕ።",
+      "categoryABadge": "ፍርያት ዓይነት A",
+      "learnMoreAfcfta": "ብዛዕባ AfCFTA ዝያዳ ተረዳእ",
+      "reductionSchedule": "መደብ ምጉዳል ቀረጽ",
+      "reductionScheduleDescription": "ፍርያት ዓይነት A ናይ ምጉዳል ቀረጽ መደብ ይስዕቡ",
+      "year": "ዓመት",
+      "typicalRateReduction": "ልሙድ ምጣነ",
+      "rateDisclaimer": "ትኽክለኛ ምጣነ ከከም ፍርያቱ ክፈላለ ይኽእል እዩ።",
+      "afcftaCompliance": "ተገዛእነት AfCFTA",
+      "afcftaComplianceDescription": "ፍርያትካ ካብ ረብሓታት ነፃ ንግዲ ኣፍሪቃ ተረባሒ ክኸውን ይኽእል ድዩ ኣረጋግፅ",
+      "noComplianceCheckYet": "ክሳብ ሕጂ ዝተፈተሸ ፍርያት የለን።",
+      "startComplianceCheck": "ምፍታሽ ጀምር",
+      "manageProducts": "ፍርያት ኣመሓድር",
+      "selectCountry": "ሃገር/ዞባ መረጽ",
+      "ethiopia": "ኢትዮጵያ",
+      "kenyaEac": "ኬንያ (EAC)",
+      "countryDescription": "ቀረጽ ንምድላይ ሃገር መረጽ",
+      "registerToSaveProducts": "ፍርያትካ ንምዕቃብ ንግድኻ መዝግብ።",
+      "notFoundInTariffSchedule": "እዚ HS ኮድ ኣብ ዝተመረጸ ታሪፍ ሰሌዳ ኣይተረኽበን",
+      "tariffScheduleCoverage": "ሽፋን ታሪፍ ሰሌዳ",
+      "tariffScheduleMatched": "ታሪፍ ሰሌዳ ተሰማሚዑ",
+      "tariffScheduleNotMatched": "ታሪፍ ሰሌዳ ኣይተሰማምዐን",
+      "noTariffMatchDescription": "እዚ HS ኮድ ምስ ዝተመረጸ ታሪፍ ሰሌዳ ከነሰማምዖ ኣይከኣልናን። ኦፊሴላዊ መጽሓፍ ታሪፍን ናይ ፍሉይ ፍርያት ደንቢ መበገሲን ርአ።",
+      "reviewMessage": "ካብ ፍርያትካ {count} ናይ መበገሲ ደንቢ ግምገማ ገና የድልዮም ኣሎ ቅድሚ ናይ AfCFTA ጥያቄ መበገሲ ምቕራብ።",
+      "needsReview": "ግምገማ የድሊ",
+      "ruleNotMapped": "ደንቢ ኣይተመደበን",
+      "rulesOfOrigin": "ደንቢታት መበገሲ",
+      "tariffAndOrigin": "ታሪፍን መበገሲን",
+      "baseRate": "መሰረታዊ ምጣነ",
+      "tariffCategory": "ምድብ ታሪፍ",
+      "originRule": "ደንቢ መበገሲ",
+      "ruleSource": "ምንጪ ደንቢ",
+      "ruleNotMappedDescription": "እቲ መተግበሪ ክሳብ ሕጂ ነዚ HS ኮድ ዝምልከት ናይ ፍሉይ ፍርያት ደንቢ ኣይሰርዖን ኣሎ። ቅድሚ ናይ መበገሲ ጥያቄ ምቕራብ Appendix 2.A.1 ርአ።",
+      "eligibleRuleDescription": "እዚ ፍርያት ብኣውቶማቲክ ዝተገምገመ ናይ ክብሪ መሰረት ደንቢ ሓሊፉ እዩ።",
+      "notEligibleRuleDescription": "እዚ ፍርያት ብኣውቶማቲክ ዝተገምገመ ናይ ክብሪ መሰረት ደንቢ ኣይሓለፈን።",
+      "legacyStatus": "ናይ ቀደም ውፅኢት",
+      "legacyStatusDescription": "እዚ መዝገብ ቅድሚ ብደንቢ ዝተመስረተ ምምሕያሽ ስለ ዝተፈጥረ እንደገና ክሕሰብ ይግባእ።",
+      "automaticVnmDescription": "እዚ ውፅኢት ብኣውቶማቲክ ካብ ብክብሪ ዝተመስረተ ደንቢ VNM ተሓሲቡ እዩ።",
+      "manualReviewDescription": "ደንቢ ናይዚ ፍርያት ካብ ሕጂ ዘሎ ኣውቶማቲክ መቑፀሪ ንላዕሊ ናይ ሰነድ ወይ ናይ ኣሰራርሓ ምምርማር ይፈልጥ።"
+    },
+    "afcfta": {
+      "title": "ብዛዕባ ተገዛእነት AfCFTA ን AI ሕተት",
+      "description": "ምስ ሰነዳት AfCFTA ዝተተሓሓዙ ሕቶታት ሕተት። እዚ ረዳት ብመርተዖ ዝተደገፈ መልሲ ይህብ።",
+      "badge": "Scaffold",
+      "helper": "መልሲታት ካብቶም ዝተሰቕሉ ሰነዳት ጥራይ ክኾኑ ኣለዎም። መርተዖ እንተዘየለ እቲ ረዳት ካብ ምግማት ክቑጠብ ኣለዎ።",
+      "placeholder": "ሕቶ ሕተት፣ ንኣብነት: ሰርቲፊኬት መበገሲ ንምርካብ እንታይ ሰነዳት የድልዩ?",
+      "sampleQuestions": [
+        "እዚ ፍርያት ሎሚ ካብ ቀረጽ ነፃ ድዩ?",
+        "ንሰርቲፊኬት መበገሲ እንታይ መርተዖ የድልየኒ?",
+        "ምዕሻግ ጥራይ ከም መበገሲ ይቑጸር ድዩ?"
+      ],
+      "cta": {
+        "ask": "ን AI ሕተት",
+        "asking": "ይሕተት ኣሎ..."
+      },
+      "form": {
+        "languageLabel": "ቋንቋ",
+        "questionLabel": "ሕቶ ተገዛእነት"
+      },
+      "validation": {
+        "questionTooShort": "በጃኻ ዝርዝር ዘለዎ ሕቶ ኣእቱ።",
+        "invalidQuestion": "በጃኻ ትኽክለኛ ሕቶ ኣእቱ።"
+      },
+      "error": {
+        "generic": "ምስ ረዳት ተገዛእነት ምርክካብ ኣይተኻእለን።"
+      },
+      "empty": {
+        "citations": "ክሳብ ሕጂ መወከሲታት የለዉን።"
+      },
+      "sections": {
+        "answer": "መልሲ",
+        "citations": "መወከሲታት (Citations)",
+        "source": "ምንጪ"
+      },
+      "mode": {
+        "fullRag": "ምሉእ RAG",
+        "retrievalOnly": "ምድላይ ጥራይ"
+      },
+      "status": {
+        "ready": "ድሉው",
+        "not_configured": "ኣይተዳለወን",
+        "no_evidence": "መርተዖ የለን"
+      }
+    },
+    "aiAssistantPage": {
+      "title": "ረዳት AI",
+      "description": "ብዛዕባ ተገዛእነት AfCFTA፣ ነጥቢ ልቓሕ፣ ሕግታት መበገሲን ካልኦትን ሕተት።",
+      "unavailable": "መሳርሒታት ረዳት AI ንግዚኡ ኣይሰርሑን ዘለዉ።",
+      "tabs": {
+        "compliance": "ተገዛእነት AfCFTA",
+        "general": "ሓፈሻዊ ረዳት"
+      },
+      "general": {
+        "title": "ብዛዕባ ጉዳያት AfCFTA ሕተት",
+        "description": "ብዛዕባ ሕግታት መበገሲ፣ መደብ ቀረጽ፣ ምጥጣሕ ንግድን ካልኦትን ሕተት። ንሓበሬታ ጥራይ እዩ - ምስ ወግዓዊ ምንጭታት ኣረጋግፅ።",
+        "badge": "ብ AI ዝተደገፈ",
+        "helper": "ብዛዕባ ነፃ ንግዲ ኣፍሪቃ ሓፈሻዊ ሕቶታት ሕተት። ኣገደስቲ ዝርዝራት ወርትግ ምስ ወግዓዊ ምንጭታት ኣረጋግፅ።",
+        "placeholder": "ሕቶ ሕተት፣ ንኣብነት: ሕግታት መበገሲ ኣብ AfCFTA ከመይ ይዓዩ?",
+        "sampleQuestions": [
+          "ሕግታት መበገሲ ከመይ ይዓዩ?",
+          "ኣብ AfCFTA ዓይነት A ማለት እንታይ ማለት እዩ?",
+          "ንፈነወ ንብረት እንታይ ሰነዳት የድልዩ?"
+        ],
+        "cta": {
+          "ask": "ን AI ሕተት",
+          "asking": "ይሕተት ኣሎ..."
+        },
+        "form": {
+          "languageLabel": "ቋንቋ",
+          "questionLabel": "ሕቶኻ"
+        },
+        "validation": {
+          "questionTooShort": "በጃኻ ዝርዝር ዘለዎ ሕቶ ኣእቱ።",
+          "invalidQuestion": "በጃኻ ትኽክለኛ ሕቶ ኣእቱ።"
+        },
+        "error": {
+          "generic": "ካብ ረዳት AI መልሲ ምርካብ ኣይተኻእለን።"
+        },
+        "sections": {
+          "answer": "መልሲ"
+        }
+      }
+    },
+    "originEligibility": {
+      "title": "ብቕዓት ሰርቲፊኬት መበገሲ",
+      "description": "ፍርያትካ ነቲ ናይ 60% ሕጊ ተገዛእነት መበገሲ ዘማልእ እንተኾይኑ ሕሰብ",
+      "whatIsTheRule": "ሕጊ 60% እንታይ እዩ?",
+      "ruleExplanation": "እቲ ሕጊ MaxNOM ከምዝገልጾ፣ ካብ ወፃኢ ዝመጹ ነገራት ካብ 60% ዋጋ እቲ ፍርያት ክበልጹ የብሎምን። እዚ ማለት እንተወሓደ 40% ዋጋ እቲ ፍርያት ካብ ውሽጢ ሃገር ዝመጸ ክኸውን ኣለዎ።",
+      "startCalculation": "ብቕዓት ሕሰብ",
+      "newCalculation": "ሓድሽ ሕሳብ",
+      "reset": "ባዶ ግበር",
+      "step1Title": "ዋጋ Ex-Works (EXW)",
+      "step1Description": "እቲ ፍርያት ካብ ፋብሪካ ክወጽእ ከሎ ዘለዎ ዋጋ (ኩሉ ናይ መፍረዪ ወፃኢታት ሓዊሱ)",
+      "step2Title": "ካብ ወፃኢ ዝመጹ ነገራት (VNM)",
+      "step2Description": "ካብ ወፃኢ ሃገር ዝመጹ ናይቲ ፍርያት ኣካላት ዋጋ",
+      "step3Title": "ፎርሙላ ተጠቐም",
+      "step4Title": "ውፅኢት ብቕዓት",
+      "resultDescription": "ኣብቲ ናይ 60% ዝለዓለ ደረት ተመርኪሱ",
+      "productName": "ስም ፍርያት",
+      "productNamePlaceholder": "ስም ፍርያት ኣእቱ (ንኣብነት ቡን፣ ጨርቂ)",
+      "currency": "ቅርሺ (Currency)",
+      "costOfMaterials": "ዋጋ ጥረ ነገራት",
+      "costOfMaterialsHint": "ኣብ ምፍራይ ዝወዓሉ ጥረ ነገራትን ኣካላትን",
+      "laborCosts": "ወፃኢ ጉልበት",
+      "laborCostsHint": "ንሰራሕተኛታት ዝኽፈል ደሞዝ",
+      "factoryOverheads": "ወፃኢታት ፋብሪካ",
+      "factoryOverheadsHint": "መብራህቲ፣ ክራይ፣ ክንክን መሳርሒታት",
+      "profitMargin": "መኽሰብ",
+      "profitMarginHint": "ኣብ ልዕሊ መፍረዪ ወፃኢ እትውስኾ መኽሰብ",
+      "totalExWorks": "ጠቕላላ ዋጋ Ex-Works",
+      "vnmExplanationTitle": "ዘይመበገሲ (Non-originating) ነገራት እንታይ እዮም?",
+      "vnmExplanation": "እዚኦም ካብ ሃገርካ ወፃኢ ዝመጹ ጥረ ነገራት እዮም። ናይ ጉምሩክ ዋጋ ምስ ናይ መጓዓዝያን መድሕንን ወፃኢታት ሓዊስካ ጸብጽቦም።",
+      "vnmValue": "ጠቕላላ ዋጋ VNM",
+      "vnmValueHint": "ኩሎም ካብ ወፃኢ ዝመጹ ነገራት ጠቕላላ ዋጋ",
+      "formula": "ፎርሙላ",
+      "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+      "result": "ውፅኢት",
+      "maxThreshold": "ዝለዓለ ደረት: 60%",
+      "eligible": "ብቑዕ",
+      "notEligible": "ብቑዕ ዘይኮነ",
+      "eligibleMessage": "ፍርያትካ ረቛሒታት ሕጊ መበገሲ የማልእ እዩ",
+      "eligibleDescription": "ካብ ወፃኢ ዝመጹ ነገራት ካብ 60% ንታሕቲ እዮም። ፍርያትካ ሰርቲፊኬት መበገሲ ንምርካብ ብቑዕ እዩ።",
+      "notEligibleMessage": "ፍርያትካ ረቛሒታት ሕጊ መበገሲ ኣየማልእን",
+      "notEligibleDescription": "ካብ ወፃኢ ዝመጹ ነገራት ካብ 60% በሊጾም ኣለዉ። ናይ ውሽጢ ሃገር ትሕዝቶ ክተዕብይ ፈትን።",
+      "contactUs": "ብቕዓትካ ንምምሕያሽ ደገፍ የድልየካ ድዩ?",
+      "contactUsDescription": "ናይ ውሽጢ ሃገር ትሕዝቶ ንምውሳኽ ጉጅለና ክሕግዘካ ይኽእል እዩ።",
+      "certificateOfOriginEligibility": "ምፍታሽ ብቕዓት ሰርቲፊኬት መበገሲ",
+      "vnmPercentage": "ፐርሰንት VNM",
+      "localContent": "ትሕዝቶ ውሽጢ ሃገር",
+      "minLocalContent": "ትሑት ዝድለ: 40%",
+      "localValueAdded": "ዝተወሰኸ ዋጋ ውሽጢ ሃገር",
+      "productHsCode": "HS ኮድ ፍርያት",
+      "productHsCodePlaceholder": "ንምድላይ ደንቢ መበገሲ ዝጥቀሙሉ ናይ ፍርያት HS ኮድ ኣእቱ",
+      "originRule": "ደንቢ መበገሲ",
+      "ruleSource": "ምንጪ ደንቢ",
+      "ruleThreshold": "ደረት ደንቢ",
+      "manualReview": "ብኢድ ግምገማ",
+      "manualReviewStepTitle": "ብኢድ ግምገማ ደንቢ",
+      "manualReviewStepDescription": "ኦፊሴላዊ ደንቢ፣ ዘይኣክሉ ስራሕቲ ከምኡውን ኣተገባብራ ምድማር ከም ዝመርመርካ ኣረጋግፅ",
+      "manualReviewTitle": "ብኢድ ግምገማ የድሊ",
+      "manualReviewBody": "ደንቢ መበገሲ ናይዚ ፍርያት ብEXWን VNMን ጥራይ ብኣውቶማቲክ ክሕሰብ ኣይክእልን እዩ። ቅድሚ ጥያቄ ምቕራብ ኦፊሴላዊ ደንቢ Appendix 2.A.1 ከምኡውን ኣጠቓላሊ ደረታት Annex 2 ከተረጋግፅ ኣለካ።",
+      "manualReviewDescription": "እዚ ደንቢ ብኢድ ግምገማ ይደሊ ምኽንያቱ እቲ ሕጂ ዘሎ መቑፀሪ ምልክታት ለውጢ ታሪፍ ወይ ናይ ኣሰራርሓ ምርግጋፅ ኣይሓዝን።",
+      "needsReview": "ግምገማ የድሊ",
+      "ruleNotMapped": "ደንቢ ኣይተመደበን",
+      "ruleNotMappedDescription": "እቲ መተግበሪ ክሳብ ሕጂ ነዚ HS ኮድ ዝምልከት ናይ ፍሉይ ፍርያት ደንቢ ኣይሰርዖን ኣሎ። ቅድሚ ናይ መበገሲ ጥያቄ ምቕራብ Appendix 2.A.1 ርአ።",
+      "ruleReviewed": "ኣብ Appendix 2.A.1 ዝርከብ ንዕኡ ዝምልከት ናይ ፍሉይ ፍርያት ደንቢ መርሚረዮ እየ።",
+      "insufficientOperationsChecked": "እቲ ኣሰራርሓ ኣብ Annex 2 ዘለዉ ዘይኣክሉ ስራሕቲ ጥራይ ከም ዘይውሰን ኣረጋጊፀዮ እየ።",
+      "cumulationConsidered": "ኣብ ዝምልከት ቦታ ካብ ካልኦት ሃገራት ኣባላት ዝመፁ ናይ መበገሲ ኣብነታትን ምድማርን ገሚጸዮ እየ።",
+      "enterHsCodeFirst": "እቲ መቑፀሪ ደንቢ ክፈትሕ ቅድሚ ምርቃሕ ናይ ፍርያት HS ኮድ ኣእቱ።",
+      "legacyStatus": "ናይ ቀደም ውፅኢት",
+      "yes": "እወ",
+      "no": "ኣይፋል",
+      "saveCalculation": "ሕሳብ ኣቀምጥ",
+      "saving": "ይዕቀብ ኣሎ...",
+      "calculationSaved": "ሕሳብ ብትኽክል ተዓቂቡ",
+      "registerToSaveCalculation": "ነዚ ሕሳብ ንምዕቃብ ንግድኻ መዝግብ።",
+      "calculationDeleted": "ሕሳብ ተሰሪዙ",
+      "deleteCalculation": "ሕሳብ ኣጥፍእ",
+      "failedToSave": "ሕሳብ ምዕቃብ ኣይተኻእለን",
+      "failedToDelete": "ሕሳብ ምስራዝ ኣይተኻእለን",
+      "totalCalculations": "ጠቕላላ ሕሳባት",
+      "previousCalculations": "ናይ ቀደም ሕሳባት",
+      "previousCalculationsDescription": "ዝተዓቀቡ ናይ ብቕዓት ሕሳባትካ"
+    },
+    "creditProfile": {
+      "loading": "ናይ ልቓሕ ፕሮፋይል ይፅዕን ኣሎ...",
+      "title": "ዲጂታል ፕሮፋይል ልቓሕ",
+      "titleReport": "ጸብፃብ ፕሮፋይል ልቓሕ",
+      "subtitle": "ካብ ንጥፈታት ዕዳጋ፣ ታሪኽ ምምላእ ትእዛዛትን ብዙሕነት ዓደግትን ዝተሃነፀ።",
+      "actions": {
+        "backToProfile": "ናብ ፕሮፋይል ልቓሕ ተመለስ",
+        "openBusinessProfile": "ናይ ንግዲ ፕሮፋይል ክፈት",
+        "businessSetup": "ምድላው ንግዲ",
+        "back": "ንድሕሪት",
+        "printOrSavePdf": "ሕተም / ከም PDF ኣቀምጥ",
+        "downloadableReport": "ክውርድ ዝኽእል ጸብፃብ"
+      },
+      "badges": {
+        "verifiedSeller": "ዝተረጋገጸ ሸቃጣይ",
+        "platformActivity": "ፕሮፋይል ንጥፈት መድረኽ"
+      },
+      "access": {
+        "no_business": {
+          "title": "ንግድኻ መዝግብ",
+          "message": "ናይ ልቓሕ ፕሮፋይል ንግዲ መዝጊብካ ምስ ኣረጋገፅካ ጥራይ እዩ ዝኽፈት።"
+        },
+        "business_missing": {
+          "title": "ሰነድ ንግዲ ኣይተረኽበን",
+          "message": "ኣካውንትካ ምስ ዘይርከብ ናይ ንግዲ ሰነድ ተተሓሒዙ ኣሎ።"
+        },
+        "pending_verification": {
+          "title": "ምርግጋፅ ይግበር ኣሎ",
+          "message": "ንግድኻ ምስ ተረጋገጸ ናይ ልቓሕ ፕሮፋይልካ ክኽፈት እዩ።"
+        },
+        "rejected_verification": {
+          "title": "ምርግጋፅ የድሊ",
+          "message": "ናይ ልቓሕ ፕሮፋይል ንምኽፋት ቅድም ናይ ንግዲ ምርጋጋፅካ ፈትሕ።"
+        },
+        "not_seller": {
+          "title": "ናይ ሸቃጣይ ፍቓድ የድሊ",
+          "message": "ዝተረጋገጹ ሸቀጥቲ ጥራይ እዮም ናብ ፕሮፋይል ልቓሕ ክኣትዉ ዝኽእሉ።"
+        },
+        "ready": {
+          "title": "ድሉው",
+          "message": "ናይ ልቓሕ ፕሮፋይልካ ድሉው እዩ።"
+        }
+      },
+      "common": {
+        "notAvailableYet": "ገና ኣይቀረበን"
+      },
+      "summary": {
+        "headline": "{paidOrdersCount} ዝተኸፍሉ ትእዛዛት ብ {uniqueBuyers} ዓደግቲ",
+        "description": "እዚ ፕሮፋይል ኣብ AfriConnect ዘሎ ንጥፈት ዘርእይ እዩ፣ ናይ ወፃኢ ትካል (bureau) ነጥቢ ልቓሕ ኣይኮነን።",
+        "generated": "ዝተዳለወሉ",
+        "reportPeriodStart": "መጀመሪ እዋን ጸብፃብ",
+        "latestProfileActivity": "ናይ መወዳእታ ንጥፈት ፕሮፋይል"
+      },
+      "cards": {
+        "paidTransactionVolume": {
+          "title": "መጠን ዝተኸፈለ ንግዲ",
+          "description": "ዋጋ ዝተዛዘሙ ትእዛዛት"
+        },
+        "paidOrders": {
+          "title": "ዝተኸፍሉ ትእዛዛት",
+          "description": "ጠቕላላ {totalOrders} ዝተኸታተሉ ትእዛዛት"
+        },
+        "uniqueBuyers": {
+          "title": "ፍሉያት ዓደግቲ",
+          "description": "{repeatBuyers} ደጋጊሞም ዝዓደጉ"
+        },
+        "buyerCountries": {
+          "title": "ሃገራት ዓደግቲ",
+          "description": "{buyersWithBusinessMetadata} ምስ ሰነድ ንግዲ ዝተተሓሓዙ ዓደግቲ"
+        },
+        "totalSellerOrders": {
+          "title": "ጠቕላላ ትእዛዛት ሸቃጣይ",
+          "description": "ናብዚ ሸቃጣይ ዝመጹ ኩሎም ትእዛዛት"
+        },
+        "successfulPaymentRate": {
+          "title": "ምጣነ ስዕረት ክፍሊት",
+          "description": "ካብ ዝተኣዘዙ ዝተኸፍሉ"
+        },
+        "averageOrderValue": {
+          "title": "ማእከላይ ዋጋ ትእዛዝ",
+          "description": "ኣብ ዝተኸፍሉ ትእዛዛት ተመርኪሱ"
+        },
+        "recentPaidActivity": {
+          "title": "ናይ ቀረባ ክፍሊታት",
+          "description": "ናይ መወዳእታ ዝተኸፍሉ ትእዛዛት"
+        },
+        "uniqueBuyersDetailed": {
+          "title": "ፍሉያት ዓደግቲ",
+          "description": "ትእዛዝ ዘእተዉ ዝተፈላለዩ ዓደግቲ"
+        },
+        "repeatBuyers": {
+          "title": "ደጋጊሞም ዝዓደጉ",
+          "description": "ካብ ሓደ ግዜ ንላዕሊ ዝዓደጉ"
+        },
+        "metadataCoverage": {
+          "title": "ሽፋን ሓበሬታ",
+          "description": "{buyersWithBusinessMetadata} ዓደግቲ ምስ ንግዲ ተተሓሒዞም"
+        },
+        "topBuyerConcentration": {
+          "title": "ትሕዝቶ ዝዓበየ ዓዳጊ",
+          "description": "ካብቲ ዝዓበየ ዓዳጊ ዝመፀ ብፅሒት ንግዲ"
+        }
+      },
+      "empty": {
+        "title": "እኹል ንጥፈት የለን",
+        "description": "ንግድኻ ትእዛዛት ክቕበል ምስ ጀመረ እዚ ፕሮፋይል ብባዕሉ ክምላእ እዩ።"
+      },
+      "sections": {
+        "transactionHistory": {
+          "title": "ታሪኽ ንግዲ",
+          "description": "ኣብቲ ዕዳጋ ዘሎ ናይ ቀረባ ትእዛዛትን ክፍሊትን።"
+        },
+        "fulfillment": {
+          "title": "ብቕዓት ምምላእ ትእዛዝ",
+          "description": "ካብ ኣሰራርሓ ትእዛዛትን ውፅኢት ክፍሊትን ዝተረኸበ።"
+        },
+        "buyerDiversity": {
+          "title": "ብዙሕነት ዓደግቲ"
+        }
+      },
+      "trend": {
+        "window": "ናይ {days} መዓልታት",
+        "rollingPerformanceWindow": "ተንቀሳቃሲ እዋን ብቕዓት",
+        "orders": "ትእዛዛት",
+        "paidOrders": "ዝተኸፍሉ ትእዛዛት",
+        "paidVolume": "መጠን ክፍሊት"
+      },
+      "fulfillment": {
+        "completionRate": "ምጣነ ምዝዛም",
+        "cancellationRate": "ምጣነ ምስራዝ",
+        "payoutSuccessRate": "ምጣነ ስዕረት ክፍሊት (Payout)",
+        "ordersCurrentlyProcessing": "ይስርሑ ዘለዉ ትእዛዛት",
+        "averageFulfillmentCycle": "ማእከላይ ግዜ ምዝዛም",
+        "averageFulfillmentCycleValue": "{days} መዓልታት",
+        "payoutOutcomeCounts": "ብዝሒ ውፅኢት ክፍሊት",
+        "payoutStatuses": {
+          "queued": "ተሰሪዑ",
+          "pending": "ኣብ ትፅቢት",
+          "success": "ተዓዊቱ",
+          "failed": "ፈሺሉ",
+          "reverted": "ተመሊሱ"
+        }
+      },
+      "buyerDiversity": {
+        "coverage": {
+          "complete": "ብዙሕነት ዓደግቲ ኣብ ዝተተሓሓዙ ሰነዳት ንግዲ ዝተመርኮሰ እዩ።",
+          "partial": "ብዙሕነት ዓደግቲ ኣብቶም ሰነድ ንግዲ ዘለዎም ጥራይ ዝተመርኮሰ ስለዝኾነ ገሊኦም ዓደግቲ ኣይተሓወሱ ዝኾኑ።"
+        }
+      },
+      "breakdowns": {
+        "countLabel": "{count} ዓደግቲ",
+        "buyerCountries": {
+          "title": "ሃገራት ዓደግቲ",
+          "empty": "ዓደግቲ ሰነድ ንግዲ ምስ ኣተሓሓዙ ሃገራት ክርኣያ እየን።"
+        },
+        "buyerCategories": {
+          "title": "ዓውድታት ዓደግቲ",
+          "empty": "ዓደግቲ ሰነድ ንግዲ ምስ ኣተሓሓዙ ዓውድታት ክርኣዩ እዮም።"
+        },
+        "topBuyers": {
+          "title": "ላዕለዎት ዓደግቲ",
+          "empty": "ትእዛዛት ምስ ተዋሃቡ ላዕለዎት ዓደግቲ ክርኣዩ እዮም።",
+          "orders": "{count} ትእዛዛት"
+        }
+      },
+      "methodology": {
+        "title": "መብርሂ ኣሰራርሓ",
+        "description": "እዚ ጸብፃብ ካብቲ ኣብ AfriConnect ዝግበር ንጥፈታት ዝተዳለወ እዩ።",
+        "points": {
+          "transactionVolume": "መጠን ንግዲ ኣብቶም ዝተኸፍሉ ትእዛዛት ዝተመርኮሰ እዩ።",
+          "fulfillment": "ብቕዓት ምምላእ ኣብ ኩነታት ትእዛዝን ውፅኢት ክፍሊትን ዝተመርኮሰ እዩ።",
+          "buyerDiversity": "ብዙሕነት ዓደግቲ ኣብቶም ዝተተሓሓዙ ሰነዳት ንግዲ ዝተመርኮሰ እዩ።"
+        }
+      },
+      "report": {
+        "generatedOn": "ዝተፈጥረሉ {date}",
+        "latestActivity": "ናይ መወዳእታ ንጥፈት: {date}",
+        "reportPeriod": "ግዜ ሪፖርት: {start} — {end}",
+        "category": "ምድብ",
+        "country": "ሃገር",
+        "verifiedSince": "ካብ ዝተረጋገጸሉ",
+        "sectionProfileSummary": "1. ጽማቕ ፕሮፋይል",
+        "sectionTransactionHistory": "2. ታሪኽ ግብይት",
+        "sectionFulfillment": "3. ኣፈፃፅማ ምምላእ",
+        "sectionBuyerDiversity": "4. ብዙሕነት ዓደግቲ",
+        "sectionMethodology": "5. መብርሂ ሜላ",
+        "rollingPerformanceWindows": "ተንቀሳቓሲ መስኮታት ኣፈፃፅም",
+        "payoutOutcomes": "ውፅኢታት ክፍሊት",
+        "topBuyersSection": "ቀንዲ ዓደግቲ",
+        "buyerCountriesSection": "ሃገራት ዓደግቲ",
+        "buyerCategoriesSection": "ምድባት ዓደግቲ",
+        "noData": "ሓበሬታ የለን",
+        "orders": "{count} ትእዛዛት",
+        "buyerShare": "{count} ዓደግቲ ({share}%)"
+      }
+    },
+    "inventory": {
+      "title": "ክምዘን ንብረት",
+      "description": "መጠን ክምዘን ተኸታተል፣ ብዝሒ ኣስተኻኽል፣ ከምኡ እውን መጠንቀቕታታት ኣዳልው",
+      "summary": {
+        "totalProducts": "ጠቕላላ ፍርያት",
+        "totalUnits": "ጠቕላላ ኣሃዱታት",
+        "lowStock": "ትሑት ክምዘን",
+        "outOfStock": "ክምዘን የለን"
+      },
+      "tabs": {
+        "inventory": "ክምዘን",
+        "activity": "ንጥፈት"
+      },
+      "searchPlaceholder": "ብፍርያት ወይ SKU ድለ...",
+      "filterStatus": "ብኩነታት ኣጻሪ",
+      "status": {
+        "in_stock": "ኣብ ክምዘን ኣሎ",
+        "low_stock": "ትሑት ክምዘን",
+        "out_of_stock": "ክምዘን የለን",
+        "inStock": "ኣብ ክምዘን ኣሎ",
+        "lowStock": "ትሑት ክምዘን",
+        "outOfStock": "ክምዘን የለን"
+      },
+      "table": {
+        "product": "ፍርያት",
+        "sku": "SKU",
+        "onHand": "ኣብ ኢድ ዘሎ",
+        "threshold": "ትሑት መጠን ክምዘን",
+        "status": "ኩነታት",
+        "actions": "ተግባራት"
+      },
+      "actions": {
+        "adjust": "ኣስተኻኽል",
+        "thresholds": "ወሰናት (Thresholds)",
+        "history": "ታሪኽ"
+      },
+      "noSku": "SKU የለን",
+      "noResults": "ምስቲ መጻረዪ ዝሰማማዕ ንብረት የለን።",
+      "activityTitle": "ናይ ቀረባ ንጥፈት",
+      "activity": {
+        "date": "ዕለት",
+        "product": "ፍርያት",
+        "type": "ዓይነት",
+        "quantity": "ብዝሒ",
+        "newQuantity": "ሓድሽ ብዝሒ",
+        "reason": "ምኽንያት",
+        "none": "የለን",
+        "empty": "ክሳብ ሕጂ ንጥፈት ክምዘን የለን።"
+      },
+      "types": {
+        "restock": "ዳግም ምምላእ",
+        "adjustment": "ምስትኽኻል",
+        "return": "ምላሽ",
+        "correction": "እርማት",
+        "sale": "መሸጣ"
+      },
+      "adjustDialog": {
+        "title": "ክምዘን ኣስተኻኽል",
+        "description": "ነዚ ፍርያት ናይ ክምዘን ለውጢ መዝግብ።",
+        "type": "ዓይነት ምስትኽኻል",
+        "delta": "ናይ ብዝሒ ለውጢ",
+        "deltaPlaceholder": "ንምጉዳል ኣሉታዊ (-) ቁፅሪ ተጠቐም",
+        "quickAdd": "1 ወስኽ",
+        "quickRemove": "1 ኣጉድል",
+        "reason": "ምኽንያት",
+        "reasonPlaceholder": "ንዝተገብረ ለውጢ መግለፂ (ብምርጫ)",
+        "save": "ምስትኽኻል ኣቀምጥ"
+      },
+      "historyDialog": {
+        "title": "ታሪኽ ክምዘን",
+        "description": "ናይዚ ፍርያት ናይ መወዳእታ ዝተገብሩ ለውጥታት።"
+      },
+      "thresholdDialog": {
+        "title": "ቅጥዒታት ዳግም ምእዛዝ",
+        "description": "ትሑት ክምዘን ምስ በፅሐ ዝወሃብ መጠንቀቕታ ኣዳልው።",
+        "lowStock": "ትሑት መጠን ክምዘን",
+        "lowStockPlaceholder": "ንኣብነት 5",
+        "reorder": "ዳግም ዝእዘዝ ብዝሒ",
+        "reorderPlaceholder": "ንኣብነት 25",
+        "save": "ቅጥዒታት ኣቀምጥ"
+      },
+      "invalidAdjustment": "ካብ ባዶ ዝተፈለየ ቁፅሪ ኣእቱ።",
+      "adjustmentSaved": "ምስትኽኻል ክምዘን ተዓቂቡ።",
+      "invalidThreshold": "ትሑት መጠን 0 ወይ ካብኡ ንላዕሊ ክኸውን ኣለዎ።",
+      "invalidReorder": "ዳግም ዝእዘዝ ብዝሒ 0 ወይ ካብኡ ንላዕሊ ክኸውን ኣለዎ።",
+      "thresholdsSaved": "ቅጥዒታት ዳግም ምምላእ ተዓቂቦም።"
+    }
+  }

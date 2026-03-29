@@ -1,0 +1,1668 @@
+{
+  "common": {
+    "loading": "Inapakia...",
+    "save": "Hifadhi",
+    "cancel": "Ghairi",
+    "delete": "Futa",
+    "edit": "Hariri",
+    "search": "Tafuta",
+    "clearFilters": "Ondoa vichujio",
+    "close": "Funga",
+    "back": "Rudi",
+    "next": "Ifuatayo",
+    "submit": "Wasilisha",
+    "confirm": "Thibitisha",
+    "yes": "Ndiyo",
+    "no": "Hapana",
+    "all": "Zote",
+    "none": "Hakuna",
+    "actions": "Vitendo",
+    "status": "Hali",
+    "created": "Imeundwa",
+    "updated": "Imesasishwa",
+    "details": "Maelezo",
+    "viewDetails": "Tazama Maelezo",
+    "account": "Akaunti",
+    "soon": "Hivi Karibuni",
+    "admin": "Msimamizi",
+    "filters": "Vichujio",
+    "noDescription": "Hakuna maelezo yaliyopatikana",
+    "settingUp": "Kuandaa akaunti yako..."
+  },
+  "navigation": {
+    "dashboard": "Dashibodi",
+    "marketplace": "Soko",
+    "products": "Bidhaa Zangu",
+    "inventory": "Hesabu ya Hisa",
+    "messages": "Ujumbe",
+    "cart": "Kikapu",
+    "orders": "Maagizo",
+    "settings": "Mipangilio",
+    "billing": "Malipo",
+    "myBusiness": "Biashara Yangu",
+    "creditProfile": "Wasifu wa Mikopo",
+    "registerBusiness": "Thibitisha Biashara",
+    "verifyBusinessLabel": "Thibitisha Biashara",
+    "applyToSell": "Omba Kuuza",
+    "manageUsers": "Simamia Watumiaji",
+    "manageBusinesses": "Simamia Biashara",
+    "manageSellerApplications": "Maombi ya Uuzaji",
+    "manageProducts": "Simamia Bidhaa",
+    "manageRefunds": "Simamia Marejesho",
+    "manageBanks": "Simamia Benki",
+    "bankPortfolio": "Jalada la Benki",
+    "bankReferrals": "Rufaa za Benki",
+    "bankAnalytics": "Uchanganuzi wa Benki",
+    "compliance": "Uzingatiaji wa AfCFTA",
+    "aiAssistant": "Msaidizi wa AI",
+    "toggleMenu": "Badilisha menyu",
+    "toggleSidebar": "Badilisha upau wa pembeni"
+  },
+  "chat": {
+    "messages": "Ujumbe",
+    "messagesDescription": "Tazama na simamia mazungumzo yako na wanunuzi na wauzaji",
+    "conversations": "Mazungumzo",
+    "conversation": "Mazungumzo",
+    "contactSeller": "Wasiliana na Muuzaji",
+    "messageBusiness": "Tuma Ujumbe kwa Biashara",
+    "noMessages": "Hakuna ujumbe bado",
+    "typeMessage": "Andika ujumbe...",
+    "startConversation": "Anza mazungumzo kwa kuwasiliana na muuzaji kutoka ukurasa wa bidhaa",
+    "selectConversation": "Chagua mazungumzo",
+    "selectConversationDescription": "Chagua mazungumzo kutoka kwenye orodha ili kutazama ujumbe",
+    "loadingConversations": "Inapakia mazungumzo...",
+    "sendMessage": "Tuma ujumbe",
+    "attachFile": "Ambatisha faili",
+    "typing": "anaandika..."
+  },
+  "marketplace": {
+    "title": "Soko",
+    "description": "Vinjari bidhaa kutoka kwa biashara kwenye jukwaa",
+    "browseProducts": "Vinjari Bidhaa",
+    "showingProducts": "Inaonyesha bidhaa {count}",
+    "loadingProducts": "Inapakia bidhaa...",
+    "noProducts": "Hakuna bidhaa zilizopatikana",
+    "noProductsYet": "Hakuna bidhaa zinazopatikana sokoni bado.",
+    "tryAdjustingFilters": "Jaribu kurekebisha vichujio au maneno ya utafutaji.",
+    "searchPlaceholder": "Tafuta bidhaa...",
+    "allCategories": "Kategoria Zote",
+    "allCountries": "Nchi Zote",
+    "sortBy": "Panga kwa",
+    "sortNewest": "Mpya zaidi",
+    "sortPriceAsc": "Bei: Chini hadi Juu",
+    "sortPriceDesc": "Bei: Juu hadi Chini",
+    "outOfStock": "Imeisha Stokini",
+    "inStock": "{count} stokini",
+    "inStockCap": "1000+ stokini",
+    "price": "Bei",
+    "category": "Kategoria",
+    "country": "Nchi",
+    "clearAllFilters": "Ondoa vichujio vyote",
+    "verify": {
+      "businessBeforeAdd": "Hakiki biashara yako kabla ya kuongeza bidhaa kwenye rukwama yako.",
+      "completeBusinessBeforeAdd": "Kamilisha uthibitishaji wa biashara kabla ya kuongeza bidhaa kwenye rukwama yako."
+    }
+  },
+  "products": {
+    "title": "Bidhaa Zangu",
+    "description": "Simamia orodha zako za bidhaa",
+    "addProduct": "Ongeza Bidhaa",
+    "allProducts": "Bidhaa Zote",
+    "searchDescription": "Tafuta na chuja bidhaa zako kupata unachohitaji",
+    "searchPlaceholder": "Tafuta bidhaa...",
+    "filterByStatus": "Chuja kwa hali",
+    "allStatuses": "Hali Zote",
+    "noProducts": "Hakuna bidhaa bado. Ongeza bidhaa yako ya kwanza kuanza.",
+    "noMatchingProducts": "Hakuna bidhaa zinazolingana na vigezo vyako vya utafutaji.",
+    "productName": "Jina la Bidhaa",
+    "enterProductName": "Ingiza jina la bidhaa",
+    "descriptionLabel": "Maelezo",
+    "describeProduct": "Eleza bidhaa yako",
+    "price": "Bei",
+    "stockQuantity": "Kiasi cha Stoki",
+    "quantity": "Kiasi",
+    "sku": "SKU",
+    "skuPlaceholder": "mfano, AC-COF-001",
+    "lowStockThreshold": "Kizingiti cha Hisa Chini",
+    "reorderQuantity": "Kiasi cha Kujaza Tena",
+    "category": "Kategoria",
+    "categoryPlaceholder": "mfano, Elektroniki",
+    "originCountry": "Nchi ya Asili",
+    "countryPlaceholder": "mfano, Kenya",
+    "minOrderQty": "Kiwango cha Chini cha Agizo",
+    "status": "Hali",
+    "active": "Hai",
+    "inactive": "Haifanyi kazi",
+    "image": "Picha",
+    "images": "Picha",
+    "addImages": "Ongeza Picha",
+    "addNewProduct": "Ongeza Bidhaa Mpya",
+    "enterDetailsStep": "Ingiza maelezo ya bidhaa kuanza.",
+    "addImagesStep": "Ongeza picha ili bidhaa yako ivutie.",
+    "productDetails": "Maelezo ya Bidhaa",
+    "nextAddImages": "Ifuatayo: Ongeza Picha",
+    "creating": "Inaunda...",
+    "skipForNow": "Ruka kwa Sasa",
+    "completeListing": "Kamilisha Orodha",
+    "editProduct": "Hariri Bidhaa",
+    "updateDetails": "Sasisha maelezo ya bidhaa na simamia picha.",
+    "saveChanges": "Hifadhi Mabadiliko",
+    "deleteProduct": "Futa Bidhaa",
+    "deleteConfirmation": "Una uhakika unataka kufuta bidhaa hii? Hii pia itafuta picha zote zinazohusiana. Kitendo hiki hakiwezi kutenduliwa.",
+    "firstProductPricingPromptTitle": "Bidhaa yako ya kwanza ipo hewani",
+    "firstProductPricingPromptDescription": "Mwanzo mzuri! Tembelea ukurasa wa bei kuona mipango na kufungua vipengele zaidi vya uuzaji.",
+    "firstProductPricingPromptStay": "Labda baadaye",
+    "firstProductPricingPromptGo": "Nenda kwenye Bei",
+    "subscriptionRequiredPromptTitle": "Usajili unahitajika",
+    "subscriptionRequiredPromptDescription": "Ili kuongeza bidhaa nyingine, unahitaji usajili wa malipo ulio hai. Chagua mpango ili uendelee.",
+    "subscriptionRequiredPromptStay": "Siyo sasa",
+    "subscriptionRequiredPromptGo": "Angalia bei",
+    "currencyHint": "USD inahitajika na itaonyeshwa kama bei kuu. Thamani za ETB na KSH zinaweza kujazwa kiotomatiki kwa viwango vya ubadilishaji vya sasa na unaweza kuzirekebisha wakati wowote.",
+    "ratesUpdated": "Viwango vimeboreshwa: {date}.",
+    "usdRequired": "Bei ya USD inahitajika na lazima iwe zaidi ya 0.",
+    "etbRequired": "Bei ya ETB inahitajika na lazima iwe zaidi ya 0.",
+    "kshInvalid": "Bei ya KSH lazima iwe 0 au zaidi."
+  },
+  "orders": {
+    "title": "Maagizo",
+    "description": "Simamia ununuzi na mauzo yako",
+    "purchases": "Ununuzi",
+    "sales": "Mauzo",
+    "myPurchases": "Ununuzi Wangu",
+    "mySales": "Mauzo Yangu",
+    "purchasesDescription": "Maagizo uliyoyaweka kutoka kwa biashara nyingine",
+    "salesDescription": "Maagizo yaliyowekwa na biashara nyingine kwa bidhaa zako",
+    "searchPlaceholder": "Tafuta maagizo...",
+    "filterByStatus": "Chuja kwa hali",
+    "allStatuses": "Hali Zote",
+    "pending": "Inasubiri",
+    "processing": "Inachakatwa",
+    "completed": "Imekamilika",
+    "cancelled": "Imeghairiwa",
+    "order": "Agizo",
+    "seller": "Muuzaji",
+    "buyer": "Mnunuzi",
+    "amount": "Kiasi",
+    "totalAmount": "Jumla ya Kiasi",
+    "noPurchasesYet": "Hakuna ununuzi bado. Anza kununua sokoni!",
+    "noSalesYet": "Hakuna mauzo bado. Orodhesha bidhaa kuanza kuuza!",
+    "noMatchingOrders": "Hakuna maagizo yanayolingana na vigezo vyako vya utafutaji.",
+    "orderPlacedOn": "Agizo liliwekwa tarehe {date}",
+    "orderItems": "Vitu vya Agizo",
+    "unknownProduct": "Bidhaa Isiyojulikana",
+    "loadingOrder": "Inapakia Agizo...",
+    "loadingOrderDetails": "Tafadhali subiri tunapopata maelezo ya agizo.",
+    "cancelOrder": "Ghairi Agizo",
+    "cancelOrderConfirmation": "Una uhakika unataka kughairi agizo hili? Kitendo hiki hakiwezi kutenduliwa.",
+    "keepOrder": "Weka Agizo",
+    "markAsProcessing": "Weka kama Inachakatwa",
+    "markAsCompleted": "Weka kama Imekamilika",
+    "trackAndManage": "Fuatilia na simamia ununuzi na mauzo yako"
+  },
+  "business": {
+    "registerTitle": "Sajili Biashara Yako",
+    "registerDescription": "Unda wasifu wa biashara kuanza kuuza sokoni",
+    "businessInformation": "Taarifa za Biashara",
+    "businessInfoDescription": "Toa maelezo kuhusu biashara yako. Usajili wako utakaguliwa na timu yetu kabla ya kuamilishwa.",
+    "businessName": "Jina la Biashara",
+    "enterBusinessName": "Ingiza jina la biashara yako",
+    "description": "Maelezo",
+    "businessDescription": "Maelezo mafupi ya biashara yako",
+    "descriptionHelp": "Eleza biashara yako inafanya nini na bidhaa/huduma gani unazotoa.",
+    "country": "Nchi",
+    "selectCountry": "Chagua nchi",
+    "city": "Jiji",
+    "enterCity": "Ingiza jiji",
+    "address": "Anwani",
+    "businessAddress": "Anwani ya biashara",
+    "category": "Kategoria ya Biashara",
+    "selectCategory": "Chagua kategoria",
+    "phone": "Nambari ya Simu",
+    "phonePlaceholder": "+254 xxx xxx xxxx",
+    "website": "Tovuti",
+    "websitePlaceholder": "https://example.com",
+    "registering": "Inasajili...",
+    "registrationDocuments": "Nyaraka za usajili",
+    "businessLicence": "Leseni ya biashara",
+    "businessLicenceNumber": "Nambari ya leseni ya biashara",
+    "businessLicenceNumberPlaceholder": "Ingiza nambari ya leseni",
+    "memoOfAssociation": "Barua ya ushirika",
+    "tinCertificate": "Cheti cha TIN",
+    "tinCertificateNumber": "Nambari ya TIN",
+    "tinCertificateNumberPlaceholder": "Ingiza nambari ya TIN",
+    "hasImportExportPermit": "Una kibali cha kuagiza/kuuza nje?",
+    "hasImportExportPermitPlaceholder": "Chagua...",
+    "hasImportExportPermitYes": "Ndiyo",
+    "hasImportExportPermitNo": "Hapana",
+    "importExportPermit": "Kibali cha kuagiza/kuuza nje",
+    "importExportPermitNumber": "Nambari ya kibali",
+    "importExportPermitNumberPlaceholder": "Ingiza nambari ya kibali (si lazima)",
+    "upload": "Pakia",
+    "uploaded": "Imepakiwa",
+    "sellerAgreementLabel": "Nimesoma na ninakubali",
+    "sellerAgreementLink": "Mkataba wa Muuzaji",
+    "sellerAgreementRequired": "Ni lazima ukubali Mkataba wa Muuzaji kabla ya kuomba kuuza.",
+    "buyerVerificationTitle": "Thibitisha Biashara Yako",
+    "buyerVerificationDescription": "Wasilisha maelezo na nyaraka za biashara yako ili akaunti yako iweze kununua kutoka sokoni.",
+    "buyerVerificationCardTitle": "Uthibitishaji wa Biashara ya Mnunuzi",
+    "buyerVerificationCardDescription": "Wanunuzi wa AfriConnect pia wanapaswa kuwa biashara zilizothibitishwa. Wasilisha nyaraka zako mara moja na timu yetu itazikagua.",
+    "buyerVerificationDocumentsTitle": "Nyaraka za uthibitishaji",
+    "buyerVerificationDocumentsDescription": "Pakia nyaraka tunazohitaji kuthibitisha biashara yako kabla ya ununuzi kuwezeshwa.",
+    "buyerVerificationSubmitting": "Inawasilishwa...",
+    "submitBuyerVerification": "Wasilisha kwa uthibitishaji",
+    "buyerVerificationSubmitted": "Uthibitishaji wa biashara umewasilishwa kwa mafanikio. Tutaikagua hivi karibuni.",
+    "buyerVerificationFailed": "Imeshindikana kuwasilisha uthibitishaji wa biashara.",
+    "sellerApplicationTitle": "Omba Kuuza",
+    "sellerApplicationDescription": "Biashara yako ikishathibitishwa, unaweza kuomba ruhusa ya kuuza bila kupakia tena nyaraka za biashara.",
+    "sellerApplicationCardTitle": "Maombi ya Muuzaji",
+    "sellerApplicationCardDescription": "Ruhusa ya kuuza inapitiwa kando na uthibitishaji wa biashara. Kubali makubaliano ya muuzaji na uwasilishe ombi lako ukiwa tayari kuuza.",
+    "businessVerificationStatusTitle": "Uthibitishaji wa Biashara",
+    "sellerApplicationBusinessVerified": "Biashara yako imethibitishwa na iko tayari kwa mapitio ya ombi la kuuza.",
+    "sellerApplicationBusinessPending": "Biashara yako lazima ithibitishwe kabla ya kuomba kuuza.",
+    "sellerApplicationStatusTitle": "Hali ya Ruhusa ya Kuuza",
+    "sellerApplicationApproved": "Ruhusa ya kuuza imewezeshwa kwa akaunti hii.",
+    "sellerApplicationPending": "Ombi lako la kuuza lipo kwenye mapitio.",
+    "sellerApplicationRejected": "Ombi lako la kuuza limekataliwa. Pitia masharti kisha omba tena ukiwa tayari.",
+    "sellerApplicationNotApplied": "Bado hujaomba kuuza.",
+    "sellerApplicationReady": "Tayari kuomba",
+    "sellerApplicationRequirementsTitle": "Kitakachofuata",
+    "sellerApplicationRequirementBusiness": "Biashara yako lazima iwe tayari imethibitishwa.",
+    "sellerApplicationRequirementAgreement": "Utakagua na kukubali makubaliano ya sasa ya muuzaji.",
+    "sellerApplicationRequirementReview": "Msimamizi atapitia ombi lako la kuuza kabla ya ruhusa ya muuzaji kutolewa.",
+    "sellerApplicationSubmitting": "Inawasilishwa...",
+    "sellerApplicationApply": "Omba Kuuza",
+    "sellerApplicationReapply": "Omba Tena Kuuza",
+    "sellerApplicationManageProducts": "Simamia Bidhaa",
+    "sellerApplicationOpenBusiness": "Fungua Wasifu wa Biashara",
+    "sellerApplicationSubmitted": "Ombi la kuuza limewasilishwa kwa mafanikio.",
+    "sellerApplicationFailed": "Imeshindikana kuwasilisha ombi la kuuza.",
+    "sellerApplicationRequiresVerifiedBusiness": "Biashara yako lazima ithibitishwe kabla ya kuomba kuuza.",
+    "verificationStatus": {
+      "pending": "Uthibitishaji unaendelea",
+      "verified": "Imethibitishwa",
+      "rejected": "Imekataliwa"
+    },
+    "sellerStatus": {
+      "not_applied": "Haijaombwa",
+      "pending": "Inasubiri mapitio",
+      "approved": "Imeidhinishwa",
+      "rejected": "Imekataliwa"
+    },
+    "profile": {
+      "sellerDescription": "Simamia wasifu wa biashara yako, uthibitishaji, na shughuli za muuzaji",
+      "buyerDescription": "Simamia wasifu wa biashara yako, uthibitishaji, na ombi la muuzaji",
+      "editProfile": "Hariri Wasifu",
+      "businessProfileTitle": "Wasifu wa Biashara",
+      "editDescription": "Sasisha maelezo ya biashara yako hapa chini",
+      "viewDescription": "Maelezo ya biashara yako na mawasiliano",
+      "verificationPendingMessage": "Biashara yako inakaguliwa na timu yetu. Ruhusa ya kununua itafunguliwa baada ya kuidhinishwa.",
+      "verificationVerifiedMessage": "Biashara yako imethibitishwa. Sasa unaweza kuongeza bidhaa kwenye kikapu na kuweka oda.",
+      "verificationRejectedMessage": "Uthibitishaji wa biashara yako ulikataliwa. Sasisha maelezo na nyaraka za biashara yako hapa chini ili uwasilishe tena.",
+      "sellerRequiresVerifiedMessage": "Thibitisha biashara yako kwanza kabla ya kuomba kuuza.",
+      "sellerApprovedMessage": "Ruhusa ya kuuza imewezeshwa kwa akaunti hii. Unaweza kusimamia bidhaa, hesabu, na malipo.",
+      "sellerPendingMessage": "Ombi lako la kuuza linasubiri mapitio ya msimamizi.",
+      "sellerRejectedMessage": "Ombi lako la kuuza limekataliwa. Unaweza kupitia makubaliano ya muuzaji na kuomba tena.",
+      "sellerReadyMessage": "Biashara yako imethibitishwa. Sasa unaweza kuomba kuuza bila kupakia tena nyaraka za biashara yako.",
+      "verificationDocumentsRejectedDescription": "Kusasisha na kuhifadhi sehemu hizi kutawasilisha tena biashara yako kwa mapitio.",
+      "verificationDocumentsDescription": "Weka nyaraka zako za usajili zikiwa za kisasa ili biashara yako ikaguliwe haraka.",
+      "saving": "Inahifadhiwa...",
+      "saveChanges": "Hifadhi Mabadiliko",
+      "location": "Mahali",
+      "resubmitBadge": "Sasisha nyaraka na uhifadhi ili kuwasilisha tena",
+      "documentUploaded": "Hati imepakiwa",
+      "documentMissing": "Hati haipo",
+      "licenceNumber": "Nambari ya leseni: {number}",
+      "tinNumber": "Nambari ya TIN: {number}",
+      "permitUploaded": "Kibali kimepakiwa",
+      "permitMissing": "Kibali bado hakijapakiwa",
+      "notProvided": "Haijatolewa",
+      "permitNumber": "Nambari ya kibali: {number}",
+      "profileUpdated": "Wasifu wa biashara umesasishwa kwa mafanikio",
+      "profileUpdateFailed": "Imeshindikana kusasisha biashara",
+      "payoutSettingsTitle": "Mipangilio ya Malipo",
+      "payoutSettingsDescription": "Ongeza taarifa zako za benki ili kupokea malipo ya soko.",
+      "bank": "Benki",
+      "selectBank": "Chagua benki",
+      "loadingBanks": "Benki zinapakiwa...",
+      "unableToLoadBanks": "Haiwezekani kupakia benki kwa sasa.",
+      "accountName": "Jina la Akaunti",
+      "accountNumber": "Nambari ya Akaunti",
+      "payoutEnabled": "Malipo yamewezeshwa",
+      "payoutNotEnabled": "Malipo bado hayajawezeshwa",
+      "savePayoutSettings": "Hifadhi Mipangilio ya Malipo",
+      "payoutSettingsUpdated": "Mipangilio ya malipo imesasishwa",
+      "payoutSettingsUpdateFailed": "Imeshindikana kusasisha mipangilio ya malipo",
+      "creditProfileTitle": "Wasifu wa Kidijitali wa Mikopo",
+      "creditProfileDescription": "Kagua historia ya miamala yako, utendaji wa utekelezaji, na utofauti wa wanunuzi katika ripoti moja ya muuzaji.",
+      "creditProfileAvailability": "Inapatikana baada ya biashara yako kuthibitishwa. Pia unaweza kutoa ripoti ya kuchapisha kwa ajili ya kushiriki.",
+      "openCreditProfile": "Fungua Wasifu wa Mikopo"
+    }
+  },
+  "cart": {
+    "title": "Kikapu cha Ununuzi",
+    "description": "Kagua vitu vyako kabla ya kulipia",
+    "emptyCart": "Kikapu chako ni tupu",
+    "emptyCartDescription": "Vinjari soko kupata bidhaa",
+    "browseMarketplace": "Vinjari Soko",
+    "subtotal": "Jumla ndogo",
+    "total": "Jumla",
+    "checkout": "Lipia",
+    "removeItem": "Ondoa kitu",
+    "updateQuantity": "Sasisha kiasi",
+    "buyerAgreementRequired": "Ni lazima ukubali Mkataba wa Mnunuzi kabla ya kulipia."
+  },
+  "dashboard": {
+    "title": "Dashibodi",
+    "welcome": "Karibu tena! Hapa kuna muhtasari wa maagizo yako.",
+    "welcomeBack": "Karibu tena,",
+    "overview": "Muhtasari",
+    "recentOrders": "Maagizo ya Hivi Karibuni",
+    "recentProducts": "Bidhaa za Hivi Karibuni",
+    "quickStats": "Takwimu za Haraka",
+    "totalRevenue": "Mapato Yote",
+    "totalOrders": "Maagizo Yote",
+    "totalProducts": "Bidhaa Zote",
+    "pendingOrders": "Maagizo Yanayosubiri",
+    "discoverProducts": "Gundua Bidhaa",
+    "browseDescription": "Vinjari bidhaa kutoka biashara Afrika nzima"
+  },
+  "settings": {
+    "title": "Mipangilio",
+    "description": "Simamia mipangilio ya akaunti yako na mapendeleo",
+    "profile": "Wasifu",
+    "profileDescription": "Sasisha taarifa za wasifu wako",
+    "displayName": "Jina la Kuonyesha",
+    "enterName": "Ingiza jina lako",
+    "displayNameHelp": "Hili ni jina lako la kuonyesha. Linaweza kuwa tofauti na jina la akaunti yako.",
+    "noNameSet": "Hakuna jina lisilowekwa",
+    "accountInfo": "Taarifa za Akaunti",
+    "accountInfoDescription": "Maelezo ya akaunti yako",
+    "email": "Barua pepe",
+    "emailHelp": "Barua pepe inadhibitiwa na Clerk. Ili kuibadilisha, sasisha mipangilio ya akaunti yako.",
+    "userId": "Kitambulisho cha Mtumiaji",
+    "verifyBusinessLabel": "Thibitisha Biashara",
+    "verifyBusinessDescription": "Wasilisha maelezo ya biashara yako ili kuwezesha ununuzi",
+    "verifyBusinessDescriptionIncomplete": "Kamilisha uthibitishaji wa biashara yako ili kuwezesha ununuzi",
+    "applyToSellLabel": "Omba Kuuza",
+    "applyToSellDescription": "Kubali Mkataba wa Muuzaji na uwasilishe ombi lako la kuuza"
+  },
+  "billing": {
+    "title": "Malipo",
+    "description": "Tazama historia yako ya malipo na simamia bili",
+    "paymentMethod": "Njia ya Malipo",
+    "paymentMethodDescription": "Malipo salama yanayoendeshwa na Chapa",
+    "chapaGateway": "Lango la Malipo la Chapa",
+    "chapaDescription": "Lipa kwa usalama na Pesa za Simu, Uhawilisho wa Benki, au Kadi",
+    "learnMore": "Jifunze zaidi",
+    "paymentHistory": "Historia ya Malipo",
+    "paymentHistoryDescription": "Tazama miamala yako ya hivi karibuni",
+    "noPaymentHistory": "Hakuna historia ya malipo bado",
+    "date": "Tarehe",
+    "reference": "Rejea",
+    "type": "Aina",
+    "amount": "Kiasi",
+    "failed": "Imeshindwa"
+  },
+  "pricing": {
+    "title": "Bei Rahisi, Wazi",
+    "description": "Chagua mpango unaofaa mahitaji ya biashara yako. Mipango yote inajumuisha ufikiaji wa soko la B2B na zana za ulinganifu wa AfCFTA.",
+    "subtitle": "Chagua mpango unaofaa mahitaji ya biashara yako. Mipango yote inajumuisha ufikiaji wa soko la B2B na zana za ulinganifu wa AfCFTA.",
+    "backToHome": "Rudi Nyumbani",
+    "loadingPlans": "Inapakia mipango...",
+    "monthly": "Kila Mwezi",
+    "annual": "Kila Mwaka",
+    "savePercent": "Okoa {percent}%",
+    "perMonth": "/mwezi",
+    "perYear": "/mwaka",
+    "billedAnnually": "{amount}/mw kwa bili ya mwaka",
+    "mostPopular": "Maarufu Zaidi",
+    "currentPlan": "Mpango wa Sasa",
+    "getStarted": "Anza",
+    "contactSales": "Wasiliana na Mauzo",
+    "custom": "Maalum",
+    "compareFeatures": "Linganisha Vipengele Vyote",
+    "faq": {
+      "title": "Maswali Yanayoulizwa Mara kwa Mara",
+      "changePlan": {
+        "question": "Je, ninaweza kubadilisha mpango wangu baadaye?",
+        "answer": "Ndiyo, unaweza kuboresha au kupunguza mpango wako wakati wowote. Unapoboresha, utapata ufikiaji wa papo hapo kwa vipengele vipya. Unapopunguza, mabadiliko yatatekelezwa katika mzunguko wako ujao wa bili."
+      },
+      "paymentMethods": {
+        "question": "Mnakubali njia gani za malipo?",
+        "answer": "Tunakubali malipo kupitia Chapa, ambayo inasaidia Pesa za Simu, uhawilisho wa benki, na malipo ya kadi. Malipo yote yanachakatwa kwa usalama."
+      },
+      "freeTrial": {
+        "question": "Kuna jaribio la bure?",
+        "answer": "Biashara mpya zinaweza kuanza na mpango wetu wa Starter kuchunguza jukwaa. Wasiliana nasi kwa chaguo za jaribio la biashara."
+      },
+      "limits": {
+        "question": "Nini kinatokea ninapofika kikomo changu?",
+        "answer": "Utapokea arifa unapokaribia kikomo cha mpango wako. Unapofika kikomo, unaweza kuboresha mpango wako kuendelea kutumia kipengele hicho."
+      }
+    },
+    "cta": {
+      "title": "Unahitaji Suluhisho Maalum?",
+      "description": "Mpango wetu wa Biashara unatoa vipengele maalum, msaada maalum, na ujumuishaji uliobinafsishwa kwa mashirika makubwa."
+    },
+    "plans": {
+      "starter": {
+        "name": "Mwanzo",
+        "target": "SMBs Ndogo",
+        "description": "Kamili kwa biashara ndogo zinazoanza"
+      },
+      "growth": {
+        "name": "Ukuaji",
+        "target": "SMBs Zinazokua",
+        "description": "Kwa biashara zinazokua ziko tayari kukua"
+      },
+      "pro": {
+        "name": "Pro",
+        "target": "Soko la Kati",
+        "description": "Mpango wenye vipengele kamili kwa biashara zilizojiimarisha"
+      },
+      "enterprise": {
+        "name": "Biashara",
+        "target": "Mashirika Makubwa",
+        "description": "Suluhisho maalum kwa mashirika makubwa"
+      }
+    },
+    "features": {
+      "products": "Bidhaa",
+      "monthlyOrders": "Maagizo ya Kila Mwezi",
+      "originCalculations": "Mahesabu ya Asili",
+      "hsCodeLookups": "Utafutaji wa Nambari za HS",
+      "teamMembers": "Wanatimu",
+      "prioritySupport": "Msaada wa Kipaumbele",
+      "analytics": "Uchambuzi",
+      "apiAccess": "Ufikiaji wa API",
+      "unlimited": "Bila Kikomo"
+    }
+  },
+  "subscription": {
+    "title": "Usajili",
+    "description": "Simamia usajili na bili yako",
+    "businessRequired": "Biashara Inahitajika",
+    "businessRequiredDescription": "Unahitaji kusajili biashara kabla ya kujisajili kwa mpango.",
+    "registerBusiness": "Sajili Biashara Yako",
+    "noActiveSubscription": "Hakuna Usajili Unaoendelea",
+    "noSubscriptionDescription": "Kwa sasa uko katika ngazi ya bure yenye vipengele vichache. Boresha ili kufungua bidhaa zaidi, maagizo, na zana za ulinganifu.",
+    "viewPlans": "Angalia Mipango",
+    "currentPlan": "Mpango wa Sasa",
+    "billedMonthly": "Bili ya kila mwezi",
+    "billedAnnually": "Bili ya kila mwaka",
+    "currentPeriod": "Kipindi cha sasa",
+    "cancelsSoon": "Itasitishwa Hivi Karibuni",
+    "active": "Inaendelea",
+    "trial": "Jaribio",
+    "pastDue": "Imepita Muda",
+    "cancelled": "Imesitishwa",
+    "cancellationNotice": "Usajili wako utaisha tarehe {date}",
+    "trialNotice": "Jaribio lako litaisha tarehe {date}",
+    "changePlan": "Badilisha Mpango",
+    "reactivate": "Washa Usajili Tena",
+    "reactivating": "Inawashwa tena...",
+    "cancel": "Sitisha Usajili",
+    "cancelling": "Inasitishwa...",
+    "usageThisMonth": "Matumizi Mwezi Huu",
+    "usageDescription": "Fuatilia matumizi yako dhidi ya vikomo vya mpango wako",
+    "planFeatures": "Vipengele vya Mpango",
+    "planFeaturesDescription": "Vipengele vilivyojumuishwa katika mpango wako wa {plan}",
+    "paymentSuccessful": "Malipo Yamefanikiwa!",
+    "subscriptionActivated": "Usajili wako umeamilishwa.",
+    "subscriptionCancelled": "Usajili Umesitishwa",
+    "subscriptionCancelledDescription": "Usajili wako utabaki hai hadi mwisho wa kipindi cha bili.",
+    "subscriptionReactivated": "Usajili Umewashwa Tena",
+    "subscriptionReactivatedDescription": "Usajili wako utaendelea mwishoni mwa kipindi cha bili.",
+    "failedToCancel": "Imeshindwa kusitisha usajili",
+    "failedToReactivate": "Imeshindwa kuwasha usajili tena"
+  },
+  "validation": {
+    "required": "Sehemu hii inahitajika",
+    "invalidEmail": "Anwani batili ya barua pepe",
+    "minLength": "Lazima iwe angalau herufi {min}",
+    "maxLength": "Lazima iwe si zaidi ya herufi {max}",
+    "selectCountry": "Tafadhali chagua nchi",
+    "selectCategory": "Tafadhali chagua kategoria ya biashara"
+  },
+  "toast": {
+    "productCreated": "Bidhaa imeundwa! Sasa ongeza picha kukamilisha orodha yako.",
+    "productUpdated": "Bidhaa imesasishwa kwa mafanikio",
+    "productDeleted": "Bidhaa imefutwa kwa mafanikio",
+    "productListingComplete": "Orodha ya bidhaa imekamilika!",
+    "addImageSuggestion": "Fikiria kuongeza angalau picha moja kusaidia bidhaa yako kuvutia.",
+    "businessRegistered": "Biashara imesajiliwa kwa mafanikio! Inasubiri uthibitisho.",
+    "orderStatusUpdated": "Hali ya agizo imesasishwa",
+    "orderDeleted": "Agizo limefutwa kwa mafanikio",
+    "error": "Hitilafu imetokea",
+    "failedToCreate": "Imeshindwa kuunda bidhaa",
+    "failedToUpdate": "Imeshindwa kusasisha bidhaa",
+    "failedToDelete": "Imeshindwa kufuta bidhaa",
+    "failedToDeleteOrder": "Imeshindwa kufuta agizo",
+    "failedToUpdateOrder": "Imeshindwa kusasisha agizo",
+    "failedToRegisterBusiness": "Imeshindwa kusajili biashara"
+  },
+  "landing": {
+    "hero": {
+      "badge": "Soko la B2B kwa Afrika",
+      "title": "Tunaunda mfumo wa uendeshaji wa kidijitali",
+      "titleHighlight": "kwa biashara za Pan-Afrika",
+      "description": "Soko la B2B linalounganisha biashara kote barani. Gundua bidhaa, pata wasambazaji, na kukuza biashara yako na biashara zilizothibitishwa za Afrika.",
+      "getStarted": "Anza",
+      "browseMarketplace": "Vinjari Soko",
+      "exploreProducts": "Chunguza Bidhaa"
+    },
+    "benefits": {
+      "item1": "Jiunge bure",
+      "item2": "Biashara zilizothibitishwa",
+      "item3": "Malipo salama",
+      "item4": "Msaada wa lugha nyingi"
+    },
+    "categories": {
+      "title": "Chunguza Kategoria",
+      "description": "Gundua bidhaa katika sekta mbalimbali kutoka kwa biashara za Afrika",
+      "viewAll": "Tazama Kategoria Zote",
+      "rawMaterials": "Malighafi",
+      "agriculture": "Kilimo",
+      "miningMinerals": "Uchimbaji na Madini",
+      "electronics": "Elektroniki",
+      "textilesFashion": "Nguo na Mitindo",
+      "foodBeverages": "Chakula na Vinywaji",
+      "construction": "Ujenzi",
+      "industrialEquipment": "Vifaa vya Viwanda"
+    },
+    "howItWorks": {
+      "title": "Inavyofanya Kazi",
+      "description": "Anza kwa hatua nne rahisi",
+      "step1Title": "Unda Akaunti",
+      "step1Desc": "Jiandikishe bure na weka wasifu wako kwa dakika.",
+      "step2Title": "Sajili Biashara",
+      "step2Desc": "Ongeza maelezo ya biashara yako ili kuthibitishwa na kujenga uaminifu.",
+      "step3Title": "Orodhesha au Vinjari",
+      "step3Desc": "Orodhesha bidhaa zako kuuza au vinjari soko kununua.",
+      "step4Title": "Ungana na Fanya Biashara",
+      "step4Desc": "Ungana na biashara na anza kufanya biashara kwa usalama."
+    },
+    "features": {
+      "title": "Tunachotoa",
+      "description": "Kila kitu unachohitaji kufanya biashara kwa ujasiri",
+      "marketplace": "Soko",
+      "marketplaceDesc": "Vinjari na orodhesha bidhaa katika soko letu la B2B. Pata unachohitaji au fikia wateja wapya.",
+      "verification": "Uthibitishaji wa Biashara",
+      "verificationDesc": "Beji zilizothibitishwa kwa biashara zinazokamilisha mchakato wetu wa uthibitishaji, kujenga uaminifu katika kila muamala.",
+      "securePayments": "Malipo Salama",
+      "securePaymentsDesc": "Uchakataji salama na wa kuaminika wa malipo kwa miamala yako ya biashara.",
+      "multiLanguage": "Lugha Nyingi",
+      "multiLanguageDesc": "Tumia jukwaa kwa Kiingereza, Kiamhari, au Kiswahili kwa uzoefu bora.",
+      "community": "Jumuiya Inayokua",
+      "communityDesc": "Jiunge na mtandao unaokua wa biashara za Afrika zinazotaka kuungana na kufanya biashara."
+    },
+    "cta": {
+      "title": "Uko Tayari Kuanza?",
+      "description": "Jiunge na jumuiya yetu inayokua ya biashara za Afrika. Unda akaunti yako ya bure leo.",
+      "createAccount": "Unda Akaunti Bure",
+      "goToDashboard": "Nenda Dashibodi",
+      "explore": "Chunguza Bidhaa"
+    },
+    "trust": {
+      "securePayments": "Malipo Salama",
+      "securePaymentsDesc": "Uchakataji salama wa miamala",
+      "verifiedBusinesses": "Biashara Zilizothibitishwa",
+      "verifiedBusinessesDesc": "Uaminifu kupitia uthibitishaji",
+      "multiLanguage": "Lugha Nyingi",
+      "multiLanguageDesc": "EN, AM, SW zinasaidiwa"
+    },
+    "footer": {
+      "tagline": "Soko la B2B linalounganisha biashara kote Afrika.",
+      "marketplace": "Soko",
+      "browseProducts": "Vinjari Bidhaa",
+      "businessDirectory": "Saraka ya Biashara",
+      "categories": "Kategoria",
+      "forBusinesses": "Kwa Biashara",
+      "registerBusiness": "Sajili Biashara",
+      "listProducts": "Orodhesha Bidhaa",
+      "dashboard": "Dashibodi",
+      "legal": "Kisheria",
+      "allRightsReserved": "Haki zote zimehifadhiwa.",
+      "privacyPolicy": "Sera ya Faragha",
+      "termsOfService": "Masharti ya Huduma",
+      "madeForAfrica": "Imetengenezwa kwa Afrika"
+    },
+    "nav": {
+      "marketplace": "Soko",
+      "pricing": "Bei",
+      "categories": "Kategoria",
+      "howItWorks": "Inavyofanya Kazi",
+      "features": "Vipengele",
+      "signIn": "Ingia",
+      "getStarted": "Anza",
+      "dashboard": "Dashibodi"
+    }
+  },
+  "verificationBanner": {
+    "message": "Tafadhali thibitisha anwani yako ya barua pepe ili kufikia vipengele vyote.",
+    "resend": "Tuma tena",
+    "verify": "Thibitisha",
+    "sent": "Barua pepe imetumwa!",
+    "dismiss": "Ondoa"
+  },
+  "verifyEmail": {
+    "verifying": {
+      "title": "Kuthibitisha Barua Pepe Yako",
+      "description": "Tafadhali subiri tunapothibitisha anwani yako ya barua pepe..."
+    },
+    "success": {
+      "title": "Barua Pepe Imethibitishwa!",
+      "description": "Barua pepe yako imethibitishwa kwa mafanikio. Sasa unaweza kufikia vipengele vyote.",
+      "goToDashboard": "Nenda kwenye Dashibodi",
+      "signIn": "Ingia"
+    },
+    "error": {
+      "title": "Uthibitishaji Umeshindikana",
+      "description": "Hatukuweza kuthibitisha barua pepe yako. Kiungo kinaweza kuwa kimeisha muda au tayari kimetumika.",
+      "requestNewLink": "Omba Kiungo Kipya"
+    },
+    "pending": {
+      "title": "Thibitisha Barua Pepe Yako",
+      "description": "Tafadhali angalia kikasha chako cha barua pepe kwa kiungo cha uthibitishaji.",
+      "descriptionWithEmail": "Tumetuma kiungo cha uthibitishaji kwa {email}. Tafadhali angalia kikasha chako."
+    },
+    "resend": {
+      "button": "Tuma Tena Barua Pepe ya Uthibitishaji",
+      "sending": "Inatuma...",
+      "sent": "Barua pepe ya uthibitishaji imetumwa! Tafadhali angalia kikasha chako.",
+      "cooldown": "Tuma tena baada ya {seconds}s"
+    },
+    "skipForNow": "Ruka kwa Sasa",
+    "signInToResend": "Ingia ili kutuma tena barua pepe ya uthibitishaji"
+  },
+  "cookieConsent": {
+    "title": "Tunatumia kuki",
+    "description": "Tunatumia kuki kuboresha uzoefu wako wa kuvinjari, kuchambua trafiki ya tovuti, na kubinafsisha maudhui. Kwa kubofya \"Kubali Zote\", unakubali matumizi yetu ya kuki. Soma yetu",
+    "privacyPolicy": "Sera ya Faragha",
+    "acceptAll": "Kubali Zote",
+    "rejectNonEssential": "Kataa Zisizo Muhimu",
+    "customize": "Rekebisha",
+    "close": "Funga",
+    "settings": {
+      "title": "Mapendeleo ya Kuki",
+      "description": "Simamia mapendeleo yako ya kuki. Kuki muhimu zimewezeshwa kila wakati kwani zinahitajika ili tovuti ifanye kazi vizuri.",
+      "save": "Hifadhi Mapendeleo",
+      "essential": {
+        "title": "Kuki Muhimu",
+        "description": "Zinahitajika kwa utendaji wa msingi wa tovuti. Haziwezi kuzimwa."
+      },
+      "functional": {
+        "title": "Kuki za Utendakazi",
+        "description": "Zinakumbuka mapendeleo na mipangilio yako kwa uzoefu bora."
+      },
+      "analytics": {
+        "title": "Kuki za Uchambuzi",
+        "description": "Zinatusaidia kuelewa jinsi wageni wanavyoingilia na tovuti yetu."
+      },
+      "marketing": {
+        "title": "Kuki za Masoko",
+        "description": "Zinatumika kutoa matangazo husika na kufuatilia kampeni."
+      }
+    }
+  },
+  "legal": {
+    "backToHome": "Rudi Nyumbani",
+    "tableOfContents": "Jedwali la Yaliyomo",
+    "viewPrivacyPolicy": "Tazama Sera ya Faragha",
+    "viewTermsOfService": "Tazama Masharti ya Huduma",
+    "terms": {
+      "title": "Masharti ya Huduma",
+      "lastUpdated": "Imesasishwa Mwisho",
+      "lastUpdatedDate": "Januari 2026",
+      "introduction": "Karibu AfriConnect. Masharti haya ya Huduma (\"Masharti\") yanaongoza ufikiaji wako na matumizi ya jukwaa la AfriConnect, ikiwa ni pamoja na tovuti yetu, programu za simu, na huduma (kwa pamoja, \"Jukwaa\"). Kwa kufikia au kutumia Jukwaa letu, unakubali kufungwa na Masharti haya na Sera yetu ya Faragha. Tafadhali yasome kwa makini kabla ya kutumia huduma zetu.",
+      "acceptance": {
+        "title": "Kukubali Masharti",
+        "content": "Kwa kuunda akaunti, kufikia, au kutumia Jukwaa la AfriConnect, unakiri kuwa umesoma, umeelewa, na unakubali kufungwa na Masharti haya ya Huduma. Ikiwa hukubaliani na Masharti haya, huwezi kufikia au kutumia Jukwaa letu.\n\nMasharti haya yanaunda makubaliano ya kisheria yanayofunga kati yako na AfriConnect Inc. Tunaweza kusasisha Masharti haya mara kwa mara, na matumizi yako yanayoendelea ya Jukwaa baada ya mabadiliko yoyote yanamaanisha kukubali Masharti mapya.\n\nIkiwa unatumia Jukwaa kwa niaba ya biashara au chombo kingine cha kisheria, unawakilisha kuwa una mamlaka ya kufunga chombo hicho kwa Masharti haya."
+      },
+      "eligibility": {
+        "title": "Mahitaji ya Ustahiki",
+        "content": "Kutumia AfriConnect, lazima:\n\n• Uwe na umri wa angalau miaka 18 au umri wa utu uzima wa kisheria katika eneo lako\n• Uwe chombo cha biashara kilichosajiliwa au mwakilishi aliyeidhinishwa wa kimoja\n• Uwe na uwezo wa kisheria wa kuingia mikataba inayofunga\n• Usiwe umezuiwa kutumia Jukwaa chini ya sheria zinazotumika\n• Kutoa taarifa sahihi na kamili za usajili\n\nKwa kusajili akaunti, unawakilisha na kudhibitisha kuwa unakidhi mahitaji yote ya ustahiki. Tunahifadhi haki ya kukataa huduma, kusitisha akaunti, au kughairi maagizo kwa hiari yetu ikiwa tunaamini haukidhi mahitaji haya."
+      },
+      "accounts": {
+        "title": "Usajili wa Akaunti na Usalama",
+        "content": "Unapounda akaunti kwenye AfriConnect, unakubali:\n\n• Kutoa taarifa sahihi, za sasa, na kamili wakati wa usajili\n• Kudumisha na kusasisha haraka taarifa za akaunti yako\n• Kuweka siri za kuingia zako salama na siri\n• Kutoshiriki akaunti yako na wengine au kuruhusu ufikiaji usioruhusiwa\n• Kutuarifu mara moja juu ya matumizi yoyote yasiyoruhusiwa ya akaunti yako\n• Kuwajibika kwa shughuli zote zinazotokea chini ya akaunti yako\n\nTunaweza kuthibitisha sifa zako za biashara na tunaweza kuhitaji nyaraka za ziada. Taarifa za uongo au zinazopotosha zinaweza kusababisha kusimamishwa au kufungwa kwa akaunti.\n\nUna jukumu peke yako la kudumisha usiri wa sifa za akaunti yako na kuzuia ufikiaji wa vifaa vyako."
+      },
+      "marketplace": {
+        "title": "Sheria na Mwenendo wa Soko",
+        "content": "AfriConnect inafanya kazi kama soko la B2B linalounganisha wanunuzi na wauzaji kote Afrika. Watumiaji wanakubali:\n\n• Kufanya miamala yote kwa uaminifu mzuri na nia ya uaminifu\n• Kutoa maelezo sahihi ya bidhaa, bei, na taarifa za upatikanaji\n• Kuheshimu maagizo yaliyoahidiwa na ratiba za uwasilishaji\n• Kudumisha mawasiliano ya kitaalamu na watumiaji wengine\n• Kuzingatia sheria zote zinazotumika za biashara na kanuni\n• Kutodanganya bei, hakiki, au vipimo vya soko\n\nWauzaji lazima wahakikishe bidhaa zinakidhi vipimo na viwango vya ubora vilivyoelezwa. Wanunuzi lazima wafanye malipo kama ilivyokubalika na kutoa taarifa sahihi za usafirishaji.\n\nTunahifadhi haki ya kuondoa orodha, kusimamisha akaunti, au kuchukua hatua nyingine kudumisha uadilifu wa soko."
+      },
+      "payments": {
+        "title": "Malipo na Miamala",
+        "content": "Miamala yote ya kifedha kwenye AfriConnect inachakatwa kupitia mfumo wetu salama wa malipo unaoendeshwa na Chapa na watoa huduma wengine wa malipo wenye leseni.\n\n• Malipo lazima yafanywe kwa kutumia njia za malipo zilizoidhinishwa\n• Ada za miamala na kodi zinazotumika zitafunuliwa wazi\n• Ubadilishaji wa sarafu unategemea viwango vya sasa vya ubadilishaji\n• Marejesho yanategemea sera yetu ya marejesho na masharti ya muuzaji\n• Huduma za escrow zinaweza kutumika kwa miamala ya uhakikisho wa biashara\n\nHatuhifadhi maelezo kamili ya kadi ya malipo. Uchakataji wote wa malipo unazingatia viwango vya PCI-DSS.\n\nMiamala inayopingwa itashughulikiwa kulingana na taratibu zetu za utatuzi wa migogoro. Chargebacks zinaweza kusababisha vikwazo vya akaunti."
+      },
+      "prohibited": {
+        "title": "Shughuli Zilizozuiliwa",
+        "content": "Watumiaji wanazuiliwa kabisa:\n\n• Kuuza bidhaa bandia, zilizoibwa, au zilizopatikana kinyume cha sheria\n• Kushiriki katika ulaghai, utakasaji wa fedha, au miamala haramu\n• Kuepuka ada za jukwaa au hatua za usalama\n• Kudharau, kutishia, au kubagua watumiaji wengine\n• Kuchapisha maudhui ya uongo, yanayopotosha, au ya kashfa\n• Kujaribu kudukuliwa, kusumbua, au kuharibu Jukwaa\n• Kukwangua data au kutumia mifumo ya kiotomatiki bila ruhusa\n• Kukiuka haki za mali miliki ya akili za wengine\n• Kufanya biashara ya vitu vilivyozuiliwa ikiwa ni pamoja na silaha, dawa, na bidhaa zilizowekwa vikwazo\n• Kuunda akaunti nyingi kuepuka vikwazo\n\nUkiukaji unaweza kusababisha kufungwa mara moja kwa akaunti, upotezaji wa fedha, na hatua za kisheria."
+      },
+      "ip": {
+        "title": "Haki za Mali Miliki ya Akili",
+        "content": "Maudhui yote, vipengele, na utendaji wa Jukwaa la AfriConnect, ikiwa ni pamoja na lakini si tu maandishi, michoro, nembo, ikoni, picha, programu, na mkusanyiko wake, ni mali ya kipekee ya AfriConnect Inc. au watoa leseni wake na yanalindwa na sheria za kimataifa za hakimiliki, alama za biashara, na mali miliki ya akili nyingine.\n\nWatumiaji wanabaki wamiliki wa maudhui wanayowasilisha lakini wanapeana AfriConnect leseni ya ulimwengu, isiyo ya kipekee, isiyo na malipo ya kutumia, kuonyesha, na kusambaza maudhui kama hayo kuhusiana na Jukwaa.\n\nHuwezi kunakili, kusambaza, kurekebisha, kuunda kazi zinazotokana, au kutumia kibiashara maudhui yoyote ya Jukwaa bila idhini yetu ya awali ya maandishi.\n\nIkiwa unaamini haki zako za mali miliki ya akili zimekiukwa, tafadhali wasiliana na timu yetu ya kisheria na taarifa za kina kuhusu ukiukaji unaodaiwa."
+      },
+      "liability": {
+        "title": "Kikomo cha Dhima",
+        "content": "KWA KIWANGO CHA JUU KINACHORUHUSIWA NA SHERIA INAYOTUMIKA:\n\nAfriConnect inatoa Jukwaa \"KAMA ILIVYO\" na \"KAMA INAVYOPATIKANA\" bila dhamana ya aina yoyote, iwe ya wazi au ya kimya kimya, ikiwa ni pamoja na lakini si tu dhamana za kimya kimya za uuzaji, kufaa kwa kusudi fulani, na kutokiuka.\n\nHatuhakikishi kuwa:\n• Jukwaa litakuwa bila usumbufu, salama, au bila makosa\n• Matokeo yaliyopatikana kutokana na kutumia Jukwaa yatakuwa sahihi\n• Kasoro katika Jukwaa zitarekebishwa\n\nAfriConnect haitawajibika kwa uharibifu wowote usio wa moja kwa moja, wa bahati mbaya, maalum, wa matokeo, au wa adhabu unaotokana na au unaohusiana na matumizi yako ya Jukwaa.\n\nJumla ya dhima yetu kwa madai yoyote chini ya Masharti haya haitazidi kiasi ulichotulipa katika miezi kumi na miwili (12) iliyotangulia dai.\n\nMamlaka mengine hayaruhusu kikomo cha dhima, kwa hivyo vikomo hivi vinaweza visitumike kwako."
+      },
+      "disputes": {
+        "title": "Utatuzi wa Migogoro",
+        "content": "Tunawahimiza watumiaji kutatua migogoro moja kwa moja kupitia kituo cha utatuzi wa migogoro cha Jukwaa letu. Mchakato wetu ni pamoja na:\n\n1. Majadiliano ya Moja kwa Moja: Wahusika wanapaswa kwanza kujaribu kutatua masuala kupitia mawasiliano ya moja kwa moja\n2. Upatanishi: AfriConnect inaweza kutoa huduma za upatanishi kwa migogoro isiyotatuliwa\n3. Usuluhishi: Usuluhishi unaofunga unaweza kuhitajika kwa migogoro fulani\n\nKwa migogoro ambayo haiwezi kutatuliwa kupitia njia hizi:\n\n• Masharti haya yanaongozwa na sheria za Jamhuri ya Kenya\n• Kesi zozote za kisheria zitaendeshwa katika mahakama za Nairobi, Kenya\n• Masharti ya madai ya kikundi yanaondolewa kwa kiwango kinachoruhusiwa na sheria\n\nHakuna chochote katika Masharti haya kinachozuia haki yako ya kuwasilisha malalamiko kwa mamlaka husika za ulinzi wa watumiaji au biashara katika eneo lako."
+      },
+      "changes": {
+        "title": "Marekebisho ya Masharti",
+        "content": "AfriConnect inahifadhi haki ya kurekebisha Masharti haya wakati wowote. Tunapofanya mabadiliko makubwa:\n\n• Tutachapisha Masharti yaliyosasishwa kwenye Jukwaa\n• Tutasasisha tarehe ya \"Imesasishwa Mwisho\" hapo juu\n• Tunaweza kukuarifu kupitia barua pepe au arifa ya Jukwaa kwa mabadiliko makubwa\n• Matumizi yanayoendelea baada ya mabadiliko yanamaanisha kukubali\n\nIkiwa haukubaliani na mabadiliko yoyote, unapaswa kuacha kutumia Jukwaa na kufunga akaunti yako. Mabadiliko mengine yanaweza kuhitaji idhini yako ya wazi kabla ya kuanza kutumika.\n\nTunapendekeza kupitia Masharti haya mara kwa mara ili kukaa na habari kuhusu sasisho zozote."
+      },
+      "contact": {
+        "title": "Wasiliana Nasi",
+        "content": "Ikiwa una maswali yoyote kuhusu Masharti haya ya Huduma au unahitaji msaada, tafadhali wasiliana na timu yetu ya kisheria. Tumejitolea kushughulikia wasiwasi wako na kutoa uwazi kuhusu sera zetu."
+      }
+    },
+    "privacy": {
+      "title": "Sera ya Faragha",
+      "lastUpdated": "Imesasishwa Mwisho",
+      "lastUpdatedDate": "Januari 2026",
+      "introduction": "Katika AfriConnect, tumejitolea kulinda faragha yako na kuhakikisha usalama wa taarifa zako binafsi. Sera hii ya Faragha inaeleza jinsi tunavyokusanya, kutumia, kufichua, na kulinda taarifa zako unapotumia Jukwaa letu. Tunachakata data binafsi kulingana na sheria zinazotumika za ulinzi wa data, ikiwa ni pamoja na Kanuni ya Jumla ya Ulinzi wa Data (GDPR), Sheria ya Ulinzi wa Data ya Kenya, Kanuni ya Ulinzi wa Data ya Nigeria, POPIA ya Afrika Kusini, na sheria nyingine zinazotumika za ulinzi wa data za Afrika.",
+      "compliance": {
+        "title": "Uzingatiaji wa Ulinzi wa Data",
+        "content": "AfriConnect imejitolea kuzingatia sheria za kimataifa na za kikanda za ulinzi wa data ikiwa ni pamoja na GDPR (EU), Sheria ya Ulinzi wa Data ya Kenya 2019, Kanuni ya Ulinzi wa Data ya Nigeria 2019, POPIA ya Afrika Kusini, Sheria ya Ulinzi wa Data ya Ghana, na mifumo mingine inayotumika ya ulinzi wa data ya Umoja wa Afrika na kitaifa. Tunatekeleza hatua sahihi za kiufundi na shirika kuhakikisha ulinzi wa data kwa muundo na kwa chaguo-msingi."
+      },
+      "collection": {
+        "title": "Taarifa Tunazokusanya",
+        "content": "Tunakusanya taarifa unazotupa moja kwa moja, ikiwa ni pamoja na:\n\n• Taarifa za Akaunti: Jina, anwani ya barua pepe, nambari ya simu, nenosiri, jina la biashara, na maelezo ya usajili\n• Taarifa za Biashara: Nyaraka za usajili wa kampuni, nambari za kitambulisho cha kodi, anwani ya biashara, na nyaraka za uthibitisho\n• Data ya Miamala: Historia ya ununuzi, taarifa za malipo, anwani za usafirishaji, na maelezo ya agizo\n• Mawasiliano: Ujumbe na watumiaji wengine, maswali ya msaada, na maoni\n• Taarifa za Wasifu: Maelezo ya biashara, orodha za bidhaa, na picha za wasifu\n\nTunakusanya kiotomatiki taarifa fulani unapotumia Jukwaa letu:\n\n• Taarifa za Kifaa: Anwani ya IP, aina ya kivinjari, mfumo wa uendeshaji, na vitambulisho vya kifaa\n• Data ya Matumizi: Kurasa zilizotembelewe, vipengele vilivyotumika, maswali ya utafutaji, na mifumo ya mwingiliano\n• Data ya Eneo: Eneo la jumla la kijiografia kulingana na anwani ya IP\n• Kuki na Teknolojia za Ufuatiliaji: Taarifa zilizokusanywa kupitia kuki, pikseli, na teknolojia zinazofanana"
+      },
+      "usage": {
+        "title": "Jinsi Tunavyotumia Taarifa Zako",
+        "content": "Tunatumia taarifa zilizokusanywa kwa madhumuni yafuatayo:\n\n• Utoaji wa Huduma: Kutoa, kudumisha, na kuboresha Jukwaa letu na huduma\n• Usimamizi wa Akaunti: Kuunda na kusimamia akaunti yako, kuthibitisha utambulisho wako, na kuchakata miamala\n• Mawasiliano: Kutuma sasisho za huduma, arifa za usalama, na ujumbe wa msaada\n• Ubinafsishaji: Kurekebisha uzoefu wako na kutoa mapendekezo husika\n• Usalama na Ulinzi: Kugundua, kuzuia, na kushughulikia ulaghai, matumizi mabaya, na masuala ya usalama\n• Uzingatiaji wa Kisheria: Kuzingatia wajibu wa kisheria na kujibu maombi ya kisheria\n• Uchambuzi: Kuelewa jinsi watumiaji wanavyoingiliana na Jukwaa letu na kuboresha huduma zetu\n• Masoko: Kutuma mawasiliano ya kutangaza (kwa idhini yako inapohitajika)\n\nTunachakata data yako kulingana na: utendaji wa mkataba, maslahi halali, wajibu wa kisheria, na idhini yako inapotumika."
+      },
+      "sharing": {
+        "title": "Kushiriki na Kufichua Taarifa",
+        "content": "Tunaweza kushiriki taarifa zako katika hali zifuatazo:\n\n• Na Watumiaji Wengine: Taarifa za wasifu wa biashara na maelezo ya miamala muhimu kuwezesha biashara\n• Watoa Huduma: Na wachuuzi wa wahusika wengine wanaosaidia kuendesha Jukwaa letu (vichakataji vya malipo, mwenyeji wa wingu, uchambuzi)\n• Uhamisho wa Biashara: Kuhusiana na muungano, ununuzi, au uuzaji wa mali za kampuni\n• Mahitaji ya Kisheria: Yanapohitajika na sheria, amri ya mahakama, au mamlaka ya serikali\n• Ulinzi wa Haki: Kulinda haki, mali, na usalama wa AfriConnect, watumiaji wetu, na umma\n\nTunahitaji wahusika wote wengine kuheshimu usalama wa data yako na kuichakata kulingana na sheria zinazotumika. Hatuuzi taarifa zako binafsi kwa wahusika wengine.\n\nUhamisho wa data wa kimataifa unalindwa na ulinzi unaofaa ikiwa ni pamoja na Vifungu vya Mkataba wa Kawaida vilivyoidhinishwa na mamlaka husika za ulinzi wa data."
+      },
+      "security": {
+        "title": "Usalama wa Data",
+        "content": "Tunatekeleza hatua madhubuti za usalama kulinda taarifa zako binafsi:\n\n• Usimbaji fiche: Data yote inayotumwa inasimbwa kwa kutumia itifaki za TLS/SSL\n• Udhibiti wa Ufikiaji: Udhibiti mkali wa ufikiaji na mbinu za uthibitishaji\n• Usalama wa Miundombinu: Vituo vya data salama na usalama wa kimwili na wa mtandao\n• Ukaguzi wa Mara kwa Mara: Tathmini za mara kwa mara za usalama na upimaji wa udhaifu\n• Mafunzo ya Wafanyakazi: Mafunzo ya mara kwa mara ya ulinzi wa data kwa wafanyakazi wote\n• Mwitikio wa Tukio: Taratibu zilizowekwa za kugundua na kujibu ukiukaji wa data\n\nIngawa tunajitahidi kulinda taarifa zako, hakuna njia ya usambazaji kupitia Mtandao ambayo ni salama 100%. Hatuwezi kudhamini usalama kamili lakini tunajitolea kukuarifu wewe na mamlaka husika kuhusu ukiukaji wowote wa data kama inavyohitajika na sheria."
+      },
+      "rights": {
+        "title": "Haki Zako na Chaguzi",
+        "content": "Kulingana na eneo lako, una haki fulani kuhusu data yako binafsi:\n\n• Ufikiaji: Omba nakala ya data binafsi tunayohifadhi kukuhusu\n• Marekebisho: Omba marekebisho ya data isiyosahihi au isiyo kamili\n• Kufutwa: Omba kufutwa kwa data yako binafsi (\"haki ya kusahaulika\")\n• Kizuizi: Omba kikomo cha uchakataji wa data yako\n• Uhamishaji: Pokea data yako katika umbizo lililoundwa, linalosomeka na mashine\n• Upinzani: Pinga uchakataji unaotegemea maslahi halali au kwa masoko\n• Kuondoa Idhini: Ondoa idhini iliyotolewa awali wakati wowote\n• Maamuzi ya Kiotomatiki: Omba ukaguzi wa kibinadamu wa maamuzi ya kiotomatiki yanayokuathiri\n\nKutekeleza haki hizi, wasiliana na Afisa wetu wa Ulinzi wa Data. Tutajibu ndani ya siku 30 (au kama inavyohitajika na sheria inayotumika). Tunaweza kuthibitisha utambulisho wako kabla ya kuchakata maombi.\n\nUna pia haki ya kuwasilisha malalamiko kwa mamlaka yako ya ndani ya ulinzi wa data."
+      },
+      "cookies": {
+        "title": "Kuki na Teknolojia za Ufuatiliaji",
+        "content": "Tunatumia kuki na teknolojia zinazofanana kuboresha uzoefu wako:\n\n• Kuki Muhimu: Zinahitajika kwa utendaji wa Jukwaa (uthibitishaji, usalama)\n• Kuki za Utendaji: Zinatusaidia kuelewa jinsi wageni wanavyoingiliana na Jukwaa\n• Kuki za Utendakazi: Zinakumbuka mapendeleo na mipangilio yako\n• Kuki za Masoko: Zinatumika kutoa matangazo husika (kwa idhini)\n\nUnaweza kusimamia mapendeleo ya kuki kupitia mipangilio ya kivinjari chako au chombo chetu cha idhini ya kuki. Kuzima kuki fulani kunaweza kuathiri utendaji wa Jukwaa.\n\nTunatumia pia huduma za uchambuzi (mfano, Google Analytics) kukusanya data ya matumizi. Huduma hizi zinaweza kutumia kuki zao na zinategemea sera zao za faragha.\n\nIshara za Do Not Track (DNT) zinaheshimiwa inapowezekana kiufundi."
+      },
+      "retention": {
+        "title": "Uhifadhi wa Data",
+        "content": "Tunahifadhi taarifa zako binafsi kwa muda unaohitajika ili:\n\n• Kutoa huduma zetu na kudumisha akaunti yako\n• Kuzingatia wajibu wa kisheria, kodi, na udhibiti\n• Kutatua migogoro na kutekeleza makubaliano yetu\n• Kudumisha rekodi za biashara kwa madhumuni ya ukaguzi\n\nVipindi vya uhifadhi vinatofautiana kulingana na aina ya data:\n• Data ya akaunti: Muda wa akaunti pamoja na miaka 7\n• Data ya miamala: Miaka 7 kwa madhumuni ya kodi na ukaguzi\n• Kumbukumbu za mawasiliano: Miaka 3\n• Mapendeleo ya masoko: Hadi idhini itakapofutwa\n\nData isipohitajika tena, tunaifuta kwa usalama au kuifanya isiwe na jina. Data isiyokuwa na jina inaweza kuhifadhiwa bila kikomo kwa uchambuzi wa takwimu."
+      },
+      "international": {
+        "title": "Uhamisho wa Data wa Kimataifa",
+        "content": "AfriConnect inafanya kazi katika nchi nyingi za Afrika na inaweza kuhamisha data kimataifa. Tunapohamisha data binafsi nje ya nchi yako:\n\n• Tunahakikisha ulinzi unaofaa upo (Vifungu vya Mkataba wa Kawaida, maamuzi ya kutosha)\n• Tunazingatia mahitaji ya ndani ya data inapotumika\n• Tunadumisha makubaliano ya uchakataji wa data na washirika wote wa kimataifa\n• Tunakadiria viwango vya ulinzi wa data vya nchi zinazokaribisha\n\nKwa wakazi wa EU, uhamisho nje ya EEA unalindwa na Vifungu vya Mkataba wa Kawaida vilivyoidhinishwa na EU.\n\nKwa watumiaji wa Afrika, tunazingatia mahitaji yanayotumika ya ndani ya data na uhamisho wa mpakani chini ya sheria za ndani."
+      },
+      "children": {
+        "title": "Faragha ya Watoto",
+        "content": "AfriConnect ni jukwaa la B2B linalopendekezwa kwa watumiaji wa biashara. Hatukusanyi kwa makusudi taarifa binafsi kutoka kwa watu walio chini ya umri wa miaka 18.\n\nTukigundua kuwa tumekusanya data binafsi kutoka kwa mtoto bila idhini iliyothibitishwa ya mzazi, tutachukua hatua za kufuta taarifa hiyo mara moja.\n\nUkiamini mtoto ametupa taarifa binafsi, tafadhali wasiliana na Afisa wetu wa Ulinzi wa Data mara moja."
+      },
+      "changes": {
+        "title": "Mabadiliko ya Sera Hii",
+        "content": "Tunaweza kusasisha Sera hii ya Faragha mara kwa mara kuonyesha mabadiliko katika mazoea yetu, teknolojia, mahitaji ya kisheria, au mambo mengine.\n\nTunapofanya mabadiliko makubwa:\n• Tutachapisha sera iliyosasishwa kwenye Jukwaa\n• Tutasasisha tarehe ya \"Imesasishwa Mwisho\"\n• Tunaweza kukuarifu kupitia barua pepe au arifa ya Jukwaa kwa mabadiliko makubwa\n• Tunaweza kuomba idhini mpya kwa shughuli fulani za uchakataji\n\nTunakuhimiza kupitia Sera hii ya Faragha mara kwa mara. Matumizi yako yanayoendelea ya Jukwaa baada ya mabadiliko yanamaanisha kukubali sera iliyosasishwa."
+      },
+      "dpo": {
+        "title": "Afisa wa Ulinzi wa Data",
+        "content": "Tumeteuwa Afisa wa Ulinzi wa Data (DPO) anayesimamia mkakati wetu wa ulinzi wa data na uzingatiaji. Kwa maswali yoyote yanayohusiana na faragha, wasiwasi, au kutekeleza haki zako za data, tafadhali wasiliana na DPO wetu."
+      }
+    }
+  },
+  "agreements": {
+    "dialog": {
+      "reviewAndAccept": "Tafadhali soma na ukubali mkataba huu kabla ya kuendelea.",
+      "accept": "Kubali na Uendelee",
+      "accepting": "Inakubali...",
+      "decline": "Kataa"
+    },
+    "seller": {
+      "title": "Mkataba wa Muuzaji",
+      "pageDescription": "Masharti yanayotumika unapoorodhesha bidhaa na kuuza kupitia AfriConnect.",
+      "lastUpdated": "Mara ya Mwisho Kusasishwa",
+      "lastUpdatedDate": "February 2026",
+      "introduction": "Mkataba huu wa Muuzaji unaongoza matumizi yako ya AfriConnect kama muuzaji. Kwa kuukubali, unathibitisha kuwa biashara yako ina mamlaka ya kuuza bidhaa zilizoainishwa na kwamba utazingatia masharti ya soko, malipo, na biashara.",
+      "acceptanceLabel": "Nimesoma na ninakubali Mkataba wa Muuzaji.",
+      "sections": {
+        "eligibility": {
+          "title": "Ustahiki",
+          "content": "Lazima uwe biashara iliyosajiliwa au mwakilishi aliyeidhinishwa. Lazima utoe taarifa sahihi za usajili na kudumisha kumbukumbu halali za biashara."
+        },
+        "productListings": {
+          "title": "Orodha za Bidhaa",
+          "content": "Lazima utoe majina sahihi ya bidhaa, maelezo, bei, kiwango cha stok, taarifa za asili, na picha. Orodha za kupotosha zinaweza kuondolewa."
+        },
+        "fulfillment": {
+          "title": "Utekelezaji wa Oda",
+          "content": "Una jukumu la kushughulikia oda kwa wakati, kusafirisha, na kuratibu uwasilishaji baada ya malipo kuthibitishwa. Lazima utoe taarifa ya ucheleweshaji mapema."
+        },
+        "qualityStandards": {
+          "title": "Viwango vya Ubora",
+          "content": "Bidhaa lazima zilingane na maelezo ya orodha, ziwe halali kuuzwa, na zitimize viwango vinavyotumika vya ubora na usalama katika mamlaka husika."
+        },
+        "feesCommissions": {
+          "title": "Ada na Kamisheni",
+          "content": "Ada za jukwaa na za uchakataji zinaweza kutumika kwa mauzo na malipo ya muuzaji. Kuendelea kutumia huduma za muuzaji kunaonyesha umekubali ratiba za ada husika."
+        },
+        "returnsRefunds": {
+          "title": "Marejesho na Rejesho la Fedha",
+          "content": "Lazima ushirikiane na maombi halali ya marejesho ya bidhaa na fedha kulingana na sera ya jukwaa, kumbukumbu za muamala, na matokeo ya migogoro."
+        },
+        "prohibitedItems": {
+          "title": "Bidhaa Zilizopigwa Marufuku",
+          "content": "Hauruhusiwi kuorodhesha bidhaa haramu, bandia, zilizo chini ya vikwazo, au zilizodhibitiwa. Ukiukaji unaweza kusababisha kuondolewa kwa orodha, kusimamishwa kwa akaunti, na taarifa za kisheria."
+        },
+        "intellectualProperty": {
+          "title": "Hakimiliki na Umiliki wa Ubunifu",
+          "content": "Unathibitisha kuwa una haki juu ya maudhui yote ya orodha na nyenzo za bidhaa. Unatoa ruhusa kwa AfriConnect kuonyesha na kutangaza orodha zako kwenye jukwaa."
+        },
+        "accountSuspension": {
+          "title": "Kusimamishwa kwa Akaunti",
+          "content": "AfriConnect inaweza kusimamisha au kusitisha ufikiaji wa muuzaji kwa udanganyifu, ukiukaji wa sera, kushindwa kwa uthibitishaji, au hitilafu za mara kwa mara za kiutendaji."
+        },
+        "liabilityIndemnification": {
+          "title": "Dhima na Fidia",
+          "content": "Unabaki kuwajibika kwa bidhaa zako, mwenendo wa biashara, na uzingatiaji wa sheria. Unakubali kufidia AfriConnect dhidi ya madai ya wahusika wa tatu yanayotokana na orodha au miamala yako."
+        }
+      }
+    },
+    "buyer": {
+      "title": "Mkataba wa Mnunuzi",
+      "pageDescription": "Masharti yanayotumika unapofanya ununuzi wa bidhaa kupitia AfriConnect.",
+      "lastUpdated": "Mara ya Mwisho Kusasishwa",
+      "lastUpdatedDate": "February 2026",
+      "introduction": "Mkataba huu wa Mnunuzi unaongoza matumizi yako ya AfriConnect kama mnunuzi. Kwa kuukubali, unathibitisha kuwa umeidhinishwa kuweka oda na utatimiza wajibu wa malipo na muamala.",
+      "acceptanceLabel": "Nimesoma na ninakubali Mkataba wa Mnunuzi.",
+      "sections": {
+        "purchaseCommitments": {
+          "title": "Ahadi za Ununuzi",
+          "content": "Oda zinazowasilishwa kupitia jukwaa ni ahadi zinazofunga za kununua, kulingana na masharti yaliyotajwa, upatikanaji wa bidhaa, na matokeo ya migogoro ya jukwaa."
+        },
+        "paymentTerms": {
+          "title": "Masharti ya Malipo",
+          "content": "Lazima ukamilishe malipo kwa njia zilizoidhinishwa na utoe taarifa sahihi za malipo. Malipo yaliyoshindikana au yaliyorejeshwa yanaweza kusababisha kufutwa kwa oda au vizuizi vya akaunti."
+        },
+        "deliveryInspection": {
+          "title": "Uwasilishaji na Ukaguzi",
+          "content": "Unapaswa kukagua bidhaa zilizowasilishwa kwa wakati na kuripoti matatizo ndani ya muda wa ukaguzi unaotumika, pamoja na ushahidi pale unapohitajika."
+        },
+        "disputes": {
+          "title": "Migogoro",
+          "content": "Migogoro inapaswa kuwasilishwa kupitia njia rasmi za jukwaa. AfriConnect inaweza kukagua kumbukumbu na mawasiliano na kutekeleza maamuzi kulingana na sera za soko."
+        },
+        "returns": {
+          "title": "Marejesho",
+          "content": "Marejesho yanategemea masharti ya muuzaji, aina ya bidhaa, na sera ya jukwaa. Si bidhaa zote zinaweza kurejeshwa baada ya kukubaliwa au kutumika."
+        },
+        "communication": {
+          "title": "Mawasiliano",
+          "content": "Unakubali kudumisha mawasiliano ya kitaalamu na wauzaji na kujibu kwa haraka pale maelezo ya ziada ya ununuzi au uwasilishaji yanapohitajika."
+        },
+        "accountResponsibilities": {
+          "title": "Majukumu ya Akaunti",
+          "content": "Una jukumu la usalama wa akaunti, taarifa sahihi za mpokeaji, na matumizi halali ya jukwaa. Shughuli zisizoidhinishwa lazima ziripotiwe mara moja."
+        }
+      }
+    }
+  },
+  "compliance": {
+    "title": "Uzingatiaji wa AfCFTA",
+    "description": "Angalia kama bidhaa zako zinastahiki faida za Eneo la Biashara Huru la Bara la Afrika",
+    "searchByName": "Tafuta kwa Jina",
+    "enterHsCode": "Weka Msimbo wa HS",
+    "searchPlaceholder": "Tafuta kwa jina la bidhaa au msimbo wa HS...",
+    "hsCodePlaceholder": "Weka msimbo wa HS wa tarakimu 8 (mfano, 09011100)",
+    "lookup": "Angalia",
+    "add": "Ongeza",
+    "addAnyway": "Ongeza Hata Hivyo",
+    "rate": "Kiwango",
+    "currentRate": "Kiwango cha Sasa",
+    "categoryA": "Kundi A",
+    "notCategoryA": "Si Kundi A",
+    "notFoundInCategoryA": "Msimbo wa HS haujapatikana katika Kundi A",
+    "notFoundDescription": "Bidhaa hii haijaorodheshwa chini ya AfCFTA Kundi A na huenda isistahiki kupunguza ushuru.",
+    "tariffReduction": "Ratiba ya Kupunguza Ushuru",
+    "rateSchedule": "Ratiba ya Viwango (2026-2030)",
+    "currentYearRate": "Kiwango cha Mwaka wa Sasa",
+    "zeroTariffBy2030": "Bidhaa hii itakuwa na ushuru wa 0% ifikapo 2030",
+    "noAfcftaBenefits": "Hakuna Faida za AfCFTA",
+    "noAfcftaBenefitsDescription": "Bidhaa hii haijaorodheshwa chini ya AfCFTA Kundi A na ushuru wa kawaida unatumika.",
+    "removeProduct": "Ondoa Bidhaa",
+    "complianceSummary": "Muhtasari wa Uzingatiaji",
+    "complianceSummaryDescription": "Muhtasari wa hali ya ustahiki wa AfCFTA wa bidhaa zako",
+    "totalProducts": "Bidhaa Zote",
+    "eligible": "Zinastahiki",
+    "notEligible": "Hazistahiki",
+    "eligibleMessage": "Bidhaa {count} kati ya zako zinastahiki kupunguza ushuru wa AfCFTA",
+    "scheduleMatchMessage": "{count, plural, one {Msimbo wa HS wa bidhaa # unalingana na ratiba ya ushuru iliyochaguliwa - uhakiki wa kanuni za asili bado unasubiriwa} other {Misimbo ya HS ya bidhaa # inalingana na ratiba ya ushuru iliyochaguliwa - uhakiki wa kanuni za asili bado unasubiriwa}}",
+    "yourProducts": "Bidhaa Zako",
+    "yourProductsDescription": "Bidhaa zilizosajiliwa na misimbo ya HS kwa ufuatiliaji wa uzingatiaji wa AfCFTA",
+    "addProduct": "Ongeza Bidhaa",
+    "addNewProduct": "Ongeza Bidhaa Mpya",
+    "cancel": "Ghairi",
+    "addingProduct": "Inaongeza bidhaa...",
+    "productAdded": "Bidhaa imeongezwa kwa mafanikio",
+    "productRemoved": "Bidhaa imeondolewa kwa mafanikio",
+    "failedToAddProduct": "Imeshindwa kuongeza bidhaa",
+    "failedToRemoveProduct": "Imeshindwa kuondoa bidhaa",
+    "noProductsYet": "Hakuna Bidhaa Zilizoongezwa Bado",
+    "noProductsDescription": "Ongeza bidhaa zako na misimbo ya HS kuangalia hali yao ya uzingatiaji wa AfCFTA",
+    "addFirstProduct": "Ongeza Bidhaa Yako ya Kwanza",
+    "andMoreProducts": "+{count} bidhaa zaidi",
+    "businessRequired": "Usajili wa Biashara Unahitajika",
+    "businessRequiredDescription": "Unahitaji kusajili biashara yako kabla ya kuangalia uzingatiaji wa bidhaa.",
+    "registerBusiness": "Sajili Biashara",
+    "whatIsAfcfta": "AfCFTA ni nini?",
+    "afcftaDescription": "Eneo la Biashara Huru la Bara la Afrika (AfCFTA) ni makubaliano ya biashara huru kati ya nchi wanachama wa Umoja wa Afrika. Bidhaa za Kundi A zinapata kupunguza ushuru polepole kutoka 2026 hadi 2030, kufikia ushuru wa 0%.",
+    "categoryABadge": "Bidhaa za Kundi A",
+    "learnMoreAfcfta": "Jifunze zaidi kuhusu AfCFTA",
+    "reductionSchedule": "Ratiba ya Kupunguza Ushuru",
+    "reductionScheduleDescription": "Bidhaa za Kundi A zinafuata ratiba ya kupunguza ushuru polepole",
+    "year": "Mwaka",
+    "typicalRateReduction": "Kiwango cha Kawaida",
+    "rateDisclaimer": "Viwango halisi vinaweza kutofautiana kulingana na bidhaa. Angalia kadi za bidhaa binafsi kwa viwango maalum.",
+    "afcftaCompliance": "Uzingatiaji wa AfCFTA",
+    "afcftaComplianceDescription": "Angalia kama bidhaa zako zinastahiki faida za Eneo la Biashara Huru la Bara la Afrika",
+    "noComplianceCheckYet": "Bado hujaongeza bidhaa yoyote kwa ukaguzi wa uzingatiaji.",
+    "startComplianceCheck": "Anza Ukaguzi wa Uzingatiaji",
+    "manageProducts": "Simamia Bidhaa",
+    "selectCountry": "Chagua Nchi/Eneo",
+    "ethiopia": "Ethiopia",
+    "kenyaEac": "Kenya (EAC)",
+    "countryDescription": "Chagua nchi kutafuta ratiba za ushuru",
+    "registerToSaveProducts": "Sajili biashara yako ili kuhifadhi bidhaa kwenye orodha yako.",
+    "notFoundInTariffSchedule": "Msimbo huu wa HS haukupatikana katika ratiba ya ushuru iliyochaguliwa",
+    "tariffScheduleCoverage": "Ufunikaji wa Ratiba ya Ushuru",
+    "tariffScheduleMatched": "Ratiba ya Ushuru Imelinganishwa",
+    "tariffScheduleNotMatched": "Ratiba ya Ushuru Haikulingana",
+    "noTariffMatchDescription": "Hatukuweza kulinganisha msimbo huu wa HS katika ratiba ya ushuru iliyochaguliwa. Angalia kitabu rasmi cha ushuru na kanuni ya asili ya bidhaa husika.",
+    "reviewMessage": "{count} ya bidhaa zako bado zinahitaji uhakiki wa kanuni za asili kabla ya dai la asili la AfCFTA kuwasilishwa.",
+    "needsReview": "Inahitaji Uhakiki",
+    "ruleNotMapped": "Kanuni Haijapangiliwa",
+    "rulesOfOrigin": "Kanuni za Asili",
+    "tariffAndOrigin": "Ushuru na Asili",
+    "baseRate": "Kiwango cha Msingi",
+    "tariffCategory": "Kategoria ya Ushuru",
+    "originRule": "Kanuni ya Asili",
+    "ruleSource": "Chanzo cha Kanuni",
+    "ruleNotMappedDescription": "Programu bado haina kanuni mahususi ya bidhaa iliyopangiliwa kwa msimbo huu wa HS. Angalia Appendix 2.A.1 kabla ya kuwasilisha dai la asili.",
+    "eligibleRuleDescription": "Bidhaa hii imefaulu kanuni inayotegemea thamani iliyotathminiwa kiotomatiki.",
+    "notEligibleRuleDescription": "Bidhaa hii haikufaulu kanuni inayotegemea thamani iliyotathminiwa kiotomatiki.",
+    "legacyStatus": "Matokeo ya Zamani",
+    "legacyStatusDescription": "Rekodi hii iliundwa kabla ya uboreshaji unaotegemea kanuni na inapaswa kuhesabiwa upya.",
+    "automaticVnmDescription": "Matokeo haya yalihesabiwa kiotomatiki kutoka kwenye kanuni ya VNM inayotegemea thamani.",
+    "manualReviewDescription": "Kanuni ya bidhaa hii inahitaji uhakiki wa nyaraka au wa mchakato wa uzalishaji unaozidi uwezo wa kikokotoo cha sasa cha kiotomatiki."
+  },
+  "afcfta": {
+    "title": "Uliza AI kuhusu uzingatiaji wa AfCFTA",
+    "description": "Uliza maswali yaliyowekwa msingi dhidi ya nyaraka za AfCFTA zilizopakiwa. Msaidizi ameandaliwa kwa utafutaji wa Qdrant na majibu yanayoanza na marejeleo.",
+    "badge": "Muundo wa awali",
+    "helper": "Majibu yanapaswa kutegemea vyanzo vilivyopakiwa pekee. Ushahidi ukikosekana au kupingana, msaidizi anapaswa kusema hivyo badala ya kubashiri.",
+    "placeholder": "Uliza swali la uzingatiaji, kwa mfano: Ni nyaraka gani zinahitajika kuunga mkono dai la cheti cha asili cha AfCFTA?",
+    "sampleQuestions": [
+      "Je, AfCFTA hufanya bidhaa hii kutolipiwa ushuru moja kwa moja leo?",
+      "Ni ushahidi gani ninaohitaji kuunga mkono dai la cheti cha asili?",
+      "Je, kufungasha upya kwa urahisi kunaweza kutoa asili ya AfCFTA chini ya sheria zilizopakiwa?"
+    ],
+    "cta": {
+      "ask": "Uliza AI",
+      "asking": "Inauliza..."
+    },
+    "form": {
+      "languageLabel": "Lugha",
+      "questionLabel": "Swali la uzingatiaji"
+    },
+    "validation": {
+      "questionTooShort": "Tafadhali weka swali la uzingatiaji lililo mahususi zaidi.",
+      "invalidQuestion": "Tafadhali toa swali halali la uzingatiaji."
+    },
+    "error": {
+      "generic": "Imeshindwa kuuliza msaidizi wa uzingatiaji."
+    },
+    "empty": {
+      "citations": "Bado hakuna marejeleo yaliyorejeshwa."
+    },
+    "sections": {
+      "answer": "Jibu",
+      "citations": "Marejeleo",
+      "source": "Chanzo"
+    },
+    "mode": {
+      "fullRag": "RAG kamili",
+      "retrievalOnly": "Urejeshaji pekee"
+    },
+    "status": {
+      "ready": "Tayari",
+      "not_configured": "Haijasanidiwa",
+      "no_evidence": "Hakuna ushahidi"
+    }
+  },
+  "aiAssistantPage": {
+    "title": "Msaidizi wa AI",
+    "description": "Uliza maswali kuhusu uzingatiaji wa AfCFTA, alama za mikopo, sheria za asili na zaidi.",
+    "unavailable": "Zana za Msaidizi wa AI hazipatikani kwa sasa.",
+    "tabs": {
+      "compliance": "Uzingatiaji wa AfCFTA",
+      "general": "Msaidizi wa Jumla"
+    },
+    "general": {
+      "title": "Uliza kuhusu mada za AfCFTA",
+      "description": "Uliza maswali ya jumla kuhusu sheria za asili za AfCFTA, ratiba za ushuru, uwezeshaji wa biashara na mada zinazohusiana na biashara. Kwa mwongozo tu - thibitisha kwa vyanzo rasmi vya AfCFTA.",
+      "badge": "Imeendeshwa na AI",
+      "helper": "Uliza maswali kuhusu Eneo la Biashara Huru la Bara la Afrika ili kupata mwongozo wa haraka kuhusu mada za kawaida za AfCFTA. Daima thibitisha maelezo muhimu kwa machapisho rasmi ya AfCFTA au mamlaka yako ya biashara ya eneo husika.",
+      "placeholder": "Uliza swali la AfCFTA, mfano: Sheria za asili zinafanyaje kazi chini ya AfCFTA?",
+      "sampleQuestions": [
+        "Sheria za asili zinafanyaje kazi chini ya AfCFTA?",
+        "Kitengo A kinamaanisha nini katika ratiba za ushuru za AfCFTA?",
+        "Ni nyaraka zipi za uwezeshaji wa biashara zinazohitajika mara nyingi kwa usafirishaji chini ya AfCFTA?"
+      ],
+      "cta": {
+        "ask": "Uliza AI",
+        "asking": "Inauliza..."
+      },
+      "form": {
+        "languageLabel": "Lugha",
+        "questionLabel": "Swali lako"
+      },
+      "validation": {
+        "questionTooShort": "Tafadhali weka swali la kina zaidi.",
+        "invalidQuestion": "Tafadhali toa swali halali."
+      },
+      "error": {
+        "generic": "Imeshindwa kupata jibu kutoka kwa msaidizi wa AI."
+      },
+      "sections": {
+        "answer": "Jibu"
+      }
+    }
+  },
+  "originEligibility": {
+    "title": "Ustahiki wa Cheti cha Asili",
+    "description": "Hesabu kama bidhaa yako inakidhi sheria ya 60% ya asili ya upendeleo chini ya AfCFTA",
+    "whatIsTheRule": "Sheria ya 60% ni nini?",
+    "ruleExplanation": "Sheria ya MaxNOM (Kiwango cha Juu cha Vifaa Visivyotoka Asili) inasema vifaa vilivyoagizwa kutoka nje vilivyotumika katika uzalishaji havipaswi kuzidi 60% ya bei ya Ex-Works. Hii inamaanisha angalau 40% ya thamani ya bidhaa yako lazima itoke kwa maudhui ya ndani.",
+    "startCalculation": "Hesabu Ustahiki",
+    "newCalculation": "Hesabu Mpya",
+    "reset": "Weka Upya",
+    "step1Title": "Bei ya Ex-Works (EXW)",
+    "step1Description": "Bei wakati bidhaa inaondoka kiwandani kwako, ikiwa ni pamoja na gharama zote za uzalishaji",
+    "step2Title": "Vifaa Visivyotoka Asili (VNM)",
+    "step2Description": "Thamani ya vipengele vilivyoagizwa kutoka nje visivyotoka nchi yako",
+    "step3Title": "Tumia Fomula",
+    "step4Title": "Matokeo ya Ustahiki",
+    "resultDescription": "Kulingana na kiwango cha juu cha 60%",
+    "productName": "Jina la Bidhaa",
+    "productNamePlaceholder": "Weka jina la bidhaa (mfano, Kahawa, Nguo)",
+    "currency": "Sarafu",
+    "costOfMaterials": "Gharama ya Vifaa",
+    "costOfMaterialsHint": "Malighafi, vipengele, na sehemu zinazotumika katika uzalishaji",
+    "laborCosts": "Gharama za Wafanyakazi",
+    "laborCostsHint": "Mishahara na ujira kwa wafanyakazi wa uzalishaji",
+    "factoryOverheads": "Gharama za Ziada za Kiwanda",
+    "factoryOverheadsHint": "Joto, umeme, kodi, matengenezo ya vifaa",
+    "profitMargin": "Kiasi cha Faida",
+    "profitMarginHint": "Faida yako juu ya gharama za uzalishaji",
+    "totalExWorks": "Jumla ya Bei ya Ex-Works",
+    "vnmExplanationTitle": "Vifaa Visivyotoka Asili ni nini?",
+    "vnmExplanation": "Hizi ni vifaa vilivyoagizwa kutoka nje, vipengele, au sehemu ambazo hazikuzalishwa nchini kwako. Jumuisha thamani ya forodha pamoja na gharama za usafirishaji na bima hadi mahali pa kuingiza.",
+    "vnmValue": "Jumla ya Thamani ya VNM",
+    "vnmValueHint": "Jumla ya thamani ya vifaa vyote vilivyoagizwa kutoka nje vilivyotumika katika uzalishaji",
+    "formula": "Fomula",
+    "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+    "result": "Matokeo",
+    "maxThreshold": "Kiwango cha Juu: 60%",
+    "eligible": "Inastahiki",
+    "notEligible": "Haistahiki",
+    "eligibleMessage": "Bidhaa yako inakidhi mahitaji ya sheria ya asili",
+    "eligibleDescription": "Vifaa visivyotoka asili viko ndani ya kiwango cha 60%. Bidhaa yako inastahiki matibabu ya upendeleo chini ya Cheti cha Asili cha AfCFTA.",
+    "notEligibleMessage": "Bidhaa yako haikidhi mahitaji ya sheria ya asili",
+    "notEligibleDescription": "Vifaa visivyotoka asili vinazidi kiwango cha 60%. Fikiria kuongeza maudhui ya ndani au kupata vifaa zaidi ndani ya nchi.",
+    "contactUs": "Je, unahitaji msaada kuboresha ustahiki wako?",
+    "contactUsDescription": "Timu yetu inaweza kukusaidia kutambua njia za kuongeza maudhui ya ndani na kukidhi mahitaji.",
+    "certificateOfOriginEligibility": "Ukaguzi wa Ustahiki wa Cheti cha Asili",
+    "vnmPercentage": "Asilimia ya VNM",
+    "localContent": "Maudhui ya Ndani",
+    "minLocalContent": "Kiwango cha Chini Kinachohitajika: 40%",
+    "localValueAdded": "Thamani ya Ndani Iliyoongezwa",
+    "productHsCode": "Msimbo wa HS wa Bidhaa",
+    "productHsCodePlaceholder": "Weka msimbo wa HS wa bidhaa unaotumika kutafuta kanuni ya asili",
+    "originRule": "Kanuni ya Asili",
+    "ruleSource": "Chanzo cha Kanuni",
+    "ruleThreshold": "Kizingiti cha Kanuni",
+    "manualReview": "Uhakiki wa Mwongozo",
+    "manualReviewStepTitle": "Uhakiki wa Kanuni kwa Mwongozo",
+    "manualReviewStepDescription": "Thibitisha kwamba umehakiki kanuni rasmi, shughuli zisizotosha, na mahitaji ya ujumuishaji",
+    "manualReviewTitle": "Uhakiki wa mwongozo unahitajika",
+    "manualReviewBody": "Kanuni ya asili ya bidhaa hii haiwezi kuhesabiwa kiotomatiki kwa kutumia EXW na VNM pekee. Unapaswa kuthibitisha kanuni rasmi ya Appendix 2.A.1 na vizuizi vya jumla vya Annex 2 kabla ya kuwasilisha dai.",
+    "manualReviewDescription": "Kanuni hii inahitaji uhakiki wa mwongozo kwa sababu kikokotoo cha sasa hakijumuishi ushahidi wa mabadiliko ya ushuru au wa mchakato wa uzalishaji.",
+    "needsReview": "Inahitaji Uhakiki",
+    "ruleNotMapped": "Kanuni Haijapangiliwa",
+    "ruleNotMappedDescription": "Programu bado haina kanuni mahususi ya bidhaa iliyopangiliwa kwa msimbo huu wa HS. Angalia Appendix 2.A.1 kabla ya kuwasilisha dai la asili.",
+    "ruleReviewed": "Nimehakiki kanuni husika ya bidhaa mahususi katika Appendix 2.A.1.",
+    "insufficientOperationsChecked": "Nimethibitisha kuwa uchakataji haujawekewa mipaka ya shughuli zisizotosha chini ya Annex 2.",
+    "cumulationConsidered": "Nimezingatia ujumuishaji na pembejeo zenye asili kutoka Nchi Washirika wengine inapohusika.",
+    "enterHsCodeFirst": "Weka kwanza msimbo wa HS wa bidhaa ili kikokotoo kiweze kupata kanuni.",
+    "legacyStatus": "Matokeo ya Zamani",
+    "yes": "Ndiyo",
+    "no": "Hapana",
+    "saveCalculation": "Hifadhi Hesabu",
+    "saving": "Inahifadhi...",
+    "calculationSaved": "Hesabu imehifadhiwa kwa mafanikio",
+    "registerToSaveCalculation": "Sajili biashara yako ili kuhifadhi hesabu hii.",
+    "calculationDeleted": "Hesabu imefutwa kwa mafanikio",
+    "deleteCalculation": "Futa Hesabu",
+    "failedToSave": "Imeshindwa kuhifadhi hesabu",
+    "failedToDelete": "Imeshindwa kufuta hesabu",
+    "totalCalculations": "Jumla ya Hesabu",
+    "previousCalculations": "Hesabu Zilizopita",
+    "previousCalculationsDescription": "Hesabu zako za ustahiki zilizohifadhiwa"
+  },
+  "creditProfile": {
+    "loading": "Inapakia wasifu wa kidijitali wa mikopo...",
+    "title": "Wasifu wa Kidijitali wa Mikopo",
+    "titleReport": "Ripoti ya Wasifu wa Kidijitali wa Mikopo",
+    "subtitle": "Imejengwa kutoka kwa miamala ya sokoni, utimilifu wa maagizo, na utofauti wa wanunuzi.",
+    "actions": {
+      "backToProfile": "Rudi kwenye wasifu wa mikopo",
+      "openBusinessProfile": "Fungua wasifu wa biashara",
+      "businessSetup": "Mpangilio wa biashara",
+      "back": "Rudi",
+      "printOrSavePdf": "Chapisha / Hifadhi PDF",
+      "downloadableReport": "Ripoti ya kupakua"
+    },
+    "badges": {
+      "verifiedSeller": "Muuzaji aliyethibitishwa",
+      "platformActivity": "Wasifu wa shughuli za jukwaa"
+    },
+    "access": {
+      "no_business": {
+        "title": "Sajili biashara yako",
+        "message": "Wasifu wa kidijitali wa mikopo unapatikana baada ya kusajili na kuthibitisha biashara yako."
+      },
+      "business_missing": {
+        "title": "Kumbukumbu ya biashara haijapatikana",
+        "message": "Akaunti yako imeunganishwa na kumbukumbu ya biashara ambayo haipatikani tena."
+      },
+      "pending_verification": {
+        "title": "Uthibitishaji unaendelea",
+        "message": "Wasifu wako wa kidijitali wa mikopo utafunguliwa mara biashara yako itakapothibitishwa."
+      },
+      "rejected_verification": {
+        "title": "Uthibitishaji unahitajika",
+        "message": "Rekebisha uthibitishaji wa biashara yako kwanza ili kufungua wasifu wa kidijitali wa mikopo."
+      },
+      "not_seller": {
+        "title": "Ufikiaji wa muuzaji unahitajika",
+        "message": "Ni akaunti za wauzaji waliothibitishwa pekee zinaweza kufikia wasifu wa kidijitali wa mikopo."
+      },
+      "ready": {
+        "title": "Tayari",
+        "message": "Wasifu wako wa kidijitali wa mikopo uko tayari."
+      }
+    },
+    "common": {
+      "notAvailableYet": "Bado haipatikani"
+    },
+    "summary": {
+      "headline": "Maagizo {paidOrdersCount} yaliyolipwa kutoka kwa wanunuzi {uniqueBuyers}",
+      "description": "Wasifu huu unaonyesha shughuli zilizorekodiwa kwenye AfriConnect na unakusudiwa kuwa kadi ya tathmini ya jukwaa, si alama ya mkopo ya taasisi ya nje.",
+      "generated": "Imetengenezwa",
+      "reportPeriodStart": "Mwanzo wa kipindi cha ripoti",
+      "latestProfileActivity": "Shughuli ya hivi karibuni ya wasifu"
+    },
+    "cards": {
+      "paidTransactionVolume": {
+        "title": "Kiasi cha miamala iliyolipwa",
+        "description": "Thamani ya maagizo ya sokoni yaliyokamilika kulipwa"
+      },
+      "paidOrders": {
+        "title": "Maagizo yaliyolipwa",
+        "description": "Jumla ya maagizo ya muuzaji {totalOrders} yamefuatiliwa"
+      },
+      "uniqueBuyers": {
+        "title": "Wanunuzi wa kipekee",
+        "description": "Wanunuzi {repeatBuyers} wa kurudia"
+      },
+      "buyerCountries": {
+        "title": "Nchi za wanunuzi",
+        "description": "Wanunuzi {buyersWithBusinessMetadata} wana metadata ya biashara iliyounganishwa"
+      },
+      "totalSellerOrders": {
+        "title": "Jumla ya maagizo ya muuzaji",
+        "description": "Maagizo yote yanayohusishwa na muuzaji huyu"
+      },
+      "successfulPaymentRate": {
+        "title": "Kiwango cha malipo yaliyofanikiwa",
+        "description": "Malipo yaliyokamilika kati ya maagizo yenye kumbukumbu za malipo"
+      },
+      "averageOrderValue": {
+        "title": "Wastani wa thamani ya agizo",
+        "description": "Kulingana na maagizo ya sokoni yaliyolipwa"
+      },
+      "recentPaidActivity": {
+        "title": "Shughuli ya hivi karibuni iliyolipwa",
+        "description": "Shughuli ya hivi karibuni ya agizo lililolipwa"
+      },
+      "uniqueBuyersDetailed": {
+        "title": "Wanunuzi wa kipekee",
+        "description": "Wanunuzi tofauti walioweka maagizo kwa muuzaji huyu"
+      },
+      "repeatBuyers": {
+        "title": "Wanunuzi wa kurudia",
+        "description": "Wanunuzi wenye zaidi ya agizo moja"
+      },
+      "metadataCoverage": {
+        "title": "Ufunikaji wa metadata",
+        "description": "Wanunuzi {buyersWithBusinessMetadata} wameunganishwa na kumbukumbu za biashara"
+      },
+      "topBuyerConcentration": {
+        "title": "Mkazo wa mnunuzi mkuu",
+        "description": "Sehemu ya kiasi cha miamala kutoka kwa mnunuzi mkubwa zaidi"
+      }
+    },
+    "empty": {
+      "title": "Bado hakuna shughuli za kutosha",
+      "description": "Biashara yako itakapoanza kupokea maagizo, wasifu huu utaongezeka kiotomatiki kwa viashiria vya miamala, utimilifu, na utofauti wa wanunuzi."
+    },
+    "sections": {
+      "transactionHistory": {
+        "title": "Historia ya Miamala",
+        "description": "Utendaji wa hivi karibuni wa maagizo na malipo katika soko."
+      },
+      "fulfillment": {
+        "title": "Utendaji wa Utimilifu",
+        "description": "Utendaji wa uendeshaji unaotokana na mzunguko wa agizo na matokeo ya malipo."
+      },
+      "buyerDiversity": {
+        "title": "Utofauti wa Wanunuzi"
+      }
+    },
+    "trend": {
+      "window": "Siku {days}",
+      "rollingPerformanceWindow": "Dirisha la utendaji linalozunguka",
+      "orders": "Maagizo",
+      "paidOrders": "Maagizo yaliyolipwa",
+      "paidVolume": "Kiasi kilicholipwa"
+    },
+    "fulfillment": {
+      "completionRate": "Kiwango cha kukamilisha",
+      "cancellationRate": "Kiwango cha kughairi",
+      "payoutSuccessRate": "Kiwango cha mafanikio ya malipo",
+      "ordersCurrentlyProcessing": "Maagizo yanayochakatwa sasa",
+      "averageFulfillmentCycle": "Wastani wa mzunguko wa utimilifu",
+      "averageFulfillmentCycleValue": "Siku {days}",
+      "payoutOutcomeCounts": "Hesabu ya matokeo ya malipo",
+      "payoutStatuses": {
+        "queued": "Yamepangwa",
+        "pending": "Yanasubiri",
+        "success": "Yamefanikiwa",
+        "failed": "Yameshindwa",
+        "reverted": "Yamerudishwa"
+      }
+    },
+    "buyerDiversity": {
+      "coverage": {
+        "complete": "Utofauti wa wanunuzi unategemea kumbukumbu za biashara za wanunuzi zilizounganishwa.",
+        "partial": "Utofauti wa wanunuzi unategemea tu wanunuzi wenye kumbukumbu za biashara zilizounganishwa, kwa hiyo baadhi ya wanunuzi hawaingii kwenye mchanganyiko wa utofauti."
+      }
+    },
+    "breakdowns": {
+      "countLabel": "Wanunuzi {count}",
+      "buyerCountries": {
+        "title": "Nchi za wanunuzi",
+        "empty": "Usambazaji wa nchi utaonekana baada ya wanunuzi kuunganisha metadata ya biashara."
+      },
+      "buyerCategories": {
+        "title": "Makundi ya wanunuzi",
+        "empty": "Usambazaji wa makundi utaonekana baada ya wanunuzi kuunganisha metadata ya biashara."
+      },
+      "topBuyers": {
+        "title": "Wanunuzi wakuu",
+        "empty": "Wanunuzi wakuu wataonekana mara maagizo yatakapowekwa.",
+        "orders": "Maagizo {count}"
+      }
+    },
+    "methodology": {
+      "title": "Maelezo ya Mbinu",
+      "description": "Ripoti hii imetengenezwa kutoka kwa shughuli za kwanza za soko la AfriConnect.",
+      "points": {
+        "transactionVolume": "Kiasi cha miamala kinatokana na maagizo ya muuzaji yaliyounganishwa na malipo ya jukwaa yaliyokamilika.",
+        "fulfillment": "Utimilifu hutumia hali ya agizo na matokeo ya malipo kama viashiria vya utendaji wa uendeshaji.",
+        "buyerDiversity": "Utofauti wa wanunuzi unategemea kumbukumbu za biashara za wanunuzi zilizounganishwa, kwa hiyo metadata isiyokamilika inapunguza ufunikaji."
+      }
+    },
+    "report": {
+      "generatedOn": "Imetengenezwa tarehe {date}",
+      "latestActivity": "Shughuli ya hivi karibuni: {date}",
+      "reportPeriod": "Kipindi cha ripoti: {start} — {end}",
+      "category": "Kategoria",
+      "country": "Nchi",
+      "verifiedSince": "Imethibitishwa tangu",
+      "sectionProfileSummary": "1. Muhtasari wa Wasifu",
+      "sectionTransactionHistory": "2. Historia ya Miamala",
+      "sectionFulfillment": "3. Utendaji wa Utekelezaji",
+      "sectionBuyerDiversity": "4. Mseto wa Wanunuzi",
+      "sectionMethodology": "5. Maelezo ya Mbinu",
+      "rollingPerformanceWindows": "Madirisha ya Utendaji Yanayoendelea",
+      "payoutOutcomes": "Matokeo ya Malipo",
+      "topBuyersSection": "Wanunuzi Wakuu",
+      "buyerCountriesSection": "Nchi za Wanunuzi",
+      "buyerCategoriesSection": "Kategoria za Wanunuzi",
+      "noData": "Hakuna data inayopatikana",
+      "orders": "Maagizo {count}",
+      "buyerShare": "Wanunuzi {count} ({share}%)"
+    }
+  },
+  "inventory": {
+    "title": "Hesabu ya Hisa",
+    "description": "Fuata viwango vya hisa, rekebisha kiasi, na weka arifa za kujaza tena",
+    "summary": {
+      "totalProducts": "Jumla ya Bidhaa",
+      "totalUnits": "Jumla ya Vipande",
+      "lowStock": "Hisa Chini",
+      "outOfStock": "Hisa Zimekwisha"
+    },
+    "tabs": {
+      "inventory": "Hisa",
+      "activity": "Shughuli"
+    },
+    "searchPlaceholder": "Tafuta kwa bidhaa au SKU...",
+    "filterStatus": "Chuja hali",
+    "status": {
+      "in_stock": "Ipo Hisa",
+      "low_stock": "Hisa Chini",
+      "out_of_stock": "Hisa Zimekwisha",
+      "inStock": "Ipo Hisa",
+      "lowStock": "Hisa Chini",
+      "outOfStock": "Hisa Zimekwisha"
+    },
+    "table": {
+      "product": "Bidhaa",
+      "sku": "SKU",
+      "onHand": "Kipo",
+      "threshold": "Kizingiti cha Hisa Chini",
+      "status": "Hali",
+      "actions": "Vitendo"
+    },
+    "actions": {
+      "adjust": "Rekebisha",
+      "thresholds": "Vizingiti",
+      "history": "Historia"
+    },
+    "noSku": "Hakuna SKU",
+    "noResults": "Hakuna bidhaa za hisa zinazoendana na vichujio.",
+    "activityTitle": "Shughuli za Karibu",
+    "activity": {
+      "date": "Tarehe",
+      "product": "Bidhaa",
+      "type": "Aina",
+      "quantity": "Kiasi",
+      "newQuantity": "Kiasi Kipya",
+      "reason": "Sababu",
+      "none": "Hakuna",
+      "empty": "Hakuna shughuli za hisa bado."
+    },
+    "types": {
+      "restock": "Jaza Tena",
+      "adjustment": "Marekebisho",
+      "return": "Rejesho",
+      "correction": "Marekebisho",
+      "sale": "Mauzo"
+    },
+    "adjustDialog": {
+      "title": "Rekebisha Hisa",
+      "description": "Rekodi mabadiliko ya hisa kwa bidhaa hii.",
+      "type": "Aina ya Marekebisho",
+      "delta": "Mabadiliko ya Kiasi",
+      "deltaPlaceholder": "Tumia thamani hasi kwa kupunguza",
+      "quickAdd": "Ongeza 1",
+      "quickRemove": "Punguza 1",
+      "reason": "Sababu",
+      "reasonPlaceholder": "Kumbukumbu ya hiari",
+      "save": "Hifadhi Marekebisho"
+    },
+    "historyDialog": {
+      "title": "Historia ya Hisa",
+      "description": "Miingiliano ya hivi karibuni ya hisa kwa bidhaa hii."
+    },
+    "thresholdDialog": {
+      "title": "Mipangilio ya Kujaza",
+      "description": "Weka arifa za hisa chini na kiasi cha kujaza tena.",
+      "lowStock": "Kizingiti cha Hisa Chini",
+      "lowStockPlaceholder": "mfano, 5",
+      "reorder": "Kiasi cha Kujaza Tena",
+      "reorderPlaceholder": "mfano, 25",
+      "save": "Hifadhi Mipangilio"
+    },
+    "invalidAdjustment": "Weka marekebisho yasiyo sifuri.",
+    "adjustmentSaved": "Marekebisho ya hisa yamehifadhiwa.",
+    "invalidThreshold": "Kizingiti cha hisa chini lazima kiwe 0 au zaidi.",
+    "invalidReorder": "Kiasi cha kujaza tena lazima kiwe 0 au zaidi.",
+    "thresholdsSaved": "Mipangilio ya kujaza imehifadhiwa."
+  },
+  "adminBanks": {
+    "title": "Simamia Benki",
+    "description": "Unda benki washirika, gawa watumiaji wa benki, na fuatilia uwezo wa marejeleo.",
+    "stats": {
+      "partnerBanks": "Benki Washirika",
+      "bankUsers": "Watumiaji wa Benki",
+      "trackedReferrals": "Marejeleo Yanayofuatiliwa"
+    },
+    "createBank": {
+      "title": "Unda Benki",
+      "description": "Sanidi wasifu wa benki unaoweza kumiliki marejeleo na ufikiaji wa BI.",
+      "namePlaceholder": "Jina la benki",
+      "descriptionPlaceholder": "Maelezo (si lazima)",
+      "action": "Unda Benki",
+      "creating": "Inaundwa...",
+      "success": "Benki imeundwa kwa mafanikio",
+      "error": "Imeshindikana kuunda benki"
+    },
+    "assignUser": {
+      "title": "Gawa Mtumiaji wa Benki",
+      "description": "Pandisha mtumiaji aliyepo kuwa akaunti ya benki na umuunganishe na benki.",
+      "searchPlaceholder": "Tafuta watumiaji kwa jina au barua pepe",
+      "selectUser": "Chagua mtumiaji",
+      "selectBank": "Chagua benki",
+      "action": "Gawa Mtumiaji",
+      "assigning": "Inagawa...",
+      "success": "Mtumiaji amegawiwa kwa benki",
+      "error": "Imeshindikana kumgawia mtumiaji"
+    },
+    "directory": {
+      "title": "Orodha ya Benki",
+      "description": "Kagua ni benki zipi ziko hai na ni SME ngapi ziko kwenye kila jalada.",
+      "empty": "Hakuna benki iliyoundwa bado.",
+      "columns": {
+        "bank": "Benki",
+        "status": "Hali",
+        "referralPrefix": "Kiambishi cha Marejeleo",
+        "users": "Watumiaji",
+        "referrals": "Marejeleo",
+        "portfolio": "Jalada"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "Haipatikani"
+    },
+    "stages": {
+      "generated": "Imerejelewa",
+      "signed_up": "Amesajiliwa",
+      "business_created": "Biashara imeundwa",
+      "verified": "Imethibitishwa",
+      "active": "Hai"
+    },
+    "overview": {
+      "fallbackTitle": "Dashibodi ya benki",
+      "description": "Fuatilia ubadilishaji wa marejeleo, uingizaji wa SME, na utendaji wa jalada.",
+      "referralBase": "Msingi wa rejeleo: {code}",
+      "stats": {
+        "totalReferrals": "Jumla ya Marejeleo",
+        "portfolioSmes": "SME za Jalada",
+        "portfolioSmesMeta": "{verified} zimethibitishwa, {active} ziko hai",
+        "portfolioRevenue": "Mapato ya Jalada",
+        "portfolioRevenueMeta": "{orders} oda kutoka kwa SME zilizorejelewa",
+        "successfulPayouts": "Malipo Yaliyofanikiwa",
+        "successfulPayoutsMeta": "{products} bidhaa zimeorodheshwa na SME zako"
+      },
+      "funnel": {
+        "title": "Faneli ya Marejeleo",
+        "description": "Safari ya mwisho hadi mwisho kutoka kuunda rejeleo hadi ushiriki hai wa SME."
+      },
+      "momentum": {
+        "title": "Mwelekeo wa Kila Mwezi",
+        "description": "Mienendo ya hivi karibuni ya marejeleo, uingizaji, na mapato katika jalada lako.",
+        "referred": "{count} zimerejelewa",
+        "onboarded": "{count} zimeingizwa",
+        "verified": "{count} zimethibitishwa"
+      },
+      "recentPortfolio": {
+        "title": "SME za Karibuni za Jalada",
+        "description": "Mashirika yaliyoingizwa hivi karibuni au yaliyounganishwa karibuni kutoka benki yako.",
+        "cta": "Tazama jalada",
+        "empty": "Hakuna SME zilizorejelewa ambazo zimeunda biashara bado.",
+        "products": "bidhaa {count}",
+        "orders": "oda {count}",
+        "revenue": "mapato {amount}"
+      },
+      "recentReferrals": {
+        "title": "Marejeleo ya Karibuni",
+        "description": "Rekodi za karibuni za marejeleo na hatua ya kila mteja mtarajiwa kwa sasa.",
+        "cta": "Simamia marejeleo",
+        "empty": "Bado hakuna rekodi za marejeleo. Anza kwa kuunda kiungo cha rejeleo cha benki."
+      }
+    },
+    "portfolio": {
+      "heading": "Jalada",
+      "title": "SME za Jalada",
+      "description": "Kagua kila SME iliyorejelewa na benki yako na hatua iliyofikia.",
+      "filtersDescription": "Chuja kwa hatua ya uingizaji, jiografia, na kundi ili kukagua utendaji.",
+      "searchPlaceholder": "Tafuta biashara, mmiliki, au barua pepe",
+      "filterByStage": "Chuja kwa hatua",
+      "allStages": "Hatua zote",
+      "country": "Nchi",
+      "allCountries": "Nchi zote",
+      "category": "Kategoria",
+      "allCategories": "Kategoria zote",
+      "empty": "Hakuna SME inayolingana na vichujio vya sasa.",
+      "unknownOwner": "Mmiliki hajulikani",
+      "noEmail": "Hakuna barua pepe",
+      "view": "Tazama",
+      "columns": {
+        "business": "Biashara",
+        "owner": "Mmiliki",
+        "stage": "Hatua",
+        "products": "Bidhaa",
+        "orders": "Oda",
+        "revenue": "Mapato",
+        "drillDown": "Chimba ndani"
+      }
+    },
+    "detail": {
+      "description": "Muonekano wa kina wa SME unaojumuisha uingizaji, umiliki, na shughuli za kibiashara.",
+      "stats": {
+        "revenue": "Mapato",
+        "orders": "Oda",
+        "products": "Bidhaa",
+        "netPayouts": "Malipo Halisi"
+      },
+      "snapshot": {
+        "title": "Muhtasari wa Biashara",
+        "description": "Maelezo ya msingi ya shirika na nafasi ya sasa ya uingizaji.",
+        "country": "Nchi",
+        "category": "Kategoria",
+        "verificationStatus": "Hali ya uthibitisho",
+        "joinedPlatform": "Alijiunga na jukwaa",
+        "businessDescription": "Maelezo",
+        "noDescription": "Hakuna maelezo yaliyotolewa"
+      },
+      "owner": {
+        "title": "Mawasiliano ya Mmiliki",
+        "description": "Mmiliki mkuu wa jukwaa anayewajibika kwa akaunti ya SME.",
+        "unknownOwner": "Mmiliki hajulikani",
+        "noEmail": "Hakuna barua pepe inayopatikana",
+        "referralTracking": "Ufuatiliaji wa marejeleo",
+        "code": "Msimbo",
+        "currentReferralRecord": "Rekodi ya sasa ya rejeleo"
+      },
+      "monthly": {
+        "title": "Utendaji wa Kila Mwezi",
+        "description": "Mwelekeo wa hivi karibuni wa mapato na oda kwa akaunti hii ya SME kwenye jalada.",
+        "orders": "oda {count}"
+      }
+    },
+    "referrals": {
+      "title": "Marejeleo",
+      "description": "Tengeneza viungo vya usajili vinavyofuatilika kwa SME na ufuatilie kila hatua ya ubadilishaji.",
+      "unnamedReferral": "Rejeleo lisilo na jina",
+      "unnamedLead": "Mteja mtarajiwa asiye na jina",
+      "noExtraMetadata": "Hakuna metadata ya ziada",
+      "create": {
+        "title": "Unda Kiungo cha Rejeleo",
+        "description": "Tengeneza msimbo wa kipekee wa usajili kwa SME, shirika, au mteja mtarajiwa.",
+        "organizationPlaceholder": "Jina la shirika",
+        "emailPlaceholder": "Barua pepe ya mwaliko (si lazima)",
+        "notesPlaceholder": "Maelezo (si lazima)",
+        "action": "Unda rejeleo",
+        "creating": "Inaundwa...",
+        "success": "Rejeleo {code} limeundwa",
+        "error": "Imeshindikana kuunda rejeleo"
+      },
+      "playbook": {
+        "title": "Mwongozo wa Marejeleo",
+        "description": "Kila msimbo unaotengenezwa huunda safari inayopimika ya uingizaji kwa jalada la benki yako.",
+        "howItWorks": "Jinsi inavyofanya kazi",
+        "step1": "1. Unda rekodi ya rejeleo kwa mteja mtarajiwa wa SME.",
+        "step2": "2. Shiriki kiungo cha usajili kilichotengenezwa na shirika hilo.",
+        "step3": "3. Wakishasajili na kuingizwa, ukurasa huu utasasishwa kiotomatiki.",
+        "defaultSignupBase": "Msingi chaguomsingi wa usajili",
+        "baseUrlFallback": "Kiungo chako cha msingi cha usajili kitaonekana hapa kwenye kivinjari."
+      },
+      "register": {
+        "title": "Daftari la Marejeleo",
+        "description": "Fuatilia kila msimbo, lengo lake la mwaliko, na kama limebadilika kuwa SME hai.",
+        "empty": "Hakuna marejeleo yaliyoundwa bado.",
+        "copySuccess": "Kiungo cha rejeleo kimenakiliwa",
+        "copyError": "Haikuwezekana kunakili kiungo cha rejeleo",
+        "columns": {
+          "lead": "Mteja mtarajiwa",
+          "referralCode": "Msimbo wa Rejeleo",
+          "status": "Hali",
+          "linkedSme": "SME Iliyounganishwa",
+          "created": "Imeundwa",
+          "copyLink": "Nakili kiungo"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Uchanganuzi",
+      "description": "Gawanya jalada lako kwa nchi, kategoria, hatua ya uingizaji, na matokeo ya kila mwezi.",
+      "byCategory": {
+        "title": "Kwa Kategoria",
+        "description": "Ni sekta zipi zinatawala msingi wa SME zako zilizorejelewa."
+      },
+      "byCountry": {
+        "title": "Kwa Nchi",
+        "description": "Usambazaji wa kijiografia wa mashirika yaliyorejelewa na benki."
+      },
+      "byStage": {
+        "title": "Kwa Hatua",
+        "description": "Sehemu gani ya jalada imepiga hatua kupitia faneli."
+      },
+      "monthly": {
+        "title": "Mwelekeo wa Kila Mwezi",
+        "description": "Tazama uundaji wa jalada, uanzishaji, na thamani ya kibiashara kwa muda.",
+        "newSmes": "SME mpya {count}",
+        "active": "hai {count}"
+      }
+    }
+  }
+}

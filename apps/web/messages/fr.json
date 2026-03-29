@@ -1,0 +1,1668 @@
+{
+  "common": {
+      "loading": "Chargement...",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "search": "Rechercher",
+      "clearFilters": "Effacer les filtres",
+      "close": "Fermer",
+      "back": "Retour",
+      "next": "Suivant",
+      "submit": "Soumettre",
+      "confirm": "Confirmer",
+      "yes": "Oui",
+      "no": "Non",
+      "all": "Tout",
+      "none": "Aucun",
+      "actions": "Actions",
+      "status": "Statut",
+      "created": "Créé",
+      "updated": "Mis à jour",
+      "details": "Détails",
+      "viewDetails": "Voir les détails",
+      "account": "Compte",
+      "soon": "Bientôt",
+      "admin": "Admin",
+      "filters": "Filtres",
+      "noDescription": "Aucune description disponible",
+      "settingUp": "Configuration de votre compte..."
+    },
+    "navigation": {
+      "dashboard": "Tableau de bord",
+      "marketplace": "Marché",
+      "products": "Mes produits",
+      "inventory": "Inventaire",
+      "messages": "Messages",
+      "cart": "Panier",
+      "orders": "Commandes",
+      "settings": "Paramètres",
+      "billing": "Facturation",
+      "myBusiness": "Mon entreprise",
+      "creditProfile": "Profil de crédit",
+      "registerBusiness": "Vérifier l'entreprise",
+    "verifyBusinessLabel": "Vérifier l'entreprise",
+      "applyToSell": "Demander à vendre",
+      "manageUsers": "Gérer les utilisateurs",
+      "manageBusinesses": "Gérer les entreprises",
+      "manageSellerApplications": "Demandes de vendeurs",
+      "manageProducts": "Gérer les produits",
+      "manageRefunds": "Gérer les remboursements",
+      "manageBanks": "Gérer les banques",
+      "bankPortfolio": "Portefeuille bancaire",
+      "bankReferrals": "Références bancaires",
+      "bankAnalytics": "Analytique bancaire",
+      "compliance": "Conformité ZLECAF",
+      "aiAssistant": "Assistant IA",
+      "toggleMenu": "Basculer le menu",
+      "toggleSidebar": "Basculer la barre latérale"
+    },
+    "chat": {
+      "messages": "Messages",
+      "messagesDescription": "Consultez et gérez vos conversations avec les acheteurs et les vendeurs",
+      "conversations": "Conversations",
+      "conversation": "Conversation",
+      "contactSeller": "Contacter le vendeur",
+      "messageBusiness": "Envoyer un message à l'entreprise",
+      "noMessages": "Pas encore de messages",
+      "typeMessage": "Tapez un message...",
+      "startConversation": "Commencez une conversation en contactant un vendeur depuis une page produit",
+      "selectConversation": "Sélectionner une conversation",
+      "selectConversationDescription": "Choisissez une conversation dans la liste pour voir les messages",
+      "loadingConversations": "Chargement des conversations...",
+      "sendMessage": "Envoyer le message",
+      "attachFile": "Joindre un fichier",
+      "typing": "en train d'écrire..."
+    },
+    "marketplace": {
+      "title": "Marché",
+      "description": "Parcourez les produits des entreprises sur toute la plateforme",
+      "browseProducts": "Parcourir les produits",
+      "showingProducts": "Affichage de {count} produit{count, plural, one {} other {s}}",
+      "loadingProducts": "Chargement des produits...",
+      "noProducts": "Aucun produit trouvé",
+      "noProductsYet": "Aucun produit n'est encore disponible sur le marché.",
+      "tryAdjustingFilters": "Essayez d'ajuster vos filtres ou vos termes de recherche.",
+      "searchPlaceholder": "Rechercher des produits...",
+      "allCategories": "Toutes les catégories",
+      "allCountries": "Tous les pays",
+      "sortBy": "Trier par",
+      "sortNewest": "Le plus récent",
+      "sortPriceAsc": "Prix : Croissant",
+      "sortPriceDesc": "Prix : Décroissant",
+      "outOfStock": "Rupture de stock",
+      "inStock": "{count} en stock",
+      "inStockCap": "Plus de 1000 en stock",
+      "price": "Prix",
+      "category": "Catégorie",
+      "country": "Pays",
+      "clearAllFilters": "Effacer tous les filtres",
+      "verify": {
+        "businessBeforeAdd": "Verifiez votre entreprise avant d'ajouter des produits a votre panier.",
+        "completeBusinessBeforeAdd": "Completez la verification de votre entreprise avant d'ajouter des produits a votre panier."
+      }
+    },
+    "products": {
+      "title": "Mes produits",
+      "description": "Gérez vos listes de produits",
+      "addProduct": "Ajouter un produit",
+      "allProducts": "Tous les produits",
+      "searchDescription": "Recherchez et filtrez vos produits pour trouver ce dont vous avez besoin",
+      "searchPlaceholder": "Rechercher des produits...",
+      "filterByStatus": "Filtrer par statut",
+      "allStatuses": "Tous les statuts",
+      "noProducts": "Pas encore de produits. Ajoutez votre premier produit pour commencer.",
+      "noMatchingProducts": "Aucun produit ne correspond à vos critères de recherche.",
+      "productName": "Nom du produit",
+      "enterProductName": "Entrez le nom du produit",
+      "descriptionLabel": "Description",
+      "describeProduct": "Décrivez votre produit",
+      "price": "Prix",
+      "stockQuantity": "Quantité en stock",
+      "quantity": "Quantité",
+      "sku": "SKU",
+      "skuPlaceholder": "ex: AC-COF-001",
+      "lowStockThreshold": "Seuil de stock bas",
+      "reorderQuantity": "Quantité de réapprovisionnement",
+      "category": "Catégorie",
+      "categoryPlaceholder": "ex: Électronique",
+      "originCountry": "Pays d'origine",
+      "countryPlaceholder": "ex: Éthiopie",
+      "minOrderQty": "Qté min. de commande",
+      "status": "Statut",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "image": "Image",
+      "images": "Images",
+      "addImages": "Ajouter des images",
+      "addNewProduct": "Ajouter un nouveau produit",
+      "enterDetailsStep": "Entrez les détails du produit pour commencer.",
+      "addImagesStep": "Ajoutez des images pour faire ressortir votre produit.",
+      "productDetails": "Détails du produit",
+      "nextAddImages": "Suivant : Ajouter des images",
+      "creating": "Création...",
+      "skipForNow": "Ignorer pour l'instant",
+      "completeListing": "Terminer la mise en ligne",
+      "editProduct": "Modifier le produit",
+      "updateDetails": "Mettre à jour les détails du produit et gérer les images.",
+      "saveChanges": "Enregistrer les modifications",
+      "deleteProduct": "Supprimer le produit",
+      "deleteConfirmation": "Êtes-vous sûr de vouloir supprimer ce produit ? Cela supprimera également toutes les images associées. Cette action est irréversible.",
+      "firstProductPricingPromptTitle": "Votre premier produit est en ligne",
+      "firstProductPricingPromptDescription": "Excellent début ! Consultez la page des tarifs pour explorer les forfaits et débloquer plus de fonctionnalités de vente.",
+      "firstProductPricingPromptStay": "Peut-être plus tard",
+      "firstProductPricingPromptGo": "Voir les tarifs",
+      "subscriptionRequiredPromptTitle": "Abonnement requis",
+      "subscriptionRequiredPromptDescription": "Pour ajouter un autre produit, vous avez besoin d'un abonnement payant actif. Choisissez un forfait pour continuer.",
+      "subscriptionRequiredPromptStay": "Pas maintenant",
+      "subscriptionRequiredPromptGo": "Voir les tarifs",
+      "currencyHint": "Le USD est requis et affiché comme prix principal. Les valeurs en ETB et KSH peuvent être remplies automatiquement via les taux de change en direct et ajustées à tout moment.",
+      "ratesUpdated": "Taux mis à jour : {date}.",
+      "usdRequired": "Le prix en USD est requis et doit être supérieur à 0.",
+      "etbRequired": "Le prix en ETB est requis et doit être supérieur à 0.",
+      "kshInvalid": "Le prix en KSH doit être de 0 ou plus."
+    },
+    "orders": {
+      "title": "Commandes",
+      "description": "Gérez vos achats et vos ventes",
+      "purchases": "Achats",
+      "sales": "Ventes",
+      "myPurchases": "Mes achats",
+      "mySales": "Mes ventes",
+      "purchasesDescription": "Commandes que vous avez passées auprès d'autres entreprises",
+      "salesDescription": "Commandes passées par d'autres entreprises pour vos produits",
+      "searchPlaceholder": "Rechercher des commandes...",
+      "filterByStatus": "Filtrer par statut",
+      "allStatuses": "Tous les statuts",
+      "pending": "En attente",
+      "processing": "En cours de traitement",
+      "completed": "Terminée",
+      "cancelled": "Annulée",
+      "order": "Commande",
+      "seller": "Vendeur",
+      "buyer": "Acheteur",
+      "amount": "Montant",
+      "totalAmount": "Montant total",
+      "noPurchasesYet": "Pas encore d'achats. Commencez à acheter sur le marché !",
+      "noSalesYet": "Pas encore de ventes. Listez des produits pour commencer à vendre !",
+      "noMatchingOrders": "Aucune commande ne correspond à vos critères de recherche.",
+      "orderPlacedOn": "Commande passée le {date}",
+      "orderItems": "Articles de la commande",
+      "unknownProduct": "Produit inconnu",
+      "loadingOrder": "Chargement de la commande...",
+      "loadingOrderDetails": "Veuillez patienter pendant que nous récupérons les détails de la commande.",
+      "cancelOrder": "Annuler la commande",
+      "cancelOrderConfirmation": "Êtes-vous sûr de vouloir annuler cette commande ? Cette action est irréversible.",
+      "keepOrder": "Garder la commande",
+      "markAsProcessing": "Marquer comme en cours",
+      "markAsCompleted": "Marquer comme terminée",
+      "trackAndManage": "Suivez et gérez vos achats et vos ventes"
+    },
+    "business": {
+      "registerTitle": "Enregistrez votre entreprise",
+      "registerDescription": "Créez un profil d'entreprise pour commencer à vendre sur le marché",
+      "businessInformation": "Informations sur l'entreprise",
+      "businessInfoDescription": "Fournissez des détails sur votre entreprise. Votre enregistrement sera examiné par notre équipe avant activation.",
+      "businessName": "Nom de l'entreprise",
+      "enterBusinessName": "Entrez le nom de votre entreprise",
+      "description": "Description",
+      "businessDescription": "Brève description de votre entreprise",
+      "descriptionHelp": "Décrivez l'activité de votre entreprise et les produits/services que vous proposez.",
+      "country": "Pays",
+      "selectCountry": "Sélectionner un pays",
+      "city": "Ville",
+      "enterCity": "Entrez la ville",
+      "address": "Adresse",
+      "businessAddress": "Adresse de l'entreprise",
+      "category": "Catégorie d'entreprise",
+      "selectCategory": "Sélectionner une catégorie",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "+251 xxx xxx xxxx",
+      "website": "Site web",
+      "websitePlaceholder": "https://exemple.com",
+      "registering": "Enregistrement...",
+      "registrationDocuments": "Documents d'enregistrement",
+      "businessLicence": "Licence commerciale",
+      "businessLicenceNumber": "Numéro de licence commerciale",
+      "businessLicenceNumberPlaceholder": "Entrez le numéro de licence",
+      "memoOfAssociation": "Statuts de l'association",
+      "tinCertificate": "Certificat NIF (TIN)",
+      "tinCertificateNumber": "Numéro de certificat NIF",
+      "tinCertificateNumberPlaceholder": "Entrez le numéro NIF",
+      "hasImportExportPermit": "Avez-vous un permis d'importation/exportation (étranger) ?",
+      "hasImportExportPermitPlaceholder": "Sélectionnez...",
+      "hasImportExportPermitYes": "Oui",
+      "hasImportExportPermitNo": "Non",
+      "importExportPermit": "Permis d'importation/exportation (étranger)",
+      "importExportPermitNumber": "Numéro de permis d'importation/exportation",
+      "importExportPermitNumberPlaceholder": "Entrez le numéro de permis (optionnel)",
+      "upload": "Télécharger",
+      "uploaded": "Téléchargé",
+      "sellerAgreementLabel": "J'ai lu et j'accepte l'accord du",
+      "sellerAgreementLink": "Vendeur",
+      "sellerAgreementRequired": "Vous devez accepter l'Accord du Vendeur pour enregistrer votre entreprise.",
+      "buyerVerificationTitle": "Vérifiez votre entreprise",
+      "buyerVerificationDescription": "Soumettez les informations et les documents de votre entreprise afin que votre compte puisse acheter sur la place de marché.",
+      "buyerVerificationCardTitle": "Vérification de l'entreprise acheteuse",
+      "buyerVerificationCardDescription": "Les acheteurs sur AfriConnect doivent aussi être des entreprises vérifiées. Soumettez vos documents une seule fois et notre équipe les examinera.",
+      "buyerVerificationDocumentsTitle": "Documents de vérification",
+      "buyerVerificationDocumentsDescription": "Téléchargez les documents dont nous avons besoin pour confirmer votre entreprise avant d'activer les achats.",
+      "buyerVerificationSubmitting": "Envoi en cours...",
+      "submitBuyerVerification": "Soumettre pour vérification",
+      "buyerVerificationSubmitted": "La vérification de l'entreprise a été envoyée avec succès. Nous l'examinerons sous peu.",
+      "buyerVerificationFailed": "Échec de l'envoi de la vérification de l'entreprise.",
+      "sellerApplicationTitle": "Demander à vendre",
+      "sellerApplicationDescription": "Une fois votre entreprise vérifiée, vous pouvez demander l'accès vendeur sans renvoyer les documents de l'entreprise.",
+      "sellerApplicationCardTitle": "Demande d'accès vendeur",
+      "sellerApplicationCardDescription": "L'accès vendeur est examiné séparément de la vérification de l'entreprise. Acceptez l'accord vendeur et envoyez votre demande lorsque vous êtes prêt à vendre.",
+      "businessVerificationStatusTitle": "Vérification de l'entreprise",
+      "sellerApplicationBusinessVerified": "Votre entreprise est vérifiée et prête pour l'examen de la demande d'accès vendeur.",
+      "sellerApplicationBusinessPending": "Votre entreprise doit être vérifiée avant de pouvoir demander à vendre.",
+      "sellerApplicationStatusTitle": "Statut de l'accès vendeur",
+      "sellerApplicationApproved": "L'accès vendeur est actif pour ce compte.",
+      "sellerApplicationPending": "Votre demande d'accès vendeur est en attente d'examen.",
+      "sellerApplicationRejected": "Votre demande d'accès vendeur a été rejetée. Relisez les exigences et présentez une nouvelle demande lorsque vous êtes prêt à vendre.",
+      "sellerApplicationNotApplied": "Vous n'avez pas encore demandé à vendre.",
+      "sellerApplicationReady": "Prêt à postuler",
+      "sellerApplicationRequirementsTitle": "Étapes suivantes",
+      "sellerApplicationRequirementBusiness": "Votre entreprise doit déjà être vérifiée.",
+      "sellerApplicationRequirementAgreement": "Vous examinerez et accepterez l'accord vendeur en vigueur.",
+      "sellerApplicationRequirementReview": "Un administrateur examinera votre demande d'accès vendeur avant d'accorder l'accès vendeur.",
+      "sellerApplicationSubmitting": "Envoi en cours...",
+      "sellerApplicationApply": "Demander à vendre",
+      "sellerApplicationReapply": "Redemander à vendre",
+      "sellerApplicationManageProducts": "Gérer les produits",
+      "sellerApplicationOpenBusiness": "Ouvrir le profil de l'entreprise",
+      "sellerApplicationSubmitted": "Demande d'accès vendeur envoyée avec succès.",
+      "sellerApplicationFailed": "Échec de l'envoi de la demande d'accès vendeur.",
+      "sellerApplicationRequiresVerifiedBusiness": "Votre entreprise doit être vérifiée avant de pouvoir demander à vendre.",
+      "verificationStatus": {
+        "pending": "Vérification en attente",
+        "verified": "Vérifiée",
+        "rejected": "Rejetée"
+      },
+      "sellerStatus": {
+        "not_applied": "Non demandée",
+        "pending": "En attente de révision",
+        "approved": "Approuvée",
+        "rejected": "Rejetée"
+      },
+      "profile": {
+        "sellerDescription": "Manage your business profile, verification, and seller operations",
+        "buyerDescription": "Manage your business profile, verification, and seller application",
+        "editProfile": "Edit Profile",
+        "businessProfileTitle": "Business Profile",
+        "editDescription": "Update your business information below",
+        "viewDescription": "Your business details and contact information",
+        "verificationPendingMessage": "Your business is being reviewed by our team. Buying access will unlock after approval.",
+        "verificationVerifiedMessage": "Your business has been verified. You can now add products to your cart and place orders.",
+        "verificationRejectedMessage": "Your business verification was rejected. Update your business information and documents below to resubmit.",
+        "sellerRequiresVerifiedMessage": "Verify your business first before applying to sell.",
+        "sellerApprovedMessage": "Seller access is active for this account. You can manage products, inventory, and payouts.",
+        "sellerPendingMessage": "Your seller application is pending admin review.",
+        "sellerRejectedMessage": "Your seller application was rejected. You can review the seller agreement and apply again.",
+        "sellerReadyMessage": "Your business is verified. You can now apply to sell without re-uploading your business documents.",
+        "verificationDocumentsRejectedDescription": "Updating and saving these fields will resubmit your business for review.",
+        "verificationDocumentsDescription": "Keep your registration documents up to date so your business can be reviewed quickly.",
+        "saving": "Saving...",
+        "saveChanges": "Save Changes",
+        "location": "Location",
+        "resubmitBadge": "Update documents and save to resubmit",
+        "documentUploaded": "Document uploaded",
+        "documentMissing": "Document missing",
+        "licenceNumber": "Licence No: {number}",
+        "tinNumber": "TIN No: {number}",
+        "permitUploaded": "Permit uploaded",
+        "permitMissing": "Permit not uploaded yet",
+        "notProvided": "Not provided",
+        "permitNumber": "Permit No: {number}",
+        "profileUpdated": "Business profile updated successfully",
+        "profileUpdateFailed": "Failed to update business",
+        "payoutSettingsTitle": "Payout Settings",
+        "payoutSettingsDescription": "Add your bank details to receive marketplace payouts.",
+        "bank": "Bank",
+        "selectBank": "Select bank",
+        "loadingBanks": "Loading banks...",
+        "unableToLoadBanks": "Unable to load banks right now.",
+        "accountName": "Account Name",
+        "accountNumber": "Account Number",
+        "payoutEnabled": "Payouts enabled",
+        "payoutNotEnabled": "Payouts not enabled yet",
+        "savePayoutSettings": "Save Payout Settings",
+        "payoutSettingsUpdated": "Payout settings updated",
+        "payoutSettingsUpdateFailed": "Failed to update payout settings",
+        "creditProfileTitle": "Digital Credit Profile",
+        "creditProfileDescription": "Review your transaction history, fulfillment performance, and buyer diversity in one seller report.",
+        "creditProfileAvailability": "Available once your business is verified. You can also export a printable report for sharing.",
+        "openCreditProfile": "Open Credit Profile"
+      }
+    },
+    "cart": {
+      "title": "Panier",
+      "description": "Vérifiez vos articles avant le paiement",
+      "emptyCart": "Votre panier est vide",
+      "emptyCartDescription": "Parcourez le marché pour trouver des produits",
+      "browseMarketplace": "Parcourir le marché",
+      "subtotal": "Sous-total",
+      "total": "Total",
+      "checkout": "Paiement",
+      "removeItem": "Supprimer l'article",
+      "updateQuantity": "Mettre à jour la quantité",
+      "buyerAgreementRequired": "Vous devez accepter l'Accord de l'Acheteur avant de payer."
+    },
+    "dashboard": {
+      "title": "Tableau de bord",
+      "welcome": "Bon retour ! Voici un aperçu de vos commandes.",
+      "welcomeBack": "Bon retour,",
+      "overview": "Aperçu",
+      "recentOrders": "Commandes récentes",
+      "recentProducts": "Produits récents",
+      "quickStats": "Stats rapides",
+      "totalRevenue": "Revenu total",
+      "totalOrders": "Total des commandes",
+      "totalProducts": "Total des produits",
+      "pendingOrders": "Commandes en attente",
+      "discoverProducts": "Découvrir des produits",
+      "browseDescription": "Parcourez les produits des entreprises à travers l'Afrique"
+    },
+    "settings": {
+      "title": "Paramètres",
+      "description": "Gérez vos paramètres de compte et vos préférences",
+      "profile": "Profil",
+      "profileDescription": "Mettez à jour vos informations de profil",
+      "displayName": "Nom affiché",
+      "enterName": "Entrez votre nom",
+      "displayNameHelp": "C'est votre nom d'affichage. Il peut être différent de votre nom de compte.",
+      "noNameSet": "Aucun nom défini",
+      "accountInfo": "Informations du compte",
+      "accountInfoDescription": "Les détails de votre compte",
+      "email": "E-mail",
+      "emailHelp": "L'e-mail est géré par Clerk. Pour le modifier, mettez à jour vos paramètres de compte.",
+      "userId": "ID Utilisateur",
+      "verifyBusinessLabel": "Verify Business",
+      "verifyBusinessDescription": "Submit your business details to unlock buying",
+      "verifyBusinessDescriptionIncomplete": "Complete your business verification to unlock buying",
+      "applyToSellLabel": "Apply to Sell",
+      "applyToSellDescription": "Accept the seller agreement and submit your seller application"
+    },
+    "billing": {
+      "title": "Facturation",
+      "description": "Consultez votre historique de paiement et gérez la facturation",
+      "paymentMethod": "Méthode de paiement",
+      "paymentMethodDescription": "Paiements sécurisés via Chapa",
+      "chapaGateway": "Passerelle de paiement Chapa",
+      "chapaDescription": "Payez en toute sécurité par Mobile Money, virement bancaire ou carte",
+      "learnMore": "En savoir plus",
+      "paymentHistory": "Historique des paiements",
+      "paymentHistoryDescription": "Consultez vos transactions récentes",
+      "noPaymentHistory": "Pas encore d'historique de paiement",
+      "date": "Date",
+      "reference": "Référence",
+      "type": "Type",
+      "amount": "Montant",
+      "failed": "Échoué"
+    },
+    "pricing": {
+      "title": "Tarification simple et transparente",
+      "description": "Choisissez le forfait qui convient le mieux aux besoins de votre entreprise. Tous les forfaits incluent l'accès à notre marché B2B et aux outils de conformité ZLECAF.",
+      "subtitle": "Choisissez le forfait qui convient le mieux aux besoins de votre entreprise. Tous les forfaits incluent l'accès à notre marché B2B et aux outils de conformité ZLECAF.",
+      "backToHome": "Retour à l'accueil",
+      "loadingPlans": "Chargement des forfaits...",
+      "monthly": "Mensuel",
+      "annual": "Annuel",
+      "savePercent": "Économisez {percent}%",
+      "perMonth": "/mois",
+      "perYear": "/an",
+      "billedAnnually": "{amount}/mois facturé annuellement",
+      "mostPopular": "Le plus populaire",
+      "currentPlan": "Forfait actuel",
+      "getStarted": "Commencer",
+      "contactSales": "Contacter le service commercial",
+      "custom": "Personnalisé",
+      "compareFeatures": "Comparer toutes les fonctionnalités",
+      "faq": {
+        "title": "Foire aux questions",
+        "changePlan": {
+          "question": "Puis-je changer de forfait plus tard ?",
+          "answer": "Oui, vous pouvez passer à un forfait supérieur ou inférieur à tout moment. En montant en gamme, vous accédez immédiatement aux nouvelles fonctionnalités. En descendant en gamme, le changement prendra effet lors de votre prochain cycle de facturation."
+        },
+        "paymentMethods": {
+          "question": "Quelles méthodes de paiement acceptez-vous ?",
+          "answer": "Nous acceptons les paiements via Chapa, qui prend en charge le Mobile Money, les virements bancaires et les paiements par carte. Tous les paiements sont traités de manière sécurisée."
+        },
+        "freeTrial": {
+          "question": "Y a-t-il un essai gratuit ?",
+          "answer": "Les nouvelles entreprises peuvent commencer avec notre forfait Starter pour explorer la plateforme. Contactez-nous pour les options d'essai en entreprise."
+        },
+        "limits": {
+          "question": "Que se passe-t-il lorsque j'atteins mes limites ?",
+          "answer": "Vous recevrez des notifications à l'approche des limites de votre forfait. Lorsque vous atteignez une limite, vous pouvez passer au forfait supérieur pour continuer à utiliser cette fonctionnalité."
+        }
+      },
+      "cta": {
+        "title": "Besoin d'une solution personnalisée ?",
+        "description": "Notre forfait Entreprise offre des fonctionnalités personnalisées, un support dédié et des intégrations sur mesure pour les grandes organisations."
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "target": "Petites PME",
+          "description": "Parfait pour les petites entreprises qui débutent"
+        },
+        "growth": {
+          "name": "Growth",
+          "target": "PME en croissance",
+          "description": "Pour les entreprises en croissance prêtes à passer à l'échelle"
+        },
+        "pro": {
+          "name": "Pro",
+          "target": "Marché intermédiaire",
+          "description": "Forfait complet pour les entreprises établies"
+        },
+        "enterprise": {
+          "name": "Entreprise",
+          "target": "Grandes org.",
+          "description": "Solutions personnalisées pour les grandes organisations"
+        }
+      },
+      "features": {
+        "products": "Produits",
+        "monthlyOrders": "Commandes mensuelles",
+        "originCalculations": "Calculs d'origine",
+        "hsCodeLookups": "Recherches de codes SH",
+        "teamMembers": "Membres de l'équipe",
+        "prioritySupport": "Support prioritaire",
+        "analytics": "Analytique",
+        "apiAccess": "Accès API",
+        "unlimited": "Illimité"
+      }
+    },
+    "subscription": {
+      "title": "Abonnement",
+      "description": "Gérez votre abonnement et votre facturation",
+      "businessRequired": "Entreprise requise",
+      "businessRequiredDescription": "Vous devez enregistrer une entreprise avant de pouvoir souscrire à un forfait.",
+      "registerBusiness": "Enregistrer votre entreprise",
+      "noActiveSubscription": "Pas d'abonnement actif",
+      "noSubscriptionDescription": "Vous êtes actuellement sur le niveau gratuit avec des fonctionnalités limitées. Passez à la version supérieure pour débloquer plus de produits, de commandes et d'outils de conformité.",
+      "viewPlans": "Voir les forfaits",
+      "currentPlan": "Forfait actuel",
+      "billedMonthly": "Facturé mensuellement",
+      "billedAnnually": "Facturé annuellement",
+      "currentPeriod": "Période actuelle",
+      "cancelsSoon": "S'annule bientôt",
+      "active": "Actif",
+      "trial": "Essai",
+      "pastDue": "Impayé",
+      "cancelled": "Annulé",
+      "cancellationNotice": "Votre abonnement prendra fin le {date}",
+      "trialNotice": "Votre essai se termine le {date}",
+      "changePlan": "Changer de forfait",
+      "reactivate": "Réactiver l'abonnement",
+      "reactivating": "Réactivation...",
+      "cancel": "Annuler l'abonnement",
+      "cancelling": "Annulation...",
+      "usageThisMonth": "Utilisation ce mois-ci",
+      "usageDescription": "Suivez votre utilisation par rapport aux limites de votre forfait",
+      "planFeatures": "Fonctionnalités du forfait",
+      "planFeaturesDescription": "Fonctionnalités incluses dans votre forfait {plan}",
+      "paymentSuccessful": "Paiement réussi !",
+      "subscriptionActivated": "Votre abonnement a été activé.",
+      "subscriptionCancelled": "Abonnement annulé",
+      "subscriptionCancelledDescription": "Votre abonnement restera actif jusqu'à la fin de la période de facturation.",
+      "subscriptionReactivated": "Abonnement réactivé",
+      "subscriptionReactivatedDescription": "Votre abonnement se poursuivra à la fin de la période de facturation.",
+      "failedToCancel": "Échec de l'annulation de l'abonnement",
+      "failedToReactivate": "Échec de la réactivation de l'abonnement"
+    },
+    "validation": {
+      "required": "Ce champ est obligatoire",
+      "invalidEmail": "Adresse e-mail invalide",
+      "minLength": "Doit comporter au moins {min} caractères",
+      "maxLength": "Doit comporter au maximum {max} caractères",
+      "selectCountry": "Veuillez sélectionner un pays",
+      "selectCategory": "Veuillez sélectionner une catégorie d'entreprise"
+    },
+    "toast": {
+      "productCreated": "Produit créé ! Ajoutez maintenant des images pour compléter votre annonce.",
+      "productUpdated": "Produit mis à jour avec succès",
+      "productDeleted": "Produit supprimé avec succès",
+      "productListingComplete": "Mise en ligne du produit terminée !",
+      "addImageSuggestion": "Pensez à ajouter au moins une image pour aider votre produit à se démarquer.",
+      "businessRegistered": "Entreprise enregistrée avec succès ! En attente de vérification.",
+      "orderStatusUpdated": "Statut de la commande mis à jour",
+      "orderDeleted": "Commande supprimée avec succès",
+      "error": "Une erreur est survenue",
+      "failedToCreate": "Échec de la création du produit",
+      "failedToUpdate": "Échec de la mise à jour du produit",
+      "failedToDelete": "Échec de la suppression du produit",
+      "failedToDeleteOrder": "Échec de la suppression de la commande",
+      "failedToUpdateOrder": "Échec de la mise à jour de la commande",
+      "failedToRegisterBusiness": "Échec de l'enregistrement de l'entreprise"
+    },
+    "landing": {
+      "hero": {
+        "badge": "Marché B2B pour l'Afrique",
+        "title": "Construire le système d'exploitation numérique",
+        "titleHighlight": "pour le commerce panafricain",
+        "description": "Un marché B2B reliant les entreprises à travers le continent. Découvrez des produits, trouvez des fournisseurs et développez votre activité avec des entreprises africaines vérifiées.",
+        "getStarted": "Commencer",
+        "browseMarketplace": "Parcourir le marché",
+        "exploreProducts": "Explorer les produits"
+      },
+      "benefits": {
+        "item1": "Rejoignez gratuitement",
+        "item2": "Entreprises vérifiées",
+        "item3": "Paiements sécurisés",
+        "item4": "Support multilingue"
+      },
+      "categories": {
+        "title": "Explorer les catégories",
+        "description": "Découvrez des produits de divers secteurs d'entreprises africaines",
+        "viewAll": "Voir toutes les catégories",
+        "rawMaterials": "Matières premières",
+        "agriculture": "Agriculture",
+        "miningMinerals": "Mines et Minéraux",
+        "electronics": "Électronique",
+        "textilesFashion": "Textiles et Mode",
+        "foodBeverages": "Alimentation et Boissons",
+        "construction": "Construction",
+        "industrialEquipment": "Équipement industriel"
+      },
+      "howItWorks": {
+        "title": "Comment ça marche",
+        "description": "Commencez en quatre étapes simples",
+        "step1Title": "Créer un compte",
+        "step1Desc": "Inscrivez-vous gratuitement et configurez votre profil en quelques minutes.",
+        "step2Title": "Enregistrer l'entreprise",
+        "step2Desc": "Ajoutez les détails de votre entreprise pour être vérifié et instaurer la confiance.",
+        "step3Title": "Lister ou Parcourir",
+        "step3Desc": "Listez vos produits pour vendre ou parcourez le marché pour acheter.",
+        "step4Title": "Se connecter et Échanger",
+        "step4Desc": "Connectez-vous avec des entreprises et commencez à échanger en toute sécurité."
+      },
+      "features": {
+        "title": "Ce que nous offrons",
+        "description": "Tout ce dont vous avez besoin pour échanger en toute confiance",
+        "marketplace": "Marché",
+        "marketplaceDesc": "Parcourez et listez des produits sur notre marché B2B. Trouvez ce dont vous avez besoin ou atteignez de nouveaux clients.",
+        "verification": "Vérification des entreprises",
+        "verificationDesc": "Badges de vérification pour les entreprises qui terminent notre processus de vérification, renforçant la confiance dans chaque transaction.",
+        "securePayments": "Paiements sécurisés",
+        "securePaymentsDesc": "Traitement des paiements sûr et fiable pour vos transactions commerciales.",
+        "multiLanguage": "Multilingue",
+        "multiLanguageDesc": "Utilisez la plateforme en anglais, amharique ou swahili pour une expérience fluide.",
+        "community": "Communauté croissante",
+        "communityDesc": "Rejoignez un réseau croissant d'entreprises africaines cherchant à se connecter et à échanger."
+      },
+      "cta": {
+        "title": "Prêt à commencer ?",
+        "description": "Rejoignez notre communauté croissante d'entreprises africaines. Créez votre compte gratuit aujourd'hui.",
+        "createAccount": "Créer un compte gratuit",
+        "goToDashboard": "Aller au tableau de bord",
+        "explore": "Explorer les produits"
+      },
+      "trust": {
+        "securePayments": "Paiements sécurisés",
+        "securePaymentsDesc": "Traitement sécurisé des transactions",
+        "verifiedBusinesses": "Entreprises vérifiées",
+        "verifiedBusinessesDesc": "La confiance par la vérification",
+        "multiLanguage": "Multilingue",
+        "multiLanguageDesc": "EN, AM, SW pris en charge"
+      },
+      "footer": {
+        "tagline": "Un marché B2B reliant les entreprises à travers l'Afrique.",
+        "marketplace": "Marché",
+        "browseProducts": "Parcourir les produits",
+        "businessDirectory": "Annuaire des entreprises",
+        "categories": "Catégories",
+        "forBusinesses": "Pour les entreprises",
+        "registerBusiness": "Enregistrer l'entreprise",
+        "listProducts": "Lister les produits",
+        "dashboard": "Tableau de bord",
+        "legal": "Juridique",
+        "allRightsReserved": "Tous droits réservés.",
+        "privacyPolicy": "Politique de confidentialité",
+        "termsOfService": "Conditions d'utilisation",
+        "madeForAfrica": "Fait pour l'Afrique"
+      },
+      "nav": {
+        "marketplace": "Marché",
+        "pricing": "Tarification",
+        "categories": "Catégories",
+        "howItWorks": "Comment ça marche",
+        "features": "Fonctionnalités",
+        "signIn": "Se connecter",
+        "getStarted": "Commencer",
+        "dashboard": "Tableau de bord"
+      }
+    },
+    "verificationBanner": {
+      "message": "Veuillez vérifier votre adresse e-mail pour accéder à toutes les fonctionnalités.",
+      "resend": "Renvoyer",
+      "verify": "Vérifier",
+      "sent": "E-mail envoyé !",
+      "dismiss": "Ignorer"
+    },
+    "verifyEmail": {
+      "verifying": {
+        "title": "Vérification de votre e-mail",
+        "description": "Veuillez patienter pendant que nous vérifions votre adresse e-mail..."
+      },
+      "success": {
+        "title": "E-mail vérifié !",
+        "description": "Votre e-mail a été vérifié avec succès. Vous pouvez maintenant accéder à toutes les fonctionnalités.",
+        "goToDashboard": "Aller au tableau de bord",
+        "signIn": "Se connecter"
+      },
+      "error": {
+        "title": "Échec de la vérification",
+        "description": "Nous n'avons pas pu vérifier votre e-mail. Le lien a peut-être expiré ou a déjà été utilisé.",
+        "requestNewLink": "Demander un nouveau lien"
+      },
+      "pending": {
+        "title": "Vérifiez votre e-mail",
+        "description": "Veuillez vérifier votre boîte de réception pour un lien de vérification.",
+        "descriptionWithEmail": "Nous avons envoyé un lien de vérification à {email}. Veuillez vérifier votre boîte de réception."
+      },
+      "resend": {
+        "button": "Renvoyer l'e-mail de vérification",
+        "sending": "Envoi en cours...",
+        "sent": "E-mail de vérification envoyé ! Veuillez vérifier votre boîte de réception.",
+        "cooldown": "Renvoyer dans {seconds}s"
+      },
+      "skipForNow": "Ignorer pour l'instant",
+      "signInToResend": "Connectez-vous pour renvoyer l'e-mail de vérification"
+    },
+    "cookieConsent": {
+      "title": "Nous utilisons des cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic du site et personnaliser le contenu. En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies. Lisez notre",
+      "privacyPolicy": "Politique de confidentialité",
+      "acceptAll": "Tout accepter",
+      "rejectNonEssential": "Refuser les non-essentiels",
+      "customize": "Personnaliser",
+      "close": "Fermer",
+      "settings": {
+        "title": "Préférences de cookies",
+        "description": "Gérez vos préférences de cookies. Les cookies essentiels sont toujours activés car ils sont nécessaires au bon fonctionnement du site web.",
+        "save": "Enregistrer les préférences",
+        "essential": {
+          "title": "Cookies essentiels",
+          "description": "Requis pour les fonctionnalités de base du site web. Ne peuvent pas être désactivés."
+        },
+        "functional": {
+          "title": "Cookies fonctionnels",
+          "description": "Mémorisent vos préférences et paramètres pour une meilleure expérience."
+        },
+        "analytics": {
+          "title": "Cookies analytiques",
+          "description": "Nous aident à comprendre comment les visiteurs interagissent avec notre site web."
+        },
+        "marketing": {
+          "title": "Cookies de marketing",
+          "description": "Utilisés pour diffuser des publicités pertinentes et suivre les campagnes."
+        }
+      }
+    },
+    "adminBanks": {
+    "title": "Gérer les banques",
+    "description": "Créez des banques partenaires, assignez des utilisateurs bancaires et suivez la capacité d'orientation.",
+    "stats": {
+      "partnerBanks": "Banques partenaires",
+      "bankUsers": "Utilisateurs bancaires",
+      "trackedReferrals": "Références suivies"
+    },
+    "createBank": {
+      "title": "Créer une banque",
+      "description": "Configurez le profil d'une banque pouvant gérer les références et l'accès BI.",
+      "namePlaceholder": "Nom de la banque",
+      "descriptionPlaceholder": "Description (facultative)",
+      "action": "Créer la banque",
+      "creating": "Création...",
+      "success": "Banque créée avec succès",
+      "error": "Échec de la création de la banque"
+    },
+    "assignUser": {
+      "title": "Assigner un utilisateur bancaire",
+      "description": "Transformez un utilisateur existant en compte bancaire et rattachez-le à une banque.",
+      "searchPlaceholder": "Rechercher des utilisateurs par nom ou e-mail",
+      "selectUser": "Sélectionner un utilisateur",
+      "selectBank": "Sélectionner une banque",
+      "action": "Assigner l'utilisateur",
+      "assigning": "Attribution...",
+      "success": "Utilisateur assigné à la banque",
+      "error": "Échec de l'attribution de l'utilisateur"
+    },
+    "directory": {
+      "title": "Répertoire des banques",
+      "description": "Consultez les banques actives et le nombre de PME dans chaque portefeuille.",
+      "empty": "Aucune banque n'a encore été créée.",
+      "columns": {
+        "bank": "Banque",
+        "status": "Statut",
+        "referralPrefix": "Préfixe de référence",
+        "users": "Utilisateurs",
+        "referrals": "Références",
+        "portfolio": "Portefeuille"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "N/D"
+    },
+    "stages": {
+      "generated": "Référée",
+      "signed_up": "Inscrite",
+      "business_created": "Entreprise créée",
+      "verified": "Vérifiée",
+      "active": "En activité"
+    },
+    "overview": {
+      "fallbackTitle": "Tableau de bord banque",
+      "description": "Suivez la conversion des références, l'onboarding des PME et la performance du portefeuille.",
+      "referralBase": "Base de référence : {code}",
+      "stats": {
+        "totalReferrals": "Références totales",
+        "portfolioSmes": "PME du portefeuille",
+        "portfolioSmesMeta": "{verified} vérifiées, {active} actives",
+        "portfolioRevenue": "Revenu du portefeuille",
+        "portfolioRevenueMeta": "{orders} commandes sur les PME référées",
+        "successfulPayouts": "Reversements réussis",
+        "successfulPayoutsMeta": "{products} produits listés par vos PME"
+      },
+      "funnel": {
+        "title": "Entonnoir de référence",
+        "description": "Parcours complet depuis la création d'une référence jusqu'à l'activité réelle de la PME."
+      },
+      "momentum": {
+        "title": "Dynamique mensuelle",
+        "description": "Évolution récente des références, de l'onboarding et des revenus sur votre portefeuille.",
+        "referred": "{count} référées",
+        "onboarded": "{count} onboardées",
+        "verified": "{count} vérifiées"
+      },
+      "recentPortfolio": {
+        "title": "PME récentes du portefeuille",
+        "description": "Organisations récemment intégrées ou reliées via votre banque.",
+        "cta": "Voir le portefeuille",
+        "empty": "Aucune PME référée n'a encore créé son entreprise.",
+        "products": "{count} produits",
+        "orders": "{count} commandes",
+        "revenue": "{amount} de revenu"
+      },
+      "recentReferrals": {
+        "title": "Références récentes",
+        "description": "Derniers enregistrements de référence et position actuelle de chaque prospect.",
+        "cta": "Gérer les références",
+        "empty": "Aucun enregistrement de référence pour le moment. Commencez par créer un lien de référence bancaire."
+      }
+    },
+    "portfolio": {
+      "heading": "Portefeuille",
+      "title": "PME du portefeuille",
+      "description": "Consultez toutes les PME référées par votre banque et leur niveau d'avancement.",
+      "filtersDescription": "Filtrez par étape d'onboarding, zone géographique et segment pour analyser la performance.",
+      "searchPlaceholder": "Rechercher une entreprise, un propriétaire ou un e-mail",
+      "filterByStage": "Filtrer par étape",
+      "allStages": "Toutes les étapes",
+      "country": "Pays",
+      "allCountries": "Tous les pays",
+      "category": "Catégorie",
+      "allCategories": "Toutes les catégories",
+      "empty": "Aucune PME ne correspond aux filtres actuels.",
+      "unknownOwner": "Propriétaire inconnu",
+      "noEmail": "Aucun e-mail",
+      "view": "Voir",
+      "columns": {
+        "business": "Entreprise",
+        "owner": "Propriétaire",
+        "stage": "Étape",
+        "products": "Produits",
+        "orders": "Commandes",
+        "revenue": "Revenu",
+        "drillDown": "Détail"
+      }
+    },
+    "detail": {
+      "description": "Vue détaillée de la PME couvrant l'onboarding, la propriété et l'activité commerciale.",
+      "stats": {
+        "revenue": "Revenu",
+        "orders": "Commandes",
+        "products": "Produits",
+        "netPayouts": "Reversements nets"
+      },
+      "snapshot": {
+        "title": "Aperçu de l'entreprise",
+        "description": "Informations essentielles sur l'organisation et position actuelle dans l'onboarding.",
+        "country": "Pays",
+        "category": "Catégorie",
+        "verificationStatus": "Statut de vérification",
+        "joinedPlatform": "Rejoint la plateforme",
+        "businessDescription": "Description",
+        "noDescription": "Aucune description fournie"
+      },
+      "owner": {
+        "title": "Contact du propriétaire",
+        "description": "Propriétaire principal du compte PME sur la plateforme.",
+        "unknownOwner": "Propriétaire inconnu",
+        "noEmail": "Aucun e-mail disponible",
+        "referralTracking": "Suivi de la référence",
+        "code": "Code",
+        "currentReferralRecord": "Enregistrement actuel de référence"
+      },
+      "monthly": {
+        "title": "Performance mensuelle",
+        "description": "Tendance récente des revenus et des commandes pour ce compte PME.",
+        "orders": "{count} commandes"
+      }
+    },
+    "referrals": {
+      "title": "Références",
+      "description": "Générez des liens d'inscription traçables pour les PME et suivez chaque étape de conversion.",
+      "unnamedReferral": "Référence sans nom",
+      "unnamedLead": "Prospect sans nom",
+      "noExtraMetadata": "Aucune métadonnée supplémentaire",
+      "create": {
+        "title": "Créer un lien de référence",
+        "description": "Générez un code d'inscription unique pour une PME, une organisation ou un prospect.",
+        "organizationPlaceholder": "Nom de l'organisation",
+        "emailPlaceholder": "E-mail d'invitation (facultatif)",
+        "notesPlaceholder": "Notes (facultatif)",
+        "action": "Créer la référence",
+        "creating": "Création...",
+        "success": "Référence {code} créée",
+        "error": "Échec de la création de la référence"
+      },
+      "playbook": {
+        "title": "Guide des références",
+        "description": "Chaque code généré crée un parcours d'onboarding mesurable pour le portefeuille de votre banque.",
+        "howItWorks": "Comment ça fonctionne",
+        "step1": "1. Créez un enregistrement de référence pour un prospect PME.",
+        "step2": "2. Partagez le lien d'inscription généré avec cette organisation.",
+        "step3": "3. Une fois l'inscription et l'onboarding terminés, cette page se met à jour automatiquement.",
+        "defaultSignupBase": "Base d'inscription par défaut",
+        "baseUrlFallback": "Votre lien de base d'inscription apparaîtra ici dans le navigateur."
+      },
+      "register": {
+        "title": "Registre des références",
+        "description": "Suivez chaque code, sa cible et s'il a été converti en PME active.",
+        "empty": "Aucune référence n'a encore été créée.",
+        "copySuccess": "Lien de référence copié",
+        "copyError": "Impossible de copier le lien de référence",
+        "columns": {
+          "lead": "Prospect",
+          "referralCode": "Code de référence",
+          "status": "Statut",
+          "linkedSme": "PME liée",
+          "created": "Créé le",
+          "copyLink": "Copier le lien"
+        }
+      }
+    },
+    "analytics": {
+        "title": "Analytique",
+        "description": "Segmentez votre portefeuille par pays, catégorie, étape d'onboarding et résultats mensuels.",
+      "byCategory": {
+          "title": "Par catégorie",
+          "description": "Quels secteurs dominent votre base de PME référées ?"
+      },
+      "byCountry": {
+          "title": "Par pays",
+          "description": "Répartition géographique des organisations référées par la banque."
+      },
+      "byStage": {
+          "title": "Par étape",
+          "description": "Mesure d'avancement du portefeuille dans l'entonnoir."
+      },
+      "monthly": {
+          "title": "Tendance mensuelle",
+          "description": "Suivez la création du portefeuille, son activation et sa valeur commerciale dans le temps.",
+          "newSmes": "{count} nouvelles PME",
+          "active": "{count} actives"
+      }
+    },
+    "legal": {
+      "backToHome": "Retour à l'accueil",
+      "tableOfContents": "Table des matières",
+      "viewPrivacyPolicy": "Voir la politique de confidentialité",
+      "viewTermsOfService": "Voir les conditions d'utilisation",
+      "terms": {
+        "title": "Conditions d'utilisation",
+        "lastUpdated": "Dernière mise à jour",
+        "lastUpdatedDate": "Janvier 2026",
+        "introduction": "Bienvenue sur AfriConnect. Ces conditions d'utilisation (« Conditions ») régissent votre accès et votre utilisation de la plateforme AfriConnect, y compris notre site web, nos applications mobiles et nos services (collectivement, la « Plateforme »). En accédant à notre Plateforme ou en l'utilisant, vous acceptez d'être lié par ces Conditions et notre Politique de confidentialité. Veuillez les lire attentivement avant d'utiliser nos services.",
+        "acceptance": {
+          "title": "Acceptation des conditions",
+          "content": "En créant un compte, en accédant ou en utilisant la plateforme AfriConnect, vous reconnaissez avoir lu, compris et accepté d'être lié par ces conditions d'utilisation. Si vous n'acceptez pas ces conditions, vous ne pouvez pas accéder à notre plateforme ni l'utiliser.\n\nCes conditions constituent un accord juridiquement contraignant entre vous et AfriConnect Inc. Nous pouvons mettre à jour ces conditions de temps à autre, et votre utilisation continue de la plateforme après tout changement constitue une acceptation des nouvelles conditions.\n\nSi vous utilisez la plateforme au nom d'une entreprise ou d'une autre entité juridique, vous déclarez avoir l'autorité de lier cette entité à ces conditions."
+        },
+        "eligibility": {
+          "title": "Conditions d'éligibilité",
+          "content": "Pour utiliser AfriConnect, vous devez :\n\n• Être âgé d'au moins 18 ans ou avoir l'âge de la majorité légale dans votre juridiction\n• Être une entité commerciale enregistrée ou un représentant autorisé de celle-ci\n• Avoir la capacité juridique de conclure des contrats contraignants\n• Ne pas être interdit d'utiliser la plateforme en vertu des lois applicables\n• Fournir des informations d'enregistrement exactes et complètes\n\nEn vous inscrivant pour un compte, vous déclarez et garantissez que vous remplissez toutes les conditions d'éligibilité. Nous nous réservons le droit de refuser le service, de résilier des comptes ou d'annuler des commandes à notre discrétion si nous pensons que vous ne remplissez pas ces conditions."
+        },
+        "accounts": {
+          "title": "Enregistrement du compte et sécurité",
+          "content": "Lorsque vous créez un compte sur AfriConnect, vous acceptez de :\n\n• Fournir des informations exactes, actuelles et complètes lors de l'enregistrement\n• Maintenir et mettre à jour rapidement vos informations de compte\n• Garder vos identifiants de connexion sécurisés et confidentiels\n• Ne pas partager votre compte avec d'autres ou autoriser un accès non autorisé\n• Nous informer immédiatement de toute utilisation non autorisée de votre compte\n• Être responsable de toutes les activités qui se produisent sous votre compte\n\nNous pouvons vérifier vos références commerciales et exiger des documents supplémentaires. Des informations fausses ou trompeuses peuvent entraîner la suspension ou la résiliation du compte.\n\nVous êtes seul responsable du maintien de la confidentialité de vos identifiants de compte et de la restriction de l'accès à vos appareils."
+        },
+        "marketplace": {
+          "title": "Règles du marché et conduite",
+          "content": "AfriConnect fonctionne comme un marché B2B reliant acheteurs et vendeurs à travers l'Afrique. Les utilisateurs acceptent de :\n\n• Mener toutes les transactions de bonne foi et avec une intention honnête\n• Fournir des descriptions de produits, des prix et des informations de disponibilité exacts\n• Honorer les commandes engagées et les délais de livraison\n• Maintenir une communication professionnelle avec les autres utilisateurs\n• Se conformer à toutes les lois et réglementations commerciales applicables\n• Ne pas manipuler les prix, les avis ou les mesures du marché\n\nLes vendeurs doivent s'assurer que les produits répondent aux spécifications et aux normes de qualité décrites. Les acheteurs doivent effectuer les paiements comme convenu et fournir des informations d'expédition exactes.\n\nNous nous réservons le droit de supprimer des annonces, de suspendre des comptes ou de prendre d'autres mesures pour maintenir l'intégrité du marché."
+        },
+        "payments": {
+          "title": "Paiements et transactions",
+          "content": "Toutes les transactions financières sur AfriConnect sont traitées via notre système de paiement sécurisé alimenté par Chapa et d'autres prestataires de services de paiement agréés.\n\n• Les paiements doivent être effectués en utilisant des méthodes de paiement approuvées\n• Les frais de transaction et les taxes applicables seront clairement indiqués\n• Les conversions de devises sont basées sur les taux de change en vigueur\n• Les remboursements sont soumis à notre politique de remboursement et aux conditions du vendeur\n• Des services d'entiercement peuvent être utilisés pour les transactions d'assurance commerciale\n\nNous ne stockons pas les détails complets des cartes de paiement. Tout le traitement des paiements est conforme aux normes PCI-DSS.\n\nLes transactions contestées seront traitées selon nos procédures de résolution des litiges. Les rejets de débit peuvent entraîner des restrictions de compte."
+        },
+        "prohibited": {
+          "title": "Activités interdites",
+          "content": "Il est strictement interdit aux utilisateurs de :\n\n• Vendre des marchandises contrefaites, volées ou obtenues illégalement\n• S'engager dans la fraude, le blanchiment d'argent ou des transactions illégales\n• Contourner les frais de plateforme ou les mesures de sécurité\n• Harceler, menacer ou discriminer d'autres utilisateurs\n• Publier du contenu faux, trompeur ou diffamatoire\n• Tenter de pirater, perturber ou endommager la plateforme\n• Extraire des données ou utiliser des systèmes automatisés sans autorisation\n• Violer les droits de propriété intellectuelle d'autrui\n• Commercer des articles interdits, y compris des armes, des drogues et des biens faisant l'objet de sanctions\n• Créer plusieurs comptes pour échapper aux restrictions\n\nLes violations peuvent entraîner la résiliation immédiate du compte, la perte des fonds et des poursuites judiciaires."
+        },
+        "ip": {
+          "title": "Droits de propriété intellectuelle",
+          "content": "Tout le contenu, les fonctionnalités et les caractéristiques de la plateforme AfriConnect, y compris, mais sans s'y limiter, les textes, graphiques, logos, icônes, images, logiciels et leur compilation, sont la propriété exclusive d'AfriConnect Inc. ou de ses concédants de licence et sont protégés par les lois internationales sur le droit d'auteur, les marques et autres propriétés intellectuelles.\n\nLes utilisateurs conservent la propriété du contenu qu'ils soumettent mais accordent à AfriConnect une licence mondiale, non exclusive et libre de redevances pour utiliser, afficher et distribuer ce contenu en relation avec la plateforme.\n\nVous ne pouvez pas reproduire, distribuer, modifier, créer des œuvres dérivées ou exploiter commercialement tout contenu de la plateforme sans notre consentement écrit préalable.\n\nSi vous pensez que vos droits de propriété intellectuelle ont été enfreints, veuillez contacter notre équipe juridique avec des informations détaillées sur l'infraction présumée."
+        },
+        "liability": {
+          "title": "Limitation de responsabilité",
+          "content": "DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE :\n\nAfriConnect fournit la plateforme « EN L'ÉTAT » et « SELON LA DISPONIBILITÉ » sans garantie d'aucune sorte, expresse ou implicite, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon.\n\nNous ne garantissons pas que :\n• La plateforme sera ininterrompue, sécurisée ou sans erreur\n• Les résultats obtenus par l'utilisation de la plateforme seront exacts\n• Les défauts de la plateforme seront corrigés\n\nAfriConnect ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre utilisation de la plateforme.\n\nNotre responsabilité totale pour toute réclamation en vertu de ces conditions ne dépassera pas le montant que vous nous avez payé au cours des douze (12) mois précédant la réclamation.\n\nCertaines juridictions n'autorisant pas la limitation de responsabilité, ces limitations peuvent ne pas s'appliquer à vous."
+        },
+        "disputes": {
+          "title": "Résolution des litiges",
+          "content": "Nous encourageons les utilisateurs à résoudre les litiges directement via le centre de résolution des litiges de notre plateforme. Notre processus comprend :\n\n1. Négociation directe : Les parties doivent d'abord tenter de résoudre les problèmes par une communication directe\n2. Médiation : AfriConnect peut proposer des services de médiation pour les litiges non résolus\n3. Arbitrage : Un arbitrage exécutoire peut être requis pour certains litiges\n\nPour les litiges qui ne peuvent être résolus par ces moyens :\n\n• Ces conditions sont régies par les lois de la République du Kenya\n• Toute procédure judiciaire sera menée devant les tribunaux de Nairobi, Kenya\n• Les recours collectifs sont abandonnés dans la mesure permise par la loi\n\nRien dans ces conditions ne limite vos droits de déposer des plaintes auprès des autorités compétentes de protection des consommateurs ou du commerce dans votre juridiction."
+        },
+        "changes": {
+          "title": "Modifications des conditions",
+          "content": "AfriConnect se réserve le droit de modifier ces conditions à tout moment. Lorsque nous apportons des changements matériels :\n\n• Nous publierons les conditions mises à jour sur la plateforme\n• Nous mettrons à jour la date de « Dernière mise à jour » en haut\n• Nous pouvons vous informer par e-mail ou par notification sur la plateforme pour les changements importants\n• L'utilisation continue après les changements constitue une acceptation\n\nSi vous n'êtes pas d'accord avec les changements, vous devez cesser d'utiliser la plateforme et fermer votre compte. Certains changements peuvent nécessiter votre consentement explicite avant de prendre effet.\n\nNous vous recommandons de consulter périodiquement ces conditions pour rester informé de toute mise à jour."
+        },
+        "contact": {
+          "title": "Contactez-nous",
+          "content": "Si vous avez des questions sur ces conditions d'utilisation ou si vous avez besoin d'aide, veuillez contacter notre équipe juridique. Nous nous engageons à répondre à vos préoccupations et à clarifier nos politiques."
+        }
+      },
+      "privacy": {
+        "title": "Politique de confidentialité",
+        "lastUpdated": "Dernière mise à jour",
+        "lastUpdatedDate": "Janvier 2026",
+        "introduction": "Chez AfriConnect, nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et sauvegardons vos informations lorsque vous utilisez notre plateforme. Nous traitons les données personnelles conformément aux lois applicables sur la protection des données, notamment le Règlement général sur la protection des données (RGPD), la loi kenyane sur la protection des données, la réglementation nigériane sur la protection des données, le POPIA d'Afrique du Sud et d'autres législations africaines applicables sur la protection des données.",
+        "compliance": {
+          "title": "Conformité à la protection des données",
+          "content": "AfriConnect s'engage à respecter les lois internationales et régionales sur la protection des données, notamment le RGPD (UE), la loi kenyane sur la protection des données de 2019, la réglementation nigériane sur la protection des données de 2019, le POPIA sud-africain, la loi ghanéenne sur la protection des données et d'autres cadres nationaux et de l'Union africaine. Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour assurer la protection des données dès la conception et par défaut."
+        },
+        "collection": {
+          "title": "Informations que nous collectons",
+          "content": "Nous collectons les informations que vous nous fournissez directement, notamment :\n\n• Informations de compte : Nom, e-mail, numéro de téléphone, mot de passe, nom de l'entreprise et détails d'enregistrement\n• Informations commerciales : Documents d'enregistrement de l'entreprise, numéros d'identification fiscale, adresse de l'entreprise et documents de vérification\n• Données de transaction : Historique des achats, informations de paiement, adresses de livraison et détails des commandes\n• Communications : Messages avec d'autres utilisateurs, demandes de support et commentaires\n• Informations de profil : Descriptions d'entreprise, listes de produits et photos de profil\n\nNous collectons automatiquement certaines informations lorsque vous utilisez notre plateforme :\n\n• Informations sur l'appareil : Adresse IP, type de navigateur, système d'exploitation et identifiants de l'appareil\n• Données d'utilisation : Pages visitées, fonctionnalités utilisées, requêtes de recherche et schémas d'interaction\n• Données de localisation : Localisation géographique générale basée sur l'adresse IP\n• Cookies et technologies de suivi : Informations collectées via des cookies, des pixels et des technologies similaires"
+        },
+        "usage": {
+          "title": "Comment nous utilisons vos informations",
+          "content": "Nous utilisons les informations collectées aux fins suivantes :\n\n• Prestation de service : Pour fournir, maintenir et améliorer notre plateforme et nos services\n• Gestion de compte : Pour créer et gérer votre compte, vérifier votre identité et traiter les transactions\n• Communication : Pour envoyer des mises à jour de service, des alertes de sécurité et des messages de support\n• Personnalisation : Pour personnaliser votre expérience et fournir des recommandations pertinentes\n• Sécurité : Pour détecter, prévenir et traiter la fraude, les abus et les problèmes de sécurité\n• Conformité légale : Pour respecter les obligations légales et répondre aux demandes juridiques\n• Analytique : Pour comprendre comment les utilisateurs interagissent avec notre plateforme et améliorer nos services\n• Marketing : Pour envoyer des communications promotionnelles (avec votre consentement si requis)\n\nNous traitons vos données sur la base de : l'exécution du contrat, les intérêts légitimes, les obligations légales et votre consentement le cas échéant."
+        },
+        "sharing": {
+          "title": "Partage et divulgation d'informations",
+          "content": "Nous pouvons partager vos informations dans les circonstances suivantes :\n\n• Avec d'autres utilisateurs : Informations de profil commercial et détails de transaction nécessaires pour faciliter les échanges\n• Prestataires de services : Avec des fournisseurs tiers qui nous aident à exploiter notre plateforme (processeurs de paiement, hébergement cloud, analytique)\n• Transferts d'entreprise : Dans le cadre de fusions, d'acquisitions ou de vente d'actifs de la société\n• Exigences légales : Lorsque la loi, une ordonnance d'un tribunal ou une autorité gouvernementale l'exige\n• Protection des droits : Pour protéger les droits, la propriété et la sécurité d'AfriConnect, de nos utilisateurs et du public\n\nNous exigeons que tous les tiers respectent la sécurité de vos données et les traitent conformément aux lois applicables. Nous ne vendons pas vos informations personnelles à des tiers.\n\nLes transferts internationaux de données sont protégés par des garanties appropriées, notamment les clauses contractuelles types approuvées par les autorités compétentes en matière de protection des données."
+        },
+        "security": {
+          "title": "Sécurité des données",
+          "content": "Nous mettons en œuvre des mesures de sécurité robustes pour protéger vos informations personnelles :\n\n• Chiffrement : Toutes les données transmises sont chiffrées à l'aide des protocoles TLS/SSL\n• Contrôles d'accès : Contrôles d'accès et mécanismes d'authentification stricts\n• Sécurité de l'infrastructure : Centres de données sécurisés avec sécurité physique et réseau\n• Audits réguliers : Évaluations de sécurité et tests de vulnérabilité périodiques\n• Formation des employés : Formation régulière sur la protection des données pour tout le personnel\n• Réponse aux incidents : Procédures établies pour détecter et répondre aux violations de données\n\nBien que nous nous efforcions de protéger vos informations, aucune méthode de transmission sur Internet n'est sûre à 100 %. Nous ne pouvons garantir une sécurité absolue mais nous engageons à vous informer, ainsi que les autorités compétentes, de toute violation de données comme l'exige la loi."
+        },
+        "rights": {
+          "title": "Vos droits et choix",
+          "content": "Selon votre localisation, vous avez certains droits concernant vos données personnelles :\n\n• Accès : Demander une copie des données personnelles que nous détenons à votre sujet\n• Rectification : Demander la correction de données inexactes ou incomplètes\n• Effacement : Demander la suppression de vos données personnelles (« droit à l'oubli »)\n• Restriction : Demander la limitation du traitement de vos données\n• Portabilité : Recevoir vos données dans un format structuré et lisible par machine\n• Objection : S'opposer au traitement basé sur des intérêts légitimes ou pour le marketing\n• Retrait du consentement : Retirer un consentement préalablement donné à tout moment\n• Décisions automatisées : Demander une révision humaine des décisions automatisées vous affectant\n\nPour exercer ces droits, contactez notre Délégué à la protection des données (DPO). Nous répondrons dans les 30 jours (ou selon le délai légal). Nous pouvons vérifier votre identité avant de traiter les demandes.\n\nVous avez également le droit de déposer une plainte auprès de votre autorité locale de protection des données."
+        },
+        "cookies": {
+          "title": "Cookies et technologies de suivi",
+          "content": "Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience :\n\n• Cookies essentiels : Requis pour le fonctionnement de la plateforme (authentification, sécurité)\n• Cookies de performance : Nous aident à comprendre comment les visiteurs interagissent avec la plateforme\n• Cookies fonctionnels : Mémorisent vos préférences et paramètres\n• Cookies de marketing : Utilisés pour diffuser des publicités pertinentes (avec consentement)\n\nVous pouvez gérer les préférences de cookies via les paramètres de votre navigateur ou notre outil de consentement. La désactivation de certains cookies peut affecter le fonctionnement de la plateforme.\n\nNous utilisons également des services d'analyse (ex: Google Analytics) pour collecter des données d'utilisation. Ces services peuvent utiliser leurs propres cookies et sont soumis à leurs politiques de confidentialité respectives.\n\nLes signaux « Ne pas suivre » (DNT) sont respectés lorsque cela est techniquement possible."
+        },
+        "retention": {
+          "title": "Rétention des données",
+          "content": "Nous conservons vos informations personnelles aussi longtemps que nécessaire pour :\n\n• Fournir nos services et maintenir votre compte\n• Respecter les obligations légales, fiscales et réglementaires\n• Résoudre les litiges et faire respecter nos accords\n• Maintenir les dossiers commerciaux à des fins d'audit\n\nLes périodes de rétention varient selon le type de données :\n• Données de compte : Durée du compte plus 7 ans\n• Données de transaction : 7 ans pour raisons fiscales et d'audit\n• Journaux de communication : 3 ans\n• Préférences marketing : Jusqu'au retrait du consentement\n\nLorsque les données ne sont plus nécessaires, nous les supprimons ou les anonymisons de manière sécurisée. Les données anonymisées peuvent être conservées indéfiniment pour analyse statistique."
+        },
+        "international": {
+          "title": "Transferts internationaux de données",
+          "content": "AfriConnect opère dans plusieurs pays africains et peut transférer des données à l'international. Lorsque nous transférons des données personnelles hors de votre pays :\n\n• Nous nous assurons que des garanties appropriées sont en place (clauses contractuelles types, décisions d'adéquation)\n• Nous respectons les exigences locales de localisation des données le cas échéant\n• Nous maintenons des accords de traitement des données avec tous les partenaires internationaux\n• Nous évaluons les normes de protection des données des pays destinataires\n\nPour les résidents de l'UE, les transferts hors de l'EEE sont protégés par les clauses contractuelles types approuvées par l'UE.\n\nPour les utilisateurs africains, nous respectons les exigences applicables de localisation et de transfert transfrontalier de données en vertu des lois locales."
+        },
+        "children": {
+          "title": "Confidentialité des enfants",
+          "content": "AfriConnect est une plateforme B2B destinée aux utilisateurs professionnels. Nous ne collectons pas sciemment d'informations personnelles auprès de personnes de moins de 18 ans.\n\nSi nous apprenons que nous avons collecté des données personnelles d'un enfant sans consentement parental vérifié, nous prendrons des mesures pour supprimer ces informations rapidement.\n\nSi vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez contacter immédiatement notre Délégué à la protection des données."
+        },
+        "changes": {
+          "title": "Modifications de cette politique",
+          "content": "Nous pouvons mettre à jour cette politique de confidentialité périodiquement pour refléter les changements dans nos pratiques, la technologie, les exigences légales ou d'autres facteurs.\n\nLorsque nous apportons des changements matériels :\n• Nous publierons la politique mise à jour sur la plateforme\n• Nous mettrons à jour la date de « Dernière mise à jour »\n• Nous vous informerons par e-mail ou notification sur la plateforme pour les changements importants\n• Nous pouvons demander un nouveau consentement pour certaines activités de traitement\n\nNous vous encourageons à consulter régulièrement cette politique de confidentialité. Votre utilisation continue de la plateforme après les changements constitue une acceptation de la politique mise à jour."
+        },
+        "dpo": {
+          "title": "Délégué à la protection des données",
+          "content": "Nous avons nommé un Délégué à la protection des données (DPO) responsable de la supervision de notre stratégie de protection des données et de sa conformité. Pour toute question relative à la vie privée, préoccupation ou pour exercer vos droits sur les données, veuillez contacter notre DPO."
+        }
+      }
+    },
+    "agreements": {
+      "dialog": {
+        "reviewAndAccept": "Veuillez examiner et accepter cet accord avant de continuer.",
+        "accept": "Accepter et continuer",
+        "accepting": "Acceptation...",
+        "decline": "Refuser"
+      },
+      "seller": {
+        "title": "Accord du Vendeur",
+        "pageDescription": "Conditions s'appliquant lors de la mise en ligne de produits et de la vente via AfriConnect.",
+        "lastUpdated": "Dernière mise à jour",
+        "lastUpdatedDate": "Février 2026",
+        "introduction": "Cet accord du vendeur régit votre utilisation d'AfriConnect en tant que vendeur. En acceptant cet accord, vous confirmez que votre entreprise a l'autorité nécessaire pour vendre les produits listés et que vous vous conformerez aux exigences du marché, de paiement et commerciales.",
+        "acceptanceLabel": "J'ai lu et j'accepte l'Accord du Vendeur.",
+        "sections": {
+          "eligibility": {
+            "title": "Éligibilité",
+            "content": "Vous devez être une entreprise enregistrée ou un représentant autorisé. Vous devez fournir des détails d'enregistrement exacts et maintenir des registres commerciaux valides."
+          },
+          "productListings": {
+            "title": "Listes de produits",
+            "content": "Vous devez fournir des noms de produits, des descriptions, des prix, des niveaux de stock, des détails d'origine et des images exacts. Les annonces trompeuses peuvent être supprimées."
+          },
+          "fulfillment": {
+            "title": "Exécution",
+            "content": "Vous êtes responsable du traitement rapide, de l'expédition et de la coordination de la livraison après confirmation du paiement. Vous devez communiquer les retards rapidement."
+          },
+          "qualityStandards": {
+            "title": "Normes de qualité",
+            "content": "Les produits doivent correspondre aux détails de l'annonce, être légaux au commerce et répondre aux exigences de qualité et de sécurité applicables dans les juridictions concernées."
+          },
+          "feesCommissions": {
+            "title": "Frais et commissions",
+            "content": "Des frais de plateforme et de traitement peuvent s'appliquer aux ventes et aux reversements. L'utilisation continue des fonctionnalités de vendeur indique l'acceptation des grilles tarifaires applicables."
+          },
+          "returnsRefunds": {
+            "title": "Retours et remboursements",
+            "content": "Vous devez coopérer avec les demandes de retour et de remboursement valides basées sur la politique de la plateforme, les enregistrements de transactions et les résultats des litiges."
+          },
+          "prohibitedItems": {
+            "title": "Articles interdits",
+            "content": "Vous ne pouvez pas lister d'articles illégaux, contrefaits, sanctionnés ou restreints. Les violations peuvent entraîner la suppression de l'annonce, la suspension du compte et un signalement légal."
+          },
+          "intellectualProperty": {
+            "title": "Propriété intellectuelle",
+            "content": "Vous garantissez que vous avez des droits sur tout le contenu de l'annonce et les matériaux du produit. Vous accordez à AfriConnect une licence pour afficher et promouvoir vos annonces sur la plateforme."
+          },
+          "accountSuspension": {
+            "title": "Suspension de compte",
+            "content": "AfriConnect peut suspendre ou résilier l'accès d'un vendeur pour fraude, violation de politique, échec des vérifications ou défaillances opérationnelles répétées."
+          },
+          "liabilityIndemnification": {
+            "title": "Responsabilité et indemnisation",
+            "content": "Vous restez responsable de vos produits, de votre conduite commerciale et de votre conformité légale. Vous acceptez d'indemniser AfriConnect contre les réclamations de tiers découlant de vos annonces ou transactions."
+          }
+        }
+      },
+      "buyer": {
+        "title": "Accord de l'Acheteur",
+        "pageDescription": "Conditions s'appliquant lors de l'achat de produits via AfriConnect.",
+        "lastUpdated": "Dernière mise à jour",
+        "lastUpdatedDate": "Février 2026",
+        "introduction": "Cet accord de l'acheteur régit votre utilisation d'AfriConnect en tant qu'acheteur. En acceptant cet accord, vous confirmez que vous êtes autorisé à passer des commandes et que vous respecterez les obligations de paiement et de transaction.",
+        "acceptanceLabel": "J'ai lu et j'accepte l'Accord de l'Acheteur.",
+        "sections": {
+          "purchaseCommitments": {
+            "title": "Engagements d'achat",
+            "content": "Les commandes soumises via la plateforme sont des engagements d'achat fermes, sous réserve des conditions indiquées, de la disponibilité et des résultats des litiges de la plateforme."
+          },
+          "paymentTerms": {
+            "title": "Conditions de paiement",
+            "content": "Vous devez effectuer le paiement en utilisant des méthodes approuvées et fournir des détails de facturation exacts. Les paiements échoués ou annulés peuvent entraîner l'annulation de la commande ou des restrictions de compte."
+          },
+          "deliveryInspection": {
+            "title": "Livraison et inspection",
+            "content": "Vous devez examiner les marchandises livrées rapidement et signaler les problèmes dans le délai de révision applicable, en fournissant des preuves si nécessaire."
+          },
+          "disputes": {
+            "title": "Litiges",
+            "content": "Les litiges doivent être déposés via les canaux de la plateforme. AfriConnect peut examiner les enregistrements et les communications et appliquer des conclusions selon les politiques du marché."
+          },
+          "returns": {
+            "title": "Retours",
+            "content": "Les retours sont soumis aux conditions du vendeur, au type de produit et à la politique de la plateforme. Tous les biens ne sont pas forcément éligibles au retour une fois acceptés ou consommés."
+          },
+          "communication": {
+            "title": "Communication",
+            "content": "Vous acceptez de maintenir une communication professionnelle avec les vendeurs et de répondre rapidement lorsque des détails supplémentaires sur l'achat ou la livraison sont requis."
+          },
+          "accountResponsibilities": {
+            "title": "Responsabilités du compte",
+            "content": "Vous êtes responsable de la sécurité du compte, de l'exactitude des détails du destinataire et de l'utilisation légale de la plateforme. Les activités non autorisées doivent être signalées immédiatement."
+          }
+        }
+      }
+    },
+    "compliance": {
+      "title": "Conformité ZLECAF",
+      "description": "Vérifiez l'éligibilité de vos produits aux avantages de la Zone de libre-échange continentale africaine",
+      "searchByName": "Rechercher par nom",
+      "enterHsCode": "Entrer le code SH",
+      "searchPlaceholder": "Rechercher par nom de produit ou code SH...",
+      "hsCodePlaceholder": "Entrez le code SH à 8 chiffres (ex: 09011100)",
+      "lookup": "Rechercher",
+      "add": "Ajouter",
+      "addAnyway": "Ajouter quand même",
+      "rate": "Taux",
+      "currentRate": "Taux actuel",
+      "categoryA": "Catégorie A",
+      "notCategoryA": "Hors Catégorie A",
+      "notFoundInCategoryA": "Code SH non trouvé en Catégorie A",
+      "notFoundDescription": "Ce produit n'est pas répertorié sous la Catégorie A de la ZLECAF et peut ne pas bénéficier de réductions tarifaires.",
+      "tariffReduction": "Calendrier de réduction tarifaire",
+      "rateSchedule": "Calendrier des taux (2026-2030)",
+      "currentYearRate": "Taux de l'année en cours",
+      "zeroTariffBy2030": "Ce produit aura un tarif de 0% d'ici 2030",
+      "noAfcftaBenefits": "Aucun avantage ZLECAF",
+      "noAfcftaBenefitsDescription": "Ce produit n'est pas répertorié sous la Catégorie A de la ZLECAF et les tarifs standards s'appliquent.",
+      "removeProduct": "Supprimer le produit",
+      "complianceSummary": "Résumé de conformité",
+      "complianceSummaryDescription": "Aperçu du statut d'éligibilité ZLECAF de vos produits",
+      "totalProducts": "Total des produits",
+      "eligible": "Éligible",
+      "notEligible": "Non éligible",
+      "eligibleMessage": "{count} de vos produits sont éligibles aux réductions tarifaires ZLECAF",
+      "scheduleMatchMessage": "{count, plural, one {Le code SH de # produit correspond au calendrier tarifaire sélectionné - vérification des règles d'origine en attente} other {Les codes SH de # produits correspondent au calendrier tarifaire sélectionné - vérification des règles d'origine en attente}}",
+      "yourProducts": "Vos produits",
+      "yourProductsDescription": "Produits enregistrés avec codes SH pour le suivi de la conformité ZLECAF",
+      "addProduct": "Ajouter un produit",
+      "addNewProduct": "Ajouter un nouveau produit",
+      "cancel": "Annuler",
+      "addingProduct": "Ajout du produit...",
+      "productAdded": "Produit ajouté avec succès",
+      "productRemoved": "Produit supprimé avec succès",
+      "failedToAddProduct": "Échec de l'ajout du produit",
+      "failedToRemoveProduct": "Échec de la suppression du produit",
+      "noProductsYet": "Aucun produit ajouté",
+      "noProductsDescription": "Ajoutez vos produits avec les codes SH pour vérifier leur statut de conformité ZLECAF",
+      "addFirstProduct": "Ajouter votre premier produit",
+      "andMoreProducts": "+{count} autres produits",
+      "businessRequired": "Enregistrement d'entreprise requis",
+      "businessRequiredDescription": "Vous devez enregistrer votre entreprise avant de pouvoir vérifier la conformité des produits.",
+      "registerBusiness": "Enregistrer l'entreprise",
+      "whatIsAfcfta": "Qu'est-ce que la ZLECAF ?",
+      "afcftaDescription": "La Zone de libre-échange continentale africaine (ZLECAF) est un accord de libre-échange entre les États membres de l'Union africaine. Les produits de la Catégorie A bénéficient de réductions tarifaires progressives de 2026 à 2030, atteignant un tarif de 0%.",
+      "categoryABadge": "Produits Catégorie A",
+      "learnMoreAfcfta": "En savoir plus sur la ZLECAF",
+      "reductionSchedule": "Calendrier de réduction tarifaire",
+      "reductionScheduleDescription": "Les produits de catégorie A suivent un calendrier de réduction tarifaire graduelle",
+      "year": "Année",
+      "typicalRateReduction": "Taux typique",
+      "rateDisclaimer": "Les taux réels peuvent varier par produit. Consultez les fiches produits individuelles pour les taux spécifiques.",
+      "afcftaCompliance": "Conformité ZLECAF",
+      "afcftaComplianceDescription": "Vérifiez si vos produits sont éligibles aux avantages de la Zone de libre-échange continentale africaine",
+      "noComplianceCheckYet": "Vous n'avez pas encore ajouté de produits pour la vérification de conformité.",
+      "startComplianceCheck": "Commencer la vérification",
+      "manageProducts": "Gérer les produits",
+      "selectCountry": "Sélectionner pays/région",
+      "ethiopia": "Éthiopie",
+      "kenyaEac": "Kenya (EAC)",
+      "countryDescription": "Sélectionnez le pays pour rechercher les calendriers tarifaires",
+      "registerToSaveProducts": "Enregistrez votre entreprise pour sauvegarder les produits dans votre liste.",
+      "notFoundInTariffSchedule": "Code SH introuvable dans le calendrier tarifaire sélectionné",
+      "tariffScheduleCoverage": "Couverture du calendrier tarifaire",
+      "tariffScheduleMatched": "Calendrier tarifaire correspondant",
+      "tariffScheduleNotMatched": "Calendrier tarifaire non correspondant",
+      "noTariffMatchDescription": "Nous n'avons pas pu faire correspondre ce code SH dans le calendrier tarifaire sélectionné. Consultez le livre tarifaire officiel et la règle d'origine spécifique au produit.",
+      "reviewMessage": "{count} de vos produits nécessitent encore une vérification des règles d'origine avant qu'une demande d'origine AfCFTA puisse être présentée.",
+      "needsReview": "Nécessite une vérification",
+      "ruleNotMapped": "Règle non mappée",
+      "rulesOfOrigin": "Règles d'origine",
+      "tariffAndOrigin": "Tarifs et origine",
+      "baseRate": "Taux de base",
+      "tariffCategory": "Catégorie tarifaire",
+      "originRule": "Règle d'origine",
+      "ruleSource": "Source de la règle",
+      "ruleNotMappedDescription": "L'application ne dispose pas encore d'une règle spécifique au produit mappée pour ce code SH. Consultez l'Appendice 2.A.1 avant de présenter une demande d'origine.",
+      "eligibleRuleDescription": "Ce produit a satisfait à une règle fondée sur la valeur évaluée automatiquement.",
+      "notEligibleRuleDescription": "Ce produit n'a pas satisfait à la règle fondée sur la valeur évaluée automatiquement.",
+      "legacyStatus": "Résultat hérité",
+      "legacyStatusDescription": "Cet enregistrement a été créé avant la mise à niveau basée sur les règles et doit être recalculé.",
+      "automaticVnmDescription": "Ce résultat a été calculé automatiquement à partir d'une règle VNM fondée sur la valeur.",
+      "manualReviewDescription": "La règle de ce produit nécessite un examen documentaire ou du processus de production au-delà du calculateur automatique actuel."
+    },
+    "afcfta": {
+      "title": "Demander à l'IA sur la conformité ZLECAF",
+      "description": "Posez des questions fondées sur les documents ZLECAF téléchargés. L'assistant est structuré pour la recherche Qdrant et les réponses basées sur les citations.",
+      "badge": "Structure",
+      "helper": "Les réponses doivent s'appuyer uniquement sur les sources téléchargées. Si les preuves sont manquantes ou contradictoires, l'assistant doit le dire au lieu de deviner.",
+      "placeholder": "Posez une question sur la conformité, ex : Quels documents sont nécessaires pour soutenir une demande de certificat d'origine ZLECAF ?",
+      "sampleQuestions": [
+        "La ZLECAF rend-elle automatiquement ce produit exempt de droits aujourd'hui ?",
+        "De quelles preuves ai-je besoin pour soutenir une demande de certificat d'origine ?",
+        "Un simple réemballage peut-il conférer l'origine ZLECAF selon les règles téléchargées ?"
+      ],
+      "cta": {
+        "ask": "Demander à l'IA",
+        "asking": "Demande en cours..."
+      },
+      "form": {
+        "languageLabel": "Langue",
+        "questionLabel": "Question de conformité"
+      },
+      "validation": {
+        "questionTooShort": "Veuillez entrer une question de conformité plus spécifique.",
+        "invalidQuestion": "Veuillez fournir une question de conformité valide."
+      },
+      "error": {
+        "generic": "Échec de la demande à l'assistant de conformité."
+      },
+      "empty": {
+        "citations": "Aucune citation retournée pour le moment."
+      },
+      "sections": {
+        "answer": "Réponse",
+        "citations": "Citations",
+        "source": "Source"
+      },
+      "mode": {
+        "fullRag": "RAG Complet",
+        "retrievalOnly": "Recherche uniquement"
+      },
+      "status": {
+        "ready": "Prêt",
+        "not_configured": "Non configuré",
+        "no_evidence": "Aucune preuve"
+      }
+    },
+    "aiAssistantPage": {
+      "title": "Assistant IA",
+      "description": "Posez des questions sur la conformité ZLECAF, le score de crédit, les règles d'origine et plus encore.",
+      "unavailable": "Les outils de l'assistant IA sont temporairement indisponibles.",
+      "tabs": {
+        "compliance": "Conformité ZLECAF",
+        "general": "Assistant général"
+      },
+      "general": {
+        "title": "Poser des questions sur la ZLECAF",
+        "description": "Posez des questions générales sur les règles d'origine de la ZLECAF, les calendriers tarifaires, la facilitation du commerce et les sujets connexes. À titre indicatif uniquement - vérifiez auprès des sources officielles de la ZLECAF.",
+        "badge": "Propulsé par l'IA",
+        "helper": "Posez des questions sur la Zone de libre-échange continentale africaine pour obtenir des conseils rapides sur les sujets courants. Confirmez toujours les détails importants avec les publications officielles de la ZLECAF ou votre autorité commerciale locale.",
+        "placeholder": "Posez une question sur la ZLECAF, ex : Comment les règles d'origine s'appliquent-elles sous la ZLECAF ?",
+        "sampleQuestions": [
+          "Comment fonctionnent les règles d'origine sous la ZLECAF ?",
+          "Que signifie la Catégorie A dans les calendriers tarifaires de la ZLECAF ?",
+          "Quels documents de facilitation du commerce sont couramment nécessaires pour les envois ZLECAF ?"
+        ],
+        "cta": {
+          "ask": "Demander à l'IA",
+          "asking": "Demande en cours..."
+        },
+        "form": {
+          "languageLabel": "Langue",
+          "questionLabel": "Votre question"
+        },
+        "validation": {
+          "questionTooShort": "Veuillez entrer une question plus spécifique.",
+          "invalidQuestion": "Veuillez fournir une question valide."
+        },
+        "error": {
+          "generic": "Échec de l'obtention d'une réponse de l'assistant IA."
+        },
+        "sections": {
+          "answer": "Réponse"
+        }
+      }
+    },
+    "originEligibility": {
+      "title": "Éligibilité du certificat d'origine",
+      "description": "Calculez si votre produit répond à la règle des 60% pour l'origine préférentielle sous la ZLECAF",
+      "whatIsTheRule": "Qu'est-ce que la règle des 60% ?",
+      "ruleExplanation": "La règle MaxNOM (Valeur maximale des matières non originaires) stipule que les matières importées utilisées dans la production ne doivent pas dépasser 60% du prix départ usine. Cela signifie qu'au moins 40% de la valeur de votre produit doit provenir du contenu local.",
+      "startCalculation": "Calculer l'éligibilité",
+      "newCalculation": "Nouveau calcul",
+      "reset": "Réinitialiser",
+      "step1Title": "Prix départ usine (EXW)",
+      "step1Description": "Le prix lorsque le produit quitte votre usine, incluant tous les coûts de production",
+      "step2Title": "Matières non originaires (VNM)",
+      "step2Description": "Valeur des composants importés ne provenant pas de votre pays",
+      "step3Title": "Appliquer la formule",
+      "step4Title": "Résultat d'éligibilité",
+      "resultDescription": "Basé sur le seuil maximum de 60%",
+      "productName": "Nom du produit",
+      "productNamePlaceholder": "Entrez le nom du produit (ex: Grains de café, Textiles)",
+      "currency": "Devise",
+      "costOfMaterials": "Coût des matériaux",
+      "costOfMaterialsHint": "Matières premières, composants et pièces utilisés dans la production",
+      "laborCosts": "Coûts de main-d'œuvre",
+      "laborCostsHint": "Salaires des ouvriers de production",
+      "factoryOverheads": "Frais généraux d'usine",
+      "factoryOverheadsHint": "Chauffage, électricité, loyer, entretien de l'équipement",
+      "profitMargin": "Marge de profit",
+      "profitMarginHint": "Votre profit en plus des coûts de production",
+      "totalExWorks": "Prix total départ usine",
+      "vnmExplanationTitle": "Que sont les matières non originaires ?",
+      "vnmExplanation": "Il s'agit des matières, composants ou pièces importés qui n'ont pas été produits dans votre pays. Incluez la valeur en douane plus les frais de transport et d'assurance jusqu'au point d'importation.",
+      "vnmValue": "Valeur totale VNM",
+      "vnmValueHint": "Valeur totale de toutes les matières importées utilisées dans la production",
+      "formula": "Formule",
+      "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+      "result": "Résultat",
+      "maxThreshold": "Seuil maximum : 60%",
+      "eligible": "Éligible",
+      "notEligible": "Non éligible",
+      "eligibleMessage": "Votre produit répond aux exigences des règles d'origine",
+      "eligibleDescription": "Les matières non originaires respectent le seuil de 60%. Votre produit est éligible au traitement préférentiel sous certificat d'origine ZLECAF.",
+      "notEligibleMessage": "Votre produit ne répond pas aux exigences des règles d'origine",
+      "notEligibleDescription": "Les matières non originaires dépassent le seuil de 60%. Pensez à augmenter le contenu local ou à vous approvisionner davantage localement.",
+      "contactUs": "Besoin d'aide pour améliorer votre éligibilité ?",
+      "contactUsDescription": "Notre équipe peut vous aider à identifier des moyens d'augmenter le contenu local et de répondre aux exigences.",
+      "certificateOfOriginEligibility": "Vérification d'éligibilité au certificat d'origine",
+      "vnmPercentage": "Pourcentage VNM",
+      "localContent": "Contenu local",
+      "minLocalContent": "Minimum requis : 40%",
+      "localValueAdded": "Valeur ajoutée locale",
+      "productHsCode": "Product HS Code",
+      "productHsCodePlaceholder": "Enter the product HS code used for the origin rule lookup",
+      "originRule": "Origin Rule",
+      "ruleSource": "Rule Source",
+      "ruleThreshold": "Rule Threshold",
+      "manualReview": "Manual Review",
+      "manualReviewStepTitle": "Manual Rule Review",
+      "manualReviewStepDescription": "Confirm that you reviewed the official rule, insufficient operations, and cumulation requirements",
+      "manualReviewTitle": "Manual review required",
+      "manualReviewBody": "This product's origin rule is not automatically calculable from EXW and VNM alone. You should confirm the official Appendix 2.A.1 rule and the Annex 2 general restrictions before making a claim.",
+      "manualReviewDescription": "This rule needs manual review because the current calculator does not capture tariff-shift or production-process evidence.",
+      "needsReview": "Needs Review",
+      "ruleNotMapped": "Rule Not Mapped",
+      "ruleNotMappedDescription": "The app does not yet have a mapped product-specific rule for this HS code. Review Appendix 2.A.1 before making an origin claim.",
+      "ruleReviewed": "I reviewed the applicable product-specific rule in Appendix 2.A.1.",
+      "insufficientOperationsChecked": "I confirmed the processing is not limited to insufficient operations under Annex 2.",
+      "cumulationConsidered": "I considered cumulation and originating inputs from other State Parties where relevant.",
+      "enterHsCodeFirst": "Enter a product HS code first so the calculator can resolve the rule.",
+      "legacyStatus": "Legacy Result",
+      "yes": "Yes",
+      "no": "No",
+      "saveCalculation": "Enregistrer le calcul",
+      "saving": "Enregistrement...",
+      "calculationSaved": "Calcul enregistré avec succès",
+      "registerToSaveCalculation": "Enregistrez votre entreprise pour sauvegarder ce calcul.",
+      "calculationDeleted": "Calcul supprimé avec succès",
+      "deleteCalculation": "Supprimer le calcul",
+      "failedToSave": "Échec de l'enregistrement du calcul",
+      "failedToDelete": "Échec de la suppression du calcul",
+      "totalCalculations": "Total des calculs",
+      "previousCalculations": "Calculs précédents",
+      "previousCalculationsDescription": "Vos calculs d'éligibilité sauvegardés"
+    },
+    "creditProfile": {
+      "loading": "Chargement du profil de crédit numérique...",
+      "title": "Profil de crédit numérique",
+      "titleReport": "Rapport de profil de crédit numérique",
+      "subtitle": "Établi à partir des transactions du marché, de l'historique d'exécution et de la diversité des acheteurs.",
+      "actions": {
+        "backToProfile": "Retour au profil de crédit",
+        "openBusinessProfile": "Ouvrir le profil d'entreprise",
+        "businessSetup": "Configuration de l'entreprise",
+        "back": "Retour",
+        "printOrSavePdf": "Imprimer / Enregistrer PDF",
+        "downloadableReport": "Rapport téléchargeable"
+      },
+      "badges": {
+        "verifiedSeller": "Vendeur vérifié",
+        "platformActivity": "Profil d'activité de la plateforme"
+      },
+      "access": {
+        "no_business": {
+          "title": "Enregistrer votre entreprise",
+          "message": "Un profil de crédit numérique devient disponible après avoir enregistré et vérifié une entreprise."
+        },
+        "business_missing": {
+          "title": "Dossier d'entreprise non trouvé",
+          "message": "Votre compte est lié à un dossier d'entreprise qui n'est plus disponible."
+        },
+        "pending_verification": {
+          "title": "Vérification en cours",
+          "message": "Votre profil de crédit numérique sera débloqué une fois l'entreprise vérifiée."
+        },
+        "rejected_verification": {
+          "title": "Vérification requise",
+          "message": "Résolvez d'abord la vérification de votre entreprise pour débloquer le profil de crédit numérique."
+        },
+        "not_seller": {
+          "title": "Accès vendeur requis",
+          "message": "Seuls les comptes vendeurs vérifiés peuvent accéder au profil de crédit numérique."
+        },
+        "ready": {
+          "title": "Prêt",
+          "message": "Votre profil de crédit numérique est disponible."
+        }
+      },
+      "common": {
+        "notAvailableYet": "Pas encore disponible"
+      },
+      "summary": {
+        "headline": "{paidOrdersCount} commandes payées à travers {uniqueBuyers} acheteurs",
+        "description": "Ce profil reflète l'activité capturée sur AfriConnect et est conçu comme une fiche de score de la plateforme, pas comme un score de bureau de crédit externe.",
+        "generated": "Généré",
+        "reportPeriodStart": "Début de la période du rapport",
+        "latestProfileActivity": "Dernière activité du profil"
+      },
+      "cards": {
+        "paidTransactionVolume": {
+          "title": "Volume des transactions payées",
+          "description": "Valeur des commandes du marché réglées"
+        },
+        "paidOrders": {
+          "title": "Commandes payées",
+          "description": "{totalOrders} commandes totales suivies"
+        },
+        "uniqueBuyers": {
+          "title": "Acheteurs uniques",
+          "description": "{repeatBuyers} acheteurs récurrents"
+        },
+        "buyerCountries": {
+          "title": "Pays des acheteurs",
+          "description": "{buyersWithBusinessMetadata} acheteurs avec métadonnées d'entreprise liées"
+        },
+        "totalSellerOrders": {
+          "title": "Total des commandes vendeur",
+          "description": "Toutes les commandes attribuées à ce vendeur"
+        },
+        "successfulPaymentRate": {
+          "title": "Taux de paiement réussi",
+          "description": "Paiements réglés parmi les commandes avec enregistrements de paiement"
+        },
+        "averageOrderValue": {
+          "title": "Valeur moyenne des commandes",
+          "description": "Basé sur les commandes du marché réglées"
+        },
+        "recentPaidActivity": {
+          "title": "Activité payée récente",
+          "description": "Activité de la commande réglée la plus récente"
+        },
+        "uniqueBuyersDetailed": {
+          "title": "Acheteurs uniques",
+          "description": "Acheteurs distincts ayant passé des commandes"
+        },
+        "repeatBuyers": {
+          "title": "Acheteurs récurrents",
+          "description": "Acheteurs ayant passé plus d'une commande"
+        },
+        "metadataCoverage": {
+          "title": "Couverture des métadonnées",
+          "description": "{buyersWithBusinessMetadata} acheteurs liés à des dossiers d'entreprise"
+        },
+        "topBuyerConcentration": {
+          "title": "Concentration du principal acheteur",
+          "description": "Part du volume de transactions provenant du plus gros acheteur"
+        }
+      },
+      "empty": {
+        "title": "Pas encore assez d'activité",
+        "description": "Une fois que votre entreprise commencera à recevoir des commandes, ce profil s'étendra automatiquement avec les signaux de transaction, d'exécution et de diversité des acheteurs."
+      },
+      "sections": {
+        "transactionHistory": {
+          "title": "Historique des transactions",
+          "description": "Performance récente des commandes et des paiements sur le marché."
+        },
+        "fulfillment": {
+          "title": "Performance d'exécution",
+          "description": "Performance opérationnelle dérivée du cycle de vie des commandes et des reversements."
+        },
+        "buyerDiversity": {
+          "title": "Diversité des acheteurs"
+        }
+      },
+      "trend": {
+        "window": "{days} jours",
+        "rollingPerformanceWindow": "Fenêtre de performance glissante",
+        "orders": "Commandes",
+        "paidOrders": "Commandes payées",
+        "paidVolume": "Volume payé"
+      },
+      "fulfillment": {
+        "completionRate": "Taux de complétion",
+        "cancellationRate": "Taux d'annulation",
+        "payoutSuccessRate": "Taux de succès des reversements",
+        "ordersCurrentlyProcessing": "Commandes en cours de traitement",
+        "averageFulfillmentCycle": "Cycle d'exécution moyen",
+        "averageFulfillmentCycleValue": "{days} jours",
+        "payoutOutcomeCounts": "Compte des résultats de reversement",
+        "payoutStatuses": {
+          "queued": "En attente",
+          "pending": "En cours",
+          "success": "Réussi",
+          "failed": "Échoué",
+          "reverted": "Inversé"
+        }
+      },
+      "buyerDiversity": {
+        "coverage": {
+          "complete": "La diversité des acheteurs est basée sur les dossiers d'entreprise des acheteurs liés.",
+          "partial": "La diversité des acheteurs est basée uniquement sur les acheteurs avec des dossiers d'entreprise liés ; certains acheteurs sont donc exclus du mix."
+        }
+      },
+      "breakdowns": {
+        "countLabel": "{count} acheteurs",
+        "buyerCountries": {
+          "title": "Pays des acheteurs",
+          "empty": "La répartition par pays apparaîtra après que les acheteurs auront lié leurs métadonnées d'entreprise."
+        },
+        "buyerCategories": {
+          "title": "Catégories des acheteurs",
+          "empty": "La répartition par catégorie apparaîtra après que les acheteurs auront lié leurs métadonnées d'entreprise."
+        },
+        "topBuyers": {
+          "title": "Principaux acheteurs",
+          "empty": "Les principaux acheteurs apparaîtront une fois que les commandes seront passées.",
+          "orders": "{count} commandes"
+        }
+      },
+      "methodology": {
+        "title": "Note sur la méthodologie",
+        "description": "Ce rapport est généré à partir de l'activité de premier niveau du marché AfriConnect.",
+        "points": {
+          "transactionVolume": "Le volume de transactions est basé sur les commandes vendeurs liées à des paiements réglés sur la plateforme.",
+          "fulfillment": "L'exécution utilise le statut de la commande et les résultats des reversements comme signaux de performance opérationnelle.",
+          "buyerDiversity": "La diversité des acheteurs est basée sur les dossiers d'entreprise liés ; une métadonnée incomplète réduit donc la couverture."
+        }
+      },
+      "report": {
+        "generatedOn": "Généré le {date}",
+        "latestActivity": "Dernière activité : {date}",
+        "reportPeriod": "Période du rapport : {start} — {end}",
+        "category": "Catégorie",
+        "country": "Pays",
+        "verifiedSince": "Vérifié depuis",
+        "sectionProfileSummary": "1. Résumé du profil",
+        "sectionTransactionHistory": "2. Historique des transactions",
+        "sectionFulfillment": "3. Performance de traitement",
+        "sectionBuyerDiversity": "4. Diversité des acheteurs",
+        "sectionMethodology": "5. Note méthodologique",
+        "rollingPerformanceWindows": "Fenêtres de performance glissantes",
+        "payoutOutcomes": "Résultats des paiements",
+        "topBuyersSection": "Principaux acheteurs",
+        "buyerCountriesSection": "Pays des acheteurs",
+        "buyerCategoriesSection": "Catégories des acheteurs",
+        "noData": "Aucune donnée disponible",
+        "orders": "{count} commandes",
+        "buyerShare": "{count} acheteurs ({share}%)"
+      }
+    },
+    "inventory": {
+      "title": "Inventaire",
+      "description": "Suivez les niveaux de stock, ajustez les quantités et définissez des alertes de réapprovisionnement",
+      "summary": {
+        "totalProducts": "Total des produits",
+        "totalUnits": "Unités totales",
+        "lowStock": "Stock bas",
+        "outOfStock": "Rupture de stock"
+      },
+      "tabs": {
+        "inventory": "Inventaire",
+        "activity": "Activité"
+      },
+      "searchPlaceholder": "Rechercher par produit ou SKU...",
+      "filterStatus": "Filtrer le statut",
+      "status": {
+        "in_stock": "En stock",
+        "low_stock": "Stock bas",
+        "out_of_stock": "En rupture",
+        "inStock": "En stock",
+        "lowStock": "Stock bas",
+        "outOfStock": "Rupture de stock"
+      },
+      "table": {
+        "product": "Produit",
+        "sku": "SKU",
+        "onHand": "En main",
+        "threshold": "Seuil stock bas",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "actions": {
+        "adjust": "Ajuster",
+        "thresholds": "Seuils",
+        "history": "Historique"
+      },
+      "noSku": "Pas de SKU",
+      "noResults": "Aucun article d'inventaire ne correspond à vos filtres.",
+      "activityTitle": "Activité récente",
+      "activity": {
+        "date": "Date",
+        "product": "Produit",
+        "type": "Type",
+        "quantity": "Qté",
+        "newQuantity": "Nouv. qté",
+        "reason": "Raison",
+        "none": "Aucune",
+        "empty": "Pas encore d'activité d'inventaire."
+      },
+      "types": {
+        "restock": "Réapprovisionnement",
+        "adjustment": "Ajustement",
+        "return": "Retour",
+        "correction": "Correction",
+        "sale": "Vente"
+      },
+      "adjustDialog": {
+        "title": "Ajuster l'inventaire",
+        "description": "Enregistrer un changement de stock pour ce produit.",
+        "type": "Type d'ajustement",
+        "delta": "Changement de quantité",
+        "deltaPlaceholder": "Utilisez des valeurs négatives pour les réductions",
+        "quickAdd": "Ajouter 1",
+        "quickRemove": "Retirer 1",
+        "reason": "Raison",
+        "reasonPlaceholder": "Note optionnelle pour ce changement",
+        "save": "Enregistrer l'ajustement"
+      },
+      "historyDialog": {
+        "title": "Historique d'inventaire",
+        "description": "Dernières transactions d'inventaire pour ce produit."
+      },
+      "thresholdDialog": {
+        "title": "Paramètres de réapprovisionnement",
+        "description": "Définissez des alertes de stock bas et des quantités de réapprovisionnement.",
+        "lowStock": "Seuil de stock bas",
+        "lowStockPlaceholder": "ex: 5",
+        "reorder": "Quantité de réapprovisionnement",
+        "reorderPlaceholder": "ex: 25",
+        "save": "Enregistrer les paramètres"
+      },
+      "invalidAdjustment": "Entrez un ajustement non nul.",
+      "adjustmentSaved": "Ajustement d'inventaire enregistré.",
+      "invalidThreshold": "Le seuil de stock bas doit être de 0 ou plus.",
+      "invalidReorder": "La quantité de réapprovisionnement doit être de 0 ou plus.",
+      "thresholdsSaved": "Paramètres de réapprovisionnement enregistrés."
+    }
+  }
+}

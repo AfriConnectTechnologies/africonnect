@@ -1,0 +1,1668 @@
+{
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "save": "አስቀምጥ",
+    "cancel": "ሰርዝ",
+    "delete": "ሰርዝ",
+    "edit": "አርትዕ",
+    "search": "ፈልግ",
+    "clearFilters": "ማጣሪያዎችን አጽዳ",
+    "close": "ዝጋ",
+    "back": "ተመለስ",
+    "next": "ቀጣይ",
+    "submit": "አስገባ",
+    "confirm": "አረጋግጥ",
+    "yes": "አዎ",
+    "no": "አይ",
+    "all": "ሁሉም",
+    "none": "ምንም",
+    "actions": "ድርጊቶች",
+    "status": "ሁኔታ",
+    "created": "ተፈጠረ",
+    "updated": "ተዘምኗል",
+    "details": "ዝርዝሮች",
+    "viewDetails": "ዝርዝሮችን ይመልከቱ",
+    "account": "መለያ",
+    "soon": "በቅርቡ",
+    "admin": "አስተዳዳሪ",
+    "filters": "ማጣሪያዎች",
+    "noDescription": "መግለጫ የለም",
+    "settingUp": "መለያዎን በማዋቀር ላይ..."
+  },
+  "navigation": {
+    "dashboard": "ዳሽቦርድ",
+    "marketplace": "የገበያ ቦታ",
+    "products": "ምርቶቼ",
+    "inventory": "እቃ አስተዳደር",
+    "messages": "መልዕክቶች",
+    "cart": "ጋሪ",
+    "orders": "ትዕዛዞች",
+    "settings": "ቅንብሮች",
+    "billing": "ክፍያ",
+    "myBusiness": "ንግዴ",
+    "creditProfile": "የክሬዲት መገለጫ",
+    "registerBusiness": "ንግድ ያረጋግጡ",
+    "verifyBusinessLabel": "ንግድዎን ያረጋግጡ",
+    "applyToSell": "ለመሸጥ ያመልክቱ",
+    "manageUsers": "ተጠቃሚዎችን አስተዳድር",
+    "manageBusinesses": "ንግዶችን አስተዳድር",
+    "manageSellerApplications": "የሻጭ ማመልከቻዎች",
+    "manageProducts": "ምርቶችን አስተዳድር",
+    "manageRefunds": "ተመላሾችን አስተዳድር",
+    "manageBanks": "ባንኮችን አስተዳድር",
+    "bankPortfolio": "የባንክ ፖርትፎሊዮ",
+    "bankReferrals": "የባንክ ሪፈራሎች",
+    "bankAnalytics": "የባንክ ትንታኔ",
+    "compliance": "የAfCFTA ተገዢነት",
+    "aiAssistant": "AI ረዳት",
+    "toggleMenu": "ምናሌ ቀያይር",
+    "toggleSidebar": "ጎን አሞሌ ቀያይር"
+  },
+  "chat": {
+    "messages": "መልዕክቶች",
+    "messagesDescription": "ከገዢዎች እና ከሻጮች ጋር ያሉ ውይይቶችዎን ይመልከቱ እና ያስተዳድሩ",
+    "conversations": "ውይይቶች",
+    "conversation": "ውይይት",
+    "contactSeller": "ሻጩን ያግኙ",
+    "messageBusiness": "ንግዱን ያሳውቁ",
+    "noMessages": "እስካሁን ምንም መልዕክቶች የሉም",
+    "typeMessage": "መልዕክት ይጻፉ...",
+    "startConversation": "ከምርት ገጽ ሻጭን በማግኘት ውይይት ይጀምሩ",
+    "selectConversation": "ውይይት ይምረጡ",
+    "selectConversationDescription": "መልዕክቶችን ለማየት ከዝርዝሩ ውይይት ይምረጡ",
+    "loadingConversations": "ውይይቶችን በመጫን ላይ...",
+    "sendMessage": "መልዕክት ላክ",
+    "attachFile": "ፋይል አያይዝ",
+    "typing": "በመጻፍ ላይ..."
+  },
+  "marketplace": {
+    "title": "የገበያ ቦታ",
+    "description": "በመድረኩ ላይ ካሉ ንግዶች ምርቶችን ያስሱ",
+    "browseProducts": "ምርቶችን ያስሱ",
+    "showingProducts": "{count} ምርት{count, plural, one {} other {ዎች}} እያሳየ ነው",
+    "loadingProducts": "ምርቶችን በመጫን ላይ...",
+    "noProducts": "ምንም ምርቶች አልተገኙም",
+    "noProductsYet": "እስካሁን በገበያ ቦታ ላይ ምንም ምርቶች የሉም።",
+    "tryAdjustingFilters": "ማጣሪያዎችን ወይም የፍለጋ ቃላትን ያስተካክሉ።",
+    "searchPlaceholder": "ምርቶችን ይፈልጉ...",
+    "allCategories": "ሁሉም ምድቦች",
+    "allCountries": "ሁሉም አገራት",
+    "sortBy": "ደርድር በ",
+    "sortNewest": "አዲስ",
+    "sortPriceAsc": "ዋጋ: ዝቅተኛ ወደ ከፍተኛ",
+    "sortPriceDesc": "ዋጋ: ከፍተኛ ወደ ዝቅተኛ",
+    "outOfStock": "ክምችት አልቋል",
+    "inStock": "{count} በክምችት ውስጥ",
+    "inStockCap": "1000+ በክምችት ውስጥ",
+    "price": "ዋጋ",
+    "category": "ምድብ",
+    "country": "አገር",
+    "clearAllFilters": "ሁሉንም ማጣሪያዎች አጽዳ",
+    "verify": {
+      "businessBeforeAdd": "ምርቶችን ወደ ጋሪዎ ከመጨመርዎ በፊት ንግድዎን ያረጋግጡ።",
+      "completeBusinessBeforeAdd": "ምርቶችን ወደ ጋሪዎ ከመጨመርዎ በፊት የንግድ ማረጋገጫውን ያጠናቅቁ።"
+    }
+  },
+  "products": {
+    "title": "ምርቶቼ",
+    "description": "የምርት ዝርዝሮችዎን ያስተዳድሩ",
+    "addProduct": "ምርት ጨምር",
+    "allProducts": "ሁሉም ምርቶች",
+    "searchDescription": "የሚፈልጉትን ለማግኘት ምርቶችዎን ይፈልጉ እና ያጣሩ",
+    "searchPlaceholder": "ምርቶችን ይፈልጉ...",
+    "filterByStatus": "በሁኔታ አጣራ",
+    "allStatuses": "ሁሉም ሁኔታዎች",
+    "noProducts": "እስካሁን ምንም ምርቶች የሉም። ለመጀመር የመጀመሪያ ምርትዎን ያክሉ።",
+    "noMatchingProducts": "ከፍለጋ መስፈርትዎ ጋር የሚዛመድ ምንም ምርት የለም።",
+    "productName": "የምርት ስም",
+    "enterProductName": "የምርት ስም ያስገቡ",
+    "descriptionLabel": "መግለጫ",
+    "describeProduct": "ምርትዎን ይግለጹ",
+    "price": "ዋጋ",
+    "stockQuantity": "የክምችት ብዛት",
+    "quantity": "ብዛት",
+    "sku": "SKU",
+    "skuPlaceholder": "ለምሳሌ፣ AC-COF-001",
+    "lowStockThreshold": "ዝቅተኛ ክምችት ገደብ",
+    "reorderQuantity": "የዳግም መሙላት ብዛት",
+    "category": "ምድብ",
+    "categoryPlaceholder": "ለምሳሌ ኤሌክትሮኒክስ",
+    "originCountry": "የመነሻ አገር",
+    "countryPlaceholder": "ለምሳሌ ኢትዮጵያ",
+    "minOrderQty": "ዝቅተኛ የትዕዛዝ ብዛት",
+    "status": "ሁኔታ",
+    "active": "ንቁ",
+    "inactive": "ንቁ ያልሆነ",
+    "image": "ምስል",
+    "images": "ምስሎች",
+    "addImages": "ምስሎች ጨምር",
+    "addNewProduct": "አዲስ ምርት ጨምር",
+    "enterDetailsStep": "ለመጀመር የምርት ዝርዝሮችን ያስገቡ።",
+    "addImagesStep": "ምርትዎ እንዲደምቅ ምስሎችን ያክሉ።",
+    "productDetails": "የምርት ዝርዝሮች",
+    "nextAddImages": "ቀጣይ: ምስሎች ጨምር",
+    "creating": "በመፍጠር ላይ...",
+    "skipForNow": "ለአሁን ዝለል",
+    "completeListing": "ዝርዝር ጨርስ",
+    "editProduct": "ምርት አርትዕ",
+    "updateDetails": "የምርት ዝርዝሮችን ያዘምኑ እና ምስሎችን ያስተዳድሩ።",
+    "saveChanges": "ለውጦችን አስቀምጥ",
+    "deleteProduct": "ምርት ሰርዝ",
+    "deleteConfirmation": "ይህን ምርት መሰረዝ እንደሚፈልጉ እርግጠኛ ነዎት? ይህ ሁሉንም ተያያዥ ምስሎችንም ይሰርዛል። ይህ እርምጃ መቀልበስ አይቻልም።",
+    "firstProductPricingPromptTitle": "የመጀመሪያ ምርትዎ ተለቋል",
+    "firstProductPricingPromptDescription": "ጥሩ ጅምር! ተጨማሪ የሽያጭ ባህሪያትን ለመክፈት የዋጋ ገጹን ይጎብኙ።",
+    "firstProductPricingPromptStay": "በኋላ እመለሳለሁ",
+    "firstProductPricingPromptGo": "ወደ ዋጋ ገጽ ሂድ",
+    "subscriptionRequiredPromptTitle": "ደንበኝነት ያስፈልጋል",
+    "subscriptionRequiredPromptDescription": "ሌላ ምርት ለመጨመር ንቁ የክፍያ ደንበኝነት ያስፈልጋል። ለመቀጠል እቅድ ይምረጡ።",
+    "subscriptionRequiredPromptStay": "አሁን አይደለም",
+    "subscriptionRequiredPromptGo": "ዋጋን ይመልከቱ",
+    "currencyHint": "USD አስፈላጊ ነው እና እንደ ዋና ዋጋ ይታያል። ETB እና KSH እሴቶች በቀጥታ የልውውጥ መጠኖች ሊሞሉ ይችላሉ እና በማንኛውም ጊዜ ማስተካከል ይችላሉ።",
+    "ratesUpdated": "የመጠን ዝማኔ: {date}.",
+    "usdRequired": "የUSD ዋጋ አስፈላጊ ነው እና ከ0 በላይ መሆን አለበት።",
+    "etbRequired": "የETB ዋጋ አስፈላጊ ነው እና ከ0 በላይ መሆን አለበት።",
+    "kshInvalid": "የKSH ዋጋ 0 ወይም ከዚያ በላይ መሆን አለበት።"
+  },
+  "orders": {
+    "title": "ትዕዛዞች",
+    "description": "ግዢዎችዎን እና ሽያጮችዎን ያስተዳድሩ",
+    "purchases": "ግዢዎች",
+    "sales": "ሽያጮች",
+    "myPurchases": "ግዢዎቼ",
+    "mySales": "ሽያጮቼ",
+    "purchasesDescription": "ከሌሎች ንግዶች ያዘዙዋቸው ትዕዛዞች",
+    "salesDescription": "ለምርቶችዎ ከሌሎች ንግዶች የተደረጉ ትዕዛዞች",
+    "searchPlaceholder": "ትዕዛዞችን ይፈልጉ...",
+    "filterByStatus": "በሁኔታ አጣራ",
+    "allStatuses": "ሁሉም ሁኔታዎች",
+    "pending": "በመጠባበቅ ላይ",
+    "processing": "በሂደት ላይ",
+    "completed": "ተጠናቋል",
+    "cancelled": "ተሰርዟል",
+    "order": "ትዕዛዝ",
+    "seller": "ሻጭ",
+    "buyer": "ገዢ",
+    "amount": "መጠን",
+    "totalAmount": "ጠቅላላ መጠን",
+    "noPurchasesYet": "እስካሁን ምንም ግዢዎች የሉም። በገበያ ቦታ ላይ መግዛት ይጀምሩ!",
+    "noSalesYet": "እስካሁን ምንም ሽያጮች የሉም። መሸጥ ለመጀመር ምርቶችን ይዘርዝሩ!",
+    "noMatchingOrders": "ከፍለጋ መስፈርትዎ ጋር የሚዛመድ ምንም ትዕዛዝ የለም።",
+    "orderPlacedOn": "ትዕዛዙ በ{date} ተደረገ",
+    "orderItems": "የትዕዛዝ ዕቃዎች",
+    "unknownProduct": "ያልታወቀ ምርት",
+    "loadingOrder": "ትዕዛዝ በመጫን ላይ...",
+    "loadingOrderDetails": "እባክዎ የትዕዛዙን ዝርዝር እስከምናገኝ ይጠብቁ።",
+    "cancelOrder": "ትዕዛዝ ሰርዝ",
+    "cancelOrderConfirmation": "ይህን ትዕዛዝ መሰረዝ እንደሚፈልጉ እርግጠኛ ነዎት? ይህ እርምጃ መቀልበስ አይቻልም።",
+    "keepOrder": "ትዕዛዙን አቆይ",
+    "markAsProcessing": "በሂደት ላይ አድርግ",
+    "markAsCompleted": "ተጠናቋል አድርግ",
+    "trackAndManage": "ግዢዎችዎን እና ሽያጮችዎን ይከታተሉ እና ያስተዳድሩ"
+  },
+  "business": {
+    "registerTitle": "ንግድዎን ያስመዝግቡ",
+    "registerDescription": "በገበያ ቦታ ላይ መሸጥ ለመጀመር የንግድ ፕሮፋይል ይፍጠሩ",
+    "businessInformation": "የንግድ መረጃ",
+    "businessInfoDescription": "ስለ ንግድዎ ዝርዝሮችን ያቅርቡ። ምዝገባዎ ከመነቃቃቱ በፊት በቡድናችን ይገመገማል።",
+    "businessName": "የንግድ ስም",
+    "enterBusinessName": "የንግድ ስምዎን ያስገቡ",
+    "description": "መግለጫ",
+    "businessDescription": "አጭር የንግድ መግለጫ",
+    "descriptionHelp": "ንግድዎ ምን እንደሚያደርግ እና ምን ምርቶች/አገልግሎቶች እንደሚያቀርቡ ይግለጹ።",
+    "country": "አገር",
+    "selectCountry": "አገር ይምረጡ",
+    "city": "ከተማ",
+    "enterCity": "ከተማ ያስገቡ",
+    "address": "አድራሻ",
+    "businessAddress": "የንግድ አድራሻ",
+    "category": "የንግድ ምድብ",
+    "selectCategory": "ምድብ ይምረጡ",
+    "phone": "ስልክ ቁጥር",
+    "phonePlaceholder": "+251 xxx xxx xxxx",
+    "website": "ድረ-ገጽ",
+    "websitePlaceholder": "https://example.com",
+    "registering": "በማስመዝገብ ላይ...",
+    "registrationDocuments": "የምዝገባ ሰነዶች",
+    "businessLicence": "የንግድ ፍቃድ",
+    "businessLicenceNumber": "የንግድ ፍቃድ ቁጥር",
+    "businessLicenceNumberPlaceholder": "የፍቃድ ቁጥር ያስገቡ",
+    "memoOfAssociation": "የማህበር ህግ ማስታወሻ",
+    "tinCertificate": "የግብር መለያ ማረጋገጫ",
+    "tinCertificateNumber": "የግብር መለያ ቁጥር",
+    "tinCertificateNumberPlaceholder": "የግብር መለያ ቁጥር ያስገቡ",
+    "hasImportExportPermit": "የውጭ ገበያ ፍቃድ አለዎት?",
+    "hasImportExportPermitPlaceholder": "ምረጥ...",
+    "hasImportExportPermitYes": "አዎ",
+    "hasImportExportPermitNo": "አይ",
+    "importExportPermit": "የውጭ ገበያ ፍቃድ",
+    "importExportPermitNumber": "የፍቃድ ቁጥር",
+    "importExportPermitNumberPlaceholder": "የፍቃድ ቁጥር ያስገቡ (አማራጭ)",
+    "upload": "ጫን",
+    "uploaded": "ተጫነ",
+    "sellerAgreementLabel": "አንብቤ እና ተስማምቻለሁ በ",
+    "sellerAgreementLink": "የሻጭ ስምምነት",
+    "sellerAgreementRequired": "ለሽያጭ ለማመልከት የሻጭ ስምምነቱን መቀበል አለብዎት።",
+    "buyerVerificationTitle": "ንግድዎን ያረጋግጡ",
+    "buyerVerificationDescription": "መለያዎ ከገበያ ቦታው እንዲገዛ የንግድዎን ዝርዝር እና ሰነዶች ያቅርቡ።",
+    "buyerVerificationCardTitle": "የገዢ ንግድ ማረጋገጫ",
+    "buyerVerificationCardDescription": "በAfriConnect ላይ ገዢዎችም የተረጋገጡ ንግዶች መሆን አለባቸው። ሰነዶችዎን አንድ ጊዜ ያቅርቡ እና ቡድናችን ይገምግማቸዋል።",
+    "buyerVerificationDocumentsTitle": "የማረጋገጫ ሰነዶች",
+    "buyerVerificationDocumentsDescription": "ግዢዎች ከመንቃት በፊት ንግድዎን ለማረጋገጥ የምንፈልጋቸውን ሰነዶች ያስገቡ።",
+    "buyerVerificationSubmitting": "በመላክ ላይ...",
+    "submitBuyerVerification": "ለማረጋገጫ ያቅርቡ",
+    "buyerVerificationSubmitted": "የንግድ ማረጋገጫው በተሳካ ሁኔታ ተልኳል። በቅርቡ እንገምግማለን።",
+    "buyerVerificationFailed": "የንግድ ማረጋገጫ ማስገባት አልተሳካም።",
+    "sellerApplicationTitle": "ለመሸጥ ያመልክቱ",
+    "sellerApplicationDescription": "ንግድዎ ከተረጋገጠ በኋላ የንግድ ሰነዶችን እንደገና ሳያቀርቡ ለሻጭነት መዳረሻ ማመልከት ይችላሉ።",
+    "sellerApplicationCardTitle": "የሻጭ ማመልከቻ",
+    "sellerApplicationCardDescription": "የሻጭነት መዳረሻ ከንግድ ማረጋገጫ ተለይቶ ይገመገማል። ለመሸጥ ዝግጁ ሲሆኑ የሻጭ ስምምነቱን ይቀበሉ እና ማመልከቻዎን ያስገቡ።",
+    "businessVerificationStatusTitle": "የንግድ ማረጋገጫ",
+    "sellerApplicationBusinessVerified": "ንግድዎ ተረጋግጧል እና ለሻጭ ማመልከቻ ግምገማ ዝግጁ ነው።",
+    "sellerApplicationBusinessPending": "ለመሸጥ ከማመልከትዎ በፊት ንግድዎ መረጋገጥ አለበት።",
+    "sellerApplicationStatusTitle": "የሻጭ መዳረሻ ሁኔታ",
+    "sellerApplicationApproved": "የሻጭ መዳረሻ ለዚህ መለያ ንቁ ነው።",
+    "sellerApplicationPending": "የሻጭ ማመልከቻዎ በግምገማ ላይ ነው።",
+    "sellerApplicationRejected": "የሻጭ ማመልከቻዎ ተቀባይነት አላገኘም። መስፈርቶቹን ይመልከቱ እና ዝግጁ ሲሆኑ እንደገና ያመልክቱ።",
+    "sellerApplicationNotApplied": "ገና ለመሸጥ አላመለከቱም።",
+    "sellerApplicationReady": "ለማመልከት ዝግጁ",
+    "sellerApplicationRequirementsTitle": "ቀጣይ የሚሆነው",
+    "sellerApplicationRequirementBusiness": "ንግድዎ አስቀድሞ የተረጋገጠ መሆን አለበት።",
+    "sellerApplicationRequirementAgreement": "የአሁኑን የሻጭ ስምምነት ይመለከታሉ እና ይቀበላሉ።",
+    "sellerApplicationRequirementReview": "የሻጭ መዳረሻ ከመሰጠቱ በፊት አስተዳዳሪ ማመልከቻዎን ይገመግማል።",
+    "sellerApplicationSubmitting": "በማስገባት ላይ...",
+    "sellerApplicationApply": "ለመሸጥ ያመልክቱ",
+    "sellerApplicationReapply": "ዳግም ለመሸጥ ያመልክቱ",
+    "sellerApplicationManageProducts": "ምርቶችን ያስተዳድሩ",
+    "sellerApplicationOpenBusiness": "የንግድ ፕሮፋይልን ይክፈቱ",
+    "sellerApplicationSubmitted": "የሻጭ ማመልከቻ በተሳካ ሁኔታ ተልኳል።",
+    "sellerApplicationFailed": "የሻጭ ማመልከቻን ማስገባት አልተሳካም።",
+    "sellerApplicationRequiresVerifiedBusiness": "ለመሸጥ ከማመልከትዎ በፊት ንግድዎ መረጋገጥ አለበት።",
+    "verificationStatus": {
+      "pending": "በማረጋገጥ ላይ",
+      "verified": "ተረጋግጧል",
+      "rejected": "ተቀባይነት አላገኘም"
+    },
+    "sellerStatus": {
+      "not_applied": "አላመለከቱም",
+      "pending": "በግምገማ ላይ",
+      "approved": "ጸድቋል",
+      "rejected": "ተቀባይነት አላገኘም"
+    },
+    "profile": {
+      "sellerDescription": "የንግድ ፕሮፋይልዎን፣ ማረጋገጫዎን እና የሻጭ አገልግሎቶችን ያስተዳድሩ",
+      "buyerDescription": "የንግድ ፕሮፋይልዎን፣ ማረጋገጫዎን እና የሻጭ ማመልከቻዎን ያስተዳድሩ",
+      "editProfile": "ፕሮፋይል ያርትዑ",
+      "businessProfileTitle": "የንግድ ፕሮፋይል",
+      "editDescription": "ከዚህ በታች ያለውን የንግድ መረጃ ያዘምኑ",
+      "viewDescription": "የንግድዎ ዝርዝር እና የመገናኛ መረጃ",
+      "verificationPendingMessage": "ንግድዎ በቡድናችን ግምገማ ላይ ነው። ከጸደቀ በኋላ የመግዛት መዳረሻ ይከፈታል።",
+      "verificationVerifiedMessage": "ንግድዎ ተረጋግጧል። አሁን ምርቶችን ወደ ጋሪዎ ማከል እና ትዕዛዝ ማድረግ ይችላሉ።",
+      "verificationRejectedMessage": "የንግድዎ ማረጋገጫ አልጸደቀም። ዳግም ለማስገባት ከታች ያለውን የንግድ መረጃ እና ሰነዶች ያዘምኑ።",
+      "sellerRequiresVerifiedMessage": "ለመሸጥ ከማመልከትዎ በፊት በመጀመሪያ ንግድዎን ያረጋግጡ።",
+      "sellerApprovedMessage": "የሻጭ መዳረሻ ለዚህ መለያ ንቁ ነው። ምርቶችን፣ ክምችትን እና ክፍያዎችን ማስተዳደር ይችላሉ።",
+      "sellerPendingMessage": "የሻጭ ማመልከቻዎ የአስተዳዳሪ ግምገማን በመጠባበቅ ላይ ነው።",
+      "sellerRejectedMessage": "የሻጭ ማመልከቻዎ ተቀባይነት አላገኘም። የሻጭ ስምምነቱን ይመልከቱ እና እንደገና ያመልክቱ።",
+      "sellerReadyMessage": "ንግድዎ ተረጋግጧል። አሁን የንግድ ሰነዶችን ዳግም ሳያቀርቡ ለመሸጥ ማመልከት ይችላሉ።",
+      "verificationDocumentsRejectedDescription": "እነዚህን መስኮች ማዘምን እና ማስቀመጥ ንግድዎን ለግምገማ እንደገና ያስገባዋል።",
+      "verificationDocumentsDescription": "ንግድዎ በፍጥነት እንዲገመገም የምዝገባ ሰነዶችዎን ወቅታዊ ያድርጉ።",
+      "saving": "በማስቀመጥ ላይ...",
+      "saveChanges": "ለውጦችን ያስቀምጡ",
+      "location": "አካባቢ",
+      "resubmitBadge": "ለዳግም ማስገባት ሰነዶቹን ያዘምኑ እና ያስቀምጡ",
+      "documentUploaded": "ሰነድ ተጭኗል",
+      "documentMissing": "ሰነድ የለም",
+      "licenceNumber": "የፈቃድ ቁጥር: {number}",
+      "tinNumber": "የTIN ቁጥር: {number}",
+      "permitUploaded": "ፈቃድ ተጭኗል",
+      "permitMissing": "ፈቃድ ገና አልተጫነም",
+      "notProvided": "አልቀረበም",
+      "permitNumber": "የፈቃድ ቁጥር: {number}",
+      "profileUpdated": "የንግድ ፕሮፋይል በተሳካ ሁኔታ ተዘምኗል",
+      "profileUpdateFailed": "ንግድን ማዘምን አልተሳካም",
+      "payoutSettingsTitle": "የክፍያ መቀበያ ቅንብሮች",
+      "payoutSettingsDescription": "የገበያ ቦታ ክፍያዎችን ለመቀበል የባንክ ዝርዝሮችዎን ያክሉ።",
+      "bank": "ባንክ",
+      "selectBank": "ባንክ ይምረጡ",
+      "loadingBanks": "ባንኮች በመጫን ላይ...",
+      "unableToLoadBanks": "ባንኮችን አሁን መጫን አልተቻለም።",
+      "accountName": "የመለያ ስም",
+      "accountNumber": "የመለያ ቁጥር",
+      "payoutEnabled": "ክፍያ መቀበል ነቅቷል",
+      "payoutNotEnabled": "ክፍያ መቀበል ገና አልነቃም",
+      "savePayoutSettings": "የክፍያ መቀበያ ቅንብሮችን ያስቀምጡ",
+      "payoutSettingsUpdated": "የክፍያ መቀበያ ቅንብሮች ተዘምነዋል",
+      "payoutSettingsUpdateFailed": "የክፍያ መቀበያ ቅንብሮችን ማዘምን አልተሳካም",
+      "creditProfileTitle": "ዲጂታል የክሬዲት ፕሮፋይል",
+      "creditProfileDescription": "የግብይት ታሪክዎን፣ የማስፈጸሚያ አፈጻጸምዎን እና የገዢዎች ልዩነትን በአንድ የሻጭ ሪፖርት ውስጥ ይመልከቱ።",
+      "creditProfileAvailability": "ንግድዎ ከተረጋገጠ በኋላ ይገኛል። ለማጋራት ሊታተም የሚችል ሪፖርትም ማውጣት ይችላሉ።",
+      "openCreditProfile": "የክሬዲት ፕሮፋይልን ይክፈቱ"
+    }
+  },
+  "cart": {
+    "title": "የግዢ ጋሪ",
+    "description": "ከመክፈልዎ በፊት ዕቃዎችዎን ይገምግሙ",
+    "emptyCart": "ጋሪዎ ባዶ ነው",
+    "emptyCartDescription": "ምርቶችን ለማግኘት ገበያ ቦታውን ያስሱ",
+    "browseMarketplace": "ገበያ ቦታን ያስሱ",
+    "subtotal": "ንዑስ ድምር",
+    "total": "ጠቅላላ",
+    "checkout": "ክፈል",
+    "removeItem": "ዕቃ አስወግድ",
+    "updateQuantity": "ብዛት ያዘምኑ",
+    "buyerAgreementRequired": "ከመክፈልዎ በፊት የገዢ ስምምነቱን መቀበል አለብዎት።"
+  },
+  "dashboard": {
+    "title": "ዳሽቦርድ",
+    "welcome": "እንኳን ደህና ተመለሱ! የትዕዛዞችዎ አጠቃላይ እይታ ይኸውና።",
+    "welcomeBack": "እንኳን ደህና ተመለሱ፣",
+    "overview": "አጠቃላይ እይታ",
+    "recentOrders": "የቅርብ ጊዜ ትዕዛዞች",
+    "recentProducts": "የቅርብ ጊዜ ምርቶች",
+    "quickStats": "ፈጣን ስታቲስቲክስ",
+    "totalRevenue": "ጠቅላላ ገቢ",
+    "totalOrders": "ጠቅላላ ትዕዛዞች",
+    "totalProducts": "ጠቅላላ ምርቶች",
+    "pendingOrders": "በመጠባበቅ ላይ ያሉ ትዕዛዞች",
+    "discoverProducts": "ምርቶችን ያስሱ",
+    "browseDescription": "በአፍሪካ ያሉ ንግዶች ምርቶችን ያስሱ"
+  },
+  "settings": {
+    "title": "ቅንብሮች",
+    "description": "የመለያ ቅንብሮችዎን እና ምርጫዎችዎን ያስተዳድሩ",
+    "profile": "ፕሮፋይል",
+    "profileDescription": "የፕሮፋይል መረጃዎን ያዘምኑ",
+    "displayName": "የማሳያ ስም",
+    "enterName": "ስምዎን ያስገቡ",
+    "displayNameHelp": "ይህ የማሳያ ስምዎ ነው። ከመለያ ስምዎ የተለየ ሊሆን ይችላል።",
+    "noNameSet": "ስም አልተቀመጠም",
+    "accountInfo": "የመለያ መረጃ",
+    "accountInfoDescription": "የመለያ ዝርዝሮችዎ",
+    "email": "ኢሜይል",
+    "emailHelp": "ኢሜይል በClerk ይመራል። ለመለወጥ የመለያ ቅንብሮችዎን ያዘምኑ።",
+    "userId": "የተጠቃሚ መታወቂያ",
+    "verifyBusinessLabel": "ንግድዎን ያረጋግጡ",
+    "verifyBusinessDescription": "ግዢን ለመክፈት የንግድዎን ዝርዝሮች ያስገቡ",
+    "verifyBusinessDescriptionIncomplete": "ግዢን ለመክፈት የንግድዎን ማረጋገጫ ያጠናቅቁ",
+    "applyToSellLabel": "ለመሸጥ ያመልክቱ",
+    "applyToSellDescription": "የሻጭ ስምምነቱን ተቀብለው የሻጭ ማመልከቻዎን ያስገቡ"
+  },
+  "billing": {
+    "title": "ክፍያ",
+    "description": "የክፍያ ታሪክዎን ይመልከቱ እና ክፍያን ያስተዳድሩ",
+    "paymentMethod": "የክፍያ ዘዴ",
+    "paymentMethodDescription": "በChapa የተደገፈ ደህንነቱ የተጠበቀ ክፍያዎች",
+    "chapaGateway": "Chapa የክፍያ መግቢያ",
+    "chapaDescription": "በሞባይል ገንዘብ፣ የባንክ ዝውውር ወይም ካርድ በደህና ይክፈሉ",
+    "learnMore": "ተጨማሪ ይወቁ",
+    "paymentHistory": "የክፍያ ታሪክ",
+    "paymentHistoryDescription": "የቅርብ ጊዜ ግብይቶችዎን ይመልከቱ",
+    "noPaymentHistory": "እስካሁን ምንም የክፍያ ታሪክ የለም",
+    "date": "ቀን",
+    "reference": "ማጣቀሻ",
+    "type": "ዓይነት",
+    "amount": "መጠን",
+    "failed": "ያልተሳካ"
+  },
+  "pricing": {
+    "title": "ቀላል፣ ግልጽ ዋጋ",
+    "description": "ለንግድዎ ፍላጎቶች የሚስማማውን እቅድ ይምረጡ። ሁሉም እቅዶች የB2B ገበያ እና የAfCFTA ተገዢነት መሳሪያዎችን ያካትታሉ።",
+    "subtitle": "ለንግድዎ ፍላጎቶች የሚስማማውን እቅድ ይምረጡ። ሁሉም እቅዶች የB2B ገበያ እና የAfCFTA ተገዢነት መሳሪያዎችን ያካትታሉ።",
+    "backToHome": "ወደ መነሻ ተመለስ",
+    "loadingPlans": "እቅዶች በመጫን ላይ...",
+    "monthly": "ወርሃዊ",
+    "annual": "ዓመታዊ",
+    "savePercent": "{percent}% ይቆጥቡ",
+    "perMonth": "/ወር",
+    "perYear": "/ዓመት",
+    "billedAnnually": "{amount}/ወር በዓመታዊ ክፍያ",
+    "mostPopular": "በጣም ተወዳጅ",
+    "currentPlan": "ያሁኑ እቅድ",
+    "getStarted": "ጀምር",
+    "contactSales": "ሽያጭን ያነጋግሩ",
+    "custom": "ብጁ",
+    "compareFeatures": "ሁሉንም ባህሪያት አወዳድር",
+    "faq": {
+      "title": "ተደጋጋሚ ጥያቄዎች",
+      "changePlan": {
+        "question": "እቅዴን በኋላ መቀየር እችላለሁ?",
+        "answer": "አዎ፣ እቅድዎን በማንኛውም ጊዜ ማሻሻል ወይም መቀነስ ይችላሉ። ሲያሻሽሉ፣ ወዲያውኑ አዳዲስ ባህሪያትን ያገኛሉ። ሲቀንሱ፣ ለውጡ በሚቀጥለው የክፍያ ዑደትዎ ላይ ተግባራዊ ይሆናል።"
+      },
+      "paymentMethods": {
+        "question": "ምን ዓይነት የክፍያ ዘዴዎችን ይቀበላሉ?",
+        "answer": "በChapa በኩል ክፍያዎችን እንቀበላለን፣ ይህም ሞባይል ገንዘብ፣ የባንክ ዝውውሮች እና የካርድ ክፍያዎችን ይደግፋል። ሁሉም ክፍያዎች በደህንነት ይከናወናሉ።"
+      },
+      "freeTrial": {
+        "question": "ነጻ ሙከራ አለ?",
+        "answer": "አዳዲስ ንግዶች መድረኩን ለመመርመር በStarter እቅዳችን መጀመር ይችላሉ። ለድርጅት ሙከራ አማራጮች ያነጋግሩን።"
+      },
+      "limits": {
+        "question": "ገደቦቼን ሲደርሱ ምን ይሆናል?",
+        "answer": "የእቅድ ገደቦችዎ ሲቃረቡ ማሳወቂያዎች ያገኛሉ። ገደብ ሲደርሱ፣ ያንን ባህሪ መጠቀም ለመቀጠል እቅድዎን ማሻሻል ይችላሉ።"
+      }
+    },
+    "cta": {
+      "title": "ብጁ መፍትሄ ያስፈልግዎታል?",
+      "description": "የድርጅት እቅዳችን ብጁ ባህሪያት፣ የተሰጠ ድጋፍ እና ለትላልቅ ድርጅቶች የተበጁ ውህደቶችን ያቀርባል።"
+    },
+    "plans": {
+      "starter": {
+        "name": "ጀማሪ",
+        "target": "ትናንሽ SMBs",
+        "description": "ለጀማሪ ትናንሽ ንግዶች ተስማሚ"
+      },
+      "growth": {
+        "name": "እድገት",
+        "target": "እያደጉ ያሉ SMBs",
+        "description": "ለማደግ ዝግጁ ለሆኑ ንግዶች"
+      },
+      "pro": {
+        "name": "ፕሮ",
+        "target": "መካከለኛ ገበያ",
+        "description": "ለተቋቋሙ ንግዶች ሙሉ ባህሪ ያለው እቅድ"
+      },
+      "enterprise": {
+        "name": "ድርጅት",
+        "target": "ትላልቅ ድርጅቶች",
+        "description": "ለትላልቅ ድርጅቶች ብጁ መፍትሄዎች"
+      }
+    },
+    "features": {
+      "products": "ምርቶች",
+      "monthlyOrders": "ወርሃዊ ትዕዛዞች",
+      "originCalculations": "የመነሻ ስሌቶች",
+      "hsCodeLookups": "የHS ኮድ ፍለጋዎች",
+      "teamMembers": "የቡድን አባላት",
+      "prioritySupport": "ቅድሚያ ድጋፍ",
+      "analytics": "ትንታኔዎች",
+      "apiAccess": "API መዳረሻ",
+      "unlimited": "ያልተወሰነ"
+    }
+  },
+  "subscription": {
+    "title": "ደንበኝነት",
+    "description": "ደንበኝነትዎን እና ክፍያዎን ያስተዳድሩ",
+    "businessRequired": "ንግድ ያስፈልጋል",
+    "businessRequiredDescription": "ለእቅድ ከመመዝገብዎ በፊት ንግድ መመዝገብ ያስፈልግዎታል።",
+    "registerBusiness": "ንግድዎን ይመዝግቡ",
+    "noActiveSubscription": "ንቁ ደንበኝነት የለም",
+    "noSubscriptionDescription": "አሁን በገደብ ባህሪያት ባለው ነጻ ደረጃ ላይ ነዎት። ተጨማሪ ምርቶችን፣ ትዕዛዞችን እና ተገዢነት መሳሪያዎችን ለመክፈት ያሻሽሉ።",
+    "viewPlans": "እቅዶችን ይመልከቱ",
+    "currentPlan": "ያሁኑ እቅድ",
+    "billedMonthly": "በወር ክፍያ",
+    "billedAnnually": "በዓመት ክፍያ",
+    "currentPeriod": "ያሁኑ ጊዜ",
+    "cancelsSoon": "በቅርቡ ይሰረዛል",
+    "active": "ንቁ",
+    "trial": "ሙከራ",
+    "pastDue": "ያለፈ ጊዜ",
+    "cancelled": "ተሰርዟል",
+    "cancellationNotice": "ደንበኝነትዎ በ{date} ያበቃል",
+    "trialNotice": "ሙከራዎ በ{date} ያበቃል",
+    "changePlan": "እቅድ ቀይር",
+    "reactivate": "ደንበኝነትን እንደገና አግብር",
+    "reactivating": "እየተነቃቃ...",
+    "cancel": "ደንበኝነትን ሰርዝ",
+    "cancelling": "እየተሰረዘ...",
+    "usageThisMonth": "በዚህ ወር አጠቃቀም",
+    "usageDescription": "አጠቃቀምዎን ከእቅድ ገደቦችዎ ጋር ይከታተሉ",
+    "planFeatures": "የእቅድ ባህሪያት",
+    "planFeaturesDescription": "በ{plan} እቅድዎ ውስጥ የተካተቱ ባህሪያት",
+    "paymentSuccessful": "ክፍያ ተሳክቷል!",
+    "subscriptionActivated": "ደንበኝነትዎ ነቅቷል።",
+    "subscriptionCancelled": "ደንበኝነት ተሰርዟል",
+    "subscriptionCancelledDescription": "ደንበኝነትዎ እስከ የክፍያ ጊዜው መጨረሻ ድረስ ንቁ ሆኖ ይቆያል።",
+    "subscriptionReactivated": "ደንበኝነት እንደገና ነቅቷል",
+    "subscriptionReactivatedDescription": "ደንበኝነትዎ በክፍያ ጊዜው መጨረሻ ይቀጥላል።",
+    "failedToCancel": "ደንበኝነትን መሰረዝ አልተሳካም",
+    "failedToReactivate": "ደንበኝነትን እንደገና ማግበር አልተሳካም"
+  },
+  "validation": {
+    "required": "ይህ መስክ ያስፈልጋል",
+    "invalidEmail": "ልክ ያልሆነ የኢሜይል አድራሻ",
+    "minLength": "ቢያንስ {min} ቁምፊዎች መሆን አለበት",
+    "maxLength": "ቢበዛ {max} ቁምፊዎች መሆን አለበት",
+    "selectCountry": "እባክዎ አገር ይምረጡ",
+    "selectCategory": "እባክዎ የንግድ ምድብ ይምረጡ"
+  },
+  "toast": {
+    "productCreated": "ምርት ተፈጥሯል! ዝርዝርዎን ለማጠናቀቅ አሁን ምስሎችን ያክሉ።",
+    "productUpdated": "ምርት በተሳካ ሁኔታ ተዘምኗል",
+    "productDeleted": "ምርት በተሳካ ሁኔታ ተሰርዟል",
+    "productListingComplete": "የምርት ዝርዝር ተጠናቋል!",
+    "addImageSuggestion": "ምርትዎ እንዲደምቅ ቢያንስ አንድ ምስል ማከል ያስቡበት።",
+    "businessRegistered": "ንግድ በተሳካ ሁኔታ ተመዝግቧል! ማረጋገጫ በመጠባበቅ ላይ።",
+    "orderStatusUpdated": "የትዕዛዝ ሁኔታ ተዘምኗል",
+    "orderDeleted": "ትዕዛዝ በተሳካ ሁኔታ ተሰርዟል",
+    "error": "ስህተት ተፈጥሯል",
+    "failedToCreate": "ምርት መፍጠር አልተሳካም",
+    "failedToUpdate": "ምርት ማዘመን አልተሳካም",
+    "failedToDelete": "ምርት መሰረዝ አልተሳካም",
+    "failedToDeleteOrder": "ትዕዛዝ መሰረዝ አልተሳካም",
+    "failedToUpdateOrder": "ትዕዛዝ ማዘመን አልተሳካም",
+    "failedToRegisterBusiness": "ንግድ ማስመዝገብ አልተሳካም"
+  },
+  "landing": {
+    "hero": {
+      "badge": "ለአፍሪካ B2B የገበያ ቦታ",
+      "title": "የዲጂታል የኦፕሬቲንግ ስርዓትን እየገነባን ነው",
+      "titleHighlight": "ለፓን-አፍሪካ ንግድ",
+      "description": "በአህጉሪቱ ንግዶችን የሚያገናኝ B2B የገበያ ቦታ። ምርቶችን ያግኙ፣ አቅራቢዎችን ያግኙ እና ከተረጋገጡ የአፍሪካ ኢንተርፕራይዞች ጋር ንግድዎን ያሳድጉ።",
+      "getStarted": "ይጀምሩ",
+      "browseMarketplace": "ገበያ ቦታን ያስሱ",
+      "exploreProducts": "ምርቶችን ያስሱ"
+    },
+    "benefits": {
+      "item1": "በነጻ ይቀላቀሉ",
+      "item2": "የተረጋገጡ ንግዶች",
+      "item3": "ደህንነቱ የተጠበቀ ክፍያዎች",
+      "item4": "ብዙ ቋንቋዎች ድጋፍ"
+    },
+    "categories": {
+      "title": "ምድቦችን ያስሱ",
+      "description": "ከአፍሪካ ንግዶች በተለያዩ ኢንዱስትሪዎች ምርቶችን ያግኙ",
+      "viewAll": "ሁሉንም ምድቦች ይመልከቱ",
+      "rawMaterials": "ጥሬ ዕቃዎች",
+      "agriculture": "ግብርና",
+      "miningMinerals": "ማዕድን እና ማዕድናት",
+      "electronics": "ኤሌክትሮኒክስ",
+      "textilesFashion": "ጨርቃ ጨርቅ እና ፋሽን",
+      "foodBeverages": "ምግብ እና መጠጦች",
+      "construction": "ግንባታ",
+      "industrialEquipment": "የኢንዱስትሪ መሳሪያዎች"
+    },
+    "howItWorks": {
+      "title": "እንዴት እንደሚሰራ",
+      "description": "በአራት ቀላል ደረጃዎች ይጀምሩ",
+      "step1Title": "መለያ ይፍጠሩ",
+      "step1Desc": "በነጻ ይመዝገቡ እና ፕሮፋይልዎን በደቂቃዎች ውስጥ ያዘጋጁ።",
+      "step2Title": "ንግድ ያስመዝግቡ",
+      "step2Desc": "እምነት ለመገንባት የንግድ ዝርዝሮችዎን ያክሉ እና ይረጋገጡ።",
+      "step3Title": "ዝርዝር ወይም ያስሱ",
+      "step3Desc": "ለመሸጥ ምርቶችዎን ይዘርዝሩ ወይም ለመግዛት ገበያ ቦታውን ያስሱ።",
+      "step4Title": "ይገናኙ እና ይነግዱ",
+      "step4Desc": "ከንግዶች ጋር ይገናኙ እና በደህንነት መነገድ ይጀምሩ።"
+    },
+    "features": {
+      "title": "የምናቀርበው",
+      "description": "በልበ ሙሉነት ለመነገድ የሚያስፈልግዎ ሁሉ",
+      "marketplace": "የገበያ ቦታ",
+      "marketplaceDesc": "በእኛ B2B የገበያ ቦታ ምርቶችን ያስሱ እና ይዘርዝሩ። የሚፈልጉትን ያግኙ ወይም አዲስ ደንበኞችን ያግኙ።",
+      "verification": "የንግድ ማረጋገጫ",
+      "verificationDesc": "የማረጋገጫ ሂደታችንን ላጠናቀቁ ንግዶች የተረጋገጠ ባጅ፣ በእያንዳንዱ ግብይት እምነት ይገነባል።",
+      "securePayments": "ደህንነቱ የተጠበቀ ክፍያዎች",
+      "securePaymentsDesc": "ለንግድ ግብይቶችዎ ደህንነቱ የተጠበቀ እና አስተማማኝ የክፍያ ሂደት።",
+      "multiLanguage": "ብዙ ቋንቋዎች",
+      "multiLanguageDesc": "ለጥሩ ተሞክሮ መድረኩን በእንግሊዝኛ፣ አማርኛ ወይም ስዋሂሊ ይጠቀሙ።",
+      "community": "እያደገ ያለ ማህበረሰብ",
+      "communityDesc": "ለመገናኘት እና ለመነገድ የሚፈልጉ እያደገ ያለ የአፍሪካ ንግዶች አውታረ መረብ ይቀላቀሉ።"
+    },
+    "cta": {
+      "title": "ለመጀመር ዝግጁ ነዎት?",
+      "description": "እያደገ ያለውን የአፍሪካ ንግዶች ማህበረሰባችንን ይቀላቀሉ። ዛሬ ነጻ መለያዎን ይፍጠሩ።",
+      "createAccount": "ነጻ መለያ ይፍጠሩ",
+      "goToDashboard": "ወደ ዳሽቦርድ ይሂዱ",
+      "explore": "ምርቶችን ያስሱ"
+    },
+    "trust": {
+      "securePayments": "ደህንነቱ የተጠበቀ ክፍያዎች",
+      "securePaymentsDesc": "ደህንነቱ የተጠበቀ ግብይት ሂደት",
+      "verifiedBusinesses": "የተረጋገጡ ንግዶች",
+      "verifiedBusinessesDesc": "በማረጋገጫ እምነት",
+      "multiLanguage": "ብዙ ቋንቋዎች",
+      "multiLanguageDesc": "EN፣ AM፣ SW ድጋፍ"
+    },
+    "footer": {
+      "tagline": "በመላው አፍሪካ ንግዶችን የሚያገናኝ B2B የገበያ ቦታ።",
+      "marketplace": "ገበያ ቦታ",
+      "browseProducts": "ምርቶችን ያስሱ",
+      "businessDirectory": "የንግድ ማውጫ",
+      "categories": "ምድቦች",
+      "forBusinesses": "ለንግዶች",
+      "registerBusiness": "ንግድ ያስመዝግቡ",
+      "listProducts": "ምርቶችን ይዘርዝሩ",
+      "dashboard": "ዳሽቦርድ",
+      "legal": "ህጋዊ",
+      "allRightsReserved": "ሁሉም መብቶች የተጠበቁ ናቸው።",
+      "privacyPolicy": "የግላዊነት ፖሊሲ",
+      "termsOfService": "የአገልግሎት ውሎች",
+      "madeForAfrica": "ለአፍሪካ የተሰራ"
+    },
+    "nav": {
+      "marketplace": "ገበያ ቦታ",
+      "pricing": "ዋጋ",
+      "categories": "ምድቦች",
+      "howItWorks": "እንዴት እንደሚሰራ",
+      "features": "ባህሪያት",
+      "signIn": "ግባ",
+      "getStarted": "ጀምር",
+      "dashboard": "ዳሽቦርድ"
+    }
+  },
+  "verificationBanner": {
+    "message": "ሁሉንም ባህሪያት ለመድረስ እባክዎ የኢሜል አድራሻዎን ያረጋግጡ።",
+    "resend": "እንደገና ላክ",
+    "verify": "አረጋግጥ",
+    "sent": "ኢሜል ተልኳል!",
+    "dismiss": "ዝጋ"
+  },
+  "verifyEmail": {
+    "verifying": {
+      "title": "ኢሜልዎን በማረጋገጥ ላይ",
+      "description": "እባክዎ የኢሜል አድራሻዎን እናረጋግጥ እስከምንም ድረስ ይጠብቁ..."
+    },
+    "success": {
+      "title": "ኢሜል ተረጋግጧል!",
+      "description": "ኢሜልዎ በተሳካ ሁኔታ ተረጋግጧል። አሁን ሁሉንም ባህሪያት መድረስ ይችላሉ።",
+      "goToDashboard": "ወደ ዳሽቦርድ ሂድ",
+      "signIn": "ግባ"
+    },
+    "error": {
+      "title": "ማረጋገጥ አልተሳካም",
+      "description": "ኢሜልዎን ማረጋገጥ አልቻልንም። ማገናኛው ጊዜው ያለፈበት ወይም ቀድሞ ጥቅም ላይ የዋለ ሊሆን ይችላል።",
+      "requestNewLink": "አዲስ ማገናኛ ጠይቅ"
+    },
+    "pending": {
+      "title": "ኢሜልዎን ያረጋግጡ",
+      "description": "እባክዎ የማረጋገጫ ማገናኛ ለማግኘት ገቢ መልእክትዎን ይፈትሹ።",
+      "descriptionWithEmail": "የማረጋገጫ ማገናኛ ወደ {email} ልከናል። እባክዎ ገቢ መልእክትዎን ይፈትሹ።"
+    },
+    "resend": {
+      "button": "የማረጋገጫ ኢሜል እንደገና ላክ",
+      "sending": "በመላክ ላይ...",
+      "sent": "የማረጋገጫ ኢሜል ተልኳል! እባክዎ ገቢ መልእክትዎን ይፈትሹ።",
+      "cooldown": "በ{seconds}ሰ እንደገና ላክ"
+    },
+    "skipForNow": "ለአሁን ዝለል",
+    "signInToResend": "የማረጋገጫ ኢሜል እንደገና ለመላክ ግባ"
+  },
+  "cookieConsent": {
+    "title": "ኩኪዎችን እንጠቀማለን",
+    "description": "የአሰሳ ልምድዎን ለማሻሻል፣ የጣቢያ ትራፊክን ለመተንተን እና ይዘትን ግላዊ ለማድረግ ኩኪዎችን እንጠቀማለን። \"ሁሉንም ተቀበል\" በመጫን ኩኪዎችን በመጠቀማችን ይስማማሉ። የእኛን ያንብቡ",
+    "privacyPolicy": "የግላዊነት ፖሊሲ",
+    "acceptAll": "ሁሉንም ተቀበል",
+    "rejectNonEssential": "አስፈላጊ ያልሆኑትን አትቀበል",
+    "customize": "አበጅ",
+    "close": "ዝጋ",
+    "settings": {
+      "title": "የኩኪ ምርጫዎች",
+      "description": "የኩኪ ምርጫዎችዎን ያስተዳድሩ። አስፈላጊ ኩኪዎች ድረ-ገጹ በትክክል እንዲሰራ አስፈላጊ ስለሆኑ ሁልጊዜ ነቅተዋል።",
+      "save": "ምርጫዎችን አስቀምጥ",
+      "essential": {
+        "title": "አስፈላጊ ኩኪዎች",
+        "description": "ለመሰረታዊ የድረ-ገጽ ተግባራዊነት ያስፈልጋሉ። ማሰናከል አይቻልም።"
+      },
+      "functional": {
+        "title": "ተግባራዊ ኩኪዎች",
+        "description": "ለተሻለ ልምድ ምርጫዎችዎን እና ቅንብሮችዎን ያስታውሳሉ።"
+      },
+      "analytics": {
+        "title": "የትንታኔ ኩኪዎች",
+        "description": "ጎብኚዎች ከድረ-ገጻችን ጋር እንዴት እንደሚገናኙ ለመረዳት ይረዱናል።"
+      },
+      "marketing": {
+        "title": "የግብይት ኩኪዎች",
+        "description": "ተዛማጅ ማስታወቂያዎችን ለማድረስ እና ዘመቻዎችን ለመከታተል ጥቅም ላይ ይውላሉ።"
+      }
+    }
+  },
+  "legal": {
+    "backToHome": "ወደ መነሻ ተመለስ",
+    "tableOfContents": "ዝርዝር ይዘቶች",
+    "viewPrivacyPolicy": "የግላዊነት ፖሊሲን ይመልከቱ",
+    "viewTermsOfService": "የአገልግሎት ውሎችን ይመልከቱ",
+    "terms": {
+      "title": "የአገልግሎት ውሎች",
+      "lastUpdated": "መጨረሻ የተዘመነው",
+      "lastUpdatedDate": "ጃንዩዋሪ 2026",
+      "introduction": "እንኳን ወደ AfriConnect በደህና መጡ። እነዚህ የአገልግሎት ውሎች (\"ውሎች\") የAfriConnect መድረክን፣ ድረ-ገጻችንን፣ የሞባይል መተግበሪያዎችን እና አገልግሎቶችን (በአጠቃላይ \"መድረኩ\") አጠቃቀምዎን ይቆጣጠራሉ። መድረካችንን በማግኘት ወይም በመጠቀም፣ በእነዚህ ውሎች እና በግላዊነት ፖሊሲያችን እንደተገዙ ይስማማሉ። አገልግሎቶቻችንን ከመጠቀምዎ በፊት እባክዎ በጥንቃቄ ያንብቧቸው።",
+      "acceptance": {
+        "title": "ውሎችን መቀበል",
+        "content": "መለያ በመፍጠር፣ በማግኘት ወይም የAfriConnect መድረኩን በመጠቀም፣ እነዚህን የአገልግሎት ውሎች አንብበው፣ ተረድተው እና በእነሱ ለመገዛት እንደተስማሙ ያረጋግጣሉ። በእነዚህ ውሎች ካልተስማሙ፣ መድረካችንን ማግኘት ወይም መጠቀም አይችሉም።\n\nእነዚህ ውሎች በእርስዎ እና በAfriConnect Inc. መካከል ህጋዊ አስገዳጅ ስምምነት ይመሰርታሉ። እነዚህን ውሎች በማንኛውም ጊዜ ልናዘምን እንችላለን፣ እና ከማንኛውም ለውጦች በኋላ መድረኩን መጠቀምዎን መቀጠል አዲሶቹን ውሎች መቀበል ይሆናል።\n\nመድረኩን ለንግድ ወይም ለሌላ ህጋዊ አካል በመወከል የሚጠቀሙ ከሆነ፣ እንደዚህ ያለውን አካል በእነዚህ ውሎች ለማሰር ስልጣን እንዳለዎት ያረጋግጣሉ።"
+      },
+      "eligibility": {
+        "title": "የብቃት መስፈርቶች",
+        "content": "AfriConnectን ለመጠቀም፣ የሚከተሉትን ማሟላት አለብዎት:\n\n• ቢያንስ 18 ዓመት ወይም በሥልጣን ክልልዎ ውስጥ ህጋዊ ዕድሜ ያለዎት መሆን\n• የተመዘገበ የንግድ አካል ወይም የተፈቀደ ተወካይ መሆን\n• አስገዳጅ ውሎችን ለመፈረም ህጋዊ ብቃት ያለዎት መሆን\n• በተፈጻሚ ህጎች መሰረት መድረኩን ከመጠቀም ያልተከለከሉ መሆን\n• ትክክለኛ እና ሙሉ የምዝገባ መረጃ ማቅረብ\n\nለመለያ በመመዝገብ፣ ሁሉንም የብቃት መስፈርቶች እንደሚያሟሉ ያረጋግጣሉ እና ያረጋግጣሉ። እነዚህን መስፈርቶች እንደማያሟሉ ካመንን አገልግሎትን ለመከልከል፣ መለያዎችን ለመዝጋት ወይም ትዕዛዞችን ለመሰረዝ መብታችንን እንጠብቃለን።"
+      },
+      "accounts": {
+        "title": "የመለያ ምዝገባ እና ደህንነት",
+        "content": "በAfriConnect ላይ መለያ ሲፈጥሩ፣ የሚከተሉትን ይስማማሉ:\n\n• በምዝገባ ጊዜ ትክክለኛ፣ ወቅታዊ እና ሙሉ መረጃ ማቅረብ\n• የመለያ መረጃዎን ማቆየት እና በፍጥነት ማዘመን\n• የመግቢያ ምስክርነቶችዎን ደህንነቱ የተጠበቀ እና ሚስጥራዊ ማድረግ\n• መለያዎን ከሌሎች ጋር አለማጋራት ወይም ያልተፈቀደ መዳረሻ አለመፍቀድ\n• ማንኛውም ያልተፈቀደ የመለያ አጠቃቀም ካለ ወዲያውኑ ማሳወቅ\n• በመለያዎ ስር ለሚከሰቱ ሁሉም እንቅስቃሴዎች ኃላፊነት መውሰድ\n\nየንግድ ምስክርነቶችዎን ልናረጋግጥ እንችላለን እና ተጨማሪ ሰነዶች ልንጠይቅ እንችላለን። የሐሰት ወይም አሳሳች መረጃ የመለያ እገዳ ወይም መዘጋት ሊያስከትል ይችላል።\n\nየመለያ ምስክርነቶችዎን ሚስጥራዊነት ለመጠበቅ እና ወደ መሳሪያዎችዎ መዳረሻን ለመገደብ ብቻዎን ኃላፊ ነዎት።"
+      },
+      "marketplace": {
+        "title": "የገበያ ቦታ ህጎች እና ስነ-ምግባር",
+        "content": "AfriConnect በመላው አፍሪካ ገዢዎችን እና ሻጮችን የሚያገናኝ B2B የገበያ ቦታ ነው። ተጠቃሚዎች የሚከተሉትን ይስማማሉ:\n\n• ሁሉንም ግብይቶች በጥሩ እምነት እና በታማኝ ዓላማ ማካሄድ\n• ትክክለኛ የምርት ገለጻዎች፣ ዋጋዎች እና የመገኘት መረጃ ማቅረብ\n• የተደረጉ ትዕዛዞችን እና የማድረስ ጊዜዎችን ማክበር\n• ከሌሎች ተጠቃሚዎች ጋር ሙያዊ ግንኙነት መጠበቅ\n• ሁሉንም ተፈጻሚ የንግድ ህጎች እና ደንቦች ማክበር\n• ዋጋዎችን፣ ግምገማዎችን ወይም የገበያ ቦታ መለኪያዎችን አለማጭበርበር\n\nሻጮች ምርቶች የተገለጹትን ዝርዝሮች እና የጥራት ደረጃዎች የሚያሟሉ መሆናቸውን ማረጋገጥ አለባቸው። ገዢዎች እንደተስማሙት ክፍያዎችን መፈጸም እና ትክክለኛ የማጓጓዣ መረጃ ማቅረብ አለባቸው።\n\nየገበያ ቦታ ታማኝነትን ለመጠበቅ ዝርዝሮችን ለማስወገድ፣ መለያዎችን ለማገድ ወይም ሌሎች እርምጃዎችን ለመውሰድ መብታችንን እንጠብቃለን።"
+      },
+      "payments": {
+        "title": "ክፍያዎች እና ግብይቶች",
+        "content": "በAfriConnect ላይ ያሉ ሁሉም የገንዘብ ግብይቶች በChapa እና በሌሎች ፈቃድ ባላቸው የክፍያ አቅራቢዎች የሚሰራ ደህንነቱ የተጠበቀ የክፍያ ስርዓታችን በኩል ይካሄዳሉ።\n\n• ክፍያዎች የተፈቀዱ የክፍያ ዘዴዎችን በመጠቀም መፈጸም አለባቸው\n• የግብይት ክፍያዎች እና ተፈጻሚ ግብሮች በግልጽ ይገለጻሉ\n• የምንዛሬ ልወጣዎች በነባር የምንዛሬ ተመኖች ላይ የተመሰረቱ ናቸው\n• ተመላሾች ለተመላሽ ፖሊሲያችን እና ለሻጭ ውሎች ተገዢ ናቸው\n• ለንግድ ዋስትና ግብይቶች የኤስክሮ አገልግሎቶች ሊያገለግሉ ይችላሉ\n\nሙሉ የክፍያ ካርድ ዝርዝሮችን አናስቀምጥም። ሁሉም የክፍያ ሂደቶች ከPCI-DSS ደረጃዎች ጋር ይጣጣማሉ።\n\nአከራካሪ ግብይቶች በክርክር መፍቻ ሂደቶቻችን መሰረት ይያዛሉ። የChargeback ጥያቄዎች የመለያ ገደቦች ሊያስከትሉ ይችላሉ።"
+      },
+      "prohibited": {
+        "title": "የተከለከሉ እንቅስቃሴዎች",
+        "content": "ተጠቃሚዎች በጥብቅ የተከለከሉ ናቸው:\n\n• የውሸት፣ የተሰረቁ ወይም በህገ-ወጥ መንገድ የተገኙ ዕቃዎችን መሸጥ\n• በማጭበርበር፣ ገንዘብ ማጠብ ወይም ህገ-ወጥ ግብይቶች መሳተፍ\n• የመድረክ ክፍያዎችን ወይም የደህንነት እርምጃዎችን ማለፍ\n• ሌሎች ተጠቃሚዎችን ማስፈራራት፣ ማስፈራራት ወይም መድልዎ ማድረግ\n• የሐሰት፣ አሳሳች ወይም ስም የሚያጎድፍ ይዘት መለጠፍ\n• መድረኩን ለመሰርሰር፣ ለማስተጓጎል ወይም ለመጉዳት መሞከር\n• ያለፈቃድ ውሂብ መቧጨር ወይም አውቶሜትድ ሲስተሞችን መጠቀም\n• የሌሎችን የአእምሮ ንብረት መብቶች መጣስ\n• የጦር መሳሪያዎች፣ መድሃኒቶች እና እገዳ የተጣለባቸው ዕቃዎችን ጨምሮ በተከለከሉ ዕቃዎች ንግድ ማድረግ\n• ገደቦችን ለማስቀረት ብዙ መለያዎችን መፍጠር\n\nጥሰቶች ወዲያውኑ የመለያ መዘጋት፣ የገንዘብ መውረስ እና ህጋዊ እርምጃ ሊያስከትሉ ይችላሉ።"
+      },
+      "ip": {
+        "title": "የአእምሮ ንብረት መብቶች",
+        "content": "የAfriConnect መድረክ ሁሉም ይዘቶች፣ ባህሪያት እና ተግባራት፣ ጽሑፍ፣ ግራፊክስ፣ ሎጎዎች፣ አዶዎች፣ ምስሎች፣ ሶፍትዌር እና ስብስባቸውን ጨምሮ ነገር ግን ያልተገደበ፣ የAfriConnect Inc. ወይም የፈቃድ ሰጭዎቹ ብቸኛ ንብረት ናቸው እና በአለም አቀፍ የቅጂ መብት፣ የንግድ ምልክት እና ሌሎች የአእምሮ ንብረት ህጎች ጥበቃ ስር ናቸው።\n\nተጠቃሚዎች ያስገቡት ይዘት ባለቤትነት ይይዛሉ ነገር ግን AfriConnectን ከመድረኩ ጋር በተያያዘ እንደዚህ ያለውን ይዘት ለመጠቀም፣ ለማሳየት እና ለማሰራጨት ዓለም አቀፍ፣ ልዩ ያልሆነ፣ ሮያሊቲ ነጻ ፈቃድ ይሰጣሉ።\n\nቅድመ የጽሁፍ ፈቃዳችን ሳይኖር ማንኛውንም የመድረክ ይዘት ማባዛት፣ ማሰራጨት፣ ማሻሻል፣ ተወላጅ ስራዎችን መፍጠር ወይም በንግድ ማበልጸግ አይችሉም።\n\nየአእምሮ ንብረት መብቶችዎ ተጥሰዋል ብለው ካመኑ፣ እባክዎ ስለተገመተው ጥሰት ዝርዝር መረጃ ይዘው የህግ ቡድናችንን ያነጋግሩ።"
+      },
+      "liability": {
+        "title": "የኃላፊነት ገደብ",
+        "content": "በተፈጻሚ ህግ የሚፈቀደው ከፍተኛ ደረጃ:\n\nAfriConnect መድረኩን \"እንዳለ\" እና \"እንደሚገኝ\" ያቀርባል ያለ ማንኛውም ዓይነት ዋስትና፣ ግልጽም ሆነ ውስጣዊ፣ የንግድ ብቃት፣ ለተወሰነ ዓላማ ብቁነት እና ጥሰት አለመኖርን ጨምሮ።\n\nየሚከተሉትን አንዋስትንም:\n• መድረኩ ያልተቋረጠ፣ ደህንነቱ የተጠበቀ ወይም ስህተት የሌለው ይሆናል\n• መድረኩን ከመጠቀም የተገኙ ውጤቶች ትክክለኛ ይሆናሉ\n• በመድረኩ ያሉ ጉድለቶች ይታረማሉ\n\nAfriConnect መድረኩን ከመጠቀምዎ ጋር በተያያዘ ለሚነሱ ማንኛውም ቀጥተኛ ያልሆኑ፣ አጋጣሚ፣ ልዩ፣ ተከታይ ወይም ቅጣት ጉዳቶች ኃላፊ አይሆንም።\n\nበእነዚህ ውሎች ስር ለማንኛውም ጥያቄዎች ጠቅላላ ኃላፊነታችን ጥያቄው ከተነሳበት ከአስራ ሁለት (12) ወራት በፊት ከከፈሉት መጠን መብለጥ የለበትም።\n\nአንዳንድ ስልጣን ክልሎች የኃላፊነት ገደብ አይፈቅዱም፣ ስለዚህ እነዚህ ገደቦች ለእርስዎ ላይሰሩ ይችላሉ።"
+      },
+      "disputes": {
+        "title": "የክርክር መፍቻ",
+        "content": "ተጠቃሚዎች አለመግባባቶችን በቀጥታ በመድረካችን የክርክር መፍቻ ማዕከል እንዲፈቱ እናበረታታለን። ሂደታችን የሚከተሉትን ያካትታል:\n\n1. ቀጥተኛ ድርድር: ወገኖች በመጀመሪያ ችግሮችን በቀጥታ ግንኙነት ለመፍታት መሞከር አለባቸው\n2. አደራዳሪ: AfriConnect ላልተፈቱ አለመግባባቶች የአደራዳሪ አገልግሎቶች ሊሰጥ ይችላል\n3. ሽምግልና: ለተወሰኑ አለመግባባቶች አስገዳጅ ሽምግልና ሊያስፈልግ ይችላል\n\nበእነዚህ መንገዶች ሊፈቱ ለማይችሉ አለመግባባቶች:\n\n• እነዚህ ውሎች በኬንያ ሪፐብሊክ ህጎች ይመራሉ\n• ማንኛውም ህጋዊ ክስ በናይሮቢ፣ ኬንያ ፍርድ ቤቶች ይካሄዳል\n• በህግ በሚፈቀድ መጠን የቡድን ክስ መብቶች ተወግደዋል\n\nበእነዚህ ውሎች ውስጥ ምንም ነገር በስልጣን ክልልዎ ውስጥ ከሚመለከታቸው የሸማች ጥበቃ ወይም የንግድ ባለስልጣናት ጋር ቅሬታዎችን የማቅረብ መብትዎን አይገድብም።"
+      },
+      "changes": {
+        "title": "በውሎች ላይ ማሻሻያዎች",
+        "content": "AfriConnect እነዚህን ውሎች በማንኛውም ጊዜ ለማሻሻል መብቱን ይጠብቃል። ቁሳዊ ለውጦች ስናደርግ:\n\n• የዘመኑትን ውሎች በመድረኩ ላይ እናስቀምጣለን\n• ከላይ ያለውን \"መጨረሻ የተዘመነው\" ቀን እናዘምናለን\n• ለጉልህ ለውጦች በኢሜይል ወይም በመድረክ ማሳወቂያ ልናሳውቅዎ እንችላለን\n• ከለውጦች በኋላ መጠቀምዎን መቀጠል መቀበል ይሆናል\n\nበማንኛውም ለውጦች ካልተስማሙ፣ መድረኩን መጠቀም ማቆም እና መለያዎን መዝጋት አለብዎት። አንዳንድ ለውጦች ከመፈጸማቸው በፊት ግልጽ ፈቃድዎን ሊፈልጉ ይችላሉ።\n\nስለማንኛውም ዝመናዎች ለማወቅ እነዚህን ውሎች በየጊዜው መገምገም እንመክራለን።"
+      },
+      "contact": {
+        "title": "ያግኙን",
+        "content": "ስለእነዚህ የአገልግሎት ውሎች ጥያቄዎች ካሉዎት ወይም እርዳታ ከፈለጉ፣ እባክዎ የህግ ቡድናችንን ያነጋግሩ። ስጋቶችዎን ለመቅረፍ እና በፖሊሲዎቻችን ላይ ግልጽነት ለመስጠት ቁርጠኞች ነን።"
+      }
+    },
+    "privacy": {
+      "title": "የግላዊነት ፖሊሲ",
+      "lastUpdated": "መጨረሻ የተዘመነው",
+      "lastUpdatedDate": "ጃንዩዋሪ 2026",
+      "introduction": "በAfriConnect፣ ግላዊነትዎን ለመጠበቅ እና የግል መረጃዎን ደህንነት ለማረጋገጥ ቁርጠኞች ነን። ይህ የግላዊነት ፖሊሲ መድረካችንን ሲጠቀሙ መረጃዎን እንዴት እንደምንሰበስብ፣ እንደምንጠቀም፣ እንደምናሳውቅ እና እንደምንጠብቅ ያብራራል። አጠቃላይ የውሂብ ጥበቃ ደንብ (GDPR)፣ የኬንያ የውሂብ ጥበቃ ህግ፣ የናይጄሪያ የውሂብ ጥበቃ ደንብ፣ የደቡብ አፍሪካ POPIA እና ሌሎች ተፈጻሚ የአፍሪካ የውሂብ ጥበቃ ህጎችን ጨምሮ ከተፈጻሚ የውሂብ ጥበቃ ህጎች ጋር በተጣጣመ መልኩ የግል ውሂብን እናቀናብራለን።",
+      "compliance": {
+        "title": "የውሂብ ጥበቃ ተገዢነት",
+        "content": "AfriConnect GDPR (EU)፣ የኬንያ የውሂብ ጥበቃ ህግ 2019፣ የናይጄሪያ የውሂብ ጥበቃ ደንብ 2019፣ የደቡብ አፍሪካ POPIA፣ የጋና የውሂብ ጥበቃ ህግ እና ሌሎች ተፈጻሚ የአፍሪካ ህብረት እና ብሔራዊ የውሂብ ጥበቃ ማዕቀፎችን ጨምሮ ከአለም አቀፍ እና ክልላዊ የውሂብ ጥበቃ ህጎች ጋር ለመጣጣም ቁርጠኛ ነው። የውሂብ ጥበቃን በንድፍ እና በነባሪ ለማረጋገጥ ተገቢ ቴክኒካዊ እና ድርጅታዊ እርምጃዎችን እንተገብራለን።"
+      },
+      "collection": {
+        "title": "የምንሰበስበው መረጃ",
+        "content": "በቀጥታ የሚያቀርቡትን መረጃ እንሰበስባለን፣ የሚከተሉትን ጨምሮ:\n\n• የመለያ መረጃ: ስም፣ ኢሜይል አድራሻ፣ ስልክ ቁጥር፣ የይለፍ ቃል፣ የንግድ ስም እና የምዝገባ ዝርዝሮች\n• የንግድ መረጃ: የኩባንያ ምዝገባ ሰነዶች፣ የግብር መለያ ቁጥሮች፣ የንግድ አድራሻ እና የማረጋገጫ ሰነዶች\n• የግብይት ውሂብ: የግዢ ታሪክ፣ የክፍያ መረጃ፣ የማጓጓዣ አድራሻዎች እና የትዕዛዝ ዝርዝሮች\n• ግንኙነቶች: ከሌሎች ተጠቃሚዎች ጋር የሚደረጉ መልዕክቶች፣ የድጋፍ ጥያቄዎች እና አስተያየቶች\n• የፕሮፋይል መረጃ: የንግድ ገለጻዎች፣ የምርት ዝርዝሮች እና የፕሮፋይል ፎቶዎች\n\nመድረካችንን ሲጠቀሙ የተወሰነ መረጃ በራስ-ሰር እንሰበስባለን:\n\n• የመሳሪያ መረጃ: IP አድራሻ፣ የአሳሽ ዓይነት፣ ኦፕሬቲንግ ሲስተም እና የመሳሪያ መለያዎች\n• የአጠቃቀም ውሂብ: የተጎበኙ ገጾች፣ ጥቅም ላይ የዋሉ ባህሪያት፣ የፍለጋ ጥያቄዎች እና የመስተጋብር ቅጦች\n• የአካባቢ ውሂብ: በIP አድራሻ ላይ የተመሰረተ አጠቃላይ ጂኦግራፊያዊ አካባቢ\n• ኩኪዎች እና የመከታተያ ቴክኖሎጂዎች: በኩኪዎች፣ ፒክሰሎች እና ተመሳሳይ ቴክኖሎጂዎች የተሰበሰበ መረጃ"
+      },
+      "usage": {
+        "title": "መረጃዎን እንዴት እንደምንጠቀም",
+        "content": "የተሰበሰበውን መረጃ ለሚከተሉት ዓላማዎች እንጠቀማለን:\n\n• የአገልግሎት አቅርቦት: መድረካችንን እና አገልግሎቶቻችንን ለማቅረብ፣ ለመጠበቅ እና ለማሻሻል\n• የመለያ አስተዳደር: መለያዎን ለመፍጠር እና ለማስተዳደር፣ ማንነትዎን ለማረጋገጥ እና ግብይቶችን ለማቀናበር\n• ግንኙነት: የአገልግሎት ዝመናዎችን፣ የደህንነት ማንቂያዎችን እና የድጋፍ መልዕክቶችን ለመላክ\n• ግላዊነት ማላበስ: ልምድዎን ለማበጀት እና ተዛማጅ ምክሮችን ለማቅረብ\n• ደህንነት: ማጭበርበርን፣ አላግባብ መጠቀምን እና የደህንነት ችግሮችን ለመለየት፣ ለመከላከል እና ለመቅረፍ\n• ህጋዊ ተገዢነት: ህጋዊ ግዴታዎችን ለማክበር እና ለህጋዊ ጥያቄዎች ምላሽ ለመስጠት\n• ትንታኔ: ተጠቃሚዎች ከመድረካችን ጋር እንዴት እንደሚገናኙ ለመረዳት እና አገልግሎቶቻችንን ለማሻሻል\n• ግብይት: የማስተዋወቂያ ግንኙነቶችን ለመላክ (በሚፈለግበት ቦታ በእርስዎ ፈቃድ)\n\nውሂብዎን በሚከተሉት መሰረት እናቀናብራለን: የውል አፈጻጸም፣ ህጋዊ ጥቅሞች፣ ህጋዊ ግዴታዎች እና በሚመለከትበት ቦታ ፈቃድዎ።"
+      },
+      "sharing": {
+        "title": "መረጃ ማጋራት እና ማሳወቅ",
+        "content": "መረጃዎን በሚከተሉት ሁኔታዎች ልናጋራ እንችላለን:\n\n• ከሌሎች ተጠቃሚዎች ጋር: ንግዶችን ለማመቻቸት አስፈላጊ የሆኑ የንግድ ፕሮፋይል መረጃ እና የግብይት ዝርዝሮች\n• የአገልግሎት አቅራቢዎች: መድረካችንን በማስኬድ የሚረዱ ከሶስተኛ ወገን አቅራቢዎች ጋር (የክፍያ ማቀናበሪያዎች፣ ክላውድ ማስተናገጃ፣ ትንታኔ)\n• የንግድ ዝውውሮች: ከውህደቶች፣ ግዢዎች ወይም የኩባንያ ንብረቶች ሽያጭ ጋር በተያያዘ\n• ህጋዊ መስፈርቶች: በህግ፣ በፍርድ ቤት ትዕዛዝ ወይም በመንግስት ባለስልጣን ሲጠየቅ\n• የመብቶች ጥበቃ: የAfriConnect፣ የተጠቃሚዎቻችን እና የህዝብን መብቶች፣ ንብረት እና ደህንነት ለመጠበቅ\n\nሁሉም ሶስተኛ ወገኖች የውሂብዎን ደህንነት እንዲያከብሩ እና ከተፈጻሚ ህጎች ጋር በተጣጣመ መልኩ እንዲያቀናብሩ እንጠይቃለን። የግል መረጃዎን ለሶስተኛ ወገኖች አንሸጥም።\n\nአለም አቀፍ የውሂብ ዝውውሮች በሚመለከታቸው የውሂብ ጥበቃ ባለስልጣናት በፀደቁ መደበኛ የውል ውሎችን ጨምሮ በተገቢ ጥበቃዎች የተጠበቁ ናቸው።"
+      },
+      "security": {
+        "title": "የውሂብ ደህንነት",
+        "content": "የግል መረጃዎን ለመጠበቅ ጠንካራ የደህንነት እርምጃዎችን እንተገብራለን:\n\n• ምስጠራ: የሚተላለፍ ሁሉም ውሂብ TLS/SSL ፕሮቶኮሎችን በመጠቀም ተመስጥሯል\n• የመዳረሻ ቁጥጥሮች: ጥብቅ የመዳረሻ ቁጥጥሮች እና የማረጋገጫ ዘዴዎች\n• የመሠረተ ልማት ደህንነት: አካላዊ እና የአውታረ መረብ ደህንነት ያላቸው ደህንነቱ የተጠበቁ የውሂብ ማዕከላት\n• መደበኛ ኦዲቶች: ወቅታዊ የደህንነት ግምገማዎች እና የተጋላጭነት ሙከራዎች\n• የሰራተኛ ስልጠና: ለሁሉም ሰራተኞች መደበኛ የውሂብ ጥበቃ ስልጠና\n• የአደጋ ምላሽ: የውሂብ ጥሰቶችን ለመለየት እና ምላሽ ለመስጠት የተቋቋሙ ሂደቶች\n\nመረጃዎን ለመጠበቅ ብንጥር፣ በበይነመረብ ላይ ምንም የማስተላለፍ ዘዴ 100% ደህንነቱ የተጠበቀ አይደለም። ፍጹም ደህንነትን ዋስትና መስጠት አንችልም ነገር ግን በህግ በሚጠየቀው መሰረት ማንኛውንም የውሂብ ጥሰት ለእርስዎ እና ለሚመለከታቸው ባለስልጣናት ለማሳወቅ ቁርጠኞች ነን።"
+      },
+      "rights": {
+        "title": "መብቶችዎ እና ምርጫዎች",
+        "content": "በአካባቢዎ ላይ በመመስረት፣ በግል ውሂብዎ ላይ የተወሰኑ መብቶች አሉዎት:\n\n• መዳረስ: ስለእርስዎ የያዝነውን የግል ውሂብ ቅጂ ይጠይቁ\n• ማረም: ትክክል ያልሆነ ወይም ያልተሟላ ውሂብ እንዲታረም ይጠይቁ\n• መሰረዝ: የግል ውሂብዎ እንዲሰረዝ ይጠይቁ (\"የመርሳት መብት\")\n• ገደብ: የውሂብዎ ሂደት እንዲገደብ ይጠይቁ\n• ተንቀሳቃሽነት: ውሂብዎን በተዋቀረ፣ በማሽን ሊነበብ በሚችል ቅርጸት ይቀበሉ\n• ተቃውሞ: በህጋዊ ጥቅሞች ላይ የተመሰረተ ሂደት ወይም ለግብይት ተቃወሙ\n• ፈቃድ ማስወገድ: ቀደም ሲል የተሰጠ ፈቃድን በማንኛውም ጊዜ ያስወግዱ\n• አውቶሜትድ ውሳኔዎች: እርስዎን የሚነኩ አውቶሜትድ ውሳኔዎች ሰብአዊ ግምገማ ይጠይቁ\n\nእነዚህን መብቶች ለመጠቀም የውሂብ ጥበቃ ኦፊሰራችንን ያነጋግሩ። በ30 ቀናት ውስጥ (ወይም በተፈጻሚ ህግ በሚጠየቀው መሰረት) ምላሽ እንሰጣለን። ጥያቄዎችን ከማቀናበራችን በፊት ማንነትዎን ልናረጋግጥ እንችላለን።\n\nበአካባቢዎ የውሂብ ጥበቃ ባለስልጣን ቅሬታ የማቅረብ መብትም አለዎት።"
+      },
+      "cookies": {
+        "title": "ኩኪዎች እና የመከታተያ ቴክኖሎጂዎች",
+        "content": "ልምድዎን ለማሻሻል ኩኪዎችን እና ተመሳሳይ ቴክኖሎጂዎችን እንጠቀማለን:\n\n• አስፈላጊ ኩኪዎች: ለመድረክ ተግባራዊነት የሚያስፈልጉ (ማረጋገጫ፣ ደህንነት)\n• የአፈጻጸም ኩኪዎች: ጎብኚዎች ከመድረኩ ጋር እንዴት እንደሚገናኙ ለመረዳት ይረዱናል\n• ተግባራዊ ኩኪዎች: ምርጫዎችዎን እና ቅንብሮችዎን ያስታውሳሉ\n• የግብይት ኩኪዎች: ተዛማጅ ማስታወቂያዎችን ለማድረስ ጥቅም ላይ ይውላሉ (በፈቃድ)\n\nየኩኪ ምርጫዎችን በአሳሽ ቅንብሮችዎ ወይም በኩኪ ፈቃድ መሳሪያችን በኩል ማስተዳደር ይችላሉ። የተወሰኑ ኩኪዎችን ማሰናከል የመድረክ ተግባራዊነትን ሊጎዳ ይችላል።\n\nየአጠቃቀም ውሂብ ለመሰብሰብ የትንታኔ አገልግሎቶችን (ለምሳሌ Google Analytics) እንጠቀማለን። እነዚህ አገልግሎቶች የራሳቸውን ኩኪዎች ሊጠቀሙ ይችላሉ እና ለየራሳቸው የግላዊነት ፖሊሲዎች ተገዢ ናቸው።\n\nDo Not Track (DNT) ምልክቶች በቴክኒካዊ በሚቻልበት ቦታ ይከበራሉ።"
+      },
+      "retention": {
+        "title": "የውሂብ ማቆየት",
+        "content": "የግል መረጃዎን ለሚከተሉት አስፈላጊ ለሆነው ያህል እናቆየዋለን:\n\n• አገልግሎቶቻችንን ማቅረብ እና መለያዎን መጠበቅ\n• ህጋዊ፣ የግብር እና የቁጥጥር ግዴታዎችን ማክበር\n• አለመግባባቶችን መፍታት እና ስምምነቶቻችንን ማስከበር\n• ለኦዲት ዓላማዎች የንግድ መዝገቦችን መጠበቅ\n\nየማቆያ ጊዜዎች በውሂብ ዓይነት ይለያያሉ:\n• የመለያ ውሂብ: የመለያ ጊዜ ከ7 ዓመታት በላይ\n• የግብይት ውሂብ: 7 ዓመታት ለግብር እና ኦዲት ዓላማዎች\n• የግንኙነት ምዝግብ ማስታወሻዎች: 3 ዓመታት\n• የግብይት ምርጫዎች: ፈቃድ እስከሚወገድ ድረስ\n\nውሂብ ሲያስፈልግ፣ በደህንነት እንሰርዘዋለን ወይም እናስተናግደዋለን። ስም የማይታወቅ ውሂብ ለስታቲስቲካዊ ትንተና ላልተወሰነ ጊዜ ሊቆይ ይችላል።"
+      },
+      "international": {
+        "title": "አለም አቀፍ የውሂብ ዝውውሮች",
+        "content": "AfriConnect በብዙ የአፍሪካ አገሮች ይሰራል እና ውሂብን በአለም አቀፍ ደረጃ ሊያስተላልፍ ይችላል። የግል ውሂብን ከአገርዎ ውጭ ስናስተላልፍ:\n\n• ተገቢ ጥበቃዎች መኖራቸውን እናረጋግጣለን (መደበኛ የውል ውሎች፣ የበቂነት ውሳኔዎች)\n• በሚመለከት ቦታ ከአካባቢያዊ የውሂብ አካባቢያዊ መስፈርቶች ጋር እንጣጣማለን\n• ከሁሉም አለም አቀፍ አጋሮች ጋር የውሂብ ማቀናበሪያ ስምምነቶችን እንጠብቃለን\n• የተቀባይ አገሮች የውሂብ ጥበቃ ደረጃዎችን እንገመግማለን\n\nለEU ነዋሪዎች፣ ከEEA ውጭ ዝውውሮች በEU-ፀደቁ መደበኛ የውል ውሎች የተጠበቁ ናቸው።\n\nለአፍሪካ ተጠቃሚዎች፣ በአካባቢያዊ ህጎች ስር ተፈጻሚ የውሂብ አካባቢያዊ እና ድንበር ተሻጋሪ ዝውውር መስፈርቶችን እናከብራለን።"
+      },
+      "children": {
+        "title": "የልጆች ግላዊነት",
+        "content": "AfriConnect ለንግድ ተጠቃሚዎች የታሰበ B2B መድረክ ነው። ከ18 ዓመት በታች ከሆኑ ግለሰቦች ሆን ብለን የግል መረጃ አንሰበስብም።\n\nያለ የተረጋገጠ የወላጅ ፈቃድ ከልጅ የግል ውሂብ እንደሰበሰብን ካወቅን፣ ያንን መረጃ በፍጥነት ለመሰረዝ እርምጃዎችን እንወስዳለን።\n\nልጅ የግል መረጃ እንዳቀረበልን ካመኑ፣ እባክዎ ወዲያውኑ የውሂብ ጥበቃ ኦፊሰራችንን ያነጋግሩ።"
+      },
+      "changes": {
+        "title": "በዚህ ፖሊሲ ላይ ለውጦች",
+        "content": "በአሰራሮቻችን፣ በቴክኖሎጂ፣ በህጋዊ መስፈርቶች ወይም በሌሎች ምክንያቶች ላይ ያሉ ለውጦችን ለማንጸባረቅ ይህንን የግላዊነት ፖሊሲ በየጊዜው ልናዘምን እንችላለን።\n\nቁሳዊ ለውጦች ስናደርግ:\n• የዘመነውን ፖሊሲ በመድረኩ ላይ እናስቀምጣለን\n• \"መጨረሻ የተዘመነው\" ቀንን እናዘምናለን\n• ለጉልህ ለውጦች በኢሜይል ወይም በመድረክ ማሳወቂያ ልናሳውቅዎ እንችላለን\n• ለተወሰኑ የሂደት እንቅስቃሴዎች የታደሰ ፈቃድ ልንጠይቅ እንችላለን\n\nይህንን የግላዊነት ፖሊሲ በመደበኛነት እንዲገመግሙ እናበረታታለን። ከለውጦች በኋላ መድረኩን መጠቀምዎን መቀጠል የዘመነውን ፖሊሲ መቀበል ይሆናል።"
+      },
+      "dpo": {
+        "title": "የውሂብ ጥበቃ ኦፊሰር",
+        "content": "የውሂብ ጥበቃ ስትራቴጂያችንን እና ተገዢነትን የሚቆጣጠር የውሂብ ጥበቃ ኦፊሰር (DPO) ሾመናል። ለማንኛውም ከግላዊነት ጋር የተያያዙ ጥያቄዎች፣ ስጋቶች ወይም የውሂብ መብቶችዎን ለመጠቀም፣ እባክዎ DPOአችንን ያነጋግሩ።"
+      }
+    }
+  },
+  "agreements": {
+    "dialog": {
+      "reviewAndAccept": "እባክዎ ከመቀጠልዎ በፊት ይህን ስምምነት ያንብቡ እና ይቀበሉ።",
+      "accept": "ተቀብለው ይቀጥሉ",
+      "accepting": "በመቀበል ላይ...",
+      "decline": "አልቀበልም"
+    },
+    "seller": {
+      "title": "የሻጭ ስምምነት",
+      "pageDescription": "በAfriConnect ላይ ምርቶችን ሲያስቀምጡ እና ሲሸጡ የሚተገበሩ ደንቦች።",
+      "lastUpdated": "የተዘመነበት ጊዜ",
+      "lastUpdatedDate": "February 2026",
+      "introduction": "ይህ የሻጭ ስምምነት AfriConnectን እንደ ሻጭ ሲጠቀሙ የሚመራዎት ነው። ይህን ስምምነት በመቀበል ንግድዎ የተዘረዘሩ ምርቶችን ለመሸጥ ህጋዊ ስልጣን እንዳለው እና የገበያ፣ የክፍያ እና የንግድ መስፈርቶችን እንደሚያከብሩ ያረጋግጣሉ።",
+      "acceptanceLabel": "የሻጭ ስምምነቱን አንብቤ ተስማምቻለሁ።",
+      "sections": {
+        "eligibility": {
+          "title": "ብቁነት",
+          "content": "የተመዘገበ ንግድ ወይም የተፈቀደ ተወካይ መሆን አለብዎት። ትክክለኛ የምዝገባ መረጃ መስጠት እና የተሟላ የንግድ ሰነዶችን መጠበቅ አለብዎት።"
+        },
+        "productListings": {
+          "title": "የምርት ዝርዝሮች",
+          "content": "ትክክለኛ የምርት ስሞች፣ መግለጫዎች፣ ዋጋ፣ ክምችት መጠን፣ የመነሻ መረጃ እና ምስሎች መስጠት አለብዎት። የሚያሳስቱ ዝርዝሮች ሊወገዱ ይችላሉ።"
+        },
+        "fulfillment": {
+          "title": "አፈጻጸም",
+          "content": "ክፍያ ከተረጋገጠ በኋላ በጊዜው ማስኬድ፣ መላክ እና ማድረስ ተስማሚ ማቀናበር የእርስዎ ኃላፊነት ነው። መዘግየቶችን በፍጥነት ማሳወቅ አለብዎት።"
+        },
+        "qualityStandards": {
+          "title": "የጥራት ደረጃዎች",
+          "content": "ምርቶች ከዝርዝር መረጃ ጋር መስማማት፣ በህግ የተፈቀዱ መሆን እና በተዛማጅ ክልሎች ውስጥ የጥራት እና ደህንነት መስፈርቶችን ማሟላት አለባቸው።"
+        },
+        "feesCommissions": {
+          "title": "ክፍያዎች እና ኮሚሽኖች",
+          "content": "በሽያጭ እና በክፍያ መፍትሄ ላይ የመድረክ እና የሂደት ክፍያዎች ሊተገበሩ ይችላሉ። የሻጭ ባህሪያትን መቀጠል የተዛማጅ ክፍያ ሰንጠረዦችን መቀበል ማለት ነው።"
+        },
+        "returnsRefunds": {
+          "title": "መመለሻ እና ተመላሽ ክፍያ",
+          "content": "በመድረክ ፖሊሲ፣ በግብይት መዝገቦች እና በክርክር ውጤቶች መሠረት የሚመጡ ትክክለኛ የመመለሻ እና የተመላሽ ክፍያ ጥያቄዎችን መተባበር አለብዎት።"
+        },
+        "prohibitedItems": {
+          "title": "የተከለከሉ እቃዎች",
+          "content": "ህገወጥ፣ ሐሰተኛ፣ በቅጣት ስር ያሉ ወይም የተገደቡ እቃዎችን ማስቀመጥ አይፈቀድም። ጥፋቶች ዝርዝር ማስወገድ፣ መለያ ማገድ እና ህጋዊ ሪፖርት ሊያስከትሉ ይችላሉ።"
+        },
+        "intellectualProperty": {
+          "title": "የንብረት መብት",
+          "content": "በሁሉም የዝርዝር ይዘት እና የምርት ንጥረ ነገሮች ላይ መብት እንዳለዎት ያረጋግጣሉ። ዝርዝሮችዎን በመድረኩ ላይ ለማሳየት እና ለማስተዋወቅ ለAfriConnect ፈቃድ ይሰጣሉ።"
+        },
+        "accountSuspension": {
+          "title": "የመለያ እገዳ",
+          "content": "AfriConnect ለማጭበርበር፣ ለፖሊሲ ጥሰቶች፣ ለተሳነ ማረጋገጫ ምርመራ ወይም ለተደጋጋሚ የአሰራር አለመሳካት የሻጭ መዳረሻን ሊያግድ ወይም ሊያቋርጥ ይችላል።"
+        },
+        "liabilityIndemnification": {
+          "title": "ኃላፊነት እና ካሳ",
+          "content": "ለምርቶችዎ፣ ለንግድ ባህሪዎ እና ለህጋዊ ተገዢነት እርስዎ ብቻ ኃላፊ ይቆያሉ። ከዝርዝሮችዎ ወይም ግብይቶችዎ የሚነሱ የሶስተኛ ወገን ጥያቄዎች ላይ AfriConnectን ለመከላከል ተስማምተዋል።"
+        }
+      }
+    },
+    "buyer": {
+      "title": "የገዢ ስምምነት",
+      "pageDescription": "በAfriConnect በኩል ምርቶችን ሲገዙ የሚተገበሩ ደንቦች።",
+      "lastUpdated": "የተዘመነበት ጊዜ",
+      "lastUpdatedDate": "February 2026",
+      "introduction": "ይህ የገዢ ስምምነት AfriConnectን እንደ ገዢ ሲጠቀሙ የሚመራዎት ነው። ይህን ስምምነት በመቀበል ትዕዛዝ ለመስጠት ፈቃድ እንዳለዎት እና የክፍያ እና የግብይት ግዴታዎችን እንደሚያሟሉ ያረጋግጣሉ።",
+      "acceptanceLabel": "የገዢ ስምምነቱን አንብቤ ተስማምቻለሁ።",
+      "sections": {
+        "purchaseCommitments": {
+          "title": "የግዢ ቃል-ኪዳኖች",
+          "content": "በመድረኩ የተላኩ ትዕዛዞች በተዘረዘሩ ደንቦች፣ በእቃ መኖር እና በመድረክ ክርክር ውጤቶች መሠረት የሚገዙ ግዴታ ናቸው።"
+        },
+        "paymentTerms": {
+          "title": "የክፍያ ውሎች",
+          "content": "በተፈቀዱ መንገዶች ክፍያን ማጠናቀቅ እና ትክክለኛ የክፍያ መረጃ መስጠት አለብዎት። የከሸፉ ወይም የተመለሱ ክፍያዎች ትዕዛዝ መሰረዝ ወይም የመለያ ገደብ ሊያስከትሉ ይችላሉ።"
+        },
+        "deliveryInspection": {
+          "title": "መድረስ እና ምርመራ",
+          "content": "የደረሱ እቃዎችን በፍጥነት መገምገም እና በተፈቀደው የግምገማ ጊዜ ውስጥ ችግሮችን ማሳወቅ አለብዎት፣ በሚፈለግበትም ጊዜ ማስረጃ ማቅረብ ያካትታል።"
+        },
+        "disputes": {
+          "title": "ክርክሮች",
+          "content": "ክርክሮች በመድረኩ ቻናሎች በኩል መቅረብ አለባቸው። AfriConnect መዝገቦችን እና ውይይቶችን በመገምገም በገበያ ፖሊሲዎች መሠረት ውጤቶችን ሊተገብር ይችላል።"
+        },
+        "returns": {
+          "title": "መመለሻ",
+          "content": "መመለሻ የሻጭ ውሎች፣ የምርት አይነት እና የመድረክ ፖሊሲ ላይ ይመሰረታል። አንዳንድ እቃዎች ከተቀበሉ ወይም ከተጠቀሙ በኋላ ለመመለስ ላይበቁ ይችላሉ።"
+        },
+        "communication": {
+          "title": "ግንኙነት",
+          "content": "ከሻጮች ጋር ሙያዊ ግንኙነት ለመጠበቅ እና ተጨማሪ የግዢ ወይም የመድረስ ዝርዝሮች ሲፈለጉ በፍጥነት ለመመለስ ተስማምተዋል።"
+        },
+        "accountResponsibilities": {
+          "title": "የመለያ ኃላፊነቶች",
+          "content": "ለመለያ ደህንነት፣ ትክክለኛ የተቀባይ መረጃ እና መድረኩን በህጋዊ መንገድ መጠቀም እርስዎ ኃላፊ ናቸው። ያልተፈቀዱ እንቅስቃሴዎች ወዲያውኑ መሪፖርት መደረግ አለባቸው።"
+        }
+      }
+    }
+  },
+  "compliance": {
+    "title": "የAfCFTA ተገዢነት",
+    "description": "ምርቶችዎ ለአፍሪካ አህጉራዊ ነጻ ንግድ ቀጠና ጥቅሞች ብቁ መሆናቸውን ያረጋግጡ",
+    "searchByName": "በስም ይፈልጉ",
+    "enterHsCode": "የHS ኮድ ያስገቡ",
+    "searchPlaceholder": "በምርት ስም ወይም በHS ኮድ ይፈልጉ...",
+    "hsCodePlaceholder": "8-አሃዝ HS ኮድ ያስገቡ (ለምሳሌ፣ 09011100)",
+    "lookup": "ፈልግ",
+    "add": "ጨምር",
+    "addAnyway": "ቢሆንም ጨምር",
+    "rate": "ምጣኔ",
+    "currentRate": "የአሁኑ ምጣኔ",
+    "categoryA": "ምድብ ሀ",
+    "notCategoryA": "ምድብ ሀ አይደለም",
+    "notFoundInCategoryA": "HS ኮድ በምድብ ሀ ውስጥ አልተገኘም",
+    "notFoundDescription": "ይህ ምርት በAfCFTA ምድብ ሀ ስር አልተዘረዘረም እና የቀረጥ ቅናሽ ላያገኝ ይችላል።",
+    "tariffReduction": "የቀረጥ ቅናሽ መርሃ ግብር",
+    "rateSchedule": "የምጣኔ መርሃ ግብር (2026-2030)",
+    "currentYearRate": "የአሁኑ ዓመት ምጣኔ",
+    "zeroTariffBy2030": "ይህ ምርት እስከ 2030 ድረስ 0% ቀረጥ ይኖረዋል",
+    "noAfcftaBenefits": "የAfCFTA ጥቅሞች የሉም",
+    "noAfcftaBenefitsDescription": "ይህ ምርት በAfCFTA ምድብ ሀ ስር አልተዘረዘረም እና መደበኛ ቀረጦች ተፈጻሚ ይሆናሉ።",
+    "removeProduct": "ምርት አስወግድ",
+    "complianceSummary": "የተገዢነት ማጠቃለያ",
+    "complianceSummaryDescription": "የምርቶችዎ የAfCFTA ብቁነት ሁኔታ አጠቃላይ እይታ",
+    "totalProducts": "ጠቅላላ ምርቶች",
+    "eligible": "ብቁ",
+    "notEligible": "ብቁ አይደሉም",
+    "eligibleMessage": "ከምርቶችዎ ውስጥ {count} የAfCFTA ቀረጥ ቅናሽ ብቁ ናቸው",
+    "scheduleMatchMessage": "{count, plural, one {የ# ምርት HS ኮድ ከተመረጠው ታሪፍ ሰሌዳ ጋር ይዛመዳል - የመነሻ ደንብ ግምገማ በመጠባበቅ ላይ ነው} other {የ# ምርቶች HS ኮዶች ከተመረጠው ታሪፍ ሰሌዳ ጋር ይዛመዳሉ - የመነሻ ደንብ ግምገማ በመጠባበቅ ላይ ነው}}",
+    "yourProducts": "ምርቶችዎ",
+    "yourProductsDescription": "ለAfCFTA ተገዢነት ክትትል በHS ኮዶች የተመዘገቡ ምርቶች",
+    "addProduct": "ምርት ጨምር",
+    "addNewProduct": "አዲስ ምርት ጨምር",
+    "cancel": "ሰርዝ",
+    "addingProduct": "ምርት በመጨመር ላይ...",
+    "productAdded": "ምርት በተሳካ ሁኔታ ተጨመረ",
+    "productRemoved": "ምርት በተሳካ ሁኔታ ተወገደ",
+    "failedToAddProduct": "ምርት መጨመር አልተሳካም",
+    "failedToRemoveProduct": "ምርት ማስወገድ አልተሳካም",
+    "noProductsYet": "እስካሁን ምንም ምርቶች አልተጨመሩም",
+    "noProductsDescription": "የAfCFTA ተገዢነት ሁኔታቸውን ለመፈተሽ ምርቶችዎን ከHS ኮዶች ጋር ይጨምሩ",
+    "addFirstProduct": "የመጀመሪያ ምርትዎን ይጨምሩ",
+    "andMoreProducts": "+{count} ተጨማሪ ምርቶች",
+    "businessRequired": "የንግድ ምዝገባ ያስፈልጋል",
+    "businessRequiredDescription": "የምርት ተገዢነትን ከመፈተሽዎ በፊት ንግድዎን መመዝገብ ያስፈልግዎታል።",
+    "registerBusiness": "ንግድ ይመዝገቡ",
+    "whatIsAfcfta": "AfCFTA ምንድን ነው?",
+    "afcftaDescription": "የአፍሪካ አህጉራዊ ነጻ ንግድ ቀጠና (AfCFTA) በአፍሪካ ህብረት አባል ሀገራት መካከል የተደረገ የነጻ ንግድ ስምምነት ነው። የምድብ ሀ ምርቶች ከ2026 እስከ 2030 ቀስ በቀስ የቀረጥ ቅናሽ ያገኛሉ፣ ወደ 0% ቀረጥ ይደርሳሉ።",
+    "categoryABadge": "የምድብ ሀ ምርቶች",
+    "learnMoreAfcfta": "ስለ AfCFTA የበለጠ ይወቁ",
+    "reductionSchedule": "የቀረጥ ቅናሽ መርሃ ግብር",
+    "reductionScheduleDescription": "የምድብ ሀ ምርቶች ቀስ በቀስ የቀረጥ ቅናሽ መርሃ ግብር ይከተላሉ",
+    "year": "ዓመት",
+    "typicalRateReduction": "የተለመደ ምጣኔ",
+    "rateDisclaimer": "ትክክለኛ ምጣኔዎች በምርት ሊለያዩ ይችላሉ። ለተወሰኑ ምጣኔዎች የግል ምርት ካርዶችን ይመልከቱ።",
+    "afcftaCompliance": "የAfCFTA ተገዢነት",
+    "afcftaComplianceDescription": "ምርቶችዎ ለአፍሪካ አህጉራዊ ነጻ ንግድ ቀጠና ጥቅሞች ብቁ መሆናቸውን ያረጋግጡ",
+    "noComplianceCheckYet": "እስካሁን ለተገዢነት ፍተሻ ምንም ምርቶች አልጨመሩም።",
+    "startComplianceCheck": "የተገዢነት ፍተሻ ጀምር",
+    "manageProducts": "ምርቶችን ያስተዳድሩ",
+    "selectCountry": "ሀገር/ክልል ይምረጡ",
+    "ethiopia": "ኢትዮጵያ",
+    "kenyaEac": "ኬንያ (EAC)",
+    "countryDescription": "የታሪፍ መርሐግብሮችን ለመፈለግ ሀገር ይምረጡ",
+    "registerToSaveProducts": "ምርቶችዎን በዝርዝርዎ ለማስቀጠል ንግድዎን ይመዝገቡ።",
+    "notFoundInTariffSchedule": "ይህ HS ኮድ በተመረጠው የታሪፍ መርሐግብር ውስጥ አልተገኘም።",
+    "tariffScheduleCoverage": "የታሪፍ መርሐግብር ሽፋን",
+    "tariffScheduleMatched": "የታሪፍ መርሐግብር ተዛመደ",
+    "tariffScheduleNotMatched": "የታሪፍ መርሐግብር አልተዛመደም",
+    "noTariffMatchDescription": "ይህን HS ኮድ በተመረጠው የታሪፍ መርሐግብር ውስጥ ማዛመድ አልቻልንም። ኦፊሴላዊውን የታሪፍ መጽሐፍ እና ለምርቱ የተለየ የመነሻ ደንብ ይመልከቱ።",
+    "reviewMessage": "ከምርቶችዎ {count} ላይ የAfCFTA የመነሻ ጥያቄ ከማቅረብ በፊት አሁንም የመነሻ ደንብ ግምገማ ያስፈልጋል።",
+    "needsReview": "ግምገማ ያስፈልጋል",
+    "ruleNotMapped": "ደንብ አልተመደበም",
+    "rulesOfOrigin": "የመነሻ ደንቦች",
+    "tariffAndOrigin": "ታሪፍ እና መነሻ",
+    "baseRate": "መነሻ ምጣኔ",
+    "tariffCategory": "የታሪፍ ምድብ",
+    "originRule": "የመነሻ ደንብ",
+    "ruleSource": "የደንብ ምንጭ",
+    "ruleNotMappedDescription": "መተግበሪያው ለዚህ HS ኮድ የተለየ የምርት ደንብ እስካሁን አልገናኘም። የመነሻ ጥያቄ ከማቅረብዎ በፊት Appendix 2.A.1 ይመልከቱ።",
+    "eligibleRuleDescription": "ይህ ምርት በራስ-ሰር በተገመገመ በእሴት ላይ የተመሠረተ ደንብ አልፏል።",
+    "notEligibleRuleDescription": "ይህ ምርት በራስ-ሰር በተገመገመ በእሴት ላይ የተመሠረተ ደንብ አላለፈም።",
+    "legacyStatus": "የቀድሞ ውጤት",
+    "legacyStatusDescription": "ይህ መዝገብ የተፈጠረው በደንብ-ተኮር ማሻሻያው በፊት ስለሆነ እንደገና ሊታሰብ ይገባል።",
+    "automaticVnmDescription": "ይህ ውጤት በእሴት ላይ በተመሠረተ የVNM ደንብ መሠረት በራስ-ሰር ተሰልቷል።",
+    "manualReviewDescription": "የዚህ ምርት ደንብ ከአሁኑ ራስ-ሰር ካልኩሌተር በላይ የሰነድ ወይም የምርት ሂደት ግምገማ ይፈልጋል።"
+  },
+  "afcfta": {
+    "title": "ስለ AfCFTA ተገዢነት ከAI ይጠይቁ",
+    "description": "በተጫኑ የAfCFTA ሰነዶች ላይ የተመሰረቱ ጥያቄዎችን ይጠይቁ። ረዳቱ ለQdrant ፍለጋ እና በማጣቀሻ የሚጀምሩ መልሶች እንዲሰጥ ተዘጋጅቷል።",
+    "badge": "የመነሻ መዋቅር",
+    "helper": "መልሶች በተጫኑ ምንጮች ላይ ብቻ መመርኮዝ አለባቸው። ማስረጃ ከጎደለ ወይም ከተጋጨ ረዳቱ ከመገመት ይልቅ ይህን መግለጽ አለበት።",
+    "placeholder": "የተገዢነት ጥያቄ ይጠይቁ፣ ለምሳሌ፦ የAfCFTA የመነሻ ሰርተፊኬት ጥያቄን ለመደገፍ ምን ሰነዶች ያስፈልጋሉ?",
+    "sampleQuestions": [
+      "AfCFTA ይህን ምርት ዛሬ በራሱ ከቀረጥ ነፃ ያደርገዋል?",
+      "የመነሻ ሰርተፊኬት ጥያቄን ለመደገፍ ምን አይነት ማስረጃ ያስፈልገኛል?",
+      "በተጫኑ ደንቦች ስር ቀላል ዳግም ማሸግ የAfCFTA መነሻን ሊያስገኝ ይችላል?"
+    ],
+    "cta": {
+      "ask": "AI ይጠይቁ",
+      "asking": "በመጠየቅ ላይ..."
+    },
+    "form": {
+      "languageLabel": "ቋንቋ",
+      "questionLabel": "የተገዢነት ጥያቄ"
+    },
+    "validation": {
+      "questionTooShort": "እባክዎ የበለጠ ግልጽ የሆነ የተገዢነት ጥያቄ ያስገቡ።",
+      "invalidQuestion": "እባክዎ ትክክለኛ የተገዢነት ጥያቄ ያቅርቡ።"
+    },
+    "error": {
+      "generic": "የተገዢነት ረዳቱን መጠየቅ አልተሳካም።"
+    },
+    "empty": {
+      "citations": "እስካሁን ምንም ማጣቀሻዎች አልተመለሱም።"
+    },
+    "sections": {
+      "answer": "መልስ",
+      "citations": "ማጣቀሻዎች",
+      "source": "ምንጭ"
+    },
+    "mode": {
+      "fullRag": "ሙሉ RAG",
+      "retrievalOnly": "ፍለጋ ብቻ"
+    },
+    "status": {
+      "ready": "ዝግጁ",
+      "not_configured": "አልተዋቀረም",
+      "no_evidence": "ምንም ማስረጃ የለም"
+    }
+  },
+  "aiAssistantPage": {
+    "title": "AI ረዳት",
+    "description": "ስለ AfCFTA ተገዢነት፣ የብድር ደረጃ መስጠት፣ የመነሻ ደንቦች እና ሌሎች ጥያቄዎችን ይጠይቁ።",
+    "unavailable": "የAI ረዳት መሳሪያዎች ለጊዜው አይገኙም።",
+    "tabs": {
+      "compliance": "የAfCFTA ተገዢነት",
+      "general": "አጠቃላይ ረዳት"
+    },
+    "general": {
+      "title": "ስለ AfCFTA ርዕሶች ይጠይቁ",
+      "description": "ስለ AfCFTA የመነሻ ደንቦች፣ የታሪፍ መርሃ ግብሮች፣ የንግድ ማስታገሻ እና ተዛማጅ የንግድ ርዕሶች አጠቃላይ ጥያቄዎችን ይጠይቁ። ለመመሪያ ብቻ ነው - በኦፊሴላዊ የAfCFTA ምንጮች ያረጋግጡ።",
+      "badge": "AI ያለው",
+      "helper": "ስለ አፍሪካ አህጉራዊ ነጻ ንግድ ቀጠና የተለመዱ የAfCFTA ርዕሶች ፈጣን መመሪያ ለማግኘት ጥያቄዎችን ይጠይቁ። አስፈላጊ ዝርዝሮችን ሁልጊዜ በኦፊሴላዊ የAfCFTA ህትመቶች ወይም በአካባቢያዊ የንግድ ባለስልጣን ያረጋግጡ።",
+      "placeholder": "የAfCFTA ጥያቄ ይጠይቁ፣ ለምሳሌ፡ በAfCFTA ስር የመነሻ ደንቦች እንዴት ይሰራሉ?",
+      "sampleQuestions": [
+        "በAfCFTA ስር የመነሻ ደንቦች እንዴት ይሰራሉ?",
+        "በAfCFTA የታሪፍ መርሃ ግብሮች ውስጥ ምድብ A ምን ማለት ነው?",
+        "ለAfCFTA ጭነቶች በተለምዶ የሚያስፈልጉ የንግድ ማስታገሻ ሰነዶች ምንድን ናቸው?"
+      ],
+      "cta": {
+        "ask": "AI ጠይቅ",
+        "asking": "በመጠየቅ ላይ..."
+      },
+      "form": {
+        "languageLabel": "ቋንቋ",
+        "questionLabel": "ጥያቄዎ"
+      },
+      "validation": {
+        "questionTooShort": "እባክዎ የበለጠ ዝርዝር ጥያቄ ያስገቡ።",
+        "invalidQuestion": "እባክዎ ትክክለኛ ጥያቄ ያቅርቡ።"
+      },
+      "error": {
+        "generic": "ከAI ረዳት ምላሽ ማግኘት አልተቻለም።"
+      },
+      "sections": {
+        "answer": "መልስ"
+      }
+    }
+  },
+  "originEligibility": {
+    "title": "የመነሻ ሰርተፊኬት ብቁነት",
+    "description": "ምርትዎ በAfCFTA ስር ለተመራጭ መነሻ የ60% ህጉን ያሟላ እንደሆነ ያሰሉ",
+    "whatIsTheRule": "የ60% ህግ ምንድን ነው?",
+    "ruleExplanation": "የMaxNOM (ከፍተኛ ኦሪጅናል ያልሆነ ቁሳቁስ) ህግ በምርት ውስጥ ጥቅም ላይ የዋሉ የውጭ ቁሳቁሶች ከEx-Works ዋጋ 60% መብለጥ የለባቸውም ይላል። ይህ ማለት ቢያንስ 40% የምርትዎ ዋጋ ከአገር ውስጥ ይዘት መምጣት አለበት።",
+    "startCalculation": "ብቁነትን ያስሉ",
+    "newCalculation": "አዲስ ስሌት",
+    "reset": "ዳግም አስጀምር",
+    "step1Title": "የEx-Works ዋጋ (EXW)",
+    "step1Description": "ምርቱ ፋብሪካዎን ሲለቅ ያለው ዋጋ፣ ሁሉንም የምርት ወጪዎች ጨምሮ",
+    "step2Title": "ኦሪጅናል ያልሆኑ ቁሳቁሶች (VNM)",
+    "step2Description": "ከሀገርዎ ያልመጡ የውጭ ክፍሎች ዋጋ",
+    "step3Title": "ቀመር ተግብር",
+    "step4Title": "የብቁነት ውጤት",
+    "resultDescription": "በ60% ከፍተኛ ገደብ ላይ የተመሰረተ",
+    "productName": "የምርት ስም",
+    "productNamePlaceholder": "የምርት ስም ያስገቡ (ለምሳሌ፣ ቡና፣ ጨርቃ ጨርቅ)",
+    "currency": "ምንዛሬ",
+    "costOfMaterials": "የቁሳቁስ ወጪ",
+    "costOfMaterialsHint": "በምርት ውስጥ ጥቅም ላይ የዋሉ ጥሬ ዕቃዎች፣ ክፍሎች እና አካላት",
+    "laborCosts": "የሰው ሃይል ወጪ",
+    "laborCostsHint": "የምርት ሰራተኞች ደመወዝ እና አበል",
+    "factoryOverheads": "የፋብሪካ የተጨማሪ ወጪዎች",
+    "factoryOverheadsHint": "ሙቀት፣ መብራት፣ ኪራይ፣ የመሳሪያ ጥገና",
+    "profitMargin": "የትርፍ ህዳግ",
+    "profitMarginHint": "ከምርት ወጪዎች በላይ ያለዎት ትርፍ",
+    "totalExWorks": "ጠቅላላ የEx-Works ዋጋ",
+    "vnmExplanationTitle": "ኦሪጅናል ያልሆኑ ቁሳቁሶች ምንድን ናቸው?",
+    "vnmExplanation": "እነዚህ በሀገርዎ ውስጥ ያልተመረቱ የውጭ ቁሳቁሶች፣ ክፍሎች ወይም አካላት ናቸው። የጉምሩክ ዋጋን ከመጓጓዣ እና ከመድን ወጪዎች ጋር እስከ ወደ ሀገር የሚገቡበት ቦታ ድረስ ያካትቱ።",
+    "vnmValue": "ጠቅላላ VNM ዋጋ",
+    "vnmValueHint": "በምርት ውስጥ ጥቅም ላይ የዋሉ ሁሉም የውጭ ቁሳቁሶች ጠቅላላ ዋጋ",
+    "formula": "ቀመር",
+    "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+    "result": "ውጤት",
+    "maxThreshold": "ከፍተኛ ገደብ: 60%",
+    "eligible": "ብቁ",
+    "notEligible": "ብቁ አይደለም",
+    "eligibleMessage": "ምርትዎ የመነሻ ደንብ መስፈርቶችን ያሟላል",
+    "eligibleDescription": "ኦሪጅናል ያልሆኑ ቁሳቁሶች በ60% ገደብ ውስጥ ናቸው። ምርትዎ በAfCFTA የመነሻ ሰርተፊኬት ስር ለተመራጭ ህክምና ብቁ ነው።",
+    "notEligibleMessage": "ምርትዎ የመነሻ ደንብ መስፈርቶችን አያሟላም",
+    "notEligibleDescription": "ኦሪጅናል ያልሆኑ ቁሳቁሶች ከ60% ገደብ በላይ ናቸው። የአገር ውስጥ ይዘትን ለመጨመር ወይም ተጨማሪ ቁሳቁሶችን በአገር ውስጥ ለማግኘት ያስቡ።",
+    "contactUs": "ብቁነትዎን ለማሻሻል እርዳታ ይፈልጋሉ?",
+    "contactUsDescription": "ቡድናችን የአገር ውስጥ ይዘትን ለመጨመር እና መስፈርቶችን ለማሟላት መንገዶችን ለመለየት ሊረዳዎ ይችላል።",
+    "certificateOfOriginEligibility": "የመነሻ ሰርተፊኬት ብቁነት ፍተሻ",
+    "vnmPercentage": "የVNM መቶኛ",
+    "localContent": "የአገር ውስጥ ይዘት",
+    "minLocalContent": "ዝቅተኛ የሚፈለግ: 40%",
+    "localValueAdded": "የአገር ውስጥ የተጨመረ ዋጋ",
+    "productHsCode": "የምርት HS ኮድ",
+    "productHsCodePlaceholder": "ለመነሻ ደንብ ፍለጋ የሚጠቀሙትን የምርት HS ኮድ ያስገቡ",
+    "originRule": "የመነሻ ደንብ",
+    "ruleSource": "የደንብ ምንጭ",
+    "ruleThreshold": "የደንብ ገደብ",
+    "manualReview": "በእጅ ግምገማ",
+    "manualReviewStepTitle": "በእጅ የደንብ ግምገማ",
+    "manualReviewStepDescription": "ኦፊሴላዊውን ደንብ፣ በቂ ያልሆኑ ሂደቶችን እና የመደመር መስፈርቶችን እንደተመለከቱ ያረጋግጡ።",
+    "manualReviewTitle": "በእጅ ግምገማ ያስፈልጋል",
+    "manualReviewBody": "የዚህ ምርት የመነሻ ደንብ በEXW እና VNM ብቻ በራስ-ሰር ሊሰላ አይችልም። ጥያቄ ከማቅረብዎ በፊት ኦፊሴላዊውን Appendix 2.A.1 ደንብ እና በAnnex 2 ያሉ አጠቃላይ ገደቦች መፈተሽ አለብዎ።",
+    "manualReviewDescription": "ይህ ደንብ በአሁኑ ካልኩሌተር ውስጥ የታሪፍ ለውጥ ወይም የምርት ሂደት ማስረጃ ስለማይካተት በእጅ ግምገማ ይፈልጋል።",
+    "needsReview": "ግምገማ ያስፈልጋል",
+    "ruleNotMapped": "ደንብ አልተመደበም",
+    "ruleNotMappedDescription": "መተግበሪያው ለዚህ HS ኮድ የተለየ የምርት ደንብ እስካሁን አልገናኘም። የመነሻ ጥያቄ ከማቅረብዎ በፊት Appendix 2.A.1 ይመልከቱ።",
+    "ruleReviewed": "በAppendix 2.A.1 ውስጥ ያለውን ተፈጻሚ ለምርቱ የተለየ ደንብ ተመልክቻለሁ።",
+    "insufficientOperationsChecked": "ሂደቱ በAnnex 2 ስር በቂ ያልሆኑ ክንውኖች ብቻ እንዳልሆነ አረጋግጫለሁ።",
+    "cumulationConsidered": "አግባብ ባለበት ቦታ ከሌሎች የአባል ሀገራት የመጡ የመነሻ ግብዓቶችን እና መደመርን አስተውሏለሁ።",
+    "enterHsCodeFirst": "ካልኩሌተሩ ደንቡን እንዲፈታ መጀመሪያ የምርት HS ኮድ ያስገቡ።",
+    "legacyStatus": "የቀድሞ ውጤት",
+    "yes": "አዎ",
+    "no": "አይ",
+    "saveCalculation": "ስሌት አስቀምጥ",
+    "saving": "በማስቀመጥ ላይ...",
+    "calculationSaved": "ስሌት በተሳካ ሁኔታ ተቀምጧል",
+    "registerToSaveCalculation": "ይህን ስሌት ለማስቀጠል ንግድዎን ይመዝገቡ።",
+    "calculationDeleted": "ስሌት በተሳካ ሁኔታ ተሰርዟል",
+    "deleteCalculation": "ስሌት ሰርዝ",
+    "failedToSave": "ስሌት ማስቀመጥ አልተሳካም",
+    "failedToDelete": "ስሌት መሰረዝ አልተሳካም",
+    "totalCalculations": "ጠቅላላ ስሌቶች",
+    "previousCalculations": "ቀድሞ የነበሩ ስሌቶች",
+    "previousCalculationsDescription": "የተቀመጡ የብቁነት ስሌቶችዎ"
+  },
+  "creditProfile": {
+    "loading": "ዲጂታል የክሬዲት መገለጫውን በመጫን ላይ...",
+    "title": "ዲጂታል የክሬዲት መገለጫ",
+    "titleReport": "ዲጂታል የክሬዲት መገለጫ ሪፖርት",
+    "subtitle": "ከገበያ ግብይቶች፣ ከትዕዛዝ አፈጻጸም እና ከገዢ ልዩነት የተገነባ።",
+    "actions": {
+      "backToProfile": "ወደ ክሬዲት መገለጫ ተመለስ",
+      "openBusinessProfile": "የንግድ መገለጫን ክፈት",
+      "businessSetup": "የንግድ ቅንብር",
+      "back": "ተመለስ",
+      "printOrSavePdf": "አትም / PDF አስቀምጥ",
+      "downloadableReport": "ሊወርድ የሚችል ሪፖርት"
+    },
+    "badges": {
+      "verifiedSeller": "የተረጋገጠ ሻጭ",
+      "platformActivity": "የመድረክ እንቅስቃሴ መገለጫ"
+    },
+    "access": {
+      "no_business": {
+        "title": "ንግድዎን ይመዝግቡ",
+        "message": "ዲጂታል የክሬዲት መገለጫ የሚገኘው ንግድዎን ከመዝገቡ እና ከማረጋገጡ በኋላ ነው።"
+      },
+      "business_missing": {
+        "title": "የንግድ መዝገብ አልተገኘም",
+        "message": "መለያዎ አሁን ከማይገኝ የንግድ መዝገብ ጋር ተገናኝቷል።"
+      },
+      "pending_verification": {
+        "title": "ማረጋገጫ በሂደት ላይ ነው",
+        "message": "ንግድዎ ከተረጋገጠ በኋላ ዲጂታል የክሬዲት መገለጫዎ ይከፈታል።"
+      },
+      "rejected_verification": {
+        "title": "ማረጋገጫ ያስፈልጋል",
+        "message": "ዲጂታል የክሬዲት መገለጫውን ለመክፈት በመጀመሪያ የንግድ ማረጋገጫዎን ያስተካክሉ።"
+      },
+      "not_seller": {
+        "title": "የሻጭ ፈቃድ ያስፈልጋል",
+        "message": "ዲጂታል የክሬዲት መገለጫውን ማየት የሚችሉት የተረጋገጡ ሻጮች ብቻ ናቸው።"
+      },
+      "ready": {
+        "title": "ዝግጁ ነው",
+        "message": "ዲጂታል የክሬዲት መገለጫዎ ዝግጁ ነው።"
+      }
+    },
+    "common": {
+      "notAvailableYet": "እስካሁን አይገኝም"
+    },
+    "summary": {
+      "headline": "{paidOrdersCount} የተከፈሉ ትዕዛዞች በ{uniqueBuyers} ገዢዎች ላይ",
+      "description": "ይህ መገለጫ በAfriConnect የተመዘገበ እንቅስቃሴን ያሳያል፣ እና እንደ ውጫዊ የክሬዲት ውጤት ሳይሆን እንደ መድረክ ስኮርካርድ ይቆጠራል።",
+      "generated": "የተፈጠረበት",
+      "reportPeriodStart": "የሪፖርት ጊዜ መጀመሪያ",
+      "latestProfileActivity": "የቅርብ ጊዜ የመገለጫ እንቅስቃሴ"
+    },
+    "cards": {
+      "paidTransactionVolume": {
+        "title": "የተከፈለ የግብይት መጠን",
+        "description": "የተጠናቀቀ የገበያ ትዕዛዝ ዋጋ"
+      },
+      "paidOrders": {
+        "title": "የተከፈሉ ትዕዛዞች",
+        "description": "{totalOrders} ጠቅላላ የሻጭ ትዕዛዞች ተከታትለዋል"
+      },
+      "uniqueBuyers": {
+        "title": "ልዩ ገዢዎች",
+        "description": "{repeatBuyers} የተደጋገሙ ገዢዎች"
+      },
+      "buyerCountries": {
+        "title": "የገዢ አገሮች",
+        "description": "{buyersWithBusinessMetadata} ገዢዎች ከንግድ መረጃ ጋር ተገናኝተዋል"
+      },
+      "totalSellerOrders": {
+        "title": "ጠቅላላ የሻጭ ትዕዛዞች",
+        "description": "ለዚህ ሻጭ የተመደቡ ሁሉም ትዕዛዞች"
+      },
+      "successfulPaymentRate": {
+        "title": "የተሳካ ክፍያ መጠን",
+        "description": "የክፍያ መዝገብ ያላቸው ትዕዛዞች ውስጥ የተጠናቀቁ ክፍያዎች"
+      },
+      "averageOrderValue": {
+        "title": "አማካይ የትዕዛዝ ዋጋ",
+        "description": "በተጠናቀቁ የገበያ ትዕዛዞች ላይ የተመሠረተ"
+      },
+      "recentPaidActivity": {
+        "title": "የቅርብ ጊዜ የተከፈለ እንቅስቃሴ",
+        "description": "በጣም የቅርብ ጊዜ የተጠናቀቀ የትዕዛዝ እንቅስቃሴ"
+      },
+      "uniqueBuyersDetailed": {
+        "title": "ልዩ ገዢዎች",
+        "description": "ለዚህ ሻጭ ትዕዛዝ ያስገቡ ልዩ ገዢዎች"
+      },
+      "repeatBuyers": {
+        "title": "የተደጋገሙ ገዢዎች",
+        "description": "ከአንድ በላይ ትዕዛዝ ያስገቡ ገዢዎች"
+      },
+      "metadataCoverage": {
+        "title": "የመረጃ ሽፋን",
+        "description": "{buyersWithBusinessMetadata} ገዢዎች ከንግድ መዝገቦች ጋር ተገናኝተዋል"
+      },
+      "topBuyerConcentration": {
+        "title": "የከፍተኛ ገዢ መጠን",
+        "description": "ከትልቁ ገዢ የመጣ የግብይት መጠን ድርሻ"
+      }
+    },
+    "empty": {
+      "title": "ገና በቂ እንቅስቃሴ የለም",
+      "description": "ንግድዎ ትዕዛዞችን ማግኘት ሲጀምር ይህ መገለጫ በራሱ በግብይት፣ በአፈጻጸም እና በገዢ ልዩነት ምልክቶች ይሞላል።"
+    },
+    "sections": {
+      "transactionHistory": {
+        "title": "የግብይት ታሪክ",
+        "description": "በገበያ ውስጥ የቅርብ ጊዜ የትዕዛዝ እና የክፍያ አፈጻጸም።"
+      },
+      "fulfillment": {
+        "title": "የአፈጻጸም እንቅስቃሴ",
+        "description": "ከትዕዛዝ ዑደት እና ከክፍያ ውጤቶች የተመነጨ የስራ አፈጻጸም።"
+      },
+      "buyerDiversity": {
+        "title": "የገዢ ልዩነት"
+      }
+    },
+    "trend": {
+      "window": "{days} ቀናት",
+      "rollingPerformanceWindow": "ተንቀሳቃሽ የአፈጻጸም መስኮት",
+      "orders": "ትዕዛዞች",
+      "paidOrders": "የተከፈሉ ትዕዛዞች",
+      "paidVolume": "የተከፈለ መጠን"
+    },
+    "fulfillment": {
+      "completionRate": "የማጠናቀቅ መጠን",
+      "cancellationRate": "የመሰረዝ መጠን",
+      "payoutSuccessRate": "የክፍያ ስኬት መጠን",
+      "ordersCurrentlyProcessing": "በሂደት ላይ ያሉ ትዕዛዞች",
+      "averageFulfillmentCycle": "አማካይ የአፈጻጸም ዑደት",
+      "averageFulfillmentCycleValue": "{days} ቀናት",
+      "payoutOutcomeCounts": "የክፍያ ውጤት ቆጠራ",
+      "payoutStatuses": {
+        "queued": "ተሰልፏል",
+        "pending": "በመጠባበቅ ላይ",
+        "success": "ተሳክቷል",
+        "failed": "አልተሳካም",
+        "reverted": "ተመልሷል"
+      }
+    },
+    "buyerDiversity": {
+      "coverage": {
+        "complete": "የገዢ ልዩነት በተገናኙ የገዢ ንግድ መዝገቦች ላይ የተመሠረተ ነው።",
+        "partial": "የገዢ ልዩነት በንግድ መዝገብ ያላቸው ገዢዎች ብቻ ላይ የተመሠረተ ነው፣ ስለዚህ አንዳንድ ገዢዎች ከልዩነት ትንታኔው ውጭ ሊሆኑ ይችላሉ።"
+      }
+    },
+    "breakdowns": {
+      "countLabel": "{count} ገዢዎች",
+      "buyerCountries": {
+        "title": "የገዢ አገሮች",
+        "empty": "ገዢዎች የንግድ መረጃ ሲያገናኙ የአገር ስርጭት ይታያል።"
+      },
+      "buyerCategories": {
+        "title": "የገዢ ምድቦች",
+        "empty": "ገዢዎች የንግድ መረጃ ሲያገናኙ የምድብ ስርጭት ይታያል።"
+      },
+      "topBuyers": {
+        "title": "ከፍተኛ ገዢዎች",
+        "empty": "ትዕዛዞች ሲመጡ ከፍተኛ ገዢዎች ይታያሉ።",
+        "orders": "{count} ትዕዛዞች"
+      }
+    },
+    "methodology": {
+      "title": "የመርሀ ግብር ማስታወሻ",
+      "description": "ይህ ሪፖርት ከAfriConnect የመጀመሪያ ደረጃ የገበያ እንቅስቃሴ የተፈጠረ ነው።",
+      "points": {
+        "transactionVolume": "የግብይት መጠን ከተጠናቀቁ የመድረክ ክፍያዎች ጋር የተገናኙ የሻጭ ትዕዛዞችን ይመሠረታል።",
+        "fulfillment": "አፈጻጸም የትዕዛዝ ሁኔታን እና የክፍያ ውጤቶችን እንደ የስራ ምልክቶች ይጠቀማል።",
+        "buyerDiversity": "የገዢ ልዩነት በተገናኙ የገዢ ንግድ መዝገቦች ላይ የተመሠረተ ስለሆነ ያልተሟላ መረጃ ሽፋንን ይቀንሳል።"
+      }
+    },
+    "report": {
+      "generatedOn": "የተዘጋጀበት ቀን {date}",
+      "latestActivity": "የቅርብ ጊዜ እንቅስቃሴ: {date}",
+      "reportPeriod": "የሪፖርት ጊዜ: {start} — {end}",
+      "category": "ምድብ",
+      "country": "ሀገር",
+      "verifiedSince": "ከተረጋገጠበት ጊዜ",
+      "sectionProfileSummary": "1. የመገለጫ ማጠቃለያ",
+      "sectionTransactionHistory": "2. የግብይት ታሪክ",
+      "sectionFulfillment": "3. የማሟያ አፈጻጸም",
+      "sectionBuyerDiversity": "4. የገዢዎች ብዝሃነት",
+      "sectionMethodology": "5. የዘዴ ማስታወሻ",
+      "rollingPerformanceWindows": "ተንቀሳቃሽ የአፈጻጸም መስኮቶች",
+      "payoutOutcomes": "የክፍያ ውጤቶች",
+      "topBuyersSection": "ዋና ገዢዎች",
+      "buyerCountriesSection": "የገዢዎች ሀገራት",
+      "buyerCategoriesSection": "የገዢዎች ምድቦች",
+      "noData": "ምንም ውሂብ የለም",
+      "orders": "{count} ትዕዛዞች",
+      "buyerShare": "{count} ገዢዎች ({share}%)"
+    }
+  },
+  "inventory": {
+    "title": "እቃ አስተዳደር",
+    "description": "የምርት ክምችትዎን ይከታተሉ፣ መጠኖችን ያስተካክሉ፣ እና የመሙላት ማሳወቂያዎችን ያቀናብሩ",
+    "summary": {
+      "totalProducts": "ጠቅላላ ምርቶች",
+      "totalUnits": "ጠቅላላ ክፍሎች",
+      "lowStock": "ዝቅተኛ ክምችት",
+      "outOfStock": "ከክምችት ውጭ"
+    },
+    "tabs": {
+      "inventory": "እቃ ዝርዝር",
+      "activity": "እንቅስቃሴ"
+    },
+    "searchPlaceholder": "በምርት ወይም SKU ይፈልጉ...",
+    "filterStatus": "ሁኔታ ይጣሩ",
+    "status": {
+      "in_stock": "በክምችት ውስጥ",
+      "low_stock": "ዝቅተኛ ክምችት",
+      "out_of_stock": "ከክምችት ውጭ",
+      "inStock": "በክምችት ውስጥ",
+      "lowStock": "ዝቅተኛ ክምችት",
+      "outOfStock": "ከክምችት ውጭ"
+    },
+    "table": {
+      "product": "ምርት",
+      "sku": "SKU",
+      "onHand": "ካለበት መጠን",
+      "threshold": "ዝቅተኛ ክምችት ገደብ",
+      "status": "ሁኔታ",
+      "actions": "ድርጊቶች"
+    },
+    "actions": {
+      "adjust": "አስተካክል",
+      "thresholds": "ገደቦች",
+      "history": "ታሪክ"
+    },
+    "noSku": "SKU የለም",
+    "noResults": "ከማጣሪያዎችዎ ጋር የሚዛመዱ እቃዎች የሉም።",
+    "activityTitle": "የቅርብ ጊዜ እንቅስቃሴ",
+    "activity": {
+      "date": "ቀን",
+      "product": "ምርት",
+      "type": "አይነት",
+      "quantity": "መጠን",
+      "newQuantity": "አዲስ መጠን",
+      "reason": "ምክንያት",
+      "none": "የለም",
+      "empty": "እስካሁን የእቃ እንቅስቃሴ የለም።"
+    },
+    "types": {
+      "restock": "ዳግም አስመልስ",
+      "adjustment": "ማስተካከያ",
+      "return": "መመለሻ",
+      "correction": "ማስተካከያ",
+      "sale": "ሽያጭ"
+    },
+    "adjustDialog": {
+      "title": "ክምችት አስተካክል",
+      "description": "ለዚህ ምርት የክምችት ለውጥ ይመዝግቡ።",
+      "type": "የማስተካከያ አይነት",
+      "delta": "የመጠን ለውጥ",
+      "deltaPlaceholder": "ለመቀነስ አሉታዊ እሴቶችን ይጠቀሙ",
+      "quickAdd": "1 ጨምር",
+      "quickRemove": "1 ቀንስ",
+      "reason": "ምክንያት",
+      "reasonPlaceholder": "በነፃ ማስታወሻ",
+      "save": "ማስተካከያን አስቀምጥ"
+    },
+    "historyDialog": {
+      "title": "የክምችት ታሪክ",
+      "description": "ለዚህ ምርት የቅርብ ጊዜ ክምችት እንቅስቃሴዎች።"
+    },
+    "thresholdDialog": {
+      "title": "የመሙላት ቅንብሮች",
+      "description": "ዝቅተኛ ክምችት ማሳወቂያ እና የዳግም መሙላት መጠን ያቀናብሩ።",
+      "lowStock": "ዝቅተኛ ክምችት ገደብ",
+      "lowStockPlaceholder": "ለምሳሌ፣ 5",
+      "reorder": "የዳግም መሙላት መጠን",
+      "reorderPlaceholder": "ለምሳሌ፣ 25",
+      "save": "ቅንብሮችን አስቀምጥ"
+    },
+    "invalidAdjustment": "ዜሮ ያልሆነ ለውጥ ያስገቡ።",
+    "adjustmentSaved": "የእቃ ማስተካከያ ተቀምጧል።",
+    "invalidThreshold": "ዝቅተኛ ክምችት ገደብ 0 ወይም ከዚያ በላይ መሆን አለበት።",
+    "invalidReorder": "የዳግም መሙላት መጠን 0 ወይም ከዚያ በላይ መሆን አለበት።",
+    "thresholdsSaved": "የመሙላት ቅንብሮች ተቀምጠዋል።"
+  },
+  "adminBanks": {
+    "title": "ባንኮችን ያስተዳድሩ",
+    "description": "አጋር ባንኮችን ይፍጠሩ፣ የባንክ ተጠቃሚዎችን ይመድቡ እና የሪፈራል አቅምን ይከታተሉ።",
+    "stats": {
+      "partnerBanks": "አጋር ባንኮች",
+      "bankUsers": "የባንክ ተጠቃሚዎች",
+      "trackedReferrals": "የተከታተሉ ሪፈራሎች"
+    },
+    "createBank": {
+      "title": "ባንክ ይፍጠሩ",
+      "description": "ሪፈራሎችን እና BI መዳረሻን የሚያስተዳድር የባንክ ፕሮፋይል ያዘጋጁ።",
+      "namePlaceholder": "የባንኩ ስም",
+      "descriptionPlaceholder": "መግለጫ (አማራጭ)",
+      "action": "ባንክ ፍጠር",
+      "creating": "በመፍጠር ላይ...",
+      "success": "ባንኩ በተሳካ ሁኔታ ተፈጥሯል",
+      "error": "ባንኩን መፍጠር አልተሳካም"
+    },
+    "assignUser": {
+      "title": "የባንክ ተጠቃሚ መድብ",
+      "description": "ያለውን ተጠቃሚ ወደ ባንክ መለያ ያሳድጉ እና ከባንክ ጋር ያገናኙት።",
+      "searchPlaceholder": "ተጠቃሚዎችን በስም ወይም በኢሜይል ይፈልጉ",
+      "selectUser": "ተጠቃሚ ይምረጡ",
+      "selectBank": "ባንክ ይምረጡ",
+      "action": "ተጠቃሚ መድብ",
+      "assigning": "በመመደብ ላይ...",
+      "success": "ተጠቃሚው ወደ ባንኩ ተመድቧል",
+      "error": "ተጠቃሚውን መመደብ አልተሳካም"
+    },
+    "directory": {
+      "title": "የባንክ ዝርዝር",
+      "description": "የትኞቹ ባንኮች ንቁ እንደሆኑ እና በእያንዳንዱ ፖርትፎሊዮ ውስጥ ስንት SME እንዳሉ ይመልከቱ።",
+      "empty": "እስካሁን ምንም ባንክ አልተፈጠረም።",
+      "columns": {
+        "bank": "ባንክ",
+        "status": "ሁኔታ",
+        "referralPrefix": "የሪፈራል ቅድመ ኮድ",
+        "users": "ተጠቃሚዎች",
+        "referrals": "ሪፈራሎች",
+        "portfolio": "ፖርትፎሊዮ"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "የለም"
+    },
+    "stages": {
+      "generated": "ተላልፏል",
+      "signed_up": "ተመዝግቧል",
+      "business_created": "ቢዝነስ ተፈጥሯል",
+      "verified": "ተረጋግጧል",
+      "active": "ንቁ"
+    },
+    "overview": {
+      "fallbackTitle": "የባንክ ዳሽቦርድ",
+      "description": "የሪፈራል ለውጥን፣ የSME ኦንቦርዲንግን እና የፖርትፎሊዮ አፈፃፀምን ይከታተሉ።",
+      "referralBase": "የሪፈራል መሠረት፦ {code}",
+      "stats": {
+        "totalReferrals": "ጠቅላላ ሪፈራሎች",
+        "portfolioSmes": "የፖርትፎሊዮ SMEዎች",
+        "portfolioSmesMeta": "{verified} ተረጋግጠዋል፣ {active} ንቁ ናቸው",
+        "portfolioRevenue": "የፖርትፎሊዮ ገቢ",
+        "portfolioRevenueMeta": "በተላለፉ SMEዎች ላይ {orders} ትዕዛዞች",
+        "successfulPayouts": "የተሳኩ ክፍያ ልቀቶች",
+        "successfulPayoutsMeta": "በእርስዎ SMEዎች የተዘረዘሩ {products} ምርቶች"
+      },
+      "funnel": {
+        "title": "የሪፈራል ፈነል",
+        "description": "ከሪፈራል ፍጠራ እስከ ንቁ የSME ተሳትፎ ድረስ ያለው ሙሉ ጉዞ።"
+      },
+      "momentum": {
+        "title": "ወርሃዊ እድገት",
+        "description": "በፖርትፎሊዮዎ ላይ የቅርብ ጊዜ ሪፈራል፣ ኦንቦርዲንግ እና ገቢ እንቅስቃሴ።",
+        "referred": "{count} ተላልፈዋል",
+        "onboarded": "{count} ኦንቦርድ ተደርገዋል",
+        "verified": "{count} ተረጋግጠዋል"
+      },
+      "recentPortfolio": {
+        "title": "የቅርብ ጊዜ ፖርትፎሊዮ SMEዎች",
+        "description": "ከባንክዎ የተገናኙ ወይም አዲስ የተካተቱ ድርጅቶች።",
+        "cta": "ፖርትፎሊዮን ይመልከቱ",
+        "empty": "የተላለፉ SMEዎች እስካሁን ቢዝነስ አልፈጠሩም።",
+        "products": "{count} ምርቶች",
+        "orders": "{count} ትዕዛዞች",
+        "revenue": "{amount} ገቢ"
+      },
+      "recentReferrals": {
+        "title": "የቅርብ ጊዜ ሪፈራሎች",
+        "description": "የቅርብ ጊዜ የሪፈራል መዝገቦች እና እያንዳንዱ እጩ ያለበት ደረጃ።",
+        "cta": "ሪፈራሎችን ያስተዳድሩ",
+        "empty": "እስካሁን ምንም የሪፈራል መዝገብ የለም። በመጀመሪያ የባንክ ሪፈራል ሊንክ ይፍጠሩ።"
+      }
+    },
+    "portfolio": {
+      "heading": "ፖርትፎሊዮ",
+      "title": "የፖርትፎሊዮ SMEዎች",
+      "description": "በባንክዎ የተላለፉ ሁሉንም SMEዎች እና የደረሱበትን ደረጃ ይመልከቱ።",
+      "filtersDescription": "አፈፃፀምን ለመገምገም በኦንቦርዲንግ ደረጃ፣ ቦታ እና ዘርፍ ያጣሩ።",
+      "searchPlaceholder": "ቢዝነስ፣ ባለቤት ወይም ኢሜይል ይፈልጉ",
+      "filterByStage": "በደረጃ አጣራ",
+      "allStages": "ሁሉም ደረጃዎች",
+      "country": "አገር",
+      "allCountries": "ሁሉም አገሮች",
+      "category": "ምድብ",
+      "allCategories": "ሁሉም ምድቦች",
+      "empty": "ከአሁኑ ማጣሪያዎች ጋር የሚዛመድ SME የለም።",
+      "unknownOwner": "ያልታወቀ ባለቤት",
+      "noEmail": "ኢሜይል የለም",
+      "view": "ይመልከቱ",
+      "columns": {
+        "business": "ቢዝነስ",
+        "owner": "ባለቤት",
+        "stage": "ደረጃ",
+        "products": "ምርቶች",
+        "orders": "ትዕዛዞች",
+        "revenue": "ገቢ",
+        "drillDown": "ዝርዝር ይግቡ"
+      }
+    },
+    "detail": {
+      "description": "ኦንቦርዲንግ፣ ባለቤትነት እና የንግድ እንቅስቃሴን የሚያካትት ዝርዝር የSME እይታ።",
+      "stats": {
+        "revenue": "ገቢ",
+        "orders": "ትዕዛዞች",
+        "products": "ምርቶች",
+        "netPayouts": "የተጣራ ክፍያ ልቀቶች"
+      },
+      "snapshot": {
+        "title": "የቢዝነስ አጭር እይታ",
+        "description": "ዋና ዋና የድርጅት ዝርዝሮች እና የአሁኑ የኦንቦርዲንግ ደረጃ።",
+        "country": "አገር",
+        "category": "ምድብ",
+        "verificationStatus": "የማረጋገጫ ሁኔታ",
+        "joinedPlatform": "መድረኩን የተቀላቀለበት ጊዜ",
+        "businessDescription": "መግለጫ",
+        "noDescription": "ምንም መግለጫ አልተሰጠም"
+      },
+      "owner": {
+        "title": "የባለቤት መገኛ",
+        "description": "ለSME መለያው ተጠያቂ የሆነው ዋና ባለቤት።",
+        "unknownOwner": "ያልታወቀ ባለቤት",
+        "noEmail": "የሚገኝ ኢሜይል የለም",
+        "referralTracking": "የሪፈራል ክትትል",
+        "code": "ኮድ",
+        "currentReferralRecord": "የአሁኑ የሪፈራል መዝገብ"
+      },
+      "monthly": {
+        "title": "ወርሃዊ አፈፃፀም",
+        "description": "ለዚህ SME ፖርትፎሊዮ መለያ የቅርብ ጊዜ የገቢ እና የትዕዛዝ አቅጣጫ።",
+        "orders": "{count} ትዕዛዞች"
+      }
+    },
+    "referrals": {
+      "title": "ሪፈራሎች",
+      "description": "ለSMEዎች ሊከታተሉ የሚችሉ የምዝገባ ሊንኮችን ይፍጠሩ እና የእያንዳንዱን የለውጥ ደረጃ ይከታተሉ።",
+      "unnamedReferral": "ስም የሌለው ሪፈራል",
+      "unnamedLead": "ስም የሌለው እጩ",
+      "noExtraMetadata": "ተጨማሪ መረጃ የለም",
+      "create": {
+        "title": "የሪፈራል ሊንክ ፍጠር",
+        "description": "ለSME፣ ድርጅት ወይም እጩ ልዩ የምዝገባ ኮድ ይፍጠሩ።",
+        "organizationPlaceholder": "የድርጅቱ ስም",
+        "emailPlaceholder": "የግብዣ ኢሜይል (አማራጭ)",
+        "notesPlaceholder": "ማስታወሻ (አማራጭ)",
+        "action": "ሪፈራል ፍጠር",
+        "creating": "በመፍጠር ላይ...",
+        "success": "ሪፈራል {code} ተፈጥሯል",
+        "error": "ሪፈራል መፍጠር አልተሳካም"
+      },
+      "playbook": {
+        "title": "የሪፈራል መመሪያ",
+        "description": "እያንዳንዱ የተፈጠረ ኮድ ለባንክዎ ፖርትፎሊዮ የሚለካ የኦንቦርዲንግ ጉዞ ይፈጥራል።",
+        "howItWorks": "እንዴት እንደሚሰራ",
+        "step1": "1. ለSME እጩ የሪፈራል መዝገብ ይፍጠሩ።",
+        "step2": "2. የተፈጠረውን የምዝገባ ሊንክ ከዚያ ድርጅት ጋር ያጋሩ።",
+        "step3": "3. ከተመዘገቡ እና ከተካተቱ በኋላ ይህ ገጽ በራሱ ይዘምናል።",
+        "defaultSignupBase": "ነባሪ የምዝገባ መሠረት",
+        "baseUrlFallback": "የምዝገባ መሠረት ሊንክዎ እዚህ በአሳሽ ውስጥ ይታያል።"
+      },
+      "register": {
+        "title": "የሪፈራል መዝገብ",
+        "description": "እያንዳንዱን ኮድ፣ የተጋበዘውን እጩ እና ወደ ንቁ SME ተቀይሯል ወይስ አልተቀየረም ይከታተሉ።",
+        "empty": "እስካሁን ምንም ሪፈራል አልተፈጠረም።",
+        "copySuccess": "የሪፈራል ሊንክ ተቀድቷል",
+        "copyError": "የሪፈራል ሊንኩን መቅዳት አልተቻለም",
+        "columns": {
+          "lead": "እጩ",
+          "referralCode": "የሪፈራል ኮድ",
+          "status": "ሁኔታ",
+          "linkedSme": "የተገናኘ SME",
+          "created": "የተፈጠረበት",
+          "copyLink": "ሊንክ ቅዳ"
+        }
+      }
+    },
+    "analytics": {
+      "title": "ትንታኔ",
+      "description": "ፖርትፎሊዮዎን በአገር፣ በምድብ፣ በኦንቦርዲንግ ደረጃ እና በወርሃዊ ውጤት ይከፋፍሉ።",
+      "byCategory": {
+        "title": "በምድብ",
+        "description": "በተላለፉ SMEዎችዎ መሠረት ላይ የሚበልጡት ዘርፎች ማናቸው ናቸው።"
+      },
+      "byCountry": {
+        "title": "በአገር",
+        "description": "በባንኩ የተላለፉ ድርጅቶች የቦታ ስርጭት።"
+      },
+      "byStage": {
+        "title": "በደረጃ",
+        "description": "ፖርትፎሊዮው በፈነሉ ውስጥ ምን ያህል እንደተራመደ ያሳያል።"
+      },
+      "monthly": {
+        "title": "ወርሃዊ አቅጣጫ",
+        "description": "የፖርትፎሊዮ ፍጠራን፣ እንቅስቃሴን እና የንግድ እሴትን በጊዜ ሂደት ይመልከቱ።",
+        "newSmes": "{count} አዲስ SMEዎች",
+        "active": "{count} ንቁ"
+      }
+    }
+  }
+}

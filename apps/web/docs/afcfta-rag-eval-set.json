@@ -1,0 +1,759 @@
+{
+  "name": "AfCFTA Compliance RAG Evaluation Set",
+  "version": "1.0",
+  "notes": [
+    "This set is designed for citation-first RAG evaluation before production launch.",
+    "Expected citation targets are intentionally document-family oriented because the final uploaded corpus is not yet fixed.",
+    "Replace placeholder document names with exact uploaded filenames and section IDs during ingestion."
+  ],
+  "acceptance_criteria": {
+    "must_cite_sources": true,
+    "must_stay_grounded_in_retrieved_documents": true,
+    "must_refuse_when_evidence_is_missing": true,
+    "must_distinguish_treaty_rules_from_country_specific_rules": true,
+    "must_call_out_date_sensitivity": true
+  },
+  "cases": [
+    {
+      "id": "afcfta-001",
+      "category": "scope_and_eligibility",
+      "language": "en",
+      "question": "What is AfCFTA and which types of trade does it cover for goods moving between African member states?",
+      "expected_answer_summary": "Summarize AfCFTA at a high level, limit claims to covered trade in goods, and mention that implementation depends on ratification and domestic schedules where relevant.",
+      "expected_citation_targets": [
+        "AfCFTA Agreement overview",
+        "Protocol on Trade in Goods"
+      ],
+      "failure_modes": [
+        "Answers from general web knowledge instead of uploaded documents",
+        "Claims all African countries apply the same rules immediately"
+      ]
+    },
+    {
+      "id": "afcfta-002",
+      "category": "scope_and_eligibility",
+      "language": "en",
+      "question": "Does AfCFTA automatically make all products duty free today?",
+      "expected_answer_summary": "Answer no, explain tariff liberalization phases and exclusions or sensitive categories if documented.",
+      "expected_citation_targets": [
+        "Tariff liberalization schedule",
+        "National tariff offer or category schedule"
+      ],
+      "failure_modes": [
+        "Says everything is zero-rated now",
+        "Ignores phased implementation"
+      ]
+    },
+    {
+      "id": "afcfta-003",
+      "category": "scope_and_eligibility",
+      "language": "en",
+      "question": "Is Ethiopia currently trading under the same AfCFTA tariff preferences as Kenya for all products?",
+      "expected_answer_summary": "Explain differences by national schedule, implementation status, and product coverage; do not imply uniform treatment.",
+      "expected_citation_targets": [
+        "Country implementation note",
+        "Ethiopia tariff schedule",
+        "Kenya or EAC tariff schedule"
+      ],
+      "failure_modes": [
+        "Treats country implementation as identical",
+        "Answers without citing country-specific evidence"
+      ]
+    },
+    {
+      "id": "afcfta-004",
+      "category": "scope_and_eligibility",
+      "language": "en",
+      "question": "Which document in our corpus should be treated as the source of truth when treaty text and a local customs notice conflict?",
+      "expected_answer_summary": "State the hierarchy only if the uploaded documents define it; otherwise explain the conflict and ask for legal or customs confirmation.",
+      "expected_citation_targets": [
+        "Treaty text",
+        "National customs notice",
+        "Implementation guidance"
+      ],
+      "failure_modes": [
+        "Invents a hierarchy",
+        "Fails to flag ambiguity"
+      ]
+    },
+    {
+      "id": "afcfta-005",
+      "category": "scope_and_eligibility",
+      "language": "fr",
+      "question": "Est-ce que l'AfCFTA supprime immediatement tous les droits de douane pour les marchandises eligibles ?",
+      "expected_answer_summary": "Provide a French answer grounded in schedule-based liberalization and explain that preferences depend on the applicable tariff offer and origin qualification.",
+      "expected_citation_targets": [
+        "Tariff liberalization schedule",
+        "Rules of origin guidance"
+      ],
+      "failure_modes": [
+        "Switches to English unnecessarily",
+        "Loses the schedule nuance"
+      ]
+    },
+    {
+      "id": "afcfta-006",
+      "category": "tariff_schedule",
+      "language": "en",
+      "question": "What is the applicable AfCFTA tariff rate in 2028 for HS 0207 in Ethiopia if it appears in Category A?",
+      "expected_answer_summary": "Look up the specific schedule entry, return the 2028 rate, and cite the exact schedule row or section.",
+      "expected_citation_targets": [
+        "Ethiopia Category A tariff schedule"
+      ],
+      "failure_modes": [
+        "Uses a general category description instead of the exact row",
+        "Returns the wrong year"
+      ]
+    },
+    {
+      "id": "afcfta-007",
+      "category": "tariff_schedule",
+      "language": "en",
+      "question": "How does the tariff rate for a Category A product change from 2026 to 2030 in the uploaded schedule?",
+      "expected_answer_summary": "Summarize year-by-year rate progression using cited schedule evidence.",
+      "expected_citation_targets": [
+        "Tariff reduction schedule",
+        "Country-specific tariff offer"
+      ],
+      "failure_modes": [
+        "Gives generic percentages without citing the actual schedule",
+        "Misses that different products may have different base rates"
+      ]
+    },
+    {
+      "id": "afcfta-008",
+      "category": "tariff_schedule",
+      "language": "en",
+      "question": "If a product is not listed in our Category A schedule, can the assistant conclude that it is not AfCFTA-eligible?",
+      "expected_answer_summary": "Answer cautiously, explain the limit of the uploaded schedule, and avoid overclaiming without a full schedule corpus.",
+      "expected_citation_targets": [
+        "Schedule scope note",
+        "Coverage or exclusions note"
+      ],
+      "failure_modes": [
+        "Concludes ineligibility too aggressively",
+        "Ignores missing-corpus risk"
+      ]
+    },
+    {
+      "id": "afcfta-009",
+      "category": "tariff_schedule",
+      "language": "en",
+      "question": "What should the assistant say if the user asks for the tariff rate for a year not present in the uploaded schedule?",
+      "expected_answer_summary": "Refuse to guess and state that the uploaded evidence only supports the listed years.",
+      "expected_citation_targets": [
+        "Tariff schedule year coverage"
+      ],
+      "failure_modes": [
+        "Extrapolates beyond the schedule",
+        "Uses training data instead of uploaded evidence"
+      ]
+    },
+    {
+      "id": "afcfta-010",
+      "category": "tariff_schedule",
+      "language": "sw",
+      "question": "Je, kiwango cha ushuru wa AfCFTA kwa bidhaa hii katika mwaka 2029 kinaonyeshwa vipi kwenye ratiba ya nchi husika?",
+      "expected_answer_summary": "Answer in Swahili if possible, explain the 2029 rate from the cited national schedule, and avoid unsupported translation of legal terms.",
+      "expected_citation_targets": [
+        "National tariff schedule"
+      ],
+      "failure_modes": [
+        "Returns unsupported values",
+        "Loses the country qualifier"
+      ]
+    },
+    {
+      "id": "afcfta-011",
+      "category": "tariff_schedule",
+      "language": "en",
+      "question": "Where in the corpus can I verify whether a Kenyan EAC schedule line uses the base rate or a reduced AfCFTA rate for 2027?",
+      "expected_answer_summary": "Point the user to the schedule row and explain the difference between base rate and annual preferential rate if documented.",
+      "expected_citation_targets": [
+        "Kenya or EAC schedule row",
+        "Base rate explanation"
+      ],
+      "failure_modes": [
+        "Confuses MFN/base rate with AfCFTA preference",
+        "Does not cite the line item"
+      ]
+    },
+    {
+      "id": "afcfta-012",
+      "category": "tariff_schedule",
+      "language": "en",
+      "question": "If the schedule shows percentages but the user asks for estimated duty payable, what should the assistant do?",
+      "expected_answer_summary": "Explain that the corpus supports the tariff rate but not the final duty payable unless customs value and other charges are supplied and documented.",
+      "expected_citation_targets": [
+        "Tariff schedule",
+        "Any duty calculation guidance in corpus"
+      ],
+      "failure_modes": [
+        "Invents a payable amount",
+        "Omits the need for customs valuation inputs"
+      ]
+    },
+    {
+      "id": "afcfta-013",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "What makes a product originating under AfCFTA according to the uploaded rules of origin documents?",
+      "expected_answer_summary": "Summarize the qualifying pathways only from the corpus, such as wholly obtained, substantial transformation, or product-specific rules if present.",
+      "expected_citation_targets": [
+        "Annex on Rules of Origin",
+        "Operational certification manual"
+      ],
+      "failure_modes": [
+        "Gives a generic trade-law answer with no citations",
+        "Merges rules from another agreement"
+      ]
+    },
+    {
+      "id": "afcfta-014",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "Can imported packaging materials from outside Africa disqualify a product from AfCFTA origin?",
+      "expected_answer_summary": "Answer conditionally based on the treatment of packaging, accessories, or non-originating materials in the corpus.",
+      "expected_citation_targets": [
+        "Rules of origin annex",
+        "Interpretive notes on packaging or accessories"
+      ],
+      "failure_modes": [
+        "Overgeneralizes without product rule support",
+        "Ignores material-specific treatment"
+      ]
+    },
+    {
+      "id": "afcfta-015",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "How should the assistant answer when two uploaded rules of origin documents describe cumulation differently?",
+      "expected_answer_summary": "Expose the conflict, cite both sources, and avoid choosing a side without a higher-priority source in the corpus.",
+      "expected_citation_targets": [
+        "Cumulation provision in document A",
+        "Cumulation provision in document B"
+      ],
+      "failure_modes": [
+        "Picks one source without explanation",
+        "Hides the conflict"
+      ]
+    },
+    {
+      "id": "afcfta-016",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "What evidence is needed to support a claim that mangoes grown and harvested locally are wholly obtained?",
+      "expected_answer_summary": "List the documentary evidence only if the corpus covers it, otherwise explain the likely source category and note missing evidence.",
+      "expected_citation_targets": [
+        "Wholly obtained rule",
+        "Documentary evidence guidance"
+      ],
+      "failure_modes": [
+        "Invents documentary requirements",
+        "Treats wholly obtained as self-proving"
+      ]
+    },
+    {
+      "id": "afcfta-017",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "If a user asks whether simple repackaging in a free zone is enough to confer origin, how should the assistant respond?",
+      "expected_answer_summary": "Check insufficient processing rules and answer no unless the uploaded documents explicitly allow it.",
+      "expected_citation_targets": [
+        "Insufficient operations provision",
+        "Free zone treatment guidance if present"
+      ],
+      "failure_modes": [
+        "Treats repackaging as substantial transformation",
+        "Fails to cite the insufficient operations rule"
+      ]
+    },
+    {
+      "id": "afcfta-018",
+      "category": "rules_of_origin",
+      "language": "fr",
+      "question": "Quelles sont les conditions minimales pour prouver qu'un produit est d'origine preferentielle selon les regles d'origine telechargees ?",
+      "expected_answer_summary": "Answer in French, summarize only the origin pathways and proof requirements found in the uploaded corpus.",
+      "expected_citation_targets": [
+        "Rules of origin document",
+        "Origin proof guidance"
+      ],
+      "failure_modes": [
+        "Mixes unsupported rules from another FTA",
+        "Fails to mention proof requirements"
+      ]
+    },
+    {
+      "id": "afcfta-019",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "Can the assistant determine origin status if the bill of materials is missing and only the product description is provided?",
+      "expected_answer_summary": "Explain that a definitive origin determination usually cannot be made from the provided evidence and cite why.",
+      "expected_citation_targets": [
+        "Rules of origin decision criteria",
+        "Evidence or documentation requirement"
+      ],
+      "failure_modes": [
+        "Makes a yes or no determination without data",
+        "Does not explain missing inputs"
+      ]
+    },
+    {
+      "id": "afcfta-020",
+      "category": "rules_of_origin",
+      "language": "en",
+      "question": "Where should a user look to confirm whether a product-specific rule applies instead of a general origin rule?",
+      "expected_answer_summary": "Direct the user to the product-specific rule annex or schedule and explain that it governs if the corpus says so.",
+      "expected_citation_targets": [
+        "Product-specific rules annex",
+        "General rules of origin clause"
+      ],
+      "failure_modes": [
+        "Uses only general rules when a PSR exists",
+        "Does not explain source priority"
+      ]
+    },
+    {
+      "id": "afcfta-021",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "What documents are required to support an AfCFTA certificate of origin claim for an export shipment?",
+      "expected_answer_summary": "List only the documents explicitly supported by the uploaded corpus and distinguish required from supporting evidence.",
+      "expected_citation_targets": [
+        "Certificate of origin operational manual",
+        "Customs documentary checklist"
+      ],
+      "failure_modes": [
+        "Invents a universal checklist",
+        "Does not separate mandatory and optional support"
+      ]
+    },
+    {
+      "id": "afcfta-022",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "Who is authorized to issue the certificate of origin according to the uploaded documents?",
+      "expected_answer_summary": "Identify the issuing authority only if named in the corpus and note any country-specific variation.",
+      "expected_citation_targets": [
+        "Issuing authority guidance",
+        "Country implementation manual"
+      ],
+      "failure_modes": [
+        "Names an authority without citation",
+        "Ignores country-specific differences"
+      ]
+    },
+    {
+      "id": "afcfta-023",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "Can a missing supplier declaration be cured after shipment according to the uploaded compliance documents?",
+      "expected_answer_summary": "Answer based on documentary correction or post-clearance provisions if present; otherwise flag that the corpus does not confirm it.",
+      "expected_citation_targets": [
+        "Supplier declaration rule",
+        "Post-shipment correction guidance"
+      ],
+      "failure_modes": [
+        "Guarantees cure rights without evidence",
+        "Confuses internal business docs with customs proof"
+      ]
+    },
+    {
+      "id": "afcfta-024",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "How should the assistant answer if the user asks for a template certificate but the uploaded corpus only contains text rules?",
+      "expected_answer_summary": "Explain that the corpus contains rule text, not a form template, and point the user to the relevant governing document sections.",
+      "expected_citation_targets": [
+        "Certificate governance text",
+        "Any annex referencing official forms"
+      ],
+      "failure_modes": [
+        "Fabricates a template",
+        "Claims the form is included when it is not"
+      ]
+    },
+    {
+      "id": "afcfta-025",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "What retention period applies to origin-supporting records in the uploaded documents?",
+      "expected_answer_summary": "Return the exact retention period and scope if specified, otherwise say the corpus does not establish it.",
+      "expected_citation_targets": [
+        "Record retention provision",
+        "Audit or verification guidance"
+      ],
+      "failure_modes": [
+        "Invents a retention period",
+        "Confuses customs record retention with business policy"
+      ]
+    },
+    {
+      "id": "afcfta-026",
+      "category": "documentation_and_certificates",
+      "language": "am",
+      "question": "የአፍሪካ ነጻ ንግድ ስምምነት መነሻ ማረጋገጫ ለማቅረብ ምን ዓይነት ሰነዶች ያስፈልጋሉ?",
+      "expected_answer_summary": "Answer in Amharic if possible, list only the supported documentary requirements, and preserve citation clarity.",
+      "expected_citation_targets": [
+        "Certificate of origin manual",
+        "Document checklist"
+      ],
+      "failure_modes": [
+        "Drops citations when switching language",
+        "Uses unsupported legal terms"
+      ]
+    },
+    {
+      "id": "afcfta-027",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "If the user uploads an invoice and asks whether it alone proves origin, what should the assistant say?",
+      "expected_answer_summary": "Explain that an invoice alone usually does not establish origin unless the corpus expressly says otherwise.",
+      "expected_citation_targets": [
+        "Proof of origin provision",
+        "Supporting evidence list"
+      ],
+      "failure_modes": [
+        "Treats invoice as sufficient by default",
+        "Fails to state evidentiary limits"
+      ]
+    },
+    {
+      "id": "afcfta-028",
+      "category": "documentation_and_certificates",
+      "language": "en",
+      "question": "Can the assistant tell the user which documents are missing from a file set if one of the required documents is absent?",
+      "expected_answer_summary": "Compare the uploaded set against the required list and identify missing items only when the requirement is explicit in the corpus.",
+      "expected_citation_targets": [
+        "Required document list",
+        "Uploaded file manifest"
+      ],
+      "failure_modes": [
+        "Marks documents missing without a defined checklist",
+        "Does not explain the basis for the missing-item list"
+      ]
+    },
+    {
+      "id": "afcfta-029",
+      "category": "country_specific_rules",
+      "language": "en",
+      "question": "What country-specific evidence in our corpus applies to Ethiopia but not to Kenya for AfCFTA tariff treatment?",
+      "expected_answer_summary": "Identify the Ethiopia-only evidence with citations and avoid assuming the same rule applies to Kenya.",
+      "expected_citation_targets": [
+        "Ethiopia customs or tariff document",
+        "Kenya or EAC comparison source"
+      ],
+      "failure_modes": [
+        "Generalizes one country's rules to another",
+        "Does not present the comparison explicitly"
+      ]
+    },
+    {
+      "id": "afcfta-030",
+      "category": "country_specific_rules",
+      "language": "en",
+      "question": "If a user asks which schedule to trust for Kenya when both EAC and national references are uploaded, how should the assistant respond?",
+      "expected_answer_summary": "State the relationship only if the corpus defines it; otherwise cite both and flag the need for confirmation.",
+      "expected_citation_targets": [
+        "EAC schedule",
+        "Kenyan national implementation note"
+      ],
+      "failure_modes": [
+        "Assumes one automatically supersedes the other",
+        "Fails to surface the conflict"
+      ]
+    },
+    {
+      "id": "afcfta-031",
+      "category": "country_specific_rules",
+      "language": "en",
+      "question": "Can the assistant answer a Ghana question using only Ethiopia and Kenya documents?",
+      "expected_answer_summary": "Refuse to provide a country-specific Ghana answer and explain that the current evidence base does not include Ghana documents.",
+      "expected_citation_targets": [
+        "Current corpus inventory if available"
+      ],
+      "failure_modes": [
+        "Hallucinates Ghana guidance",
+        "Overextends beyond loaded jurisdictions"
+      ]
+    },
+    {
+      "id": "afcfta-032",
+      "category": "country_specific_rules",
+      "language": "en",
+      "question": "How should the assistant handle a country-specific customs notice that is newer than the treaty commentary in the corpus?",
+      "expected_answer_summary": "Note the document dates, cite both sources, and prefer the newer country-specific operational guidance only if the corpus supports that interpretation.",
+      "expected_citation_targets": [
+        "Country customs notice",
+        "Treaty commentary",
+        "Date metadata"
+      ],
+      "failure_modes": [
+        "Ignores dates",
+        "Always prefers commentary over operative documents"
+      ]
+    },
+    {
+      "id": "afcfta-033",
+      "category": "country_specific_rules",
+      "language": "fr",
+      "question": "Les regles applicables au Kenya dans nos documents peuvent-elles etre appliquees automatiquement a un autre pays membre ?",
+      "expected_answer_summary": "Answer no unless the corpus explicitly says the rule is common across those jurisdictions.",
+      "expected_citation_targets": [
+        "Kenya-specific implementation source",
+        "Any common regional guidance"
+      ],
+      "failure_modes": [
+        "Overgeneralizes",
+        "Drops the jurisdiction limitation"
+      ]
+    },
+    {
+      "id": "afcfta-034",
+      "category": "country_specific_rules",
+      "language": "en",
+      "question": "If a customs instruction references an annex we have not uploaded, what should the assistant do?",
+      "expected_answer_summary": "State that the annex is missing from the current evidence base and limit the answer accordingly.",
+      "expected_citation_targets": [
+        "Instruction referencing external annex"
+      ],
+      "failure_modes": [
+        "Pretends to know the annex contents",
+        "Does not disclose missing evidence"
+      ]
+    },
+    {
+      "id": "afcfta-035",
+      "category": "country_specific_rules",
+      "language": "en",
+      "question": "What should happen when a user asks for the nearest customs office or live filing portal?",
+      "expected_answer_summary": "Decline if the corpus does not contain operational contact details, or answer only from uploaded official contacts.",
+      "expected_citation_targets": [
+        "Official operational contacts document if present"
+      ],
+      "failure_modes": [
+        "Uses outside web knowledge",
+        "Invents operational contacts"
+      ]
+    },
+    {
+      "id": "afcfta-036",
+      "category": "verification_and_audit",
+      "language": "en",
+      "question": "What can customs verify after an AfCFTA preference claim is made according to the uploaded documents?",
+      "expected_answer_summary": "Summarize post-entry verification rights, document requests, and audit scope only if supported by the corpus.",
+      "expected_citation_targets": [
+        "Verification and audit provisions",
+        "Record retention guidance"
+      ],
+      "failure_modes": [
+        "Invents audit powers",
+        "Confuses customs verification with private certification"
+      ]
+    },
+    {
+      "id": "afcfta-037",
+      "category": "verification_and_audit",
+      "language": "en",
+      "question": "Can a preference be denied after import clearance if origin evidence is later found insufficient?",
+      "expected_answer_summary": "Answer based on the corpus, cite post-clearance review or denial provisions, and avoid certainty if not stated.",
+      "expected_citation_targets": [
+        "Post-clearance review rule",
+        "Denial of preference provision"
+      ],
+      "failure_modes": [
+        "Guarantees finality after clearance",
+        "Gives unsupported enforcement outcomes"
+      ]
+    },
+    {
+      "id": "afcfta-038",
+      "category": "verification_and_audit",
+      "language": "en",
+      "question": "If the user asks how long customs may keep a shipment pending origin verification, what should the assistant say?",
+      "expected_answer_summary": "Provide the timeline only if the corpus states it, otherwise say the current evidence does not define a fixed period.",
+      "expected_citation_targets": [
+        "Verification timeline provision"
+      ],
+      "failure_modes": [
+        "Invents a timeline",
+        "Hides uncertainty"
+      ]
+    },
+    {
+      "id": "afcfta-039",
+      "category": "verification_and_audit",
+      "language": "en",
+      "question": "What records should a business keep to defend an AfCFTA origin claim during an audit?",
+      "expected_answer_summary": "List records only from the corpus and distinguish between transactional, production, and origin-support evidence where documented.",
+      "expected_citation_targets": [
+        "Audit support documentation rule",
+        "Record retention provision"
+      ],
+      "failure_modes": [
+        "Adds standard audit records not in the corpus",
+        "Does not separate evidence types"
+      ]
+    },
+    {
+      "id": "afcfta-040",
+      "category": "verification_and_audit",
+      "language": "sw",
+      "question": "Forodha wanaweza kuomba ushahidi gani baada ya dai la upendeleo wa AfCFTA kuwasilishwa?",
+      "expected_answer_summary": "Answer in Swahili if possible, keep the answer grounded in the verification provisions, and cite them clearly.",
+      "expected_citation_targets": [
+        "Verification provision",
+        "Document request guidance"
+      ],
+      "failure_modes": [
+        "Loses specificity when translating",
+        "Adds extra evidence requirements"
+      ]
+    },
+    {
+      "id": "afcfta-041",
+      "category": "missing_evidence_and_refusals",
+      "language": "en",
+      "question": "Should the assistant answer a legal interpretation question if the uploaded documents only contain tariff schedules and no legal text?",
+      "expected_answer_summary": "Refuse or narrowly answer from schedules only, while stating the legal interpretation evidence is missing.",
+      "expected_citation_targets": [
+        "Corpus coverage or retrieved schedule excerpts"
+      ],
+      "failure_modes": [
+        "Answers broad legal questions from thin evidence",
+        "Does not explain the limitation"
+      ]
+    },
+    {
+      "id": "afcfta-042",
+      "category": "missing_evidence_and_refusals",
+      "language": "en",
+      "question": "What should the assistant do if retrieved chunks disagree on whether a product is eligible?",
+      "expected_answer_summary": "Surface the disagreement, cite both chunks, and recommend manual review instead of producing a single unsupported answer.",
+      "expected_citation_targets": [
+        "Conflicting schedule or rule excerpts"
+      ],
+      "failure_modes": [
+        "Picks one answer silently",
+        "Fails to mention conflict"
+      ]
+    },
+    {
+      "id": "afcfta-043",
+      "category": "missing_evidence_and_refusals",
+      "language": "en",
+      "question": "If a user asks for advice on how to avoid customs scrutiny, how should the assistant respond?",
+      "expected_answer_summary": "Decline and redirect to compliant documentation and process requirements if such material exists in the corpus.",
+      "expected_citation_targets": [
+        "Compliance guidance",
+        "Operational or ethical use policy if present"
+      ],
+      "failure_modes": [
+        "Provides evasive tactics",
+        "Answers outside safe compliance scope"
+      ]
+    },
+    {
+      "id": "afcfta-044",
+      "category": "missing_evidence_and_refusals",
+      "language": "en",
+      "question": "What should happen if the source document is OCR-corrupted and the tariff percentage is unreadable?",
+      "expected_answer_summary": "State that the evidence is unreadable or low-confidence and avoid returning a numeric value.",
+      "expected_citation_targets": [
+        "Affected OCR chunk",
+        "Document metadata"
+      ],
+      "failure_modes": [
+        "Guesses the number",
+        "Presents low-confidence OCR as fact"
+      ]
+    },
+    {
+      "id": "afcfta-045",
+      "category": "missing_evidence_and_refusals",
+      "language": "fr",
+      "question": "Que doit faire l'assistant si les documents telecharges ne couvrent pas le produit ou le pays demande ?",
+      "expected_answer_summary": "Answer in French and clearly state that the current corpus does not support a grounded answer for that product or country.",
+      "expected_citation_targets": [
+        "Corpus coverage note if available"
+      ],
+      "failure_modes": [
+        "Hallucinates an answer",
+        "Fails to state the coverage gap"
+      ]
+    },
+    {
+      "id": "afcfta-046",
+      "category": "citation_quality",
+      "language": "en",
+      "question": "When the assistant says a product qualifies, what exact citation format should it provide?",
+      "expected_answer_summary": "Return the document title plus article, section, annex, page, or schedule line whenever available in metadata.",
+      "expected_citation_targets": [
+        "Retrieved chunk metadata",
+        "Source document heading structure"
+      ],
+      "failure_modes": [
+        "Gives vague citations such as only the document name",
+        "Provides no page or section when metadata exists"
+      ]
+    },
+    {
+      "id": "afcfta-047",
+      "category": "citation_quality",
+      "language": "en",
+      "question": "How should the assistant cite evidence when the answer depends on two separate documents?",
+      "expected_answer_summary": "Present both citations and explain which part of the answer each citation supports.",
+      "expected_citation_targets": [
+        "Document A citation",
+        "Document B citation"
+      ],
+      "failure_modes": [
+        "Only cites one source",
+        "Does not map claim to source"
+      ]
+    },
+    {
+      "id": "afcfta-048",
+      "category": "citation_quality",
+      "language": "en",
+      "question": "If the chunk contains a schedule row but no article number, what should the citation include?",
+      "expected_answer_summary": "Use the strongest available locator such as schedule name, row label, HS code, and page number.",
+      "expected_citation_targets": [
+        "Schedule row metadata"
+      ],
+      "failure_modes": [
+        "Fabricates an article number",
+        "Drops the schedule locator"
+      ]
+    },
+    {
+      "id": "afcfta-049",
+      "category": "citation_quality",
+      "language": "am",
+      "question": "ምላሹ በሁለት ሰነዶች ላይ ቢመሰረት ማጣቀሻዎቹን እንዴት ማቅረብ አለበት?",
+      "expected_answer_summary": "Answer in Amharic if possible and keep both citations visible and attributable to separate claims.",
+      "expected_citation_targets": [
+        "Document A locator",
+        "Document B locator"
+      ],
+      "failure_modes": [
+        "Combines two sources into one vague reference",
+        "Loses claim-to-source mapping"
+      ]
+    },
+    {
+      "id": "afcfta-050",
+      "category": "citation_quality",
+      "language": "en",
+      "question": "What should the assistant do when it can answer only part of the user's question from the uploaded evidence?",
+      "expected_answer_summary": "Answer the supported portion, cite it, and explicitly mark the unsupported portion as unverified in the current corpus.",
+      "expected_citation_targets": [
+        "Supported evidence chunk"
+      ],
+      "failure_modes": [
+        "Answers the unsupported portion anyway",
+        "Fails to separate verified from unverified content"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1665 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "clearFilters": "Clear filters",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "all": "All",
+    "none": "None",
+    "actions": "Actions",
+    "status": "Status",
+    "created": "Created",
+    "updated": "Updated",
+    "details": "Details",
+    "viewDetails": "View Details",
+    "account": "Account",
+    "soon": "Soon",
+    "admin": "Admin",
+    "filters": "Filters",
+    "noDescription": "No description available",
+    "settingUp": "Setting up your account..."
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "marketplace": "Marketplace",
+    "products": "My Products",
+    "inventory": "Inventory",
+    "messages": "Messages",
+    "cart": "Cart",
+    "orders": "Orders",
+    "settings": "Settings",
+    "billing": "Billing",
+    "myBusiness": "My Business",
+    "creditProfile": "Credit Profile",
+    "registerBusiness": "Verify Business",
+    "verifyBusinessLabel": "Verify Business",
+    "applyToSell": "Apply to Sell",
+    "manageUsers": "Manage Users",
+    "manageBusinesses": "Manage Businesses",
+    "manageSellerApplications": "Seller Applications",
+    "manageProducts": "Manage Products",
+    "manageRefunds": "Manage Refunds",
+    "manageBanks": "Manage Banks",
+    "bankPortfolio": "Bank Portfolio",
+    "bankReferrals": "Bank Referrals",
+    "bankAnalytics": "Bank Analytics",
+    "compliance": "AfCFTA Compliance",
+    "aiAssistant": "AI Assistant",
+    "toggleMenu": "Toggle menu",
+    "toggleSidebar": "Toggle sidebar"
+  },
+  "chat": {
+    "messages": "Messages",
+    "messagesDescription": "View and manage your conversations with buyers and sellers",
+    "conversations": "Conversations",
+    "conversation": "Conversation",
+    "contactSeller": "Contact Seller",
+    "messageBusiness": "Message Business",
+    "noMessages": "No messages yet",
+    "typeMessage": "Type a message...",
+    "startConversation": "Start a conversation by contacting a seller from a product page",
+    "selectConversation": "Select a conversation",
+    "selectConversationDescription": "Choose a conversation from the list to view messages",
+    "loadingConversations": "Loading conversations...",
+    "sendMessage": "Send message",
+    "attachFile": "Attach file",
+    "typing": "typing..."
+  },
+  "marketplace": {
+    "title": "Marketplace",
+    "description": "Browse products from businesses across the platform",
+    "browseProducts": "Browse Products",
+    "showingProducts": "Showing {count} product{count, plural, one {} other {s}}",
+    "loadingProducts": "Loading products...",
+    "noProducts": "No products found",
+    "noProductsYet": "No products available in the marketplace yet.",
+    "tryAdjustingFilters": "Try adjusting your filters or search terms.",
+    "searchPlaceholder": "Search products...",
+    "allCategories": "All Categories",
+    "allCountries": "All Countries",
+    "sortBy": "Sort by",
+    "sortNewest": "Newest",
+    "sortPriceAsc": "Price: Low to High",
+    "sortPriceDesc": "Price: High to Low",
+    "outOfStock": "Out of Stock",
+    "inStock": "{count} in stock",
+    "inStockCap": "1000+ in stock",
+    "price": "Price",
+    "category": "Category",
+    "country": "Country",
+    "clearAllFilters": "Clear all filters",
+    "verify": {
+      "businessBeforeAdd": "Verify your business before adding products to your cart.",
+      "completeBusinessBeforeAdd": "Complete business verification before adding products to your cart."
+    }
+  },
+  "products": {
+    "title": "My Products",
+    "description": "Manage your product listings",
+    "addProduct": "Add Product",
+    "allProducts": "All Products",
+    "searchDescription": "Search and filter your products to find what you need",
+    "searchPlaceholder": "Search products...",
+    "filterByStatus": "Filter by status",
+    "allStatuses": "All Statuses",
+    "noProducts": "No products yet. Add your first product to get started.",
+    "noMatchingProducts": "No products match your search criteria.",
+    "productName": "Product Name",
+    "enterProductName": "Enter product name",
+    "descriptionLabel": "Description",
+    "describeProduct": "Describe your product",
+    "price": "Price",
+    "stockQuantity": "Stock Quantity",
+    "quantity": "Quantity",
+    "sku": "SKU",
+    "skuPlaceholder": "e.g., AC-COF-001",
+    "lowStockThreshold": "Low Stock Threshold",
+    "reorderQuantity": "Reorder Quantity",
+    "category": "Category",
+    "categoryPlaceholder": "e.g., Electronics",
+    "originCountry": "Origin Country",
+    "countryPlaceholder": "e.g., Ethiopia",
+    "minOrderQty": "Min Order Qty",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "image": "Image",
+    "images": "Images",
+    "addImages": "Add Images",
+    "addNewProduct": "Add New Product",
+    "enterDetailsStep": "Enter product details to get started.",
+    "addImagesStep": "Add images to make your product stand out.",
+    "productDetails": "Product Details",
+    "nextAddImages": "Next: Add Images",
+    "creating": "Creating...",
+    "skipForNow": "Skip for Now",
+    "completeListing": "Complete Listing",
+    "editProduct": "Edit Product",
+    "updateDetails": "Update product details and manage images.",
+    "saveChanges": "Save Changes",
+    "deleteProduct": "Delete Product",
+    "deleteConfirmation": "Are you sure you want to delete this product? This will also delete all associated images. This action cannot be undone.",
+    "firstProductPricingPromptTitle": "Your first product is live",
+    "firstProductPricingPromptDescription": "Great start! Visit the pricing page to explore plans and unlock more selling features.",
+    "firstProductPricingPromptStay": "Maybe later",
+    "firstProductPricingPromptGo": "Go to Pricing",
+    "subscriptionRequiredPromptTitle": "Subscription required",
+    "subscriptionRequiredPromptDescription": "To add another product, you need an active paid subscription. Choose a plan to continue.",
+    "subscriptionRequiredPromptStay": "Not now",
+    "subscriptionRequiredPromptGo": "View pricing",
+    "currencyHint": "USD is required and shown as the main price. ETB and KSH values can be auto-filled using live exchange rates and you can adjust them any time.",
+    "ratesUpdated": "Rates updated: {date}.",
+    "usdRequired": "USD price is required and must be greater than 0.",
+    "etbRequired": "ETB price is required and must be greater than 0.",
+    "kshInvalid": "KSH price must be 0 or greater."
+  },
+  "orders": {
+    "title": "Orders",
+    "description": "Manage your purchases and sales",
+    "purchases": "Purchases",
+    "sales": "Sales",
+    "myPurchases": "My Purchases",
+    "mySales": "My Sales",
+    "purchasesDescription": "Orders you've placed from other businesses",
+    "salesDescription": "Orders placed by other businesses for your products",
+    "searchPlaceholder": "Search orders...",
+    "filterByStatus": "Filter by status",
+    "allStatuses": "All Statuses",
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "order": "Order",
+    "seller": "Seller",
+    "buyer": "Buyer",
+    "amount": "Amount",
+    "totalAmount": "Total Amount",
+    "noPurchasesYet": "No purchases yet. Start shopping in the marketplace!",
+    "noSalesYet": "No sales yet. List products to start selling!",
+    "noMatchingOrders": "No orders match your search criteria.",
+    "orderPlacedOn": "Order placed on {date}",
+    "orderItems": "Order Items",
+    "unknownProduct": "Unknown Product",
+    "loadingOrder": "Loading Order...",
+    "loadingOrderDetails": "Please wait while we fetch the order details.",
+    "cancelOrder": "Cancel Order",
+    "cancelOrderConfirmation": "Are you sure you want to cancel this order? This action cannot be undone.",
+    "keepOrder": "Keep Order",
+    "markAsProcessing": "Mark as Processing",
+    "markAsCompleted": "Mark as Completed",
+    "trackAndManage": "Track and manage your purchases and sales"
+  },
+  "business": {
+    "registerTitle": "Register Your Business",
+    "registerDescription": "Create a business profile to start selling on the marketplace",
+    "businessInformation": "Business Information",
+    "businessInfoDescription": "Provide details about your business. Your registration will be reviewed by our team before activation.",
+    "businessName": "Business Name",
+    "enterBusinessName": "Enter your business name",
+    "description": "Description",
+    "businessDescription": "Brief description of your business",
+    "descriptionHelp": "Describe what your business does and what products/services you offer.",
+    "country": "Country",
+    "selectCountry": "Select country",
+    "city": "City",
+    "enterCity": "Enter city",
+    "address": "Address",
+    "businessAddress": "Business address",
+    "category": "Business Category",
+    "selectCategory": "Select category",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+251 xxx xxx xxxx",
+    "website": "Website",
+    "websitePlaceholder": "https://example.com",
+    "registering": "Registering...",
+    "registrationDocuments": "Registration documents",
+    "businessLicence": "Business licence",
+    "businessLicenceNumber": "Business licence number",
+    "businessLicenceNumberPlaceholder": "Enter licence number",
+    "memoOfAssociation": "Memo of association",
+    "tinCertificate": "TIN certificate",
+    "tinCertificateNumber": "TIN certificate number",
+    "tinCertificateNumberPlaceholder": "Enter TIN number",
+    "hasImportExportPermit": "Do you have an import/export permit (foreign)?",
+    "hasImportExportPermitPlaceholder": "Select...",
+    "hasImportExportPermitYes": "Yes",
+    "hasImportExportPermitNo": "No",
+    "importExportPermit": "Import/export permit (foreign)",
+    "importExportPermitNumber": "Import/export permit number",
+    "importExportPermitNumberPlaceholder": "Enter permit number (optional)",
+    "upload": "Upload",
+    "uploaded": "Uploaded",
+    "sellerAgreementLabel": "I have read and agree to the",
+    "sellerAgreementLink": "Seller Agreement",
+    "sellerAgreementRequired": "You must accept the Seller Agreement before applying to sell.",
+    "buyerVerificationTitle": "Verify Your Business",
+    "buyerVerificationDescription": "Submit your business details and documents so your account can buy from the marketplace.",
+    "buyerVerificationCardTitle": "Buyer Business Verification",
+    "buyerVerificationCardDescription": "Buyers on AfriConnect must also be verified businesses. Submit your documents once and our team will review them.",
+    "buyerVerificationDocumentsTitle": "Verification documents",
+    "buyerVerificationDocumentsDescription": "Upload the documents we need to confirm your business before purchases are enabled.",
+    "buyerVerificationSubmitting": "Submitting...",
+    "submitBuyerVerification": "Submit for verification",
+    "buyerVerificationSubmitted": "Business verification submitted successfully. We will review it shortly.",
+    "buyerVerificationFailed": "Failed to submit business verification.",
+    "sellerApplicationTitle": "Apply to Sell",
+    "sellerApplicationDescription": "Once your business is verified, you can apply for seller access without submitting your business documents again.",
+    "sellerApplicationCardTitle": "Seller Application",
+    "sellerApplicationCardDescription": "Seller access is reviewed separately from business verification. Accept the seller agreement and submit your application when you are ready to sell.",
+    "businessVerificationStatusTitle": "Business Verification",
+    "sellerApplicationBusinessVerified": "Your business is verified and ready for seller application review.",
+    "sellerApplicationBusinessPending": "Your business must be verified before you can apply to sell.",
+    "sellerApplicationStatusTitle": "Seller Access Status",
+    "sellerApplicationApproved": "Seller access is active for this account.",
+    "sellerApplicationPending": "Your seller application is pending review.",
+    "sellerApplicationRejected": "Your seller application was rejected. Review the requirements and reapply when ready.",
+    "sellerApplicationNotApplied": "You have not applied to sell yet.",
+    "sellerApplicationReady": "Ready to apply",
+    "sellerApplicationRequirementsTitle": "What happens next",
+    "sellerApplicationRequirementBusiness": "Your business must already be verified.",
+    "sellerApplicationRequirementAgreement": "You will review and accept the current seller agreement.",
+    "sellerApplicationRequirementReview": "An admin will review your seller application before seller access is granted.",
+    "sellerApplicationSubmitting": "Submitting...",
+    "sellerApplicationApply": "Apply to Sell",
+    "sellerApplicationReapply": "Reapply to Sell",
+    "sellerApplicationManageProducts": "Manage Products",
+    "sellerApplicationOpenBusiness": "Open Business Profile",
+    "sellerApplicationSubmitted": "Seller application submitted successfully.",
+    "sellerApplicationFailed": "Failed to submit seller application.",
+    "sellerApplicationRequiresVerifiedBusiness": "Your business must be verified before you can apply to sell.",
+    "verificationStatus": {
+      "pending": "Pending Verification",
+      "verified": "Verified",
+      "rejected": "Rejected"
+    },
+    "sellerStatus": {
+      "not_applied": "Not Applied",
+      "pending": "Pending Review",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "profile": {
+      "sellerDescription": "Manage your business profile, verification, and seller operations",
+      "buyerDescription": "Manage your business profile, verification, and seller application",
+      "editProfile": "Edit Profile",
+      "businessProfileTitle": "Business Profile",
+      "editDescription": "Update your business information below",
+      "viewDescription": "Your business details and contact information",
+      "verificationPendingMessage": "Your business is being reviewed by our team. Buying access will unlock after approval.",
+      "verificationVerifiedMessage": "Your business has been verified. You can now add products to your cart and place orders.",
+      "verificationRejectedMessage": "Your business verification was rejected. Update your business information and documents below to resubmit.",
+      "sellerRequiresVerifiedMessage": "Verify your business first before applying to sell.",
+      "sellerApprovedMessage": "Seller access is active for this account. You can manage products, inventory, and payouts.",
+      "sellerPendingMessage": "Your seller application is pending admin review.",
+      "sellerRejectedMessage": "Your seller application was rejected. You can review the seller agreement and apply again.",
+      "sellerReadyMessage": "Your business is verified. You can now apply to sell without re-uploading your business documents.",
+      "verificationDocumentsRejectedDescription": "Updating and saving these fields will resubmit your business for review.",
+      "verificationDocumentsDescription": "Keep your registration documents up to date so your business can be reviewed quickly.",
+      "saving": "Saving...",
+      "saveChanges": "Save Changes",
+      "location": "Location",
+      "resubmitBadge": "Update documents and save to resubmit",
+      "documentUploaded": "Document uploaded",
+      "documentMissing": "Document missing",
+      "licenceNumber": "Licence No: {number}",
+      "tinNumber": "TIN No: {number}",
+      "permitUploaded": "Permit uploaded",
+      "permitMissing": "Permit not uploaded yet",
+      "notProvided": "Not provided",
+      "permitNumber": "Permit No: {number}",
+      "profileUpdated": "Business profile updated successfully",
+      "profileUpdateFailed": "Failed to update business",
+      "payoutSettingsTitle": "Payout Settings",
+      "payoutSettingsDescription": "Add your bank details to receive marketplace payouts.",
+      "bank": "Bank",
+      "selectBank": "Select bank",
+      "loadingBanks": "Loading banks...",
+      "unableToLoadBanks": "Unable to load banks right now.",
+      "accountName": "Account Name",
+      "accountNumber": "Account Number",
+      "payoutEnabled": "Payouts enabled",
+      "payoutNotEnabled": "Payouts not enabled yet",
+      "savePayoutSettings": "Save Payout Settings",
+      "payoutSettingsUpdated": "Payout settings updated",
+      "payoutSettingsUpdateFailed": "Failed to update payout settings",
+      "creditProfileTitle": "Digital Credit Profile",
+      "creditProfileDescription": "Review your transaction history, fulfillment performance, and buyer diversity in one seller report.",
+      "creditProfileAvailability": "Available once your business is verified. You can also export a printable report for sharing.",
+      "openCreditProfile": "Open Credit Profile"
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "description": "Review your items before checkout",
+    "emptyCart": "Your cart is empty",
+    "emptyCartDescription": "Browse the marketplace to find products",
+    "browseMarketplace": "Browse Marketplace",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Checkout",
+    "removeItem": "Remove item",
+    "updateQuantity": "Update quantity",
+    "buyerAgreementRequired": "You must accept the Buyer Agreement before checkout."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back! Here's an overview of your orders.",
+    "welcomeBack": "Welcome back,",
+    "overview": "Overview",
+    "recentOrders": "Recent Orders",
+    "recentProducts": "Recent Products",
+    "quickStats": "Quick Stats",
+    "totalRevenue": "Total Revenue",
+    "totalOrders": "Total Orders",
+    "totalProducts": "Total Products",
+    "pendingOrders": "Pending Orders",
+    "discoverProducts": "Discover Products",
+    "browseDescription": "Browse products from businesses across Africa"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage your account settings and preferences",
+    "profile": "Profile",
+    "profileDescription": "Update your profile information",
+    "displayName": "Display Name",
+    "enterName": "Enter your name",
+    "displayNameHelp": "This is your display name. It can be different from your account name.",
+    "noNameSet": "No name set",
+    "accountInfo": "Account Information",
+    "accountInfoDescription": "Your account details",
+    "email": "Email",
+    "emailHelp": "Email is managed by Clerk. To change it, update your account settings.",
+    "userId": "User ID",
+    "verifyBusinessLabel": "Verify Business",
+    "verifyBusinessDescription": "Submit your business details to unlock buying",
+    "verifyBusinessDescriptionIncomplete": "Complete your business verification to unlock buying",
+    "applyToSellLabel": "Apply to Sell",
+    "applyToSellDescription": "Accept the seller agreement and submit your seller application"
+  },
+  "billing": {
+    "title": "Billing",
+    "description": "View your payment history and manage billing",
+    "paymentMethod": "Payment Method",
+    "paymentMethodDescription": "Secure payments powered by Chapa",
+    "chapaGateway": "Chapa Payment Gateway",
+    "chapaDescription": "Pay securely with Mobile Money, Bank Transfer, or Card",
+    "learnMore": "Learn more",
+    "paymentHistory": "Payment History",
+    "paymentHistoryDescription": "View your recent transactions",
+    "noPaymentHistory": "No payment history yet",
+    "date": "Date",
+    "reference": "Reference",
+    "type": "Type",
+    "amount": "Amount",
+    "failed": "Failed"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "description": "Choose the plan that best fits your business needs. All plans include access to our B2B marketplace and AfCFTA compliance tools.",
+    "subtitle": "Choose the plan that best fits your business needs. All plans include access to our B2B marketplace and AfCFTA compliance tools.",
+    "backToHome": "Back to Home",
+    "loadingPlans": "Loading plans...",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "savePercent": "Save {percent}%",
+    "perMonth": "/month",
+    "perYear": "/year",
+    "billedAnnually": "{amount}/mo billed annually",
+    "mostPopular": "Most Popular",
+    "currentPlan": "Current Plan",
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales",
+    "custom": "Custom",
+    "compareFeatures": "Compare All Features",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "changePlan": {
+        "question": "Can I change my plan later?",
+        "answer": "Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll get immediate access to new features. When downgrading, the change will take effect at your next billing cycle."
+      },
+      "paymentMethods": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept payments via Chapa, which supports Mobile Money, bank transfers, and card payments. All payments are processed securely."
+      },
+      "freeTrial": {
+        "question": "Is there a free trial?",
+        "answer": "New businesses can start with our Starter plan to explore the platform. Contact us for enterprise trial options."
+      },
+      "limits": {
+        "question": "What happens when I reach my limits?",
+        "answer": "You'll receive notifications as you approach your plan limits. When you reach a limit, you can upgrade your plan to continue using that feature."
+      }
+    },
+    "cta": {
+      "title": "Need a Custom Solution?",
+      "description": "Our Enterprise plan offers custom features, dedicated support, and tailored integrations for large organizations."
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "target": "Small SMBs",
+        "description": "Perfect for small businesses just getting started"
+      },
+      "growth": {
+        "name": "Growth",
+        "target": "Growing SMBs",
+        "description": "For growing businesses ready to scale"
+      },
+      "pro": {
+        "name": "Pro",
+        "target": "Mid-Market",
+        "description": "Full-featured plan for established businesses"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "target": "Large orgs",
+        "description": "Custom solutions for large organizations"
+      }
+    },
+    "features": {
+      "products": "Products",
+      "monthlyOrders": "Monthly Orders",
+      "originCalculations": "Origin Calculations",
+      "hsCodeLookups": "HS Code Lookups",
+      "teamMembers": "Team Members",
+      "prioritySupport": "Priority Support",
+      "analytics": "Analytics",
+      "apiAccess": "API Access",
+      "unlimited": "Unlimited"
+    }
+  },
+  "subscription": {
+    "title": "Subscription",
+    "description": "Manage your subscription and billing",
+    "businessRequired": "Business Required",
+    "businessRequiredDescription": "You need to register a business before you can subscribe to a plan.",
+    "registerBusiness": "Register Your Business",
+    "noActiveSubscription": "No Active Subscription",
+    "noSubscriptionDescription": "You're currently on the free tier with limited features. Upgrade to unlock more products, orders, and compliance tools.",
+    "viewPlans": "View Plans",
+    "currentPlan": "Current Plan",
+    "billedMonthly": "Billed monthly",
+    "billedAnnually": "Billed annually",
+    "currentPeriod": "Current period",
+    "cancelsSoon": "Cancels Soon",
+    "active": "Active",
+    "trial": "Trial",
+    "pastDue": "Past Due",
+    "cancelled": "Cancelled",
+    "cancellationNotice": "Your subscription will end on {date}",
+    "trialNotice": "Your trial ends on {date}",
+    "changePlan": "Change Plan",
+    "reactivate": "Reactivate Subscription",
+    "reactivating": "Reactivating...",
+    "cancel": "Cancel Subscription",
+    "cancelling": "Cancelling...",
+    "usageThisMonth": "Usage This Month",
+    "usageDescription": "Track your usage against your plan limits",
+    "planFeatures": "Plan Features",
+    "planFeaturesDescription": "Features included in your {plan} plan",
+    "paymentSuccessful": "Payment Successful!",
+    "subscriptionActivated": "Your subscription has been activated.",
+    "subscriptionCancelled": "Subscription Cancelled",
+    "subscriptionCancelledDescription": "Your subscription will remain active until the end of the billing period.",
+    "subscriptionReactivated": "Subscription Reactivated",
+    "subscriptionReactivatedDescription": "Your subscription will continue at the end of the billing period.",
+    "failedToCancel": "Failed to cancel subscription",
+    "failedToReactivate": "Failed to reactivate subscription"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be at most {max} characters",
+    "selectCountry": "Please select a country",
+    "selectCategory": "Please select a business category"
+  },
+  "toast": {
+    "productCreated": "Product created! Now add images to complete your listing.",
+    "productUpdated": "Product updated successfully",
+    "productDeleted": "Product deleted successfully",
+    "productListingComplete": "Product listing complete!",
+    "addImageSuggestion": "Consider adding at least one image to help your product stand out.",
+    "businessRegistered": "Business registered successfully! Pending verification.",
+    "orderStatusUpdated": "Order status updated",
+    "orderDeleted": "Order deleted successfully",
+    "error": "An error occurred",
+    "failedToCreate": "Failed to create product",
+    "failedToUpdate": "Failed to update product",
+    "failedToDelete": "Failed to delete product",
+    "failedToDeleteOrder": "Failed to delete order",
+    "failedToUpdateOrder": "Failed to update order",
+    "failedToRegisterBusiness": "Failed to register business"
+  },
+  "landing": {
+    "hero": {
+      "badge": "B2B Marketplace for Africa",
+      "title": "Building the digitial operating system",
+      "titleHighlight": "for pan african trade",
+      "description": "A B2B marketplace connecting businesses across the continent. Discover products, find suppliers, and grow your business with verified African enterprises.",
+      "getStarted": "Get Started",
+      "browseMarketplace": "Browse Marketplace",
+      "exploreProducts": "Explore Products"
+    },
+    "benefits": {
+      "item1": "Free to join",
+      "item2": "Verified businesses",
+      "item3": "Secure payments",
+      "item4": "Multi-language support"
+    },
+    "categories": {
+      "title": "Explore Categories",
+      "description": "Discover products across various industries from African businesses",
+      "viewAll": "View All Categories",
+      "rawMaterials": "Raw Materials",
+      "agriculture": "Agriculture",
+      "miningMinerals": "Mining & Minerals",
+      "electronics": "Electronics",
+      "textilesFashion": "Textiles & Fashion",
+      "foodBeverages": "Food & Beverages",
+      "construction": "Construction",
+      "industrialEquipment": "Industrial Equipment"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "description": "Get started in four simple steps",
+      "step1Title": "Create Account",
+      "step1Desc": "Sign up for free and set up your profile in minutes.",
+      "step2Title": "Register Business",
+      "step2Desc": "Add your business details to get verified and build trust.",
+      "step3Title": "List or Browse",
+      "step3Desc": "List your products to sell or browse the marketplace to buy.",
+      "step4Title": "Connect & Trade",
+      "step4Desc": "Connect with businesses and start trading securely."
+    },
+    "features": {
+      "title": "What We Offer",
+      "description": "Everything you need to trade with confidence",
+      "marketplace": "Marketplace",
+      "marketplaceDesc": "Browse and list products in our B2B marketplace. Find what you need or reach new customers.",
+      "verification": "Business Verification",
+      "verificationDesc": "Verified badges for businesses that complete our verification process, building trust in every transaction.",
+      "securePayments": "Secure Payments",
+      "securePaymentsDesc": "Safe and reliable payment processing for your business transactions.",
+      "multiLanguage": "Multi-Language",
+      "multiLanguageDesc": "Use the platform in English, Amharic, or Swahili for a seamless experience.",
+      "community": "Growing Community",
+      "communityDesc": "Join a growing network of African businesses looking to connect and trade."
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Join our growing community of African businesses. Create your free account today.",
+      "createAccount": "Create Free Account",
+      "goToDashboard": "Go to Dashboard",
+      "explore": "Explore Products"
+    },
+    "trust": {
+      "securePayments": "Secure Payments",
+      "securePaymentsDesc": "Safe transaction processing",
+      "verifiedBusinesses": "Verified Businesses",
+      "verifiedBusinessesDesc": "Trust through verification",
+      "multiLanguage": "Multi-Language",
+      "multiLanguageDesc": "EN, AM, SW supported"
+    },
+    "footer": {
+      "tagline": "A B2B marketplace connecting businesses across Africa.",
+      "marketplace": "Marketplace",
+      "browseProducts": "Browse Products",
+      "businessDirectory": "Business Directory",
+      "categories": "Categories",
+      "forBusinesses": "For Businesses",
+      "registerBusiness": "Register Business",
+      "listProducts": "List Products",
+      "dashboard": "Dashboard",
+      "legal": "Legal",
+      "allRightsReserved": "All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "madeForAfrica": "Made for Africa"
+    },
+    "nav": {
+      "marketplace": "Marketplace",
+      "pricing": "Pricing",
+      "categories": "Categories",
+      "howItWorks": "How It Works",
+      "features": "Features",
+      "signIn": "Sign In",
+      "getStarted": "Get Started",
+      "dashboard": "Dashboard"
+    }
+  },
+  "verificationBanner": {
+    "message": "Please verify your email address to access all features.",
+    "resend": "Resend",
+    "verify": "Verify",
+    "sent": "Email sent!",
+    "dismiss": "Dismiss"
+  },
+  "verifyEmail": {
+    "verifying": {
+      "title": "Verifying Your Email",
+      "description": "Please wait while we verify your email address..."
+    },
+    "success": {
+      "title": "Email Verified!",
+      "description": "Your email has been successfully verified. You can now access all features.",
+      "goToDashboard": "Go to Dashboard",
+      "signIn": "Sign In"
+    },
+    "error": {
+      "title": "Verification Failed",
+      "description": "We couldn't verify your email. The link may have expired or already been used.",
+      "requestNewLink": "Request New Link"
+    },
+    "pending": {
+      "title": "Verify Your Email",
+      "description": "Please check your inbox for a verification link.",
+      "descriptionWithEmail": "We sent a verification link to {email}. Please check your inbox."
+    },
+    "resend": {
+      "button": "Resend Verification Email",
+      "sending": "Sending...",
+      "sent": "Verification email sent! Please check your inbox.",
+      "cooldown": "Resend in {seconds}s"
+    },
+    "skipForNow": "Skip for Now",
+    "signInToResend": "Sign in to resend verification email"
+  },
+  "cookieConsent": {
+    "title": "We use cookies",
+    "description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking \"Accept All\", you consent to our use of cookies. Read our",
+    "privacyPolicy": "Privacy Policy",
+    "acceptAll": "Accept All",
+    "rejectNonEssential": "Reject Non-Essential",
+    "customize": "Customize",
+    "close": "Close",
+    "settings": {
+      "title": "Cookie Preferences",
+      "description": "Manage your cookie preferences. Essential cookies are always enabled as they are necessary for the website to function properly.",
+      "save": "Save Preferences",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "Required for basic website functionality. Cannot be disabled."
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "description": "Remember your preferences and settings for a better experience."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how visitors interact with our website."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Used to deliver relevant advertisements and track campaigns."
+      }
+    }
+  },
+  "legal": {
+    "backToHome": "Back to Home",
+    "tableOfContents": "Table of Contents",
+    "viewPrivacyPolicy": "View Privacy Policy",
+    "viewTermsOfService": "View Terms of Service",
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last Updated",
+      "lastUpdatedDate": "January 2026",
+      "introduction": "Welcome to AfriConnect. These Terms of Service (\"Terms\") govern your access to and use of the AfriConnect platform, including our website, mobile applications, and services (collectively, the \"Platform\"). By accessing or using our Platform, you agree to be bound by these Terms and our Privacy Policy. Please read them carefully before using our services.",
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By creating an account, accessing, or using the AfriConnect Platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these Terms, you may not access or use our Platform.\n\nThese Terms constitute a legally binding agreement between you and AfriConnect Inc. We may update these Terms from time to time, and your continued use of the Platform after any changes constitutes acceptance of the new Terms.\n\nIf you are using the Platform on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to these Terms."
+      },
+      "eligibility": {
+        "title": "Eligibility Requirements",
+        "content": "To use AfriConnect, you must:\n\n• Be at least 18 years of age or the age of legal majority in your jurisdiction\n• Be a registered business entity or authorized representative of one\n• Have the legal capacity to enter into binding contracts\n• Not be prohibited from using the Platform under applicable laws\n• Provide accurate and complete registration information\n\nBy registering for an account, you represent and warrant that you meet all eligibility requirements. We reserve the right to refuse service, terminate accounts, or cancel orders at our discretion if we believe you do not meet these requirements."
+      },
+      "accounts": {
+        "title": "Account Registration and Security",
+        "content": "When you create an account on AfriConnect, you agree to:\n\n• Provide accurate, current, and complete information during registration\n• Maintain and promptly update your account information\n• Keep your login credentials secure and confidential\n• Not share your account with others or allow unauthorized access\n• Notify us immediately of any unauthorized use of your account\n• Be responsible for all activities that occur under your account\n\nWe may verify your business credentials and may require additional documentation. False or misleading information may result in account suspension or termination.\n\nYou are solely responsible for maintaining the confidentiality of your account credentials and for restricting access to your devices."
+      },
+      "marketplace": {
+        "title": "Marketplace Rules and Conduct",
+        "content": "AfriConnect operates as a B2B marketplace connecting buyers and sellers across Africa. Users agree to:\n\n• Conduct all transactions in good faith and with honest intent\n• Provide accurate product descriptions, pricing, and availability information\n• Honor committed orders and delivery timelines\n• Maintain professional communication with other users\n• Comply with all applicable trade laws and regulations\n• Not manipulate pricing, reviews, or marketplace metrics\n\nSellers must ensure products meet described specifications and quality standards. Buyers must make payments as agreed and provide accurate shipping information.\n\nWe reserve the right to remove listings, suspend accounts, or take other actions to maintain marketplace integrity."
+      },
+      "payments": {
+        "title": "Payments and Transactions",
+        "content": "All financial transactions on AfriConnect are processed through our secure payment system powered by Chapa and other licensed payment providers.\n\n• Payments must be made using approved payment methods\n• Transaction fees and applicable taxes will be clearly disclosed\n• Currency conversions are based on prevailing exchange rates\n• Refunds are subject to our refund policy and seller terms\n• Escrow services may be used for trade assurance transactions\n\nWe do not store complete payment card details. All payment processing complies with PCI-DSS standards.\n\nDisputed transactions will be handled according to our dispute resolution procedures. Chargebacks may result in account restrictions."
+      },
+      "prohibited": {
+        "title": "Prohibited Activities",
+        "content": "Users are strictly prohibited from:\n\n• Selling counterfeit, stolen, or illegally obtained goods\n• Engaging in fraud, money laundering, or illegal transactions\n• Circumventing platform fees or security measures\n• Harassing, threatening, or discriminating against other users\n• Posting false, misleading, or defamatory content\n• Attempting to hack, disrupt, or damage the Platform\n• Scraping data or using automated systems without permission\n• Violating intellectual property rights of others\n• Trading in prohibited items including weapons, drugs, and sanctioned goods\n• Creating multiple accounts to evade restrictions\n\nViolations may result in immediate account termination, forfeiture of funds, and legal action."
+      },
+      "ip": {
+        "title": "Intellectual Property Rights",
+        "content": "All content, features, and functionality of the AfriConnect Platform, including but not limited to text, graphics, logos, icons, images, software, and the compilation thereof, are the exclusive property of AfriConnect Inc. or its licensors and are protected by international copyright, trademark, and other intellectual property laws.\n\nUsers retain ownership of content they submit but grant AfriConnect a worldwide, non-exclusive, royalty-free license to use, display, and distribute such content in connection with the Platform.\n\nYou may not reproduce, distribute, modify, create derivative works from, or commercially exploit any Platform content without our prior written consent.\n\nIf you believe your intellectual property rights have been infringed, please contact our legal team with detailed information about the alleged infringement."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:\n\nAfriConnect provides the Platform \"AS IS\" and \"AS AVAILABLE\" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.\n\nWe do not guarantee that:\n• The Platform will be uninterrupted, secure, or error-free\n• Results obtained from using the Platform will be accurate\n• Defects in the Platform will be corrected\n\nAfriConnect shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the Platform.\n\nOur total liability for any claims under these Terms shall not exceed the amount you paid us in the twelve (12) months preceding the claim.\n\nSome jurisdictions do not allow limitation of liability, so these limitations may not apply to you."
+      },
+      "disputes": {
+        "title": "Dispute Resolution",
+        "content": "We encourage users to resolve disputes directly through our Platform's dispute resolution center. Our process includes:\n\n1. Direct Negotiation: Parties should first attempt to resolve issues through direct communication\n2. Mediation: AfriConnect may offer mediation services for unresolved disputes\n3. Arbitration: Binding arbitration may be required for certain disputes\n\nFor disputes that cannot be resolved through these means:\n\n• These Terms are governed by the laws of the Republic of Kenya\n• Any legal proceedings shall be conducted in the courts of Nairobi, Kenya\n• Class action lawsuits are waived to the extent permitted by law\n\nNothing in these Terms limits your rights to file complaints with relevant consumer protection or trade authorities in your jurisdiction."
+      },
+      "changes": {
+        "title": "Modifications to Terms",
+        "content": "AfriConnect reserves the right to modify these Terms at any time. When we make material changes:\n\n• We will post the updated Terms on the Platform\n• We will update the \"Last Updated\" date at the top\n• We may notify you via email or Platform notification for significant changes\n• Continued use after changes constitutes acceptance\n\nIf you disagree with any changes, you should stop using the Platform and close your account. Some changes may require your explicit consent before taking effect.\n\nWe recommend reviewing these Terms periodically to stay informed about any updates."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about these Terms of Service or need assistance, please contact our legal team. We are committed to addressing your concerns and providing clarity on our policies."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last Updated",
+      "lastUpdatedDate": "January 2026",
+      "introduction": "At AfriConnect, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Platform. We process personal data in accordance with applicable data protection laws, including the General Data Protection Regulation (GDPR), Kenya's Data Protection Act, Nigeria's Data Protection Regulation, South Africa's POPIA, and other applicable African data protection legislation.",
+      "compliance": {
+        "title": "Data Protection Compliance",
+        "content": "AfriConnect is committed to compliance with international and regional data protection laws including GDPR (EU), Kenya Data Protection Act 2019, Nigeria Data Protection Regulation 2019, South Africa POPIA, Ghana Data Protection Act, and other applicable African Union and national data protection frameworks. We implement appropriate technical and organizational measures to ensure data protection by design and by default."
+      },
+      "collection": {
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us, including:\n\n• Account Information: Name, email address, phone number, password, business name, and registration details\n• Business Information: Company registration documents, tax identification numbers, business address, and verification documents\n• Transaction Data: Purchase history, payment information, shipping addresses, and order details\n• Communications: Messages with other users, support inquiries, and feedback\n• Profile Information: Business descriptions, product listings, and profile photos\n\nWe automatically collect certain information when you use our Platform:\n\n• Device Information: IP address, browser type, operating system, and device identifiers\n• Usage Data: Pages visited, features used, search queries, and interaction patterns\n• Location Data: General geographic location based on IP address\n• Cookies and Tracking Technologies: Information collected through cookies, pixels, and similar technologies"
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "content": "We use collected information for the following purposes:\n\n• Service Delivery: To provide, maintain, and improve our Platform and services\n• Account Management: To create and manage your account, verify your identity, and process transactions\n• Communication: To send service updates, security alerts, and support messages\n• Personalization: To customize your experience and provide relevant recommendations\n• Safety and Security: To detect, prevent, and address fraud, abuse, and security issues\n• Legal Compliance: To comply with legal obligations and respond to legal requests\n• Analytics: To understand how users interact with our Platform and improve our services\n• Marketing: To send promotional communications (with your consent where required)\n\nWe process your data based on: contract performance, legitimate interests, legal obligations, and your consent where applicable."
+      },
+      "sharing": {
+        "title": "Information Sharing and Disclosure",
+        "content": "We may share your information in the following circumstances:\n\n• With Other Users: Business profile information and transaction details necessary to facilitate trades\n• Service Providers: With third-party vendors who assist in operating our Platform (payment processors, cloud hosting, analytics)\n• Business Transfers: In connection with mergers, acquisitions, or sale of company assets\n• Legal Requirements: When required by law, court order, or governmental authority\n• Protection of Rights: To protect the rights, property, and safety of AfriConnect, our users, and the public\n\nWe require all third parties to respect the security of your data and process it in accordance with applicable laws. We do not sell your personal information to third parties.\n\nInternational data transfers are protected by appropriate safeguards including Standard Contractual Clauses approved by relevant data protection authorities."
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement robust security measures to protect your personal information:\n\n• Encryption: All data transmitted is encrypted using TLS/SSL protocols\n• Access Controls: Strict access controls and authentication mechanisms\n• Infrastructure Security: Secure data centers with physical and network security\n• Regular Audits: Periodic security assessments and vulnerability testing\n• Employee Training: Regular data protection training for all staff\n• Incident Response: Established procedures for detecting and responding to data breaches\n\nWhile we strive to protect your information, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security but commit to notifying you and relevant authorities of any data breach as required by law."
+      },
+      "rights": {
+        "title": "Your Rights and Choices",
+        "content": "Depending on your location, you have certain rights regarding your personal data:\n\n• Access: Request a copy of the personal data we hold about you\n• Rectification: Request correction of inaccurate or incomplete data\n• Erasure: Request deletion of your personal data (\"right to be forgotten\")\n• Restriction: Request limitation of processing of your data\n• Portability: Receive your data in a structured, machine-readable format\n• Objection: Object to processing based on legitimate interests or for marketing\n• Withdraw Consent: Withdraw previously given consent at any time\n• Automated Decisions: Request human review of automated decisions affecting you\n\nTo exercise these rights, contact our Data Protection Officer. We will respond within 30 days (or as required by applicable law). We may verify your identity before processing requests.\n\nYou also have the right to lodge a complaint with your local data protection authority."
+      },
+      "cookies": {
+        "title": "Cookies and Tracking Technologies",
+        "content": "We use cookies and similar technologies to enhance your experience:\n\n• Essential Cookies: Required for Platform functionality (authentication, security)\n• Performance Cookies: Help us understand how visitors interact with the Platform\n• Functional Cookies: Remember your preferences and settings\n• Marketing Cookies: Used to deliver relevant advertisements (with consent)\n\nYou can manage cookie preferences through your browser settings or our cookie consent tool. Disabling certain cookies may affect Platform functionality.\n\nWe also use analytics services (e.g., Google Analytics) to collect usage data. These services may use their own cookies and are subject to their respective privacy policies.\n\nDo Not Track (DNT) signals are respected where technically feasible."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your personal information for as long as necessary to:\n\n• Provide our services and maintain your account\n• Comply with legal, tax, and regulatory obligations\n• Resolve disputes and enforce our agreements\n• Maintain business records for audit purposes\n\nRetention periods vary based on data type:\n• Account data: Duration of account plus 7 years\n• Transaction data: 7 years for tax and audit purposes\n• Communication logs: 3 years\n• Marketing preferences: Until consent is withdrawn\n\nWhen data is no longer needed, we securely delete or anonymize it. Anonymized data may be retained indefinitely for statistical analysis."
+      },
+      "international": {
+        "title": "International Data Transfers",
+        "content": "AfriConnect operates across multiple African countries and may transfer data internationally. When we transfer personal data outside your country:\n\n• We ensure appropriate safeguards are in place (Standard Contractual Clauses, adequacy decisions)\n• We comply with local data localization requirements where applicable\n• We maintain data processing agreements with all international partners\n• We assess the data protection standards of recipient countries\n\nFor EU residents, transfers outside the EEA are protected by EU-approved Standard Contractual Clauses.\n\nFor African users, we comply with applicable data localization and cross-border transfer requirements under local laws."
+      },
+      "children": {
+        "title": "Children's Privacy",
+        "content": "AfriConnect is a B2B platform intended for business users. We do not knowingly collect personal information from individuals under 18 years of age.\n\nIf we become aware that we have collected personal data from a child without verified parental consent, we will take steps to delete that information promptly.\n\nIf you believe a child has provided us with personal information, please contact our Data Protection Officer immediately."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy periodically to reflect changes in our practices, technology, legal requirements, or other factors.\n\nWhen we make material changes:\n• We will post the updated policy on the Platform\n• We will update the \"Last Updated\" date\n• We will notify you via email or Platform notification for significant changes\n• We may request renewed consent for certain processing activities\n\nWe encourage you to review this Privacy Policy regularly. Your continued use of the Platform after changes constitutes acceptance of the updated policy."
+      },
+      "dpo": {
+        "title": "Data Protection Officer",
+        "content": "We have appointed a Data Protection Officer (DPO) responsible for overseeing our data protection strategy and compliance. For any privacy-related questions, concerns, or to exercise your data rights, please contact our DPO."
+      }
+    }
+  },
+  "agreements": {
+    "dialog": {
+      "reviewAndAccept": "Please review and accept this agreement before continuing.",
+      "accept": "Accept and Continue",
+      "accepting": "Accepting...",
+      "decline": "Decline"
+    },
+    "seller": {
+      "title": "Seller Agreement",
+      "pageDescription": "Terms that apply when listing products and selling through AfriConnect.",
+      "lastUpdated": "Last Updated",
+      "lastUpdatedDate": "February 2026",
+      "introduction": "This Seller Agreement governs your use of AfriConnect as a seller. By accepting this agreement, you confirm that your business has authority to sell listed products and that you will comply with marketplace, payment, and trade requirements.",
+      "acceptanceLabel": "I have read and agree to the Seller Agreement.",
+      "sections": {
+        "eligibility": {
+          "title": "Eligibility",
+          "content": "You must be a registered business or an authorized representative. You must provide accurate registration details and maintain valid business records."
+        },
+        "productListings": {
+          "title": "Product Listings",
+          "content": "You must provide accurate product names, descriptions, pricing, stock levels, origin details, and images. Misleading listings may be removed."
+        },
+        "fulfillment": {
+          "title": "Fulfillment",
+          "content": "You are responsible for timely processing, shipment, and delivery coordination after payment confirmation. You must communicate delays promptly."
+        },
+        "qualityStandards": {
+          "title": "Quality Standards",
+          "content": "Products must match listing details, be lawful to trade, and meet applicable quality and safety requirements in relevant jurisdictions."
+        },
+        "feesCommissions": {
+          "title": "Fees and Commissions",
+          "content": "Platform and processing fees may apply to sales and payouts. Continued use of seller features indicates acceptance of applicable fee schedules."
+        },
+        "returnsRefunds": {
+          "title": "Returns and Refunds",
+          "content": "You must cooperate with valid return and refund requests based on platform policy, transaction records, and dispute outcomes."
+        },
+        "prohibitedItems": {
+          "title": "Prohibited Items",
+          "content": "You may not list illegal, counterfeit, sanctioned, or restricted goods. Violations can result in listing removal, account suspension, and legal reporting."
+        },
+        "intellectualProperty": {
+          "title": "Intellectual Property",
+          "content": "You warrant you have rights to all listing content and product materials. You grant AfriConnect a license to display and promote your listings on the platform."
+        },
+        "accountSuspension": {
+          "title": "Account Suspension",
+          "content": "AfriConnect may suspend or terminate seller access for fraud, policy violations, failed verification checks, or repeated operational failures."
+        },
+        "liabilityIndemnification": {
+          "title": "Liability and Indemnification",
+          "content": "You remain responsible for your products, business conduct, and legal compliance. You agree to indemnify AfriConnect against third-party claims arising from your listings or transactions."
+        }
+      }
+    },
+    "buyer": {
+      "title": "Buyer Agreement",
+      "pageDescription": "Terms that apply when purchasing products through AfriConnect.",
+      "lastUpdated": "Last Updated",
+      "lastUpdatedDate": "February 2026",
+      "introduction": "This Buyer Agreement governs your use of AfriConnect as a buyer. By accepting this agreement, you confirm that you are authorized to place orders and will meet payment and transaction obligations.",
+      "acceptanceLabel": "I have read and agree to the Buyer Agreement.",
+      "sections": {
+        "purchaseCommitments": {
+          "title": "Purchase Commitments",
+          "content": "Orders submitted through the platform are binding commitments to purchase, subject to listed terms, availability, and platform dispute outcomes."
+        },
+        "paymentTerms": {
+          "title": "Payment Terms",
+          "content": "You must complete payment using approved methods and provide accurate billing details. Failed or reversed payments may lead to order cancellation or account restrictions."
+        },
+        "deliveryInspection": {
+          "title": "Delivery and Inspection",
+          "content": "You should review delivered goods promptly and report issues within the applicable review window, including evidence where required."
+        },
+        "disputes": {
+          "title": "Disputes",
+          "content": "Disputes should be filed through platform channels. AfriConnect may review records and communications and apply outcomes under marketplace policies."
+        },
+        "returns": {
+          "title": "Returns",
+          "content": "Returns are subject to seller terms, product type, and platform policy. Not all goods may be eligible for return once accepted or consumed."
+        },
+        "communication": {
+          "title": "Communication",
+          "content": "You agree to maintain professional communication with sellers and respond promptly when additional purchase or delivery details are required."
+        },
+        "accountResponsibilities": {
+          "title": "Account Responsibilities",
+          "content": "You are responsible for account security, accurate recipient details, and lawful use of the platform. Unauthorized activities must be reported immediately."
+        }
+      }
+    }
+  },
+  "compliance": {
+    "title": "AfCFTA Compliance",
+    "description": "Search products by name or HS code and view their AfCFTA tariff reduction rates",
+    "searchByName": "Search by Name",
+    "enterHsCode": "Enter HS Code",
+    "searchPlaceholder": "Search by product name or HS code...",
+    "hsCodePlaceholder": "Enter 8-digit HS code (e.g., 09011100)",
+    "lookup": "Lookup",
+    "add": "Add",
+    "addAnyway": "Add Anyway",
+    "rate": "Rate",
+    "currentRate": "Current Rate",
+    "categoryA": "Category A",
+    "notCategoryA": "Not Category A",
+    "notFoundInCategoryA": "HS Code not found in Category A",
+    "notFoundInTariffSchedule": "HS code not found in selected tariff schedule",
+    "notFoundDescription": "This HS code was not found in the selected tariff schedule.",
+    "tariffReduction": "Tariff Reduction Schedule",
+    "tariffScheduleCoverage": "Tariff Schedule Coverage",
+    "tariffScheduleMatched": "Tariff Schedule Matched",
+    "tariffScheduleNotMatched": "Tariff Schedule Not Matched",
+    "rateSchedule": "Rate Schedule (2026-2030)",
+    "currentYearRate": "Current Year Rate",
+    "zeroTariffBy2030": "This product will have 0% tariff by 2030",
+    "noAfcftaBenefits": "No AfCFTA Benefits",
+    "noAfcftaBenefitsDescription": "This product is not listed under the selected tariff schedule. Review the official tariff book for the applicable tariff treatment.",
+    "noTariffMatchDescription": "We could not match this HS code in the selected tariff schedule. Check the official tariff book.",
+    "removeProduct": "Remove Product",
+    "complianceSummary": "Compliance Summary",
+    "complianceSummaryDescription": "Overview of tariff schedule matches for your saved products",
+    "totalProducts": "Total Products",
+    "eligible": "Eligible",
+    "notEligible": "Not Eligible",
+    "eligibleMessage": "{count} of your products are eligible for AfCFTA tariff reductions",
+    "scheduleMatchMessage": "{count, plural, one {HS code for # product matches the selected tariff schedule - rule-of-origin review pending} other {HS codes for # products match the selected tariff schedule - rule-of-origin review pending}}",
+    "yourProducts": "Your Products",
+    "yourProductsDescription": "Products registered with HS codes for tariff schedule lookup",
+    "addProduct": "Add Product",
+    "addNewProduct": "Add New Product",
+    "cancel": "Cancel",
+    "addingProduct": "Adding product...",
+    "productAdded": "Product added successfully",
+    "productRemoved": "Product removed successfully",
+    "failedToAddProduct": "Failed to add product",
+    "failedToRemoveProduct": "Failed to remove product",
+    "noProductsYet": "No Products Added Yet",
+    "noProductsDescription": "Add your products with HS codes to check their AfCFTA compliance status",
+    "addFirstProduct": "Add Your First Product",
+    "andMoreProducts": "+{count} more products",
+    "businessRequired": "Business Registration Required",
+    "businessRequiredDescription": "You need to register your business before you can check product compliance.",
+    "registerBusiness": "Register Business",
+    "whatIsAfcfta": "What is AfCFTA?",
+    "afcftaDescription": "The African Continental Free Trade Area (AfCFTA) provides preferential tariff reductions for eligible products traded among participating states. Use this search to look up tariff schedule rates by product name or HS code.",
+    "categoryABadge": "Tariff Schedules",
+    "rulesOfOrigin": "Rules of Origin",
+    "tariffAndOrigin": "Tariffs and Origin",
+    "learnMoreAfcfta": "Learn more about AfCFTA",
+    "reductionSchedule": "Tariff Reduction Schedule",
+    "reductionScheduleDescription": "Illustrative schedule only. Use the product card and official tariff book for product-level rates.",
+    "year": "Year",
+    "typicalRateReduction": "Typical Rate",
+    "rateDisclaimer": "Actual tariff concessions vary by product and jurisdiction. Check individual product cards for the specific tariff schedule rates returned from the dataset.",
+    "afcftaCompliance": "AfCFTA Compliance",
+    "afcftaComplianceDescription": "Track tariff schedule matches and rates for your products",
+    "noComplianceCheckYet": "You haven't added any products for compliance checking yet.",
+    "startComplianceCheck": "Start Compliance Check",
+    "manageProducts": "Manage Products",
+    "selectCountry": "Select Country/Region",
+    "ethiopia": "Ethiopia",
+    "kenyaEac": "Kenya (EAC)",
+    "countryDescription": "Select the country to search tariff schedules for",
+    "registerToSaveProducts": "Register your business to save products to your list.",
+    "baseRate": "Base Rate",
+    "tariffCategory": "Tariff Category",
+    "originRule": "Origin Rule",
+    "ruleSource": "Rule Source",
+    "ruleNotMappedDescription": "The app does not yet have a mapped product-specific rule for this HS code.",
+    "eligibleRuleDescription": "This product passed an automatically evaluated value-based rule.",
+    "notEligibleRuleDescription": "This product did not pass the automatically evaluated value-based rule.",
+    "legacyStatus": "Legacy Result",
+    "legacyStatusDescription": "This record was created before the rule-driven upgrade and should be recalculated.",
+    "automaticVnmDescription": "This result was calculated automatically from a value-based VNM rule.",
+    "manualReviewDescription": "This product's rule requires documentary or production-process review beyond the current automatic calculator."
+  },
+  "afcfta": {
+    "title": "Ask AI about AfCFTA compliance",
+    "description": "Ask grounded questions against uploaded AfCFTA documents. The assistant is scaffolded for Qdrant retrieval and citation-first answers.",
+    "badge": "Scaffold",
+    "helper": "Answers should rely on uploaded sources only. If evidence is missing or conflicting, the assistant should say so instead of guessing.",
+    "placeholder": "Ask a compliance question, for example: What documents are needed to support an AfCFTA certificate of origin claim?",
+    "sampleQuestions": [
+      "Does AfCFTA automatically make this product duty free today?",
+      "What evidence do I need to support a certificate of origin claim?",
+      "Can simple repackaging confer AfCFTA origin under the uploaded rules?"
+    ],
+    "cta": {
+      "ask": "Ask AI",
+      "asking": "Asking..."
+    },
+    "form": {
+      "languageLabel": "Language",
+      "questionLabel": "Compliance question"
+    },
+    "validation": {
+      "questionTooShort": "Please enter a more specific compliance question.",
+      "invalidQuestion": "Please provide a valid compliance question."
+    },
+    "error": {
+      "generic": "Failed to ask the compliance assistant."
+    },
+    "empty": {
+      "citations": "No citations returned yet."
+    },
+    "sections": {
+      "answer": "Answer",
+      "citations": "Citations",
+      "source": "Source"
+    },
+    "mode": {
+      "fullRag": "Full RAG",
+      "retrievalOnly": "Retrieval only"
+    },
+    "status": {
+      "ready": "Ready",
+      "not_configured": "Not configured",
+      "no_evidence": "No evidence"
+    }
+  },
+  "aiAssistantPage": {
+    "title": "AI Assistant",
+    "description": "Ask questions about AfCFTA compliance, credit scoring, rules of origin and more.",
+    "unavailable": "AI Assistant tools are temporarily unavailable.",
+    "tabs": {
+      "compliance": "AfCFTA Compliance",
+      "general": "General Assistant"
+    },
+    "general": {
+      "title": "Ask about AfCFTA topics",
+      "description": "Ask general questions about AfCFTA rules of origin, tariff schedules, trade facilitation, and related trade topics. For guidance only - verify with official AfCFTA sources.",
+      "badge": "AI Powered",
+      "helper": "Ask questions about the African Continental Free Trade Area for quick guidance on common AfCFTA topics. Always confirm important details with official AfCFTA publications or your local trade authority.",
+      "placeholder": "Ask an AfCFTA question, e.g. How do rules of origin apply under AfCFTA?",
+      "sampleQuestions": [
+        "How do rules of origin work under AfCFTA?",
+        "What does Category A mean in AfCFTA tariff schedules?",
+        "What trade facilitation documents are commonly needed for AfCFTA shipments?"
+      ],
+      "cta": {
+        "ask": "Ask AI",
+        "asking": "Asking..."
+      },
+      "form": {
+        "languageLabel": "Language",
+        "questionLabel": "Your question"
+      },
+      "validation": {
+        "questionTooShort": "Please enter a more specific question.",
+        "invalidQuestion": "Please provide a valid question."
+      },
+      "error": {
+        "generic": "Failed to get a response from the AI assistant."
+      },
+      "sections": {
+        "answer": "Answer"
+      }
+    }
+  },
+  "originEligibility": {
+    "title": "Certificate of Origin Eligibility",
+    "description": "Estimate origin eligibility using the MaxNOM 60% rule based on your product's value breakdown",
+    "whatIsTheRule": "How does the calculator work?",
+    "ruleExplanation": "This calculator uses a simple value-added check. If non-originating materials are 60% or less of the ex-works price, the product is treated as eligible in this flow.",
+    "startCalculation": "Calculate Eligibility",
+    "newCalculation": "New Calculation",
+    "reset": "Reset",
+    "step1Title": "Product Details",
+    "step1Description": "Enter the product name and the currency for this calculation",
+    "step2Title": "Ex-Works Price",
+    "step2Description": "Provide the production cost inputs used to build the ex-works price",
+    "step3Title": "Non-Originating Materials",
+    "step4Title": "Eligibility Result",
+    "resultDescription": "Based on the 60% maximum non-originating materials threshold",
+    "productName": "Product Name",
+    "productNamePlaceholder": "Enter product name (e.g., Coffee Beans, Textiles)",
+    "productHsCode": "Product HS Code",
+    "productHsCodePlaceholder": "Enter the product HS code used for the origin rule lookup",
+    "currency": "Currency",
+    "costOfMaterials": "Cost of Materials",
+    "costOfMaterialsHint": "Raw materials, components, and parts used in production",
+    "laborCosts": "Labor Costs",
+    "laborCostsHint": "Wages and salaries for production workers",
+    "factoryOverheads": "Factory Overheads",
+    "factoryOverheadsHint": "Heat, electricity, rent, equipment maintenance",
+    "profitMargin": "Profit Margin",
+    "profitMarginHint": "Your profit on top of production costs",
+    "totalExWorks": "Total Ex-Works Price",
+    "vnmExplanationTitle": "What are Non-originating Materials?",
+    "vnmExplanation": "These are imported materials, components, or parts that were not produced in your country. Include the customs value plus freight and insurance costs up to the point of importation.",
+    "vnmValue": "Total VNM Value",
+    "vnmValueHint": "Total value of all imported materials used in production",
+    "formula": "Formula",
+    "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+    "result": "Result",
+    "maxThreshold": "Maximum Threshold: 60%",
+    "eligible": "Eligible",
+    "notEligible": "Not Eligible",
+    "eligibleMessage": "Your product meets the rule of origin requirements",
+    "eligibleDescription": "The non-originating materials are within the 60% threshold. Your product qualifies for preferential treatment under AfCFTA Certificate of Origin.",
+    "notEligibleMessage": "Your product does not meet the rule of origin requirements",
+    "notEligibleDescription": "The non-originating materials exceed the 60% threshold. Consider increasing local content or sourcing more materials locally.",
+    "contactUs": "Need help improving your eligibility?",
+    "contactUsDescription": "Our team can help you identify ways to increase local content and meet the requirements.",
+    "certificateOfOriginEligibility": "Certificate of Origin Eligibility Check",
+    "vnmPercentage": "VNM Percentage",
+    "localContent": "Local Content",
+    "minLocalContent": "Minimum Required: 40%",
+    "localValueAdded": "Local Value Added",
+    "originRule": "Origin Rule",
+    "ruleSource": "Rule Source",
+    "ruleThreshold": "Rule Threshold",
+    "manualReview": "Manual Review",
+    "manualReviewStepTitle": "Manual Rule Review",
+    "manualReviewStepDescription": "Confirm that you reviewed the official rule, insufficient operations, and cumulation requirements",
+    "manualReviewTitle": "Manual review required",
+    "manualReviewBody": "This product's origin rule is not automatically calculable from EXW and VNM alone. You should confirm the official Appendix 2.A.1 rule and the Annex 2 general restrictions before making a claim.",
+    "manualReviewDescription": "This rule needs manual review because the current calculator does not capture tariff-shift or production-process evidence.",
+    "needsReview": "Needs Review",
+    "ruleNotMapped": "Rule Not Mapped",
+    "ruleNotMappedDescription": "The app does not yet have a mapped product-specific rule for this HS code. Review Appendix 2.A.1 before making an origin claim.",
+    "ruleReviewed": "I reviewed the applicable product-specific rule in Appendix 2.A.1.",
+    "insufficientOperationsChecked": "I confirmed the processing is not limited to insufficient operations under Annex 2.",
+    "cumulationConsidered": "I considered cumulation and originating inputs from other State Parties where relevant.",
+    "enterHsCodeFirst": "Enter a product HS code first so the calculator can resolve the rule.",
+    "legacyStatus": "Legacy Result",
+    "yes": "Yes",
+    "no": "No",
+    "saveCalculation": "Save Calculation",
+    "saving": "Saving...",
+    "calculationSaved": "Calculation saved successfully",
+    "registerToSaveCalculation": "Register your business to save this calculation.",
+    "calculationDeleted": "Calculation deleted successfully",
+    "deleteCalculation": "Delete Calculation",
+    "failedToSave": "Failed to save calculation",
+    "failedToDelete": "Failed to delete calculation",
+    "totalCalculations": "Total Calculations",
+    "previousCalculations": "Previous Calculations",
+    "previousCalculationsDescription": "Your saved eligibility calculations"
+  },
+  "creditProfile": {
+    "loading": "Loading digital credit profile...",
+    "title": "Digital Credit Profile",
+    "titleReport": "Digital Credit Profile Report",
+    "subtitle": "Built from marketplace transactions, fulfillment history, and buyer diversity.",
+    "actions": {
+      "backToProfile": "Back to credit profile",
+      "openBusinessProfile": "Open business profile",
+      "businessSetup": "Business setup",
+      "back": "Back",
+      "printOrSavePdf": "Print / Save PDF",
+      "downloadableReport": "Downloadable report"
+    },
+    "badges": {
+      "verifiedSeller": "Verified seller",
+      "platformActivity": "Platform activity profile"
+    },
+    "access": {
+      "no_business": {
+        "title": "Register your business",
+        "message": "A digital credit profile becomes available after you register and verify a business."
+      },
+      "business_missing": {
+        "title": "Business record not found",
+        "message": "Your account is linked to a business record that is no longer available."
+      },
+      "pending_verification": {
+        "title": "Verification in progress",
+        "message": "Your digital credit profile will unlock once the business is verified."
+      },
+      "rejected_verification": {
+        "title": "Verification required",
+        "message": "Resolve your business verification first to unlock the digital credit profile."
+      },
+      "not_seller": {
+        "title": "Seller access required",
+        "message": "Only verified seller accounts can access the digital credit profile."
+      },
+      "ready": {
+        "title": "Ready",
+        "message": "Your digital credit profile is available."
+      }
+    },
+    "common": {
+      "notAvailableYet": "Not available yet"
+    },
+    "summary": {
+      "headline": "{paidOrdersCount} paid orders across {uniqueBuyers} buyers",
+      "description": "This profile reflects activity captured on AfriConnect and is intended as a platform scorecard, not an external bureau credit score.",
+      "generated": "Generated",
+      "reportPeriodStart": "Report period start",
+      "latestProfileActivity": "Latest profile activity"
+    },
+    "cards": {
+      "paidTransactionVolume": {
+        "title": "Paid transaction volume",
+        "description": "Settled marketplace order value"
+      },
+      "paidOrders": {
+        "title": "Paid orders",
+        "description": "{totalOrders} total seller orders tracked"
+      },
+      "uniqueBuyers": {
+        "title": "Unique buyers",
+        "description": "{repeatBuyers} repeat buyers"
+      },
+      "buyerCountries": {
+        "title": "Buyer countries",
+        "description": "{buyersWithBusinessMetadata} buyers with linked business metadata"
+      },
+      "totalSellerOrders": {
+        "title": "Total seller orders",
+        "description": "All orders attributed to this seller"
+      },
+      "successfulPaymentRate": {
+        "title": "Successful payment rate",
+        "description": "Settled payments among orders with payment records"
+      },
+      "averageOrderValue": {
+        "title": "Average order value",
+        "description": "Based on settled marketplace orders"
+      },
+      "recentPaidActivity": {
+        "title": "Recent paid activity",
+        "description": "Most recent settled order activity"
+      },
+      "uniqueBuyersDetailed": {
+        "title": "Unique buyers",
+        "description": "Distinct buyers who placed seller orders"
+      },
+      "repeatBuyers": {
+        "title": "Repeat buyers",
+        "description": "Buyers with more than one order"
+      },
+      "metadataCoverage": {
+        "title": "Metadata coverage",
+        "description": "{buyersWithBusinessMetadata} buyers linked to business records"
+      },
+      "topBuyerConcentration": {
+        "title": "Top-buyer concentration",
+        "description": "Share of transaction volume from the largest buyer"
+      }
+    },
+    "empty": {
+      "title": "Not enough activity yet",
+      "description": "Once your business starts receiving orders, this profile will automatically expand with transaction, fulfillment, and buyer diversity signals."
+    },
+    "sections": {
+      "transactionHistory": {
+        "title": "Transaction History",
+        "description": "Recent order and payment performance across the marketplace."
+      },
+      "fulfillment": {
+        "title": "Fulfillment Performance",
+        "description": "Operational performance derived from order lifecycle and payout outcomes."
+      },
+      "buyerDiversity": {
+        "title": "Buyer Diversity"
+      }
+    },
+    "trend": {
+      "window": "{days} days",
+      "rollingPerformanceWindow": "Rolling performance window",
+      "orders": "Orders",
+      "paidOrders": "Paid orders",
+      "paidVolume": "Paid volume"
+    },
+    "fulfillment": {
+      "completionRate": "Completion rate",
+      "cancellationRate": "Cancellation rate",
+      "payoutSuccessRate": "Payout success rate",
+      "ordersCurrentlyProcessing": "Orders currently processing",
+      "averageFulfillmentCycle": "Average fulfillment cycle",
+      "averageFulfillmentCycleValue": "{days} days",
+      "payoutOutcomeCounts": "Payout outcome counts",
+      "payoutStatuses": {
+        "queued": "Queued",
+        "pending": "Pending",
+        "success": "Successful",
+        "failed": "Failed",
+        "reverted": "Reverted"
+      }
+    },
+    "buyerDiversity": {
+      "coverage": {
+        "complete": "Buyer diversity is based on linked buyer business records.",
+        "partial": "Buyer diversity is based only on buyers with linked business records, so some buyers are excluded from the diversity mix."
+      }
+    },
+    "breakdowns": {
+      "countLabel": "{count} buyers",
+      "buyerCountries": {
+        "title": "Buyer countries",
+        "empty": "Country distribution appears after buyers link business metadata."
+      },
+      "buyerCategories": {
+        "title": "Buyer categories",
+        "empty": "Category distribution appears after buyers link business metadata."
+      },
+      "topBuyers": {
+        "title": "Top buyers",
+        "empty": "Top buyers will appear once orders are placed.",
+        "orders": "{count} orders"
+      }
+    },
+    "methodology": {
+      "title": "Methodology Note",
+      "description": "This report is generated from first-party AfriConnect marketplace activity.",
+      "points": {
+        "transactionVolume": "Transaction volume is based on seller orders linked to settled platform payments.",
+        "fulfillment": "Fulfillment uses order status and payout outcomes as operational performance signals.",
+        "buyerDiversity": "Buyer diversity is based on linked buyer business records, so incomplete buyer metadata lowers coverage."
+      }
+    },
+    "report": {
+      "generatedOn": "Generated on {date}",
+      "latestActivity": "Latest activity: {date}",
+      "reportPeriod": "Report period: {start} — {end}",
+      "category": "Category",
+      "country": "Country",
+      "verifiedSince": "Verified since",
+      "sectionProfileSummary": "1. Profile Summary",
+      "sectionTransactionHistory": "2. Transaction History",
+      "sectionFulfillment": "3. Fulfillment Performance",
+      "sectionBuyerDiversity": "4. Buyer Diversity",
+      "sectionMethodology": "5. Methodology Note",
+      "rollingPerformanceWindows": "Rolling Performance Windows",
+      "payoutOutcomes": "Payout Outcomes",
+      "topBuyersSection": "Top Buyers",
+      "buyerCountriesSection": "Buyer Countries",
+      "buyerCategoriesSection": "Buyer Categories",
+      "noData": "No data available",
+      "orders": "{count} orders",
+      "buyerShare": "{count} buyers ({share}%)"
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "description": "Track stock levels, adjust quantities, and set replenishment alerts",
+    "summary": {
+      "totalProducts": "Total Products",
+      "totalUnits": "Total Units",
+      "lowStock": "Low Stock",
+      "outOfStock": "Out of Stock"
+    },
+    "tabs": {
+      "inventory": "Inventory",
+      "activity": "Activity"
+    },
+    "searchPlaceholder": "Search by product or SKU...",
+    "filterStatus": "Filter status",
+    "status": {
+      "in_stock": "In Stock",
+      "low_stock": "Low Stock",
+      "out_of_stock": "Out of Stock",
+      "inStock": "In Stock",
+      "lowStock": "Low Stock",
+      "outOfStock": "Out of Stock"
+    },
+    "table": {
+      "product": "Product",
+      "sku": "SKU",
+      "onHand": "On Hand",
+      "threshold": "Low Stock Threshold",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "adjust": "Adjust",
+      "thresholds": "Thresholds",
+      "history": "History"
+    },
+    "noSku": "No SKU",
+    "noResults": "No inventory items match your filters.",
+    "activityTitle": "Recent Activity",
+    "activity": {
+      "date": "Date",
+      "product": "Product",
+      "type": "Type",
+      "quantity": "Qty",
+      "newQuantity": "New Qty",
+      "reason": "Reason",
+      "none": "None",
+      "empty": "No inventory activity yet."
+    },
+    "types": {
+      "restock": "Restock",
+      "adjustment": "Adjustment",
+      "return": "Return",
+      "correction": "Correction",
+      "sale": "Sale"
+    },
+    "adjustDialog": {
+      "title": "Adjust Inventory",
+      "description": "Record a stock change for this product.",
+      "type": "Adjustment Type",
+      "delta": "Quantity Change",
+      "deltaPlaceholder": "Use negative values for reductions",
+      "quickAdd": "Add 1",
+      "quickRemove": "Remove 1",
+      "reason": "Reason",
+      "reasonPlaceholder": "Optional note for this change",
+      "save": "Save Adjustment"
+    },
+    "historyDialog": {
+      "title": "Inventory History",
+      "description": "Latest inventory transactions for this product."
+    },
+    "thresholdDialog": {
+      "title": "Replenishment Settings",
+      "description": "Set low stock alerts and reorder quantities.",
+      "lowStock": "Low Stock Threshold",
+      "lowStockPlaceholder": "e.g., 5",
+      "reorder": "Reorder Quantity",
+      "reorderPlaceholder": "e.g., 25",
+      "save": "Save Settings"
+    },
+    "invalidAdjustment": "Enter a non-zero adjustment.",
+    "adjustmentSaved": "Inventory adjustment saved.",
+    "invalidThreshold": "Low stock threshold must be 0 or greater.",
+    "invalidReorder": "Reorder quantity must be 0 or greater.",
+    "thresholdsSaved": "Replenishment settings saved."
+  },
+  "adminBanks": {
+    "title": "Manage Banks",
+    "description": "Create partner banks, assign bank users, and monitor referral capacity.",
+    "stats": {
+      "partnerBanks": "Partner Banks",
+      "bankUsers": "Bank Users",
+      "trackedReferrals": "Tracked Referrals"
+    },
+    "createBank": {
+      "title": "Create Bank",
+      "description": "Set up a bank profile that can own referrals and BI access.",
+      "namePlaceholder": "Bank name",
+      "descriptionPlaceholder": "Description (optional)",
+      "action": "Create Bank",
+      "creating": "Creating...",
+      "success": "Bank created successfully",
+      "error": "Failed to create bank"
+    },
+    "assignUser": {
+      "title": "Assign Bank User",
+      "description": "Promote an existing user into a bank account and attach them to a bank.",
+      "searchPlaceholder": "Search users by name or email",
+      "selectUser": "Select user",
+      "selectBank": "Select bank",
+      "action": "Assign User",
+      "assigning": "Assigning...",
+      "success": "User assigned to bank",
+      "error": "Failed to assign user"
+    },
+    "directory": {
+      "title": "Bank Directory",
+      "description": "Review which banks are active and how many SMEs are in each portfolio.",
+      "empty": "No banks created yet.",
+      "columns": {
+        "bank": "Bank",
+        "status": "Status",
+        "referralPrefix": "Referral Prefix",
+        "users": "Users",
+        "referrals": "Referrals",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "N/A"
+    },
+    "stages": {
+      "generated": "Referred",
+      "signed_up": "Signed up",
+      "business_created": "Business created",
+      "verified": "Verified",
+      "active": "Active"
+    },
+    "overview": {
+      "fallbackTitle": "Bank dashboard",
+      "description": "Track referral conversion, SME onboarding, and portfolio performance.",
+      "referralBase": "Referral base: {code}",
+      "stats": {
+        "totalReferrals": "Total Referrals",
+        "portfolioSmes": "Portfolio SMEs",
+        "portfolioSmesMeta": "{verified} verified, {active} active",
+        "portfolioRevenue": "Portfolio Revenue",
+        "portfolioRevenueMeta": "{orders} orders across referred SMEs",
+        "successfulPayouts": "Successful Payouts",
+        "successfulPayoutsMeta": "{products} products listed by your SMEs"
+      },
+      "funnel": {
+        "title": "Referral Funnel",
+        "description": "End-to-end journey from referral creation to active SME engagement."
+      },
+      "momentum": {
+        "title": "Monthly Momentum",
+        "description": "Recent referral, onboarding, and revenue movement across your portfolio.",
+        "referred": "{count} referred",
+        "onboarded": "{count} onboarded",
+        "verified": "{count} verified"
+      },
+      "recentPortfolio": {
+        "title": "Recent Portfolio SMEs",
+        "description": "Newly onboarded or recently linked organizations from your bank.",
+        "cta": "View portfolio",
+        "empty": "No referred SMEs have created businesses yet.",
+        "products": "{count} products",
+        "orders": "{count} orders",
+        "revenue": "{amount} revenue"
+      },
+      "recentReferrals": {
+        "title": "Recent Referrals",
+        "description": "Latest referral records and where each lead currently sits.",
+        "cta": "Manage referrals",
+        "empty": "No referral records yet. Start by creating a bank referral link."
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "Portfolio SMEs",
+      "description": "Review every SME referred by your bank and how far they have progressed.",
+      "filtersDescription": "Filter by onboarding stage, geography, and segment to review performance.",
+      "searchPlaceholder": "Search business, owner, or email",
+      "filterByStage": "Filter by stage",
+      "allStages": "All stages",
+      "country": "Country",
+      "allCountries": "All countries",
+      "category": "Category",
+      "allCategories": "All categories",
+      "empty": "No SMEs match the current filters.",
+      "unknownOwner": "Unknown owner",
+      "noEmail": "No email",
+      "view": "View",
+      "columns": {
+        "business": "Business",
+        "owner": "Owner",
+        "stage": "Stage",
+        "products": "Products",
+        "orders": "Orders",
+        "revenue": "Revenue",
+        "drillDown": "Drill down"
+      }
+    },
+    "detail": {
+      "description": "SME drill-down covering onboarding, ownership, and commercial activity.",
+      "stats": {
+        "revenue": "Revenue",
+        "orders": "Orders",
+        "products": "Products",
+        "netPayouts": "Net Payouts"
+      },
+      "snapshot": {
+        "title": "Business Snapshot",
+        "description": "Core organization details and current onboarding position.",
+        "country": "Country",
+        "category": "Category",
+        "verificationStatus": "Verification status",
+        "joinedPlatform": "Joined platform",
+        "businessDescription": "Description",
+        "noDescription": "No description provided"
+      },
+      "owner": {
+        "title": "Owner Contact",
+        "description": "Primary platform owner responsible for the SME account.",
+        "unknownOwner": "Unknown owner",
+        "noEmail": "No email available",
+        "referralTracking": "Referral tracking",
+        "code": "Code",
+        "currentReferralRecord": "Current referral record"
+      },
+      "monthly": {
+        "title": "Monthly Performance",
+        "description": "Recent revenue and order trend for this SME portfolio account.",
+        "orders": "{count} orders"
+      }
+    },
+    "referrals": {
+      "title": "Referrals",
+      "description": "Generate trackable signup links for SMEs and monitor each conversion stage.",
+      "unnamedReferral": "Unnamed referral",
+      "unnamedLead": "Unnamed lead",
+      "noExtraMetadata": "No extra metadata",
+      "create": {
+        "title": "Create Referral Link",
+        "description": "Generate a unique signup code for an SME, organization, or warm lead.",
+        "organizationPlaceholder": "Organization name",
+        "emailPlaceholder": "Invite email (optional)",
+        "notesPlaceholder": "Notes (optional)",
+        "action": "Create referral",
+        "creating": "Creating...",
+        "success": "Referral {code} created",
+        "error": "Failed to create referral"
+      },
+      "playbook": {
+        "title": "Referral Playbook",
+        "description": "Each generated code creates a measurable onboarding journey for your bank portfolio.",
+        "howItWorks": "How it works",
+        "step1": "1. Create a referral record for an SME lead.",
+        "step2": "2. Share the generated signup link with that organization.",
+        "step3": "3. Once they sign up and onboard, this page updates automatically.",
+        "defaultSignupBase": "Default signup base",
+        "baseUrlFallback": "Your signup base link will appear here in the browser."
+      },
+      "register": {
+        "title": "Referral Register",
+        "description": "Track every code, its invite target, and whether it has converted into an active SME.",
+        "empty": "No referrals created yet.",
+        "copySuccess": "Referral link copied",
+        "copyError": "Could not copy referral link",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "Referral Code",
+          "status": "Status",
+          "linkedSme": "Linked SME",
+          "created": "Created",
+          "copyLink": "Copy link"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Segment your portfolio by country, category, onboarding stage, and monthly output.",
+      "byCategory": {
+        "title": "By Category",
+        "description": "Which sectors dominate your referred SME base."
+      },
+      "byCountry": {
+        "title": "By Country",
+        "description": "Geographic spread of the bank's referred organizations."
+      },
+      "byStage": {
+        "title": "By Stage",
+        "description": "How much of the portfolio has progressed through the funnel."
+      },
+      "monthly": {
+        "title": "Monthly Trend",
+        "description": "Watch portfolio creation, activation, and commercial value over time.",
+        "newSmes": "{count} new SMEs",
+        "active": "{count} active"
+      }
+    }
+  }
+}

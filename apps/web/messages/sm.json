@@ -1,0 +1,1670 @@
+{
+  "common": {
+      "loading": "Waa la raryayaa...",
+      "save": "Keydi",
+      "cancel": "Iska daa",
+      "delete": "Tirtir",
+      "edit": "Wax ka beddel",
+      "search": "Raadi",
+      "clearFilters": "Sifeeyayaasha sifeey",
+      "close": "Xir",
+      "back": "Dib u laabo",
+      "next": "Xigta",
+      "submit": "Gudbi",
+      "confirm": "Xaqiiji",
+      "yes": "Haa",
+      "no": "Maya",
+      "all": "Dhammaan",
+      "none": "Eber",
+      "actions": "Ficillada",
+      "status": "Xaaladda",
+      "created": "La abuuray",
+      "updated": "La cusboonaysiiyay",
+      "details": "Faahfaahin",
+      "viewDetails": "Eeg faahfaahinta",
+      "account": "Koontada",
+      "soon": "Dhowaan",
+      "admin": "Maamule",
+      "filters": "Sifeeyayaasha",
+      "noDescription": "Ma jiro sharaxaad la heli karo",
+      "settingUp": "Habaynta koontadaada..."
+    },
+    "navigation": {
+      "dashboard": "Dashboard-ka",
+      "marketplace": "Suuqa",
+      "products": "Alaabtayda",
+      "inventory": "Kaydka",
+      "messages": "Farriimaha",
+      "cart": "Gaariga dukaanka",
+      "orders": "Dalabaadka",
+      "settings": "Settings",
+      "billing": "Biilasha",
+      "myBusiness": "Ganacsigayga",
+      "creditProfile": "Profile-ka Daynta",
+      "registerBusiness": "Xaqiiji Ganacsiga",
+      "verifyBusinessLabel": "Xaqiiji Ganacsiga",
+      "applyToSell": "Codso Iibin",
+      "manageUsers": "Maamul Isticmaalayaasha",
+      "manageBusinesses": "Maamul Ganacsiyada",
+      "manageSellerApplications": "Codsiyada Iibiyeyaasha",
+      "manageProducts": "Maamul Alaabta",
+      "manageRefunds": "Maamul Lacag-celinta",
+      "manageBanks": "Maamul Bangiyada",
+      "bankPortfolio": "Portfolio-ga Bangiga",
+      "bankReferrals": "Gudbinta Bangiga",
+      "bankAnalytics": "Falanqaynta Bangiga",
+      "compliance": "U hoggaansanaanta AfCFTA",
+      "aiAssistant": "Kaaliyaha AI",
+      "toggleMenu": "Beddel menu-ga",
+      "toggleSidebar": "Beddel dhinaca menu-ga"
+    },
+    "chat": {
+      "messages": "Farriimaha",
+      "messagesDescription": "Eeg oo maamul wadahadallada aad la leedahay iibsadayaasha iyo iibiyayaasha",
+      "conversations": "Wadahadallada",
+      "conversation": "Wadahadalka",
+      "contactSeller": "La xiriir Iibiyaha",
+      "messageBusiness": "Farriin u dir Ganacsiga",
+      "noMessages": "Weli ma jiraan farriimo",
+      "typeMessage": "Qor farriin...",
+      "startConversation": "Wadahadal ka bilow adigoo la xiriiraya iibiye ku jira bogga alaabta",
+      "selectConversation": "Xulo wadahadal",
+      "selectConversationDescription": "Dooro wadahadal liiska ku jira si aad u aragto farriimaha",
+      "loadingConversations": "Wadahadallada ayaa la raryayaa...",
+      "sendMessage": "Dir farriinta",
+      "attachFile": "Ku dar feyl",
+      "typing": "wax baa la qorayaa..."
+    },
+    "marketplace": {
+      "title": "Suuqa",
+      "description": "Ka dhex raadi alaabta ganacsiyada ku jira goobta oo dhan",
+      "browseProducts": "Baadh Alaabta",
+      "showingProducts": "Waxaa la tusayaa {count} alaab ah",
+      "loadingProducts": "Alaabta ayaa la raryayaa...",
+      "noProducts": "Ma jiro wax alaab ah oo la helay",
+      "noProductsYet": "Weli ma jiraan alaab diyaar ku ah suuqa.",
+      "tryAdjustingFilters": "Isku day inaad wax ka beddesho sifeeyayaasha ama ereyada raadinta.",
+      "searchPlaceholder": "Raadi alaab...",
+      "allCategories": "Dhammaan Qaybaha",
+      "allCountries": "Dhammaan Waddamada",
+      "sortBy": "U kala saar",
+      "sortNewest": "Kuwa cusub",
+      "sortPriceAsc": "Qiimaha: Hoose ilaa Sare",
+      "sortPriceDesc": "Qiimaha: Sare ilaa Hoose",
+      "outOfStock": "Kaydku waa dhammaaday",
+      "inStock": "{count} ayaa kaydka ku jira",
+      "inStockCap": "1000+ ayaa kaydka ku jira",
+      "price": "Qiimaha",
+      "category": "Qaybta",
+      "country": "Waddanka",
+      "clearAllFilters": "Sifeey dhammaan sifeeyayaasha",
+      "verify": {
+        "businessBeforeAdd": "Xaqiiji ganacsigaaga ka hor inta aadan ku darin alaabo gaarigaaga.",
+        "completeBusinessBeforeAdd": "Dhammaystir xaqiijinta ganacsigaaga ka hor inta aadan ku darin alaabo gaarigaaga."
+      }
+    },
+    "products": {
+      "title": "Alaabtayda",
+      "description": "Maamul liiska alaabtaada",
+      "addProduct": "Ku dar Alaab",
+      "allProducts": "Dhammaan Alaabta",
+      "searchDescription": "Raadi oo sifeey alaabtaada si aad u hesho waxaad u baahan tahay",
+      "searchPlaceholder": "Raadi alaab...",
+      "filterByStatus": "U sifeey xaalad ahaan",
+      "allStatuses": "Dhammaan Xaaladaha",
+      "noProducts": "Weli ma jirto alaab. Ku dar alaabtaadii ugu horreysay si aad u bilaawdo.",
+      "noMatchingProducts": "Ma jirto alaab u dhiganta shuruudaha raadintaada.",
+      "productName": "Magaca Alaabta",
+      "enterProductName": "Geli magaca alaabta",
+      "descriptionLabel": "Sharaxaadda",
+      "describeProduct": "Sharax alaabtaada",
+      "price": "Qiimaha",
+      "stockQuantity": "Tirada Kaydka",
+      "quantity": "Tirada",
+      "sku": "SKU (Aqoonsiga Kaydka)",
+      "skuPlaceholder": "tusaale, AC-COF-001",
+      "lowStockThreshold": "Xadka Kaydka Hoose",
+      "reorderQuantity": "Tirada Dib u Dalbashada",
+      "category": "Qaybta",
+      "categoryPlaceholder": "tusaale, Elektaroonigga",
+      "originCountry": "Waddankii laga soo saaray",
+      "countryPlaceholder": "tusaale, Itoobiya",
+      "minOrderQty": "Tirada ugu yar ee la dalban karo",
+      "status": "Xaaladda",
+      "active": "Shaqaynaysa",
+      "inactive": "Aan shaqaynayn",
+      "image": "Sawirka",
+      "images": "Sawirrada",
+      "addImages": "Ku dar Sawirro",
+      "addNewProduct": "Ku dar Alaab Cusub",
+      "enterDetailsStep": "Geli faahfaahinta alaabta si aad u bilaawdo.",
+      "addImagesStep": "Ku dar sawirro si alaabtaadu u muuqato.",
+      "productDetails": "Faahfaahinta Alaabta",
+      "nextAddImages": "Xigta: Ku dar Sawirro",
+      "creating": "Waa la abuurayaa...",
+      "skipForNow": "Hadda iska dhaaf",
+      "completeListing": "Dhammaystir Liiska",
+      "editProduct": "Wax ka beddel Alaabta",
+      "updateDetails": "Cusboonaysii faahfaahinta alaabta oo maamul sawirrada.",
+      "saveChanges": "Keydi Isbeddellada",
+      "deleteProduct": "Tirtir Alaabta",
+      "deleteConfirmation": "Ma hubtaa inaad rabto inaad tirtirto alaabtan? Tani waxay sidoo kale tirtiri doontaa dhammaan sawirrada lala xiriiriyay. Ficilkan dib looma soo celin karo.",
+      "firstProductPricingPromptTitle": "Alaabtaadii ugu horreysay waa diyaar",
+      "firstProductPricingPromptDescription": "Bilaaw fiican! Booqo bogga qiimaha si aad u sahamiso qorshayaasha oo aad u hesho sifooyin dheeraad ah.",
+      "firstProductPricingPromptStay": "Waxaa laga yaabaa hadda ka dib",
+      "firstProductPricingPromptGo": "Aad bogga Qiimaha",
+      "subscriptionRequiredPromptTitle": "Is-diiwaangelin ayaa loo baahan yahay",
+      "subscriptionRequiredPromptDescription": "Si aad u ku darto alaab kale, waxaad u baahan tahay is-diiwaangelin lacag leh. Dooro qorshe si aad u sii wadato.",
+      "subscriptionRequiredPromptStay": "Hadda maya",
+      "subscriptionRequiredPromptGo": "Eeg qiimaha",
+      "currencyHint": "USD ayaa loo baahan yahay waana qiimaha ugu muhiimsan. Qiimaha ETB iyo KSH si otomaatig ah ayaa loo buuxin karaa iyadoo la isticmaalayo sarifka hadda jira, waadna hagaajin kartaa wakhti kasta.",
+      "ratesUpdated": "Heerarka la cusboonaysiiyay: {date}.",
+      "usdRequired": "Qiimaha USD waa lagama maarmaan waana inuu ka weyn yahay 0.",
+      "etbRequired": "Qiimaha ETB waa lagama maarmaan waana inuu ka weyn yahay 0.",
+      "kshInvalid": "Qiimaha KSH waa inuu noqdaa 0 ama ka weyn."
+    },
+    "orders": {
+      "title": "Dalabaadka",
+      "description": "Maamul iibsashadaada iyo iibkaaga",
+      "purchases": "Waxa aad iibsatay",
+      "sales": "Iibkaaga",
+      "myPurchases": "Iibsashadayda",
+      "mySales": "Iibkayga",
+      "purchasesDescription": "Dalabaadka aad ka iibsatay ganacsiyada kale",
+      "salesDescription": "Dalabaadka ganacsiyada kale ay ka iibsadeen alaabtaada",
+      "searchPlaceholder": "Raadi dalabaadka...",
+      "filterByStatus": "U sifeey xaalad ahaan",
+      "allStatuses": "Dhammaan Xaaladaha",
+      "pending": "Sugaya",
+      "processing": "La gacanta ku hayo",
+      "completed": "Dhammaystiran",
+      "cancelled": "La joojiyay",
+      "order": "Dalabka",
+      "seller": "Iibiyaha",
+      "buyer": "Iibsadaha",
+      "amount": "Cadadka",
+      "totalAmount": "Cadadka Guud",
+      "noPurchasesYet": "Weli ma jiraan wax iibsasho ah. Ka bilow dukaamaysiga suuqa!",
+      "noSalesYet": "Weli ma jiraan wax iib ah. Liis gareey alaab si aad u bilaawdo iibinta!",
+      "noMatchingOrders": "Ma jiraan dalabaad u dhiganta shuruudaha raadintaada.",
+      "orderPlacedOn": "Dalabka waxaa la gudbiyay {date}",
+      "orderItems": "Alaabta Dalabka",
+      "unknownProduct": "Alaab aan la aqoon",
+      "loadingOrder": "Dalabka ayaa la raryayaa...",
+      "loadingOrderDetails": "Fadlan sug inta aan keenayno faahfaahinta dalabka.",
+      "cancelOrder": "Jooji Dalabka",
+      "cancelOrderConfirmation": "Ma hubtaa inaad rabto inaad joojiso dalabkan? Ficilkan dib looma soo celin karo.",
+      "keepOrder": "Hayso Dalabka",
+      "markAsProcessing": "U calaamadi in gacanta lagu hayo",
+      "markAsCompleted": "U calaamadi in la dhammaystiray",
+      "trackAndManage": "Lasocod oo maamul iibsashadaada iyo iibkaaga"
+    },
+    "business": {
+      "registerTitle": "Diiwaangeli Ganacsigaaga",
+      "registerDescription": "Abuur profile ganacsi si aad u bilaawdo iibinta suuqa",
+      "businessInformation": "Macluumaadka Ganacsiga",
+      "businessInfoDescription": "Bixi faahfaahinta ganacsigaaga. Diiwaangelintaada waxaa dib u eegi doona kooxdayada ka hor intaan la hawlgelin.",
+      "businessName": "Magaca Ganacsiga",
+      "enterBusinessName": "Geli magaca ganacsigaaga",
+      "description": "Sharaxaadda",
+      "businessDescription": "Sharaxaad kooban oo ku saabsan ganacsigaaga",
+      "descriptionHelp": "Sharax waxa ganacsigaagu qabto iyo alaabta/adeegyada aad bixiso.",
+      "country": "Waddanka",
+      "selectCountry": "Dooro waddan",
+      "city": "Magaalada",
+      "enterCity": "Geli magaalada",
+      "address": "Cinwaanka",
+      "businessAddress": "Cinwaanka ganacsiga",
+      "category": "Qaybta Ganacsiga",
+      "selectCategory": "Dooro qayb",
+      "phone": "Lambarka Taleefanka",
+      "phonePlaceholder": "+252 xxx xxx xxxx",
+      "website": "Websaydhka",
+      "websitePlaceholder": "https://tusaale.com",
+      "registering": "Diiwaangelin ayaa socota...",
+      "registrationDocuments": "Dukumentiyada diiwaangelinta",
+      "businessLicence": "Leysinka ganacsiga",
+      "businessLicenceNumber": "Lambarka leysinka ganacsiga",
+      "businessLicenceNumberPlaceholder": "Geli lambarka leysinka",
+      "memoOfAssociation": "Xusuus-qorka ururka (Memo of Association)",
+      "tinCertificate": "Shahaadada TIN",
+      "tinCertificateNumber": "Lambarka shahaadada TIN",
+      "tinCertificateNumberPlaceholder": "Geli lambarka TIN",
+      "hasImportExportPermit": "Ma leedahay oggolaanshaha soo dejinta/dhoofinta (dibadda)?",
+      "hasImportExportPermitPlaceholder": "Dooro...",
+      "hasImportExportPermitYes": "Haa",
+      "hasImportExportPermitNo": "Maya",
+      "importExportPermit": "Oggolaanshaha soo dejinta/dhoofinta",
+      "importExportPermitNumber": "Lambarka oggolaanshaha soo dejinta/dhoofinta",
+      "importExportPermitNumberPlaceholder": "Geli lambarka oggolaanshaha (waa ikhtiyaari)",
+      "upload": "Soo rari",
+      "uploaded": "Waa la soo rariyay",
+      "sellerAgreementLabel": "Waan akhriyay oo waan aqbalay",
+      "sellerAgreementLink": "Heshiiska Iibiyaha",
+      "sellerAgreementRequired": "Waa inaad aqbashaa Heshiiska Iibiyaha si aad u codsato inaad iibiso.",
+      "buyerVerificationTitle": "Xaqiiji Ganacsigaaga",
+      "buyerVerificationDescription": "Gudbi faahfaahinta iyo dukumeentiyada ganacsigaaga si akoonkaagu uga iibsado suuqa.",
+      "buyerVerificationCardTitle": "Xaqiijinta Ganacsiga Iibsadaha",
+      "buyerVerificationCardDescription": "Iibsadayaasha AfriConnect sidoo kale waa inay noqdaan ganacsiyo la xaqiijiyey. Hal mar gudbi dukumeentiyadaada, kooxdayaduna way dib u eegi doontaa.",
+      "buyerVerificationDocumentsTitle": "Dukumeentiyada xaqiijinta",
+      "buyerVerificationDocumentsDescription": "Soo geli dukumeentiyada aan u baahanahay si aan u xaqiijino ganacsigaaga ka hor inta aan wax iibsiga la hawlgelin.",
+      "buyerVerificationSubmitting": "Waa la gudbinayaa...",
+      "submitBuyerVerification": "U gudbi xaqiijin",
+      "buyerVerificationSubmitted": "Xaqiijinta ganacsiga si guul leh ayaa loo gudbiyey. Dhawaan ayaan dib u eegi doonaa.",
+      "buyerVerificationFailed": "Gudbinta xaqiijinta ganacsiga way fashilantay.",
+      "sellerApplicationTitle": "Codso Iibin",
+      "sellerApplicationDescription": "Marka ganacsigaaga la xaqiijiyo, waxaad codsan kartaa oggolaanshaha iibinta adigoon mar kale soo gudbin dukumeentiyada ganacsiga.",
+      "sellerApplicationCardTitle": "Codsiga Iibiyaha",
+      "sellerApplicationCardDescription": "Oggolaanshaha iibiyaha waxaa si gooni ah looga eegaa xaqiijinta ganacsiga. Aqbal heshiiska iibiyaha oo gudbi codsigaaga markaad diyaar u tahay iibinta.",
+      "businessVerificationStatusTitle": "Xaqiijinta Ganacsiga",
+      "sellerApplicationBusinessVerified": "Ganacsigaaga waa la xaqiijiyay, wuxuuna diyaar u yahay dib u eegista codsiga iibinta.",
+      "sellerApplicationBusinessPending": "Ganacsigaaga waa in marka hore la xaqiijiyaa ka hor intaadan codsan iibin.",
+      "sellerApplicationStatusTitle": "Xaaladda Oggolaanshaha Iibinta",
+      "sellerApplicationApproved": "Oggolaanshaha iibinta wuu shaqaynayaa akoonkan.",
+      "sellerApplicationPending": "Codsigaaga iibintu wuxuu ku jiraa dib u eegis.",
+      "sellerApplicationRejected": "Codsigaaga iibintu waa la diiday. Dib u eeg shuruudaha, markaasna mar kale codso markaad diyaar noqoto.",
+      "sellerApplicationNotApplied": "Weli ma aadan codsan iibin.",
+      "sellerApplicationReady": "Diyaar u ah codsiga",
+      "sellerApplicationRequirementsTitle": "Waxa xiga",
+      "sellerApplicationRequirementBusiness": "Ganacsigaaga waa inuu horay u xaqiijnaadaa.",
+      "sellerApplicationRequirementAgreement": "Waxaad akhrin doontaa oo aqbali doontaa heshiiska iibiyaha ee hadda jira.",
+      "sellerApplicationRequirementReview": "Maamule ayaa dib u eegi doona codsigaaga iibinta ka hor inta aan laguu oggolaan iibinta.",
+      "sellerApplicationSubmitting": "Waa la gudbinayaa...",
+      "sellerApplicationApply": "Codso Iibin",
+      "sellerApplicationReapply": "Mar Kale u Codso Iibin",
+      "sellerApplicationManageProducts": "Maamul Alaabta",
+      "sellerApplicationOpenBusiness": "Fur Profile-ka Ganacsiga",
+      "sellerApplicationSubmitted": "Codsiga iibinta si guul leh ayaa loo gudbiyay.",
+      "sellerApplicationFailed": "Gudbinta codsiga iibinta way fashilantay.",
+      "sellerApplicationRequiresVerifiedBusiness": "Ganacsigaaga waa in marka hore la xaqiijiyaa ka hor intaadan codsan iibin.",
+      "verificationStatus": {
+        "pending": "Xaqiijin sugaysa",
+        "verified": "La xaqiijiyay",
+        "rejected": "La diiday"
+      },
+      "sellerStatus": {
+        "not_applied": "Lama codsan",
+        "pending": "Dib u eegis ku jira",
+        "approved": "La ansixiyay",
+        "rejected": "La diiday"
+      },
+      "profile": {
+        "sellerDescription": "Maamul profile-ka ganacsigaaga, xaqiijinta, iyo hawlaha iibiyaha",
+        "buyerDescription": "Maamul profile-ka ganacsigaaga, xaqiijinta, iyo codsiga iibiyaha",
+        "editProfile": "Wax ka beddel Profile-ka",
+        "businessProfileTitle": "Profile-ka Ganacsiga",
+        "editDescription": "Cusboonaysii macluumaadka ganacsigaaga ee hoose",
+        "viewDescription": "Faahfaahinta ganacsigaaga iyo macluumaadka xiriirka",
+        "verificationPendingMessage": "Ganacsigaaga waxaa dib u eegaya kooxdayadu. Helitaanka wax iibsigu wuu furmi doonaa marka la ansixiyo.",
+        "verificationVerifiedMessage": "Ganacsigaaga waa la xaqiijiyay. Hadda waxaad alaab ku dari kartaa gaarigaaga oo dalabyo samayn kartaa.",
+        "verificationRejectedMessage": "Xaqiijinta ganacsigaaga waa la diiday. Cusboonaysii macluumaadka ganacsigaaga iyo dukumeentiyada hoose si aad mar kale u gudbiso.",
+        "sellerRequiresVerifiedMessage": "Marka hore xaqiiji ganacsigaaga ka hor intaadan codsan iibin.",
+        "sellerApprovedMessage": "Oggolaanshaha iibinta wuu shaqaynayaa akoonkan. Waxaad maamuli kartaa alaabta, keydka, iyo lacag-bixinnada.",
+        "sellerPendingMessage": "Codsigaaga iibinta wuxuu sugayaa dib u eegista maamulaha.",
+        "sellerRejectedMessage": "Codsigaaga iibinta waa la diiday. Waxaad dib u eegi kartaa heshiiska iibiyaha oo mar kale codsan kartaa.",
+        "sellerReadyMessage": "Ganacsigaaga waa la xaqiijiyay. Hadda waxaad codsan kartaa iibin adigoon mar kale soo gudbin dukumeentiyada ganacsiga.",
+        "verificationDocumentsRejectedDescription": "Cusboonaysiinta iyo kaydinta goobahan waxay dib ugu gudbin doontaa ganacsigaaga dib u eegis.",
+        "verificationDocumentsDescription": "Dukumeentiyada diiwaangelintaada ha ahaadaan kuwo cusub si ganacsigaaga si degdeg ah loogu eego.",
+        "saving": "Waa la kaydinayaa...",
+        "saveChanges": "Kaydi Isbeddellada",
+        "location": "Goobta",
+        "resubmitBadge": "Cusboonaysii dukumeentiyada oo kaydi si mar kale loo gudbiyo",
+        "documentUploaded": "Dukumeenti waa la soo geliyay",
+        "documentMissing": "Dukumeenti ma jiro",
+        "licenceNumber": "Lambarka laysanka: {number}",
+        "tinNumber": "Lambarka TIN: {number}",
+        "permitUploaded": "Ruqsadda waa la soo geliyay",
+        "permitMissing": "Ruqsaddu weli lama soo gelin",
+        "notProvided": "Lama bixin",
+        "permitNumber": "Lambarka ruqsadda: {number}",
+        "profileUpdated": "Profile-ka ganacsiga si guul leh ayaa loo cusboonaysiiyay",
+        "profileUpdateFailed": "Cusboonaysiinta ganacsiga way fashilantay",
+        "payoutSettingsTitle": "Dejinta Lacag-bixinta",
+        "payoutSettingsDescription": "Ku dar faahfaahinta bangigaaga si aad u hesho lacag-bixinnada suuqa.",
+        "bank": "Bangiga",
+        "selectBank": "Dooro bangi",
+        "loadingBanks": "Bangiyada waa la soo rarayaa...",
+        "unableToLoadBanks": "Bangiyada hadda lama soo rari karo.",
+        "accountName": "Magaca Akoonka",
+        "accountNumber": "Lambarka Akoonka",
+        "payoutEnabled": "Lacag-bixinnadu way shaqaynayaan",
+        "payoutNotEnabled": "Lacag-bixinnadu weli ma shaqaynayaan",
+        "savePayoutSettings": "Kaydi Dejinta Lacag-bixinta",
+        "payoutSettingsUpdated": "Dejinta lacag-bixinta waa la cusboonaysiiyay",
+        "payoutSettingsUpdateFailed": "Cusboonaysiinta dejinta lacag-bixinta way fashilantay",
+        "creditProfileTitle": "Profile-ka Daynta Dijitaalka ah",
+        "creditProfileDescription": "Hal warbixin oo iibiyaha ah gudaheeda ku eeg taariikhda macaamilkaaga, waxqabadka fulinta, iyo kala duwanaanshaha iibsadayaasha.",
+        "creditProfileAvailability": "Wuxuu diyaar noqdaa marka ganacsigaaga la xaqiijiyo. Waxaad sidoo kale soo saari kartaa warbixin la daabici karo si loo wadaago.",
+        "openCreditProfile": "Fur Profile-ka Daynta"
+      }
+    },
+    "cart": {
+      "title": "Gaariga Dukaanka",
+      "description": "Dib u eeg alaabtaada ka hor intaadan bixin lacagta",
+      "emptyCart": "Gaarigaagu waa maran yahay",
+      "emptyCartDescription": "Ka baadh suuqa si aad u hesho alaab",
+      "browseMarketplace": "Baadh Suuqa",
+      "subtotal": "Warta qayb ahaan",
+      "total": "Warta guud",
+      "checkout": "Bixi Lacagta",
+      "removeItem": "Ka saar alaabta",
+      "updateQuantity": "Cusboonaysii tirada",
+      "buyerAgreementRequired": "Waa inaad aqbashaa Heshiiska Iibsadaha ka hor intaadan bixin lacagta."
+    },
+    "dashboard": {
+      "title": "Dashboard-ka",
+      "welcome": "Ku soo dhawaada mar kale! Halkan waa dulmarka dalabaadkaaga.",
+      "welcomeBack": "Ku soo dhawaada,",
+      "overview": "Dulmarka",
+      "recentOrders": "Dalabaadkii u dambeeyay",
+      "recentProducts": "Alaabtii u dambaysay",
+      "quickStats": "Xogta Degdegga ah",
+      "totalRevenue": "Dakhliga Guud",
+      "totalOrders": "Dalabaadka Guud",
+      "totalProducts": "Alaabta Guud",
+      "pendingOrders": "Dalabaadka Sugaya",
+      "discoverProducts": "Sahami Alaabta",
+      "browseDescription": "Ka baadh alaabta ganacsiyada Afrika oo dhan"
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "Maamul habaynta koontadaada iyo dookhyadaada",
+      "profile": "Profile-ka",
+      "profileDescription": "Cusboonaysii macluumaadka profile-kaaga",
+      "displayName": "Magaca la soo bandhigayo",
+      "enterName": "Geli magacaaga",
+      "displayNameHelp": "Kani waa magacaaga la soo bandhigayo. Wuxuu ka duwanaan karaa magaca koontadaada.",
+      "noNameSet": "Magac lama dejin",
+      "accountInfo": "Macluumaadka Koontada",
+      "accountInfoDescription": "Faahfaahinta koontadaada",
+      "email": "Iimaylka",
+      "emailHelp": "Iimaylka waxaa maamula Clerk. Si aad u beddesho, cusboonaysii habaynta koontadaada.",
+      "userId": "Aqoonsiga Isticmaalaha",
+      "verifyBusinessLabel": "Xaqiiji Ganacsiga",
+      "verifyBusinessDescription": "Gudbi faahfaahinta ganacsigaaga si wax iibsigu u furmo",
+      "verifyBusinessDescriptionIncomplete": "Dhammaystir xaqiijinta ganacsigaaga si wax iibsigu u furmo",
+      "applyToSellLabel": "Codso Iibin",
+      "applyToSellDescription": "Oggolow heshiiska iibiyaha oo gudbi codsigaaga iibiyaha"
+    },
+    "billing": {
+      "title": "Biilasha",
+      "description": "Eeg taariikhda lacag bixintaada oo maamul biilasha",
+      "paymentMethod": "Habka Lacag Bixinta",
+      "paymentMethodDescription": "Lacag bixin ammaan ah oo ay fududaynayso Chapa",
+      "chapaGateway": "Chapa Payment Gateway",
+      "chapaDescription": "Si ammaan ah ugu bixi Mobile Money, Xawaalad Bangi, ama Kaarka",
+      "learnMore": "Wax badan ka baro",
+      "paymentHistory": "Taariikhda Lacag Bixinta",
+      "paymentHistoryDescription": "Eeg macaamiladii kuugu dambeeyay",
+      "noPaymentHistory": "Weli ma jirto taariikh lacag bixin",
+      "date": "Taariikhda",
+      "reference": "Tixraaca",
+      "type": "Nooca",
+      "amount": "Cadadka",
+      "failed": "Wuu fashilmay"
+    },
+    "pricing": {
+      "title": "Qiimo Fudud oo Caddaan ah",
+      "description": "Dooro qorshaha sida ugu fiican ugu habboon baahiyaha ganacsigaaga. Dhammaan qorshayaasha waxaa ka mid ah gelitaanka suuqayada B2B iyo qalabka u hoggaansanaanta AfCFTA.",
+      "subtitle": "Dooro qorshaha sida ugu fiican ugu habboon baahiyaha ganacsigaaga. Dhammaan qorshayaasha waxaa ka mid ah gelitaanka suuqayada B2B iyo qalabka u hoggaansanaanta AfCFTA.",
+      "backToHome": "Ku laabo Hoyga",
+      "loadingPlans": "Qorshayaasha ayaa la raryayaa...",
+      "monthly": "Bil kasta",
+      "annual": "Sannad kasta",
+      "savePercent": "Kaydi {percent}%",
+      "perMonth": "/bishii",
+      "perYear": "/sannadkii",
+      "billedAnnually": "{amount}/mo biil sannadeed ahaan",
+      "mostPopular": "Ugu Caansan",
+      "currentPlan": "Qorshaha Hadda",
+      "getStarted": "Bilow",
+      "contactSales": "La xiriir Iibka",
+      "custom": "Mid gaar ah",
+      "compareFeatures": "Isbarbardhig Dhammaan Sifooyinka",
+      "faq": {
+        "title": "Su'aalaha Inta Badan La Isweydiiyo",
+        "changePlan": {
+          "question": "Ma beddeli karaa qorshahayga hadda ka dib?",
+          "answer": "Haa, waad kordhin kartaa ama dhimmi kartaa qorshahaaga wakhti kasta. Markaad kordhinayso, waxaad isla markaaba helaysaa sifooyin cusub. Markaad dhimayso, isbeddelku wuxuu dhaqan galayaa wareegga biilka ee xiga."
+        },
+        "paymentMethods": {
+          "question": "Waa maxay hababka lacag bixinta ee aad aqbashaan?",
+          "answer": "Waxaan aqbalnaa lacag bixinta Chapa, taas oo taageerta Mobile Money, xawaaladaha bangiga, iyo lacag bixinta kaarka. Dhammaan lacag bixinnada waxaa loo socodsiiyaa si ammaan ah."
+        },
+        "freeTrial": {
+          "question": "Ma jiraa tijaabo bilaash ah?",
+          "answer": "Ganacsiyada cusub waxay ku bilaabi karaan qorshahayaga Starter si ay u sahamiyaan goobta. Nagala soo xiriir xulashooyinka tijaabada ee shirkadaha waaweyn."
+        },
+        "limits": {
+          "question": "Maxaa dhacaya marka aan gaaro xadkayga?",
+          "answer": "Waxaad heli doontaa ogeysiisyo markaad ku dhowdahay xadka qorshahaaga. Markaad gaarto xadka, waxaad kordhin kartaa qorshahaaga si aad u sii wadato isticmaalka sifadaas."
+        }
+      },
+      "cta": {
+        "title": "Ma u baahan tahay xal kuu gaar ah?",
+        "description": "Qorshahayaga Enterprise wuxuu bixiyaa sifooyin gaar ah, taageero gaar ah, iyo isku-xirnaan loo habeeyay ururada waaweyn."
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "target": "Ganacsiyada yaryar",
+          "description": "Ku habboon ganacsiyada yaryar ee hadda bilaabaya"
+        },
+        "growth": {
+          "name": "Growth",
+          "target": "Ganacsiyada koraya",
+          "description": "Ganacsiyada koraya ee diyaar u ah inay baaxadooda ballaariyaan"
+        },
+        "pro": {
+          "name": "Pro",
+          "target": "Suuqa dhexe",
+          "description": "Qorshe sifooyin dhammaystiran leh oo loogu talagalay ganacsiyada dhisan"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "target": "Ururada waaweyn",
+          "description": "Xalal gaar ah oo loogu talagalay ururada waaweyn"
+        }
+      },
+      "features": {
+        "products": "Alaabta",
+        "monthlyOrders": "Dalabaadka Bishii",
+        "originCalculations": "Xisaabinta Asalka",
+        "hsCodeLookups": "Raadinta Code-ka HS",
+        "teamMembers": "Xubnaha Kooxda",
+        "prioritySupport": "Taageero mudnaan leh",
+        "analytics": "Falanqaynta",
+        "apiAccess": "Gelitaanka API",
+        "unlimited": "Aan xadidnayn"
+      }
+    },
+    "subscription": {
+      "title": "Is-diiwaangelinta",
+      "description": "Maamul is-diiwaangelintaada iyo biilasha",
+      "businessRequired": "Ganacsi ayaa loo baahan yahay",
+      "businessRequiredDescription": "Waxaad u baahan tahay inaad diiwaangeliso ganacsi ka hor intaadan is-diiwaangelin qorshe.",
+      "registerBusiness": "Diiwaangeli Ganacsigaaga",
+      "noActiveSubscription": "Ma jiro Is-diiwaangelin shaqaynaya",
+      "noSubscriptionDescription": "Hadda waxaad ku jirtaa heerka bilaashka ah ee leh sifooyin xaddidan. Kordhi si aad u hesho alaab badan, dalabaad, iyo qalabka u hoggaansanaanta.",
+      "viewPlans": "Eeg Qorshayaasha",
+      "currentPlan": "Qorshaha Hadda",
+      "billedMonthly": "Biil bishii ah",
+      "billedAnnually": "Biil sannadeed ah",
+      "currentPeriod": "Muddada hadda",
+      "cancelsSoon": "Wuxuu dhacayaa dhowaan",
+      "active": "Shaqaynaya",
+      "trial": "Tijaabo",
+      "pastDue": "Waqtigii waa dhaafay",
+      "cancelled": "La joojiyay",
+      "cancellationNotice": "Is-diiwaangelintaadu waxay dhammaan doontaa {date}",
+      "trialNotice": "Tijaabadaadu waxay dhammaan doontaa {date}",
+      "changePlan": "Beddel Qorshaha",
+      "reactivate": "Dib u hawl geli is-diiwaangelinta",
+      "reactivating": "Dib u hawl gelin ayaa socota...",
+      "cancel": "Jooji is-diiwaangelinta",
+      "cancelling": "Joojin ayaa socota...",
+      "usageThisMonth": "Isticmaalka bishan",
+      "usageDescription": "La soco isticmaalkaaga marka loo eego xadka qorshahaaga",
+      "planFeatures": "Sifooyinka Qorshaha",
+      "planFeaturesDescription": "Sifooyinka ku jira qorshahaaga {plan}",
+      "paymentSuccessful": "Lacag bixintu waa lagu guulaystay!",
+      "subscriptionActivated": "Is-diiwaangelintaada waa la hawl geliyay.",
+      "subscriptionCancelled": "Is-diiwaangelinta waa la joojiyay",
+      "subscriptionCancelledDescription": "Is-diiwaangelintaadu waxay ahaan doontaa mid shaqaynaysa ilaa dhammaadka muddada biilka.",
+      "subscriptionReactivated": "Is-diiwaangelinta dib ayaa loo hawl geliyay",
+      "subscriptionReactivatedDescription": "Is-diiwaangelintaadu waxay sii socon doontaa dhammaadka muddada biilka.",
+      "failedToCancel": "Waa lagu guuldareystay in la joojiyo is-diiwaangelinta",
+      "failedToReactivate": "Waa lagu guuldareystay in dib loo hawl geliyo is-diiwaangelinta"
+    },
+    "validation": {
+      "required": "Meeshan waa qasab",
+      "invalidEmail": "Iimayl aan sax ahayn",
+      "minLength": "Waa inuu ugu yaraan ahaadaa {min} xaraf",
+      "maxLength": "Waa inuu ugu badnaan ahaadaa {max} xaraf",
+      "selectCountry": "Fadlan dooro waddan",
+      "selectCategory": "Fadlan dooro qaybta ganacsiga"
+    },
+    "toast": {
+      "productCreated": "Alaabta waa la abuuray! Hadda ku dar sawirro si aad u dhammaystirto liiskaaga.",
+      "productUpdated": "Alaabta si guul leh ayaa loo cusboonaysiiyay",
+      "productDeleted": "Alaabta si guul leh ayaa loo tirtiray",
+      "productListingComplete": "Liis gareynta alaabta waa dhammaatay!",
+      "addImageSuggestion": "Tixgeli inaad ku darto ugu yaraan hal sawir si alaabtaadu u muuqato.",
+      "businessRegistered": "Ganacsiga si guul leh ayaa loo diiwaangeliyay! Waxay sugeysaa xaqiijin.",
+      "orderStatusUpdated": "Xaaladda dalabka waa la cusboonaysiiyay",
+      "orderDeleted": "Dalabka si guul leh ayaa loo tirtiray",
+      "error": "Khalad ayaa dhacay",
+      "failedToCreate": "Waa lagu guuldareystay in la abuuro alaab",
+      "failedToUpdate": "Waa lagu guuldareystay in la cusboonaysiiyo alaab",
+      "failedToDelete": "Waa lagu guuldareystay in la tirtiro alaab",
+      "failedToDeleteOrder": "Waa lagu guuldareystay in la tirtiro dalab",
+      "failedToUpdateOrder": "Waa lagu guuldareystay in la cusboonaysiiyo dalab",
+      "failedToRegisterBusiness": "Waa lagu guuldareystay in la diiwaangeliyo ganacsiga"
+    },
+    "landing": {
+      "hero": {
+        "badge": "Suuqa B2B ee Afrika",
+        "title": "Dhisidda nidaamka hawlgalka dhijitaalka ah",
+        "titleHighlight": "ee ganacsiga guud ee Afrika",
+        "description": "Suuq B2B ah oo isku xira ganacsiyada qaaradda oo dhan. Baro alaabooyin, hel alaab-qeybiyaal, oo ku koray ganacsigaaga ganacsiyo Afrikaan ah oo la xaqiijiyay.",
+        "getStarted": "Bilow",
+        "browseMarketplace": "Baadh Suuqa",
+        "exploreProducts": "Sahami Alaabta"
+      },
+      "benefits": {
+        "item1": "Ku biirista waa bilaash",
+        "item2": "Ganacsiyo la xaqiijiyay",
+        "item3": "Lacag bixin ammaan ah",
+        "item4": "Taageerada luqado badan"
+      },
+      "categories": {
+        "title": "Sahami Qaybaha",
+        "description": "Ka baro alaabooyinka warshadaha kala duwan ee ganacsiyada Afrika",
+        "viewAll": "Eeg Dhammaan Qaybaha",
+        "rawMaterials": "Alaabta Ceyriin",
+        "agriculture": "Beeraha",
+        "miningMinerals": "Macdanta",
+        "electronics": "Elektaroonigga",
+        "textilesFashion": "Dharka & Moodada",
+        "foodBeverages": "Cuntada & Cabitaanka",
+        "construction": "Dhismaha",
+        "industrialEquipment": "Qalabka Warshadaha"
+      },
+      "howItWorks": {
+        "title": "Sida ay u shaqeyso",
+        "description": "Ku bilow afar tallaabo oo fudud",
+        "step1Title": "Abuur Koonto",
+        "step1Desc": "Isku diiwaangeli bilaash oo deji profile-kaaga daqiiqado gudahood.",
+        "step2Title": "Diiwaangeli Ganacsi",
+        "step2Desc": "Ku dar faahfaahinta ganacsigaaga si laguu xaqiijiyo loona dhisid kalsooni.",
+        "step3Title": "Liis gareey ama Baadh",
+        "step3Desc": "Liis gareey alaabtaada si aad u iibiso ama ka baadh suuqa si aad u iibsato.",
+        "step4Title": "Isku xir & Ganacsi",
+        "step4Desc": "La xiriir ganacsiyada oo bilow ganacsi ammaan ah."
+      },
+      "features": {
+        "title": "Waxa aan bixinno",
+        "description": "Wax kasta oo aad u baahan tahay si aad ugu ganacsato kalsooni",
+        "marketplace": "Suuqa",
+        "marketplaceDesc": "Ka baadh oo ku liis gareey alaabta suuqayada B2B. Hel waxaad u baahan tahay ama gaar macaamiil cusub.",
+        "directory": "Buugga Ganacsiyada",
+        "directoryDesc": "Baro ganacsiyada Afrika oo dhan. Hel lammaanayaal, alaab-qeybiyaal, iyo iibsadayaal ku jira warshaddaada.",
+        "verification": "Xaqiijinta Ganacsiga",
+        "verificationDesc": "Calaamadaha xaqiijinta ee ganacsiyada dhammaystira habkayaga xaqiijinta, iyadoo la dhisayo kalsooni macaamil kasta.",
+        "securePayments": "Lacag Bixin Ammaan ah",
+        "securePaymentsDesc": "Habayn lacag bixin oo aamin ah oo la isku halleyn karo oo loogu talagalay macaamilada ganacsigaaga.",
+        "multiLanguage": "Luqado badan",
+        "multiLanguageDesc": "U isticmaal goobta Ingiriis, Amxaari, ama Soomaali si aad u hesho khibrad aan kala go' lahayn.",
+        "community": "Bulshada Koraysa",
+        "communityDesc": "Ku biir shabakad sii kordheysa oo ganacsiyo Afrikaan ah oo raadinaya inay isku xirmaan oo ganacsadaan."
+      },
+      "cta": {
+        "title": "Ma diyaar u tahay inaad bilaawdo?",
+        "description": "Ku biir bulshadayada sii kordheysa ee ganacsiyada Afrika. Abuur koontadaada bilaashka ah maanta.",
+        "createAccount": "Abuur Koonto Bilaash ah",
+        "goToDashboard": "Aad Dashboard-ka",
+        "explore": "Sahami Alaabta"
+      },
+      "trust": {
+        "securePayments": "Lacag Bixin Ammaan ah",
+        "securePaymentsDesc": "Habaynta macaamilka oo ammaan ah",
+        "verifiedBusinesses": "Ganacsiyo La Xaqiijiyay",
+        "verifiedBusinessesDesc": "Kalsooni iyadoo loo marayo xaqiijinta",
+        "multiLanguage": "Luqado badan",
+        "multiLanguageDesc": "EN, AM, SW (iyo SO) waa la taageeraa"
+      },
+      "footer": {
+        "tagline": "Suuq B2B ah oo isku xira ganacsiyada Afrika oo dhan.",
+        "marketplace": "Suuqa",
+        "browseProducts": "Baadh Alaabta",
+        "businessDirectory": "Buugga Ganacsiyada",
+        "categories": "Qaybaha",
+        "forBusinesses": "Ganacsiyada",
+        "registerBusiness": "Diiwaangeli Ganacsi",
+        "listProducts": "Liis gareey Alaabta",
+        "dashboard": "Dashboard-ka",
+        "legal": "Sharci",
+        "allRightsReserved": "Dhammaan xuquuqaha waa la dhowray.",
+        "privacyPolicy": "Siyaasadda Khaaska ah",
+        "termsOfService": "Shuruudaha Adeegga",
+        "madeForAfrica": "Loo sameeyay Afrika"
+      },
+      "nav": {
+        "marketplace": "Suuqa",
+        "pricing": "Qiimaha",
+        "categories": "Qaybaha",
+        "howItWorks": "Sida ay u shaqeyso",
+        "features": "Sifooyinka",
+        "signIn": "Soo gal",
+        "getStarted": "Bilow",
+        "dashboard": "Dashboard-ka"
+      }
+    },
+    "verificationBanner": {
+      "message": "Fadlan xaqiiji iimaylkaaga si aad u hesho dhammaan sifooyinka.",
+      "resend": "Mar kale dir",
+      "verify": "Xaqiiji",
+      "sent": "Iimaylkii waa la diray!",
+      "dismiss": "Ka saar"
+    },
+    "verifyEmail": {
+      "verifying": {
+        "title": "Xaqiijinta Iimaylkaaga",
+        "description": "Fadlan sug inta aan xaqiijineyno iimaylkaaga..."
+      },
+      "success": {
+        "title": "Iimaylka Waa La Xaqiijiyay!",
+        "description": "Iimaylkaaga si guul leh ayaa loo xaqiijiyay. Hadda waad heli kartaa dhammaan sifooyinka.",
+        "goToDashboard": "Aad Dashboard-ka",
+        "signIn": "Soo gal"
+      },
+      "error": {
+        "title": "Xaqiijinta Waa Lagu Guuldareystay",
+        "description": "Ma aanan xaqiijin karin iimaylkaaga. Xiriirka (link) waxaa laga yaabaa inuu dhacay ama mar hore la isticmaalay.",
+        "requestNewLink": "Codso Xiriir Cusub"
+      },
+      "pending": {
+        "title": "Xaqiiji Iimaylkaaga",
+        "description": "Fadlan ka eeg sanduuqaaga farriimaha xiriirka xaqiijinta.",
+        "descriptionWithEmail": "Waxaan u dirnay xiriirka xaqiijinta {email}. Fadlan eeg sanduuqaaga farriimaha."
+      },
+      "resend": {
+        "button": "Mar kale dir Iimaylka Xaqiijinta",
+        "sending": "Waa la dirayaa...",
+        "sent": "Iimaylkii xaqiijinta waa la diray! Fadlan eeg sanduuqaaga farriimaha.",
+        "cooldown": "Mar kale dir {seconds}s gudahood"
+      },
+      "skipForNow": "Hadda iska dhaaf",
+      "signInToResend": "Soo gal si aad mar kale u dirto iimaylka xaqiijinta"
+    },
+    "cookieConsent": {
+      "title": "Waxaan isticmaalnaa cookies",
+      "description": "Waxaan u isticmaalnaa cookies si aan u horumarino khibradaada baadhista, u falanqayno socodka goobta, iyo u gaar yeelno nuxurka. Markaad gujiso \"Aqbal Dhammaan\", waxaad ogolaatay isticmaalkayaga cookies-ka. Akhri our",
+      "privacyPolicy": "Siyaasadda Khaaska ah",
+      "acceptAll": "Aqbal Dhammaan",
+      "rejectNonEssential": "Diid kuwa aan muhiimka ahayn",
+      "customize": "Habayso",
+      "close": "Xir",
+      "settings": {
+        "title": "Dookhyada Cookie-ka",
+        "description": "Maamul dookhyadaada cookie-ka. Cookies-ka muhiimka ah had iyo jeer waa shaqaynayaan maadaama ay lagama maarmaan u yihiin in websaydhku si sax ah u shaqeeyo.",
+        "save": "Keydi Dookhyada",
+        "essential": {
+          "title": "Cookies-ka Muhiimka ah",
+          "description": "Looga baahan yahay shaqada aasaasiga ah ee websaydhka. Lama joojin karo."
+        },
+        "functional": {
+          "title": "Cookies-ka Shaqada",
+          "description": "Xusuusta dookhyadaada iyo habayntaada si aad u hesho khibrad ka fiican."
+        },
+        "analytics": {
+          "title": "Cookies-ka Falanqaynta",
+          "description": "Nagala caawi inaan fahanno sida booqdayaashu u isticmaalaan websaydhkayaga."
+        },
+        "marketing": {
+          "title": "Cookies-ka Suuqgeynta",
+          "description": "Loo isticmaalo in lagu soo bandhigo xayeysiisyo khuseeya laguna dabagalo ololayaasha."
+        }
+      }
+    },
+    "adminBanks": {
+    "title": "Maamul Bangiyada",
+    "description": "Samee bangiyo shuraako ah, u qoondee isticmaalayaasha bangiga, oo la soco awoodda tixraacyada.",
+    "stats": {
+      "partnerBanks": "Bangiyada Shuraakada",
+      "bankUsers": "Isticmaalayaasha Bangiga",
+      "trackedReferrals": "Tixraacyada La Raacay"
+    },
+    "createBank": {
+      "title": "Samee Bangi",
+      "description": "Diyaari profile bangi oo maamuli kara tixraacyada iyo gelitaanka BI.",
+      "namePlaceholder": "Magaca bangiga",
+      "descriptionPlaceholder": "Description (optional)",
+      "action": "Samee Bangi",
+      "creating": "La sameynayaa...",
+      "success": "Bangiga si guul leh ayaa loo sameeyay",
+      "error": "Samaynta bangiga way fashilantay"
+    },
+    "assignUser": {
+      "title": "U Qoondee Isticmaale Bangi",
+      "description": "Kor u qaad isticmaale jira una beddel akoon bangi, kadibna ku xidh bangi.",
+      "searchPlaceholder": "Ku raadi isticmaalayaasha magac ama iimayl",
+      "selectUser": "Dooro isticmaale",
+      "selectBank": "Dooro bangi",
+      "action": "U Qoondee Isticmaalaha",
+      "assigning": "La qoondeynayaa...",
+      "success": "Isticmaalaha bangiga ayaa loo qoondeeyay",
+      "error": "Qoondeynta isticmaalaha way fashilantay"
+    },
+    "directory": {
+      "title": "Liiska Bangiyada",
+      "description": "Eeg bangiyada firfircoon iyo inta SME ee ku jirta portfolio kasta.",
+      "empty": "Weli bangi lama samayn.",
+      "columns": {
+        "bank": "Bangi",
+        "status": "Xaalad",
+        "referralPrefix": "Horgalaha Tixraaca",
+        "users": "Isticmaalayaal",
+        "referrals": "Tixraacyo",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "Lama heli karo"
+    },
+    "stages": {
+      "generated": "La tixraacay",
+      "signed_up": "Wuu isdiiwaangeliyey",
+      "business_created": "Ganacsi waa la sameeyay",
+      "verified": "La xaqiijiyey",
+      "active": "Firfircoon"
+    },
+    "overview": {
+      "fallbackTitle": "Dashboard-ka bangiga",
+      "description": "La soco beddelka tixraacyada, onboarding-ka SME, iyo waxqabadka portfolio-ga.",
+      "referralBase": "Saldhigga tixraaca: {code}",
+      "stats": {
+        "totalReferrals": "Wadarta Tixraacyada",
+        "portfolioSmes": "SME-yada Portfolio-ga",
+        "portfolioSmesMeta": "{verified} waa la xaqiijiyey, {active} waa firfircoon yihiin",
+        "portfolioRevenue": "Dakhliga Portfolio-ga",
+        "portfolioRevenueMeta": "{orders} dalab oo ka yimid SME-yada la tixraacay",
+        "successfulPayouts": "Bixinta Guuleysatay",
+        "successfulPayoutsMeta": "{products} badeecooyin ay soo geliyeen SME-yadaadu"
+      },
+      "funnel": {
+        "title": "Funnel-ka Tixraaca",
+        "description": "Safar dhamaystiran laga bilaabo samaynta tixraaca ilaa ka qaybgal firfircoon oo SME ah."
+      },
+      "momentum": {
+        "title": "Dhaqdhaqaaqa Bilaha",
+        "description": "Dhaqdhaqaaqii ugu dambeeyay ee tixraacyada, onboarding-ka, iyo dakhliga ee portfolio-gaaga.",
+        "referred": "{count} la tixraacay",
+        "onboarded": "{count} la onboard gareeyay",
+        "verified": "{count} la xaqiijiyey"
+      },
+      "recentPortfolio": {
+        "title": "SME-yada Portfolio-ga ee Ugu Dambeeyay",
+        "description": "Hay'adaha dhawaan la onboard gareeyay ama dhawaan lagu xidhay bangigaaga.",
+        "cta": "Eeg portfolio-ga",
+        "empty": "Weli ma jiro SME la tixraacay oo sameeyay ganacsi.",
+        "products": "{count} badeecooyin",
+        "orders": "{count} dalabaad",
+        "revenue": "dakhli {amount}"
+      },
+      "recentReferrals": {
+        "title": "Tixraacyadii Ugu Dambeeyay",
+        "description": "Diiwaannadii ugu dambeeyay ee tixraacyada iyo halka uu hadda marayo lead kasta.",
+        "cta": "Maamul tixraacyada",
+        "empty": "Weli ma jiraan diiwaanno tixraac ah. Ku billow sameynta link tixraac bangi."
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "SME-yada Portfolio-ga",
+      "description": "Dib u eeg SME kasta oo bangigaagu soo tixraacay iyo halka uu marayo.",
+      "filtersDescription": "Ku shaandhee heerka onboarding-ka, juqraafi, iyo qaybta si aad waxqabadka u eegto.",
+      "searchPlaceholder": "Raadi ganacsi, milkiile, ama iimayl",
+      "filterByStage": "Ku shaandhee heer",
+      "allStages": "Heerarka oo dhan",
+      "country": "Dal",
+      "allCountries": "Dhammaan dalalka",
+      "category": "Qayb",
+      "allCategories": "Qaybaha oo dhan",
+      "empty": "Ma jiro SME ku habboon shaandhooyinka hadda jira.",
+      "unknownOwner": "Milkiile aan la aqoon",
+      "noEmail": "Iimayl ma jiro",
+      "view": "Eeg",
+      "columns": {
+        "business": "Ganacsi",
+        "owner": "Milkiile",
+        "stage": "Heer",
+        "products": "Badeecooyin",
+        "orders": "Dalabaad",
+        "revenue": "Dakhli",
+        "drillDown": "Faahfaahin"
+      }
+    },
+    "detail": {
+      "description": "Aragti faahfaahsan oo SME ah oo daboolaysa onboarding, lahaansho, iyo dhaqdhaqaaq ganacsi.",
+      "stats": {
+        "revenue": "Dakhli",
+        "orders": "Dalabaad",
+        "products": "Badeecooyin",
+        "netPayouts": "Bixinta Saafiga ah"
+      },
+      "snapshot": {
+        "title": "Muuqaalka Ganacsiga",
+        "description": "Faahfaahinta aasaasiga ah ee hay'adda iyo booska hadda ee onboarding-ka.",
+        "country": "Dal",
+        "category": "Qayb",
+        "verificationStatus": "Xaaladda xaqiijinta",
+        "joinedPlatform": "Ku biiray madasha",
+        "businessDescription": "Sharaxaad",
+        "noDescription": "Sharaxaad lama bixin"
+      },
+      "owner": {
+        "title": "Xiriirka Milkiilaha",
+        "description": "Milkiilaha koowaad ee madasha ee masuulka ka ah akoonka SME-ga.",
+        "unknownOwner": "Milkiile aan la aqoon",
+        "noEmail": "Iimayl lama heli karo",
+        "referralTracking": "La socodka tixraaca",
+        "code": "Koodh",
+        "currentReferralRecord": "Diiwaanka tixraaca ee hadda"
+      },
+      "monthly": {
+        "title": "Waxqabadka Bilaha",
+        "description": "Isbeddelka dakhliga iyo dalabaadka ee dhowaan ee akoonkan SME-ga.",
+        "orders": "{count} dalabaad"
+      }
+    },
+    "referrals": {
+      "title": "Tixraacyo",
+      "description": "U samee xiriiriyeyaal isdiiwaangelin oo la raaci karo SME-yada oo la soco heer kasta oo beddel ah.",
+      "unnamedReferral": "Tixraac aan magac lahayn",
+      "unnamedLead": "Lead aan magac lahayn",
+      "noExtraMetadata": "Ma jiro metadata dheeraad ah",
+      "create": {
+        "title": "Samee Link Tixraac",
+        "description": "U samee koodh isdiiwaangelin gaar ah SME, hay'ad, ama lead.",
+        "organizationPlaceholder": "Magaca hay'adda",
+        "emailPlaceholder": "Iimaylka martiqaadka (ikhtiyaari)",
+        "notesPlaceholder": "Qoraallo (ikhtiyaari)",
+        "action": "Samee tixraac",
+        "creating": "La sameynayaa...",
+        "success": "Tixraaca {code} waa la sameeyay",
+        "error": "Samaynta tixraaca way fashilantay"
+      },
+      "playbook": {
+        "title": "Hagaha Tixraacyada",
+        "description": "Koodh kasta oo la sameeyo wuxuu abuuraa safar onboarding la qiyaasi karo oo portfolio-ga bangigaaga ah.",
+        "howItWorks": "Sida ay u shaqeyso",
+        "step1": "1. Samee diiwaan tixraac oo loogu talagalay lead SME ah.",
+        "step2": "2. La wadaag linkiga isdiiwaangelinta ee la sameeyay hay'addaas.",
+        "step3": "3. Marka ay isdiiwaangeliyaan oo la onboard gareeyo, boggan si toos ah ayuu isu cusboonaysiinayaa.",
+        "defaultSignupBase": "Saldhigga isdiiwaangelinta ee caadiga ah",
+        "baseUrlFallback": "Linkigaaga saldhigga isdiiwaangelinta wuxuu halkan uga muuqan doonaa browser-ka."
+      },
+      "register": {
+        "title": "Diiwaanka Tixraacyada",
+        "description": "La soco koodh kasta, cidda lagu casuumay, iyo inuu isu beddelay SME firfircoon iyo in kale.",
+        "empty": "Weli tixraac lama samayn.",
+        "copySuccess": "Linkiga tixraaca waa la koobiyeeyay",
+        "copyError": "Linkiga tixraaca lama koobiyeeyn karo",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "Koodhka Tixraaca",
+          "status": "Xaalad",
+          "linkedSme": "SME-ga Xiran",
+          "created": "La sameeyay",
+          "copyLink": "Koobiyee linkiga"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Falanqayn",
+      "description": "U kala qaybi portfolio-gaaga dal, qayb, heer onboarding, iyo wax-soo-saarka bil kasta.",
+      "byCategory": {
+        "title": "Qayb ahaan",
+        "description": "Waa kuwee waaxyaha ugu badan ee ku jira SME-yada laguu soo tixraacay?"
+      },
+      "byCountry": {
+        "title": "Dal ahaan",
+        "description": "Faafitaanka juqraafiyeed ee hay'adaha bangigu soo tixraacay."
+      },
+      "byStage": {
+        "title": "Heer ahaan",
+        "description": "Intee le'eg ayaa portfolio-gu uga gudbay funnel-ka."
+      },
+      "monthly": {
+        "title": "Isbeddelka Bilaha",
+        "description": "La soco samaysanka portfolio-ga, firfircoonidiisa, iyo qiimaha ganacsi muddo ahaan.",
+        "newSmes": "{count} SME cusub",
+        "active": "{count} firfircoon"
+      }
+    },
+    "legal": {
+      "backToHome": "Ku laabo Hoyga",
+      "tableOfContents": "Liiska Dulucda",
+      "viewPrivacyPolicy": "Eeg Siyaasadda Khaaska ah",
+      "viewTermsOfService": "Eeg Shuruudaha Adeegga",
+      "terms": {
+        "title": "Shuruudaha Adeegga",
+        "lastUpdated": "Ugu dambayn la cusboonaysiiyay",
+        "lastUpdatedDate": "Janaayo 2026",
+        "introduction": "Ku soo dhawaada AfriConnect. Shuruudaha Adeegga (\"Shuruudaha\") waxay xukumaan gelitaankaaga iyo isticmaalkaaga goobta AfriConnect, oo ay ku jiraan websaydhkayaga, abka moobilka, iyo adeegyada (wadajir, \"Goobta\"). Adigoo gelaya ama isticmaalaya Goobtayada, waxaad ogolaatay inay ku qabtaan Shuruudahan iyo Siyaasaddayada Khaaska ah. Fadlan si taxadar leh u akhri ka hor intaadan isticmaalin adeegyadayada.",
+        "acceptance": {
+          "title": "Aqbalidda Shuruudaha",
+          "content": "Adigoo abuuraya koonto, gelaya, ama isticmaalaya Goobta AfriConnect, waxaad qiranaysaa inaad akhriday, fahamto, oo aad ogolaatay inaad u hoggaansanto Shuruudaha Adeegga. Haddii aadan ku raacsanayn Shuruudahan, waxaa laga yaabaa inaadan gelin ama isticmaalin Goobtayada.\n\nShuruudahani waxay ka dhigan yihiin heshiis sharci ah oo dhexmaraya adiga iyo AfriConnect Inc. Waxaan cusboonaysiin karnaa Shuruudahan wakhti ka wakhti, isticmaalkaaga sii socda ee Goobta ka dib isbeddel kasta wuxuu ka dhigan yahay aqbalaadda Shuruudaha cusub.\n\nHaddii aad Goobta u isticmaalayso magaca ganacsi ama hay'ad sharci ah, waxaad matalaysaa inaad leedahay awood aad ku xirto hay'addaas Shuruudahan."
+        },
+        "eligibility": {
+          "title": "Shuruudaha u-qalmitaanka",
+          "content": "Si aad u isticmaasho AfriConnect, waa inaad:\n\n• Ahaataa ugu yaraan 18 sano jir ama da'da qaangaarka ee deegaankaaga\n• Ahaataa hay'ad ganacsi oo diiwaangashan ama wakiil u oggolaaday\n• Leedahay awood sharci oo aad ku geli karto qandaraas\n• Aan lagaa mamnuucin isticmaalka Goobta marka loo eego sharciyada lagu dabaqi karo\n• Bixisaa macluumaad diiwaangelin oo sax ah oo dhammaystiran\n\nAdigoo isu diiwaangelinaya koonto, waxaad matalaysaa oo aad dammaanad qaadaysaa inaad buuxisay dhammaan shuruudaha u-qalmitaanka. Waxaan xaq u leenahay inaan diidno adeegga, xirno koontada, ama joojino dalabaadka haddii aan aaminsanahay inaadan buuxin shuruudahan."
+        },
+        "accounts": {
+          "title": "Diiwaangelinta Koontada iyo Amniga",
+          "content": "Markaad koonto ka abuurto AfriConnect, waxaad ogolaatay inaad:\n\n• Bixiso macluumaad sax ah, hadda ah, oo dhammaystiran inta lagu jiro diiwaangelinta\n• Ilaaliso oo aad si degdeg ah u cusboonaysiiso macluumaadka koontadaada\n• Ilaaliso sirta macluumaadkaaga gelitaanka\n• Aanad cid kale la wadaagin koontadaada ama u oggolaan gelitaan aan la oggolayn\n• Nagu soo wargeliso isla markaaba isticmaal kasta oo aan la oggolayn oo koontadaada ah\n• Mas'uul ka noqoto dhammaan dhaqdhaqaaqyada ka dhaca koontadaada\n\nWaxaan xaqiijin karnaa aqoonsigaaga ganacsi waxaanuna u baahan karnaa dukumentiyo dheeraad ah. Macluumaadka beenta ah ama marin-habaabinta ah waxay keeni kartaa in koontada la hakinayo ama la tirtirayo."
+        },
+        "marketplace": {
+          "title": "Xeerarka Suuqa iyo Hab-dhaqanka",
+          "content": "AfriConnect waxay u shaqaysaa sidii suuq B2B ah oo isku xira iibsadayaasha iyo iibiyayaasha Afrika oo dhan. Isticmaalayaashu waxay ogolaadeen inay:\n\n• Sameeyaan dhammaan macaamilada si niyad sami ah iyo ujeedo daacad ah\n• Bixiyaan sharaxaado sax ah oo alaabta ah, qiimaha, iyo macluumaadka helitaanka\n• Sharfaan dalabaadka laga go'ay iyo waqtiyada bixinta\n• Ilaaliyaan xiriir xirfadeed oo ay la leeyihiin isticmaalayaasha kale\n• U hoggaansamaan dhammaan sharciyada ganacsiga iyo xeerarka lagu dabaqi karo\n\nIibiyayaashu waa inay hubiyaan in alaabtu buuxiso qeexitaannada la sharxay iyo heerarka tayada. Iibsadayaashu waa inay bixiyaan lacagta sidii lagu heshiiyay."
+        },
+        "payments": {
+          "title": "Lacag Bixinta iyo Macaamilada",
+          "content": "Dhammaan macaamilada maaliyadeed ee AfriConnect waxaa lagu socodsiiyaa nidaamkayaga lacag bixinta ee sugan oo ay fududaynayso Chapa iyo bixiyeyaasha kale ee lacag bixinta ee shatiga haysta.\n\n• Lacag bixinta waa in lagu sameeyaa hababka la oggolaaday\n• Khidmadaha macaamilka iyo canshuuraha lagu dabaqi karo si cad ayaa loo soo bandhigi doonaa\n• Sarifka lacagaha wuxuu ku salaysan yahay heerarka sarifka ee jira\n• Lacag-celinta waxay ku xiran tahay siyaasadda lacag-celinta iyo shuruudaha iibiyaha\n\nMa kaydinno faahfaahinta buuxda ee kaarka lacag bixinta. Dhammaan habaynta lacag bixinta waxay u hoggaansamaan heerarka PCI-DSS."
+        },
+        "prohibited": {
+          "title": "Dhaqdhaqaaqyada Mamnuuca ah",
+          "content": "Isticmaalayaasha waxaa si adag looga mamnuucay:\n\n• Iibinta alaabta been abuurka ah, la xaday, ama si sharci darro ah lagu helay\n• Ka qaybgalka khiyaano, dhaqidda lacagta, ama macaamilada sharci darrada ah\n• Ka gudubka khidmadaha goobta ama tallaabooyinka amniga\n• Caga-jugleynta, hanjabaadda, ama takoorka isticmaalayaasha kale\n• Soo gelinta nuxur been ah, marin-habaabin ah, ama meel-ka-dhac ah\n• Isku dayga jabsashada, carqaladaynta, ama waxyeellaynta Goobta\n• Ganacsiga alaabta mamnuuca ah oo ay ku jiraan hubka, daroogada, iyo alaabta cunaqabataysan\n\nKu xad-gudubka waxay keeni kartaa in koontada isla markaaba la tirtiro, luntid lacagaha, iyo ficil sharci."
+        },
+        "ip": {
+          "title": "Xuquuqda Hantida Intilektuaalka",
+          "content": "Dhammaan nuxurka, sifooyinka, iyo shaqada Goobta AfriConnect, oo ay ku jiraan laakiin aan ku xaddidnayn qoraalka, garaafyada, calaamadaha, sawirrada, iyo software-ka, waa hantida gaarka ah ee AfriConnect Inc. ama kuwa shatiga siiyay waxaana ilaalinaya sharciyada caalamiga ah ee xuquuqda daabacaadda iyo calaamadaha ganacsiga.\n\nIsticmaalayaashu waxay hayaan lahaanshaha nuxurka ay soo geliyaan laakiin waxay siinayaan AfriConnect oggolaansho caalami ah, oo aan gaar ahayn si ay u isticmaasho, u soo bandhigto, oo ay u qaybiso nuxurkaas la xiriira Goobta."
+        },
+        "liability": {
+          "title": "Xaddidnaanta Mas'uuliyadda",
+          "content": "INTA UGU BADAN EE UU OGGOL YAHAY SHARCIGA LAGU DABOQI KARO:\n\nAfriConnect waxay bixisaa Goobta \"SIDA AY TAHAY\" iyo \"SIDA LOO HELI KARO\" iyada oo aan lahayn dammaanad nooc kasta ha ahaatee.\n\nMa dammaanad qaadayno in:\n• Goobtu ay ahaan doonto mid aan kala go' lahayn, sugan, ama khalad la'aan ah\n• Natiijooyinka laga helay isticmaalka Goobta ay noqon doonaan kuwo sax ah\n\nAfriConnect mas'uul kama noqon doonto waxyeello kasta oo dadban, shil ah, ama ciqaab ah oo ka dhalata isticmaalkaaga Goobta."
+        },
+        "disputes": {
+          "title": "Xallinta Khilaafaadka",
+          "content": "Waxaan ku dhiirigelinaynaa isticmaalayaasha inay khilaafaadka si toos ah ugu xalliyaan xaruntayada xallinta khilaafaadka ee Goobta. Habkayagu wuxuu ka kooban yahay:\n\n1. Wada-xaajood Toos ah: Dhinacyadu waa inay marka hore isku dayaan inay arrimaha ku xalliyaan xiriir toos ah\n2. Dhexdhexaadin: AfriConnect waxay bixin kartaa adeegyo dhexdhexaadin ah\n3. Garqaad: Garqaad khasab ah ayaa laga yaabaa in loo baahdo khilaafaadka qaarkood\n\nKhilaafaadka aan lagu xallin karin hababkan:\n\n• Shuruudahan waxaa xukumaya sharciyada Jamhuuriyadda Kenya\n• Dacwad kasta oo sharci ah waxaa lagu qaban doonaa maxkamadaha Nairobi, Kenya"
+        },
+        "changes": {
+          "title": "Wax ka beddelka Shuruudaha",
+          "content": "AfriConnect waxay xaq u leedahay inay wax ka beddesho Shuruudahan wakhti kasta. Markaan samayno isbeddello muhiim ah:\n\n• Waxaan soo gelin doonaa Shuruudaha la cusboonaysiiyay ee Goobta\n• Waxaan cusboonaysiin doonaa taariikhda \"Ugu dambayn la cusboonaysiiyay\"\n• Isticmaalka sii socda ee ka dib isbeddellada wuxuu ka dhigan yahay aqbalaadda"
+        },
+        "contact": {
+          "title": "Nagala soo xiriir",
+          "content": "Haddii aad qabto wax su'aalo ah oo ku saabsan Shuruudaha Adeegga ama aad u baahan tahay gargaar, fadlan la xiriir kooxdayada sharciga."
+        }
+      },
+      "privacy": {
+        "title": "Siyaasadda Khaaska ah",
+        "lastUpdated": "Ugu dambayn la cusboonaysiiyay",
+        "lastUpdatedDate": "Janaayo 2026",
+        "introduction": "AfriConnect, waxaa naga go'an inaan ilaalino sirtaada iyo inaan hubino amniga macluumaadkaaga gaarka ah. Siyaasaddan Khaaska ah waxay sharraxaysaa sida aan u aruurino, u isticmaalno, u shaacinno, oo aan u ilaalino macluumaadkaaga markaad isticmaalayso Goobtayada. Waxaan u socodsiinaa xogta gaarka ah si waafaqsan sharciyada ilaalinta xogta ee lagu dabaqi karo.",
+        "compliance": {
+          "title": "U Hoggaansanaanta Ilaalinta Xogta",
+          "content": "AfriConnect waxaa ka go'an inay u hoggaansanto sharciyada caalamiga ah iyo kuwa goboleed ee ilaalinta xogta, oo ay ku jiraan GDPR (EU), Kenya Data Protection Act 2019, Nigeria Data Protection Regulation 2019, South Africa POPIA, Ghana Data Protection Act, iyo qaab-dhismeedyada kale ee khuseeya ee Midowga Afrika iyo sharciyada qaran. Waxaan hirgelinnaa tallaabooyin farsamo iyo kuwo maamul oo ku habboon si loo xaqiijiyo ilaalinta xogta marka la naqshadeynayo iyo sida caadiga ah."
+        },
+        "collection": {
+          "title": "Macluumaadka Aan Aruurino",
+          "content": "Waxaan aruurinaa macluumaadka aad si toos ah noo siiso, oo ay ku jiraan:\n\n• Macluumaadka Koontada: Magaca, cinwaanka iimaylka, lambarka taleefanka, erayga sirta ah, magaca ganacsiga, iyo faahfaahinta diiwaangelinta\n• Macluumaadka Ganacsiga: Dukumentiyada diiwaangelinta shirkadda, lambarada canshuurta, cinwaanka ganacsiga, iyo dukumentiyada xaqiijinta\n• Xogta Macaamilka: Taariikhda iibka, macluumaadka lacag bixinta, cinwaanada rarista, iyo faahfaahinta dalabka\n• Isgaarsiinta: Farriimaha lala yeesho isticmaaleyaasha kale, codsiyada taageerada, iyo jawaab-celinta\n• Macluumaadka Profile-ka: Sharaxaadaha ganacsiga, liisaska alaabta, iyo sawirrada profile-ka\n\nWaxaan sidoo kale si toos ah u aruurinaa macluumaad gaar ah markaad isticmaasho Goobtayada:\n\n• Macluumaadka Qalabka: Cinwaanka IP-ga, nooca biraawsarka, nidaamka hawlgalka, iyo aqoonsiyada qalabka\n• Xogta Isticmaalka: Bogagga la booqday, sifooyinka la isticmaalay, ereyada raadinta, iyo hababka isdhexgalka\n• Xogta Goobta: Goob juqraafiyeed guud oo ku salaysan IP-ga\n• Kukiyada iyo Teknoolojiyada Raadraaca: Macluumaad laga aruuriyo kukiyada, pixels, iyo teknoolojiyado la mid ah"
+        },
+        "usage": {
+          "title": "Sida Aan U Isticmaalno Macluumaadkaaga",
+          "content": "Waxaan u isticmaalnaa macluumaadka la aruuriyay ujeedooyinkan soo socda:\n\n• Bixinta Adeegga: Si aan u bixinno, u ilaalinno, una hagaajino Goobtayada iyo adeegyadayada\n• Maareynta Koontada: Si aan u abuurno oo u maamulno koontadaada, u xaqiijino aqoonsigaaga, una socodsiino macaamilada\n• Isgaarsiinta: Si aan kuu soo dirno cusboonaysiinta adeegga, digniinaha amniga, iyo farriimaha taageerada\n• Shakhsiyeynta: Si aan u habeeyno khibradaada una bixino talooyin kugu habboon\n• Badbaadada iyo Amniga: Si aan u ogaanno, uga hortagno, una xallino khiyaanada, xadgudubka, iyo arrimaha amniga\n• U Hoggaansanaanta Sharciga: Si aan ugu hoggaansanno waajibaadka sharciyeed ugana jawaabno codsiyada sharciyeed\n• Falanqeyn: Si aan u fahanno sida isticmaaleyaashu ula falgalaan Goobtayada una hagaajino adeegyadayada\n• Suuq-geyn: Si aan kuu soo dirno isgaarsiin xayeysiis ah (marka oggolaansho loo baahdo)\n\nWaxaan u socodsiinaa xogtaada annagoo ku saleyneyna: fulinta heshiiska, dano sharci ah, waajibaad sharciyeed, iyo oggolaanshahaaga halka ay khuseyso."
+        },
+        "sharing": {
+          "title": "Wadaagista iyo Shaacinta Macluumaadka",
+          "content": "Waxaan wadaagi karnaa macluumaadkaaga xaaladaha soo socda:\n\n• Isticmaaleyaasha Kale: Macluumaadka profile-ka ganacsiga iyo faahfaahinta macaamilka ee lagama maarmaanka u ah fududeynta ganacsiga\n• Bixiyeyaasha Adeegga: Iibiyeyaasha dhinac saddexaad ee naga caawiya socodsiinta Goobtayada (bixiyeyaasha lacag bixinta, kaydinta daruuriga ah, falanqaynta)\n• Wareejinta Ganacsiga: Marka ay jiraan isku biirid, la wareegid, ama iibinta hantida shirkadda\n• Shuruudaha Sharciyeed: Marka sharcigu, amar maxkamadeed, ama hay'ad dowladeed uu dalbado\n• Ilaalinta Xuquuqda: Si loo ilaaliyo xuquuqda, hantida, iyo badbaadada AfriConnect, isticmaaleyaashayada, iyo dadweynaha\n\nWaxaan ka dalbannaa dhammaan dhinacyada saddexaad inay ixtiraamaan amniga xogtaada oo ay u socodsiiyaan si waafaqsan sharciyada khuseeya. Ma iibinno macluumaadkaaga gaarka ah dhinacyo saddexaad.\n\nWareejinta xogta caalamiga ah waxaa lagu ilaaliyaa dammaanado ku habboon oo ay ku jiraan Standard Contractual Clauses oo ay ansixiyeen hay'adaha khuseeya ee ilaalinta xogta."
+        },
+        "security": {
+          "title": "Amniga Xogta",
+          "content": "Waxaan hirgelinnaa tallaabooyin amni oo adag si aan u ilaalino macluumaadkaaga gaarka ah:\n\n• Sirgelin: Dhammaan xogta la gudbinayo waxaa lagu sireeyaa hab-raacyada TLS/SSL\n• Xakameynta Gelitaanka: Xakameyn adag oo gelitaan iyo habab xaqiijin\n• Amniga Kaabayaasha: Xarumo xogeed ammaan ah oo leh amni jireed iyo mid shabakad\n• Kormeer Joogto ah: Qiimeyn amni oo joogto ah iyo tijaabooyin nuglaansho\n• Tababarka Shaqaalaha: Tababar joogto ah oo ku saabsan ilaalinta xogta dhammaan shaqaalaha\n• Ka Jawaabista Dhacdooyinka: Nidaamyo la dejiyay oo lagu ogaado laguna xalliyo jebinta xogta\n\nIn kasta oo aan ku dadaalno ilaalinta macluumaadkaaga, ma jiro hab gudbin oo internet-ka ah oo boqolkiiba 100 ammaan ah. Ma dammaanad qaadi karno amni buuxa, laakiin waxaa naga go'an inaan ku ogeysiino adiga iyo hay'adaha khuseeya jebinta xog kasta sida uu sharcigu dhigayo."
+        },
+        "rights": {
+          "title": "Xuquuqdaada iyo Doorashooyinkaaga",
+          "content": "Iyadoo ku xiran meesha aad joogto, waxaad leedahay xuquuq gaar ah oo ku saabsan xogtaada gaarka ah:\n\n• Helitaan: Codso nuqul ka mid ah xogta gaarka ah ee aan kaa hayno\n• Sixid: Codso in la saxo xog khaldan ama aan dhammaystirnayn\n• Tirtirid: Codso tirtiridda xogtaada gaarka ah (\"xuquuqda in la illoobo\")\n• Xaddidid: Codso in la xaddido socodsiinta xogtaada\n• Qaadsiin: Hel xogtaada qaab nidaamsan oo mashiinku akhrin karo\n• Diidmo: Ka horyimid socodsiinta ku salaysan dano sharci ah ama suuq-geyn\n• Ka noqoshada Oggolaanshaha: Ka noqo oggolaansho hore loo bixiyay wakhti kasta\n• Go'aanno Toos ah: Codso dib-u-eegis bini'aadan oo ku saabsan go'aanno toos ah oo ku saameeya\n\nSi aad u adeegsato xuquuqdan, la xiriir Sarkaalka Ilaalinta Xogtayada. Waxaan ka jawaabi doonaa 30 maalmood gudahood (ama sida uu sharciga khuseeya qabo). Waxaan xaqiijin karnaa aqoonsigaaga ka hor inta aanan socodsiin codsiyada.\n\nWaxaad sidoo kale xaq u leedahay inaad cabasho u gudbiso hay'adda ilaalinta xogta ee deegaankaaga."
+        },
+        "cookies": {
+          "title": "Kukiyada iyo Teknoolojiyada Raadraaca",
+          "content": "Waxaan isticmaalnaa kukiyada iyo teknoolojiyado la mid ah si aan u wanaajino khibradaada:\n\n• Kukiyada Aasaasiga ah: Looga baahan yahay shaqada Goobta (xaqiijin, amni)\n• Kukiyada Waxqabadka: Waxay naga caawiyaan inaan fahanno sida booqdayaashu ula falgalaan Goobta\n• Kukiyada Shaqeynta: Waxay xasuustaan dookhyadaada iyo dejimahaaga\n• Kukiyada Suuq-geynta: Waxaa loo isticmaalaa in lagu soo bandhigo xayeysiisyo kugu habboon (iyadoo oggolaansho jirto)\n\nWaxaad ku maamuli kartaa dookhyada kukiyada dejimaha biraawsarkaaga ama qalabkayaga oggolaanshaha kukiyada. Damiidda kukiyada qaarkood waxay saameyn kartaa shaqada Goobta.\n\nWaxaan sidoo kale isticmaalnaa adeegyada falanqaynta (tusaale, Google Analytics) si aan u aruurino xogta isticmaalka. Adeegyadani waxay isticmaali karaan kukiyado u gaar ah waxayna ku xiran yihiin siyaasadahooda khaaska ah.\n\nCalaamadaha Do Not Track (DNT) waa la ixtiraamaa halka ay farsamo ahaan suurtagal tahay."
+        },
+        "retention": {
+          "title": "Haynta Xogta",
+          "content": "Waxaan haynaa macluumaadkaaga gaarka ah inta ay lagama maarmaan u tahay inaan:\n\n• Bixino adeegyadayada oo aan ilaalino koontadaada\n• U hoggaansanno waajibaadka sharci, canshuureed, iyo nidaamiyeeed\n• Xallino khilaafaadka oo aan fulino heshiisyadayada\n• Ilaalino diiwaannada ganacsiga ujeedooyinka kormeerka\n\nMuddada hayntu way kala duwanaanaysaa iyadoo ku xiran nooca xogta:\n• Xogta koontada: Inta ay koontadu jirto iyo 7 sano oo dheeraad ah\n• Xogta macaamilka: 7 sano ujeedooyinka canshuurta iyo kormeerka\n• Diiwaanada isgaarsiinta: 3 sano\n• Dookhyada suuq-geynta: Ilaa oggolaanshaha lagala noqdo\n\nMarka xogta aan loo baahnayn, waxaan si ammaan ah u tirtirnaa ama uga dhignaa mid aan qof lagu aqoonsan karin. Xogta aan la aqoonsan karin waxaa loo hayn karaa si aan xad lahayn ujeedooyinka falanqaynta tirakoobka."
+        },
+        "international": {
+          "title": "Wareejinta Xogta Caalamiga ah",
+          "content": "AfriConnect waxay ka shaqeysaa dalal badan oo Afrika ah waxaana dhici karta inaan xogta si caalami ah u wareejino. Marka aan xogta gaarka ah u wareejino meel ka baxsan dalkaaga:\n\n• Waxaan hubinnaa inay jiraan dammaanado ku habboon (Standard Contractual Clauses, go'aamada ku filnaanshaha)\n• Waxaan u hoggaansannaa shuruudaha maxalliga ah ee kaydinta xogta halka ay khuseyso\n• Waxaan la leenahay heshiisyo socodsiin xogeed dhammaan la-hawlgalayaasha caalamiga ah\n• Waxaan qiimeynaa heerarka ilaalinta xogta ee dalalka qaata xogta\n\nDadka deggan Midowga Yurub, wareejinta ka baxsan EEA waxaa lagu ilaaliyaa Standard Contractual Clauses ee ay ansixisay EU.\n\nIsticmaaleyaasha Afrika, waxaan u hoggaansannaa shuruudaha khuseeya ee kaydinta xogta gudaha iyo wareejinta xuduudaha ka gudubta ee ku xusan sharciyada maxalliga ah."
+        },
+        "children": {
+          "title": "Asturnaanta Carruurta",
+          "content": "AfriConnect waa goob B2B ah oo loogu talagalay isticmaaleyaasha ganacsiga. Si ula kac ah uma aruurinno macluumaad gaar ah oo ka yimaada dadka ka yar 18 sano jir.\n\nHaddii aan ogaanno inaan ka aruurinay xog gaar ah cunug aan lahayn oggolaansho waalid oo la xaqiijiyay, waxaan qaadi doonaa tallaabooyin aan si degdeg ah ugu tirtirno macluumaadkaas.\n\nHaddii aad aaminsan tahay in cunug uu na siiyay macluumaad gaar ah, fadlan isla markiiba la xiriir Sarkaalka Ilaalinta Xogtayada."
+        },
+        "changes": {
+          "title": "Isbeddellada Siyaasaddan",
+          "content": "Waxaan mararka qaarkood cusboonaysiin karnaa Siyaasaddan Khaaska ah si ay uga tarjumto isbeddellada hab-dhaqankeena, teknoolojiyadda, shuruudaha sharciyeed, ama arrimo kale.\n\nMarkaan sameyno isbeddello muhiim ah:\n• Waxaan ku dhejin doonaa siyaasadda la cusboonaysiiyay Goobta\n• Waxaan cusboonaysiin doonaa taariikhda \"Ugu dambayn la cusboonaysiiyay\"\n• Waxaan kugu ogeysiin doonaa iimayl ama ogeysiis gudaha Goobta haddii isbeddelku weyn yahay\n• Waxaan mararka qaarkood codsan karnaa oggolaansho cusub hawlo socodsiin gaar ah\n\nWaxaan kugu dhiirigelinaynaa inaad si joogto ah dib ugu eegto Siyaasaddan Khaaska ah. Isticmaalkaaga sii socda ee Goobta ka dib isbeddellada wuxuu ka dhigan yahay aqbalaadda siyaasadda la cusboonaysiiyay."
+        },
+        "dpo": {
+          "title": "Sarkaalka Ilaalinta Xogta",
+          "content": "Waxaan magacaawnay Sarkaalka Ilaalinta Xogta (DPO) oo mas'uul ka ah kormeerka istaraatiijiyadeena ilaalinta xogta iyo u hoggaansanaanta. Su'aal kasta, walaac kasta, ama si aad u adeegsato xuquuqdaada xogta, fadlan la xiriir DPO-gayaga."
+        }
+      }
+    },
+    "agreements": {
+      "dialog": {
+        "reviewAndAccept": "Fadlan dib u eeg oo aqbal heshiiskan ka hor intaadan sii socon.",
+        "accept": "Aqbal oo Sii soco",
+        "accepting": "Aqbalid ayaa socota...",
+        "decline": "Diid"
+      },
+      "seller": {
+        "title": "Heshiiska Iibiyaha",
+        "pageDescription": "Shuruudaha khuseeya marka la liis gareynayo alaabta laguna iibinayo AfriConnect.",
+        "lastUpdated": "Ugu dambayn la cusboonaysiiyay",
+        "lastUpdatedDate": "Febraayo 2026",
+        "introduction": "Heshiiskan Iibiyaha wuxuu xukumaa isticmaalkaaga AfriConnect sidii iibiye. Adigoo aqbalaya heshiiskan, waxaad xaqiijinaysaa in ganacsigaagu leeyahay awood uu ku iibiyo alaabta liis gashan iyo inaad u hoggaansami doonto suuqa, lacag bixinta, iyo shuruudaha ganacsiga.",
+        "acceptanceLabel": "Waan akhriyay oo waan aqbalay Heshiiska Iibiyaha.",
+        "sections": {
+          "eligibility": {
+            "title": "U-qalmitaanka",
+            "content": "Waa inaad ahaataa ganacsi diiwaangashan ama wakiil oggolaansho haysta. Waa inaad bixisaa faahfaahinta diiwaangelinta oo sax ah."
+          },
+          "productListings": {
+            "title": "Liiska Alaabta",
+            "content": "Waa inaad bixisaa magacyo alaab oo sax ah, sharaxaad, qiimaha, heerarka kaydka, faahfaahinta asalka, iyo sawirrada."
+          },
+          "fulfillment": {
+            "title": "Fidinta Adeegga (Fulfillment)",
+            "content": "Waxaad mas'uul ka tahay habaynta wakhtiga ku habboon, rarista, iyo isku-xirka keenista ka dib xaqiijinta lacag bixinta."
+          },
+          "qualityStandards": {
+            "title": "Heerarka Tayada",
+            "content": "Alaabtu waa inay la mid tahay faahfaahinta liiska, ahaataa mid sharci ah in laga ganacsado, oo buuxisa shuruudaha tayada iyo amniga."
+          },
+          "feesCommissions": {
+            "title": "Khidmadaha iyo Komishannada",
+            "content": "Khidmadaha goobta iyo habaynta ayaa laga yaabaa inay khuseeyaan iibka iyo bixinta lacagaha."
+          },
+          "returnsRefunds": {
+            "title": "Lacag-celinta iyo Alaab-celinta",
+            "content": "Waa inaad kala shaqaysaa codsiyada alaab-celinta iyo lacag-celinta ee saxda ah ee ku salaysan siyaasadda goobta."
+          },
+          "prohibitedItems": {
+            "title": "Alaabta Mamnuuca ah",
+            "content": "Ma liis gareyn kartid alaab sharci darro ah, been abuur ah, ama la mamnuucay."
+          },
+          "intellectualProperty": {
+            "title": "Hantida Intilektuaalka",
+            "content": "Waxaad dammaanad qaadaysaa inaad xuquuq u leedahay dhammaan nuxurka liiska iyo agabka alaabta."
+          },
+          "accountSuspension": {
+            "title": "Hakinta Koontada",
+            "content": "AfriConnect waxay hakin kartaa ama joojin kartaa gelitaanka iibiyaha khiyaano, jebinta siyaasadda, ama fashilka xaqiijinta darteed."
+          },
+          "liabilityIndemnification": {
+            "title": "Mas'uuliyadda iyo Magdhowga",
+            "content": "Waxaad mas'uul ka tahay alaabtaada, hab-dhaqanka ganacsigaaga, iyo u hoggaansanaanta sharciga."
+          }
+        }
+      },
+      "buyer": {
+        "title": "Heshiiska Iibsadaha",
+        "pageDescription": "Shuruudaha khuseeya marka alaab lagu iibsanayo AfriConnect.",
+        "lastUpdated": "Ugu dambayn la cusboonaysiiyay",
+        "lastUpdatedDate": "Febraayo 2026",
+        "introduction": "Heshiiskan Iibsadaha wuxuu xukumaa isticmaalkaaga AfriConnect sidii iibsadaha. Adigoo aqbalaya heshiiskan, waxaad xaqiijinaysaa inaad u oggoshahay inaad dalabaad gudbiso iyo inaad buuxin doonto waajibaadka lacag bixinta.",
+        "acceptanceLabel": "Waan akhriyay oo waan aqbalay Heshiiska Iibsadaha.",
+        "sections": {
+          "purchaseCommitments": {
+            "title": "Ballanqaadyada Iibka",
+            "content": "Dalabaadka lagu gudbiyo goobta waa ballanqaadyo khasab ah oo iibsi ah."
+          },
+          "paymentTerms": {
+            "title": "Shuruudaha Lacag Bixinta",
+            "content": "Waa inaad ku dhammaystirtaa lacag bixinta adoo isticmaalaya hababka la oggolaaday."
+          },
+          "deliveryInspection": {
+            "title": "Keenista iyo Kormeerka",
+            "content": "Waa inaad dib u eegtaa alaabta laguu keenay isla markaaba oo aad soo sheegtaa arrimaha jira muddada eegista gudahood."
+          },
+          "disputes": {
+            "title": "Khilaafaadka",
+            "content": "Khilaafaadka waa in lagu gudbiyaa kanaalada goobta."
+          },
+          "returns": {
+            "title": "Alaab-celinta",
+            "content": "Alaab-celinta waxay ku xiran tahay shuruudaha iibiyaha iyo nooca alaabta."
+          },
+          "communication": {
+            "title": "Xiriirka",
+            "content": "Waxaad ogolaatay inaad xiriir xirfadeed la lahaato iibiyayaasha."
+          },
+          "accountResponsibilities": {
+            "title": "Mas'uuliyadaha Koontada",
+            "content": "Waxaad mas'uul ka tahay amniga koontadaada iyo isticmaalka sharciga ah ee goobta."
+          }
+        }
+      }
+    },
+    "compliance": {
+      "title": "U hoggaansanaanta AfCFTA",
+      "description": "Hubi u-qalmitaanka alaabtaada ee faa'iidooyinka Deegaanka Ganacsiga Xorta ah ee Afrika",
+      "searchByName": "Ku raadi Magac",
+      "enterHsCode": "Geli Code-ka HS",
+      "searchPlaceholder": "Ku raadi magaca alaabta ama code-ka HS...",
+      "hsCodePlaceholder": "Geli 8-god oo code-ka HS ah (tusaale, 09011100)",
+      "lookup": "Raadi",
+      "add": "Ku dar",
+      "addAnyway": "Ku dar si kastaba",
+      "rate": "Heerka",
+      "currentRate": "Heerka Hadda",
+      "categoryA": "Qaybta A",
+      "notCategoryA": "Ma aha Qaybta A",
+      "notFoundInCategoryA": "Code-ka HS lagama helin Qaybta A",
+      "notFoundDescription": "Alaabtan kuma jirto Liiska Qaybta A ee AfCFTA, waxaana laga yaabaa inaanay u qalmin dhimista canshuurta.",
+      "tariffReduction": "Jadwalka Dhimista Canshuurta",
+      "rateSchedule": "Jadwalka Heerka (2026-2030)",
+      "currentYearRate": "Heerka Sannadka Hadda",
+      "zeroTariffBy2030": "Alaabtan waxay lahaan doontaa 0% canshuur marka la gaaro 2030",
+      "noAfcftaBenefits": "Ma jiraan Faa'iidooyinka AfCFTA",
+      "noAfcftaBenefitsDescription": "Alaabtan kuma jirto Qaybta A ee AfCFTA, canshuurta caadiga ah ayaana lagu dabaqayaa.",
+      "removeProduct": "Ka saar Alaabta",
+      "complianceSummary": "Dulmarka U hoggaansanaanta",
+      "complianceSummaryDescription": "Dulmarka xaaladda u-qalmitaanka AfCFTA ee alaabtaada",
+      "totalProducts": "Alaabta Guud",
+      "eligible": "U qalma",
+      "notEligible": "Aan u qalmin",
+      "eligibleMessage": "{count} ka mid ah alaabtaada ayaa u qalma dhimista canshuurta AfCFTA",
+      "scheduleMatchMessage": "{count, plural, one {Koodhka HS ee # badeecad wuxuu la jaanqaadayaa jadwalka canshuurta ee la doortay - dib u eegista xeerarka asalka wali way socotaa} other {Koodhyada HS ee # badeeco ayaa la jaanqaadaya jadwalka canshuurta ee la doortay - dib u eegista xeerarka asalka wali way socotaa}}",
+      "yourProducts": "Alaabtaada",
+      "yourProductsDescription": "Alaabta ka diiwaangashan code-yada HS ee lasocodka u hoggaansanaanta AfCFTA",
+      "addProduct": "Ku dar Alaab",
+      "addNewProduct": "Ku dar Alaab Cusub",
+      "cancel": "Iska daa",
+      "addingProduct": "Ku daris ayaa socota...",
+      "productAdded": "Alaabta si guul leh ayaa loo ku daray",
+      "productRemoved": "Alaabta si guul leh ayaa looga saaray",
+      "failedToAddProduct": "Waa lagu guuldareystay in lagu daro alaab",
+      "failedToRemoveProduct": "Waa lagu guuldareystay in laga saaro alaab",
+      "noProductsYet": "Weli ma jiraan alaab lagu daray",
+      "noProductsDescription": "Ku dar alaabtaada code-yada HS si aad u hubiso xaaladda u hoggaansanaanta AfCFTA",
+      "addFirstProduct": "Ku dar Alaabtaadii ugu horreysay",
+      "andMoreProducts": "+{count} alaab oo dheeraad ah",
+      "businessRequired": "Diiwaangelin Ganacsi ayaa loo baahan yahay",
+      "businessRequiredDescription": "Waxaad u baahan tahay inaad diiwaangeliso ganacsigaaga ka hor intaadan hubin u hoggaansanaanta alaabta.",
+      "registerBusiness": "Diiwaangeli Ganacsi",
+      "whatIsAfcfta": "Waa maxay AfCFTA?",
+      "afcftaDescription": "Deegaanka Ganacsiga Xorta ah ee Qaaradda Afrika (AfCFTA) waa heshiis ganacsi oo xor ah oo dhexmara waddamada Midowga Afrika. Alaabta Qaybta A waxay helayaan dhimis canshuureed oo tartiib-tartiib ah laga bilaabo 2026 ilaa 2030, iyagoo gaaraya 0%.",
+      "categoryABadge": "Alaabta Qaybta A",
+      "learnMoreAfcfta": "Wax badan ka baro AfCFTA",
+      "reductionSchedule": "Jadwalka Dhimista Canshuurta",
+      "reductionScheduleDescription": "Alaabta Qaybta A waxay raacaan jadwal dhimis canshuureed oo tartiib-tartiib ah",
+      "year": "Sannadka",
+      "typicalRateReduction": "Heerka Caadiga ah",
+      "rateDisclaimer": "Heerarka dhabta ah way kala duwanaan karaan alaab ahaan. Hubi kaararka alaabta ee gaarka ah.",
+      "afcftaCompliance": "U hoggaansanaanta AfCFTA",
+      "afcftaComplianceDescription": "Hubi haddii alaabtaadu u qalanto faa'iidooyinka AfCFTA",
+      "noComplianceCheckYet": "Weli maadan ku darin wax alaab ah oo loogu talagalay hubinta u hoggaansanaanta.",
+      "startComplianceCheck": "Bilow Hubinta U hoggaansanaanta",
+      "manageProducts": "Maamul Alaabta",
+      "selectCountry": "Dooro Waddan/Gobol",
+      "ethiopia": "Itoobiya",
+      "kenyaEac": "Kenya (EAC)",
+      "countryDescription": "Dooro waddanka aad ka raadinayso jadwalka canshuurta",
+      "registerToSaveProducts": "Diiwaangeli ganacsigaaga si aad u keydiso alaabta liiskaaga.",
+      "notFoundInTariffSchedule": "Koodhkan HS lagama helin jadwalka canshuurta ee la doortay",
+      "tariffScheduleCoverage": "Baaxadda Jadwalka Canshuurta",
+      "tariffScheduleMatched": "Jadwalka Canshuurta Waa La Waafajiyay",
+      "tariffScheduleNotMatched": "Jadwalka Canshuurta Lama Waafajin",
+      "noTariffMatchDescription": "Ma aanan waafajin karin koodhkan HS jadwalka canshuurta ee la doortay. Hubi buugga canshuurta rasmiga ah iyo xeerka asalka ee gaarka u ah badeecadda.",
+      "reviewMessage": "{count} ka mid ah alaabtaada wali waxay u baahan yihiin dib u eegis xeerarka asalka ah ka hor inta aan la gudbin sheegasho asal AfCFTA ah.",
+      "needsReview": "Waxay U Baahan Tahay Dib U Eegis",
+      "ruleNotMapped": "Xeerka Lama Qoondeyn",
+      "rulesOfOrigin": "Xeerarka Asalka",
+      "tariffAndOrigin": "Canshuuraha iyo Asalka",
+      "baseRate": "Heerka Aasaasiga ah",
+      "tariffCategory": "Qaybta Canshuurta",
+      "originRule": "Xeerka Asalka",
+      "ruleSource": "Isha Xeerka",
+      "ruleNotMappedDescription": "App-ku weli ma hayo xeer gaar u ah badeecaddan oo loo qoondeeyey koodhkan HS. Eeg Appendix 2.A.1 ka hor inta aadan gudbin sheegasho asal.",
+      "eligibleRuleDescription": "Badeecaddan waxay gudubtay xeer qiime-ku-saleysan oo si toos ah loo qiimeeyey.",
+      "notEligibleRuleDescription": "Badeecaddan kuma gudbin xeerka qiime-ku-saleysan ee si toos ah loo qiimeeyey.",
+      "legacyStatus": "Natiijo Hore",
+      "legacyStatusDescription": "Diiwaankan waxaa la sameeyey ka hor casriyeynta ku saleysan xeerarka waana in dib loo xisaabiyaa.",
+      "automaticVnmDescription": "Natiijadan si toos ah ayaa looga xisaabiyey xeer VNM oo qiime ku saleysan.",
+      "manualReviewDescription": "Xeerka badeecaddan wuxuu u baahan yahay dib u eegis dukumeenti ama hab-soo-saar oo ka baxsan xisaabiyaha tooska ah ee hadda jira."
+    },
+    "afcfta": {
+      "title": "Waydii AI wax ku saabsan u hoggaansanaanta AfCFTA",
+      "description": "Waydii su'aalo ku salaysan dukumentiyada AfCFTA ee la soo rariyay. Kaaliyuhu wuxuu ku salaysan yahay soo celinta xogta Qdrant iyo jawaabaha leh tixraacyo.",
+      "badge": "Scaffold",
+      "helper": "Jawaabuhu waa inay ku tiirsanaadaan ilaha la soo rariyay oo keliya. Haddii caddayn la waayo, kaaliyuhu waa inuu sheegaa halkii uu ka qiyaasi lahaa.",
+      "placeholder": "Waydii su'aal u hoggaansanaanta ah, tusaale: Waa maxay dukumentiyada loo baahan yahay si loo taageero codsiga shahaadada asalka ee AfCFTA?",
+      "sampleQuestions": [
+        "AfCFTA ma ka dhigeysaa alaabtan canshuur la'aan maanta si otomaatig ah?",
+        "Waa maxay caddaynta aan u baahanahay si aan u taageero codsiga shahaadada asalka?",
+        "Dib-u-baakadeyn fudud ma lagu heli karaa asalka AfCFTA marka loo eego xeerarka?"
+      ],
+      "cta": {
+        "ask": "Waydii AI",
+        "asking": "Waydiin ayaa socota..."
+      },
+      "form": {
+        "languageLabel": "Luqadda",
+        "questionLabel": "Su'aasha u hoggaansanaanta"
+      },
+      "validation": {
+        "questionTooShort": "Fadlan geli su'aal u hoggaansanaanta oo faahfaahsan.",
+        "invalidQuestion": "Fadlan bixi su'aal u hoggaansanaanta oo sax ah."
+      },
+      "error": {
+        "generic": "Waa lagu guuldareystay in la waydiiyo kaaliyaha u hoggaansanaanta."
+      },
+      "empty": {
+        "citations": "Weli ma jiraan tixraacyo la soo celiyay."
+      },
+      "sections": {
+        "answer": "Jawaabta",
+        "citations": "Tixraacyada",
+        "source": "Isha"
+      },
+      "mode": {
+        "fullRag": "RAG dhammaystiran",
+        "retrievalOnly": "Soo celin keliya"
+      },
+      "status": {
+        "ready": "Diyaar",
+        "not_configured": "Aan la habayn",
+        "no_evidence": "Ma jirto caddayn"
+      }
+    },
+    "aiAssistantPage": {
+      "title": "Kaaliyaha AI",
+      "description": "Waydii su'aalo ku saabsan u hoggaansanaanta AfCFTA, dhibcaha daynta, xeerarka asalka iyo wax kale oo badan.",
+      "unavailable": "Qalabka Kaaliyaha AI si ku-meel-gaar ah looma heli karo.",
+      "tabs": {
+        "compliance": "U hoggaansanaanta AfCFTA",
+        "general": "Kaaliyaha Guud"
+      },
+      "general": {
+        "title": "Waydii wax ku saabsan mowduucyada AfCFTA",
+        "description": "Waydii su'aalo guud oo ku saabsan xeerarka asalka ee AfCFTA, jadwalka canshuurta, fududeynta ganacsiga, iyo mowduucyada ganacsiga ee la xiriira.",
+        "badge": "AI Powered",
+        "helper": "Waydii su'aalo ku saabsan AfCFTA si aad u hesho hagitaan degdeg ah. Had iyo jeer ka xaqiiji faahfaahinta muhiimka ah daabacaadaha rasmiga ah ee AfCFTA.",
+        "placeholder": "Waydii su'aal AfCFTA ah, tusaale: Sidee u shaqeeyaan xeerarka asalka ee AfCFTA?",
+        "sampleQuestions": [
+          "Sidee u shaqeeyaan xeerarka asalka ee AfCFTA?",
+          "Maxay ka dhigan tahay Qaybta A ee jadwalka canshuurta AfCFTA?",
+          "Waa maxay dukumentiyada fududeynta ganacsiga ee inta badan loo baahan yahay?"
+        ],
+        "cta": {
+          "ask": "Waydii AI",
+          "asking": "Waydiin ayaa socota..."
+        },
+        "form": {
+          "languageLabel": "Luqadda",
+          "questionLabel": "Su'aashaada"
+        },
+        "validation": {
+          "questionTooShort": "Fadlan geli su'aal faahfaahsan.",
+          "invalidQuestion": "Fadlan bixi su'aal sax ah."
+        },
+        "error": {
+          "generic": "Waa lagu guuldareystay in jawaab laga helo kaaliyaha AI."
+        },
+        "sections": {
+          "answer": "Jawaabta"
+        }
+      }
+    },
+    "originEligibility": {
+      "title": "U-qalmitaanka Shahaadada Asalka",
+      "description": "Xisaabi haddii alaabtaadu buuxiso xeerka 60% ee asalka doorbidka ah ee hoos yimaada AfCFTA",
+      "whatIsTheRule": "Waa maxay Xeerka 60%?",
+      "ruleExplanation": "Xeerka MaxNOM (Agabka ugu badan ee aan asalka ahayn) wuxuu dhigayaa in agabka dibadda laga soo dhoofiyay ee loo isticmaalo wax soo saarka uuna ka badan karin 60% qiimaha Ex-Works. Tani waxay ka dhigan tahay ugu yaraan 40% qiimaha alaabtaadu waa inuu ka yimaadaa wax soo saarka gudaha.",
+      "startCalculation": "Xisaabi U-qalmitaanka",
+      "newCalculation": "Xisaabin Cusub",
+      "reset": "Dib u deji",
+      "step1Title": "Qiimaha Ex-Works (EXW)",
+      "step1Description": "Qiimaha marka alaabtu ka baxdo warshaddaada, oo ay ku jiraan dhammaan kharashyada wax soo saarka",
+      "step2Title": "Agabka Aan Asalka Ahayn (VNM)",
+      "step2Description": "Qiimaha qaybaha dibadda laga soo dhoofiyay ee aan ka soo askumin waddankaaga",
+      "step3Title": "Codso Formula-ka",
+      "step4Title": "Natiijada U-qalmitaanka",
+      "resultDescription": "Iyadoo lagu salaynayo xadka ugu badan ee 60%",
+      "productName": "Magaca Alaabta",
+      "productNamePlaceholder": "Geli magaca alaabta (tusaale, Bunka, Dharka)",
+      "currency": "Lacagta",
+      "costOfMaterials": "Kharashka Agabka",
+      "costOfMaterialsHint": "Agabka ceyriin iyo qaybaha loo isticmaalay wax soo saarka",
+      "laborCosts": "Kharashka Shaqaalaha",
+      "laborCostsHint": "Mushaharka iyo gunnooyinka shaqaalaha wax soo saarka",
+      "factoryOverheads": "Kharashyada Warshadda",
+      "factoryOverheadsHint": "Kulaylka, korontada, kirada, dayactirka qalabka",
+      "profitMargin": "Maroofitka (Faa'iidada)",
+      "profitMarginHint": "Faa'iidadaada dheeriga ku ah kharashka wax soo saarka",
+      "totalExWorks": "Qiimaha Guud ee Ex-Works",
+      "vnmExplanationTitle": "Waa maxay Agabka Aan Asalka Ahayn?",
+      "vnmExplanation": "Kuwaani waa agab, qaybo, ama waxyaabo laga soo dhoofiyay dibadda oo aan laga soo saarin waddankaaga.",
+      "vnmValue": "Qiimaha Guud ee VNM",
+      "vnmValueHint": "Qiimaha guud ee dhammaan agabka dibadda laga soo dhoofiyay",
+      "formula": "Formula-ka",
+      "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+      "result": "Natiijada",
+      "maxThreshold": "Xadka ugu badan: 60%",
+      "eligible": "U qalma",
+      "notEligible": "Aan u qalmin",
+      "eligibleMessage": "Alaabtaadu waxay buuxisay shuruudaha xeerka asalka",
+      "eligibleDescription": "Agabka aan asalka ahayn waxay ku jiraan xadka 60%. Alaabtaadu waxay u qalantaa daaweyn gaar ah oo hoos timaada Shahaadada Asalka ee AfCFTA.",
+      "notEligibleMessage": "Alaabtaadu ma buuxin shuruudaha xeerka asalka",
+      "notEligibleDescription": "Agabka aan asalka ahayn waxay ka badan yihiin xadka 60%. Tixgeli inaad kordhiso agabka gudaha.",
+      "contactUs": "Ma u baahan tahay caawinaad si aad u horumariso u-qalmitaankaaga?",
+      "contactUsDescription": "Kooxdayadu waxay kaa caawin karaan inaad aqoonsato hababka lagu kordhiyo wax soo saarka gudaha.",
+      "certificateOfOriginEligibility": "Hubinta U-qalmitaanka Shahaadada Asalka",
+      "vnmPercentage": "Boqolleyda VNM",
+      "localContent": "Wax Soo Saarka Gudaha",
+      "minLocalContent": "Ugu yaraan loo baahan yahay: 40%",
+      "localValueAdded": "Qiimaha Gudaha lagu daray",
+      "productHsCode": "Koodhka HS ee Badeecadda",
+      "productHsCodePlaceholder": "Geli koodhka HS ee badeecadda ee loo isticmaalo raadinta xeerka asalka",
+      "originRule": "Xeerka Asalka",
+      "ruleSource": "Isha Xeerka",
+      "ruleThreshold": "Xadka Xeerka",
+      "manualReview": "Dib U Eegis Gacanta ah",
+      "manualReviewStepTitle": "Dib U Eegista Xeerka ee Gacanta ah",
+      "manualReviewStepDescription": "Xaqiiji inaad dib u eegtay xeerka rasmiga ah, hawlgallada aan ku filnayn, iyo shuruudaha isku-geynta",
+      "manualReviewTitle": "Dib u eegis gacanta ah ayaa loo baahan yahay",
+      "manualReviewBody": "Xeerka asalka ee badeecaddan si toos ah loogama xisaabin karo EXW iyo VNM oo keliya. Waa inaad xaqiijisaa xeerka rasmiga ah ee Appendix 2.A.1 iyo xaddidaadaha guud ee Annex 2 ka hor inta aadan gudbin sheegasho.",
+      "manualReviewDescription": "Xeerkani wuxuu u baahan yahay dib u eegis gacanta ah sababtoo ah xisaabiyaha hadda jira ma qabto caddeynta isbeddelka canshuurta ama hab-soo-saarka.",
+      "needsReview": "Waxay U Baahan Tahay Dib U Eegis",
+      "ruleNotMapped": "Xeerka Lama Qoondeyn",
+      "ruleNotMappedDescription": "App-ku weli ma hayo xeer gaar u ah badeecaddan oo loo qoondeeyey koodhkan HS. Eeg Appendix 2.A.1 ka hor inta aadan gudbin sheegasho asal.",
+      "ruleReviewed": "Waxaan dib u eegay xeerka gaarka ah ee badeecadda ee khuseeya ee ku jira Appendix 2.A.1.",
+      "insufficientOperationsChecked": "Waxaan xaqiijiyey in hab-socodku aanu ku koobnayn hawlgallo aan ku filnayn oo hoos yimaada Annex 2.",
+      "cumulationConsidered": "Waxaan tixgeliyey isku-geynta iyo agabyada asal ahaan ka yimid Dawladaha Xubnaha kale halka ay khusayso.",
+      "enterHsCodeFirst": "Marka hore geli koodhka HS ee badeecadda si xisaabiyuhu u helo xeerka.",
+      "legacyStatus": "Natiijo Hore",
+      "yes": "Haa",
+      "no": "Maya",
+      "saveCalculation": "Keydi Xisaabinta",
+      "saving": "Keydin ayaa socota...",
+      "calculationSaved": "Xisaabinta si guul leh ayaa loo keydiyay",
+      "registerToSaveCalculation": "Diiwaangeli ganacsigaaga si aad u keydiso xisaabintan.",
+      "calculationDeleted": "Xisaabinta si guul leh ayaa loo tirtiray",
+      "deleteCalculation": "Tirtir Xisaabinta",
+      "failedToSave": "Waa lagu guuldareystay in la keydiyo xisaabinta",
+      "failedToDelete": "Waa lagu guuldareystay in la tirtiro xisaabinta",
+      "totalCalculations": "Xisaabinta Guud",
+      "previousCalculations": "Xisaabintii Hore",
+      "previousCalculationsDescription": "Xisaabintaadii u-qalmitaanka ee la keydiyay"
+    },
+    "creditProfile": {
+      "loading": "Waa la raryayaa profile-ka daynta dhijitaalka ah...",
+      "title": "Profile-ka Daynta Dhijitaalka ah",
+      "titleReport": "Warbixinta Profile-ka Daynta Dhijitaalka ah",
+      "subtitle": "Laga dhisay macaamilada suuqyada, taariikhda fulinta, iyo kala duwanaanshaha iibsadayaasha.",
+      "actions": {
+        "backToProfile": "Ku laabo profile-ka daynta",
+        "openBusinessProfile": "Fur profile-ka ganacsiga",
+        "businessSetup": "Habaynta ganacsiga",
+        "back": "Dib u laabo",
+        "printOrSavePdf": "Daabac / Keydi PDF",
+        "downloadableReport": "Warbixin la soo dejisan karo"
+      },
+      "badges": {
+        "verifiedSeller": "Iibiye la xaqiijiyay",
+        "platformActivity": "Profile-ka dhaqdhaqaaqa goobta"
+      },
+      "access": {
+        "no_business": {
+          "title": "Diiwaangeli ganacsigaaga",
+          "message": "Profile-ka daynta dhijitaalka ah wuxuu diyaar noqonayaa ka dib marka aad diiwaangeliso oo aad xaqiijiso ganacsi."
+        },
+        "business_missing": {
+          "title": "Lama helin diiwaanka ganacsiga",
+          "message": "Koontadaadu waxay ku xiran tahay diiwaan ganacsi oo aan hadda diyaar ahayn."
+        },
+        "pending_verification": {
+          "title": "Xaqiijin ayaa socota",
+          "message": "Profile-kaaga daynta dhijitaalka ah wuxuu furmi doonaa marka ganacsiga la xaqiijiyo."
+        },
+        "rejected_verification": {
+          "title": "Xaqiijin ayaa loo baahan yahay",
+          "message": "Xalliyo xaqiijinta ganacsigaaga marka hore si aad u furto profile-ka daynta."
+        },
+        "not_seller": {
+          "title": "Gelitaanka iibiyaha ayaa loo baahan yahay",
+          "message": "Keliya koontooyinka iibiyaha ee la xaqiijiyay ayaa heli kara profile-ka daynta dhijitaalka ah."
+        },
+        "ready": {
+          "title": "Diyaar",
+          "message": "Profile-kaaga daynta dhijitaalka ah waa diyaar."
+        }
+      },
+      "common": {
+        "notAvailableYet": "Weli diyaar ma aha"
+      },
+      "summary": {
+        "headline": "{paidOrdersCount} dalabaad la bixiyay oo ka yimid {uniqueBuyers} iibsadayaal",
+        "description": "Profile-kani wuxuu ka tarjumayaa dhaqdhaqaaqa lagu qabtay AfriConnect waana scorecard goobta ah, ma aha dhibcaha daynta ee xafiisyada dibadda.",
+        "generated": "La soo saaray",
+        "reportPeriodStart": "Bilowga muddada warbixinta",
+        "latestProfileActivity": "Dhaqdhaqaaqii ugu dambeeyay ee profile-ka"
+      },
+      "cards": {
+        "paidTransactionVolume": {
+          "title": "Baaxadda macaamilada la bixiyay",
+          "description": "Qiimaha dalabaadka suuqa ee la xalliyay"
+        },
+        "paidOrders": {
+          "title": "Dalabaadka la bixiyay",
+          "description": "{totalOrders} dalabaad iibiye oo guud ahaan la socday"
+        },
+        "uniqueBuyers": {
+          "title": "Iibsadayaasha gaarka ah",
+          "description": "{repeatBuyers} iibsadayaal soo laabtay"
+        },
+        "buyerCountries": {
+          "title": "Waddamada iibsadayaasha",
+          "description": "{buyersWithBusinessMetadata} iibsadayaal leh xogta ganacsiga"
+        },
+        "totalSellerOrders": {
+          "title": "Dalabaadka iibiyaha ee guud",
+          "description": "Dhammaan dalabaadka loo tiiriyay iibiyahan"
+        },
+        "successfulPaymentRate": {
+          "title": "Heerka guusha lacag bixinta",
+          "description": "Lacagaha la xalliyay ee dalabaadka dhexdiisa"
+        },
+        "averageOrderValue": {
+          "title": "Celceliska qiimaha dalabka",
+          "description": "Iyadoo lagu salaynayo dalabaadka suuqa ee la xalliyay"
+        },
+        "recentPaidActivity": {
+          "title": "Dhaqdhaqaaqii lacag bixinta ee dhowaa",
+          "description": "Dhaqdhaqaaqii dalabka ee ugu dambeeyay ee la xalliyay"
+        },
+        "uniqueBuyersDetailed": {
+          "title": "Iibsadayaasha gaarka ah",
+          "description": "Iibsadayaal kala duwan oo dalbaday alaabta iibiyaha"
+        },
+        "repeatBuyers": {
+          "title": "Iibsadayaasha soo laabtay",
+          "description": "Iibsadayaal leh wax ka badan hal dalab"
+        },
+        "metadataCoverage": {
+          "title": "Caymiska xogta",
+          "description": "{buyersWithBusinessMetadata} iibsadayaal ku xiran diiwaannada ganacsiga"
+        },
+        "topBuyerConcentration": {
+          "title": "U-fiirsashada iibsadaha sare",
+          "description": "Qaybta macaamilada ee ka timaada iibsadaha ugu weyn"
+        }
+      },
+      "empty": {
+        "title": "Ma jiro dhaqdhaqaaq ku filan weli",
+        "description": "Marka ganacsigaagu bilaabo helitaanka dalabaadka, profile-kani wuxuu si otomaatig ah ugu ballaari doonaa calaamadaha macaamilka, fulinta, iyo kala duwanaanshaha iibsadayaasha."
+      },
+      "sections": {
+        "transactionHistory": {
+          "title": "Taariikhda Macaamilada",
+          "description": "Waxqabadka dalabaadka dhowaan iyo lacag bixinta ee suuqa oo dhan."
+        },
+        "fulfillment": {
+          "title": "Waxqabadka Fulinta",
+          "description": "Waxqabadka hawlgalka ee laga helay meertada nolosha dalabka."
+        },
+        "buyerDiversity": {
+          "title": "Kala duwanaanshaha Iibsadayaasha"
+        }
+      },
+      "trend": {
+        "window": "{days} maalmood",
+        "rollingPerformanceWindow": "Daaishada waxqabadka ee wareegta",
+        "orders": "Dalabaadka",
+        "paidOrders": "Dalabaadka la bixiyay",
+        "paidVolume": "Baaxadda la bixiyay"
+      },
+      "fulfillment": {
+        "completionRate": "Heerka dhammaystirka",
+        "cancellationRate": "Heerka joojinta",
+        "payoutSuccessRate": "Heerka guusha bixinta lacagta",
+        "ordersCurrentlyProcessing": "Dalabaadka hadda gacanta lagu hayo",
+        "averageFulfillmentCycle": "Celceliska meertada fulinta",
+        "averageFulfillmentCycleValue": "{days} maalmood",
+        "payoutOutcomeCounts": "Tirada natiijooyinka bixinta lacagta",
+        "payoutStatuses": {
+          "queued": "Safka ku jira",
+          "pending": "Sugaya",
+          "success": "Guulaystay",
+          "failed": "Fashilmay",
+          "reverted": "Dib loo celiyay"
+        }
+      },
+      "buyerDiversity": {
+        "coverage": {
+          "complete": "Kala duwanaanshaha iibsadayaasha wuxuu ku salaysan yahay diiwaannada ganacsiga iibsadaha ee ku xiran.",
+          "partial": "Kala duwanaanshaha iibsadayaasha wuxuu ku salaysan yahay keliya iibsadayaasha leh diiwaannada ganacsiga, markaa iibsadayaasha qaar waa laga reebay."
+        }
+      },
+      "breakdowns": {
+        "countLabel": "{count} iibsadayaal",
+        "buyerCountries": {
+          "title": "Waddamada iibsadayaasha",
+          "empty": "Qaybinta waddamada waxay soo muuqan doontaa ka dib marka iibsadayaashu ku xiraan xogta ganacsiga."
+        },
+        "buyerCategories": {
+          "title": "Qaybaha iibsadayaasha",
+          "empty": "Qaybinta qaybaha waxay soo muuqan doontaa ka dib marka iibsadayaashu ku xiraan xogta ganacsiga."
+        },
+        "topBuyers": {
+          "title": "Iibsadayaasha ugu sarreeya",
+          "empty": "Iibsadayaasha ugu sarreeya waxay soo muuqan doonaan marka dalabaadka la gudbiyo.",
+          "orders": "{count} dalabaad"
+        }
+      },
+      "methodology": {
+        "title": "Xusuusin Habka loo raacay",
+        "description": "Warbixintan waxaa laga soo saaray dhaqdhaqaaqa suuqa AfriConnect ee koowaad.",
+        "points": {
+          "transactionVolume": "Baaxadda macaamilada waxay ku salaysan tahay dalabaadka iibiyaha ee ku xiran lacag bixinta goobta ee la xalliyay.",
+          "fulfillment": "Fulinta waxay isticmaashaa xaaladda dalabka iyo natiijooyinka bixinta lacagta sidii calaamadaha waxqabadka hawlgalka.",
+          "buyerDiversity": "Kala duwanaanshaha iibsadayaasha wuxuu ku salaysan yahay diiwaannada ganacsiga iibsadaha ee ku xiran."
+        }
+      },
+      "report": {
+        "generatedOn": "La sameeyay {date}",
+        "latestActivity": "Hawlgalkii ugu dambeeyay: {date}",
+        "reportPeriod": "Muddada warbixinta: {start} — {end}",
+        "category": "Qaybta",
+        "country": "Dalka",
+        "verifiedSince": "La xaqiijiyay tan iyo",
+        "sectionProfileSummary": "1. Soo Koobidda Profile-ka",
+        "sectionTransactionHistory": "2. Taariikhda Macaamilka",
+        "sectionFulfillment": "3. Waxqabadka Fulinta",
+        "sectionBuyerDiversity": "4. Kala Duwanaanshaha Iibsadayaasha",
+        "sectionMethodology": "5. Qoraalka Habraaca",
+        "rollingPerformanceWindows": "Daaqadaha Waxqabadka Isdaba-joogga ah",
+        "payoutOutcomes": "Natiijooyinka Bixinta",
+        "topBuyersSection": "Iibsadayaasha Ugu Sarreeya",
+        "buyerCountriesSection": "Dalalka Iibsadayaasha",
+        "buyerCategoriesSection": "Qaybaha Iibsadayaasha",
+        "noData": "Xog lama heli karo",
+        "orders": "{count} dalab",
+        "buyerShare": "{count} iibsade ({share}%)"
+      }
+    },
+    "inventory": {
+      "title": "Kaydka",
+      "description": "Lasoco heerarka kaydka, hagaaji tirada, oo deji ogeysiisyada dib u soo iibinta",
+      "summary": {
+        "totalProducts": "Alaabta Guud",
+        "totalUnits": "Wadar cutubyada",
+        "lowStock": "Kaydka Hoose",
+        "outOfStock": "Kaydka waa dhammaaday"
+      },
+      "tabs": {
+        "inventory": "Kaydka",
+        "activity": "Dhaqdhaqaaqa"
+      },
+      "searchPlaceholder": "Ku raadi alaab ama SKU...",
+      "filterStatus": "Sifeey xaaladda",
+      "status": {
+        "in_stock": "Kaydka ayaa ku jira",
+        "low_stock": "Kaydka waa ku yar yahay",
+        "out_of_stock": "Kaydka waa dhammaaday",
+        "inStock": "Kaydka waa ku jiraa",
+        "lowStock": "Kaydka waa ku yar yahay",
+        "outOfStock": "Kaydka waa dhammaaday"
+      },
+      "table": {
+        "product": "Alaabta",
+        "sku": "SKU",
+        "onHand": "Gacanta ku jira",
+        "threshold": "Xadka Kaydka Hoose",
+        "status": "Xaaladda",
+        "actions": "Ficillada"
+      },
+      "actions": {
+        "adjust": "Hagaaji",
+        "thresholds": "Xadka",
+        "history": "Taariikhda"
+      },
+      "noSku": "Ma jiro SKU",
+      "noResults": "Ma jiraan waxyaabo kayd ah oo u dhiganta sifeeyayaashaada.",
+      "activityTitle": "Dhaqdhaqaaqii dhowaa",
+      "activity": {
+        "date": "Taariikhda",
+        "product": "Alaabta",
+        "type": "Nooca",
+        "quantity": "Qty",
+        "newQuantity": "Qty Cusub",
+        "reason": "Sababta",
+        "none": "Eber",
+        "empty": "Weli ma jiro dhaqdhaqaaq kayd ah."
+      },
+      "types": {
+        "restock": "Dib u soo iibin",
+        "adjustment": "Hagaajin",
+        "return": "Alaab-celin",
+        "correction": "Sixid",
+        "sale": "Iib"
+      },
+      "adjustDialog": {
+        "title": "Hagaaji Kaydka",
+        "description": "Diiwaangeli isbeddelka kaydka ee alaabtan.",
+        "type": "Nooca Hagaajinta",
+        "delta": "Isbeddelka Tirada",
+        "deltaPlaceholder": "Isticmaal qiimaha taban (-) si aad u dhimto",
+        "quickAdd": "Ku dar 1",
+        "quickRemove": "Ka saar 1",
+        "reason": "Sababta",
+        "reasonPlaceholder": "Xusuusin ikhtiyaari ah oo ku saabsan isbeddelkan",
+        "save": "Keydi Hagaajinta"
+      },
+      "historyDialog": {
+        "title": "Taariikhda Kaydka",
+        "description": "Macaamiladii kaydka ee ugu dambeeyay ee alaabtan."
+      },
+      "thresholdDialog": {
+        "title": "Habaynta Dib u Soo Iibinta",
+        "description": "Deji ogeysiisyada kaydka hoose iyo tirada dib u dalbashada.",
+        "lowStock": "Xadka Kaydka Hoose",
+        "lowStockPlaceholder": "tusaale, 5",
+        "reorder": "Tirada Dib u Dalbashada",
+        "reorderPlaceholder": "tusaale, 25",
+        "save": "Keydi Habaynta"
+      },
+      "invalidAdjustment": "Geli hagaajin aan eber ahayn.",
+      "adjustmentSaved": "Hagaajinta kaydka waa la keydiyay.",
+      "invalidThreshold": "Xadka kaydka hoose waa inuu noqdaa 0 ama ka weyn.",
+      "invalidReorder": "Tirada dib u dalbashada waa inuu noqdaa 0 ama ka weyn.",
+      "thresholdsSaved": "Habaynta dib u soo iibinta waa la keydiyay."
+    }
+  }
+}

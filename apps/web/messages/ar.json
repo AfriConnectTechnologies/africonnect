@@ -1,0 +1,1668 @@
+{
+  "common": {
+      "loading": "جار التحميل...",
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "delete": "حذف",
+      "edit": "تعديل",
+      "search": "بحث",
+      "clearFilters": "مسح الفلاتر",
+      "close": "إغلاق",
+      "back": "رجوع",
+      "next": "التالي",
+      "submit": "إرسال",
+      "confirm": "تأكيد",
+      "yes": "نعم",
+      "no": "لا",
+      "all": "الكل",
+      "none": "لا شيء",
+      "actions": "إجراءات",
+      "status": "الحالة",
+      "created": "تم إنشاؤه",
+      "updated": "تم تحديثه",
+      "details": "التفاصيل",
+      "viewDetails": "عرض التفاصيل",
+      "account": "الحساب",
+      "soon": "قريباً",
+      "admin": "مسؤول",
+      "filters": "الفلاتر",
+      "noDescription": "لا يوجد وصف متاح",
+      "settingUp": "جاري إعداد حسابك..."
+    },
+    "navigation": {
+      "dashboard": "لوحة القيادة",
+      "marketplace": "السوق",
+      "products": "منتجاتي",
+      "inventory": "المخزون",
+      "messages": "الرسائل",
+      "cart": "السلة",
+      "orders": "الطلبات",
+      "settings": "الإعدادات",
+      "billing": "الفواتير",
+      "myBusiness": "عملي التجاري",
+      "creditProfile": "الملف الائتماني",
+      "registerBusiness": "تحقق من النشاط التجاري",
+      "verifyBusinessLabel": "تحقق من نشاطك التجاري",
+      "applyToSell": "قدّم طلبا للبيع",
+      "manageUsers": "إدارة المستخدمين",
+      "manageBusinesses": "إدارة الأعمال",
+      "manageSellerApplications": "طلبات البائعين",
+      "manageProducts": "إدارة المنتجات",
+      "manageRefunds": "إدارة المرتجعات",
+      "manageBanks": "إدارة البنوك",
+      "bankPortfolio": "محفظة البنك",
+      "bankReferrals": "إحالات البنك",
+      "bankAnalytics": "تحليلات البنك",
+      "compliance": "الامتثال لاتفاقية AfCFTA",
+      "aiAssistant": "مساعد الذكاء الاصطناعي",
+      "toggleMenu": "تبديل القائمة",
+      "toggleSidebar": "تبديل الشريط الجانبي"
+    },
+    "chat": {
+      "messages": "الرسائل",
+      "messagesDescription": "عرض وإدارة محادثاتك مع المشترين والبائعين",
+      "conversations": "المحادثات",
+      "conversation": "محادثة",
+      "contactSeller": "اتصل بالبائع",
+      "messageBusiness": "مراسلة العمل التجاري",
+      "noMessages": "لا توجد رسائل بعد",
+      "typeMessage": "اكتب رسالة...",
+      "startConversation": "ابدأ محادثة عن طريق الاتصال ببائع من صفحة المنتج",
+      "selectConversation": "اختر محادثة",
+      "selectConversationDescription": "اختر محادثة من القائمة لعرض الرسائل",
+      "loadingConversations": "جاري تحميل المحادثات...",
+      "sendMessage": "إرسال رسالة",
+      "attachFile": "إرفاق ملف",
+      "typing": "يكتب الآن..."
+    },
+    "marketplace": {
+      "title": "السوق",
+      "description": "تصفح المنتجات من الشركات عبر المنصة",
+      "browseProducts": "تصفح المنتجات",
+      "showingProducts": "عرض {count} من {count, plural, one {منتج} other {منتجات}}",
+      "loadingProducts": "جاري تحميل المنتجات...",
+      "noProducts": "لم يتم العثور على منتجات",
+      "noProductsYet": "لا توجد منتجات متاحة في السوق بعد.",
+      "tryAdjustingFilters": "حاول تعديل الفلاتر أو مصطلحات البحث.",
+      "searchPlaceholder": "البحث عن منتجات...",
+      "allCategories": "جميع الفئات",
+      "allCountries": "جميع الدول",
+      "sortBy": "فرز حسب",
+      "sortNewest": "الأحدث",
+      "sortPriceAsc": "السعر: من الأقل إلى الأعلى",
+      "sortPriceDesc": "السعر: من الأعلى إلى الأقل",
+      "outOfStock": "نفد من المخزون",
+      "inStock": "{count} متوفر في المخزون",
+      "inStockCap": "أكثر من 1000 في المخزون",
+      "price": "السعر",
+      "category": "الفئة",
+      "country": "الدولة",
+      "clearAllFilters": "مسح جميع الفلاتر",
+      "verify": {
+        "businessBeforeAdd": "تحقق من نشاطك التجاري قبل إضافة المنتجات إلى سلة التسوق.",
+        "completeBusinessBeforeAdd": "أكمل توثيق نشاطك التجاري قبل إضافة المنتجات إلى سلة التسوق."
+      }
+    },
+    "products": {
+      "title": "منتجاتي",
+      "description": "إدارة قوائم منتجاتك",
+      "addProduct": "إضافة منتج",
+      "allProducts": "جميع المنتجات",
+      "searchDescription": "ابحث وقم بتصفية منتجاتك للعثور على ما تحتاجه",
+      "searchPlaceholder": "البحث عن منتجات...",
+      "filterByStatus": "تصفية حسب الحالة",
+      "allStatuses": "جميع الحالات",
+      "noProducts": "لا توجد منتجات بعد. أضف منتجك الأول للبدء.",
+      "noMatchingProducts": "لا توجد منتجات تطابق معايير بحثك.",
+      "productName": "اسم المنتج",
+      "enterProductName": "أدخل اسم المنتج",
+      "descriptionLabel": "الوصف",
+      "describeProduct": "صف منتجك",
+      "price": "السعر",
+      "stockQuantity": "كمية المخزون",
+      "quantity": "الكمية",
+      "sku": "وحدة حفظ المخزون (SKU)",
+      "skuPlaceholder": "مثال: AC-COF-001",
+      "lowStockThreshold": "حد انخفاض المخزون",
+      "reorderQuantity": "كمية إعادة الطلب",
+      "category": "الفئة",
+      "categoryPlaceholder": "مثال: إلكترونيات",
+      "originCountry": "بلد المنشأ",
+      "countryPlaceholder": "مثال: إثيوبيا",
+      "minOrderQty": "أقل كمية للطلب",
+      "status": "الحالة",
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "image": "صورة",
+      "images": "صور",
+      "addImages": "إضافة صور",
+      "addNewProduct": "إضافة منتج جديد",
+      "enterDetailsStep": "أدخل تفاصيل المنتج للبدء.",
+      "addImagesStep": "أضف صوراً لجعل منتجك مميزاً.",
+      "productDetails": "تفاصيل المنتج",
+      "nextAddImages": "التالي: إضافة صور",
+      "creating": "جاري الإنشاء...",
+      "skipForNow": "تخطي الآن",
+      "completeListing": "إكمال الإدراج",
+      "editProduct": "تعديل المنتج",
+      "updateDetails": "تحديث تفاصيل المنتج وإدارة الصور.",
+      "saveChanges": "حفظ التغييرات",
+      "deleteProduct": "حذف المنتج",
+      "deleteConfirmation": "هل أنت متأكد أنك تريد حذف هذا المنتج؟ سيؤدي ذلك أيضاً إلى حذف جميع الصور المرتبطة به. لا يمكن التراجع عن هذا الإجراء.",
+      "firstProductPricingPromptTitle": "منتجك الأول أصبح متاحاً",
+      "firstProductPricingPromptDescription": "بداية رائعة! قم بزيارة صفحة الأسعار لاستكشاف الخطط وفتح المزيد من ميزات البيع.",
+      "firstProductPricingPromptStay": "ربما لاحقاً",
+      "firstProductPricingPromptGo": "انتقل إلى الأسعار",
+      "subscriptionRequiredPromptTitle": "الاشتراك مطلوب",
+      "subscriptionRequiredPromptDescription": "لإضافة منتج آخر، تحتاج إلى اشتراك مدفوع نشط. اختر خطة للمتابعة.",
+      "subscriptionRequiredPromptStay": "ليس الآن",
+      "subscriptionRequiredPromptGo": "عرض الأسعار",
+      "currencyHint": "الدولار الأمريكي مطلوب ويظهر كالسعر الرئيسي. يمكن ملء قيم البر الإثيوبي والشلن الكيني تلقائياً باستخدام أسعار الصرف المباشرة ويمكنك تعديلها في أي وقت.",
+      "ratesUpdated": "تم تحديث الأسعار بتاريخ: {date}.",
+      "usdRequired": "سعر الدولار الأمريكي مطلوب ويجب أن يكون أكبر من 0.",
+      "etbRequired": "سعر البر الإثيوبي مطلوب ويجب أن يكون أكبر من 0.",
+      "kshInvalid": "يجب أن يكون سعر الشلن الكيني 0 أو أكثر."
+    },
+    "orders": {
+      "title": "الطلبات",
+      "description": "إدارة مشترياتك ومبيعاتك",
+      "purchases": "المشتريات",
+      "sales": "المبيعات",
+      "myPurchases": "مشترياتي",
+      "mySales": "مبيعاتي",
+      "purchasesDescription": "الطلبات التي قدمتها لشركات أخرى",
+      "salesDescription": "الطلبات التي قدمتها شركات أخرى لمنتجاتك",
+      "searchPlaceholder": "البحث في الطلبات...",
+      "filterByStatus": "تصفية حسب الحالة",
+      "allStatuses": "جميع الحالات",
+      "pending": "قيد الانتظار",
+      "processing": "قيد المعالجة",
+      "completed": "مكتمل",
+      "cancelled": "ملغي",
+      "order": "الطلب",
+      "seller": "البائع",
+      "buyer": "المشتري",
+      "amount": "المبلغ",
+      "totalAmount": "المبلغ الإجمالي",
+      "noPurchasesYet": "لا توجد مشتريات بعد. ابدأ التسوق في السوق!",
+      "noSalesYet": "لا توجد مبيعات بعد. أدرج منتجاتك لتبدأ البيع!",
+      "noMatchingOrders": "لا توجد طلبات تطابق معايير بحثك.",
+      "orderPlacedOn": "تم تقديم الطلب في {date}",
+      "orderItems": "عناصر الطلب",
+      "unknownProduct": "منتج غير معروف",
+      "loadingOrder": "جاري تحميل الطلب...",
+      "loadingOrderDetails": "يرجى الانتظار بينما نجلب تفاصيل الطلب.",
+      "cancelOrder": "إلغاء الطلب",
+      "cancelOrderConfirmation": "هل أنت متأكد أنك تريد إلغاء هذا الطلب؟ لا يمكن التراجع عن هذا الإجراء.",
+      "keepOrder": "الاحتفاظ بالطلب",
+      "markAsProcessing": "تحديد كقيد المعالجة",
+      "markAsCompleted": "تحديد كمكتمل",
+      "trackAndManage": "تتبع وإدارة مشترياتك ومبيعاتك"
+    },
+    "business": {
+      "registerTitle": "سجل عملك التجاري",
+      "registerDescription": "أنشئ ملفاً تعريفياً لعملك للبدء في البيع على السوق",
+      "businessInformation": "معلومات العمل التجاري",
+      "businessInfoDescription": "قدم تفاصيل عن عملك. ستتم مراجعة تسجيلك من قبل فريقنا قبل التفعيل.",
+      "businessName": "اسم العمل التجاري",
+      "enterBusinessName": "أدخل اسم عملك التجاري",
+      "description": "الوصف",
+      "businessDescription": "وصف موجز لعملك",
+      "descriptionHelp": "صف ما يفعله عملك وما هي المنتجات/الخدمات التي تقدمها.",
+      "country": "الدولة",
+      "selectCountry": "اختر الدولة",
+      "city": "المدينة",
+      "enterCity": "أدخل المدينة",
+      "address": "العنوان",
+      "businessAddress": "عنوان العمل التجاري",
+      "category": "فئة العمل التجاري",
+      "selectCategory": "اختر الفئة",
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "+251 xxx xxx xxxx",
+      "website": "الموقع الإلكتروني",
+      "websitePlaceholder": "https://example.com",
+      "registering": "جاري التسجيل...",
+      "registrationDocuments": "وثائق التسجيل",
+      "businessLicence": "رخصة العمل",
+      "businessLicenceNumber": "رقم رخصة العمل",
+      "businessLicenceNumberPlaceholder": "أدخل رقم الرخصة",
+      "memoOfAssociation": "عقد التأسيس",
+      "tinCertificate": "شهادة الرقم الضريبي (TIN)",
+      "tinCertificateNumber": "رقم شهادة الرقم الضريبي (TIN)",
+      "tinCertificateNumberPlaceholder": "أدخل رقم TIN",
+      "hasImportExportPermit": "هل لديك تصريح استيراد/تصدير (خارجي)؟",
+      "hasImportExportPermitPlaceholder": "اختر...",
+      "hasImportExportPermitYes": "نعم",
+      "hasImportExportPermitNo": "لا",
+      "importExportPermit": "تصريح استيراد/تصدير (خارجي)",
+      "importExportPermitNumber": "رقم تصريح الاستيراد/التصدير",
+      "importExportPermitNumberPlaceholder": "أدخل رقم التصريح (اختياري)",
+      "upload": "تحميل",
+      "uploaded": "تم التحميل",
+      "sellerAgreementLabel": "لقد قرأت وأوافق على",
+      "sellerAgreementLink": "اتفاقية البائع",
+      "sellerAgreementRequired": "يجب عليك قبول اتفاقية البائع للتقدم للبيع.",
+      "buyerVerificationTitle": "تحقق من نشاطك التجاري",
+      "buyerVerificationDescription": "أرسل تفاصيل ومستندات نشاطك التجاري حتى يتمكن حسابك من الشراء من السوق.",
+      "buyerVerificationCardTitle": "توثيق النشاط التجاري للمشتري",
+      "buyerVerificationCardDescription": "يجب أن يكون المشترون على AfriConnect أيضا أنشطة تجارية موثقة. أرسل مستنداتك مرة واحدة وسيراجعها فريقنا.",
+      "buyerVerificationDocumentsTitle": "مستندات التوثيق",
+      "buyerVerificationDocumentsDescription": "حمّل المستندات التي نحتاجها لتأكيد نشاطك التجاري قبل تفعيل عمليات الشراء.",
+      "buyerVerificationSubmitting": "جارٍ الإرسال...",
+      "submitBuyerVerification": "أرسل للتوثيق",
+      "buyerVerificationSubmitted": "تم إرسال توثيق النشاط التجاري بنجاح. سنراجعه قريبًا.",
+      "buyerVerificationFailed": "فشل إرسال توثيق النشاط التجاري.",
+      "sellerApplicationTitle": "قدّم طلبا للبيع",
+      "sellerApplicationDescription": "بعد توثيق نشاطك التجاري، يمكنك التقدم للحصول على صلاحية البيع من دون إعادة رفع مستندات النشاط التجاري.",
+      "sellerApplicationCardTitle": "طلب البائع",
+      "sellerApplicationCardDescription": "يتم مراجعة صلاحية البيع بشكل منفصل عن توثيق النشاط التجاري. اقبل اتفاقية البائع وقدّم طلبك عندما تكون جاهزا للبيع.",
+      "businessVerificationStatusTitle": "توثيق النشاط التجاري",
+      "sellerApplicationBusinessVerified": "تم توثيق نشاطك التجاري وهو جاهز لمراجعة طلب البيع.",
+      "sellerApplicationBusinessPending": "يجب توثيق نشاطك التجاري قبل أن تتمكن من التقدم للبيع.",
+      "sellerApplicationStatusTitle": "حالة صلاحية البيع",
+      "sellerApplicationApproved": "صلاحية البيع مفعلة لهذا الحساب.",
+      "sellerApplicationPending": "طلب البيع الخاص بك قيد المراجعة.",
+      "sellerApplicationRejected": "تم رفض طلب البيع الخاص بك. راجع المتطلبات وقدّم مرة أخرى عندما تصبح جاهزا.",
+      "sellerApplicationNotApplied": "لم تتقدم للبيع بعد.",
+      "sellerApplicationReady": "جاهز للتقديم",
+      "sellerApplicationRequirementsTitle": "ما الذي سيحدث بعد ذلك",
+      "sellerApplicationRequirementBusiness": "يجب أن يكون نشاطك التجاري موثقا بالفعل.",
+      "sellerApplicationRequirementAgreement": "ستراجع وتوافق على اتفاقية البائع الحالية.",
+      "sellerApplicationRequirementReview": "سيقوم المشرف بمراجعة طلب البيع قبل منح صلاحية البائع.",
+      "sellerApplicationSubmitting": "جارٍ الإرسال...",
+      "sellerApplicationApply": "قدّم طلبا للبيع",
+      "sellerApplicationReapply": "أعد التقديم للبيع",
+      "sellerApplicationManageProducts": "إدارة المنتجات",
+      "sellerApplicationOpenBusiness": "افتح ملف النشاط التجاري",
+      "sellerApplicationSubmitted": "تم إرسال طلب البيع بنجاح.",
+      "sellerApplicationFailed": "فشل إرسال طلب البيع.",
+      "sellerApplicationRequiresVerifiedBusiness": "يجب توثيق نشاطك التجاري قبل أن تتمكن من التقدم للبيع.",
+      "verificationStatus": {
+        "pending": "قيد التحقق",
+        "verified": "موثّق",
+        "rejected": "مرفوض"
+      },
+      "sellerStatus": {
+        "not_applied": "لم يتم التقديم",
+        "pending": "قيد المراجعة",
+        "approved": "مقبول",
+        "rejected": "مرفوض"
+      },
+      "profile": {
+        "sellerDescription": "أدر ملف نشاطك التجاري والتحقق وعمليات البائع",
+        "buyerDescription": "أدر ملف نشاطك التجاري والتحقق وطلب البائع",
+        "editProfile": "تعديل الملف الشخصي",
+        "businessProfileTitle": "ملف النشاط التجاري",
+        "editDescription": "حدّث معلومات نشاطك التجاري أدناه",
+        "viewDescription": "تفاصيل نشاطك التجاري ومعلومات التواصل",
+        "verificationPendingMessage": "نشاطك التجاري قيد المراجعة من فريقنا. سيتم تفعيل إمكانية الشراء بعد الموافقة.",
+        "verificationVerifiedMessage": "تم توثيق نشاطك التجاري. يمكنك الآن إضافة المنتجات إلى السلة وإجراء الطلبات.",
+        "verificationRejectedMessage": "تم رفض توثيق نشاطك التجاري. حدّث معلومات نشاطك التجاري ومستنداته أدناه لإعادة التقديم.",
+        "sellerRequiresVerifiedMessage": "وثّق نشاطك التجاري أولاً قبل التقدم للبيع.",
+        "sellerApprovedMessage": "صلاحية البيع مفعّلة لهذا الحساب. يمكنك إدارة المنتجات والمخزون والمدفوعات.",
+        "sellerPendingMessage": "طلب البيع الخاص بك بانتظار مراجعة المشرف.",
+        "sellerRejectedMessage": "تم رفض طلب البيع الخاص بك. يمكنك مراجعة اتفاقية البائع والتقديم مرة أخرى.",
+        "sellerReadyMessage": "تم توثيق نشاطك التجاري. يمكنك الآن التقدم للبيع من دون إعادة رفع مستندات النشاط التجاري.",
+        "verificationDocumentsRejectedDescription": "سيؤدي تحديث هذه الحقول وحفظها إلى إعادة إرسال نشاطك التجاري للمراجعة.",
+        "verificationDocumentsDescription": "حافظ على تحديث مستندات التسجيل الخاصة بك حتى تتم مراجعة نشاطك التجاري بسرعة.",
+        "saving": "جارٍ الحفظ...",
+        "saveChanges": "حفظ التغييرات",
+        "location": "الموقع",
+        "resubmitBadge": "حدّث المستندات واحفظ لإعادة التقديم",
+        "documentUploaded": "تم رفع المستند",
+        "documentMissing": "المستند غير موجود",
+        "licenceNumber": "رقم الرخصة: {number}",
+        "tinNumber": "رقم TIN: {number}",
+        "permitUploaded": "تم رفع التصريح",
+        "permitMissing": "لم يتم رفع التصريح بعد",
+        "notProvided": "غير متوفر",
+        "permitNumber": "رقم التصريح: {number}",
+        "profileUpdated": "تم تحديث ملف النشاط التجاري بنجاح",
+        "profileUpdateFailed": "تعذر تحديث النشاط التجاري",
+        "payoutSettingsTitle": "إعدادات التحويلات",
+        "payoutSettingsDescription": "أضف بياناتك البنكية لاستلام تحويلات السوق.",
+        "bank": "البنك",
+        "selectBank": "اختر البنك",
+        "loadingBanks": "جارٍ تحميل البنوك...",
+        "unableToLoadBanks": "تعذر تحميل البنوك الآن.",
+        "accountName": "اسم الحساب",
+        "accountNumber": "رقم الحساب",
+        "payoutEnabled": "التحويلات مفعّلة",
+        "payoutNotEnabled": "التحويلات غير مفعّلة بعد",
+        "savePayoutSettings": "حفظ إعدادات التحويلات",
+        "payoutSettingsUpdated": "تم تحديث إعدادات التحويلات",
+        "payoutSettingsUpdateFailed": "تعذر تحديث إعدادات التحويلات",
+        "creditProfileTitle": "الملف الائتماني الرقمي",
+        "creditProfileDescription": "راجع سجل معاملاتك وأداء التنفيذ وتنوع المشترين في تقرير واحد للبائع.",
+        "creditProfileAvailability": "يتوفر بعد توثيق نشاطك التجاري. يمكنك أيضاً تصدير تقرير قابل للطباعة للمشاركة.",
+        "openCreditProfile": "فتح الملف الائتماني"
+      }
+    },
+    "cart": {
+      "title": "سلة التسوق",
+      "description": "راجع عناصرك قبل الدفع",
+      "emptyCart": "سلتك فارغة",
+      "emptyCartDescription": "تصفح السوق للعثور على منتجات",
+      "browseMarketplace": "تصفح السوق",
+      "subtotal": "المجموع الفرعي",
+      "total": "الإجمالي",
+      "checkout": "إتمام الشراء",
+      "removeItem": "إزالة العنصر",
+      "updateQuantity": "تحديث الكمية",
+      "buyerAgreementRequired": "يجب عليك قبول اتفاقية المشتري قبل إتمام الشراء."
+    },
+    "dashboard": {
+      "title": "لوحة القيادة",
+      "welcome": "مرحباً بعودتك! إليك نظرة عامة على طلباتك.",
+      "welcomeBack": "مرحباً بعودتك،",
+      "overview": "نظرة عامة",
+      "recentOrders": "الطلبات الأخيرة",
+      "recentProducts": "المنتجات الأخيرة",
+      "quickStats": "إحصائيات سريعة",
+      "totalRevenue": "إجمالي الإيرادات",
+      "totalOrders": "إجمالي الطلبات",
+      "totalProducts": "إجمالي المنتجات",
+      "pendingOrders": "طلبات قيد الانتظار",
+      "discoverProducts": "اكتشف المنتجات",
+      "browseDescription": "تصفح المنتجات من الشركات عبر أفريقيا"
+    },
+    "settings": {
+      "title": "الإعدادات",
+      "description": "إدارة إعدادات حسابك وتفضيلاتك",
+      "profile": "الملف الشخصي",
+      "profileDescription": "تحديث معلومات ملفك الشخصي",
+      "displayName": "الاسم المستعار",
+      "enterName": "أدخل اسمك",
+      "displayNameHelp": "هذا هو اسمك الذي سيظهر. يمكن أن يكون مختلفاً عن اسم حسابك.",
+      "noNameSet": "لم يتم تعيين اسم",
+      "accountInfo": "معلومات الحساب",
+      "accountInfoDescription": "تفاصيل حسابك",
+      "email": "البريد الإلكتروني",
+      "emailHelp": "يتم إدارة البريد الإلكتروني بواسطة Clerk. لتغييره، قم بتحديث إعدادات حسابك.",
+      "userId": "معرف المستخدم",
+      "verifyBusinessLabel": "تحقق من نشاطك التجاري",
+      "verifyBusinessDescription": "قدّم تفاصيل نشاطك التجاري لتفعيل الشراء",
+      "verifyBusinessDescriptionIncomplete": "أكمل توثيق نشاطك التجاري لتفعيل الشراء",
+      "applyToSellLabel": "تقدّم للبيع",
+      "applyToSellDescription": "اقبل اتفاقية البائع وقدّم طلبك كبائع"
+    },
+    "billing": {
+      "title": "الفواتير",
+      "description": "عرض تاريخ المدفوعات وإدارة الفواتير",
+      "paymentMethod": "طريقة الدفع",
+      "paymentMethodDescription": "مدفوعات آمنة مدعومة من Chapa",
+      "chapaGateway": "بوابة دفع Chapa",
+      "chapaDescription": "ادفع بأمان عبر الهاتف المحمول، التحويل البنكي، أو البطاقة",
+      "learnMore": "لمعرفة المزيد",
+      "paymentHistory": "تاريخ المدفوعات",
+      "paymentHistoryDescription": "عرض معاملاتك الأخيرة",
+      "noPaymentHistory": "لا يوجد تاريخ مدفوعات بعد",
+      "date": "التاريخ",
+      "reference": "المرجع",
+      "type": "النوع",
+      "amount": "المبلغ",
+      "failed": "فشل"
+    },
+    "pricing": {
+      "title": "تسعير بسيط وشفاف",
+      "description": "اختر الخطة التي تناسب احتياجات عملك. جميع الخطط تشمل الوصول إلى سوق B2B وأدوات الامتثال لاتفاقية AfCFTA.",
+      "subtitle": "اختر الخطة التي تناسب احتياجات عملك. جميع الخطط تشمل الوصول إلى سوق B2B وأدوات الامتثال لاتفاقية AfCFTA.",
+      "backToHome": "العودة للرئيسية",
+      "loadingPlans": "جاري تحميل الخطط...",
+      "monthly": "شهري",
+      "annual": "سنوي",
+      "savePercent": "وفر {percent}%",
+      "perMonth": "/شهرياً",
+      "perYear": "/سنوياً",
+      "billedAnnually": "{amount}/شهرياً تدفع سنوياً",
+      "mostPopular": "الأكثر رواجاً",
+      "currentPlan": "الخطة الحالية",
+      "getStarted": "ابدأ الآن",
+      "contactSales": "اتصل بالمبيعات",
+      "custom": "مخصص",
+      "compareFeatures": "قارن جميع الميزات",
+      "faq": {
+        "title": "الأسئلة الشائعة",
+        "changePlan": {
+          "question": "هل يمكنني تغيير خطتي لاحقاً؟",
+          "answer": "نعم، يمكنك ترقية أو خفض خطتك في أي وقت. عند الترقية، ستحصل على وصول فوري للميزات الجديدة. عند خفض الخطة، سيبدأ التغيير في دورة الفوترة التالية."
+        },
+        "paymentMethods": {
+          "question": "ما هي طرق الدفع التي تقبلونها؟",
+          "answer": "نقبل المدفوعات عبر Chapa، والتي تدعم خدمات الدفع عبر الهاتف، التحويلات البنكية، والبطاقات. تتم معالجة جميع المدفوعات بأمان."
+        },
+        "freeTrial": {
+          "question": "هل توجد فترة تجريبية مجانية؟",
+          "answer": "يمكن للشركات الجديدة البدء بخطة Starter لاستكشاف المنصة. اتصل بنا للحصول على خيارات تجريبية للمؤسسات الكبرى."
+        },
+        "limits": {
+          "question": "ماذا يحدث عندما أصل إلى حدود خطتي؟",
+          "answer": "ستتلقى إشعارات عند اقترابك من حدود الخطة. عند الوصول إلى الحد، يمكنك ترقية خطتك لمواصلة استخدام تلك الميزة."
+        }
+      },
+      "cta": {
+        "title": "هل تحتاج إلى حل مخصص؟",
+        "description": "تقدم خطة Enterprise ميزات مخصصة، دعماً مخصصاً، وتكاملات مصممة للمنظمات الكبيرة."
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter (للمبتدئين)",
+          "target": "الشركات الصغيرة جداً",
+          "description": "مثالية للشركات الصغيرة التي بدأت للتو"
+        },
+        "growth": {
+          "name": "Growth (للنمو)",
+          "target": "الشركات الصغيرة والمتوسطة المتنامية",
+          "description": "للشركات المتنامية المستعدة للتوسع"
+        },
+        "pro": {
+          "name": "Pro (للمحترفين)",
+          "target": "السوق المتوسطة",
+          "description": "خطة كاملة الميزات للشركات القائمة"
+        },
+        "enterprise": {
+          "name": "Enterprise (للمؤسسات)",
+          "target": "المنظمات الكبيرة",
+          "description": "حلول مخصصة للمنظمات الكبيرة"
+        }
+      },
+      "features": {
+        "products": "المنتجات",
+        "monthlyOrders": "الطلبات الشهرية",
+        "originCalculations": "حسابات المنشأ",
+        "hsCodeLookups": "البحث عن رموز HS",
+        "teamMembers": "أعضاء الفريق",
+        "prioritySupport": "دعم ذو أولوية",
+        "analytics": "التحليلات",
+        "apiAccess": "الوصول إلى API",
+        "unlimited": "غير محدود"
+      }
+    },
+    "subscription": {
+      "title": "الاشتراك",
+      "description": "إدارة اشتراكك وفواتيرك",
+      "businessRequired": "العمل التجاري مطلوب",
+      "businessRequiredDescription": "تحتاج إلى تسجيل عمل تجاري قبل أن تتمكن من الاشتراك في خطة.",
+      "registerBusiness": "سجل عملك التجاري",
+      "noActiveSubscription": "لا يوجد اشتراك نشط",
+      "noSubscriptionDescription": "أنت حالياً في الفئة المجانية بميزات محدودة. قم بالترقية لفتح المزيد من المنتجات، الطلبات، وأدوات الامتثال.",
+      "viewPlans": "عرض الخطط",
+      "currentPlan": "الخطة الحالية",
+      "billedMonthly": "يتم إصدار الفاتورة شهرياً",
+      "billedAnnually": "يتم إصدار الفاتورة سنوياً",
+      "currentPeriod": "الفترة الحالية",
+      "cancelsSoon": "سينتهي قريباً",
+      "active": "نشط",
+      "trial": "تجريبي",
+      "pastDue": "متأخر السداد",
+      "cancelled": "ملغي",
+      "cancellationNotice": "سينتهي اشتراكك في {date}",
+      "trialNotice": "تنتهي فترتك التجريبية في {date}",
+      "changePlan": "تغيير الخطة",
+      "reactivate": "إعادة تفعيل الاشتراك",
+      "reactivating": "جاري إعادة التفعيل...",
+      "cancel": "إلغاء الاشتراك",
+      "cancelling": "جاري الإلغاء...",
+      "usageThisMonth": "الاستخدام هذا الشهر",
+      "usageDescription": "تتبع استخدامك مقابل حدود خطتك",
+      "planFeatures": "ميزات الخطة",
+      "planFeaturesDescription": "الميزات المضمنة في خطة {plan} الخاصة بك",
+      "paymentSuccessful": "تمت عملية الدفع بنجاح!",
+      "subscriptionActivated": "تم تفعيل اشتراكك.",
+      "subscriptionCancelled": "تم إلغاء الاشتراك",
+      "subscriptionCancelledDescription": "سيبقى اشتراكك نشطاً حتى نهاية فترة الفوترة.",
+      "subscriptionReactivated": "تم إعادة تفعيل الاشتراك",
+      "subscriptionReactivatedDescription": "سيستمر اشتراكك في نهاية فترة الفوترة.",
+      "failedToCancel": "فشل إلغاء الاشتراك",
+      "failedToReactivate": "فشل إعادة تفعيل الاشتراك"
+    },
+    "validation": {
+      "required": "هذا الحقل مطلوب",
+      "invalidEmail": "بريد إلكتروني غير صالح",
+      "minLength": "يجب أن يكون على الأقل {min} أحرف",
+      "maxLength": "يجب أن يكون على الأكثر {max} أحرف",
+      "selectCountry": "يرجى اختيار دولة",
+      "selectCategory": "يرجى اختيار فئة العمل التجاري"
+    },
+    "toast": {
+      "productCreated": "تم إنشاء المنتج! أضف الآن صوراً لإكمال قائمتك.",
+      "productUpdated": "تم تحديث المنتج بنجاح",
+      "productDeleted": "تم حذف المنتج بنجاح",
+      "productListingComplete": "اكتمل إدراج المنتج!",
+      "addImageSuggestion": "فكر في إضافة صورة واحدة على الأقل لمساعدة منتجك على البروز.",
+      "businessRegistered": "تم تسجيل العمل التجاري بنجاح! في انتظار التحقق.",
+      "orderStatusUpdated": "تم تحديث حالة الطلب",
+      "orderDeleted": "تم حذف الطلب بنجاح",
+      "error": "حدث خطأ ما",
+      "failedToCreate": "فشل إنشاء المنتج",
+      "failedToUpdate": "فشل تحديث المنتج",
+      "failedToDelete": "فشل حذف المنتج",
+      "failedToDeleteOrder": "فشل حذف الطلب",
+      "failedToUpdateOrder": "فشل تحديث الطلب",
+      "failedToRegisterBusiness": "فشل تسجيل العمل التجاري"
+    },
+    "landing": {
+      "hero": {
+        "badge": "سوق B2B لأفريقيا",
+        "title": "بناء نظام التشغيل الرقمي",
+        "titleHighlight": "للتجارة لعموم أفريقيا",
+        "description": "سوق B2B يربط الشركات عبر القارة. اكتشف المنتجات، واعثر على الموردين، ونمِ عملك مع شركات أفريقية موثقة.",
+        "getStarted": "ابدأ الآن",
+        "browseMarketplace": "تصفح السوق",
+        "exploreProducts": "استكشف المنتجات"
+      },
+      "benefits": {
+        "item1": "الانضمام مجاني",
+        "item2": "شركات موثقة",
+        "item3": "مدفوعات آمنة",
+        "item4": "دعم لغات متعددة"
+      },
+      "categories": {
+        "title": "استكشف الفئات",
+        "description": "اكتشف منتجات عبر مختلف الصناعات من شركات أفريقية",
+        "viewAll": "عرض جميع الفئات",
+        "rawMaterials": "مواد خام",
+        "agriculture": "الزراعة",
+        "miningMinerals": "التعدين والمعادن",
+        "electronics": "إلكترونيات",
+        "textilesFashion": "المنسوجات والموضة",
+        "foodBeverages": "الأغذية والمشروبات",
+        "construction": "البناء",
+        "industrialEquipment": "المعدات الصناعية"
+      },
+      "howItWorks": {
+        "title": "كيف يعمل",
+        "description": "ابدأ في أربع خطوات بسيطة",
+        "step1Title": "إنشاء حساب",
+        "step1Desc": "سجل مجاناً وأنشئ ملفك الشخصي في دقائق.",
+        "step2Title": "تسجيل العمل التجاري",
+        "step2Desc": "أضف تفاصيل عملك ليتم توثيقه وبناء الثقة.",
+        "step3Title": "أدرج أو تصفح",
+        "step3Desc": "أدرج منتجاتك للبيع أو تصفح السوق للشراء.",
+        "step4Title": "اتصل وتداول",
+        "step4Desc": "تواصل مع الشركات وابدأ التداول بأمان."
+      },
+      "features": {
+        "title": "ماذا نقدم",
+        "description": "كل ما تحتاجه للتداول بثقة",
+        "marketplace": "السوق",
+        "marketplaceDesc": "تصفح وأدرج المنتجات في سوق B2B الخاص بنا. اعثر على ما تحتاجه أو صل لعملاء جدد.",
+        "verification": "توثيق الأعمال",
+        "verificationDesc": "شارات موثقة للشركات التي تكمل عملية التوثيق لدينا، لبناء الثقة في كل معاملة.",
+        "securePayments": "مدفوعات آمنة",
+        "securePaymentsDesc": "معالجة مدفوعات آمنة وموثوقة لمعاملات عملك التجاري.",
+        "multiLanguage": "لغات متعددة",
+        "multiLanguageDesc": "استخدم المنصة بالإنجليزية، الأمهرية، أو السواحيلية لتجربة سلسة.",
+        "community": "مجتمع متنامي",
+        "communityDesc": "انضم إلى شبكة متنامية من الشركات الأفريقية التي تتطلع للتواصل والتداول."
+      },
+      "cta": {
+        "title": "هل أنت مستعد للبدء؟",
+        "description": "انضم إلى مجتمعنا المتنامي من الشركات الأفريقية. أنشئ حسابك المجاني اليوم.",
+        "createAccount": "إنشاء حساب مجاني",
+        "goToDashboard": "انتقل إلى لوحة القيادة",
+        "explore": "استكشف المنتجات"
+      },
+      "trust": {
+        "securePayments": "مدفوعات آمنة",
+        "securePaymentsDesc": "معالجة آمنة للمعاملات",
+        "verifiedBusinesses": "شركات موثقة",
+        "verifiedBusinessesDesc": "الثقة من خلال التوثيق",
+        "multiLanguage": "لغات متعددة",
+        "multiLanguageDesc": "دعم الإنجليزية، الأمهرية، والسواحيلية"
+      },
+      "footer": {
+        "tagline": "سوق B2B يربط الشركات عبر أفريقيا.",
+        "marketplace": "السوق",
+        "browseProducts": "تصفح المنتجات",
+        "businessDirectory": "دليل الأعمال",
+        "categories": "الفئات",
+        "forBusinesses": "للشركات",
+        "registerBusiness": "تسجيل عمل تجاري",
+        "listProducts": "إدراج المنتجات",
+        "dashboard": "لوحة القيادة",
+        "legal": "قانوني",
+        "allRightsReserved": "جميع الحقوق محفوظة.",
+        "privacyPolicy": "سياسة الخصوصية",
+        "termsOfService": "شروط الخدمة",
+        "madeForAfrica": "صنع لأجل أفريقيا"
+      },
+      "nav": {
+        "marketplace": "السوق",
+        "pricing": "الأسعار",
+        "categories": "الفئات",
+        "howItWorks": "كيف يعمل",
+        "features": "الميزات",
+        "signIn": "تسجيل الدخول",
+        "getStarted": "ابدأ الآن",
+        "dashboard": "لوحة القيادة"
+      }
+    },
+    "verificationBanner": {
+      "message": "يرجى التحقق من بريدك الإلكتروني للوصول إلى جميع الميزات.",
+      "resend": "إعادة إرسال",
+      "verify": "تحقق",
+      "sent": "تم إرسال البريد!",
+      "dismiss": "تجاهل"
+    },
+    "verifyEmail": {
+      "verifying": {
+        "title": "جاري التحقق من بريدك الإلكتروني",
+        "description": "يرجى الانتظار بينما نتحقق من عنوان بريدك الإلكتروني..."
+      },
+      "success": {
+        "title": "تم التحقق من البريد الإلكتروني!",
+        "description": "تم التحقق من بريدك الإلكتروني بنجاح. يمكنك الآن الوصول إلى جميع الميزات.",
+        "goToDashboard": "انتقل إلى لوحة القيادة",
+        "signIn": "تسجيل الدخول"
+      },
+      "error": {
+        "title": "فشل التحقق",
+        "description": "لم نتمكن من التحقق من بريدك الإلكتروني. قد يكون الرابط منتهياً أو تم استخدامه بالفعل.",
+        "requestNewLink": "طلب رابط جديد"
+      },
+      "pending": {
+        "title": "تحقق من بريدك الإلكتروني",
+        "description": "يرجى مراجعة صندوق الوارد الخاص بك للحصول على رابط التحقق.",
+        "descriptionWithEmail": "لقد أرسلنا رابط تحقق إلى {email}. يرجى مراجعة صندوق الوارد الخاص بك."
+      },
+      "resend": {
+        "button": "إعادة إرسال بريد التحقق",
+        "sending": "جاري الإرسال...",
+        "sent": "تم إرسال بريد التحقق! يرجى مراجعة صندوق الوارد الخاص بك.",
+        "cooldown": "إعادة الإرسال خلال {seconds} ثانية"
+      },
+      "skipForNow": "تخطي الآن",
+      "signInToResend": "سجل الدخول لإعادة إرسال بريد التحقق"
+    },
+    "cookieConsent": {
+      "title": "نحن نستخدم ملفات تعريف الارتباط",
+      "description": "نستخدم ملفات تعريف الارتباط لتحسين تجربة التصفح لديك، وتحليل حركة المرور على الموقع، وتخصيص المحتوى. بالنقر فوق \"قبول الكل\"، فإنك توافق على استخدامنا لملفات تعريف الارتباط. اقرأ",
+      "privacyPolicy": "سياسة الخصوصية",
+      "acceptAll": "قبول الكل",
+      "rejectNonEssential": "رفض غير الضرورية",
+      "customize": "تخصيص",
+      "close": "إغلاق",
+      "settings": {
+        "title": "تفضيلات ملفات تعريف الارتباط",
+        "description": "إدارة تفضيلات ملفات تعريف الارتباط الخاصة بك. يتم تمكين ملفات تعريف الارتباط الأساسية دائماً لأنها ضرورية لعمل الموقع بشكل صحيح.",
+        "save": "حفظ التفضيلات",
+        "essential": {
+          "title": "ملفات تعريف الارتباط الأساسية",
+          "description": "مطلوبة لوظائف الموقع الأساسية. لا يمكن تعطيلها."
+        },
+        "functional": {
+          "title": "ملفات تعريف الارتباط الوظيفية",
+          "description": "تتذكر تفضيلاتك وإعداداتك لتجربة أفضل."
+        },
+        "analytics": {
+          "title": "ملفات تعريف الارتباط التحليلية",
+          "description": "تساعدنا على فهم كيفية تفاعل الزوار مع موقعنا."
+        },
+        "marketing": {
+          "title": "ملفات تعريف الارتباط التسويقية",
+          "description": "تُستخدم لتقديم إعلانات ذات صلة وتتبع الحملات."
+  },
+  "adminBanks": {
+    "title": "إدارة البنوك",
+    "description": "أنشئ البنوك الشريكة، وعيّن مستخدمي البنوك، وراقب قدرة الإحالات.",
+    "stats": {
+      "partnerBanks": "البنوك الشريكة",
+      "bankUsers": "مستخدمو البنوك",
+      "trackedReferrals": "الإحالات المتتبعة"
+    },
+    "createBank": {
+      "title": "إنشاء بنك",
+      "description": "أنشئ ملفاً تعريفياً لبنك يمكنه امتلاك الإحالات والوصول إلى لوحات BI.",
+      "namePlaceholder": "اسم البنك",
+      "descriptionPlaceholder": "الوصف (اختياري)",
+      "action": "إنشاء بنك",
+      "creating": "جارٍ الإنشاء...",
+      "success": "تم إنشاء البنك بنجاح",
+      "error": "فشل إنشاء البنك"
+    },
+    "assignUser": {
+      "title": "تعيين مستخدم بنك",
+      "description": "قم بترقية مستخدم حالي إلى حساب بنك واربطه ببنك محدد.",
+      "searchPlaceholder": "ابحث عن المستخدمين بالاسم أو البريد الإلكتروني",
+      "selectUser": "اختر مستخدماً",
+      "selectBank": "اختر بنكاً",
+      "action": "تعيين المستخدم",
+      "assigning": "جارٍ التعيين...",
+      "success": "تم تعيين المستخدم إلى البنك",
+      "error": "فشل تعيين المستخدم"
+    },
+    "directory": {
+      "title": "دليل البنوك",
+      "description": "راجع البنوك النشطة وعدد الشركات الصغيرة والمتوسطة في كل محفظة.",
+      "empty": "لم يتم إنشاء أي بنك بعد.",
+      "columns": {
+        "bank": "البنك",
+        "status": "الحالة",
+        "referralPrefix": "بادئة الإحالة",
+        "users": "المستخدمون",
+        "referrals": "الإحالات",
+        "portfolio": "المحفظة"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "غير متاح"
+    },
+    "stages": {
+      "generated": "تمت الإحالة",
+      "signed_up": "تم التسجيل",
+      "business_created": "تم إنشاء النشاط",
+      "verified": "تم التحقق",
+      "active": "نشط"
+    },
+    "overview": {
+      "fallbackTitle": "لوحة البنك",
+      "description": "تتبّع تحويل الإحالات، وإدخال الشركات الصغيرة والمتوسطة، وأداء المحفظة.",
+      "referralBase": "أساس الإحالة: {code}",
+      "stats": {
+        "totalReferrals": "إجمالي الإحالات",
+        "portfolioSmes": "شركات المحفظة",
+        "portfolioSmesMeta": "{verified} تم التحقق منها، {active} نشطة",
+        "portfolioRevenue": "إيرادات المحفظة",
+        "portfolioRevenueMeta": "{orders} طلبات عبر الشركات المُحالة",
+        "successfulPayouts": "الدفعات الناجحة",
+        "successfulPayoutsMeta": "{products} منتجاً مدرجاً من شركاتك"
+      },
+      "funnel": {
+        "title": "قمع الإحالة",
+        "description": "رحلة كاملة من إنشاء الإحالة حتى مشاركة الشركة الصغيرة والمتوسطة بشكل فعّال."
+      },
+      "momentum": {
+        "title": "الزخم الشهري",
+        "description": "حركة الإحالات والانضمام والإيرادات عبر محفظتك خلال الفترة الأخيرة.",
+        "referred": "{count} إحالة",
+        "onboarded": "{count} تم إدخالهم",
+        "verified": "{count} تم التحقق منهم"
+      },
+      "recentPortfolio": {
+        "title": "أحدث شركات المحفظة",
+        "description": "المنظمات التي انضمت حديثاً أو تم ربطها مؤخراً من خلال بنكك.",
+        "cta": "عرض المحفظة",
+        "empty": "لا توجد بعد شركات مُحالة أنشأت نشاطاً تجارياً.",
+        "products": "{count} منتجات",
+        "orders": "{count} طلبات",
+        "revenue": "إيراد {amount}"
+      },
+      "recentReferrals": {
+        "title": "أحدث الإحالات",
+        "description": "أحدث سجلات الإحالة وموقع كل عميل محتمل حالياً.",
+        "cta": "إدارة الإحالات",
+        "empty": "لا توجد سجلات إحالة بعد. ابدأ بإنشاء رابط إحالة خاص بالبنك."
+      }
+    },
+    "portfolio": {
+      "heading": "المحفظة",
+      "title": "شركات المحفظة",
+      "description": "راجع كل شركة صغيرة ومتوسطة أحالها بنكك ومدى تقدمها.",
+      "filtersDescription": "قم بالتصفية حسب مرحلة الإدخال والموقع والقطاع لمراجعة الأداء.",
+      "searchPlaceholder": "ابحث عن نشاط أو مالك أو بريد إلكتروني",
+      "filterByStage": "التصفية حسب المرحلة",
+      "allStages": "جميع المراحل",
+      "country": "الدولة",
+      "allCountries": "كل الدول",
+      "category": "الفئة",
+      "allCategories": "كل الفئات",
+      "empty": "لا توجد شركات تطابق عوامل التصفية الحالية.",
+      "unknownOwner": "مالك غير معروف",
+      "noEmail": "لا يوجد بريد إلكتروني",
+      "view": "عرض",
+      "columns": {
+        "business": "النشاط",
+        "owner": "المالك",
+        "stage": "المرحلة",
+        "products": "المنتجات",
+        "orders": "الطلبات",
+        "revenue": "الإيراد",
+        "drillDown": "التفاصيل"
+      }
+    },
+    "detail": {
+      "description": "عرض تفصيلي للشركة الصغيرة والمتوسطة يشمل الإدخال والملكية والنشاط التجاري.",
+      "stats": {
+        "revenue": "الإيراد",
+        "orders": "الطلبات",
+        "products": "المنتجات",
+        "netPayouts": "صافي الدفعات"
+      },
+      "snapshot": {
+        "title": "لمحة عن النشاط",
+        "description": "تفاصيل المؤسسة الأساسية ووضعها الحالي في الإدخال.",
+        "country": "الدولة",
+        "category": "الفئة",
+        "verificationStatus": "حالة التحقق",
+        "joinedPlatform": "تاريخ الانضمام",
+        "businessDescription": "الوصف",
+        "noDescription": "لا يوجد وصف"
+      },
+      "owner": {
+        "title": "بيانات المالك",
+        "description": "المالك الأساسي للحساب والمسؤول عن الشركة على المنصة.",
+        "unknownOwner": "مالك غير معروف",
+        "noEmail": "لا يوجد بريد إلكتروني",
+        "referralTracking": "تتبع الإحالة",
+        "code": "الرمز",
+        "currentReferralRecord": "سجل الإحالة الحالي"
+      },
+      "monthly": {
+        "title": "الأداء الشهري",
+        "description": "اتجاه الإيرادات والطلبات الحديثة لهذا الحساب ضمن المحفظة.",
+        "orders": "{count} طلبات"
+      }
+    },
+    "referrals": {
+      "title": "الإحالات",
+      "description": "أنشئ روابط تسجيل قابلة للتتبع للشركات الصغيرة والمتوسطة وراقب كل مرحلة من التحويل.",
+      "unnamedReferral": "إحالة بدون اسم",
+      "unnamedLead": "عميل محتمل بدون اسم",
+      "noExtraMetadata": "لا توجد بيانات إضافية",
+      "create": {
+        "title": "إنشاء رابط إحالة",
+        "description": "أنشئ رمز تسجيل فريد لشركة صغيرة أو مؤسسة أو عميل محتمل.",
+        "organizationPlaceholder": "اسم المؤسسة",
+        "emailPlaceholder": "البريد الإلكتروني للدعوة (اختياري)",
+        "notesPlaceholder": "ملاحظات (اختياري)",
+        "action": "إنشاء إحالة",
+        "creating": "جارٍ الإنشاء...",
+        "success": "تم إنشاء الإحالة {code}",
+        "error": "فشل إنشاء الإحالة"
+      },
+      "playbook": {
+        "title": "دليل الإحالات",
+        "description": "كل رمز يتم إنشاؤه يصنع رحلة انضمام قابلة للقياس لمحفظة البنك.",
+        "howItWorks": "كيف يعمل",
+        "step1": "1. أنشئ سجل إحالة لعميل محتمل من الشركات الصغيرة والمتوسطة.",
+        "step2": "2. شارك رابط التسجيل الذي تم إنشاؤه مع تلك المؤسسة.",
+        "step3": "3. بمجرد التسجيل والانضمام، سيتم تحديث هذه الصفحة تلقائياً.",
+        "defaultSignupBase": "رابط التسجيل الأساسي",
+        "baseUrlFallback": "سيظهر رابط التسجيل الأساسي هنا في المتصفح."
+      },
+      "register": {
+        "title": "سجل الإحالات",
+        "description": "تتبّع كل رمز، والجهة المستهدفة، وما إذا تحولت إلى شركة نشطة.",
+        "empty": "لا توجد إحالات تم إنشاؤها بعد.",
+        "copySuccess": "تم نسخ رابط الإحالة",
+        "copyError": "تعذر نسخ رابط الإحالة",
+        "columns": {
+          "lead": "العميل المحتمل",
+          "referralCode": "رمز الإحالة",
+          "status": "الحالة",
+          "linkedSme": "الشركة المرتبطة",
+          "created": "تاريخ الإنشاء",
+          "copyLink": "نسخ الرابط"
+        }
+      }
+    },
+    "analytics": {
+      "title": "التحليلات",
+      "description": "قسّم محفظتك حسب الدولة والفئة ومرحلة الإدخال والمخرجات الشهرية.",
+      "byCategory": {
+        "title": "حسب الفئة",
+        "description": "ما القطاعات الأكثر حضوراً ضمن قاعدة الشركات المُحالة؟"
+      },
+      "byCountry": {
+        "title": "حسب الدولة",
+        "description": "الانتشار الجغرافي للمؤسسات التي أحالها البنك."
+      },
+      "byStage": {
+        "title": "حسب المرحلة",
+        "description": "إلى أي مدى تقدمت المحفظة داخل القمع."
+      },
+      "monthly": {
+        "title": "الاتجاه الشهري",
+        "description": "راقب إنشاء المحفظة وتفعيلها وقيمتها التجارية بمرور الوقت.",
+        "newSmes": "{count} شركات جديدة",
+        "active": "{count} نشطة"
+      }
+    }
+  }
+      }
+    },
+    "legal": {
+      "backToHome": "العودة للرئيسية",
+      "tableOfContents": "جدول المحتويات",
+      "viewPrivacyPolicy": "عرض سياسة الخصوصية",
+      "viewTermsOfService": "عرض شروط الخدمة",
+      "terms": {
+        "title": "شروط الخدمة",
+        "lastUpdated": "آخر تحديث",
+        "lastUpdatedDate": "يناير 2026",
+        "introduction": "مرحباً بكم في AfriConnect. تحكم شروط الخدمة هذه (\"الشروط\") وصولكم واستخدامكم لمنصة AfriConnect، بما في ذلك موقعنا الإلكتروني وتطبيقات الهاتف والخدمات (يُشار إليها مجتمعة باسم \"المنصة\"). من خلال الوصول إلى منصتنا أو استخدامها، فإنكم توافقون على الالتزام بهذه الشروط وبسياسة الخصوصية الخاصة بنا. يرجى قراءتها بعناية قبل استخدام خدماتنا.",
+        "acceptance": {
+          "title": "قبول الشروط",
+          "content": "بإنشاء حساب أو الوصول إلى منصة AfriConnect أو استخدامها، فإنك تقر بأنك قرأت وفهمت ووافقت على الالتزام بشروط الخدمة هذه. إذا كنت لا توافق على هذه الشروط، فلا يجوز لك الوصول إلى منصتنا أو استخدامها.\n\nتشكل هذه الشروط اتفاقية ملزمة قانوناً بينك وبين شركة AfriConnect Inc. قد نقوم بتحديث هذه الشروط من وقت لآخر، ويشكل استمرار استخدامك للمنصة بعد أي تغييرات قبولاً للشروط الجديدة.\n\nإذا كنت تستخدم المنصة نيابة عن شركة أو كيان قانوني آخر، فإنك تقر بأن لديك الصلاحية لإلزام هذا الكيان بهذه الشروط."
+        },
+        "eligibility": {
+          "title": "متطلبات الأهلية",
+          "content": "لاستخدام AfriConnect، يجب عليك:\n\n• أن تكون قد بلغت سن 18 عاماً على الأقل أو سن الرشد القانوني في ولايتك القضائية\n• أن تكون كياناً تجارياً مسجلاً أو ممثلاً مفوضاً له\n• أن تمتلك الأهلية القانونية لإبرام عقود ملزمة\n• ألا تكون محظوراً من استخدام المنصة بموجب القوانين المعمول بها\n• تقديم معلومات تسجيل دقيقة وكاملة\n\nبتسجيل حساب، فإنك تقر وتضمن أنك تستوفي جميع متطلبات الأهلية. نحن نحتفظ بالحق في رفض الخدمة أو إنهاء الحسابات أو إلغاء الطلبات وفقاً لتقديرنا إذا رأينا أنك لا تستوفي هذه المتطلبات."
+        },
+        "accounts": {
+          "title": "تسجيل الحساب وأمنه",
+          "content": "عند إنشاء حساب على AfriConnect، فإنك توافق على:\n\n• تقديم معلومات دقيقة وحالية وكاملة أثناء التسجيل\n• الحفاظ على معلومات حسابك وتحديثها فوراً\n• الحفاظ على سرية بيانات تسجيل الدخول الخاصة بك\n• عدم مشاركة حسابك مع الآخرين أو السماح بالوصول غير المصرح به\n• إخطارنا فوراً بأي استخدام غير مصرح به لحسابك\n• أن تكون مسؤولاً عن جميع الأنشطة التي تحدث تحت حسابك\n\nقد نتحقق من أوراق اعتماد عملك وقد نطلب وثائق إضافية. قد تؤدي المعلومات الخاطئة أو المضللة إلى تعليق الحساب أو إنهائه.\n\nأنت وحدك المسؤول عن الحفاظ على سرية بيانات اعتماد حسابك وعن تقييد الوصول إلى أجهزتك."
+        },
+        "marketplace": {
+          "title": "قواعد وسلوك السوق",
+          "content": "تعمل AfriConnect كسوق B2B يربط بين المشترين والبائعين عبر أفريقيا. يوافق المستخدمون على:\n\n• إجراء جميع المعاملات بحسن نية وبنية صادقة\n• تقديم أوصاف دقيقة للمنتجات والأسعار ومعلومات التوفر\n• الالتزام بالطلبات المؤكدة والجدول الزمني للتسليم\n• الحفاظ على تواصل مهني مع المستخدمين الآخرين\n• الامتثال لجميع قوانين ولوائح التجارة المعمول بها\n• عدم التلاعب بالأسعار أو المراجعات أو مقاييس السوق\n\nيجب على البائعين التأكد من أن المنتجات تلبي المواصفات الموصوفة ومعايير الجودة. يجب على المشترين سداد المدفوعات كما هو متفق عليه وتقديم معلومات شحن دقيقة.\n\nنحتفظ بالحق في إزالة القوائم أو تعليق الحسابات أو اتخاذ إجراءات أخرى للحفاظ على نزاهة السوق."
+        },
+        "payments": {
+          "title": "المدفوعات والمعاملات",
+          "content": "تتم معالجة جميع المعاملات المالية على AfriConnect من خلال نظام الدفع الآمن الخاص بنا والمدعوم من Chapa وغيرهم من مزودي خدمات الدفع المرخصين.\n\n• يجب سداد المدفوعات باستخدام طرق الدفع المعتمدة\n• سيتم الإفصاح بوضوح عن رسوم المعاملات والضرائب المعمول بها\n• تعتمد تحويلات العملات على أسعار الصرف السائدة\n• تخضع المرتجعات لسياسة الاسترداد الخاصة بنا وشروط البائع\n• قد يتم استخدام خدمات الضمان (Escrow) لمعاملات ضمان التجارة\n\nنحن لا نخزن تفاصيل بطاقة الدفع الكاملة. تتوافق جميع معالجات الدفع مع معايير PCI-DSS.\n\nسيتم التعامل مع المعاملات المتنازع عليها وفقاً لإجراءات حل النزاعات الخاصة بنا. قد تؤدي عمليات رد المبالغ المدفوعة (Chargebacks) إلى قيود على الحساب."
+        },
+        "prohibited": {
+          "title": "الأنشطة المحظورة",
+          "content": "يُحظر تماماً على المستخدمين:\n\n• بيع السلع المقلدة أو المسروقة أو التي تم الحصول عليها بطريقة غير قانونية\n• المشاركة في الاحتيال أو غسيل الأموال أو المعاملات غير القانونية\n• الالتفاف على رسوم المنصة أو التدابير الأمنية\n• مضايقة أو تهديد أو التمييز ضد مستخدمين آخرين\n• نشر محتوى كاذب أو مضلل أو تشهيري\n• محاولة اختراق المنصة أو تعطيلها أو إتلافها\n• كشط البيانات (Scraping) أو استخدام الأنظمة الآلية بدون إذن\n• انتهاك حقوق الملكية الفكرية للآخرين\n• التداول في الأصناف المحظورة بما في ذلك الأسلحة والمخدرات والسلع الخاضعة للعقوبات\n• إنشاء حسابات متعددة للتهرب من القيود\n\nقد تؤدي الانتهاكات إلى إنهاء الحساب فوراً ومصادرة الأموال واتخاذ إجراءات قانونية."
+        },
+        "ip": {
+          "title": "حقوق الملكية الفكرية",
+          "content": "جميع محتويات وميزات ووظائف منصة AfriConnect، بما في ذلك على سبيل المثال لا الحصر النصوص والرسومات والشعارات والأيقونات والصور والبرمجيات وتجميعها، هي ملكية حصرية لشركة AfriConnect Inc. أو مرخصيها وهي محمية بموجب قوانين حقوق النشر والعلامات التجارية والملكية الفكرية الدولية.\n\nيحتفظ المستخدمون بملكية المحتوى الذي يقدمونه ولكنهم يمنحون AfriConnect ترخيصاً عالمياً وغير حصري وخالياً من الامتيازات لاستخدام وعرض وتوزيع هذا المحتوى في إطار المنصة.\n\nلا يجوز لك إعادة إنتاج أو توزيع أو تعديل أو إنشاء أعمال مشتقة من أو استغلال أي محتوى من المنصة تجارياً دون موافقتنا الخطية المسبقة.\n\nإذا كنت تعتقد أنه تم انتهاك حقوق الملكية الفكرية الخاصة بك، يرجى الاتصال بفريقنا القانوني مع تزويدنا بمعلومات مفصلة حول الانتهاك المزعوم."
+        },
+        "liability": {
+          "title": "تحديد المسؤولية",
+          "content": "إلى أقصى حد يسمح به القانون المعمول به:\n\nتقدم AfriConnect المنصة \"كما هي\" و \"كما هي متاحة\" دون ضمانات من أي نوع، سواء كانت صريحة أو ضمنية.\n\nنحن لا نضمن أن:\n• ستكون المنصة دون انقطاع أو آمنة أو خالية من الأخطاء\n• ستكون النتائج التي يتم الحصول عليها من استخدام المنصة دقيقة\n• سيتم تصحيح العيوب في المنصة\n\nلن تكون AfriConnect مسؤولة عن أي أضرار غير مباشرة أو عرضية أو خاصة أو تبعية أو تأديبية تنشأ عن أو تتعلق باستخدامك للمنصة.\n\nلن تتجاوز مسؤوليتنا الإجمالية عن أي مطالبات بموجب هذه الشروط المبلغ الذي دفعته لنا خلال الاثني عشر (12) شهراً السابقة للمطالبة.\n\nبعض الولايات القضائية لا تسمح بتحديد المسؤولية، لذا قد لا تنطبق عليك هذه القيود."
+        },
+        "disputes": {
+          "title": "حل النزاعات",
+          "content": "نحن نشجع المستخدمين على حل النزاعات مباشرة من خلال مركز حل النزاعات في منصتنا. تشمل عمليتنا:\n\n1. التفاوض المباشر: يجب على الأطراف أولاً محاولة حل المشكلات من خلال التواصل المباشر\n2. الوساطة: قد تقدم AfriConnect خدمات وساطة للنزاعات التي لم يتم حلها\n3. التحكيم: قد يكون التحكيم الملزم مطلوباً لبعض النزاعات\n\nللنزاعات التي لا يمكن حلها من خلال هذه الوسائل:\n\n• تخضع هذه الشروط لقوانين جمهورية كينيا\n• تُجرى أي إجراءات قانونية في محاكم نيروبي، كينيا\n• يتم التنازل عن الدعاوى الجماعية بالقدر الذي يسمح به القانون\n\nلا يوجد في هذه الشروط ما يحد من حقوقك في تقديم شكاوى إلى سلطات حماية المستهلك أو التجارة ذات الصلة في ولايتك القضائية."
+        },
+        "changes": {
+          "title": "تعديلات على الشروط",
+          "content": "تحتفظ AfriConnect بالحق في تعديل هذه الشروط في أي وقت. عندما نجري تغييرات جوهرية:\n\n• سننشر الشروط المحدثة على المنصة\n• سنقوم بتحديث تاريخ \"آخر تحديث\" في الأعلى\n• قد نخطرك عبر البريد الإلكتروني أو إشعار المنصة بالتغييرات الهامة\n• يشكل استمرار الاستخدام بعد التغييرات قبولاً لها\n\nإذا كنت لا توافق على أي تغييرات، يجب عليك التوقف عن استخدام المنصة وإغلاق حسابك. قد تتطلب بعض التغييرات موافقتك الصريحة قبل أن تصبح سارية المفعول.\n\nنوصي بمراجعة هذه الشروط دورياً للبقاء على اطلاع بأي تحديثات."
+        },
+        "contact": {
+          "title": "اتصل بنا",
+          "content": "إذا كان لديك أي أسئلة حول شروط الخدمة هذه أو كنت بحاجة إلى مساعدة، يرجى الاتصال بفريقنا القانوني. نحن ملتزمون بمعالجة مخاوفكم وتوفير الوضوح بشأن سياساتنا."
+        }
+      },
+      "privacy": {
+        "title": "سياسة الخصوصية",
+        "lastUpdated": "آخر تحديث",
+        "lastUpdatedDate": "يناير 2026",
+        "introduction": "في AfriConnect، نحن ملتزمون بحماية خصوصيتك وضمان أمن معلوماتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام والكشف وحماية معلوماتك عندما تستخدم منصتنا. نحن نعالج البيانات الشخصية وفقاً لقوانين حماية البيانات المعمول بها، بما في ذلك اللائحة العامة لحماية البيانات (GDPR)، وقانون حماية البيانات في كينيا، ولائحة حماية البيانات في نيجيريا، وقانون حماية المعلومات الشخصية في جنوب أفريقيا (POPIA)، وغيرها من تشريعات حماية البيانات الأفريقية المعمول بها.",
+        "compliance": {
+          "title": "الامتثال لحماية البيانات",
+          "content": "تلتزم AfriConnect بالامتثال لقوانين حماية البيانات الدولية والإقليمية بما في ذلك GDPR (الاتحاد الأوروبي)، وقانون حماية البيانات في كينيا لعام 2019، ولائحة حماية البيانات النيجيرية لعام 2019، و POPIA في جنوب أفريقيا، وقانون حماية البيانات في غانا، وأطر حماية البيانات الوطنية والاتحاد الأفريقي الأخرى المعمول بها. نحن ننفذ تدابير تقنية وتنظيمية مناسبة لضمان حماية البيانات من خلال التصميم والافتراض."
+        },
+        "collection": {
+          "title": "المعلومات التي نجمعها",
+          "content": "نجمع المعلومات التي تقدمها لنا مباشرة، بما في ذلك:\n\n• معلومات الحساب: الاسم، البريد الإلكتروني، رقم الهاتف، كلمة المرور، اسم العمل التجاري، وتفاصيل التسجيل\n• معلومات العمل التجاري: وثائق تسجيل الشركة، الأرقام الضريبية، عنوان العمل، ووثائق التحقق\n• بيانات المعاملات: تاريخ الشراء، معلومات الدفع، عناوين الشحن، وتفاصيل الطلب\n• الاتصالات: الرسائل مع المستخدمين الآخرين، استفسارات الدعم، والتعليقات\n• معلومات الملف الشخصي: أوصاف العمل، قوائم المنتجات، وصور الملف الشخصي\n\nنجمع معلومات معينة تلقائياً عند استخدام منصتنا:\n\n• معلومات الجهاز: عنوان IP، نوع المتصفح، نظام التشغيل، ومعرفات الجهاز\n• بيانات الاستخدام: الصفحات التي تمت زيارتها، الميزات المستخدمة، استعلامات البحث، وأنماط التفاعل\n• بيانات الموقع: الموقع الجغرافي العام بناءً على عنوان IP\n• ملفات تعريف الارتباط وتقنيات التتبع: المعلومات التي يتم جمعها من خلال ملفات تعريف الارتباط والبكسل وتقنيات مشابهة"
+        },
+        "usage": {
+          "title": "كيف نستخدم معلوماتك",
+          "content": "نستخدم المعلومات التي نجمعها للأغراض التالية:\n\n• تقديم الخدمة: لتوفير وصيانة وتحسين منصتنا وخدماتنا\n• إدارة الحساب: لإنشاء وإدارة حسابك، والتحقق من هويتك، ومعالجة المعاملات\n• التواصل: لإرسال تحديثات الخدمة، وتنبيهات الأمان، ورسائل الدعم\n• التخصيص: لتخصيص تجربتك وتقديم توصيات ذات صلة\n• السلامة والأمن: لاكتشاف ومنع ومعالجة الاحتيال وإساءة الاستخدام والمشكلات الأمنية\n• الامتثال القانوني: للامتثال للالتزامات القانونية والاستجابة للطلبات القانونية\n• التحليلات: لفهم كيفية تفاعل المستخدمين مع منصتنا وتحسين خدماتنا\n• التسويق: لإرسال اتصالات ترويجية (بموافقتك حيثما يقتضي ذلك)\n\nنعالج بياناتك بناءً على: تنفيذ العقد، والمصالح المشروعة، والالتزامات القانونية، وموافقتك حيثما ينطبق ذلك."
+        },
+        "sharing": {
+          "title": "مشاركة المعلومات والكشف عنها",
+          "content": "قد نشارك معلوماتك في الحالات التالية:\n\n• مع مستخدمين آخرين: معلومات الملف التجاري وتفاصيل المعاملات اللازمة لتسهيل التجارة\n• مزودي الخدمة: مع بائعين من جهات خارجية يساعدون في تشغيل منصتنا (معالجي الدفع، استضافة سحابية، تحليلات)\n• نقل الأعمال: فيما يتعلق بعمليات الاندماج أو الاستحواذ أو بيع أصول الشركة\n• المتطلبات القانونية: عندما يقتضي القانون ذلك، أو بأمر قضائي، أو من قبل سلطة حكومية\n• حماية الحقوق: لحماية حقوق وممتلكات وسلامة AfriConnect ومستخدمينا والجمهور\n\nنحن نطلب من جميع الجهات الخارجية احترام أمن بياناتك ومعالجتها وفقاً للقوانين المعمول بها. نحن لا نبيع معلوماتك الشخصية لأطراف ثالثة.\n\nتتم حماية عمليات نقل البيانات الدولية بضمانات مناسبة بما في ذلك البنود التعاقدية القياسية المعتمدة من قبل سلطات حماية البيانات ذات الصلة."
+        },
+        "security": {
+          "title": "أمن البيانات",
+          "content": "نحن ننفذ تدابير أمنية قوية لحماية معلوماتك الشخصية:\n\n• التشفير: يتم تشفير جميع البيانات المنقولة باستخدام بروتوكولات TLS/SSL\n• ضوابط الوصول: ضوابط وصول صارمة وآليات مصادقة\n• أمن البنية التحتية: مراكز بيانات آمنة مع أمن مادي وشبكي\n• التدقيق المنتظم: تقييمات أمنية دورية واختبارات الثغرات\n• تدريب الموظفين: تدريب منتظم على حماية البيانات لجميع الموظفين\n• الاستجابة للحوادث: إجراءات محددة لاكتشاف الاستجابة لاختراقات البيانات\n\nبينما نسعى جاهدين لحماية معلوماتك، لا توجد وسيلة نقل عبر الإنترنت آمنة بنسبة 100%. لا يمكننا ضمان الأمن المطلق ولكننا نلتزم بإخطارك والسلطات المختصة بأي اختراق للبيانات كما يقتضي القانون."
+        },
+        "rights": {
+          "title": "حقوقك واختياراتك",
+          "content": "بناءً على موقعك، لديك حقوق معينة فيما يتعلق ببياناتك الشخصية:\n\n• الوصول: طلب نسخة من البيانات الشخصية التي نحتفظ بها عنك\n• التصحيح: طلب تصحيح البيانات غير الدقيقة أو غير الكاملة\n• المسح: طلب حذف بياناتك الشخصية (\"الحق في النسيان\")\n• التقييد: طلب الحد من معالجة بياناتك\n• قابلية النقل: استلام بياناتك في شكل منظم وقابل للقراءة آلياً\n• الاعتراض: الاعتراض على المعالجة بناءً على مصالح مشروعة أو للتسويق\n• سحب الموافقة: سحب الموافقة المقدمة مسبقاً في أي وقت\n• القرارات الآلية: طلب مراجعة بشرية للقرارات الآلية التي تؤثر عليك\n\nلممارسة هذه الحقوق، اتصل بمسؤول حماية البيانات لدينا. سنرد خلال 30 يوماً (أو كما يقتضي القانون المعمول به). قد نتحقق من هويتك قبل معالجة الطلبات.\n\nلديك أيضاً الحق في تقديم شكوى إلى سلطة حماية البيانات المحلية لديك."
+        },
+        "cookies": {
+          "title": "ملفات تعريف الارتباط وتقنيات التتبع",
+          "content": "نستخدم ملفات تعريف الارتباط وتقنيات مماثلة لتحسين تجربتك:\n\n• ملفات تعريف الارتباط الأساسية: مطلوبة لوظائف المنصة (المصادقة، الأمان)\n• ملفات تعريف الارتباط للأداء: تساعدنا على فهم كيفية تفاعل الزوار مع المنصة\n• ملفات تعريف الارتباط الوظيفية: تتذكر تفضيلاتك وإعداداتك\n• ملفات تعريف الارتباط التسويقية: تُستخدم لتقديم إعلانات ذات صلة (بموافقتك)\n\nيمكنك إدارة تفضيلات ملفات تعريف الارتباط من خلال إعدادات المتصفح أو أداة الموافقة على ملفات تعريف الارتباط لدينا. قد يؤثر تعطيل بعض ملفات تعريف الارتباط على وظائف المنصة.\n\nنستخدم أيضاً خدمات التحليل (مثل Google Analytics) لجمع بيانات الاستخدام. قد تستخدم هذه الخدمات ملفات تعريف الارتباط الخاصة بها وتخضع لسياسات الخصوصية الخاصة بها.\n\nنحترم إشارات \"عدم التتبع\" (DNT) حيثما كان ذلك ممكناً تقنياً."
+        },
+        "retention": {
+          "title": "الاحتفاظ بالبيانات",
+          "content": "نحتفظ بمعلوماتك الشخصية طالما كان ذلك ضرورياً لـ:\n\n• تقديم خدماتنا والحفاظ على حسابك\n• الامتثال للالتزامات القانونية والضريبية والتنظيمية\n• حل النزاعات وإنفاذ اتفاقياتنا\n• الاحتفاظ بسجلات العمل لأغراض التدقيق\n\nتختلف فترات الاحتفاظ بناءً على نوع البيانات:\n• بيانات الحساب: مدة الحساب بالإضافة إلى 7 سنوات\n• بيانات المعاملات: 7 سنوات لأغراض الضرائب والتدقيق\n• سجلات الاتصالات: 3 سنوات\n• تفضيلات التسويق: حتى سحب الموافقة\n\nعندما لا تعود البيانات مطلوبة، نقوم بحذفها أو إخفاء هويتها بشكل آمن. قد يتم الاحتفاظ بالبيانات المجهولة الهوية إلى أجل غير مسمى للتحليل الإحصائي."
+        },
+        "international": {
+          "title": "نقل البيانات الدولي",
+          "content": "تعمل AfriConnect عبر عدة دول أفريقية وقد تنقل البيانات دولياً. عندما ننقل البيانات الشخصية خارج بلدك:\n\n• نضمن وجود ضمانات مناسبة (البنود التعاقدية القياسية، قرارات الكفاية)\n• نلتزم بمتطلبات توطين البيانات المحلية حيثما ينطبق ذلك\n• نحافظ على اتفاقيات معالجة البيانات مع جميع الشركاء الدوليين\n• نقيم معايير حماية البيانات للدول المستقبلة\n\nبالنسبة لسكان الاتحاد الأوروبي، تتم حماية عمليات النقل خارج المنطقة الاقتصادية الأوروبية بموجب البنود التعاقدية القياسية المعتمدة من الاتحاد الأوروبي.\n\nبالنسبة للمستخدمين الأفارقة، نلتزم بمتطلبات توطين البيانات ونقلها عبر الحدود المعمول بها بموجب القوانين المحلية."
+        },
+        "children": {
+          "title": "خصوصية الأطفال",
+          "content": "AfriConnect هي منصة B2B مخصصة لمستخدمي الأعمال. نحن لا نجمع معلومات شخصية عن عمد من الأفراد الذين تقل أعمارهم عن 18 عاماً.\n\nإذا علمنا أننا جمعنا بيانات شخصية من طفل دون موافقة الوالدين الموثقة، فسنقوم باتخاذ خطوات لحذف هذه المعلومات على الفور.\n\nإذا كنت تعتقد أن طفلاً قد زودنا بمعلومات شخصية، فيرجى الاتصال بمسؤول حماية البيانات لدينا على الفور."
+        },
+        "changes": {
+          "title": "تغييرات على هذه السياسة",
+          "content": "قد نقوم بتحديث سياسة الخصوصية هذه دورياً لتعكس التغييرات في ممارساتنا أو التكنولوجيا أو المتطلبات القانونية أو عوامل أخرى.\n\nعندما نجري تغييرات جوهرية:\n• سننشر السياسة المحدثة على المنصة\n• سنقوم بتحديث تاريخ \"آخر تحديث\"\n• سنخطرك عبر البريد الإلكتروني أو إشعار المنصة بالتغييرات الهامة\n• قد نطلب موافقة متجددة لأنشطة معالجة معينة\n\nنحن نشجعك على مراجعة سياسة الخصوصية هذه بانتظام. يشكل استمرار استخدامك للمنصة بعد التغييرات قبولاً للسياسة المحدثة."
+        },
+        "dpo": {
+          "title": "مسؤول حماية البيانات",
+          "content": "لقد قمنا بتعيين مسؤول حماية بيانات (DPO) مسؤول عن الإشراف على استراتيجية حماية البيانات والامتثال لدينا. لأي أسئلة أو مخاوف متعلقة بالخصوصية، أو لممارسة حقوق البيانات الخاصة بك، يرجى الاتصال بمسؤول حماية البيانات لدينا."
+        }
+      }
+    },
+    "agreements": {
+      "dialog": {
+        "reviewAndAccept": "يرجى مراجعة وقبول هذه الاتفاقية قبل المتابعة.",
+        "accept": "قبول ومتابعة",
+        "accepting": "جاري القبول...",
+        "decline": "رفض"
+      },
+      "seller": {
+        "title": "اتفاقية البائع",
+        "pageDescription": "الشروط التي تنطبق عند إدراج المنتجات والبيع عبر AfriConnect.",
+        "lastUpdated": "آخر تحديث",
+        "lastUpdatedDate": "فبراير 2026",
+        "introduction": "تحكم اتفاقية البائع هذه استخدامك لـ AfriConnect كبائع. بقبولك لهذه الاتفاقية، فإنك تؤكد أن عملك لديه الصلاحية لبيع المنتجات المدرجة وأنك ستلتزم بمتطلبات السوق والدفع والتجارة.",
+        "acceptanceLabel": "لقد قرأت وأوافق على اتفاقية البائع.",
+        "sections": {
+          "eligibility": {
+            "title": "الأهلية",
+            "content": "يجب أن تكون عملاً مسجلاً أو ممثلاً مفوضاً. يجب عليك تقديم تفاصيل تسجيل دقيقة والحفاظ على سجلات عمل صالحة."
+          },
+          "productListings": {
+            "title": "قوائم المنتجات",
+            "content": "يجب عليك تقديم أسماء منتجات، أوصاف، أسعار، مستويات مخزون، تفاصيل منشأ، وصور دقيقة. قد يتم إزالة القوائم المضللة."
+          },
+          "fulfillment": {
+            "title": "التنفيذ",
+            "content": "أنت مسؤول عن المعالجة والشحن وتنسيق التسليم في الوقت المناسب بعد تأكيد الدفع. يجب عليك الإبلاغ عن أي تأخير فوراً."
+          },
+          "qualityStandards": {
+            "title": "معايير الجودة",
+            "content": "يجب أن تتطابق المنتجات مع تفاصيل القائمة، وأن يكون تداولها قانونياً، وأن تلبي متطلبات الجودة والسلامة المعمول بها في الولايات القضائية ذات الصلة."
+          },
+          "feesCommissions": {
+            "title": "الرسوم والعمولات",
+            "content": "قد تنطبق رسوم المنصة والمعالجة على المبيعات والمدفوعات. استمرار استخدام ميزات البائع يشير إلى قبول جداول الرسوم المعمول بها."
+          },
+          "returnsRefunds": {
+            "title": "المرتجعات والاسترداد",
+            "content": "يجب عليك التعاون مع طلبات الإرجاع والاسترداد الصحيحة بناءً على سياسة المنصة وسجلات المعاملات ونتائج النزاعات."
+          },
+          "prohibitedItems": {
+            "title": "الأصناف المحظورة",
+            "content": "لا يجوز لك إدراج سلع غير قانونية أو مقلدة أو خاضعة للعقوبات أو مقيدة. يمكن أن تؤدي الانتهاكات إلى إزالة القائمة وتعليق الحساب والإبلاغ القانوني."
+          },
+          "intellectualProperty": {
+            "title": "الملكية الفكرية",
+            "content": "أنت تضمن أنك تمتلك الحقوق في جميع محتويات القائمة ومواد المنتج. تمنح AfriConnect ترخيصاً لعرض وترويج قوائمك على المنصة."
+          },
+          "accountSuspension": {
+            "title": "تعليق الحساب",
+            "content": "قد تقوم AfriConnect بتعليق أو إنهاء وصول البائع بسبب الاحتيال، أو انتهاك السياسة، أو فشل التحقق، أو الفشل التشغيلي المتكرر."
+          },
+          "liabilityIndemnification": {
+            "title": "المسؤولية والتعويض",
+            "content": "تظل مسؤولاً عن منتجاتك وسلوك عملك والامتثال القانوني. أنت توافق على تعويض AfriConnect ضد مطالبات الطرف الثالث الناشئة عن قوائمك أو معاملاتك."
+          }
+        }
+      },
+      "buyer": {
+        "title": "اتفاقية المشتري",
+        "pageDescription": "الشروط التي تنطبق عند شراء المنتجات عبر AfriConnect.",
+        "lastUpdated": "آخر تحديث",
+        "lastUpdatedDate": "فبراير 2026",
+        "introduction": "تحكم اتفاقية المشتري هذه استخدامك لـ AfriConnect كمشتري. بقبولك لهذه الاتفاقية، فإنك تؤكد أنك مفوض لتقديم الطلبات وستقوم بالوفاء بالتزامات الدفع والمعاملات.",
+        "acceptanceLabel": "لقد قرأت وأوافق على اتفاقية المشتري.",
+        "sections": {
+          "purchaseCommitments": {
+            "title": "التزامات الشراء",
+            "content": "الطلبات المقدمة عبر المنصة هي التزامات ملزمة بالشراء، وتخضع للشروط المدرجة والتوفر ونتائج نزاعات المنصة."
+          },
+          "paymentTerms": {
+            "title": "شروط الدفع",
+            "content": "يجب عليك إكمال الدفع باستخدام الطرق المعتمدة وتقديم تفاصيل فوترة دقيقة. قد تؤدي المدفوعات الفاشلة أو المعكوسة إلى إلغاء الطلب أو قيود على الحساب."
+          },
+          "deliveryInspection": {
+            "title": "التسليم والفحص",
+            "content": "يجب عليك مراجعة السلع المستلمة فوراً والإبلاغ عن أي مشكلات خلال نافذة المراجعة المعمول بها، بما في ذلك الأدلة حيثما لزم الأمر."
+          },
+          "disputes": {
+            "title": "النزاعات",
+            "content": "يجب تقديم النزاعات من خلال قنوات المنصة. قد تقوم AfriConnect بمراجعة السجلات والاتصالات وتطبيق النتائج بموجب سياسات السوق."
+          },
+          "returns": {
+            "title": "المرتجعات",
+            "content": "تخضع المرتجعات لشروط البائع ونوع المنتج وسياسة المنصة. قد لا تكون جميع السلع قابلة للإرجاع بمجرد قبولها أو استهلاكها."
+          },
+          "communication": {
+            "title": "التواصل",
+            "content": "أنت توافق على الحفاظ على تواصل مهني مع البائعين والاستجابة فوراً عندما تكون تفاصيل الشراء أو التسليم الإضافية مطلوبة."
+          },
+          "accountResponsibilities": {
+            "title": "مسؤوليات الحساب",
+            "content": "أنت مسؤول عن أمن الحساب وتفاصيل المستلم الدقيقة والاستخدام القانوني للمنصة. يجب الإبلاغ عن الأنشطة غير المصرح بها فوراً."
+          }
+        }
+      }
+    },
+    "compliance": {
+      "title": "الامتثال لاتفاقية AfCFTA",
+      "description": "تحقق من أهلية منتجاتك للحصول على مزايا منطقة التجارة الحرة القارية الأفريقية",
+      "searchByName": "البحث بالاسم",
+      "enterHsCode": "أدخل رمز HS",
+      "searchPlaceholder": "البحث باسم المنتج أو رمز HS...",
+      "hsCodePlaceholder": "أدخل رمز HS المكون من 8 أرقام (مثل 09011100)",
+      "lookup": "بحث",
+      "add": "إضافة",
+      "addAnyway": "إضافة على أي حال",
+      "rate": "النسبة",
+      "currentRate": "النسبة الحالية",
+      "categoryA": "الفئة أ",
+      "notCategoryA": "ليست من الفئة أ",
+      "notFoundInCategoryA": "لم يتم العثور على رمز HS في الفئة أ",
+      "notFoundDescription": "هذا المنتج غير مدرج ضمن الفئة (أ) من AfCFTA وقد لا يتأهل لتخفيضات التعريفة الجمركية.",
+      "tariffReduction": "جدول تخفيض التعريفة",
+      "rateSchedule": "جدول النسب (2026-2030)",
+      "currentYearRate": "نسبة السنة الحالية",
+      "zeroTariffBy2030": "سيكون لهذا المنتج تعريفة 0% بحلول عام 2030",
+      "noAfcftaBenefits": "لا توجد مزايا AfCFTA",
+      "noAfcftaBenefitsDescription": "هذا المنتج غير مدرج ضمن الفئة (أ) من AfCFTA وتطبق التعريفات القياسية.",
+      "removeProduct": "إزالة المنتج",
+      "complianceSummary": "ملخص الامتثال",
+      "complianceSummaryDescription": "نظرة عامة على حالة أهلية منتجاتك لـ AfCFTA",
+      "totalProducts": "إجمالي المنتجات",
+      "eligible": "مؤهل",
+      "notEligible": "غير مؤهل",
+      "eligibleMessage": "{count} من منتجاتك مؤهلة لتخفيضات تعريفة AfCFTA",
+      "scheduleMatchMessage": "{count, plural, one {رمز النظام المنسق لمنتج واحد يطابق الجدول التعريفي المحدد - مراجعة قواعد المنشأ ما زالت قيد الانتظار} other {رموز النظام المنسق لـ # منتجات تطابق الجدول التعريفي المحدد - مراجعة قواعد المنشأ ما زالت قيد الانتظار}}",
+      "yourProducts": "منتجاتك",
+      "yourProductsDescription": "المنتجات المسجلة برموز HS لتتبع الامتثال لـ AfCFTA",
+      "addProduct": "إضافة منتج",
+      "addNewProduct": "إضافة منتج جديد",
+      "cancel": "إلغاء",
+      "addingProduct": "جاري إضافة المنتج...",
+      "productAdded": "تم إضافة المنتج بنجاح",
+      "productRemoved": "تم إزالة المنتج بنجاح",
+      "failedToAddProduct": "فشل إضافة المنتج",
+      "failedToRemoveProduct": "فشل إزالة المنتج",
+      "noProductsYet": "لم يتم إضافة منتجات بعد",
+      "noProductsDescription": "أضف منتجاتك مع رموز HS للتحقق من حالة امتثالها لـ AfCFTA",
+      "addFirstProduct": "أضف منتجك الأول",
+      "andMoreProducts": "+{count} منتجات إضافية",
+      "businessRequired": "تسجيل العمل التجاري مطلوب",
+      "businessRequiredDescription": "يجب عليك تسجيل عملك التجاري قبل أن تتمكن من التحقق من امتثال المنتج.",
+      "registerBusiness": "تسجيل العمل التجاري",
+      "whatIsAfcfta": "ما هي AfCFTA؟",
+      "afcftaDescription": "منطقة التجارة الحرة القارية الأفريقية (AfCFTA) هي اتفاقية تجارة حرة بين الدول الأعضاء في الاتحاد الأفريقي. تتلقى منتجات الفئة (أ) تخفيضات تدريجية في التعريفة الجمركية من 2026 إلى 2030 لتصل إلى 0%.",
+      "categoryABadge": "منتجات الفئة أ",
+      "learnMoreAfcfta": "لمعرفة المزيد عن AfCFTA",
+      "reductionSchedule": "جدول تخفيض التعريفة",
+      "reductionScheduleDescription": "تتبع منتجات الفئة (أ) جدولاً تدريجياً لتخفيض التعريفة الجمركية",
+      "year": "السنة",
+      "typicalRateReduction": "النسبة النموذجية",
+      "rateDisclaimer": "قد تختلف النسب الفعلية حسب المنتج. تحقق من بطاقات المنتجات الفردية للنسب المحددة.",
+      "afcftaCompliance": "الامتثال لـ AfCFTA",
+      "afcftaComplianceDescription": "تحقق مما إذا كانت منتجاتك مؤهلة لمزايا منطقة التجارة الحرة القارية الأفريقية",
+      "noComplianceCheckYet": "لم تقم بإضافة أي منتجات لفحص الامتثال بعد.",
+      "startComplianceCheck": "بدء فحص الامتثال",
+      "manageProducts": "إدارة المنتجات",
+      "selectCountry": "اختر الدولة/المنطقة",
+      "ethiopia": "إثيوبيا",
+      "kenyaEac": "كينيا (EAC)",
+      "countryDescription": "اختر الدولة للبحث في جداول التعريفات الخاصة بها",
+      "registerToSaveProducts": "سجل عملك التجاري لحفظ المنتجات في قائمتك.",
+      "notFoundInTariffSchedule": "لم يتم العثور على رمز HS في جدول التعريفة المحدد",
+      "tariffScheduleCoverage": "تغطية جدول التعريفة",
+      "tariffScheduleMatched": "تمت مطابقة جدول التعريفة",
+      "tariffScheduleNotMatched": "لم تتم مطابقة جدول التعريفة",
+      "noTariffMatchDescription": "تعذر علينا مطابقة رمز HS هذا ضمن جدول التعريفة المحدد. راجع كتاب التعريفة الرسمي وقاعدة المنشأ الخاصة بالمنتج.",
+      "reviewMessage": "لا يزال {count} من منتجاتك يحتاج إلى مراجعة قواعد المنشأ قبل تقديم مطالبة منشأ بموجب AfCFTA.",
+      "needsReview": "يحتاج إلى مراجعة",
+      "ruleNotMapped": "القاعدة غير معيّنة",
+      "rulesOfOrigin": "قواعد المنشأ",
+      "tariffAndOrigin": "التعريفات والمنشأ",
+      "baseRate": "المعدل الأساسي",
+      "tariffCategory": "فئة التعريفة",
+      "originRule": "قاعدة المنشأ",
+      "ruleSource": "مصدر القاعدة",
+      "ruleNotMappedDescription": "لا يحتوي التطبيق بعد على قاعدة خاصة بالمنتج معيّنة لهذا الرمز HS. راجع الملحق Appendix 2.A.1 قبل تقديم مطالبة منشأ.",
+      "eligibleRuleDescription": "اجتاز هذا المنتج قاعدة قائمة على القيمة تم تقييمها تلقائياً.",
+      "notEligibleRuleDescription": "لم يجتز هذا المنتج القاعدة القائمة على القيمة التي تم تقييمها تلقائياً.",
+      "legacyStatus": "نتيجة سابقة",
+      "legacyStatusDescription": "تم إنشاء هذا السجل قبل الترقية المعتمدة على القواعد ويجب إعادة احتسابه.",
+      "automaticVnmDescription": "تم احتساب هذه النتيجة تلقائياً استناداً إلى قاعدة VNM قائمة على القيمة.",
+      "manualReviewDescription": "تتطلب قاعدة هذا المنتج مراجعة مستندية أو مراجعة لعملية الإنتاج تتجاوز إمكانات الآلة الحاسبة التلقائية الحالية."
+    },
+    "afcfta": {
+      "title": "اسأل الذكاء الاصطناعي عن الامتثال لـ AfCFTA",
+      "description": "اطرح أسئلة موثقة بناءً على مستندات AfCFTA المرفوعة. المساعد مجهز لاسترجاع البيانات من Qdrant وإجاباته تعتمد على الاقتباسات أولاً.",
+      "badge": "هيكلي",
+      "helper": "يجب أن تعتمد الإجابات على المصادر المرفوعة فقط. إذا كانت الأدلة مفقودة أو متضاربة، يجب على المساعد ذكر ذلك بدلاً من التخمين.",
+      "placeholder": "اسأل سؤالاً عن الامتثال، مثلاً: ما هي المستندات المطلوبة لدعم مطالبة شهادة المنشأ لـ AfCFTA؟",
+      "sampleQuestions": [
+        "هل تجعل اتفاقية AfCFTA هذا المنتج معفى من الرسوم الجمركية اليوم تلقائياً؟",
+        "ما هي الأدلة التي أحتاجها لدعم مطالبة شهادة المنشأ؟",
+        "هل يمكن لعملية إعادة التغليف البسيطة أن تمنح صفة المنشأ بموجب القواعد المرفوعة؟"
+      ],
+      "cta": {
+        "ask": "اسأل الذكاء الاصطناعي",
+        "asking": "جاري السؤال..."
+      },
+      "form": {
+        "languageLabel": "اللغة",
+        "questionLabel": "سؤال الامتثال"
+      },
+      "validation": {
+        "questionTooShort": "يرجى إدخال سؤال امتثال أكثر تحديداً.",
+        "invalidQuestion": "يرجى تقديم سؤال امتثال صالح."
+      },
+      "error": {
+        "generic": "فشل سؤال مساعد الامتثال."
+      },
+      "empty": {
+        "citations": "لا توجد اقتباسات عائدة بعد."
+      },
+      "sections": {
+        "answer": "الإجابة",
+        "citations": "الاقتباسات",
+        "source": "المصدر"
+      },
+      "mode": {
+        "fullRag": "RAG كامل",
+        "retrievalOnly": "استرجاع فقط"
+      },
+      "status": {
+        "ready": "جاهز",
+        "not_configured": "غير مهيأ",
+        "no_evidence": "لا توجد أدلة"
+      }
+    },
+    "aiAssistantPage": {
+      "title": "مساعد الذكاء الاصطناعي",
+      "description": "اطرح أسئلة حول الامتثال لـ AfCFTA، التقييم الائتماني، قواعد المنشأ والمزيد.",
+      "unavailable": "أدوات مساعد الذكاء الاصطناعي غير متاحة مؤقتاً.",
+      "tabs": {
+        "compliance": "الامتثال لـ AfCFTA",
+        "general": "المساعد العام"
+      },
+      "general": {
+        "title": "اسأل عن مواضيع AfCFTA",
+        "description": "اطرح أسئلة عامة حول قواعد منشأ AfCFTA، جداول التعريفات، تسهيل التجارة، والمواضيع التجارية ذات الصلة. للإرشاد فقط - تحقق من مصادر AfCFTA الرسمية.",
+        "badge": "مدعوم بالذكاء الاصطناعي",
+        "helper": "اطرح أسئلة حول منطقة التجارة الحرة القارية الأفريقية للحصول على إرشادات سريعة حول مواضيع AfCFTA الشائعة. قم دائماً بتأكيد التفاصيل المهمة مع منشورات AfCFTA الرسمية أو سلطة التجارة المحلية لديك.",
+        "placeholder": "اسأل سؤالاً عن AfCFTA، مثل: كيف تنطبق قواعد المنشأ بموجب AfCFTA؟",
+        "sampleQuestions": [
+          "كيف تعمل قواعد المنشأ بموجب AfCFTA؟",
+          "ماذا تعني الفئة (أ) في جداول تعريفة AfCFTA؟",
+          "ما هي مستندات تسهيل التجارة المطلوبة عادة لشحنات AfCFTA؟"
+        ],
+        "cta": {
+          "ask": "اسأل الذكاء الاصطناعي",
+          "asking": "جاري السؤال..."
+        },
+        "form": {
+          "languageLabel": "اللغة",
+          "questionLabel": "سؤالك"
+        },
+        "validation": {
+          "questionTooShort": "يرجى إدخال سؤال أكثر تحديداً.",
+          "invalidQuestion": "يرجى تقديم سؤال صالح."
+        },
+        "error": {
+          "generic": "فشل الحصول على رد من مساعد الذكاء الاصطناعي."
+        },
+        "sections": {
+          "answer": "الإجابة"
+        }
+      }
+    },
+    "originEligibility": {
+      "title": "أهلية شهادة المنشأ",
+      "description": "احسب ما إذا كان منتجك يستوفي قاعدة الـ 60% للمنشأ التفضيلي بموجب AfCFTA",
+      "whatIsTheRule": "ما هي قاعدة الـ 60%؟",
+      "ruleExplanation": "تنص قاعدة MaxNOM (الحد الأقصى للمواد غير الأصلية) على أن المواد المستوردة المستخدمة في الإنتاج يجب ألا تتجاوز 60% من سعر تسليم المصنع. هذا يعني أن 40% على الأقل من قيمة منتجك يجب أن تأتي من المحتوى المحلي.",
+      "startCalculation": "احسب الأهلية",
+      "newCalculation": "حساب جديد",
+      "reset": "إعادة تعيين",
+      "step1Title": "سعر تسليم المصنع (EXW)",
+      "step1Description": "السعر عندما يغادر المنتج مصنعك، شاملاً جميع تكاليف الإنتاج",
+      "step2Title": "المواد غير الأصلية (VNM)",
+      "step2Description": "قيمة المكونات المستوردة التي لا تنشأ من بلدك",
+      "step3Title": "تطبيق المعادلة",
+      "step4Title": "نتيجة الأهلية",
+      "resultDescription": "بناءً على عتبة الـ 60% القصوى",
+      "productName": "اسم المنتج",
+      "productNamePlaceholder": "أدخل اسم المنتج (مثل: حبوب البن، المنسوجات)",
+      "currency": "العملة",
+      "costOfMaterials": "تكلفة المواد",
+      "costOfMaterialsHint": "المواد الخام، المكونات، والأجزاء المستخدمة في الإنتاج",
+      "laborCosts": "تكاليف العمالة",
+      "laborCostsHint": "الأجور والرواتب لعمال الإنتاج",
+      "factoryOverheads": "المصاريف الصناعية الإضافية",
+      "factoryOverheadsHint": "التدفئة، الكهرباء، الإيجار، صيانة المعدات",
+      "profitMargin": "هامش الربح",
+      "profitMarginHint": "ربحك المضاف فوق تكاليف الإنتاج",
+      "totalExWorks": "إجمالي سعر تسليم المصنع",
+      "vnmExplanationTitle": "ما هي المواد غير الأصلية؟",
+      "vnmExplanation": "هي المواد أو المكونات أو الأجزاء المستوردة التي لم يتم إنتاجها في بلدك. تشمل القيمة الجمركية بالإضافة إلى تكاليف الشحن والتأمين حتى نقطة الاستيراد.",
+      "vnmValue": "إجمالي قيمة VNM",
+      "vnmValueHint": "القيمة الإجمالية لجميع المواد المستوردة المستخدمة في الإنتاج",
+      "formula": "المعادلة",
+      "formulaExplanation": "نسبة VNM = (قيمة المواد المستوردة ÷ سعر تسليم المصنع) × 100",
+      "result": "النتيجة",
+      "maxThreshold": "الحد الأقصى المسموح به: 60%",
+      "eligible": "مؤهل",
+      "notEligible": "غير مؤهل",
+      "eligibleMessage": "منتجك يستوفي متطلبات قواعد المنشأ",
+      "eligibleDescription": "المواد غير الأصلية تقع ضمن حد الـ 60%. منتجك مؤهل للمعاملة التفضيلية بموجب شهادة منشأ AfCFTA.",
+      "notEligibleMessage": "منتجك لا يستوفي متطلبات قواعد المنشأ",
+      "notEligibleDescription": "المواد غير الأصلية تتجاوز حد الـ 60%. فكر في زيادة المحتوى المحلي أو الحصول على المزيد من المواد محلياً.",
+      "contactUs": "هل تحتاج مساعدة في تحسين أهليتك؟",
+      "contactUsDescription": "يمكن لفريقنا مساعدتك في تحديد طرق لزيادة المحتوى المحلي وتلبية المتطلبات.",
+      "certificateOfOriginEligibility": "فحص أهلية شهادة المنشأ",
+      "vnmPercentage": "نسبة المواد غير الأصلية (VNM)",
+      "localContent": "المحتوى المحلي",
+      "minLocalContent": "الحد الأدنى المطلوب: 40%",
+      "localValueAdded": "القيمة المحلية المضافة",
+      "productHsCode": "Product HS Code",
+      "productHsCodePlaceholder": "Enter the product HS code used for the origin rule lookup",
+      "originRule": "Origin Rule",
+      "ruleSource": "Rule Source",
+      "ruleThreshold": "Rule Threshold",
+      "manualReview": "Manual Review",
+      "manualReviewStepTitle": "Manual Rule Review",
+      "manualReviewStepDescription": "Confirm that you reviewed the official rule, insufficient operations, and cumulation requirements",
+      "manualReviewTitle": "Manual review required",
+      "manualReviewBody": "This product's origin rule is not automatically calculable from EXW and VNM alone. You should confirm the official Appendix 2.A.1 rule and the Annex 2 general restrictions before making a claim.",
+      "manualReviewDescription": "This rule needs manual review because the current calculator does not capture tariff-shift or production-process evidence.",
+      "needsReview": "Needs Review",
+      "ruleNotMapped": "Rule Not Mapped",
+      "ruleNotMappedDescription": "The app does not yet have a mapped product-specific rule for this HS code. Review Appendix 2.A.1 before making an origin claim.",
+      "ruleReviewed": "I reviewed the applicable product-specific rule in Appendix 2.A.1.",
+      "insufficientOperationsChecked": "I confirmed the processing is not limited to insufficient operations under Annex 2.",
+      "cumulationConsidered": "I considered cumulation and originating inputs from other State Parties where relevant.",
+      "enterHsCodeFirst": "Enter a product HS code first so the calculator can resolve the rule.",
+      "legacyStatus": "Legacy Result",
+      "yes": "Yes",
+      "no": "No",
+      "saveCalculation": "حفظ الحساب",
+      "saving": "جاري الحفظ...",
+      "calculationSaved": "تم حفظ الحساب بنجاح",
+      "registerToSaveCalculation": "سجل عملك التجاري لحفظ هذا الحساب.",
+      "calculationDeleted": "تم حذف الحساب بنجاح",
+      "deleteCalculation": "حذف الحساب",
+      "failedToSave": "فشل حفظ الحساب",
+      "failedToDelete": "فشل حذف الحساب",
+      "totalCalculations": "إجمالي الحسابات",
+      "previousCalculations": "الحسابات السابقة",
+      "previousCalculationsDescription": "حسابات الأهلية المحفوظة لديك"
+    },
+    "creditProfile": {
+      "loading": "جاري تحميل الملف الائتماني الرقمي...",
+      "title": "الملف الائتماني الرقمي",
+      "titleReport": "تقرير الملف الائتماني الرقمي",
+      "subtitle": "مبني على معاملات السوق، تاريخ التنفيذ، وتنوع المشترين.",
+      "actions": {
+        "backToProfile": "العودة للملف الائتماني",
+        "openBusinessProfile": "فتح ملف العمل التجاري",
+        "businessSetup": "إعداد العمل التجاري",
+        "back": "رجوع",
+        "printOrSavePdf": "طباعة / حفظ كـ PDF",
+        "downloadableReport": "تقرير قابل للتحميل"
+      },
+      "badges": {
+        "verifiedSeller": "بائع موثق",
+        "platformActivity": "ملف نشاط المنصة"
+      },
+      "access": {
+        "no_business": {
+          "title": "سجل عملك التجاري",
+          "message": "يصبح الملف الائتماني الرقمي متاحاً بعد تسجيل وتوثيق عمل تجاري."
+        },
+        "business_missing": {
+          "title": "سجل العمل غير موجود",
+          "message": "حسابك مرتبط بسجل عمل تجاري لم يعد متاحاً."
+        },
+        "pending_verification": {
+          "title": "التحقق قيد المعالجة",
+          "message": "سيتم فتح ملفك الائتماني الرقمي بمجرد توثيق العمل التجاري."
+        },
+        "rejected_verification": {
+          "title": "التوثيق مطلوب",
+          "message": "قم بحل توثيق عملك التجاري أولاً لفتح الملف الائتماني الرقمي."
+        },
+        "not_seller": {
+          "title": "وصول البائع مطلوب",
+          "message": "فقط حسابات البائعين الموثقين يمكنها الوصول إلى الملف الائتماني الرقمي."
+        },
+        "ready": {
+          "title": "جاهز",
+          "message": "ملفك الائتماني الرقمي متاح."
+        }
+      },
+      "common": {
+        "notAvailableYet": "غير متاح بعد"
+      },
+      "summary": {
+        "headline": "{paidOrdersCount} طلب مدفوع عبر {uniqueBuyers} مشترٍ",
+        "description": "يعكس هذا الملف النشاط المسجل على AfriConnect وهو مخصص كبطاقة أداء للمنصة، وليس كدرجة ائتمان من مكتب خارجي.",
+        "generated": "تم إنشاؤه في",
+        "reportPeriodStart": "بداية فترة التقرير",
+        "latestProfileActivity": "آخر نشاط للملف"
+      },
+      "cards": {
+        "paidTransactionVolume": {
+          "title": "حجم المعاملات المدفوعة",
+          "description": "قيمة طلبات السوق المسواة"
+        },
+        "paidOrders": {
+          "title": "الطلبات المدفوعة",
+          "description": "تم تتبع {totalOrders} إجمالي طلبات البائع"
+        },
+        "uniqueBuyers": {
+          "title": "المشترون الفريدون",
+          "description": "{repeatBuyers} مشترٍ مكرر"
+        },
+        "buyerCountries": {
+          "title": "دول المشترين",
+          "description": "{buyersWithBusinessMetadata} مشترٍ ببيانات أعمال مرتبطة"
+        },
+        "totalSellerOrders": {
+          "title": "إجمالي طلبات البائع",
+          "description": "جميع الطلبات المنسوبة لهذا البائع"
+        },
+        "successfulPaymentRate": {
+          "title": "معدل نجاح الدفع",
+          "description": "المدفوعات المسواة من بين الطلبات ذات سجلات الدفع"
+        },
+        "averageOrderValue": {
+          "title": "متوسط قيمة الطلب",
+          "description": "بناءً على طلبات السوق المسواة"
+        },
+        "recentPaidActivity": {
+          "title": "النشاط المدفوع الأخير",
+          "description": "أحدث نشاط للطلبات المسواة"
+        },
+        "uniqueBuyersDetailed": {
+          "title": "المشترون الفريدون",
+          "description": "المشترون المتميزون الذين قدموا طلبات للبائع"
+        },
+        "repeatBuyers": {
+          "title": "المشترون المكررون",
+          "description": "المشترون الذين لديهم أكثر من طلب واحد"
+        },
+        "metadataCoverage": {
+          "title": "تغطية البيانات الوصفية",
+          "description": "{buyersWithBusinessMetadata} مشترٍ مرتبطون بسجلات أعمال"
+        },
+        "topBuyerConcentration": {
+          "title": "تركيز كبار المشترين",
+          "description": "حصة حجم المعاملات من أكبر مشترٍ"
+        }
+      },
+      "empty": {
+        "title": "لا يوجد نشاط كافٍ بعد",
+        "description": "بمجرد أن يبدأ عملك في تلقي الطلبات، سيتوسع هذا الملف تلقائياً ليشمل إشارات المعاملات، والتنفيذ، وتنوع المشترين."
+      },
+      "sections": {
+        "transactionHistory": {
+          "title": "تاريخ المعاملات",
+          "description": "أداء الطلبات والمدفوعات الأخيرة عبر السوق."
+        },
+        "fulfillment": {
+          "title": "أداء التنفيذ",
+          "description": "الأداء التشغيلي المستمد من دورة حياة الطلب ونتائج المدفوعات."
+        },
+        "buyerDiversity": {
+          "title": "تنوع المشترين"
+        }
+      },
+      "trend": {
+        "window": "{days} يوم",
+        "rollingPerformanceWindow": "نافذة الأداء المتغيرة",
+        "orders": "الطلبات",
+        "paidOrders": "الطلبات المدفوعة",
+        "paidVolume": "حجم المدفوعات"
+      },
+      "fulfillment": {
+        "completionRate": "معدل الإكمال",
+        "cancellationRate": "معدل الإلغاء",
+        "payoutSuccessRate": "معدل نجاح الدفعات",
+        "ordersCurrentlyProcessing": "الطلبات قيد المعالجة حالياً",
+        "averageFulfillmentCycle": "متوسط دورة التنفيذ",
+        "averageFulfillmentCycleValue": "{days} أيام",
+        "payoutOutcomeCounts": "إحصائيات نتائج الدفعات",
+        "payoutStatuses": {
+          "queued": "في الانتظار",
+          "pending": "قيد المعالجة",
+          "success": "ناجحة",
+          "failed": "فاشلة",
+          "reverted": "مستردة"
+        }
+      },
+      "buyerDiversity": {
+        "coverage": {
+          "complete": "تنوع المشترين يعتمد على سجلات أعمال المشترين المرتبطة.",
+          "partial": "يعتمد تنوع المشترين فقط على المشترين ذوي سجلات الأعمال المرتبطة، لذا يتم استبعاد بعض المشترين من مزيج التنوع."
+        }
+      },
+      "breakdowns": {
+        "countLabel": "{count} مشترين",
+        "buyerCountries": {
+          "title": "دول المشترين",
+          "empty": "سيظهر توزيع الدول بعد ربط المشترين لبيانات أعمالهم."
+        },
+        "buyerCategories": {
+          "title": "فئات المشترين",
+          "empty": "سيظهر توزيع الفئات بعد ربط المشترين لبيانات أعمالهم."
+        },
+        "topBuyers": {
+          "title": "كبار المشترين",
+          "empty": "سيظهر كبار المشترين بمجرد تقديم الطلبات.",
+          "orders": "{count} طلبات"
+        }
+      },
+      "methodology": {
+        "title": "ملاحظة حول المنهجية",
+        "description": "يتم إنشاء هذا التقرير من نشاط سوق AfriConnect المباشر.",
+        "points": {
+          "transactionVolume": "يعتمد حجم المعاملات على طلبات البائع المرتبطة بمدفوعات المنصة المسواة.",
+          "fulfillment": "يستخدم التنفيذ حالة الطلب ونتائج المدفوعات كإشارات للأداء التشغيلي.",
+          "buyerDiversity": "يعتمد تنوع المشترين على سجلات أعمال المشترين المرتبطة، لذا فإن نقص البيانات الوصفية للمشتري يقلل من التغطية."
+        }
+      },
+      "report": {
+        "generatedOn": "تم الإنشاء في {date}",
+        "latestActivity": "آخر نشاط: {date}",
+        "reportPeriod": "فترة التقرير: {start} — {end}",
+        "category": "الفئة",
+        "country": "البلد",
+        "verifiedSince": "تم التحقق منذ",
+        "sectionProfileSummary": "1. ملخص الملف الشخصي",
+        "sectionTransactionHistory": "2. سجل المعاملات",
+        "sectionFulfillment": "3. أداء التنفيذ",
+        "sectionBuyerDiversity": "4. تنوع المشترين",
+        "sectionMethodology": "5. ملاحظة منهجية",
+        "rollingPerformanceWindows": "نوافذ الأداء المتجددة",
+        "payoutOutcomes": "نتائج المدفوعات",
+        "topBuyersSection": "أبرز المشترين",
+        "buyerCountriesSection": "بلدان المشترين",
+        "buyerCategoriesSection": "فئات المشترين",
+        "noData": "لا توجد بيانات متاحة",
+        "orders": "{count} طلبات",
+        "buyerShare": "{count} مشترين ({share}%)"
+      }
+    },
+    "inventory": {
+      "title": "المخزون",
+      "description": "تتبع مستويات المخزون، تعديل الكميات، وتعيين تنبيهات إعادة التموين",
+      "summary": {
+        "totalProducts": "إجمالي المنتجات",
+        "totalUnits": "إجمالي الوحدات",
+        "lowStock": "مخزون منخفض",
+        "outOfStock": "نفد المخزون"
+      },
+      "tabs": {
+        "inventory": "المخزون",
+        "activity": "النشاط"
+      },
+      "searchPlaceholder": "البحث بالمنتج أو SKU...",
+      "filterStatus": "تصفية الحالة",
+      "status": {
+        "in_stock": "متوفر",
+        "low_stock": "منخفض",
+        "out_of_stock": "نفد",
+        "inStock": "متوفر",
+        "lowStock": "منخفض",
+        "outOfStock": "نفد"
+      },
+      "table": {
+        "product": "المنتج",
+        "sku": "SKU",
+        "onHand": "المتوفر حالياً",
+        "threshold": "حد انخفاض المخزون",
+        "status": "الحالة",
+        "actions": "الإجراءات"
+      },
+      "actions": {
+        "adjust": "تعديل",
+        "thresholds": "الحدود",
+        "history": "السجل"
+      },
+      "noSku": "لا يوجد SKU",
+      "noResults": "لا توجد عناصر مخزون تطابق فلاترك.",
+      "activityTitle": "النشاط الأخير",
+      "activity": {
+        "date": "التاريخ",
+        "product": "المنتج",
+        "type": "النوع",
+        "quantity": "الكمية",
+        "newQuantity": "الكمية الجديدة",
+        "reason": "السبب",
+        "none": "لا يوجد",
+        "empty": "لا يوجد نشاط مخزون بعد."
+      },
+      "types": {
+        "restock": "إعادة تموين",
+        "adjustment": "تعديل",
+        "return": "إرجاع",
+        "correction": "تصحيح",
+        "sale": "بيع"
+      },
+      "adjustDialog": {
+        "title": "تعديل المخزون",
+        "description": "تسجيل تغيير في مخزون هذا المنتج.",
+        "type": "نوع التعديل",
+        "delta": "تغيير الكمية",
+        "deltaPlaceholder": "استخدم قيم سالبة للنقص",
+        "quickAdd": "إضافة 1",
+        "quickRemove": "إزالة 1",
+        "reason": "السبب",
+        "reasonPlaceholder": "ملاحظة اختيارية لهذا التغيير",
+        "save": "حفظ التعديل"
+      },
+      "historyDialog": {
+        "title": "سجل المخزون",
+        "description": "أحدث معاملات المخزون لهذا المنتج."
+      },
+      "thresholdDialog": {
+        "title": "إعدادات إعادة التموين",
+        "description": "تعيين تنبيهات المخزون المنخفض وكميات إعادة الطلب.",
+        "lowStock": "حد انخفاض المخزون",
+        "lowStockPlaceholder": "مثلاً: 5",
+        "reorder": "كمية إعادة الطلب",
+        "reorderPlaceholder": "مثلاً: 25",
+        "save": "حفظ الإعدادات"
+      },
+      "invalidAdjustment": "أدخل تعديلاً لا يساوي صفراً.",
+      "adjustmentSaved": "تم حفظ تعديل المخزون.",
+      "invalidThreshold": "يجب أن يكون حد انخفاض المخزون 0 أو أكثر.",
+      "invalidReorder": "يجب أن تكون كمية إعادة الطلب 0 أو أكثر.",
+      "thresholdsSaved": "تم حفظ إعدادات إعادة التموين."
+    }
+  }

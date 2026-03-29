@@ -1,0 +1,7 @@
+[test]
+# Preload the test setup file
+preload = ["./tests/setup.ts"]
+
+# Exclude e2e tests - they should be run with `npm run test:e2e` (playwright)
+root = "./tests"
+

@@ -1,0 +1,1668 @@
+{
+  "common": {
+      "loading": "Fe'amaa jira...",
+      "save": "Oolchi",
+      "cancel": "Haquu",
+      "delete": "Haquu",
+      "edit": "Gulaali",
+      "search": "Barbaadi",
+      "clearFilters": "Gingilchaa qulqulleessi",
+      "close": "Cufi",
+      "back": "Dura",
+      "next": "Itti fufi",
+      "submit": "Galchi",
+      "confirm": "Mirkanessi",
+      "yes": "Eeyyee",
+      "no": "Lakki",
+      "all": "Hunda",
+      "none": "Homaa",
+      "actions": "Gochaalee",
+      "status": "Haala",
+      "created": "Uumame",
+      "updated": "Haroome",
+      "details": "Bal'ina",
+      "viewDetails": "Bal'ina ilaali",
+      "account": "Eenyummeessa",
+      "soon": "Dhiyootti",
+      "admin": "Bulchaa",
+      "filters": "Gingilchaa",
+      "noDescription": "Ibsi hin jiru",
+      "settingUp": "Eenyummeessa kee qopheessaa jirra..."
+    },
+    "navigation": {
+      "dashboard": "Dajaja",
+      "marketplace": "Gabaa",
+      "products": "Oomishoota koo",
+      "inventory": "Kuusa",
+      "messages": "Ergaawwan",
+      "cart": "Gaari",
+      "orders": "Ajajawwan",
+      "settings": "Sajatoo",
+      "billing": "Kaffaltii",
+      "myBusiness": "Nagaadii koo",
+      "creditProfile": "Eenyummeessa Liqii",
+      "registerBusiness": "Daldala Mirkaneessi",
+      "verifyBusinessLabel": "Daldala Kee Mirkaneessi",
+      "applyToSell": "Gurguruuf Iyyadhu",
+      "manageUsers": "Fayyadamtoota Bulchi",
+      "manageBusinesses": "Nagaadiwwan Bulchi",
+      "manageSellerApplications": "Iyyannoo Gurgurtaa",
+      "manageProducts": "Oomishoota Bulchi",
+      "manageRefunds": "Deebii Kaffaltii Bulchi",
+      "manageBanks": "Baankota Bulchi",
+      "bankPortfolio": "Poortifooliyoo Baankii",
+      "bankReferrals": "Rifaraalota Baankii",
+      "bankAnalytics": "Xiinxala Baankii",
+      "compliance": "Seera AfCFTA",
+      "aiAssistant": "Gargaaraa AI",
+      "toggleMenu": "Baafata jijjiiri",
+      "toggleSidebar": "Hinsaa cinaa jijjiiri"
+    },
+    "chat": {
+      "messages": "Ergaawwan",
+      "messagesDescription": "Mariwwan bittootaa fi gurgurtoota waliin qabdu ilaali",
+      "conversations": "Mariwwan",
+      "conversation": "Marii",
+      "contactSeller": "Gurgurtaa Quunnami",
+      "messageBusiness": "Nagaadiitti Ergaa Ergi",
+      "noMessages": "Hamma yoonaa ergaan hin jiru",
+      "typeMessage": "Ergaa barreessi...",
+      "startConversation": "Fuula oomishaa irratti gurgurtaa quunnamuun marii jalqabi",
+      "selectConversation": "Marii filadhu",
+      "selectConversationDescription": "Ergaawwan ilaaluuf tarree keessaa marii tokko filadhu",
+      "loadingConversations": "Mariwwan fe'amaa jiru...",
+      "sendMessage": "Ergaa ergi",
+      "attachFile": "Faayila wal qabsiisi",
+      "typing": "barreessaa jira..."
+    },
+    "marketplace": {
+      "title": "Gabaa",
+      "description": "Nagaadiwwan biroo irraa oomishoota barbaadi",
+      "browseProducts": "Oomishoota Barbaadi",
+      "showingProducts": "Oomishoota {count} agarsiisaa jira",
+      "loadingProducts": "Oomishoota fe'amaa jiru...",
+      "noProducts": "Oomishni hin argamne",
+      "noProductsYet": "Gabaa keessatti hamma yoonaa oomishni hin jiru.",
+      "tryAdjustingFilters": "Gingilchaa ykn jechoota barbaacha kee sirreessi.",
+      "searchPlaceholder": "Oomishoota barbaadi...",
+      "allCategories": "Ramaddii Hunda",
+      "allCountries": "Biyyoota Hunda",
+      "sortBy": "Akkaataan itti tarreeffamu",
+      "sortNewest": "Haaraa",
+      "sortPriceAsc": "Gatii: Xiqqaa irraa gara Guddaatti",
+      "sortPriceDesc": "Gatii: Guddaa irraa gara Xiqqaatti",
+      "outOfStock": "Kuusa keessaa dhumateera",
+      "inStock": "{count} kuusa keessa jira",
+      "inStockCap": "1000+ kuusa keessa jira",
+      "price": "Gatii",
+      "category": "Ramaddii",
+      "country": "Biyya",
+      "clearAllFilters": "Gingilchaa hunda qulqulleessi",
+      "verify": {
+        "businessBeforeAdd": "Oomishaalee gara gaarii kee tti dabaluun dura daldala kee mirkaneessi.",
+        "completeBusinessBeforeAdd": "Oomishaalee gara gaarii kee tti dabaluun dura mirkaneessa daldalaa xumuri."
+      }
+    },
+    "products": {
+      "title": "Oomishoota koo",
+      "description": "Tarree oomishoota keetii bulchi",
+      "addProduct": "Oomisha Idaysi",
+      "allProducts": "Oomishoota Hunda",
+      "searchDescription": "Waan barbaaddu argachuuf oomishoota kee barbaadi",
+      "searchPlaceholder": "Oomishoota barbaadi...",
+      "filterByStatus": "Akka haalaatiin gingilchi",
+      "allStatuses": "Haala Hunda",
+      "noProducts": "Hamma yoonaa oomishni hin jiru. Jalqabuuf oomisha kee isa jalqabaa idaysi.",
+      "noMatchingProducts": "Oomishni ulaagaa barbaacha keetiin wal simu hin jiru.",
+      "productName": "Maqaa Oomishaa",
+      "enterProductName": "Maqaa oomishaa galchi",
+      "descriptionLabel": "Ibsa",
+      "describeProduct": "Oomisha kee ibsi",
+      "price": "Gatii",
+      "stockQuantity": "Baay'ina Kuusaa",
+      "quantity": "Baay'ina",
+      "sku": "SKU",
+      "skuPlaceholder": "fkn, AC-COF-001",
+      "lowStockThreshold": "Daangaa Kuusa Xiqqaa",
+      "reorderQuantity": "Baay'ina Irra-deebii Ajajaa",
+      "category": "Ramaddii",
+      "categoryPlaceholder": "fkn, Elektirooniksii",
+      "originCountry": "Biyya Itti Omishame",
+      "countryPlaceholder": "fkn, Itoophiyaa",
+      "minOrderQty": "Baay'ina Ajajaa isa Xiqqaa",
+      "status": "Haala",
+      "active": "Hojii irra",
+      "inactive": "Hojii irra kan hin jirre",
+      "image": "Fakkii",
+      "images": "Fakkiiwwan",
+      "addImages": "Fakkiiwwan Idaysi",
+      "addNewProduct": "Oomisha Haaraa Idaysi",
+      "enterDetailsStep": "Jalqabuuf bal'ina oomishaa galchi.",
+      "addImagesStep": "Oomishni kee akka mul'atuuf fakkiiwwan idaysi.",
+      "productDetails": "Bal'ina Oomishaa",
+      "nextAddImages": "Itti fufi: Fakkiiwwan Idaysi",
+      "creating": "Uumamaa jira...",
+      "skipForNow": "Ammaaf bira darbi",
+      "completeListing": "Tarreeffama Xumuri",
+      "editProduct": "Oomisha Gulaali",
+      "updateDetails": "Bal'ina oomishaa haaromsi fi fakkiiwwan bulchi.",
+      "saveChanges": "Jijjiirama Oolchi",
+      "deleteProduct": "Oomisha Haqui",
+      "deleteConfirmation": "Oomisha kana haquu kee mirkaneeffatteettaa? Kun fakkiiwwan wal qabatan hundas ni haqa. Gochi kun duubatti hin deebi'u.",
+      "firstProductPricingPromptTitle": "Oomishni kee inni jalqabaa hojii irra ooleera",
+      "firstProductPricingPromptDescription": "Jalqaba gaariidha! Karoorawwan ilaaluu fi tajaajiloota gurgurtaa dabalataa argachuuf fuula gatii daawwadhu.",
+      "firstProductPricingPromptStay": "Booda haa ta'u",
+      "firstProductPricingPromptGo": "Gara Gatii Deemi",
+      "subscriptionRequiredPromptTitle": "Maammila ta'uun ni barbaachisa",
+      "subscriptionRequiredPromptDescription": "Oomisha biraa dabaluuf, kaffaltii maamilaa qabaachuu qabdu. Itti fufuuf karoora filadhu.",
+      "subscriptionRequiredPromptStay": "Amma miti",
+      "subscriptionRequiredPromptGo": "Gatii Ilaali",
+      "currencyHint": "Gatiin guddaan USD dha. Gatiin ETB fi KSH hamma jijjiirraa maallaqaatiin ofiin guutamuu danda'a.",
+      "ratesUpdated": "Gatiin haaromfameera: {date}.",
+      "usdRequired": "Gatiin USD barbaachisaadha, 0 ol ta'uu qaba.",
+      "etbRequired": "Gatiin ETB barbaachisaadha, 0 ol ta'uu qaba.",
+      "kshInvalid": "Gatiin KSH 0 ykn isaa ol ta'uu qaba."
+    },
+    "orders": {
+      "title": "Ajajawwan",
+      "description": "Bittaa fi gurgurtaa kee bulchi",
+      "purchases": "Bittaawwan",
+      "sales": "Gurgurtaawwan",
+      "myPurchases": "Bittaawwan koo",
+      "mySales": "Gurgurtaawwan koo",
+      "purchasesDescription": "Ajajawwan ati nagaadiwwan biroo irraa ajajje",
+      "salesDescription": "Ajajawwan nagaadiwwan biroo oomisha keetiif ajajan",
+      "searchPlaceholder": "Ajajawwan barbaadi...",
+      "filterByStatus": "Akka haalaatiin gingilchi",
+      "allStatuses": "Haala Hunda",
+      "pending": "Kan eegamaa jiru",
+      "processing": "Adeemsa irra",
+      "completed": "Xumurame",
+      "cancelled": "Haqame",
+      "order": "Ajaja",
+      "seller": "Gurgurtaa",
+      "buyer": "Bitaa",
+      "amount": "Hamma",
+      "totalAmount": "Hamma Waliigalaa",
+      "noPurchasesYet": "Hamma yoonaa bittaan hin jiru. Gabaa keessatti bittaa jalqabi!",
+      "noSalesYet": "Hamma yoonaa gurgurtaan hin jiru. Gurguruu jalqabuuf oomishoota tarreessi!",
+      "noMatchingOrders": "Ajajni ulaagaa barbaacha keetiin wal simu hin jiru.",
+      "orderPlacedOn": "Ajajni kan qophaa'e: {date}",
+      "orderItems": "Meeshaalee Ajajaman",
+      "unknownProduct": "Oomisha hin beekamne",
+      "loadingOrder": "Ajaja fe'amaa jira...",
+      "loadingOrderDetails": "Maaloo bal'ina ajajaa hamma fidhnutti obsi.",
+      "cancelOrder": "Ajaja Haqui",
+      "cancelOrderConfirmation": "Ajaja kana haquu kee mirkaneeffatteettaa? Gochi kun duubatti hin deebi'u.",
+      "keepOrder": "Ajaja itti fufi",
+      "markAsProcessing": "Akka adeemsa irra jiruutti mallatteessi",
+      "markAsCompleted": "Akka xumurameetti mallatteessi",
+      "trackAndManage": "Bittaa fi gurgurtaa kee hordofi, bulchi"
+    },
+    "business": {
+      "registerTitle": "Nagaadii Kee Galmeessi",
+      "registerDescription": "Gabaa irratti gurgurtaa jalqabuuf eenyummeessa nagaadii uumi",
+      "businessInformation": "Oodeeffannoo Nagaadii",
+      "businessInfoDescription": "Waa'ee nagaadii keetii bal'ina kenni. Galmeen kee otoo hin danda'amin dura garee keenyaan ni mirkanaa'a.",
+      "businessName": "Maqaa Nagaadii",
+      "enterBusinessName": "Maqaa nagaadii keetii galchi",
+      "description": "Ibsa",
+      "businessDescription": "Ibsa gabaabaa nagaadii keetii",
+      "descriptionHelp": "Nagaadiin kee maal akka hojjetu fi oomishoota/tajaajiloota ati dhiyeessitu ibsi.",
+      "country": "Biyya",
+      "selectCountry": "Biyya filadhu",
+      "city": "Magala",
+      "enterCity": "Maqaa magaalaa galchi",
+      "address": "Teessoo",
+      "businessAddress": "Teessoo nagaadii",
+      "category": "Ramaddii Nagaadii",
+      "selectCategory": "Ramaddii filadhu",
+      "phone": "Lakkoofsa Bilbilaa",
+      "phonePlaceholder": "+251 xxx xxx xxxx",
+      "website": "Marsariitii",
+      "websitePlaceholder": "https://example.com",
+      "registering": "Galmeeffamaa jira...",
+      "registrationDocuments": "Sanadoota galmee",
+      "businessLicence": "Hayyama nagaadii",
+      "businessLicenceNumber": "Lakkoofsa hayyama nagaadii",
+      "businessLicenceNumberPlaceholder": "Lakkoofsa hayyamaa galchi",
+      "memoOfAssociation": "Sanada hundeeffamaa",
+      "tinCertificate": "Waraqaa eenyummeessa kaffaltii gibiraa (TIN)",
+      "tinCertificateNumber": "Lakkoofsa TIN",
+      "tinCertificateNumberPlaceholder": "Lakkoofsa TIN galchi",
+      "hasImportExportPermit": "Hayyama al-ergii fi fidi (import/export) qabdaa?",
+      "hasImportExportPermitPlaceholder": "Filadhu...",
+      "hasImportExportPermitYes": "Eeyyee",
+      "hasImportExportPermitNo": "Lakki",
+      "importExportPermit": "Hayyama al-ergii fi fidi",
+      "importExportPermitNumber": "Lakkoofsa hayyama al-ergii fi fidi",
+      "importExportPermitNumberPlaceholder": "Lakkoofsa hayyamaa galchi (yoo jiraate)",
+      "upload": "Oolchi",
+      "uploaded": "Ooleera",
+      "sellerAgreementLabel": "Dubbiseera, waliigaltees nan amana",
+      "sellerAgreementLink": "Waliigaltee Gurgurtaa",
+      "sellerAgreementRequired": "Gurguruuf iyyachuuf dura waliigaltee gurgurtaa amanuu qabdu.",
+      "buyerVerificationTitle": "Daldala Kee Mirkaneessi",
+      "buyerVerificationDescription": "Akka akkaawuntiin kee gabaa irraa bituu danda'uuf odeeffannoo fi sanadoota daldala kee galchi.",
+      "buyerVerificationCardTitle": "Mirkaneessa Daldalaa Bitaa",
+      "buyerVerificationCardDescription": "Bitoonni AfriConnect irratti jiranis daldaloota mirkanaa'an ta'uu qabu. Sanadoota kee yeroo tokko galchi; gareen keenya ni ilaala.",
+      "buyerVerificationDocumentsTitle": "Sanadoota mirkaneessaa",
+      "buyerVerificationDocumentsDescription": "Bittaa hojii irra oolchuu dura daldala kee mirkaneessuuf sanadoota nu barbaachisan olkaa'i.",
+      "buyerVerificationSubmitting": "Ergaa jira...",
+      "submitBuyerVerification": "Mirkaneessaaf galchi",
+      "buyerVerificationSubmitted": "Mirkaneessi daldalaa milkaa'inaan ergameera. Yeroo dhihootti ni ilaalla.",
+      "buyerVerificationFailed": "Mirkaneessa daldalaa erguun hin milkoofne.",
+      "sellerApplicationTitle": "Gurguruuf Iyyadhu",
+      "sellerApplicationDescription": "Daldalli kee erga mirkanaa'ee booda, sanadoota daldalaa irra deebi'ee osoo hin galchin hayyama gurgurtaa gaafachuu dandeessa.",
+      "sellerApplicationCardTitle": "Iyyannoo Gurgurtaa",
+      "sellerApplicationCardDescription": "Hayyamni gurgurtaa mirkaneessa daldalaa irraa addaan ilaalama. Yeroo gurguruuf qophoofte waliigaltee gurgurtaa fudhadhu, iyyannoo kees galchi.",
+      "businessVerificationStatusTitle": "Mirkaneessa Daldalaa",
+      "sellerApplicationBusinessVerified": "Daldalli kee mirkanaa'eera, gamaaggama iyyannoo gurgurtaafis qophaa'eera.",
+      "sellerApplicationBusinessPending": "Gurguruuf iyyachuu dura daldalli kee mirkanaa'uu qaba.",
+      "sellerApplicationStatusTitle": "Haala Hayyama Gurgurtaa",
+      "sellerApplicationApproved": "Hayyamni gurgurtaa akkaawuntii kanaaf hojii irra ooleera.",
+      "sellerApplicationPending": "Iyyannoon gurgurtaa kee gamaaggamaa jira.",
+      "sellerApplicationRejected": "Iyyannoon gurgurtaa kee kufeera. Ulaagaalee ilaali, yeroo qophoofte immoo irra deebi'ii iyyadhu.",
+      "sellerApplicationNotApplied": "Ammatti gurguruuf hin iyyanne.",
+      "sellerApplicationReady": "Iyyachuuf qophaa'e",
+      "sellerApplicationRequirementsTitle": "Itti aansuun maal ta'a",
+      "sellerApplicationRequirementBusiness": "Daldalli kee dursee mirkanaa'uu qaba.",
+      "sellerApplicationRequirementAgreement": "Waliigaltee gurgurtaa yeroo ammaa jiru ni ilaalla, ni fudhattas.",
+      "sellerApplicationRequirementReview": "Hayyamni gurgurtaa osoo hin kennamin dura bulchaan iyyannoo kee ni gamaaggama.",
+      "sellerApplicationSubmitting": "Ergamaa jira...",
+      "sellerApplicationApply": "Gurguruuf Iyyadhu",
+      "sellerApplicationReapply": "Irra Deebi'ii Gurguruuf Iyyadhu",
+      "sellerApplicationManageProducts": "Oomishoota Bulchi",
+      "sellerApplicationOpenBusiness": "Profaayilii Daldalaa Bani",
+      "sellerApplicationSubmitted": "Iyyannoon gurgurtaa milkaa'inaan ergameera.",
+      "sellerApplicationFailed": "Iyyannoo gurgurtaa erguun hin milkoofne.",
+      "sellerApplicationRequiresVerifiedBusiness": "Gurguruuf iyyachuu dura daldalli kee mirkanaa'uu qaba.",
+      "verificationStatus": {
+        "pending": "Mirkaneeffamaa jira",
+        "verified": "Mirkanaa'eera",
+        "rejected": "Kufee jira"
+      },
+      "sellerStatus": {
+        "not_applied": "Hin iyyatamne",
+        "pending": "Gamaaggamaa jira",
+        "approved": "Mirkanaa'e",
+        "rejected": "Kufee jira"
+      },
+      "profile": {
+        "sellerDescription": "Profaayilii daldalaa, mirkaneessa fi hojiiwwan gurgurtaa kee bulchi",
+        "buyerDescription": "Profaayilii daldalaa, mirkaneessa fi iyyannoo gurgurtaa kee bulchi",
+        "editProfile": "Profaayilii Gulaali",
+        "businessProfileTitle": "Profaayilii Daldalaa",
+        "editDescription": "Odeeffannoo daldalaa kee armaan gadii haaromsi",
+        "viewDescription": "Bal'ina daldalaa kee fi odeeffannoo qunnamtii",
+        "verificationPendingMessage": "Daldalli kee garee keenya biratti gamaaggamaa jira. Eeyyamni bituu erga mirkanaa'ee booda ni banama.",
+        "verificationVerifiedMessage": "Daldalli kee mirkanaa'eera. Amma oomishaalee gara gaarii bitataa keetti dabaluun ajaja kennuu dandeessa.",
+        "verificationRejectedMessage": "Mirkaneessi daldalaa kee kufeera. Irra deebitee galchuuf odeeffannoo daldalaa fi sanadoota armaan gadii haaromsi.",
+        "sellerRequiresVerifiedMessage": "Gurguruuf iyyachuu dura jalqaba daldala kee mirkaneessi.",
+        "sellerApprovedMessage": "Hayyamni gurgurtaa akaawuntii kanaaf hojii irra ooleera. Oomishaalee, kuusaa fi kaffaltiiwwan bulchuu dandeessa.",
+        "sellerPendingMessage": "Iyyannoon gurgurtaa kee gamaaggama bulchaa eeggachaa jira.",
+        "sellerRejectedMessage": "Iyyannoon gurgurtaa kee kufeera. Waliigaltee gurgurtaa ilaalii yeroo barbaachisaa ta'etti irra deebi'ii iyyadhu.",
+        "sellerReadyMessage": "Daldalli kee mirkanaa'eera. Amma sanadoota daldalaa irra deebi'ee osoo hin galchin gurguruuf iyyachuu dandeessa.",
+        "verificationDocumentsRejectedDescription": "Dirreewwan kana haaromsuu fi kuusuun daldala kee irra deebi'ee gamaaggamaaf ni erga.",
+        "verificationDocumentsDescription": "Daldalli kee saffisaan akka gamaaggamamuuf sanadoota galmee kee yeroo yeroon haaromsi.",
+        "saving": "Kuusamaa jira...",
+        "saveChanges": "Jijjiirama Kuusi",
+        "location": "Bakka",
+        "resubmitBadge": "Irra deebitee galchuuf sanadoota haaromsi fi kuusi",
+        "documentUploaded": "Sanadiin ol fe'ameera",
+        "documentMissing": "Sanadiin hin jiru",
+        "licenceNumber": "Lakkoofsa eeyyamaa: {number}",
+        "tinNumber": "Lakkoofsa TIN: {number}",
+        "permitUploaded": "Eeyyamni ol fe'ameera",
+        "permitMissing": "Eeyyamni amma iyyuu ol hin fe'amne",
+        "notProvided": "Hin kenname",
+        "permitNumber": "Lakkoofsa eeyyamaa: {number}",
+        "profileUpdated": "Profaayiliin daldalaa milkaa'inaan haaromfameera",
+        "profileUpdateFailed": "Daldala haaromsuun hin milkoofne",
+        "payoutSettingsTitle": "Sajoo Kaffaltii",
+        "payoutSettingsDescription": "Kaffaltiiwwan gabaa irraa argachuuf odeeffannoo baankii kee dabali.",
+        "bank": "Baankii",
+        "selectBank": "Baankii filadhu",
+        "loadingBanks": "Baankiinota fe'amaa jiru...",
+        "unableToLoadBanks": "Baankiinota amma fe'uun hin danda'amu.",
+        "accountName": "Maqaa Herregaa",
+        "accountNumber": "Lakkoofsa Herregaa",
+        "payoutEnabled": "Kaffaltiin ni hojjeta",
+        "payoutNotEnabled": "Kaffaltiin amma iyyuu hin hojjennu",
+        "savePayoutSettings": "Sajoo Kaffaltii Kuusi",
+        "payoutSettingsUpdated": "Sajiin kaffaltii haaromfameera",
+        "payoutSettingsUpdateFailed": "Sajoo kaffaltii haaromsuun hin milkoofne",
+        "creditProfileTitle": "Profaayilii Liqii Dijitaalaa",
+        "creditProfileDescription": "Seenaa hojiiwwan daldalaa kee, bu'a qabeessummaa guutinsa hojii fi garaagarummaa bittootaa gabaasa gurgurtaa tokko keessatti ilaali.",
+        "creditProfileAvailability": "Daldalli kee erga mirkanaa'ee booda ni argama. Gabaasa maxxanfamuu danda'us qooddachuuf baasuu dandeessa.",
+        "openCreditProfile": "Profaayilii Liqii Bani"
+      }
+    },
+    "cart": {
+      "title": "Gaari Bittaa",
+      "description": "Kaffaluun dura meeshaalee kee irra deebii ilaali",
+      "emptyCart": "Gaariin kee duwwaadha",
+      "emptyCartDescription": "Oomishoota argachuuf gabaa keessa deemi",
+      "browseMarketplace": "Gabaa Daawwadhu",
+      "subtotal": "Ida'ama xiqqaa",
+      "total": "Ida'ama waliigalaa",
+      "checkout": "Kaffaltii xumuri",
+      "removeItem": "Meeshaa Haqui",
+      "updateQuantity": "Baay'ina haaromsi",
+      "buyerAgreementRequired": "Kaffaluun dura waliigaltee bittaa amanuu qabdu."
+    },
+    "dashboard": {
+      "title": "Dajaja",
+      "welcome": "Baga nagaan deebite! Kun waligala ajajawwan keetiiti.",
+      "welcomeBack": "Baga nagaan deebite,",
+      "overview": "Waliigala",
+      "recentOrders": "Ajajawwan Dhihoo",
+      "recentProducts": "Oomishoota Dhihoo",
+      "quickStats": "Istatistiiksii Saffisaa",
+      "totalRevenue": "Galii Waliigalaa",
+      "totalOrders": "Ajajawwan Waliigalaa",
+      "totalProducts": "Oomishoota Waliigalaa",
+      "pendingOrders": "Ajajawwan Eegamaa Jiran",
+      "discoverProducts": "Oomishoota Bari",
+      "browseDescription": "Nagaadiwwan Afrikaa keessaa oomishoota dhiyeessan ilaali"
+    },
+    "settings": {
+      "title": "Sajatoo",
+      "description": "Sajatoo eenyummeessaa fi filannoowwan kee bulchi",
+      "profile": "Eenyummeessa",
+      "profileDescription": "Oodeeffannoo eenyummeessa keetii haaromsi",
+      "displayName": "Maqaa Mul'atu",
+      "enterName": "Maqaa kee galchi",
+      "displayNameHelp": "Kun maqaa namootatti mul'atudha. Maqaa eenyummeessaa irraa adda ta'uu danda'a.",
+      "noNameSet": "Maqaan hin dhiyaanne",
+      "accountInfo": "Oodeeffannoo Eenyummeessaa",
+      "accountInfoDescription": "Bal'ina eenyummeessa keetii",
+      "email": "Iimeelii",
+      "emailHelp": "Iimeeliin Clerk-iin bulfama. Jijjiiruuf, sajatoo eenyummeessaa kee haaromsi.",
+      "userId": "Eenyummeessa Fayyadamaa (ID)",
+      "verifyBusinessLabel": "Daldala Kee Mirkaneessi",
+      "verifyBusinessDescription": "Bituu banuuf odeeffannoo daldalaa kee galchi",
+      "verifyBusinessDescriptionIncomplete": "Bituu banuuf mirkaneessa daldalaa kee xumuri",
+      "applyToSellLabel": "Gurguruuf Iyyadhu",
+      "applyToSellDescription": "Waliigaltee gurgurtaa fudhadhu, iyyata gurgurtaa kees galchi"
+    },
+    "billing": {
+      "title": "Kaffaltii",
+      "description": "Seenaa kaffaltii kee ilaali fi kaffaltii bulchi",
+      "paymentMethod": "Mala Kaffaltii",
+      "paymentMethodDescription": "Kaffaltii nageenyi isaa mirkanaa'e Chapa-iin",
+      "chapaGateway": "Karaa Kaffaltii Chapa",
+      "chapaDescription": "Mobaayila Maallaqaa, Baankii, ykn Kaardii fayyadamuun kaffali",
+      "learnMore": "Caalaatti bari",
+      "paymentHistory": "Seenaa Kaffaltii",
+      "paymentHistoryDescription": "Hojiiwwan kaffaltii dhihoo ilaali",
+      "noPaymentHistory": "Hamma yoonaa seenaan kaffaltii hin jiru",
+      "date": "Guyyaa",
+      "reference": "Eeruu",
+      "type": "Gosa",
+      "amount": "Hamma",
+      "failed": "Heephame"
+    },
+    "pricing": {
+      "title": "Gatii Salphaa fi Ifa",
+      "description": "Karoora nagaadii keetiif ta'u filadhu. Karoorawwan hundi gabaa B2B fi meeshaalee AfCFTA ni dabalatu.",
+      "subtitle": "Karoora nagaadii keetiif ta'u filadhu.",
+      "backToHome": "Gara Jalqabaatti Deebi'i",
+      "loadingPlans": "Karoorawwan fe'amaa jiru...",
+      "monthly": "Ji'aan",
+      "annual": "Waggaan",
+      "savePercent": "{percent}% Qusadhu",
+      "perMonth": "/ji'aan",
+      "perYear": "/waggaan",
+      "billedAnnually": "{amount}/ji'atti waggaan kaffalama",
+      "mostPopular": "Baay'ee kan Filatame",
+      "currentPlan": "Karoora Ammaa",
+      "getStarted": "Jalqabi",
+      "contactSales": "Gurgurtoota Quunnami",
+      "custom": "Dhuunfaa",
+      "compareFeatures": "Tajaajiloota Hunda Wal Bira Qabi",
+      "faq": {
+        "title": "Gaaffiiwwan Deddeebi'anii Gaafataman",
+        "changePlan": {
+          "question": "Karoora koo booda jijjiiruu nan danda'aa?",
+          "answer": "Eeyyee, yeroo barbaaddetti karoora kee ol guddisuu ykn gadi buusuu dandeessa."
+        },
+        "paymentMethods": {
+          "question": "Mala kaffaltii akkamii fudhattu?",
+          "answer": "Kaffaltii Chapa fayyadamna, kunis Mobaayila Maallaqaa, Baankii fi Kaardii ni deeggara."
+        },
+        "freeTrial": {
+          "question": "Yaalii bilisaa qabduu?",
+          "answer": "Nagaadiwwan haaraan karoora 'Starter' jedhamuun jalqabuu danda'u."
+        },
+        "limits": {
+          "question": "Daangaa koo yoo ga'e maal ta'a?",
+          "answer": "Yeroo daangaa keetti dhiyaattu beeksisni siif ergama. Itti fufuuf karoora kee ol guddisuu dandeessa."
+        }
+      },
+      "cta": {
+        "title": "Falla Dhuunfaa Ni Barbaadduu?",
+        "description": "Karoorri 'Enterprise' keenya tajaajiloota dhuunfaa fi deeggarsa addaa ni kenna."
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "target": "Nagaadiwwan Xiqqaa",
+          "description": "Nagaadiwwan reefu jalqabaniif mijataa"
+        },
+        "growth": {
+          "name": "Growth",
+          "target": "Nagaadiwwan Guddachaa Jiran",
+          "description": "Nagaadiwwan bal'achuuf qophaa'aniif"
+        },
+        "pro": {
+          "name": "Pro",
+          "target": "Gabaa Giddu-galeessaa",
+          "description": "Nagaadiwwan hundeeffamaniif tajaajila guutuu"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "target": "Dhaabbilee Gurguddoo",
+          "description": "Dhaabbilee gurguddoof falla dhuunfaa"
+        }
+      },
+      "features": {
+        "products": "Oomishoota",
+        "monthlyOrders": "Ajajawwan Ji'aa",
+        "originCalculations": "Shallaggii Maddaa",
+        "hsCodeLookups": "Barbaacha Koodii HS",
+        "teamMembers": "Miseensota Garee",
+        "prioritySupport": "Deeggarsa Dursee Kennamu",
+        "analytics": "Xiinxala",
+        "apiAccess": "Eeyyama API",
+        "unlimited": "Daangaa Kan Hin Qabne"
+      }
+    },
+    "subscription": {
+      "title": "Maammila Ta'uu",
+      "description": "Maamila ta'uu fi kaffaltii kee bulchi",
+      "businessRequired": "Nagaadiin Ni Barbaachisa",
+      "businessRequiredDescription": "Karoora maammilaa filachuun dura nagaadii galmeessuu qabdu.",
+      "registerBusiness": "Nagaadii Kee Galmeessi",
+      "noActiveSubscription": "Maammilli Hojii Irra Jiru Hin Jiru",
+      "noSubscriptionDescription": "Amma tajaajila daangaa qabu bilisaan fayyadamaa jirta. Oomishoota fi tajaajiloota dabalataaf karoora filadhu.",
+      "viewPlans": "Karoorawwan Ilaali",
+      "currentPlan": "Karoora Ammaa",
+      "billedMonthly": "Ji'aan kaffalama",
+      "billedAnnually": "Waggaan kaffalama",
+      "currentPeriod": "Yeroo ammaa",
+      "cancelsSoon": "Dhiyootti Haqama",
+      "active": "Hojii irra",
+      "trial": "Yaalii",
+      "pastDue": "Yeroon irra darbe",
+      "cancelled": "Haqameera",
+      "cancellationNotice": "Tajaajilli maammilummaa keetii guyyaa {date} xumurama",
+      "trialNotice": "Yeroon yaalii keetii guyyaa {date} xumurama",
+      "changePlan": "Karoora Jijjiiri",
+      "reactivate": "Maammilummaa Haaromsi",
+      "reactivating": "Haaromaa jira...",
+      "cancel": "Maammilummaa Haqui",
+      "cancelling": "Haqamaa jira...",
+      "usageThisMonth": "Fayyadaminsa Ji'a Kanaa",
+      "usageDescription": "Fayyadaminsa kee daangaa karoora keetii waliin hordofi",
+      "planFeatures": "Tajaajiloota Karooraa",
+      "planFeaturesDescription": "Tajaajiloota karoora {plan} keessatti hammataman",
+      "paymentSuccessful": "Kaffaltiin Milkaa'eera!",
+      "subscriptionActivated": "Tajaajilli maammilummaa keetii hojii jalqabeera.",
+      "subscriptionCancelled": "Maammilummaa Haqame",
+      "subscriptionCancelledDescription": "Tajaajilli kee hamma yeroo kaffalameetti hojii ni fufa.",
+      "subscriptionReactivated": "Maammilummaa Haaromfame",
+      "subscriptionReactivatedDescription": "Tajaajilli kee xumura yeroo kaffaltii irratti itti fufa.",
+      "failedToCancel": "Maammilummaa haquun hin danda'amne",
+      "failedToReactivate": "Maammilummaa haaromsuun hin danda'amne"
+    },
+    "validation": {
+      "required": "Dirqama guutamuu qaba",
+      "invalidEmail": "Iimeelii sirrii miti",
+      "minLength": "Yoo xiqqaate qubee {min} ta'uu qaba",
+      "maxLength": "Yoo baay'ate qubee {max} ta'uu qaba",
+      "selectCountry": "Maaloo biyya filadhu",
+      "selectCategory": "Maaloo ramaddii nagaadii filadhu"
+    },
+    "toast": {
+      "productCreated": "Oomishni uumameera! Tarreeffama xumuruuf fakkii idaysi.",
+      "productUpdated": "Oomishni milkaa'inaan haaromfameera",
+      "productDeleted": "Oomishni milkaa'inaan haqameera",
+      "productListingComplete": "Tarreeffamni oomishaa xumurameera!",
+      "addImageSuggestion": "Oomishni kee akka beekamuuf fakkii tokko yoo xiqqaate idaysi.",
+      "businessRegistered": "Nagaadiin milkaa'inaan galmeeffameera! Mirkaneessi eegamaa jira.",
+      "orderStatusUpdated": "Haalli ajajaa haaromfameera",
+      "orderDeleted": "Ajajni milkaa'inaan haqameera",
+      "error": "Dogoggorri uumameera",
+      "failedToCreate": "Oomisha uumuun hin danda'amne",
+      "failedToUpdate": "Oomisha haaromsuun hin danda'amne",
+      "failedToDelete": "Oomisha haquun hin danda'amne",
+      "failedToDeleteOrder": "Ajaja haquun hin danda'amne",
+      "failedToUpdateOrder": "Ajaja haaromsuun hin danda'amne",
+      "failedToRegisterBusiness": "Nagaadii galmeessuun hin danda'amne"
+    },
+    "landing": {
+      "hero": {
+        "badge": "Gabaa B2B Afrikaatiif",
+        "title": "Sirna hojii dijitaalaa ijaaruu",
+        "titleHighlight": "daldala guutuu Afrikaatiif",
+        "description": "Gabaa B2B nagaadiwwan koonitinentii keessa jiran wal qunnamsiisu. Oomishoota bari, dhiyeessitoota argadhu, nagaadii kee nagaadiwwan Afrikaa mirkanaa'an waliin guddisi.",
+        "getStarted": "Jalqabi",
+        "browseMarketplace": "Gabaa Daawwadhu",
+        "exploreProducts": "Oomishoota Barbaadi"
+      },
+      "benefits": {
+        "item1": "Miseensa ta'uun bilisa",
+        "item2": "Nagaadiwwan mirkanaa'an",
+        "item3": "Kaffaltii amansiisaa",
+        "item4": "Deeggarsa afaan hedduu"
+      },
+      "categories": {
+        "title": "Ramaddiwwan Barbaadi",
+        "description": "Nagaadiwwan Afrikaa irraa oomishoota industirii garaa garaa bari",
+        "viewAll": "Ramaddii Hunda Ilaali",
+        "rawMaterials": "Dhaaba Dhumataa (Raw Materials)",
+        "agriculture": "Qonna",
+        "miningMinerals": "Albuuda",
+        "electronics": "Elektirooniksii",
+        "textilesFashion": "Uffataa fi Faashinii",
+        "foodBeverages": "Nyaataa fi Dhugaatii",
+        "construction": "Ijaarsa",
+        "industrialEquipment": "Meeshaalee Industirii"
+      },
+      "howItWorks": {
+        "title": "Akkaataa itti Hojjetu",
+        "description": "Tarkaanfiiwwan afur salphaan jalqabi",
+        "step1Title": "Eenyummeessa Uumi",
+        "step1Desc": "Bilisaan galmaa'i, daqiiqaa muraasa keessatti eenyummeessa kee qopheessi.",
+        "step2Title": "Nagaadii Galmeessi",
+        "step2Desc": "Mirkaneeffamuu fi amanamummaa ijaaruuf bal'ina nagaadii keetii idaysi.",
+        "step3Title": "Tarreessi ykn Barbaadi",
+        "step3Desc": "Gurguruuf oomisha kee tarreessi ykn bituuf gabaa barbaadi.",
+        "step4Title": "Quunnami fi Daldali",
+        "step4Desc": "Nagaadiwwan waliin wal quunnami, nageenyaan daldala jalqabi."
+      },
+      "features": {
+        "title": "Waan Nu Dhiyeessinu",
+        "description": "Amanannaan daldaluuf waan si barbaachisu hunda",
+        "marketplace": "Gabaa",
+        "marketplaceDesc": "Gabaa B2B keenya keessatti oomishoota barbaadi ykn tarreessi.",
+        "verification": "Mirkaneessa Nagaadii",
+        "verificationDesc": "Nagaadiwwan adeemsa mirkaneessaa keenya xumuranitti mallattoo mirkaneessaa ni kennina.",
+        "securePayments": "Kaffaltii Amansiisaa",
+        "securePaymentsDesc": "Hojiiwwan daldalaa keetiif kaffaltii amanamaa fi amansiisaa.",
+        "multiLanguage": "Afaan Hedduu",
+        "multiLanguageDesc": "Afaan Ingliffaa, Amaariffaa ykn Oromiffaan tajaajila argadhu.",
+        "community": "Hawaasa Guddachaa Jiru",
+        "communityDesc": "Hawaasa nagaadiwwan Afrikaa wal quunnamuu fi daldaluu barbaadanitti makami."
+      },
+      "cta": {
+        "title": "Jalqabuuf Qophaayitaa?",
+        "description": "Hawaasa nagaadiwwan Afrikaa guddachaa jiruutti makami. Har'uma eenyummeessa kee bilisaan uumi.",
+        "createAccount": "Eenyummeessa Bilisaan Uumi",
+        "goToDashboard": "Gara Dajajaatti Deemi",
+        "explore": "Oomishoota Barbaadi"
+      },
+      "trust": {
+        "securePayments": "Kaffaltii Amansiisaa",
+        "securePaymentsDesc": "Adeemsa kaffaltii nageenya qabu",
+        "verifiedBusinesses": "Nagaadiwwan Mirkanaa'an",
+        "verifiedBusinessesDesc": "Mirkaneessaan amanamummaa ijaara",
+        "multiLanguage": "Afaan Hedduu",
+        "multiLanguageDesc": "EN, AM, SW, OM ni deeggaramu"
+      },
+      "footer": {
+        "tagline": "Gabaa B2B nagaadiwwan Afrikaa wal quunnamsiisu.",
+        "marketplace": "Gabaa",
+        "browseProducts": "Oomishoota Barbaadi",
+        "businessDirectory": "Galmee Nagaadii",
+        "categories": "Ramaddiwwan",
+        "forBusinesses": "Nagaadiwwaniif",
+        "registerBusiness": "Nagaadii Galmeessi",
+        "listProducts": "Oomishoota Tarreessi",
+        "dashboard": "Dajaja",
+        "legal": "Seera",
+        "allRightsReserved": "Mirgi hundi eegamaadha.",
+        "privacyPolicy": "Imaammata dhuunfaa",
+        "termsOfService": "Waliigaltee Tajaajilaa",
+        "madeForAfrica": "Afrikaaf kan hojjetame"
+      },
+      "nav": {
+        "marketplace": "Gabaa",
+        "pricing": "Gatii",
+        "categories": "Ramaddiwwan",
+        "howItWorks": "Akkaataa Hojii",
+        "features": "Tajaajiloota",
+        "signIn": "Seeni",
+        "getStarted": "Jalqabi",
+        "dashboard": "Dajaja"
+      }
+    },
+    "verificationBanner": {
+      "message": "Tajaajiloota hunda argachuuf maaloo iimeelii kee mirkaneessi.",
+      "resend": "Irra deebi'ii ergi",
+      "verify": "Mirkaneessi",
+      "sent": "Iimeeliin ergameera!",
+      "dismiss": "Bira darbi"
+    },
+    "verifyEmail": {
+      "verifying": {
+        "title": "Iimeelii Kee Mirkaneessaa Jirra",
+        "description": "Maaloo hamma iimeelii kee mirkaneessinutti obsi..."
+      },
+      "success": {
+        "title": "Iimeeliin Mirkanaa'eera!",
+        "description": "Iimeeliin kee milkaa'inaan mirkanaa'eera. Amma tajaajiloota hunda argachuu dandeessa.",
+        "goToDashboard": "Gara Dajajaatti Deemi",
+        "signIn": "Seeni"
+      },
+      "error": {
+        "title": "Mirkaneessi Hin Milkoofne",
+        "description": "Iimeelii kee mirkaneessuu hin dandeenye. Hidhaan (link) sun yeroon isaa darbeera ta'uu danda'a.",
+        "requestNewLink": "Hidhaa Haaraa Gaafadhu"
+      },
+      "pending": {
+        "title": "Iimeelii Kee Mirkaneessi",
+        "description": "Maaloo sanduuqa ergaa kee keessa hidhaa mirkaneessaa ilaali.",
+        "descriptionWithEmail": "Hidhaa mirkaneessaa gara {email} ergineerra. Maaloo sanduuqa ergaa kee ilaali."
+      },
+      "resend": {
+        "button": "Iimeelii Mirkaneessaa Irra-deebi'ii Ergi",
+        "sending": "Ergamaa jira...",
+        "sent": "Iimeeliin mirkaneessaa ergameera! Maaloo sanduuqa ergaa kee ilaali.",
+        "cooldown": "Sekondii {seconds} keessatti irra deebi'ii ergi"
+      },
+      "skipForNow": "Ammaaf bira darbi",
+      "signInToResend": "Iimeelii mirkaneessaa irra deebisanii erguuf jalqaba seeni"
+    },
+    "cookieConsent": {
+      "title": "Kuukii (Cookies) fayyadamna",
+      "description": "Muuxannoo kee fooyyessuuf, sochii marsariitii xiinxaluu fi qabiyyee siif ta'u dhiyeessuuf kuukii fayyadamna. \"Hunda Fudhadhu\" cuqaasuun waliigalte kee agarsiisa.",
+      "privacyPolicy": "Imaammata dhuunfaa",
+      "acceptAll": "Hunda Fudhadhu",
+      "rejectNonEssential": "Kanneen Barbaachisoo hin taane Didi",
+      "customize": "Filadhu",
+      "close": "Cufi",
+      "settings": {
+        "title": "Filannoo Kuukii",
+        "description": "Filannoo kuukii kee bulchi. Kuukiwwan bu'uuraa yeroo hunda hojjetu.",
+        "save": "Filannoo Oolchi",
+        "essential": {
+          "title": "Kuukiwwan Bu'uuraa",
+          "description": "Hojii marsariitii isa bu'uuraatiif barbaachisoodha. Cufuun hin danda'amu."
+        },
+        "functional": {
+          "title": "Kuukiwwan Hojii",
+          "description": "Filannoo fi sajatoo kee yaadachuuf gargaaru."
+        },
+        "analytics": {
+          "title": "Kuukiwwan Xiinxalaa",
+          "description": "Fayyadamtoonni marsariitii keenya waliin akkamitti akka wal quunnaman hubachuuf nu gargaaru."
+        },
+        "marketing": {
+          "title": "Kuukiwwan Beeksisaa",
+          "description": "Beeksisa siif ta'u dhiyeessuuf gargaaru."
+        }
+      }
+    },
+    "adminBanks": {
+    "title": "Baankota Bulchi",
+    "description": "Baankota michuu uumi, fayyadamtoota baankii ramadi, akkasumas dandeettii rifaralaa hordofi.",
+    "stats": {
+      "partnerBanks": "Baankota Michuu",
+      "bankUsers": "Fayyadamtoota Baankii",
+      "trackedReferrals": "Rifaralota Hordofaman"
+    },
+    "createBank": {
+      "title": "Baankii Uumi",
+      "description": "Piroofaayila baankii rifaralaa fi BI argachuu danda'u qopheessi.",
+      "namePlaceholder": "Maqaa baankii",
+      "descriptionPlaceholder": "Ibsa (filannoo)",
+      "action": "Baankii Uumi",
+      "creating": "Uumaa jira...",
+      "success": "Baankiin milkaa'inaan uumameera",
+      "error": "Baankii uumuu hin milkoofne"
+    },
+    "assignUser": {
+      "title": "Fayyadamaa Baankii Ramadi",
+      "description": "Fayyadamaa jiru gara herrega baankiitti guddisi, sana booda baankii waliin walitti qabi.",
+      "searchPlaceholder": "Maqaa yookaan imeeliidhaan fayyadamtoota barbaadi",
+      "selectUser": "Fayyadamaa fili",
+      "selectBank": "Baankii fili",
+      "action": "Fayyadamaa Ramadi",
+      "assigning": "Ramadaa jira...",
+      "success": "Fayyadamaan baankiif ramadameera",
+      "error": "Fayyadamaa ramaduu hin milkoofne"
+    },
+    "directory": {
+      "title": "Galmee Baankotaa",
+      "description": "Baankotni kam akka socho'an fi SME meeqa akka portfolio tokko tokko keessatti jiran ilaali.",
+      "empty": "Baankiin hanga ammaatti hin uumamne.",
+      "columns": {
+        "bank": "Baankii",
+        "status": "Haala",
+        "referralPrefix": "Dura-bu'aa Rifaralaa",
+        "users": "Fayyadamtoota",
+        "referrals": "Rifaralota",
+        "portfolio": "Portfolio"
+      }
+    }
+  },
+  "bankPortal": {
+    "common": {
+      "notAvailable": "Hin jiru"
+    },
+    "stages": {
+      "generated": "Rifarame",
+      "signed_up": "Galmaa'e",
+      "business_created": "Daldalli uumame",
+      "verified": "Mirkanaa'e",
+      "active": "Socho'aa"
+    },
+    "overview": {
+      "fallbackTitle": "Daashboordii baankii",
+      "description": "Jijjiirama rifaralaa, onboarding SME, fi raawwii portfolio hordofi.",
+      "referralBase": "Bu'uura rifaralaa: {code}",
+      "stats": {
+        "totalReferrals": "Rifaralota Waliigalaa",
+        "portfolioSmes": "SME Portfolio",
+        "portfolioSmesMeta": "{verified} mirkanaa'an, {active} socho'aa jiru",
+        "portfolioRevenue": "Galii Portfolio",
+        "portfolioRevenueMeta": "Ajajoota {orders} SME rifaraman irraa",
+        "successfulPayouts": "Kaffaltii Milkaa'aa",
+        "successfulPayoutsMeta": "Oomishaalee {products} SME keessaniin tarreeffaman"
+      },
+      "funnel": {
+        "title": "Faanelii Rifaralaa",
+        "description": "Imala guutuu uuminsa rifaralaa irraa kaasee hanga hirmaannaa SME socho'aatti."
+      },
+      "momentum": {
+        "title": "Sochii Ji'aa",
+        "description": "Sochii rifaralaa, onboarding fi galii portfolio keessanii keessatti dhihoo kanaa.",
+        "referred": "{count} rifarame",
+        "onboarded": "{count} onboard godhame",
+        "verified": "{count} mirkanaa'e"
+      },
+      "recentPortfolio": {
+        "title": "SME Portfolio Dhihoo",
+        "description": "Dhaabbilee haaraa onboard godhaman yookaan dhihoo kana walqabatan baankii keessan irraa.",
+        "cta": "Portfolio ilaali",
+        "empty": "SME rifaraman keessaa hanga ammaatti daldala hin uumne.",
+        "products": "{count} oomishaalee",
+        "orders": "{count} ajajoota",
+        "revenue": "{amount} galii"
+      },
+      "recentReferrals": {
+        "title": "Rifaralota Dhihoo",
+        "description": "Galmeewwan rifaralaa haaraa fi bakka lead tokko tokko amma jiru.",
+        "cta": "Rifaralota bulchi",
+        "empty": "Galmeen rifaralaa hin jiru. Jalqabaaf linkii rifaralaa baankii uumi."
+      }
+    },
+    "portfolio": {
+      "heading": "Portfolio",
+      "title": "SME Portfolio",
+      "description": "SME baankiin keessan rifare hundaa fi hanga maal deemsa isaanii ilaali.",
+      "filtersDescription": "Raawwii ilaaluuf sadarkaa onboarding, teessuma lafaa fi kutaa irratti calali.",
+      "searchPlaceholder": "Daldala, abbaa qabeenyaa yookaan imeelii barbaadi",
+      "filterByStage": "Sadarkaadhaan calali",
+      "allStages": "Sadarkaalee hunda",
+      "country": "Biyya",
+      "allCountries": "Biyyoota hunda",
+      "category": "Ramaddii",
+      "allCategories": "Ramaddii hunda",
+      "empty": "SMEn calaltuu ammaa waliin wal hin simne.",
+      "unknownOwner": "Abbaan qabeenyaa hin beekamu",
+      "noEmail": "Imeeliin hin jiru",
+      "view": "Ilaali",
+      "columns": {
+        "business": "Daldala",
+        "owner": "Abbaa qabeenyaa",
+        "stage": "Sadarkaa",
+        "products": "Oomishaalee",
+        "orders": "Ajajoota",
+        "revenue": "Galii",
+        "drillDown": "Bal'inaan ilaali"
+      }
+    },
+    "detail": {
+      "description": "Ibsa bal'aa SME onboarding, abbummaa fi hojii daldalaa of keessaa qabu.",
+      "stats": {
+        "revenue": "Galii",
+        "orders": "Ajajoota",
+        "products": "Oomishaalee",
+        "netPayouts": "Kaffaltii Xumuraa"
+      },
+      "snapshot": {
+        "title": "Suuraa Daldalaa",
+        "description": "Ibsa bu'uuraa dhaabbataa fi iddoo onboarding ammaa.",
+        "country": "Biyya",
+        "category": "Ramaddii",
+        "verificationStatus": "Haala mirkaneessaa",
+        "joinedPlatform": "Yeroo platformitti makame",
+        "businessDescription": "Ibsa",
+        "noDescription": "Ibsi hin kennamne"
+      },
+      "owner": {
+        "title": "Qunnamtii Abbaa Qabeenyaa",
+        "description": "Abbaa qabeenyaa guddaan herrega SME kanaaf itti gaafatamaa ta'e.",
+        "unknownOwner": "Abbaan qabeenyaa hin beekamu",
+        "noEmail": "Imeeliin hin argamne",
+        "referralTracking": "Hordoffii rifaralaa",
+        "code": "Koodii",
+        "currentReferralRecord": "Galmee rifaralaa ammaa"
+      },
+      "monthly": {
+        "title": "Raawwii Ji'aa",
+        "description": "Akkaataa galii fi ajajaa dhihoo kanaa herrega portfolio SME kanaaf.",
+        "orders": "ajajoota {count}"
+      }
+    },
+    "referrals": {
+      "title": "Rifaralota",
+      "description": "SMEf linkoota galmee hordofamuu danda'an uumi, sadarkaa jijjiiramaa tokko tokko hordofi.",
+      "unnamedReferral": "Rifaralaa maqaa hin qabne",
+      "unnamedLead": "Lead maqaa hin qabne",
+      "noExtraMetadata": "Metadata dabalataa hin jiru",
+      "create": {
+        "title": "Linkii Rifaralaa Uumi",
+        "description": "SME, dhaabbata yookaan leadf koodii galmee addaa uumi.",
+        "organizationPlaceholder": "Maqaa dhaabbataa",
+        "emailPlaceholder": "Imeelii affeerraa (filannoo)",
+        "notesPlaceholder": "Yaadannoo (filannoo)",
+        "action": "Rifaralaa uumi",
+        "creating": "Uumaa jira...",
+        "success": "Rifaralaan {code} uumameera",
+        "error": "Rifaralaa uumuu hin milkoofne"
+      },
+      "playbook": {
+        "title": "Qajeelfama Rifaralaa",
+        "description": "Koodiin uumamu hundi imala onboarding madaalamuu danda'u portfolio baankii keessaniif uuma.",
+        "howItWorks": "Akkaataa hojjetu",
+        "step1": "1. Lead SME tokkoof galmee rifaralaa uumi.",
+        "step2": "2. Linkii galmee uumame sana dhaabbata sana waliin qoodi.",
+        "step3": "3. Isaan erga galmaa'anii fi onboard ta'anii booda fuulli kun ofumaan haaromsa.",
+        "defaultSignupBase": "Bu'uura galmee durtii",
+        "baseUrlFallback": "Linkiin bu'uuraa galmee keessanii browser keessatti asitti mul'ata."
+      },
+      "register": {
+        "title": "Galmee Rifaralaa",
+        "description": "Koodii hunda, kaayyoo affeerraa isaa fi SME socho'aa ta'ee jijjiirameera moo hin jijjiiramne jedhu hordofi.",
+        "empty": "Rifaralaan hanga ammaatti hin uumamne.",
+        "copySuccess": "Linkiin rifaralaa koppii ta'eera",
+        "copyError": "Linkii rifaralaa koppii gochuun hin danda'amne",
+        "columns": {
+          "lead": "Lead",
+          "referralCode": "Koodii Rifaralaa",
+          "status": "Haala",
+          "linkedSme": "SME Walqabate",
+          "created": "Kan uumame",
+          "copyLink": "Linkii koppii godhi"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Xiinxala",
+      "description": "Portfolio keessan biyya, ramaddii, sadarkaa onboarding fi bu'aa ji'aatiin qoqqoodi.",
+      "byCategory": {
+        "title": "Ramaddiidhaan",
+        "description": "Kutaan kamtu bu'uura SME rifaraman keessanii keessatti caalaa mul'ata?"
+      },
+      "byCountry": {
+        "title": "Biyyaadhaan",
+        "description": "Babal'ina teessuma lafaa dhaabbilee baankiin rifare."
+      },
+      "byStage": {
+        "title": "Sadarkaadhaan",
+        "description": "Portfolio keessaa hammamtu funnel keessa tarkaanfate?"
+      },
+      "monthly": {
+        "title": "Haala Ji'aa",
+        "description": "Uuminsa portfolio, sochii isaa fi gatii daldalaa yeroo keessatti ilaali.",
+        "newSmes": "SME haaraa {count}",
+        "active": "socho'aa {count}"
+      }
+    }
+  },
+  "legal": {
+      "backToHome": "Gara Jalqabaatti Deebi'i",
+      "tableOfContents": "Baafata",
+      "viewPrivacyPolicy": "Imaammata Dhuunfaa Ilaali",
+      "viewTermsOfService": "Waliigaltee Tajaajilaa Ilaali",
+      "terms": {
+        "title": "Waliigaltee Tajaajilaa",
+        "lastUpdated": "Yeroo Haaromfame",
+        "lastUpdatedDate": "Ammajjii 2026",
+        "introduction": "Baga nagaaan gara AfriConnect dhufte. Waliigalteen kun itti fayyadama marsariitii fi tajaajila keenyaa ni bulcha.",
+        "acceptance": {
+          "title": "Waliigalticha Fudhatamaa Ta'uu",
+          "content": "Eenyummeessa uumuun ykn tajaajila kanatti fayyadamuun, waliigaltee kana dubbisuu fi fudhachuu kee agarsiisa."
+        },
+        "eligibility": {
+          "title": "Ulaagaalee Barbaachisoo",
+          "content": "Tajaajila kana fayyadamuuf waggaa 18 guutuu fi nagaadii galmeeffame qabaachuu qabdu."
+        },
+        "accounts": {
+          "title": "Galmee Eenyummeessaa fi Nageenya",
+          "content": "Oodeeffannoo sirrii kennuu fi icciitii eenyummeessa keetii eeguuf itti gaafatamummaa qabda."
+        },
+        "marketplace": {
+          "title": "Seera Gabaa fi Naamusaa",
+          "content": "AfriConnect gabaa B2B Afrikaa wal quunnamsiisudha. Fayyadamtoonni amanamummaan daldaluu qabu."
+        },
+        "payments": {
+          "title": "Kaffaltii fi Hojiiwwan",
+          "content": "Kaffaltiin hundi karaa sirna kaffaltii amansiisaa Chapa-iin ni raawwatama."
+        },
+        "prohibited": {
+          "title": "Gochaalee Dhorkaman",
+          "content": "Meeshaalee seeraan alaa gurguruun, gochaa gowwoomsaa raawwachuu fi nageenya sirna keenyaa miidhuun dhorkaadha."
+        },
+        "ip": {
+          "title": "Mirga Qabeenya Sammuu",
+          "content": "Qabiyyee fi tajaajilli marsariitii kanaa hundi qabeenya AfriConnect Inc ti."
+        },
+        "liability": {
+          "title": "Daangaa Itti Gaafatamummaa",
+          "content": "AfriConnect miidhaa kallattiin hin taane ykn kaffaltii tajaajilaa olii irratti itti gaafatamummaa hin fudhatu."
+        },
+        "disputes": {
+          "title": "Waliin Mamma'iinsa Hiikuu",
+          "content": "Waliin mamma'iinsi yoo uumame mariin hiikuun ni danda'ama. Seerri tajaajila kanaa seera biyya Keeniyaatiin bulfama."
+        },
+        "changes": {
+          "title": "Jijjiirama Waliigaltee",
+          "content": "AfriConnect yeroo barbaadetti waliigaltee kana jijjiiruuf mirga qaba."
+        },
+        "contact": {
+          "title": "Nu Quunnami",
+          "content": "Gaaffii yoo qabaattan garee seeraa keenya quunnamuu dandeessu."
+        }
+      },
+      "privacy": {
+        "title": "Imaammata Dhuunfaa",
+        "lastUpdated": "Yeroo Haaromfame",
+        "lastUpdatedDate": "Ammajjii 2026",
+        "introduction": "AfriConnect nageenya oodeeffannoo keetiif ni hojjeta. Imaamman kun oodeeffannoo akkamitti akka walitti qabnu ibsa.",
+        "compliance": {
+          "title": "Seera Eegumsa Oodeeffannoo",
+          "content": "Seera eegumsa oodeeffannoo GDPR, seera Keeniyaa, Naayijeeriyaa fi biyyaalessaa birootti ni abboomamna."
+        },
+        "collection": {
+          "title": "Oodeeffannoo Nu Walitti Qabnu",
+          "content": "Oodeeffannoo eenyummeessaa, nagaadii, kaffaltii fi quunnamtii ati nuuf kennitu ni fudhanna."
+        },
+        "usage": {
+          "title": "Oodeeffannoo Kee Akkamitti Fayyadamna",
+          "content": "Tajaajila kennuuf, eenyummeessa mirkaneessuuf, kaffaltii raawwachuu fi nageenya mirkaneessuuf fayyadamna."
+        },
+        "sharing": {
+          "title": "Oodeeffannoo Qooduu",
+          "content": "Oodeeffannoo kee nagaadiwwan daldala si waliin raawwatanii fi tajaajiloota kaffaltiitti ni qoodna. Nama biraatti hin gurgurru."
+        },
+        "security": {
+          "title": "Nageenya Oodeeffannoo",
+          "content": "Iccitii kee eeguuf teeknoolojii 'Encryption' fi maloota nageenyaa gurguddoo fayyadamna."
+        },
+        "rights": {
+          "title": "Mirga Kee",
+          "content": "Oodeeffannoo kee arguun, sirreessuun ykn haquun mirga keeti."
+        },
+        "cookies": {
+          "title": "Kuukii (Cookies)",
+          "content": "Muuxannoo kee fooyyessuuf kuukii fayyadamna. Sajatoo birawsarii keetiin bulchuu dandeessa."
+        },
+        "retention": {
+          "title": "Hamma Yoomiitti Turinsa Oodeeffannoo",
+          "content": "Oodeeffannoo kee hamma tajaajila siif kenninuu fi akkaataa seeraatti ni tursiifna."
+        },
+        "international": {
+          "title": "Darbiinsa Oodeeffannoo Idil-addunyaa",
+          "content": "Afrikaa keessatti tajaajila waan kenninuuf oodeeffannoon biyya tokkoo gara biyya biraatti darbuu danda'a."
+        },
+        "children": {
+          "title": "Dhuunfaa Ijoollee",
+          "content": "Tajaajilli kun nagaadiwwan waggaa 18 ol ta'aniif qofa."
+        },
+        "changes": {
+          "title": "Jijjiirama Imaammataa",
+          "content": "Imaammata kana yeroo yeroon ni haaromsina."
+        },
+        "dpo": {
+          "title": "Hoogganaa Eegumsa Oodeeffannoo",
+          "content": "Gaaffii dhuunfaa yoo qabaatte Hoogganaa Eegumsa Oodeeffannoo (DPO) keenya quunnamuun ni danda'ama."
+        }
+      }
+    },
+    "agreements": {
+      "dialog": {
+        "reviewAndAccept": "Maaloo itti fufuun dura waliigaltee kana dubbisi amani.",
+        "accept": "Amani fi Itti fufi",
+        "accepting": "Amanamaa jira...",
+        "decline": "Didi"
+      },
+      "seller": {
+        "title": "Waliigaltee Gurgurtaa",
+        "pageDescription": "Seera gurgurtoota AfriConnect irratti hojjetu.",
+        "lastUpdated": "Yeroo Haaromfame",
+        "lastUpdatedDate": "Gurraandhala 2026",
+        "introduction": "Waliigalteen kun haala ati akka gurgurtaa tajaajilamtu bulcha.",
+        "acceptanceLabel": "Waliigaltee Gurgurtaa dubbiseera, nan amanas.",
+        "sections": {
+          "eligibility": {
+            "title": "Ulaagaa",
+            "content": "Nagaadii galmeeffame qabaachuu qabda."
+          },
+          "productListings": {
+            "title": "Tarreeffama Oomishaa",
+            "content": "Oodeeffannoo oomishaa sirrii fi fakkii qulqulluu dhiyeessuu qabda."
+          },
+          "fulfillment": {
+            "title": "Gufuu Bira Ga'uu",
+            "content": "Meeshaa ajajame yeroon erguuf itti gaafatamummaa qabda."
+          },
+          "qualityStandards": {
+            "title": "Sadarkaa Qulqullinaa",
+            "content": "Oomishni kee waan ibsametti wal simuu qaba."
+          },
+          "feesCommissions": {
+            "title": "Kaffaltii fi Komishinii",
+            "content": "Kaffaltiin tajaajilaa gurgurtaa irratti ni kaffalama."
+          },
+          "returnsRefunds": {
+            "title": "Deebii fi Kaffaltii Deebisuu",
+            "content": "Maammilli yoo deebise seera platform-ichaatti hojjechuu qabda."
+          },
+          "prohibitedItems": {
+            "title": "Meeshaalee Dhorkaman",
+            "content": "Meeshaalee seeraan alaa gurguruun dhorkaadha."
+          },
+          "intellectualProperty": {
+            "title": "Qabeenya Sammuu",
+            "content": "Fakkii fi qabiyyee ati fayyadamtu mirga isaa qabaachuu qabda."
+          },
+          "accountSuspension": {
+            "title": "Eenyummeessa Cufuu",
+            "content": "Seera yoo cabsite eenyummeessi kee cufamuu danda'a."
+          },
+          "liabilityIndemnification": {
+            "title": "Itti Gaafatamummaa",
+            "content": "Oomisha gurgurtuuf ati itti gaafatamummaa guutuu fudhatta."
+          }
+        }
+      },
+      "buyer": {
+        "title": "Waliigaltee Bittaa",
+        "pageDescription": "Seera bittoota AfriConnect irratti hojjetu.",
+        "lastUpdated": "Yeroo Haaromfame",
+        "lastUpdatedDate": "Gurraandhala 2026",
+        "introduction": "Waliigalteen kun haala ati akka bitaa tajaajilamtu bulcha.",
+        "acceptanceLabel": "Waliigaltee Bittaa dubbiseera, nan amanas.",
+        "sections": {
+          "purchaseCommitments": {
+            "title": "Waliigaltee Bittaa",
+            "content": "Yoo ajajje bituuf waliigalteetta jechuudha."
+          },
+          "paymentTerms": {
+            "title": "Haala Kaffaltii",
+            "content": "Kaffaltii karaa seera qabeessa ta'een xumuruu qabda."
+          },
+          "deliveryInspection": {
+            "title": "Fidinsa fi Sakatta'iinsa",
+            "content": "Meeshaan yeroo si ga'u hatattamaan sakatta'uu qabda."
+          },
+          "disputes": {
+            "title": "Wal dhabdee",
+            "content": "Rakkoon yoo uumame karaa platform keenyaa hiikamuu qaba."
+          },
+          "returns": {
+            "title": "Deebii",
+            "content": "Deebiin meeshaa seera gurgurtaa irratti hundaa'a."
+          },
+          "communication": {
+            "title": "Quunnamtii",
+            "content": "Gurgurtoota waliin kabajaan haasa'uu qabda."
+          },
+          "accountResponsibilities": {
+            "title": "Itti Gaafatamummaa Eenyummeessaa",
+            "content": "Iccitii eenyummeessa keetii eeguun dirqama keeti."
+          }
+        }
+      }
+    },
+    "compliance": {
+      "title": "Seera AfCFTA",
+      "description": "Oomishni kee bu'aa daldala bilisaa Afrikaa (AfCFTA) argachuu danda'uun isaa sakatta'i",
+      "searchByName": "Maqaan Barbaadi",
+      "enterHsCode": "Koodii HS Galchi",
+      "searchPlaceholder": "Maqaa oomishaa ykn koodii HS galchi...",
+      "hsCodePlaceholder": "Koodii HS digiti 8 galchi (fkn, 09011100)",
+      "lookup": "Barbaadi",
+      "add": "Idaysi",
+      "addAnyway": "Barbaachisuyyuu Idaysi",
+      "rate": "Gatii Gibiraa",
+      "currentRate": "Gatii Ammaa",
+      "categoryA": "Ramaddii A",
+      "notCategoryA": "Ramaddii A miti",
+      "notFoundInCategoryA": "Koodiin HS Ramaddii A keessatti hin argamne",
+      "notFoundDescription": "Oomishni kun Ramaddii A jala waan hin jirreef hir'ina gibiraa hin argatu ta'a.",
+      "tariffReduction": "Sagantaa Hir'ina Gibiraa",
+      "rateSchedule": "Sagantaa Gatii (2026-2030)",
+      "currentYearRate": "Gatii Waggaa Ammaa",
+      "zeroTariffBy2030": "Oomishni kun hamma bara 2030-tti gibira 0% qabaata",
+      "noAfcftaBenefits": "Bu'aa AfCFTA Hin Qabu",
+      "noAfcftaBenefitsDescription": "Oomishni kun bu'aa daldala bilisaa hin argatu, gibirri baramaan irratti kaffalama.",
+      "removeProduct": "Oomisha Haqui",
+      "complianceSummary": "Cuunfaa Seeraa",
+      "complianceSummaryDescription": "Haala oomishoota keetii fi AfCFTA",
+      "totalProducts": "Oomishoota Waliigalaa",
+      "eligible": "Kan Darbe",
+      "notEligible": "Kan Hin Darbin",
+      "eligibleMessage": "Oomishoonni kee {count} hir'ina gibiraa AfCFTA ni argatu",
+      "scheduleMatchMessage": "{count, plural, one {Koodiin HS oomisha # sagantaa taarifaa filatame waliin wal sima - gamaaggamni seera madda oomishaa eegamaa jira} other {Koodoonni HS oomishaalee # sagantaa taarifaa filatame waliin wal simu - gamaaggamni seera madda oomishaa eegamaa jira}}",
+      "yourProducts": "Oomishoota Kee",
+      "yourProductsDescription": "Oomishoota koodii HS waliin galmeeffaman",
+      "addProduct": "Oomisha Idaysi",
+      "addNewProduct": "Oomisha Haaraa Idaysi",
+      "cancel": "Haqui",
+      "addingProduct": "Oomishni idayamaa jira...",
+      "productAdded": "Oomishni milkaa'inaan idayameera",
+      "productRemoved": "Oomishni milkaa'inaan haqameera",
+      "failedToAddProduct": "Oomisha dabaluun hin danda'amne",
+      "failedToRemoveProduct": "Oomisha haquun hin danda'amne",
+      "noProductsYet": "Hamma yoonaa oomishni hin idayamne",
+      "noProductsDescription": "Seera AfCFTA sakatta'uuf oomisha kee koodii HS waliin idaysi",
+      "addFirstProduct": "Oomisha Kee Jalqabaa Idaysi",
+      "andMoreProducts": "Oomishoota +{count} dabalataa",
+      "businessRequired": "Galmeen Nagaadii Ni Barbaachisa",
+      "businessRequiredDescription": "Seera oomishaa sakatta'uun dura nagaadii kee galmeessuu qabda.",
+      "registerBusiness": "Nagaadii Galmeessi",
+      "whatIsAfcfta": "AfCFTA jechuun maal jechuudha?",
+      "afcftaDescription": "AfCFTA waliigaltee daldala bilisaa biyyoota Afrikaa gidduutti taasifamedha. Oomishoonni Ramaddii A gibirri isaanii bara 2026 hamma 2030-tti hir'atee 0% ga'a.",
+      "categoryABadge": "Oomishoota Ramaddii A",
+      "learnMoreAfcfta": "Waa'ee AfCFTA dabalata bari",
+      "reductionSchedule": "Sagantaa Hir'ina Gibiraa",
+      "reductionScheduleDescription": "Oomishoonni Ramaddii A adeemsa kanaan gibirri isaanii hir'ifama",
+      "year": "Waggaa",
+      "typicalRateReduction": "Gatii Baramaa",
+      "rateDisclaimer": "Gitiin biyya biyyaan garaagarummaa qabaachuu danda'a.",
+      "afcftaCompliance": "Hordoffii Seera AfCFTA",
+      "afcftaComplianceDescription": "Oomishni kee bu'aa AfCFTA argachuu isaa sakatta'i",
+      "noComplianceCheckYet": "Hamma yoonaa oomisha sakatta'ame hin qabdu.",
+      "startComplianceCheck": "Sakatta'iinsa Jalqabi",
+      "manageProducts": "Oomishoota Bulchi",
+      "selectCountry": "Biyya/Naannoo Filadhu",
+      "ethiopia": "Itoophiyaa",
+      "kenyaEac": "Keeniyaa (EAC)",
+      "countryDescription": "Gibira sakatta'uuf biyya filadhu",
+      "registerToSaveProducts": "Oomishoota kee ol-kaawwachuuf nagaadii kee galmeessi.",
+      "notFoundInTariffSchedule": "Koodiin HS kun sagantaa taarifaa filatame keessatti hin argamne",
+      "tariffScheduleCoverage": "Hammamtaa Sagantaa Taarifaa",
+      "tariffScheduleMatched": "Sagantaan Taarifaa Walsimeera",
+      "tariffScheduleNotMatched": "Sagantaan Taarifaa Hin Walsimne",
+      "noTariffMatchDescription": "Koodii HS kana sagantaa taarifaa filatame keessatti wal simsiisuu hin dandeenye. Kitaaba taarifaa mootummaa fi seera madda oomishaa addaa oomisha kanaa ilaali.",
+      "reviewMessage": "Gaaffiin madda AfCFTA dhiyaachuu isaa dura oomishoota kee keessaa {count} amma iyyuu gamaaggama seera madda oomishaa barbaadu.",
+      "needsReview": "Gamaaggama Barbaada",
+      "ruleNotMapped": "Seerri Hin Ramadamne",
+      "rulesOfOrigin": "Seerota Madda Oomishaa",
+      "tariffAndOrigin": "Taarifaa fi Madde",
+      "baseRate": "Gatii Bu'uuraa",
+      "tariffCategory": "Ramaddii Taarifaa",
+      "originRule": "Seera Madda Oomishaa",
+      "ruleSource": "Madda Seeraa",
+      "ruleNotMappedDescription": "Appiin kun koodii HS kanaaf seera addaa oomishaa waliin wal qabate hanga ammaatti hin qabdu. Gaaffii madda dhiyeessuu dura Appendix 2.A.1 ilaali.",
+      "eligibleRuleDescription": "Oomishni kun seera irratti hundaa'e gatii irratti ofumaan madaalame darbuu danda'eera.",
+      "notEligibleRuleDescription": "Oomishni kun seera irratti hundaa'e gatii irratti ofumaan madaalame darbuu hin dandeenye.",
+      "legacyStatus": "Bu'aa Duraa",
+      "legacyStatusDescription": "Galmeen kun fooyya'iinsa seera irratti hundaa'e dura uumame; irra deebi'amee shallagamuu qaba.",
+      "automaticVnmDescription": "Bu'aan kun seera VNM gatii irratti hundaa'e irraa ofumaan shallagameera.",
+      "manualReviewDescription": "Seerri oomisha kanaa shallaggii ofumaan hojjetu ammaa caalaa ragaa sanadaa yookaan adeemsa oomishaa barbaada."
+    },
+    "afcfta": {
+      "title": "Seera AfCFTA AI gaafadhu",
+      "description": "Sanadoota AfCFTA irratti hundooftee AI gaafachuu dandeessa.",
+      "badge": "Scaffold",
+      "helper": "Gargaaraan kun sanadoota irratti qofa hunda'a. Yoo sanadni hin jirre ta'e 'hin jiru' jedha malee ofirraa hin dubbatu.",
+      "placeholder": "Gaaffii seeraa gaafadhu, fkn: Waraqaa madda oomishaa (certificate of origin) argachuuf sanadoota akkamii barbaachisu?",
+      "sampleQuestions": [
+        "AfCFTA oomisha kana har'uma gibira malee akka darbu ni taasisaa?",
+        "Waraqaa madda oomishaa mirkaneessuuf ragaa maalitu barbaachisa?",
+        "Oomisha tokko qofaa hammaarsuun (repackaging) akka madda Afrikaatti ni lakkaawwamaa?"
+      ],
+      "cta": {
+        "ask": "AI Gaafadhu",
+        "asking": "Gaafachaa jira..."
+      },
+      "form": {
+        "languageLabel": "Afaan",
+        "questionLabel": "Gaaffii seeraa"
+      },
+      "validation": {
+        "questionTooShort": "Maaloo gaaffii bal'aa gaafadhu.",
+        "invalidQuestion": "Maaloo gaaffii sirrii galchi."
+      },
+      "error": {
+        "generic": "Gargaaraa seeraa gaafachuun hin danda'amne."
+      },
+      "empty": {
+        "citations": "Ragaan eerame hamma yoonaa hin jiru."
+      },
+      "sections": {
+        "answer": "Deebii",
+        "citations": "Eeruu",
+        "source": "Madda"
+      },
+      "mode": {
+        "fullRag": "RAG Guutuu",
+        "retrievalOnly": "Barbaacha qofa"
+      },
+      "status": {
+        "ready": "Qophiidha",
+        "not_configured": "Hin qophoofne",
+        "no_evidence": "Ragaan hin jiru"
+      }
+    },
+    "aiAssistantPage": {
+      "title": "Gargaaraa AI",
+      "description": "Waa'ee seera AfCFTA, eenyummeessa liqii, madda oomishaa fi kkf gaafadhu.",
+      "unavailable": "Tajaajilli AI yeroodhaaf hin jiru.",
+      "tabs": {
+        "compliance": "Seera AfCFTA",
+        "general": "Gargaaraa Waliigalaa"
+      },
+      "general": {
+        "title": "Waa'ee AfCFTA Gaafadhu",
+        "description": "Waa'ee seera madda oomishaa, sagantaa gibiraa fi daldala Afrikaa irratti gaaffii gaafadhu.",
+        "badge": "AI kan Deeggarame",
+        "helper": "Waa'ee daldala bilisaa Afrikaa hubannoo saffisaa argachuuf gaafadhu. Gorsi kun qajeelfamaaf qofa.",
+        "placeholder": "Gaaffii AfCFTA gaafadhu, fkn. Seerri madda oomishaa akkamitti hojjeta?",
+        "sampleQuestions": [
+          "Seerri madda oomishaa AfCFTA jala jiru akkamitti hojjeta?",
+          "Ramaddiin A sagantaa gibiraa keessatti maal jechuudha?",
+          "Ergaa AfCFTA-f sanadoota maalitu barbaachisa?"
+        ],
+        "cta": {
+          "ask": "AI Gaafadhu",
+          "asking": "Gaafachaa jira..."
+        },
+        "form": {
+          "languageLabel": "Afaan",
+          "questionLabel": "Gaaffii kee"
+        },
+        "validation": {
+          "questionTooShort": "Maaloo gaaffii bal'aa barreessi.",
+          "invalidQuestion": "Maaloo gaaffii sirrii galchi."
+        },
+        "error": {
+          "generic": "AI irraa deebii argachuun hin danda'amne."
+        },
+        "sections": {
+          "answer": "Deebii"
+        }
+      }
+    },
+    "originEligibility": {
+      "title": "Mirkaneessa Madda Oomishaa",
+      "description": "Oomishni kee seera 60% AfCFTA ni guuta ykn hin guutu shallagi",
+      "whatIsTheRule": "Seerri 60% Maali?",
+      "ruleExplanation": "Seerri MaxNOM akka jedhutti, meeshaaleen biyya alaa irraa fidan gatii oomishaa (Ex-Works) keessaa 60% caaluu hin qabu. Kunis yoo xiqqaate 40% gatii oomishaa biyya keessaa argamuu qaba.",
+      "startCalculation": "Shallaggii Jalqabi",
+      "newCalculation": "Shallaggii Haaraa",
+      "reset": "Haqi",
+      "step1Title": "Gatii Gabaa Faabrikaa (EXW)",
+      "step1Description": "Gatii oomishni faabrikaa keessaa ba'u, baasii hundumaa dabalatee",
+      "step2Title": "Meeshaalee Biyya Alaa (VNM)",
+      "step2Description": "Gatii meeshaalee biyya alaa irraa bitaman",
+      "step3Title": "Foormulaa Itti Fayyadami",
+      "step4Title": "Bu'aa Mirkaneessaa",
+      "resultDescription": "Daangaa 60% irratti hundaa'uun",
+      "productName": "Maqaa Oomishaa",
+      "productNamePlaceholder": "Maqaa oomishaa galchi (fkn, Buna, Uffata)",
+      "currency": "Maallaqa",
+      "costOfMaterials": "Baasii Meeshaalee",
+      "costOfMaterialsHint": "Meeshaalee dheedhii fi kutaale oomishaaf oolan",
+      "laborCosts": "Baasii Humna Namaa",
+      "laborCostsHint": "Mindaa hojjettoota oomishaa",
+      "factoryOverheads": "Baasii Faabrikaa",
+      "factoryOverheadsHint": "Iyya, ibsaa, kiraa fi suphaa meeshaalee",
+      "profitMargin": "Bu'aa Gurgurtaa",
+      "profitMarginHint": "Bu'aa ati baasii irratti dabaltu",
+      "totalExWorks": "Gatii Waliigalaa Ex-Works",
+      "vnmExplanationTitle": "Meeshaalee Madda Biratti Hin Lakkaawwamne Maali?",
+      "vnmExplanation": "Meeshaalee biyya alaa irraa fidan, gatii gumurukaa fi geejjiba dabalatee.",
+      "vnmValue": "Gatii VNM Waliigalaa",
+      "vnmValueHint": "Meeshaalee biyya alaa irraa bitaman hunda",
+      "formula": "Foormulaa",
+      "formulaExplanation": "% VNM = (VNM ÷ EXW) × 100",
+      "result": "Bu'aa",
+      "maxThreshold": "Daangaa Guddaa: 60%",
+      "eligible": "Ni Darba",
+      "notEligible": "Hin Darbu",
+      "eligibleMessage": "Oomishni kee seera madda oomishaa ni guuta",
+      "eligibleDescription": "Meeshaan biyya alaa 60% gadi. Oomishni kee waraqaa madda oomishaa (Certificate of Origin) argachuu danda'a.",
+      "notEligibleMessage": "Oomishni kee seera madda oomishaa hin guunne",
+      "notEligibleDescription": "Meeshaan biyya alaa 60% ol ta'eera. Maaloo meeshaalee biyya keessaa fayyadamuu dabali.",
+      "contactUs": "Gargaarsa ni barbaadduu?",
+      "contactUsDescription": "Gareen keenya akkamitti meeshaalee biyya keessaa akka dabaltan isin gargaaruu danda'a.",
+      "certificateOfOriginEligibility": "Sakatta'iinsa Madda Oomishaa",
+      "vnmPercentage": "Dhibbeentaa VNM",
+      "localContent": "Qabiyyee Biyya Keessaa",
+      "minLocalContent": "Yoo xiqqaate: 40%",
+      "localValueAdded": "Gatii Biyya Keessatti Dabalame",
+      "productHsCode": "Koodii HS Oomishaa",
+      "productHsCodePlaceholder": "Koodii HS oomishaa seera madda oomishaa barbaaduuf itti fayyadamtan galchi",
+      "originRule": "Seera Madda Oomishaa",
+      "ruleSource": "Madda Seeraa",
+      "ruleThreshold": "Daangaa Seeraa",
+      "manualReview": "Gamaaggama Harkaa",
+      "manualReviewStepTitle": "Gamaaggama Seeraa Harkaa",
+      "manualReviewStepDescription": "Seera mootummaa, hojiiwwan gahaa hin taane, fi ulaagaalee walitti qabamuu akka ilaaltan mirkaneessi",
+      "manualReviewTitle": "Gamaaggamni harkaa barbaachisa",
+      "manualReviewBody": "Seerri madda oomishaa oomisha kanaa EXW fi VNM qofa irraa ofumaan shallagamuu hin danda'u. Gaaffii dhiyeessuu dura seera mootummaa Appendix 2.A.1 fi daangeffamoota waliigalaa Annex 2 mirkaneessuu qabda.",
+      "manualReviewDescription": "Seerri kun gamaaggama harkaa barbaada sababni isaas kaalkuleetarri ammaa ragaa jijjiirama taarifaa yookaan adeemsa oomishaa hin qabatu.",
+      "needsReview": "Gamaaggama Barbaada",
+      "ruleNotMapped": "Seerri Hin Ramadamne",
+      "ruleNotMappedDescription": "Appiin kun koodii HS kanaaf seera addaa oomishaa waliin wal qabate hanga ammaatti hin qabdu. Gaaffii madda dhiyeessuu dura Appendix 2.A.1 ilaali.",
+      "ruleReviewed": "Appendix 2.A.1 keessatti seera addaa oomishaa hojii irra oolu ilaaleera.",
+      "insufficientOperationsChecked": "Adeemsi kun Annex 2 jalatti hojiiwwan gahaa hin taane qofa irratti kan daangeffame akka hin taane mirkaneesseera.",
+      "cumulationConsidered": "Bakka barbaachisaa ta'etti walitti qabamuu fi galteewwan madda qaban biyyoota miseensa biroo irraa dhufan yaadeera.",
+      "enterHsCodeFirst": "Kaalkuleetariichi seera akka hiiku dura jalqaba koodii HS oomishaa galchi.",
+      "legacyStatus": "Bu'aa Duraa",
+      "yes": "Eeyyee",
+      "no": "Lakki",
+      "saveCalculation": "Shallaggii Oolchi",
+      "saving": "Oolmaa jira...",
+      "calculationSaved": "Shallaggiin milkaa'inaan ooleera",
+      "registerToSaveCalculation": "Shallaggii kana ol-kaawwachuuf nagaadii kee galmeessi.",
+      "calculationDeleted": "Shallaggiin haqameera",
+      "deleteCalculation": "Shallaggii Haqui",
+      "failedToSave": "Shallaggii oolchuun hin danda'amne",
+      "failedToDelete": "Shallaggii haquun hin danda'amne",
+      "totalCalculations": "Shallaggiiwwan Waliigalaa",
+      "previousCalculations": "Shallaggiiwwan Darban",
+      "previousCalculationsDescription": "Shallaggiiwwan ati kanaan dura oolchite"
+    },
+    "creditProfile": {
+      "loading": "Eenyummeessa liqii dijitaalaa fe'amaa jira...",
+      "title": "Eenyummeessa Liqii Dijitaalaa",
+      "titleReport": "Gabaasa Eenyummeessa Liqii Dijitaalaa",
+      "subtitle": "Sochii gabaa, hordoffii ajajaa fi baay'ina bittoota irratti hundaa'a.",
+      "actions": {
+        "backToProfile": "Gara eenyummeessa liqiitti deebi'i",
+        "openBusinessProfile": "Eenyummeessa nagaadii bani",
+        "businessSetup": "Qindaa'ina nagaadii",
+        "back": "Dura",
+        "printOrSavePdf": "Maxxansi / PDF kaawwadhu",
+        "downloadableReport": "Gabaasa buufamu danda'u"
+      },
+      "badges": {
+        "verifiedSeller": "Gurgurtaa mirkanaa'e",
+        "platformActivity": "Sochii platform-ichaa"
+      },
+      "access": {
+        "no_business": {
+          "title": "Nagaadii kee galmeessi",
+          "message": "Eenyummeessi liqii nagaadii kee galmeessitee erga mirkaneessitee booda argama."
+        },
+        "business_missing": {
+          "title": "Galmeen nagaadii hin argamne",
+          "message": "Eenyummeessi kee nagaadii hin jirre waliin wal qabata."
+        },
+        "pending_verification": {
+          "title": "Mirkaneessi adeemsa irra jira",
+          "message": "Eenyummeessi liqii kee nagaadiin kee erga mirkanaa'ee booda banama."
+        },
+        "rejected_verification": {
+          "title": "Mirkaneessi ni barbaachisa",
+          "message": "Eenyummeessa liqii argachuuf rakkoo mirkaneessaa hiiki."
+        },
+        "not_seller": {
+          "title": "Eeyyama gurgurtaa barbaachisa",
+          "message": "Gurgurtoota mirkanaa'an qofatu eenyummeessa liqii argu danda'a."
+        },
+        "ready": {
+          "title": "Qophiidha",
+          "message": "Eenyummeessi liqii kee ni argama."
+        }
+      },
+      "common": {
+        "notAvailableYet": "Hamma yoonaa hin jiru"
+      },
+      "summary": {
+        "headline": "Ajajawwan kaffalaman {paidOrdersCount} bittoota {uniqueBuyers} gidduutti",
+        "description": "Gabaasni kun sochii AfriConnect irratti qofa hundaa'a.",
+        "generated": "Kan qophaa'e",
+        "reportPeriodStart": "Guyyaa gabaasni jalqabe",
+        "latestProfileActivity": "Sochii eenyummeessaa isa dhihoo"
+      },
+      "cards": {
+        "paidTransactionVolume": {
+          "title": "Hamma kaffaltii raawwatame",
+          "description": "Gatii ajajawwan gabaa irratti kaffalamanii"
+        },
+        "paidOrders": {
+          "title": "Ajajawwan kaffalaman",
+          "description": "Ajajawwan {totalOrders} hordofaman"
+        },
+        "uniqueBuyers": {
+          "title": "Bittoota addaa",
+          "description": "Bittoota {repeatBuyers} deddeebi'anii bitan"
+        },
+        "buyerCountries": {
+          "title": "Biyyoota bittootaa",
+          "description": "Bittoota {buyersWithBusinessMetadata} oodeeffannoo nagaadii qaban"
+        },
+        "totalSellerOrders": {
+          "title": "Ajajawwan gurgurtaa waliigalaa",
+          "description": "Ajajawwan gurgurtaa kanaan wal qabatan hunda"
+        },
+        "successfulPaymentRate": {
+          "title": "Reephii kaffaltii milkaa'aa",
+          "description": "Ajajawwan kaffaltii qaban keessaa kanneen xumuraman"
+        },
+        "averageOrderValue": {
+          "title": "Giddu-galeessa gatii ajajaa",
+          "description": "Ajajawwan kaffalaman irratti hundaa'uun"
+        },
+        "recentPaidActivity": {
+          "title": "Sochii kaffaltii dhihoo",
+          "description": "Ajajawwan dhihootti kaffalaman"
+        },
+        "uniqueBuyersDetailed": {
+          "title": "Bittoota addaa",
+          "description": "Bittoota adda addaa ajaja dhiyeessan"
+        },
+        "repeatBuyers": {
+          "title": "Bittoota deddeebi'an",
+          "description": "Bittoota ajaja tokkoo ol qaban"
+        },
+        "metadataCoverage": {
+          "title": "Uwwisa oodeeffannoo",
+          "description": "Bittoota {buyersWithBusinessMetadata} galmee nagaadii qaban"
+        },
+        "topBuyerConcentration": {
+          "title": "Xiyyeeffannoo bitaa guddaa",
+          "description": "Hamma bittaa bitaa hunda caaluu"
+        }
+      },
+      "empty": {
+        "title": "Sochiin gahaan hin jiru",
+        "description": "Nagaadiin kee erga ajaja fudhachuu jalqabee eenyummeessi kun ofiin guutama."
+      },
+      "sections": {
+        "transactionHistory": {
+          "title": "Seenaa Hojii",
+          "description": "Sochii ajajaa fi kaffaltii gabaa irratti."
+        },
+        "fulfillment": {
+          "title": "Raawwii Hojii",
+          "description": "Ajaja yeroon xumuruu fi kaffaltii fudhachuu irratti hundaa'a."
+        },
+        "buyerDiversity": {
+          "title": "Baay'ina Bittootaa"
+        }
+      },
+      "trend": {
+        "window": "Guyyoota {days}",
+        "rollingPerformanceWindow": "Yeroo sochii itti fufaa",
+        "orders": "Ajajawwan",
+        "paidOrders": "Ajajawwan kaffalaman",
+        "paidVolume": "Hamma kaffaltii"
+      },
+      "fulfillment": {
+        "completionRate": "Reephii xumuraa",
+        "cancellationRate": "Reephii haquu",
+        "payoutSuccessRate": "Reephii kaffaltii fudhachuu",
+        "ordersCurrentlyProcessing": "Ajajawwan adeemsa irra jiran",
+        "averageFulfillmentCycle": "Giddu-galeessa guyyaa xumuraa",
+        "averageFulfillmentCycleValue": "Guyyoota {days}",
+        "payoutOutcomeCounts": "Lakkoofsa kaffaltii fudhatamee",
+        "payoutStatuses": {
+          "queued": "Tarree keessa",
+          "pending": "Eegamaa jira",
+          "success": "Milkaa'eera",
+          "failed": "Heephame",
+          "reverted": "Deebi'eera"
+        }
+      },
+      "buyerDiversity": {
+        "coverage": {
+          "complete": "Baay'inni bittootaa oodeeffannoo nagaadii isaanii irratti hundaa'a.",
+          "partial": "Bittoota muraasa oodeeffannoo nagaadii qaban qofa irratti hundaa'a."
+        }
+      },
+      "breakdowns": {
+        "countLabel": "Bittoota {count}",
+        "buyerCountries": {
+          "title": "Biyyoota bittootaa",
+          "empty": "Bittoonni oodeeffannoo nagaadii yoo galchan ni mul'ata."
+        },
+        "buyerCategories": {
+          "title": "Ramaddii bittootaa",
+          "empty": "Bittoonni oodeeffannoo nagaadii yoo galchan ni mul'ata."
+        },
+        "topBuyers": {
+          "title": "Bittoota gurguddoo",
+          "empty": "Bittoonni gurguddoon ajaja booda asitti mul'atu.",
+          "orders": "Ajajawwan {count}"
+        }
+      },
+      "methodology": {
+        "title": "Hubachiisa Akkaataa Shallaggii",
+        "description": "Gabaasni kun sochii AfriConnect irratti qofa hundaa'a.",
+        "points": {
+          "transactionVolume": "Hamma kaffaltii mirkanaa'e irratti hundaa'a.",
+          "fulfillment": "Haala ajajaa fi kaffaltii fudhatame irratti hundaa'a.",
+          "buyerDiversity": "Oodeeffannoo nagaadii bittootaa irratti hundaa'a."
+        }
+      },
+      "report": {
+        "generatedOn": "Guyyaa {date} irratti kan qophaa'e",
+        "latestActivity": "Sochii yeroo dhihoo: {date}",
+        "reportPeriod": "Yeroo gabaasaa: {start} — {end}",
+        "category": "Ramaddii",
+        "country": "Biyya",
+        "verifiedSince": "Eega yeroo mirkanaa'e irraa",
+        "sectionProfileSummary": "1. Cuunfaa Piroofaayilii",
+        "sectionTransactionHistory": "2. Seenaa Daldalaa",
+        "sectionFulfillment": "3. Raawwii Guutinsa Ajajaa",
+        "sectionBuyerDiversity": "4. Garaagarummaa Bittootaa",
+        "sectionMethodology": "5. Yaadannoo Mala Hojii",
+        "rollingPerformanceWindows": "Fuul-dureewwan Raawwii Socho'aa",
+        "payoutOutcomes": "Bu'aawwan Kaffaltii",
+        "topBuyersSection": "Bittoota Ol'aanaa",
+        "buyerCountriesSection": "Biyyoota Bittootaa",
+        "buyerCategoriesSection": "Ramaddii Bittootaa",
+        "noData": "Deetaan hin argamne",
+        "orders": "{count} ajajoota",
+        "buyerShare": "{count} bittoota ({share}%)"
+      }
+    },
+    "inventory": {
+      "title": "Kuusa",
+      "description": "Sadarkaa kuusaa hordofi, baay'ina sirreessi, fi beeksisa qopheessi",
+      "summary": {
+        "totalProducts": "Oomishoota Waliigalaa",
+        "totalUnits": "Meeshaalee Waliigalaa",
+        "lowStock": "Kuusa Xiqqaa",
+        "outOfStock": "Kuusaan dhumateera"
+      },
+      "tabs": {
+        "inventory": "Kuusa",
+        "activity": "Sochii"
+      },
+      "searchPlaceholder": "Oomisha ykn SKU-n barbaadi...",
+      "filterStatus": "Akka haalaatiin gingilchi",
+      "status": {
+        "in_stock": "Kuusa keessa jira",
+        "low_stock": "Kuusa xiqqaa",
+        "out_of_stock": "Dhumateera",
+        "inStock": "Kuusa keessa jira",
+        "lowStock": "Kuusa xiqqaa",
+        "outOfStock": "Dhumateera"
+      },
+      "table": {
+        "product": "Oomisha",
+        "sku": "SKU",
+        "onHand": "Harka kan jiru",
+        "threshold": "Daangaa Xiqqaa",
+        "status": "Haala",
+        "actions": "Gochaalee"
+      },
+      "actions": {
+        "adjust": "Sirreessi",
+        "thresholds": "Daangaawwan",
+        "history": "Seenaa"
+      },
+      "noSku": "SKU hin jiru",
+      "noResults": "Oomishni gingilchaa keetiin wal simu hin jiru.",
+      "activityTitle": "Sochii Dhihoo",
+      "activity": {
+        "date": "Guyyaa",
+        "product": "Oomisha",
+        "type": "Gosa",
+        "quantity": "Baay'ina",
+        "newQuantity": "Baay'ina Haaraa",
+        "reason": "Sababa",
+        "none": "Homaa",
+        "empty": "Sochiin kuusaa hamma yoonaa hin jiru."
+      },
+      "types": {
+        "restock": "Kuusa dabaluu",
+        "adjustment": "Sirreessuu",
+        "return": "Deebii",
+        "correction": "Sirreeffama",
+        "sale": "Gurgurtaa"
+      },
+      "adjustDialog": {
+        "title": "Kuusa Sirreessi",
+        "description": "Jijjiirama kuusaa oomisha kanaa galmeessi.",
+        "type": "Gosa Sirreeffamaa",
+        "delta": "Jijjiirama Baay'inaa",
+        "deltaPlaceholder": "Hir'isuuf lakkoofsa nagaatiivii (-) fayyadami",
+        "quickAdd": "1 Idaysi",
+        "quickRemove": "1 Hir'isi",
+        "reason": "Sababa",
+        "reasonPlaceholder": "Yaada dabalataa (yoo jiraate)",
+        "save": "Sirreeffama Oolchi"
+      },
+      "historyDialog": {
+        "title": "Seenaa Kuusaa",
+        "description": "Jijjiirama kuusaa oomisha kanaa isa dhihoo."
+      },
+      "thresholdDialog": {
+        "title": "Sajatoo Kuusa Dabaluu",
+        "description": "Beeksisa kuusa xiqqaa fi baay'ina irra-deebii ajajaa qindessi.",
+        "lowStock": "Daangaa Kuusa Xiqqaa",
+        "lowStockPlaceholder": "fkn, 5",
+        "reorder": "Baay'ina Irra-deebii Ajajaa",
+        "reorderPlaceholder": "fkn, 25",
+        "save": "Sajatoo Oolchi"
+      },
+      "invalidAdjustment": "Maaloo lakkoofsa 0 hin taane galchi.",
+      "adjustmentSaved": "Sirreeffamni kuusaa ooleera.",
+      "invalidThreshold": "Daangaan kuusa xiqqaa 0 ykn isaa ol ta'uu qaba.",
+      "invalidReorder": "Baay'inni irra-deebii ajajaa 0 ykn isaa ol ta'uu qaba.",
+      "thresholdsSaved": "Sajatoon kuusa dabaluu ooleera."
+    }
+}
