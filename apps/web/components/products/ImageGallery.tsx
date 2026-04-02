@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, X, ZoomIn, ImageIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -144,7 +144,13 @@ export function ImageGallery({ images, productName }: ImageGalleryProps) {
 
       {/* Zoom modal */}
       <Dialog open={isZoomed} onOpenChange={setIsZoomed}>
-        <DialogContent className="max-h-[95vh] max-w-[95vw] overflow-hidden border-0 bg-black/95 p-0">
+        <DialogContent
+          showCloseButton={false}
+          className="max-h-[95vh] max-w-[95vw] overflow-hidden border-0 bg-black/95 p-0"
+        >
+          <DialogTitle className="sr-only">
+            {productName} — zoomed image
+          </DialogTitle>
           <div className="relative flex h-[90vh] items-center justify-center">
             {/* Close button */}
             <Button

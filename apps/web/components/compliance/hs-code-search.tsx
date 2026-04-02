@@ -44,7 +44,7 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
-  const [mode, setMode] = useState<"search" | "manual">("search");
+  const [mode, setMode] = useState<"search" | "manual">("manual");
   const [manualHsCode, setManualHsCode] = useState("");
   const [manualLookupResult, setManualLookupResult] = useState<HSCodeResult | null>(null);
   const [manualLookupLoading, setManualLookupLoading] = useState(false);
@@ -216,6 +216,15 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
       <div className="flex gap-2">
         <Button
           type="button"
+          variant={mode === "manual" ? "default" : "outline"}
+          size="sm"
+          onClick={() => setMode("manual")}
+          disabled={disabled}
+        >
+          {t("enterHsCode")}
+        </Button>
+        <Button
+          type="button"
           variant={mode === "search" ? "default" : "outline"}
           size="sm"
           onClick={() => setMode("search")}
@@ -223,15 +232,6 @@ export function HSCodeSearch({ onSelect, country, disabled, placeholder }: HSCod
         >
           <Search className="mr-2 h-4 w-4" />
           {t("searchByName")}
-        </Button>
-        <Button
-          type="button"
-          variant={mode === "manual" ? "default" : "outline"}
-          size="sm"
-          onClick={() => setMode("manual")}
-          disabled={disabled}
-        >
-          {t("enterHsCode")}
         </Button>
       </div>
 

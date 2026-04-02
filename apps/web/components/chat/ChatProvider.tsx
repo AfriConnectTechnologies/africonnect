@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useEffect, useRef, useState, useCallback, ReactNode } from "react";
 import { StreamChat, Channel as StreamChannel } from "stream-chat";
 import { useUser } from "@clerk/nextjs";
 
@@ -44,6 +44,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
   const [isConnecting, setIsConnecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [unreadCount, setUnreadCount] = useState(0);
+  const unreadCountRef = useRef(0);
 
   // Initialize Stream Chat client
   useEffect(() => {
@@ -121,10 +122,20 @@ export function ChatProvider({ children }: ChatProviderProps) {
   useEffect(() => {
     if (!client) return;
 
-    const handleNotification = () => {
+    const handleNotification = (event?: { type?: string; cid?: string; total_unread_count?: number }) => {
       const userState = client.user as Record<string, unknown> | undefined;
       const totalUnread = userState?.total_unread_count;
-      setUnreadCount(typeof totalUnread === "number" ? totalUnread : 0);
+      const previousUnreadCount = unreadCountRef.current;
+      const nextUnreadCount =
+        typeof event?.total_unread_count === "number"
+          ? event.total_unread_count
+          : event?.type === "message.read" || event?.type === "notification.mark_read"
+            ? previousUnreadCount
+          : typeof totalUnread === "number"
+            ? totalUnread
+            : 0;
+      unreadCountRef.current = nextUnreadCount;
+      setUnreadCount(nextUnreadCount);
     };
 
     // Listen to all events that can change unread count
@@ -140,6 +151,10 @@ export function ChatProvider({ children }: ChatProviderProps) {
       client.off("message.new", handleNotification);
     };
   }, [client]);
+
+  useEffect(() => {
+    unreadCountRef.current = unreadCount;
+  }, [client, isConnected, unreadCount]);
 
   const createOrJoinChannel = useCallback(
     async (

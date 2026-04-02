@@ -10,7 +10,11 @@ import { CheckCircle2 } from "lucide-react";
 export function ProfileHeader() {
   const { user } = useUser();
   const currentUser = useQuery(api.users.getCurrentUser);
-  const myBusiness = useQuery(api.businesses.getMyBusiness);
+  const isBankUser = currentUser?.role === "bank";
+  const myBusiness = useQuery(
+    api.businesses.getMyBusiness,
+    currentUser === undefined || isBankUser ? "skip" : {},
+  );
 
   const getInitials = (name: string | undefined | null) => {
     if (!name) return "U";
@@ -57,7 +61,7 @@ export function ProfileHeader() {
                 {currentUser.role.charAt(0).toUpperCase() + currentUser.role.slice(1)}
               </Badge>
             )}
-            {myBusiness?.verificationStatus === "verified" && (
+            {!isBankUser && myBusiness?.verificationStatus === "verified" && (
               <Badge variant="outline" className="text-xs text-green-600 border-green-200 bg-green-50 dark:bg-green-900/30">
                 <CheckCircle2 className="mr-1 h-3 w-3" />
                 Verified

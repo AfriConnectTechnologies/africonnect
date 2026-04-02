@@ -14,7 +14,7 @@ export interface GeneratedAnswerPayload {
 const DEFAULT_PROVIDER_TIMEOUT_MS = 15000;
 const GENERATION_PROVIDER_TIMEOUT_MS = 30000;
 const STREAMING_PROVIDER_TIMEOUT_MS = 60000;
-const TRANSLATION_PROVIDER_TIMEOUT_MS = 15000;
+const TRANSLATION_PROVIDER_TIMEOUT_MS = 45000;
 const OPENAI_GENERATED_ANSWER_SCHEMA = {
   type: "object",
   additionalProperties: false,
@@ -625,21 +625,35 @@ export async function translateTextWithAddisAssistant(
     }),
   });
 
+  const responseText = await response.text();
   if (!response.ok) {
-    const body = await response.text();
     throw new Error(
-      body
-        ? `Translation failed with status ${response.status}: ${body}`
+      responseText
+        ? `Translation failed with status ${response.status}: ${responseText}`
         : `Translation failed with status ${response.status}`
     );
   }
 
-  const data = (await response.json()) as {
+  let data: {
     status?: string;
     data?: {
       translation?: string;
     };
   };
+  try {
+    data = JSON.parse(responseText) as {
+      status?: string;
+      data?: {
+        translation?: string;
+      };
+    };
+  } catch {
+    throw new Error(
+      responseText
+        ? `Translation response was not valid JSON: ${responseText}`
+        : "Translation response was not valid JSON"
+    );
+  }
 
   const translation = data.data?.translation?.trim();
   if (!translation) {

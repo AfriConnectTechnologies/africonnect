@@ -48,7 +48,11 @@ export default function SettingsPage() {
 
   const ensureUser = useMutation(api.users.ensureUser);
   const currentUser = useQuery(api.users.getCurrentUser);
-  const myBusiness = useQuery(api.businesses.getMyBusiness);
+  const isBankUser = currentUser?.role === "bank";
+  const myBusiness = useQuery(
+    api.businesses.getMyBusiness,
+    currentUser === undefined || isBankUser ? "skip" : {},
+  );
   const updateProfile = useMutation(api.users.updateProfile);
 
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
@@ -112,8 +116,9 @@ export default function SettingsPage() {
   }
 
   const isSeller = currentUser?.role === "seller" || currentUser?.role === "admin";
-  const isLoadingMyBusiness = myBusiness === undefined;
-  const hasBusiness = !isLoadingMyBusiness && myBusiness !== null;
+  const isLoadingMyBusiness = !isBankUser && myBusiness === undefined;
+  const hasBusiness =
+    !isBankUser && !isLoadingMyBusiness && myBusiness !== null;
   const isBusinessVerified =
     !isLoadingMyBusiness && myBusiness?.verificationStatus === "verified";
   const showVerificationCta = !isLoadingMyBusiness && !isBusinessVerified;
@@ -128,8 +133,8 @@ export default function SettingsPage() {
       {/* Profile Header */}
       <ProfileHeader />
 
-      {/* Business Card (if seller) */}
-      {hasBusiness && <BusinessCard />}
+      {/* Business Card (if seller) — not shown for bank portal users */}
+      {!isBankUser && hasBusiness && <BusinessCard />}
 
       {/* Account Settings */}
       <MenuSection title="Account Settings">
@@ -147,47 +152,49 @@ export default function SettingsPage() {
         />
       </MenuSection>
 
-      {/* Business Section */}
-      <MenuSection title="Business">
-        {hasBusiness && (
-          <MenuItem
-            icon={Building2}
-            label="My Business"
-            description="View and manage your business profile"
-            onClick={() => router.push("/business/profile")}
-          />
-        )}
-        {showVerificationCta && (
-          <MenuItem
-            icon={Building2}
-            label={t("verifyBusinessLabel")}
-            description={
-              hasBusiness
-                ? t("verifyBusinessDescriptionIncomplete")
-                : t("verifyBusinessDescription")
-            }
-            onClick={() =>
-              router.push(hasBusiness ? "/business/profile" : "/business/verify")
-            }
-          />
-        )}
-        {hasBusiness && isBusinessVerified && !isSeller && (
-          <MenuItem
-            icon={Shield}
-            label={t("applyToSellLabel")}
-            description={t("applyToSellDescription")}
-            onClick={() => router.push("/business/register")}
-          />
-        )}
-        {isSeller && (
-          <MenuItem
-            icon={Package}
-            label="My Products"
-            description="Manage your product listings"
-            onClick={() => router.push("/products")}
-          />
-        )}
-      </MenuSection>
+      {/* Business Section — bank users use the bank portal, not marketplace business settings */}
+      {!isBankUser && (
+        <MenuSection title="Business">
+          {hasBusiness && (
+            <MenuItem
+              icon={Building2}
+              label="My Business"
+              description="View and manage your business profile"
+              onClick={() => router.push("/business/profile")}
+            />
+          )}
+          {showVerificationCta && (
+            <MenuItem
+              icon={Building2}
+              label={t("verifyBusinessLabel")}
+              description={
+                hasBusiness
+                  ? t("verifyBusinessDescriptionIncomplete")
+                  : t("verifyBusinessDescription")
+              }
+              onClick={() =>
+                router.push(hasBusiness ? "/business/profile" : "/business/verify")
+              }
+            />
+          )}
+          {hasBusiness && isBusinessVerified && !isSeller && (
+            <MenuItem
+              icon={Shield}
+              label={t("applyToSellLabel")}
+              description={t("applyToSellDescription")}
+              onClick={() => router.push("/business/register")}
+            />
+          )}
+          {isSeller && (
+            <MenuItem
+              icon={Package}
+              label="My Products"
+              description="Manage your product listings"
+              onClick={() => router.push("/products")}
+            />
+          )}
+        </MenuSection>
+      )}
 
       {/* Preferences */}
       <MenuSection title="Preferences">

@@ -52,57 +52,63 @@ export const getProductChannelInfo = query({
   },
   handler: async (ctx, args) => {
     const user = await getCurrentUser(ctx);
-    if (!user) {
-      return null;
-    }
+    if (!user) return null;
 
     const product = await ctx.db.get(args.productId);
-    if (!product) {
-      return null; // Product not found - return null instead of throwing
-    }
+    if (!product) return null; // Product not found - return null instead of throwing
 
     // Get seller info using query (for proper typing)
+    const normalizedSellerId = ctx.db.normalizeId("users", product.sellerId);
+    const sellerByNormalizedId = normalizedSellerId ? await ctx.db.get(normalizedSellerId) : null;
+    const sellerByClerkId = await ctx.db
+      .query("users")
+      .withIndex("by_clerk_id", (q) => q.eq("clerkId", product.sellerId))
+      .first();
     const seller = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("_id"), product.sellerId))
       .first();
-    if (!seller) {
+    const resolvedSeller = seller ?? sellerByNormalizedId ?? sellerByClerkId;
+    if (!resolvedSeller) {
       return null; // Seller not found - return null instead of throwing
     }
 
-    // Get business info if available
-    let business = null;
-    if (seller.businessId) {
-      business = await ctx.db.get(seller.businessId);
+    {
+      const seller = resolvedSeller;
+
+      // Get business info if available
+      let business = null;
+      if (seller.businessId) {
+        business = await ctx.db.get(seller.businessId);
+      }
+
+      // Generate short channel ID (max 64 chars for Stream Chat)
+      const channelId = generateChannelId("p", args.productId, user._id, seller._id);
+
+      // Generate Stream-compatible user IDs (sanitized Clerk IDs)
+      const currentUserStreamId = user.clerkId.replace(/[^a-zA-Z0-9_-]/g, "_");
+      const sellerStreamId = seller.clerkId.replace(/[^a-zA-Z0-9_-]/g, "_");
+
+      // Get user names for Stream Chat user sync
+      const currentUserName = user.name || user.email || "User";
+      const sellerNameDisplay = seller.name || seller.email || "Seller";
+      return {
+        channelId,
+        channelType: "messaging",
+        productId: args.productId,
+        productName: product.name,
+        sellerId: seller._id,
+        sellerName: sellerNameDisplay,
+        sellerClerkId: seller.clerkId,
+        sellerStreamId,
+        currentUserStreamId,
+        currentUserName,
+        members: [currentUserStreamId, sellerStreamId],
+        memberNames: [currentUserName, sellerNameDisplay],
+        businessName: business?.name,
+        isOwnProduct: user._id === seller._id,
+      };
     }
-
-    // Generate short channel ID (max 64 chars for Stream Chat)
-    const channelId = generateChannelId("p", args.productId, user._id, seller._id);
-
-    // Generate Stream-compatible user IDs (sanitized Clerk IDs)
-    const currentUserStreamId = user.clerkId.replace(/[^a-zA-Z0-9_-]/g, "_");
-    const sellerStreamId = seller.clerkId.replace(/[^a-zA-Z0-9_-]/g, "_");
-
-    // Get user names for Stream Chat user sync
-    const currentUserName = user.name || user.email || "User";
-    const sellerNameDisplay = seller.name || seller.email || "Seller";
-
-    return {
-      channelId,
-      channelType: "messaging",
-      productId: args.productId,
-      productName: product.name,
-      sellerId: seller._id,
-      sellerName: sellerNameDisplay,
-      sellerClerkId: seller.clerkId,
-      sellerStreamId,
-      currentUserStreamId,
-      currentUserName,
-      members: [currentUserStreamId, sellerStreamId],
-      memberNames: [currentUserName, sellerNameDisplay],
-      businessName: business?.name,
-      isOwnProduct: user._id === seller._id,
-    };
   },
 });
 
