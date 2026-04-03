@@ -1,5 +1,4 @@
 "use client";
-
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -11,9 +10,9 @@ interface CountrySelectorProps {
   disabled?: boolean;
 }
 
-const countries: { id: TariffCountry; flag: string; labelKey: string }[] = [
-  { id: "ethiopia", flag: "🇪🇹", labelKey: "ethiopia" },
-  { id: "kenya", flag: "🇰🇪", labelKey: "kenyaEac" },
+const countries: { id: TariffCountry; label: string }[] = [
+  { id: "ethiopia", label: "Ethiopia" },
+  { id: "kenya", label: "EAC" },
 ];
 
 export function CountrySelector({ value, onChange, disabled }: CountrySelectorProps) {
@@ -38,8 +37,18 @@ export function CountrySelector({ value, onChange, disabled }: CountrySelectorPr
               value === country.id && "ring-2 ring-primary ring-offset-2"
             )}
           >
-            <span className="text-lg">{country.flag}</span>
-            <span>{t(country.labelKey)}</span>
+            {country.id === "kenya" ? (
+              <img
+                src="/eac.png"
+                alt={country.label}
+                width={20}
+                height={20}
+                className="h-5 w-5 object-contain"
+              />
+            ) : (
+              <span className="text-lg">🇪🇹</span>
+            )}
+            <span>{country.label}</span>
           </Button>
         ))}
       </div>

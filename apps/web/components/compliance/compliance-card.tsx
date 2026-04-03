@@ -1,5 +1,4 @@
 "use client";
-
 import { useTranslations, useLocale } from "next-intl";
 import {
   Card,
@@ -39,11 +38,6 @@ interface ComplianceCardProps {
   compact?: boolean;
 }
 
-const countryFlags: Record<string, string> = {
-  ethiopia: "🇪🇹",
-  kenya: "🇰🇪",
-};
-
 export function ComplianceCard({
   hsCode,
   productName,
@@ -64,7 +58,6 @@ export function ComplianceCard({
   const t = useTranslations("compliance");
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
-  const countryFlag = country ? countryFlags[country] : countryFlags.ethiopia;
 
   // Parse rates if it's a JSON string
   const parsedRates: Rates | null = rates
@@ -78,6 +71,18 @@ export function ComplianceCard({
     : productName;
   const scheduleStatus = tariffScheduleStatus || (isCompliant ? "matched" : "not_matched");
   const scheduleMatched = scheduleStatus === "matched";
+
+  const countryIcon = country === "kenya" ? (
+    <img
+      src="/eac.png"
+      alt="EAC"
+      width={16}
+      height={16}
+      className="h-4 w-4 object-contain"
+    />
+  ) : (
+    <span>🇪🇹</span>
+  );
 
   const years = ["2026", "2027", "2028", "2029", "2030"] as const;
   type RateYear = (typeof years)[number];
@@ -101,7 +106,7 @@ export function ComplianceCard({
           <div className="min-w-0">
             <div className="font-medium text-sm truncate">{displayName}</div>
             <div className="text-xs text-muted-foreground flex items-center gap-1">
-              <span>{countryFlag}</span>
+              {countryIcon}
               <span>HS: {hsCode}</span>
             </div>
             {scheduleMatched && (tariffBaseRate || tariffCategory) && (
@@ -162,7 +167,7 @@ export function ComplianceCard({
               {displayName}
             </CardTitle>
             <CardDescription className="flex items-center gap-2">
-              <span>{countryFlag}</span>
+              {countryIcon}
               <span>HS Code: {hsCode}</span>
             </CardDescription>
           </div>
